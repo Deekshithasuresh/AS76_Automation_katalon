@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-022-verify the functionality of cancel button while re-assigning the reviewer on RBC Tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f54045fd-467f-43eb-afb2-52d128f43601</testCaseGuid>
+</TestCaseEntity>

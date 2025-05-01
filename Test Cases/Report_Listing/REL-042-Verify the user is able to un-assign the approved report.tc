@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-042-Verify the user is able to un-assign the approved report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0f1f3087-d62a-4959-a130-14540e653428</testCaseGuid>
+</TestCaseEntity>

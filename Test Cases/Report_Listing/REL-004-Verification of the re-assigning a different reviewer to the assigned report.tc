@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-004-Verification of the re-assigning a different reviewer to the assigned report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0e9af2e3-65fa-4140-9c5f-2c6d012017e2</testCaseGuid>
+</TestCaseEntity>

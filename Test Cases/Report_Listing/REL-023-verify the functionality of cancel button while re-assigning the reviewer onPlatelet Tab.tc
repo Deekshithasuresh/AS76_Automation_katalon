@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-023-verify the functionality of cancel button while re-assigning the reviewer onPlatelet Tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>84cc25e3-be3e-4cb4-8d6e-92337d2bb52b</testCaseGuid>
+</TestCaseEntity>

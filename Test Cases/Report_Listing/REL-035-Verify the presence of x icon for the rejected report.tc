@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-035-Verify the presence of x icon for the rejected report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a3712a1f-6379-4223-9124-c0f160589f0a</testCaseGuid>
+</TestCaseEntity>

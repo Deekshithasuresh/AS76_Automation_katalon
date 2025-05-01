@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-006-verify the list of all reviewer name who has logged in the device</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>93e3bf29-c8c7-4350-9c36-b5e96cc938c2</testCaseGuid>
+</TestCaseEntity>
