@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPV_007_RBC_Verify the deselection of patches when user click outside any where</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e585007b-fa29-482c-bc9f-01782300c4fe</testCaseGuid>
+</TestCaseEntity>

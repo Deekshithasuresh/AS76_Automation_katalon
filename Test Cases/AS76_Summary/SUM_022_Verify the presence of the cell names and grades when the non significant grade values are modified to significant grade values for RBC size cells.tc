@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_022_Verify the presence of the cell names and grades when the non significant grade values are modified to significant grade values for RBC size cells</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b9e6002a-2e64-4052-85f3-4c3bb16366f0</testCaseGuid>
+</TestCaseEntity>

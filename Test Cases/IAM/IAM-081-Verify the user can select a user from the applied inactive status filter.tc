@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-081-Verify the user can select a user from the applied inactive status filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ed670a5f-3e0e-418a-ba4e-f0efb9cbbb5e</testCaseGuid>
+</TestCaseEntity>

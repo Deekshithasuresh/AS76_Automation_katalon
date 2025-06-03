@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-082-Verify the presence of the user drop down option</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>16b7cb9e-bd72-4d72-9097-8ccf9f3ce559</testCaseGuid>
+</TestCaseEntity>

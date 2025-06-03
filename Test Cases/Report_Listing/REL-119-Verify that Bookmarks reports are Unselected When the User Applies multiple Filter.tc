@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-119-Verify that Bookmarks reports are Unselected When the User Applies multiple Filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c1ae23eb-7548-46e4-bb8b-92ebc4a51f81</testCaseGuid>
+</TestCaseEntity>

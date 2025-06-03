@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-014-Verify the admin user able to create new user without a contact number</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>81fd927b-9ad6-4346-b6fc-4138d1be6e2b</testCaseGuid>
+</TestCaseEntity>

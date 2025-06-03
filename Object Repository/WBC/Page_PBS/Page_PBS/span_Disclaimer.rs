@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Disclaimer</name>
+   <tag></tag>
+   <elementGuidId>dbadcd69-2fab-4b3a-a755-a9c6eda291e8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[3]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.bottomDisclaimer_container__text__y7BCT.bottomDisclaimer_container__text--bold__qk5JT</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Disclaimer:&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>true</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a4d548da-ef8c-42b8-bf07-a0cca65375d8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bottomDisclaimer_container__text__y7BCT bottomDisclaimer_container__text--bold__qk5JT</value>
+      <webElementGuid>1de05979-d14b-4b25-9476-93a01532318b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Disclaimer:  </value>
+      <webElementGuid>c1d3e953-819b-4b0a-9bd2-c3fc6123ac49</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;bottomDisclaimer_container__XJPK2&quot;]/span[@class=&quot;bottomDisclaimer_container__text__y7BCT bottomDisclaimer_container__text--bold__qk5JT&quot;]</value>
+      <webElementGuid>386ae87c-3e37-4470-9713-def26b267e59</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[3]/span</value>
+      <webElementGuid>813c6a4a-76ff-490d-b548-8b0da51ab4ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[5]/following::span[1]</value>
+      <webElementGuid>e92799fd-b824-4453-8b78-edddbf407f5e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='OK'])[5]/following::span[2]</value>
+      <webElementGuid>a0baf339-1d2c-4e51-83e1-c7fb1c247579</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Disclaimer']/parent::*</value>
+      <webElementGuid>191818c9-61a6-456b-8e1e-228f88f386b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/span</value>
+      <webElementGuid>4a941145-3d73-42d3-9440-a92cce8db98a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Disclaimer:  ' or . = 'Disclaimer:  ')]</value>
+      <webElementGuid>6b038077-5473-4ca3-86e4-037347335cae</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

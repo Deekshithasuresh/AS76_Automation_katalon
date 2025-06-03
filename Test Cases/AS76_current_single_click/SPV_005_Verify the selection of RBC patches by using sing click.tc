@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPV_005_Verify the selection of RBC patches by using sing click</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bdd85676-eb4f-4d63-9d47-f945a62c955a</testCaseGuid>
+</TestCaseEntity>

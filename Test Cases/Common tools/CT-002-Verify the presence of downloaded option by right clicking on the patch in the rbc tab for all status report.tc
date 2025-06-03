@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-002-Verify the presence of downloaded option by right clicking on the patch in the rbc tab for all status report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3ef76a8c-6402-462f-800f-13421a8ace28</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-113-Verify the user is able to enter in the username field</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7d59b7c6-30eb-491c-99e8-d9d9615a76d1</testCaseGuid>
+</TestCaseEntity>

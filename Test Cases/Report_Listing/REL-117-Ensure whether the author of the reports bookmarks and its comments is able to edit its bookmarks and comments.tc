@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-117-Ensure whether the author of the reports bookmarks and its comments is able to edit its bookmarks and comments</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>58a9ed9e-9d64-441d-a9e1-524142cd2136</testCaseGuid>
+</TestCaseEntity>

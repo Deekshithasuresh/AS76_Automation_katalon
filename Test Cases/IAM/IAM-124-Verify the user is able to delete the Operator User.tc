@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-124-Verify the user is able to delete the Operator User</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>54b5639e-3712-4930-a49c-bd3b7418ba7a</testCaseGuid>
+</TestCaseEntity>

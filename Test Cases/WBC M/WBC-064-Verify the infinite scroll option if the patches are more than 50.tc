@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-064-Verify the infinite scroll option if the patches are more than 50</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5ae704e5-7c11-48f8-bae8-d75481c5b582</testCaseGuid>
+</TestCaseEntity>

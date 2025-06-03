@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_032_Verify comparison of the grade values for RBC color cells in the RBC and summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>990a5ca0-ed45-4e25-b1e0-9f95ee2b96e9</testCaseGuid>
+</TestCaseEntity>

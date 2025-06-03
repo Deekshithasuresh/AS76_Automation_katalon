@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-071-Verify the functionality of reset button on the filters pop up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c0069fe0-a737-47cc-9108-5da13318eeb3</testCaseGuid>
+</TestCaseEntity>

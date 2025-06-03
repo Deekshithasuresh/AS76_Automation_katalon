@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_005_Verify the Non-WBC cell names in the WBC differential count section</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c9a57a6e-a2e0-4855-ab43-53fe51033c39</testCaseGuid>
+</TestCaseEntity>

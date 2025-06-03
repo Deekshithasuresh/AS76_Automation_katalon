@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-083-Verify the user is able to reclassify any main cell to another main cell type by using by drag and drop option</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dd83a794-7ad0-40f9-b5c0-5fca91aac0a5</testCaseGuid>
+</TestCaseEntity>

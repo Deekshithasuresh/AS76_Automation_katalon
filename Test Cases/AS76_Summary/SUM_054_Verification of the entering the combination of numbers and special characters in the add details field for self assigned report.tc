@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_054_Verification of the entering the combination of numbers and special characters in the add details field for self assigned report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9b9613c3-b80d-4afd-9a07-bd7df127858e</testCaseGuid>
+</TestCaseEntity>

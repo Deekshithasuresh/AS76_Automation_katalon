@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-001-Verify the user is able to switch to WBC tab or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e7cbfede-5091-4cff-9433-cdd353985bcc</testCaseGuid>
+</TestCaseEntity>

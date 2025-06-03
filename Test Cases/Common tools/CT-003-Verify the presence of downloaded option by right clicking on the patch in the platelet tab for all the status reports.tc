@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-003-Verify the presence of downloaded option by right clicking on the patch in the platelet tab for all the status reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>69be7b4d-a5ba-44c3-be3c-563949d3092c</testCaseGuid>
+</TestCaseEntity>

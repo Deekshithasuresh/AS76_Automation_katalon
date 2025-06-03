@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-002-Verify the user is able to view all the WBC main cell parameters or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8b8b4c2e-8a65-4f1a-a6ea-0b9c606c8e56</testCaseGuid>
+</TestCaseEntity>

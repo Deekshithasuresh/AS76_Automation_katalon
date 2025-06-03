@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-062-Verify the presence of scroll option if the patches are less than 28</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>eb8b7f9d-65ac-4cba-930c-70c2ed54d4d6</testCaseGuid>
+</TestCaseEntity>

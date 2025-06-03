@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_020_Verify the presence of the cell names and grades if the RBC color grade values are significant</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ce9c2668-99bd-4113-9cab-89f674ed15ca</testCaseGuid>
+</TestCaseEntity>

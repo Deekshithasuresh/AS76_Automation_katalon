@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-037-Verify the caluclulation of percentege for every cell when the every cell coun is zero</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1ff5eeec-ddc4-4d1f-8421-3c681116990a</testCaseGuid>
+</TestCaseEntity>

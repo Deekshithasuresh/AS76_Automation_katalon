@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_037_Verify the presence of the calculated level value in the summary when the calculated level report is selected from the platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3455fad8-e4e3-47f7-b2ce-0e0112dfee0c</testCaseGuid>
+</TestCaseEntity>

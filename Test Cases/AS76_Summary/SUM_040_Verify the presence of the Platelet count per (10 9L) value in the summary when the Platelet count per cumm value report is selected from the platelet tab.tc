@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_040_Verify the presence of the Platelet count per (10 9L) value in the summary when the Platelet count per cumm value report is selected from the platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4d2405a0-99d4-441a-983b-a9894a94d73b</testCaseGuid>
+</TestCaseEntity>

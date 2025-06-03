@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-004-Very the columns present in the WBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cab0afca-0c1d-4505-bbf4-0d1be66b754f</testCaseGuid>
+</TestCaseEntity>

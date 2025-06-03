@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-092-Verify the user is able to reclassify more than one cell to another cell or subcell type using reclassify CTA option</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7929aab2-ef86-42e4-83aa-490f6ee35073</testCaseGuid>
+</TestCaseEntity>

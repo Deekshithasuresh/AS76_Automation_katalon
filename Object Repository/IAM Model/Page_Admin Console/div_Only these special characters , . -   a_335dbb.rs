@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Only these special characters , . -   a_335dbb</name>
+   <tag></tag>
+   <elementGuidId>11c01c23-3466-4d72-82da-d5a70dfb4c0e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@class='error-message']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value></value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>61e38e4d-1b03-4b5f-adea-b7274377b71a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>error-message</value>
+      <webElementGuid>9cd78702-6ca3-436d-a9ee-858b23704a28</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Only these special characters , . - ' &quot; are allowed</value>
+      <webElementGuid>b92d4eeb-ba9c-479f-bd13-e1442ee09911</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/div[@class=&quot;error-message&quot;]</value>
+      <webElementGuid>5ca37406-f4bd-48bf-9a6d-7738f5c3ca83</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = concat(&quot;Only these special characters , . - &quot; , &quot;'&quot; , &quot; &quot; are allowed&quot;) or . = concat(&quot;Only these special characters , . - &quot; , &quot;'&quot; , &quot; &quot; are allowed&quot;))]</value>
+      <webElementGuid>771f07a9-1cf8-4f56-929f-dd446b9304d2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

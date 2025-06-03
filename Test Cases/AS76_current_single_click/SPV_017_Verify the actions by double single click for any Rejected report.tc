@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPV_017_Verify the actions by double single click for any Rejected report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>20dc0e67-1c0f-462f-9f90-1e9be713a50d</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-055-Verification of the functionality of the bookmark option in the report list page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3a5fefc6-218b-45aa-9630-1df5da418ed5</testCaseGuid>
+</TestCaseEntity>

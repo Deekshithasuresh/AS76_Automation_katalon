@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-020-Verify the user is able to perform the actions based on the admin role</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d95da560-dc73-4ce9-9197-7a0e88c72c5a</testCaseGuid>
+</TestCaseEntity>

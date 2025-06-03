@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-159-Verify if the Others cell group is visible under the WBC differential tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>884eee61-bdea-4fce-afe0-c9bb9ce50760</testCaseGuid>
+</TestCaseEntity>

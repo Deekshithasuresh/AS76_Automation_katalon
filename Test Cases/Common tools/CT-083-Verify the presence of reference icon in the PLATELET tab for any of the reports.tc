@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-083-Verify the presence of reference icon in the PLATELET tab for any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3882d8f5-2c41-465f-b24c-ec793dc9ca47</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-087-Verify the user is able to update the details of the Operator</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>17332ddf-dced-4a0e-afb3-b608c467a79b</testCaseGuid>
+</TestCaseEntity>

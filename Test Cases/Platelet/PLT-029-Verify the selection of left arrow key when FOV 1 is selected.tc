@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-029-Verify the selection of left arrow key when FOV 1 is selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2c176fe5-504c-40ba-8101-05af4752d414</testCaseGuid>
+</TestCaseEntity>

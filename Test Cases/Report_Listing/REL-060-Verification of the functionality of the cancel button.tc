@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-060-Verification of the functionality of the cancel button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3fb02955-98e8-4015-820f-2fd2ebd85a16</testCaseGuid>
+</TestCaseEntity>

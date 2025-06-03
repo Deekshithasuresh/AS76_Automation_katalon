@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-080-Verify the user can select a user from the applied active status filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a9bb728a-bf61-416a-9408-2ec669971ef7</testCaseGuid>
+</TestCaseEntity>

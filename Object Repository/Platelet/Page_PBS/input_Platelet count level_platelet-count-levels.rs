@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Platelet count level_platelet-count-levels</name>
+   <tag></tag>
+   <elementGuidId>f55bd074-ee10-474c-9491-54ae70b270c6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>tr:nth-of-type(4) > td > label.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementEnd.not-selected.css-1jaw3da > span.MuiButtonBase-root.MuiRadio-root.MuiRadio-colorPrimary.MuiRadio-sizeSmall.PrivateSwitchBase-root.MuiRadio-root.MuiRadio-colorPrimary.MuiRadio-sizeSmall.MuiRadio-root.MuiRadio-colorPrimary.MuiRadio-sizeSmall.css-iw4sy > input[name=&quot;platelet-count-levels&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@name='platelet-count-levels'])[3]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:label=&quot;Manual level&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>205f46db-dac5-47d1-8578-113a8426beef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>PrivateSwitchBase-input css-1m9pwf3</value>
+      <webElementGuid>9b82928e-3ddf-44f4-adb9-e9b263a08f13</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>platelet-count-levels</value>
+      <webElementGuid>1c38f9ae-4cbe-443c-afa6-c69241ca4b47</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>radio</value>
+      <webElementGuid>695806cf-86e6-45af-89b2-297a81655301</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>manual</value>
+      <webElementGuid>13250669-fbb7-4a06-8345-6b20230769ed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;split-view-contaier&quot;]/div[@class=&quot;split-view-count-section&quot;]/div[1]/div[@class=&quot;MuiFormControl-root level-table-container css-rzlpfh&quot;]/div[@class=&quot;MuiFormGroup-root MuiRadioGroup-root css-1h7anqn&quot;]/table[@class=&quot;plt-lvl-table&quot;]/tr[4]/td[1]/label[@class=&quot;MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd not-selected css-1jaw3da&quot;]/span[@class=&quot;MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall css-iw4sy&quot;]/input[@class=&quot;PrivateSwitchBase-input css-1m9pwf3&quot;]</value>
+      <webElementGuid>74f557ec-3f5c-48a7-b5f6-760cf35c22f7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//input[@name='platelet-count-levels'])[3]</value>
+      <webElementGuid>8405c9fc-f91e-4330-a1b2-5f3378b20d4a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div[3]/div/table/tr[4]/td/label/span/input</value>
+      <webElementGuid>0dabe132-a4a1-4878-9af6-e3948896a65c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td/label/span/input</value>
+      <webElementGuid>b5b67962-b505-4f4a-973d-7fe765d125e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@name = 'platelet-count-levels' and @type = 'radio']</value>
+      <webElementGuid>7e07aeef-6e4f-4faa-b1c1-0a3d4d5120ba</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-016-Verify the viewing the platelet count estimate in the under report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e2fcae43-e8a0-43da-b166-4dabea39de27</testCaseGuid>
+</TestCaseEntity>

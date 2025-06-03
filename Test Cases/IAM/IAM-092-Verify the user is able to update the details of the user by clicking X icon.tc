@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-092-Verify the user is able to update the details of the user by clicking X icon</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d02d3709-c4fc-4d0b-bfd0-2559b592e0e5</testCaseGuid>
+</TestCaseEntity>

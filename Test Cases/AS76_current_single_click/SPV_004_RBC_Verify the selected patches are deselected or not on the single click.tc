@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPV_004_RBC_Verify the selected patches are deselected or not on the single click</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>20457878-4f7b-4251-8efa-271612461f67</testCaseGuid>
+</TestCaseEntity>

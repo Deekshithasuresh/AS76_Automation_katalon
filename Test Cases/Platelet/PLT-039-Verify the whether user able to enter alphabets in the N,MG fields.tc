@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-039-Verify the whether user able to enter alphabets in the N,MG fields</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2ac26aef-b86c-49ca-bfa6-849ab9fe0545</testCaseGuid>
+</TestCaseEntity>

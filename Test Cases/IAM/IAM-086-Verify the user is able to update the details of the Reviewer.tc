@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-086-Verify the user is able to update the details of the Reviewer</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d61d524e-fb6a-4597-850a-0a546bca8c06</testCaseGuid>
+</TestCaseEntity>

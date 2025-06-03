@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-137-Verify the presence of the warning message when the WBC count is less than 200 for rejected report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b5026c03-0195-4d0d-839b-23d7366a6272</testCaseGuid>
+</TestCaseEntity>

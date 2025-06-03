@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPV_009_Verify the actions by performing single click for any approved report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4e142367-713d-41ff-9396-90b89fcd2cbb</testCaseGuid>
+</TestCaseEntity>

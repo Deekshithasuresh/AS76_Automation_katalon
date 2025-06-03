@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-121-Verify the presence of DELETE CTA button on the update user page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>df9bd920-cd83-404c-9025-e2b9aa2e8b9f</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-122-Verify the user is able to delete the admin User</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8652dd77-e28c-4820-bbf1-42483885746b</testCaseGuid>
+</TestCaseEntity>

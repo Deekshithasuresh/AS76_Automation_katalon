@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-093-Verify the Functionality of X ICON in the Update user page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c1604d05-425b-40e8-9366-2582c5cace53</testCaseGuid>
+</TestCaseEntity>

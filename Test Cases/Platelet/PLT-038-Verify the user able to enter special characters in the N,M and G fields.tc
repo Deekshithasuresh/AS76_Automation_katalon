@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-038-Verify the user able to enter special characters in the N,M and G fields</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>48820ef4-9bcc-4f2a-9f4f-59d1f9e98a41</testCaseGuid>
+</TestCaseEntity>

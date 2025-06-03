@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-007-Verify the Lymphocytes subcells present in the WBC Tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fb214d8a-9a47-401c-82cb-44f21c75153d</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-134-Verify the auto logout of the reviewer user when the admin user is deleted from the admin portal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1e3bfb0-e861-43dd-a590-92559b4c4dbd</testCaseGuid>
+</TestCaseEntity>

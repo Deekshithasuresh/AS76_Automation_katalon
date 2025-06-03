@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-021-verify the functionality of cancel button while re-assigning the reviewer on WBC Tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fd297ac3-c588-4132-b206-e6c3c239de54</testCaseGuid>
+</TestCaseEntity>

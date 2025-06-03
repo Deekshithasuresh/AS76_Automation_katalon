@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPV_012_Verify the actions by performing double click fro WBC cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c906eadc-7753-423f-a3e6-fb31b10821bc</testCaseGuid>
+</TestCaseEntity>

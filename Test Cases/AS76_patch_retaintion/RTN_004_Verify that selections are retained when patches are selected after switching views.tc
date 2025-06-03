@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RTN_004_Verify that selections are retained when patches are selected after switching views</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dbf21afe-bd11-4687-b097-ed017fa063a0</testCaseGuid>
+</TestCaseEntity>

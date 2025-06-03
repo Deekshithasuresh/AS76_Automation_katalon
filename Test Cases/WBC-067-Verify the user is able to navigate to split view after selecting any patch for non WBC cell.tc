@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-067-Verify the user is able to navigate to split view after selecting any patch for non WBC cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>29cab095-06bf-46e4-a69e-7bac0fbb0498</testCaseGuid>
+</TestCaseEntity>

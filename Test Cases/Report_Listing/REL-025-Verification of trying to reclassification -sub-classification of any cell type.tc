@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-025-Verification of trying to reclassification -sub-classification of any cell type</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c3f248d3-6fff-4380-a0b2-ea6122c7d9cd</testCaseGuid>
+</TestCaseEntity>

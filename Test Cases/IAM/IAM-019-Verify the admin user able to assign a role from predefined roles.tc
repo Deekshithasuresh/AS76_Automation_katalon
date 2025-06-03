@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-019-Verify the admin user able to assign a role from predefined roles</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>53816726-21a9-4460-a657-fdb6a3d64be7</testCaseGuid>
+</TestCaseEntity>

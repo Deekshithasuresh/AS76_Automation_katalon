@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-018-Verify the downloading and saving a single patch in the platelet tab for any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a819c492-7a39-4315-a710-eafed284f7e7</testCaseGuid>
+</TestCaseEntity>

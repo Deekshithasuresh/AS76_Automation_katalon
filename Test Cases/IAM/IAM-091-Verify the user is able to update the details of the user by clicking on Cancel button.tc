@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-091-Verify the user is able to update the details of the user by clicking on Cancel button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>eaaa7173-0650-48ea-9808-bd32f29c54d1</testCaseGuid>
+</TestCaseEntity>

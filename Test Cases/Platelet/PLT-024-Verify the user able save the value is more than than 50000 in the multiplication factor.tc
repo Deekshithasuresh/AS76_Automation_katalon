@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-024-Verify the user able save the value is more than than 50000 in the multiplication factor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>92f31578-c77e-471b-84f6-28a7d4652fd6</testCaseGuid>
+</TestCaseEntity>

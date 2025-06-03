@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPV_002_Verify the reclassification of multiple patches using single click</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>64b40bac-cc33-4339-adf4-daa355d81266</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-064-Verify the default multiplication factor is changing in approved rejected reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>93c3c794-6f1b-4c7d-bf50-30acfc4f293d</testCaseGuid>
+</TestCaseEntity>

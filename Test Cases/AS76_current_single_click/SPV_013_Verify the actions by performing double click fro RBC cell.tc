@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPV_013_Verify the actions by performing double click fro RBC cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>92dea7a6-60ff-486b-be75-0776ef66e2d5</testCaseGuid>
+</TestCaseEntity>

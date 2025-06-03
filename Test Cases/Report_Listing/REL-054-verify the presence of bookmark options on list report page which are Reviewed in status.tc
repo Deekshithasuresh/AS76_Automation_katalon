@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-054-verify the presence of bookmark options on list report page which are Reviewed in status</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>70778065-e45c-47e2-99e2-c1eca7a3c35c</testCaseGuid>
+</TestCaseEntity>

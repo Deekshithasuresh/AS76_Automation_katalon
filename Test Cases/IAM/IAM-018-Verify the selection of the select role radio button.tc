@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-018-Verify the selection of the select role radio button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>54c06f23-88a2-4ef0-aa45-9a73d861e4dc</testCaseGuid>
+</TestCaseEntity>

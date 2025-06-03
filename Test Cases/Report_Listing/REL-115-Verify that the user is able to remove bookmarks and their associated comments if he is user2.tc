@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-115-Verify that the user is able to remove bookmarks and their associated comments if he is user2</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1444e756-21e6-408b-b6d0-164766c287d1</testCaseGuid>
+</TestCaseEntity>

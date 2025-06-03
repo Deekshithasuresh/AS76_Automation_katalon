@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-019-Verify the details presence in the multiplication factor popup</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0b8870d6-0abd-4f58-9b9e-be2ad642e5f0</testCaseGuid>
+</TestCaseEntity>

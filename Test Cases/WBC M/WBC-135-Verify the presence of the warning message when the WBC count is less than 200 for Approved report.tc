@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-135-Verify the presence of the warning message when the WBC count is less than 200 for Approved report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5ed4a436-851d-4eee-a1ae-f5820e9777e2</testCaseGuid>
+</TestCaseEntity>

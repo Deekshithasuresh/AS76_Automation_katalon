@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-009-Verify the default state of the X icon button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a2316e92-51bb-499a-9cb5-ebd355cfead0</testCaseGuid>
+</TestCaseEntity>

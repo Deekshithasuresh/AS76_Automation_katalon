@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-016-Verify the count when the cells are reclassified</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9deddaab-8797-421d-b3b8-57ec70f6faa5</testCaseGuid>
+</TestCaseEntity>

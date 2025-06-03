@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-058-Verify whether the history page is recording all the events if the user updates the Deletion time</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>40283541-e513-45aa-af1a-348affbe043c</testCaseGuid>
+</TestCaseEntity>
