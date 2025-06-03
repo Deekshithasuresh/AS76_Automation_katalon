@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HIS-009-Verify re-classification of single and multiple WBC patches and the message displayed in the history</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>383c49d5-fce6-44cf-bd32-f9c8dbf670fb</testCaseGuid>
+</TestCaseEntity>

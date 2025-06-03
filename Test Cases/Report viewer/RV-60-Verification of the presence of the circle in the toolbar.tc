@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-60-Verification of the presence of the circle in the toolbar</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d4e5e453-d3a8-42eb-876b-1e04f8cd1b1a</testCaseGuid>
+</TestCaseEntity>

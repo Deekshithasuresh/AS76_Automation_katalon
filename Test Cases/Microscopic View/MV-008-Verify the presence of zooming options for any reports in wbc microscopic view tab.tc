@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-008-Verify the presence of zooming options for any reports in wbc microscopic view tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1a8299d6-8318-49b8-ae5a-8d609a284051</testCaseGuid>
+</TestCaseEntity>

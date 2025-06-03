@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-057-Verify that the zoom level in the microscopic view of the WBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>977175c5-ab4a-4cd1-aa70-c927921c55dd</testCaseGuid>
+</TestCaseEntity>

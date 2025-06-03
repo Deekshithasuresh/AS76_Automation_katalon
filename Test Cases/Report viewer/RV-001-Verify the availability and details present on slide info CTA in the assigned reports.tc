@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-001-Verify the availability and details present on slide info CTA in the assigned reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ba4611da-9519-4840-bfb7-47117237fcf2</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_1_2_3_4_5_6_7</name>
+   <tag></tag>
+   <elementGuidId>a31e3240-222c-471a-a44c-3bb8617a2b00</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//img[@src = '/icons/zoom_tool_icon_active.svg' and @alt = 'zoom-tool']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value></value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>de2ee357-f0a8-488a-b237-06f492c79f3a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>/icons/zoom_tool_icon_active.svg</value>
+      <webElementGuid>76fa4bc9-09c2-4b63-b476-60f99c295c4a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>zoom-tool</value>
+      <webElementGuid>fffd6421-91d4-4dca-a203-7ea549b0481f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/img[1]</value>
+      <webElementGuid>20a75d44-6d35-490d-bfa5-734e9c8fce40</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '/icons/zoom_tool_icon_active.svg' and @alt = 'zoom-tool']</value>
+      <webElementGuid>9a8e6010-effe-424f-bf69-dd35ba6e08b2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-74-Verification of the moving of the circle across the image to measure different cells</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b40a15ba-06f2-4d84-9c63-665c74ba73fa</testCaseGuid>
+</TestCaseEntity>

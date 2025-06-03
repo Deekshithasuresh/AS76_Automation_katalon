@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HIS-008-Verify the details present in the history page of a newly generated report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>aa1088d1-f267-4a2a-92b2-629965579788</testCaseGuid>
+</TestCaseEntity>

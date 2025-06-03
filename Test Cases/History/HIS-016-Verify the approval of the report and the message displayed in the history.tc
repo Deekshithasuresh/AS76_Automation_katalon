@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HIS-016-Verify the approval of the report and the message displayed in the history</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e42970b4-202d-4a2b-ad15-5b81c07d2a9d</testCaseGuid>
+</TestCaseEntity>

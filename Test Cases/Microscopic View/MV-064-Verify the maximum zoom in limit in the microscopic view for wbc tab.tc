@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-064-Verify the maximum zoom in limit in the microscopic view for wbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>18f15d3b-a516-4f17-a36a-1e98cde6a848</testCaseGuid>
+</TestCaseEntity>

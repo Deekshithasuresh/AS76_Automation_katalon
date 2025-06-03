@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-014-Verify the details presence on slide image area</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dd3f6c14-c31b-4aa9-99c8-bdcd42fe14e3</testCaseGuid>
+</TestCaseEntity>

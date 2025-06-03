@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HIS-017-Verify that the user should not be able to modify or update the history</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7ecc1d92-49e8-48f6-a25a-8014b1e0f1a1</testCaseGuid>
+</TestCaseEntity>

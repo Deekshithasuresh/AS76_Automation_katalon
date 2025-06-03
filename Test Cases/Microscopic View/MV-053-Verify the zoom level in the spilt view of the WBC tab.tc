@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-053-Verify the zoom level in the spilt view of the WBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>26598cc7-d850-4447-95d9-b3323331f349</testCaseGuid>
+</TestCaseEntity>

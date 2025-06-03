@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-44-Verify whether the user is able to set the Hue level to maximum value or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d72ef82c-8aa3-49c0-a830-1ce8ed6f1776</testCaseGuid>
+</TestCaseEntity>

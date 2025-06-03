@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-38-Verify whether the user is able to increase the range of Saturation or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>44c77fcb-e836-4a88-8d19-787392b57ce5</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-089-Verify the default home level zoom in the Wbc split view tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b047e57d-2deb-41f0-a4b9-933d54f3bb81</testCaseGuid>
+</TestCaseEntity>

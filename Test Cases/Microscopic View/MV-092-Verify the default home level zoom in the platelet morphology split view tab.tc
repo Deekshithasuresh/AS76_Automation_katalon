@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-092-Verify the default home level zoom in the platelet morphology split view tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6b3bb0c9-a75a-4592-a991-5e2962b61799</testCaseGuid>
+</TestCaseEntity>

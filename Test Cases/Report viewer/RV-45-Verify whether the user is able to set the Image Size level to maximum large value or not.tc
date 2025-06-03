@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-45-Verify whether the user is able to set the Image Size level to maximum large value or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>557aa79f-4710-4d6a-85a0-e9828bf4ae83</testCaseGuid>
+</TestCaseEntity>

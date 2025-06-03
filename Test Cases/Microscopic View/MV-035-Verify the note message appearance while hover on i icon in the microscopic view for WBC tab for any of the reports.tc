@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-035-Verify the note message appearance while hover on i icon in the microscopic view for WBC tab for any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>99e54f4d-acb2-4f8a-b07f-299da3c99ba7</testCaseGuid>
+</TestCaseEntity>

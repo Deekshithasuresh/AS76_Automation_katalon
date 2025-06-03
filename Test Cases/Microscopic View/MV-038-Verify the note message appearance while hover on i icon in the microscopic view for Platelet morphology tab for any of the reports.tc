@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-038-Verify the note message appearance while hover on i icon in the microscopic view for Platelet morphology tab for any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fd27a05d-a5f7-4748-a5e0-9fa81631116e</testCaseGuid>
+</TestCaseEntity>

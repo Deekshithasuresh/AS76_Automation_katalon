@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Slide Id</name>
+   <tag></tag>
+   <elementGuidId>ef97fc15-eb66-4b42-998f-0f4903116968</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='specimen-info']/div[3]/div/div/div/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.slideInfoComponent_drawer__header-title--grey__uQeXB</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#specimen-info >> internal:text=&quot;Slide Id:&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>e6d0e31b-80f1-42b8-9dea-b5ec32f0b451</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>slideInfoComponent_drawer__header-title--grey__uQeXB</value>
+      <webElementGuid>8d1ca52f-8971-4d42-aae3-0c8a47b91be7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Slide Id:</value>
+      <webElementGuid>1bc42e29-1d67-43c1-9515-31707377ee04</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;specimen-info&quot;)/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-elevation16 MuiDrawer-paper MuiDrawer-paperAnchorLeft css-wf16b5&quot;]/div[1]/div[@class=&quot;slideInfoComponent_drawer__header__Hloem&quot;]/div[@class=&quot;slideInfoComponent_drawer__header-title__FMLhj&quot;]/span[@class=&quot;slideInfoComponent_drawer__header-title--grey__uQeXB&quot;]</value>
+      <webElementGuid>655b1ebc-0072-4ec6-b257-a6bfefcc2cdc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='specimen-info']/div[3]/div/div/div/span</value>
+      <webElementGuid>e7e14bba-9599-4835-b236-4f3d3763a0db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='›'])[1]/following::span[3]</value>
+      <webElementGuid>3afda864-a2d7-4386-9e81-dcc02e28070e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SIG0146'])[2]/preceding::span[1]</value>
+      <webElementGuid>f9cdfb94-8c20-4904-b07a-bda2fb6ebbd5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Under review'])[1]/preceding::span[2]</value>
+      <webElementGuid>9e736536-b425-440c-b3ea-54fc0537b105</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[3]/div/div/div/span</value>
+      <webElementGuid>b964d9cd-8048-4d1e-8279-99b65c922d26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Slide Id:' or . = 'Slide Id:')]</value>
+      <webElementGuid>ff916647-6ef8-4737-b0ba-178e9c08c365</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::span[3]</value>
+      <webElementGuid>ca52173e-d1d2-4771-a668-93e5e89979cf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div/span</value>
+      <webElementGuid>a09e8f2d-df73-4305-bf52-6f8cdd3af7c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='To be reviewed'])[1]/preceding::span[2]</value>
+      <webElementGuid>3823c6ab-16f8-4f16-a276-3ad052b6644b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[5]/following::span[3]</value>
+      <webElementGuid>e67ce6d7-2e85-4952-84df-3e9585f90f82</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SIG0015'])[2]/preceding::span[1]</value>
+      <webElementGuid>cbe94f26-f0e3-4633-87ab-70ae6ccb0e18</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Teardrop Cells_1</name>
+   <tag></tag>
+   <elementGuidId>579b7e5c-2964-489e-ac6e-71d159445f45</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/div[2]/table/tbody/tr[3]/td/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Teardrop Cells&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>3f4dd920-e511-4980-ae47-f7d1037681b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>cell-label </value>
+      <webElementGuid>66ce69fe-14af-4ed6-ab1b-9788bf7d344d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Teardrop Cells</value>
+      <webElementGuid>ffad5a06-4698-4a27-a1c7-cd5e2fdcb020</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[1]/div[1]/div[@class=&quot;rbc-microscopic-left-pane&quot;]/div[1]/div[2]/table[@class=&quot;theame-table&quot;]/tbody[1]/tr[@class=&quot;valid&quot;]/td[1]/div[@class=&quot;cell-selection&quot;]/div[@class=&quot;cell-label&quot;]</value>
+      <webElementGuid>c48bda21-e579-426c-98df-871f30fd0de3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/div[2]/table/tbody/tr[3]/td/div/div</value>
+      <webElementGuid>943bd568-6bd0-4b8a-a1ce-0d855c0fceb4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Elliptocytes'])[1]/following::div[4]</value>
+      <webElementGuid>d98cdec2-3957-4027-8177-94b97f6c4746</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ovalocytes'])[1]/following::div[8]</value>
+      <webElementGuid>ad2291be-fb51-431b-8ff2-f2fdd0c600b5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fragmented Cells'])[1]/preceding::div[3]</value>
+      <webElementGuid>93a1b4e1-03d2-41ca-a99d-2a8f582c86c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Target Cells'])[1]/preceding::div[7]</value>
+      <webElementGuid>42abf0de-e68f-48f6-840f-4ad13db0427c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Teardrop Cells']/parent::*</value>
+      <webElementGuid>eff599c6-58d8-4196-9335-5c0008bc1b2a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[3]/td/div/div</value>
+      <webElementGuid>c3d0db69-a497-464e-ac53-081122454deb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Teardrop Cells' or . = 'Teardrop Cells')]</value>
+      <webElementGuid>3584742c-b342-49e9-ab17-88933dd43c26</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

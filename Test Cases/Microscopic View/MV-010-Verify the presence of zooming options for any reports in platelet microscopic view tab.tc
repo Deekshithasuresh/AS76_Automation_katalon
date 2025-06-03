@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-010-Verify the presence of zooming options for any reports in platelet microscopic view tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>79fcbe3a-be3b-49d9-b6ea-db39ad8dbd5a</testCaseGuid>
+</TestCaseEntity>

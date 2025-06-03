@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-082-Verify the panning of the image with the circle fixed in the centre of the canvas for Platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>131ee084-d432-4bd8-a5ee-0de03b7ad360</testCaseGuid>
+</TestCaseEntity>

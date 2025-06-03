@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-011-Verify the functionality of the zooming of the specimen using zoom in buttons in wbc microscopic view tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>419b6803-e939-4d8c-8269-a9a6b5bacc3d</testCaseGuid>
+</TestCaseEntity>

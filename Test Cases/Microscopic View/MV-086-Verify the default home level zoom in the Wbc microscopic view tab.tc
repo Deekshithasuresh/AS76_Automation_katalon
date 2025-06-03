@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-086-Verify the default home level zoom in the Wbc microscopic view tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ded3758e-a0eb-4c5d-8d37-c91a8ba9af4a</testCaseGuid>
+</TestCaseEntity>

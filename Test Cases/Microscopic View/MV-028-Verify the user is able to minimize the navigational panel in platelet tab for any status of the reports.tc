@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-028-Verify the user is able to minimize the navigational panel in platelet tab for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5824cffc-d0c3-4290-8879-8cc86608c211</testCaseGuid>
+</TestCaseEntity>

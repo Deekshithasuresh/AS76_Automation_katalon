@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-014-Verify the functionality of the zooming of the specimen using zoom out buttons, in WBC tab for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>eece9039-c962-4933-a085-8cb441fe54d8</testCaseGuid>
+</TestCaseEntity>

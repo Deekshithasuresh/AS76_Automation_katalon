@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-50-Verify the removal of scan time in the slide ID details for Generated report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>37f6191d-408d-473c-a7c1-e468cb4c5853</testCaseGuid>
+</TestCaseEntity>

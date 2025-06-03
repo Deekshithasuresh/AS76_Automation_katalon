@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-042-Verify the options present below the Mark CTA option in the microscopic view for wbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1ec7ce7a-6553-4430-909b-0c18fbbe9cf5</testCaseGuid>
+</TestCaseEntity>

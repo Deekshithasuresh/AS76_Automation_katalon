@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-77-Verify the functionality of dragging the image when linear scale line is selected from tool bar from RBC Tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>35ec6ed4-c8d9-4189-b5b1-fae37f0d9efc</testCaseGuid>
+</TestCaseEntity>

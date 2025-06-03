@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-020-Verify the functionality of home button in any of the reports in wbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a31be6ce-5eb0-49e4-b930-cf1d72e76598</testCaseGuid>
+</TestCaseEntity>

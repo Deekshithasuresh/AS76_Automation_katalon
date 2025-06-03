@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-045-Verify that there is a message when the zoom level is between 100 to 200 in the WBC microscopic view</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>68e9d3bc-95af-438a-8ce8-db2786c3099a</testCaseGuid>
+</TestCaseEntity>

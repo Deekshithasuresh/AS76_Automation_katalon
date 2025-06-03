@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HIS-018-Verify the regrading of RBC cell types and the message displayed in the history</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0368e46b-735a-4eb2-847a-3888499c900d</testCaseGuid>
+</TestCaseEntity>

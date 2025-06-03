@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-61-Verify the presence of visual cue for area of extraction in Platelet-count tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8786305d-6a90-4a9a-86ed-847584b1f7f3</testCaseGuid>
+</TestCaseEntity>

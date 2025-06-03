@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-041-Verify the presence of Mark area CTA option in the microscopic view for Morphology tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d0e78974-50b3-4bf7-9ff0-6ba1fc1e1313</testCaseGuid>
+</TestCaseEntity>

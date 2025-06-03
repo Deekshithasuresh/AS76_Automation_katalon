@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-090-Verify the default home level zoom in the rbc split view tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>903f83da-7ba1-456c-8e5b-a2ff652a78b5</testCaseGuid>
+</TestCaseEntity>

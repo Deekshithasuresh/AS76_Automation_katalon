@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-006-VerifY the presence of the image settings options in the PBS report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1e1629e0-ab8b-4c40-b179-ca0ba1386fe1</testCaseGuid>
+</TestCaseEntity>

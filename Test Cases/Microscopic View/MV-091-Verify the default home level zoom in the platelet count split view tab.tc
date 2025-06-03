@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-091-Verify the default home level zoom in the platelet count split view tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c2aed3b8-887b-471f-8e13-7ed606cb227d</testCaseGuid>
+</TestCaseEntity>

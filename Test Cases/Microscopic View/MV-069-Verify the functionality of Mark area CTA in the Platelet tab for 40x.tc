@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-069-Verify the functionality of Mark area CTA in the Platelet tab for 40x</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f5d080a8-6dd4-4c28-b0b2-55ea0657845c</testCaseGuid>
+</TestCaseEntity>

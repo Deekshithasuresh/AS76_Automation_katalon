@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Scanned on</name>
+   <tag></tag>
+   <elementGuidId>099b4928-cdbf-4339-8637-74fbd57bfd45</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='specimen-info']/div[3]/div/div[2]/div[2]/div[2]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Scanned on&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>88bfba15-27ce-435f-877c-2de62f128490</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Scanned on</value>
+      <webElementGuid>18973542-1cbc-4275-a775-9e7d66192cfe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;specimen-info&quot;)/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-elevation16 MuiDrawer-paper MuiDrawer-paperAnchorLeft css-wf16b5&quot;]/div[1]/div[@class=&quot;slideInfoComponent_drawer__body__abbGp&quot;]/div[@class=&quot;slideInfoComponent_drawer__body-info__rBKp8&quot;]/div[@class=&quot;slideInfoComponent_drawer__body-info-item__vTpE3 slideInfoComponent_drawer__body-info-item--half-width__z8fuU&quot;]/span[1]</value>
+      <webElementGuid>b588dfaa-4c17-49af-8af3-3c1340dd3fcb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='specimen-info']/div[3]/div/div[2]/div[2]/div[2]/span</value>
+      <webElementGuid>b8dc74dc-5bc4-4f45-8e40-778ebb704e76</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='sanadmin'])[1]/following::span[1]</value>
+      <webElementGuid>ebe374d5-f243-4234-b1a6-a4dcda5c6aec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Scanned by'])[1]/following::span[2]</value>
+      <webElementGuid>c305dc33-b1af-4952-91c6-8b24158d591d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Scanned on']/parent::*</value>
+      <webElementGuid>520b7f9e-6679-4eca-bc70-a3b8ad552113</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div[2]/div[2]/div[2]/span</value>
+      <webElementGuid>7b6f60c2-01b9-4766-a5bc-960472e89927</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Scanned on' or . = 'Scanned on')]</value>
+      <webElementGuid>64c62259-629d-4e54-a936-08b0ea94d99a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div[2]/span</value>
+      <webElementGuid>ef008fba-fdeb-47b5-a3c1-c47221a52b07</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
