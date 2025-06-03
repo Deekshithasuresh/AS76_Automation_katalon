@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-098-Verify the presence of disclaimer message in the platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>057d32da-aaee-48a7-8b45-4a506462a226</testCaseGuid>
+</TestCaseEntity>

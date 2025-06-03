@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Image settings_default-patch  patch-foc_a6a738 (1)</name>
+   <tag></tag>
+   <elementGuidId>b4ac550e-37a8-4bf5-acf5-2735e80d7fb3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.default-patch.patch-focus-mode.show-subcell-lable.enabled.patch-menu-container</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='platelet_49583_20972.jpg-patch-image-reivew']/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[id=&quot;platelet_49583_20972\.jpg-patch-image-reivew&quot;] div >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>bdefb2a3-60e2-4652-a984-8a0f4709bbe6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value> default-patch  patch-focus-mode show-subcell-lable  enabled patch-menu-container</value>
+      <webElementGuid>a2130bc4-9da3-4904-87ee-77f004a2d01f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;platelet_49583_20972.jpg-patch-image-reivew&quot;)/div[@class=&quot;patch-img-container patch-focus-mode&quot;]/div[@class=&quot;default-patch  patch-focus-mode show-subcell-lable  enabled patch-menu-container&quot;]</value>
+      <webElementGuid>ca74c864-9c72-47ef-b9dc-768c125b5563</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='platelet_49583_20972.jpg-patch-image-reivew']/div/div</value>
+      <webElementGuid>325e2200-fc5f-40c6-8924-b935f50d7393</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::div[9]</value>
+      <webElementGuid>476d8482-273d-4b52-a7bd-1d1bc046fc05</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[3]/following::div[14]</value>
+      <webElementGuid>3fff6703-3f2f-4160-8a47-ddae48ee20c8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[2]/div/div[2]/div/div/div/div/div/div/div/div</value>
+      <webElementGuid>d83036b3-5240-40b4-9d23-3c437c2c8380</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

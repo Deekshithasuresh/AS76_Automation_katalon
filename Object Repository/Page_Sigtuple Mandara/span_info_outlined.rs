@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_info_outlined</name>
+   <tag></tag>
+   <elementGuidId>fc21945e-f68e-4de5-8c66-7cd5b7e57073</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='tablecontainer']/table/tbody/tr/td/span/span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.material-icons.material-icons-outlined.ng-tns-c42-62.ng-star-inserted</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>span >> internal:has-text=/^info_outlined$/</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a2d9e8d7-3eca-4b05-ac34-16a183dffe5e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>material-icons material-icons-outlined ng-tns-c42-62 ng-star-inserted</value>
+      <webElementGuid>d00fb4c7-421b-4512-88a9-e2843b7eca42</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>info_outlined</value>
+      <webElementGuid>4a65baab-cd6d-42d3-aa3d-fbb2669b41aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tablecontainer&quot;)/table[@class=&quot;ng-tns-c42-62&quot;]/tbody[@class=&quot;ng-tns-c42-62&quot;]/tr[@class=&quot;ng-tns-c42-62 active cursor-pointer ng-star-inserted&quot;]/td[@class=&quot;ng-star-inserted&quot;]/span[@class=&quot;column-value ng-tns-c42-62 ng-star-inserted&quot;]/span[@class=&quot;material-icons material-icons-outlined ng-tns-c42-62 ng-star-inserted&quot;]</value>
+      <webElementGuid>0e354632-a151-4dc3-9cf7-4805326a4d39</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='tablecontainer']/table/tbody/tr/td/span/span[2]</value>
+      <webElementGuid>0921fefa-d5f6-4265-9582-c99e771e09bd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Neutrophils'])[1]/following::span[1]</value>
+      <webElementGuid>eae201b0-8f2a-41a2-9bc7-7a5b14490e97</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Percentage'])[1]/following::span[3]</value>
+      <webElementGuid>79d9fe71-4523-4379-af15-43720c39ce01</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='remove_circle_outline'])[1]/preceding::span[7]</value>
+      <webElementGuid>bd971833-488c-437f-968e-ea54b1cd4d73</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Band Neut'])[1]/preceding::span[8]</value>
+      <webElementGuid>a5a8f90b-5cc3-4c10-a58c-398b9adf9a1b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/span[2]</value>
+      <webElementGuid>4ee06921-bb0e-45ea-8fbd-539dadfc8e70</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'info_outlined' or . = 'info_outlined')]</value>
+      <webElementGuid>642a4fe1-e889-4975-9c9b-dffd6b1d214c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

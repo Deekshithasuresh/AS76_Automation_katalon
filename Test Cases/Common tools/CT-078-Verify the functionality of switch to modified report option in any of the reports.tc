@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-078-Verify the functionality of switch to modified report option in any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a8ba95c8-a0e6-4ede-9034-e8be1a62c6fb</testCaseGuid>
+</TestCaseEntity>

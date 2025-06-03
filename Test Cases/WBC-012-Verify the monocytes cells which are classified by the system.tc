@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-012-Verify the monocytes cells which are classified by the system</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5d777686-5c23-484a-8c21-baafffbe8087</testCaseGuid>
+</TestCaseEntity>

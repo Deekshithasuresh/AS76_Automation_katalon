@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-013-Verify the presence of downloaded button in any of the specific tab for any status of the report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ab34bbeb-8702-48d6-98f3-34beb4d197a5</testCaseGuid>
+</TestCaseEntity>

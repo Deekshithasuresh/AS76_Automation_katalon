@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-017-Verify the downloading and saving a single patch in the Rbc tab for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d27ded90-3bce-414b-8b67-8bf86f673adc</testCaseGuid>
+</TestCaseEntity>

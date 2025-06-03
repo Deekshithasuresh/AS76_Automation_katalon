@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-105-Verify the viewing of the multiple tab at a time</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e56bdc57-f4e0-4cbc-b7fb-7bde32240e8f</testCaseGuid>
+</TestCaseEntity>

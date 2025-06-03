@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_SIG-Sig-3rse-1</name>
+   <tag></tag>
+   <elementGuidId>ec0dd600-c94c-4115-97f5-a244f6aaa2f4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='vvb'])[1]/following::td[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.mat-cell.cdk-column-installation-name.mat-column-installation-name.ng-tns-c26-10.row-value.ng-star-inserted</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=gridcell[name=&quot;SIG-Sig-3rse-1&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>bec0b19a-ba17-479e-ad55-da576a5da627</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mat-cell cdk-column-installation-name mat-column-installation-name ng-tns-c26-10 row-value ng-star-inserted</value>
+      <webElementGuid>22cc15aa-b6c2-4bce-ac51-45cdfe2f1998</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>gridcell</value>
+      <webElementGuid>17435a6c-ebf7-4039-b151-d41419ec88df</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> SIG-Sig-3rse-1 </value>
+      <webElementGuid>5ecc1eef-a157-49f0-82b6-608f1c82dac4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/app-root[1]/div[@class=&quot;mandara-app&quot;]/div[1]/app-list-reports[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;list-reports&quot;]/app-analysis-report[1]/div[@class=&quot;analysis-report&quot;]/div[@class=&quot;container analysis-report-table-wrapper&quot;]/app-table[@class=&quot;ng-tns-c26-10 ng-star-inserted&quot;]/table[@class=&quot;mat-table mat-elevation-z8 custom-table&quot;]/tbody[1]/tr[@class=&quot;mat-row ng-tns-c26-10 expand-element-row parentrow ng-star-inserted&quot;]/td[@class=&quot;mat-cell cdk-column-installation-name mat-column-installation-name ng-tns-c26-10 row-value ng-star-inserted&quot;]</value>
+      <webElementGuid>4dc6be1a-f280-4cb7-aa7a-1010fb528e4b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='vvb'])[1]/following::td[1]</value>
+      <webElementGuid>c8761947-8f59-4f51-9075-1d3b814ee0e9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='EFGG'])[1]/following::td[2]</value>
+      <webElementGuid>9dc455bd-d918-44dc-83b1-f40af34c1cbe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='santosh'])[1]/preceding::td[1]</value>
+      <webElementGuid>df0c1d53-cbc6-412a-aaae-861c205b052b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[6]</value>
+      <webElementGuid>4e6f9038-6e87-4544-a4c6-b39b629860b7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = ' SIG-Sig-3rse-1 ' or . = ' SIG-Sig-3rse-1 ')]</value>
+      <webElementGuid>5df639fe-5bc7-419d-8697-6293135545fd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

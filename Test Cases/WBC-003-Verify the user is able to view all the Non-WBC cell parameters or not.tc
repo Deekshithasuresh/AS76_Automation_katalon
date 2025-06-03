@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-003-Verify the user is able to view all the Non-WBC cell parameters or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cca03688-10f4-4fac-a0ff-fe509fdd3495</testCaseGuid>
+</TestCaseEntity>

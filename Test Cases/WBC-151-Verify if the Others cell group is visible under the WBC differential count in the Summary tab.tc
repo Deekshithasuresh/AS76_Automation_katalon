@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-151-Verify if the Others cell group is visible under the WBC differential count in the Summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ad9b7bca-1ba1-4466-9ef6-8183b6c5568c</testCaseGuid>
+</TestCaseEntity>

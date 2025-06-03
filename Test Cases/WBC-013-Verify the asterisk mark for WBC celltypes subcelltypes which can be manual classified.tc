@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>(*)</description>
+   <name>WBC-013-Verify the asterisk mark for WBC celltypes subcelltypes which can be manual classified</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7c1fcc84-9c64-43d3-beea-d2c0c34c3a06</testCaseGuid>
+</TestCaseEntity>

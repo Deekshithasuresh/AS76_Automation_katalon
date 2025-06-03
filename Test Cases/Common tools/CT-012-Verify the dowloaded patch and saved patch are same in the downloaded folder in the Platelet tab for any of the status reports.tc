@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-012-Verify the dowloaded patch and saved patch are same in the downloaded folder in the Platelet tab for any of the status reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b739a7eb-6f8d-4627-b8a6-c2169ce84b90</testCaseGuid>
+</TestCaseEntity>
