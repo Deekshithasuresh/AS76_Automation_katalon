@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-029- Verify the presence of X Icon in the list report page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>48e7a296-48eb-41e8-b920-c4b6950bc7cf</testCaseGuid>
+</TestCaseEntity>

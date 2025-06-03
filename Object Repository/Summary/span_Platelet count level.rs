@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Platelet count level</name>
+   <tag></tag>
+   <elementGuidId>47f7de5e-b3fe-4877-9cda-fad2ad230703</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>span.reportSummary_pane-body__table-row__name--special__49bII</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[3]/div[2]/div/div/div/div/div/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Platelet count level&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>cfef5915-0718-446e-9bf8-7bc9c1774cbf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>reportSummary_pane-body__table-row__name--special__49bII</value>
+      <webElementGuid>5f4a1dbe-aad1-4e8e-a0e3-94f9ffc3f74d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Platelet count level</value>
+      <webElementGuid>76c2ab5c-3500-426e-944d-34d40f1e9703</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2&quot;]/div[@class=&quot;reportSummary_pane-body__jz6aq&quot;]/div[@class=&quot;reportSummary_pane-body__table__Abad5&quot;]/div[@class=&quot;reportSummary_pane-body__table-container__29LjS&quot;]/div[1]/div[@class=&quot;reportSummary_pane-body__table-row__Yg0cg&quot;]/div[@class=&quot;reportSummary_pane-body__table-row__name__XCUeF&quot;]/span[@class=&quot;reportSummary_pane-body__table-row__name--special__49bII&quot;]</value>
+      <webElementGuid>09fdddc2-7dc7-40c8-8f51-0061b75ced0f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[3]/div[2]/div/div/div/div/div/span</value>
+      <webElementGuid>9367eac0-77a5-419c-87dc-196618a7f841</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Platelet'])[1]/following::span[2]</value>
+      <webElementGuid>f9e17148-01c3-4b85-99f0-c9a80b69c987</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Poikilocytosis'])[1]/following::span[7]</value>
+      <webElementGuid>fcce9353-3a0c-4b4b-881b-7a3dc136debb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Significantly decreased'])[1]/preceding::span[1]</value>
+      <webElementGuid>f91b9d6e-f8cd-4e12-bde3-07302fb4e74a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Large Platelets'])[1]/preceding::span[2]</value>
+      <webElementGuid>996a3f2e-5102-4587-ab70-728f1a7644f2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Platelet count level']/parent::*</value>
+      <webElementGuid>c4d770f0-61cd-4271-ae42-37fd5806f9cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[2]/div/div/div/div/div/span</value>
+      <webElementGuid>e9871823-2613-4592-b66e-7e04dc2e9b5d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Platelet count level' or . = 'Platelet count level')]</value>
+      <webElementGuid>e6c3e6c5-bdd5-4c0e-8a4b-e17e40b485d9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Polychromatic Cells'])[1]/following::span[7]</value>
+      <webElementGuid>8efa7601-7f62-4388-8ba2-fcb88d7e7488</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fragmented Cells'])[1]/following::span[7]</value>
+      <webElementGuid>c50e0cc3-fe11-41d9-8f1f-efe458ff585d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

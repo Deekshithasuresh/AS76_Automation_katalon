@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Sickle Cells</name>
+   <tag></tag>
+   <elementGuidId>ef6e1a0f-7c71-471e-a2a9-79b76a82db66</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div[8]/div/span[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Sickle Cells&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>58d39b42-0434-462a-a701-2c88546721a1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Sickle Cells</value>
+      <webElementGuid>b94953e6-1e1d-4921-8a12-a50bdcc2f6a3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2&quot;]/div[@class=&quot;reportSummary_pane-body__jz6aq&quot;]/div[@class=&quot;reportSummary_pane-body__table__Abad5&quot;]/div[@class=&quot;reportSummary_pane-body__table-container__29LjS&quot;]/div[2]/div[@class=&quot;reportSummary_pane-body__table-row__Yg0cg&quot;]/div[@class=&quot;reportSummary_pane-body__table-row__name__XCUeF&quot;]/span[2]</value>
+      <webElementGuid>6d8cbc34-334b-4b30-bb74-7aa9c9819155</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div[8]/div/span[2]</value>
+      <webElementGuid>d22f9b8e-c6af-4a56-ae25-12d1aff3ee4e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Acanthocytes'])[1]/following::span[6]</value>
+      <webElementGuid>f7a97ee1-ab76-4d67-95da-61d2a3672d29</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Echinocytes'])[1]/following::span[12]</value>
+      <webElementGuid>3d6b36c7-6f5a-4051-acd9-6849190cdd51</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Stomatocytes'])[1]/preceding::span[6]</value>
+      <webElementGuid>f44f6709-9a78-422f-aa4e-f56871a6a9a8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Poikilocytosis'])[1]/preceding::span[12]</value>
+      <webElementGuid>0405d6d5-a560-43f0-a420-63bc20b18b18</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Sickle Cells']/parent::*</value>
+      <webElementGuid>293eec6e-9c8a-4015-b087-20926e7dc10f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[8]/div/span[2]</value>
+      <webElementGuid>0047d44a-8d81-45de-8611-21c3383da95c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Sickle Cells' or . = 'Sickle Cells')]</value>
+      <webElementGuid>33c3ae35-395c-4aa1-93a0-ff780c659951</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

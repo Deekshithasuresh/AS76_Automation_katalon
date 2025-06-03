@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Color_reportSummary_circle__hehJK repo_547758</name>
+   <tag></tag>
+   <elementGuidId>e2ee9a48-d18a-41bf-9361-721a558eaf44</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[3]/div[2]/div/div/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div:nth-child(3) > div:nth-child(2) > div > .reportSummary_pane-body__table-row__name__XCUeF > .reportSummary_circle__hehJK >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>de44e59b-f359-4bd9-8ce4-efae0666891b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>reportSummary_circle__hehJK reportSummary_circle--red__kaUDX</value>
+      <webElementGuid>c0707c9e-7f40-4696-8638-cfe076d69444</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2&quot;]/div[@class=&quot;reportSummary_pane-body__jz6aq&quot;]/div[@class=&quot;reportSummary_pane-body__table__Abad5&quot;]/div[@class=&quot;reportSummary_pane-body__table-container__29LjS&quot;]/div[2]/div[@class=&quot;reportSummary_pane-body__table-row__Yg0cg&quot;]/div[@class=&quot;reportSummary_pane-body__table-row__name__XCUeF&quot;]/span[@class=&quot;reportSummary_circle__hehJK reportSummary_circle--red__kaUDX&quot;]</value>
+      <webElementGuid>910384cc-fe1a-438a-a6bc-1604fcdc75d8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[3]/div[2]/div/div/span</value>
+      <webElementGuid>ee93f74d-d5bc-49df-974d-3023125f4b19</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[2]/div/div/span</value>
+      <webElementGuid>12323dec-83a7-4da3-a42e-5785a7e5e81a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-064-Verification of the displaying of the status for an assigned sample which is opened</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>904bf6cb-52e8-4c45-9ab2-b2765ab4cef1</testCaseGuid>
+</TestCaseEntity>

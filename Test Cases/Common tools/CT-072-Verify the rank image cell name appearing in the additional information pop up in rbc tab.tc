@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-072-Verify the rank image cell name appearing in the additional information pop up in rbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5b445f5c-843d-4004-8804-c91e03ff40cb</testCaseGuid>
+</TestCaseEntity>

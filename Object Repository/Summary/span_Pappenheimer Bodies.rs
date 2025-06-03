@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Pappenheimer Bodies</name>
+   <tag></tag>
+   <elementGuidId>af9c0e43-aefb-4e90-ada0-b94f303ea2a9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[4]/div[2]/div[2]/div/span[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Pappenheimer Bodies&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>ba1a791f-cb59-4c4e-9b79-45a958613da6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Pappenheimer Bodies</value>
+      <webElementGuid>23988730-1c75-4983-b35e-54372984aa63</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2&quot;]/div[@class=&quot;reportSummary_pane-body__jz6aq&quot;]/div[@class=&quot;reportSummary_pane-body__table__Abad5&quot;]/div[@class=&quot;reportSummary_pane-body__table-container__29LjS&quot;]/div[2]/div[@class=&quot;reportSummary_pane-body__table-row__Yg0cg&quot;]/div[@class=&quot;reportSummary_pane-body__table-row__name__XCUeF&quot;]/span[2]</value>
+      <webElementGuid>10737ecb-9532-42c9-8328-8621d63b0a44</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[4]/div[2]/div[2]/div/span[2]</value>
+      <webElementGuid>23641649-0d27-43ea-ae94-32772f7f5894</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Howell-Jolly Bodies'])[1]/following::span[6]</value>
+      <webElementGuid>50f4b3a7-b953-4590-8ec0-a34788c45989</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Inclusions'])[1]/following::span[8]</value>
+      <webElementGuid>e6ce856d-0b0c-445a-b27c-834c8f60dd2e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Basophilic Stippling'])[1]/preceding::span[6]</value>
+      <webElementGuid>a742dc51-c04a-459e-b6f5-a6f32b401a0c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Platelet'])[1]/preceding::span[11]</value>
+      <webElementGuid>f16fa959-8360-4232-8b8f-b3b5bff37a9f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Pappenheimer Bodies']/parent::*</value>
+      <webElementGuid>6704e19c-44ef-4022-910b-eb4e320f5620</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div[2]/div[2]/div/span[2]</value>
+      <webElementGuid>add3b863-6fef-48aa-9632-ae63e085377c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Pappenheimer Bodies' or . = 'Pappenheimer Bodies')]</value>
+      <webElementGuid>d122d07a-5b48-4214-92ba-045cd3977ea2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

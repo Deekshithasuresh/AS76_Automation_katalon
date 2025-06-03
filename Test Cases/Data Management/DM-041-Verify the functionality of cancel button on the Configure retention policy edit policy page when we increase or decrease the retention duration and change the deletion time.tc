@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-041-Verify the functionality of cancel button on the Configure retention policy edit policy page when we increase or decrease the retention duration and change the deletion time</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f5fdb15d-9aa5-414e-9c6d-49840c6c2a42</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>neutrophil_count</name>
+   <tag></tag>
+   <elementGuidId>ca9c9fd6-88db-447d-907f-d70ccba1e916</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value> //table//tr[td[1][normalize-space()='Neutrophils']]/td[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td:nth-of-type(2)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;79&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>ef868b62-598c-4e8a-b2e1-3cf96603db84</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>79</value>
+      <webElementGuid>f4991ae7-f7b0-4426-aba8-891f7bd6d59c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;box MuiBox-root css-i9gxme&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2.8 grid-left wbc css-lufqp2&quot;]/div[@class=&quot;cell-table-tab&quot;]/table[@class=&quot;theame-table&quot;]/tbody[1]/tr[@class=&quot;selected-row enabled&quot;]/td[2]</value>
+      <webElementGuid>d1524fa3-647e-49de-925f-f953ef6e5c6c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr/td[2]</value>
+      <webElementGuid>d736d66c-1807-4671-8c9a-715cf024f13c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Neutrophils'])[1]/following::td[1]</value>
+      <webElementGuid>e81c3a9b-8f39-4d21-b4d5-61fcad210723</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Band Forms'])[1]/preceding::td[2]</value>
+      <webElementGuid>043aa8f8-07fd-44b9-bb5f-9da9f9b33c82</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[1]/preceding::td[3]</value>
+      <webElementGuid>7799f877-a44b-4afe-8f48-dd99890489f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='79']/parent::*</value>
+      <webElementGuid>60983edf-1b2c-48a3-bd99-350326918e0e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]</value>
+      <webElementGuid>b4a554c8-86f4-46ee-8923-05cdb08569c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '79' or . = '79')]</value>
+      <webElementGuid>b995f5b5-1439-45f6-be2d-3596d0fa34cd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

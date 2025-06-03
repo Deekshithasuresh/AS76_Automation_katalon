@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-072-Verify the status of the bookmark if any filter is applied</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>80d33b71-29f5-495b-9a27-1b12e47498d5</testCaseGuid>
+</TestCaseEntity>

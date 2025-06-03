@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-112-Verify whether the logged in user can view and edit the bookmark reports and comments which is book marked and commented by himself</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d756f9fa-904a-4d1a-ab44-8a1f3b795fc2</testCaseGuid>
+</TestCaseEntity>

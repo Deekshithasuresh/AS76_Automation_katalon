@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Report Approved_msg</name>
+   <tag></tag>
+   <elementGuidId>f9b571f0-afbc-4754-a9b8-e498e3101525</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.header</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[4]/div/div/div/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Report Approved&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>7df948d1-c0da-405a-91be-93c64076bfce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>header</value>
+      <webElementGuid>aa68ad24-c905-4faa-896f-854de56aa699</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Report Approved</value>
+      <webElementGuid>a49870c2-0e02-497e-ad78-8b5abd4dee79</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;MuiSnackbar-root MuiSnackbar-anchorOriginTopRight css-3sz7wh&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-elevation6 MuiSnackbarContent-root css-wy4bgv&quot;]/div[@class=&quot;MuiSnackbarContent-message css-1w0ym84&quot;]/div[@class=&quot;classified-snackbar&quot;]/div[@class=&quot;header-row&quot;]/div[@class=&quot;header&quot;]</value>
+      <webElementGuid>cf39e67c-d035-4b7e-963f-89f9ddf87173</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[4]/div/div/div/div/div</value>
+      <webElementGuid>ef76ab97-5bce-4f57-a9a0-c3677ab4a118</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[5]/following::div[7]</value>
+      <webElementGuid>5d0abd12-8ac9-4501-ab9f-c454537d043f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='r has been successfully approved'])[1]/preceding::div[1]</value>
+      <webElementGuid>b6184a21-71d3-40dc-b8b3-c7d9b20866bc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Report Approved']/parent::*</value>
+      <webElementGuid>13578b27-4c40-4059-b43d-12cb7792971b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div/div/div/div</value>
+      <webElementGuid>49131af6-3ff5-45df-a938-c1a8872ca3a2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Report Approved' or . = 'Report Approved')]</value>
+      <webElementGuid>3cd7076e-7017-4f94-86fa-a0fdd95cc638</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

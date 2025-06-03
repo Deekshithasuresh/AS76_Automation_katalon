@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-077-Verification of the components available on the filter pop-up screen</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6de52110-baf6-4cbe-a698-793ad333b2d8</testCaseGuid>
+</TestCaseEntity>

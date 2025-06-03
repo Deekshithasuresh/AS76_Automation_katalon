@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Sickle Cells_1</name>
+   <tag></tag>
+   <elementGuidId>baea5e39-6ca4-4959-b1b8-34db017a921a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div[8]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Sickle Cells$/ >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>904db874-6d8e-4cce-94c2-bfd4bf449b38</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>reportSummary_pane-body__table-row__name__XCUeF</value>
+      <webElementGuid>b5959f03-5891-48b0-9b90-414e9d73f480</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Sickle Cells</value>
+      <webElementGuid>be3944ec-bb37-4401-9c21-947112d4ee1a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2&quot;]/div[@class=&quot;reportSummary_pane-body__jz6aq&quot;]/div[@class=&quot;reportSummary_pane-body__table__Abad5&quot;]/div[@class=&quot;reportSummary_pane-body__table-container__29LjS&quot;]/div[2]/div[@class=&quot;reportSummary_pane-body__table-row__Yg0cg&quot;]/div[@class=&quot;reportSummary_pane-body__table-row__name__XCUeF&quot;]</value>
+      <webElementGuid>fdac5dd2-3542-43d4-b5a0-6f048610fd98</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div[2]/div[8]/div</value>
+      <webElementGuid>e62a37d7-9ee7-4366-8329-8735e5a335e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Acanthocytes'])[1]/following::div[3]</value>
+      <webElementGuid>d5ff7a71-00b4-48ca-8a8d-cc3c5d662da0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Echinocytes'])[1]/following::div[6]</value>
+      <webElementGuid>7d467ce8-11d5-429a-bb36-42987e072e0f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Stomatocytes'])[1]/preceding::div[2]</value>
+      <webElementGuid>56311d97-50ff-46fc-a9d1-7c6ab959de38</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[8]/div</value>
+      <webElementGuid>de1444bb-9456-4648-8d0b-ba3f0b8294d4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Sickle Cells' or . = 'Sickle Cells')]</value>
+      <webElementGuid>1580e02e-da57-40e6-9d3a-724364650aa0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

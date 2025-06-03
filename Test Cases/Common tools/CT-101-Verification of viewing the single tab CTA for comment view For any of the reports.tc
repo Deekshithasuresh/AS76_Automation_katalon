@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-101-Verification of viewing the single tab CTA for comment view For any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ef8b7544-80be-4815-857f-e6d52d1b7674</testCaseGuid>
+</TestCaseEntity>

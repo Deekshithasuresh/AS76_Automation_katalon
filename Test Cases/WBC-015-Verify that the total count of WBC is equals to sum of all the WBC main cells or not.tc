@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-015-Verify that the total count of WBC is equals to sum of all the WBC main cells or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bd84aea0-4643-47b5-b629-2f56b3b5afec</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>68_warning_message</name>
+   <tag></tag>
+   <elementGuidId>1d1478d9-8d56-408c-8cde-897a5621c5b7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value> //span[contains(text(), 'Number of WBCs counted is &lt;200. Differential count might not be accurate')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.reportSummary_count-alert__JPy91</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Number of WBCs counted is &lt;200\. Differential count might not be accurate$/</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>4240e74e-3378-474b-a9f6-9674c2e09f3b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>reportSummary_count-alert__JPy91</value>
+      <webElementGuid>c744a2e5-2b57-48a4-80cd-4b0ba6405881</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Number of WBCs counted is &lt;200. Differential count might not be accurate</value>
+      <webElementGuid>b72cae0c-21ec-4e3c-bb74-09ca5fe57756</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;box MuiBox-root css-i9gxme&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2.8 grid-left wbc css-lufqp2&quot;]/div[@class=&quot;reportSummary_count-alert__JPy91&quot;]</value>
+      <webElementGuid>be951064-8be5-4fa0-9014-244cd155881c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div[2]</value>
+      <webElementGuid>ecc8f583-c302-4970-b261-aac7c507888f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='* Manual sub-classification'])[1]/following::div[1]</value>
+      <webElementGuid>31dac492-d99b-4c94-961c-a83f6eb18687</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[62]/following::div[2]</value>
+      <webElementGuid>b82ab2ca-0d2e-4d27-8a8e-a23d65eeab99</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/preceding::div[2]</value>
+      <webElementGuid>863431a0-320b-4d75-8ef7-2a79fb78542f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/div/div/div/div[2]</value>
+      <webElementGuid>b3066009-c830-4b64-85a6-be4766b37c86</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Number of WBCs counted is &lt;200. Differential count might not be accurate' or . = 'Number of WBCs counted is &lt;200. Differential count might not be accurate')]</value>
+      <webElementGuid>bad6b09a-ce26-4bb2-919d-1c21bb07ab5d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

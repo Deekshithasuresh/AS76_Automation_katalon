@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_179</name>
+   <tag></tag>
+   <elementGuidId>0d478c5c-ec0b-45bd-9d90-53d3d99f3946</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='tablecontainer']/table/tbody/tr/td[2]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;179&quot;i] >> span >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>6dba4e25-c5d4-4e9a-9f4d-21b04b25204c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>column-value ng-tns-c44-103 ng-star-inserted</value>
+      <webElementGuid>5e87de70-08ee-450d-883f-3922bd410697</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> 179 </value>
+      <webElementGuid>7c07b2f3-0cf9-43bd-aae5-96a9cda2c397</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tablecontainer&quot;)/table[@class=&quot;ng-tns-c44-103&quot;]/tbody[@class=&quot;ng-tns-c44-103&quot;]/tr[@class=&quot;ng-tns-c44-103 active cursor-pointer ng-star-inserted&quot;]/td[@class=&quot;ng-star-inserted&quot;]/span[@class=&quot;column-value ng-tns-c44-103 ng-star-inserted&quot;]</value>
+      <webElementGuid>d394aa2a-e8a2-4b3c-8242-e26e0fa25283</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='tablecontainer']/table/tbody/tr/td[2]/span</value>
+      <webElementGuid>87ff53fd-b118-43fc-bd50-8e725dfcd580</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Neutrophils'])[1]/following::span[2]</value>
+      <webElementGuid>5ac27eb0-df1b-473d-9bcf-6b59e1cd0e19</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Percentage'])[1]/following::span[4]</value>
+      <webElementGuid>fa65b63e-0e24-47f9-b5a7-b319f568ad63</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='remove_circle_outline'])[1]/preceding::span[6]</value>
+      <webElementGuid>aaba0c01-e3c2-4edf-99a7-29572903e10d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Band Neut'])[1]/preceding::span[7]</value>
+      <webElementGuid>60c79500-5db4-446e-8ae7-7e6039536731</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[2]/span</value>
+      <webElementGuid>bb74667d-dc51-407a-89bf-324a0ce5143b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = ' 179 ' or . = ' 179 ')]</value>
+      <webElementGuid>523e91e9-dead-44fe-adc5-853646410686</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

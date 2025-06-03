@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-006-Verify the Neutrophil subcells present in the WBC Tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2767d106-1585-4038-89db-e4f8b0caecc8</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-020-Verify the dowloaded patch and saved patch are same in the downloaded folder in the wbc tab for any status reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7e6f3ed5-0263-4c36-b888-fddd3ebb5e8c</testCaseGuid>
+</TestCaseEntity>

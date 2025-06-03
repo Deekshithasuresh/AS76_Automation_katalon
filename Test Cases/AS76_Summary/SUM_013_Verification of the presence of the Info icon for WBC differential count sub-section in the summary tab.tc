@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_013_Verification of the presence of the Info icon for WBC differential count sub-section in the summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>26221ed9-8879-4abb-84d9-08753881b165</testCaseGuid>
+</TestCaseEntity>

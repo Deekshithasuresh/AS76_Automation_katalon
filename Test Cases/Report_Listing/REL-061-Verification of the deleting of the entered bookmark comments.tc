@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-061-Verification of the deleting of the entered bookmark comments</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>99af8c68-5dcc-4ed5-ba01-9ab8ddac9430</testCaseGuid>
+</TestCaseEntity>

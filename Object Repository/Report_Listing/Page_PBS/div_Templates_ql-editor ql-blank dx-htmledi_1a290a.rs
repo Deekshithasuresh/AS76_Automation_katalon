@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Templates_ql-editor ql-blank dx-htmledi_1a290a</name>
+   <tag></tag>
+   <elementGuidId>71bb99c4-a90e-4c89-914f-edef07a90eee</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.ql-editor.ql-blank.dx-htmleditor-content.dx-state-focused</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[4]/div[2]/div/div[2]/div/div/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^RBC MorphologyTemplatesOKCancel$/ >> internal:role=textbox</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>4f48bc54-2db8-4ea7-a188-c27b658a1528</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ql-editor ql-blank dx-htmleditor-content dx-state-focused</value>
+      <webElementGuid>3828c110-95b1-4b19-aa3f-2f47cb19908a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>contenteditable</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>5ff7b51e-2177-4ae5-9bd8-59c7ca0d6281</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>textbox</value>
+      <webElementGuid>6dfa6fac-b511-4a44-b76e-ab35f1e8f19b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-placeholder</name>
+      <type>Main</type>
+      <value>Add details</value>
+      <webElementGuid>16a4548c-3529-47db-ba7f-629873c1bbac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>acde7cbd-e898-4b5c-b31b-e2c243b711c8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2 reportSummary_pane--special__zbjyX&quot;]/div[@class=&quot;reportSummary_pane-report__UbK-u&quot;]/div[@class=&quot;morphology-parent undefined&quot;]/div[@class=&quot;smearReport_morphology-editor__46VNO&quot;]/div[@class=&quot;widget-container&quot;]/div[@class=&quot;dx-show-invalid-badge dx-htmleditor dx-htmleditor-outlined dx-widget dx-state-focused&quot;]/div[@class=&quot;dx-quill-container ql-container&quot;]/div[@class=&quot;ql-editor ql-blank dx-htmleditor-content dx-state-focused&quot;]</value>
+      <webElementGuid>3508adce-9a62-4d5d-9955-6e167d017c16</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[4]/div[2]/div/div[2]/div/div/div/div</value>
+      <webElementGuid>50908e75-5ad6-46e4-a229-a93057c5f036</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Templates'])[1]/following::div[5]</value>
+      <webElementGuid>80979388-11ce-42a6-b17a-02284c9e93b3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='RBC Morphology'])[1]/following::div[7]</value>
+      <webElementGuid>7fdd2031-91dc-4ca8-9e41-f1c63ec2527b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='OK'])[1]/preceding::div[11]</value>
+      <webElementGuid>cf2f8993-d4a7-46f9-aab0-1913ae91a949</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::div[15]</value>
+      <webElementGuid>6920d6d5-fc54-42c9-b6bd-21213283dd74</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div[2]/div/div[2]/div/div/div/div</value>
+      <webElementGuid>f3cfa0fe-08b2-4f9c-9c92-4dbe6923ab2f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_This report is meant for review and su_e443b3</name>
+   <tag></tag>
+   <elementGuidId>133ea8f4-43d9-43b8-8f6f-e541298deeea</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[3]/span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;This report is meant for review and subsequent approval from a certified reviewe&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>0a7bae08-763b-44a1-a47b-01c69d27c116</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bottomDisclaimer_container__text__y7BCT</value>
+      <webElementGuid>42fa316b-72fa-47d6-b85e-14de855325bf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>This report is meant for review and subsequent approval from a certified reviewer. Under no circumstances this report shall be provided to the patient without the approval from a certified reviewer.</value>
+      <webElementGuid>3113881d-8244-497e-8f4f-c2820f66d510</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;bottomDisclaimer_container__XJPK2&quot;]/span[@class=&quot;bottomDisclaimer_container__text__y7BCT&quot;]</value>
+      <webElementGuid>47f46acb-b778-4e39-a4ea-bd609014ce18</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[3]/span[2]</value>
+      <webElementGuid>71cb27d1-f8f4-481f-985e-f4407bdec2c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[5]/following::span[2]</value>
+      <webElementGuid>1e460247-bd88-4915-96af-fc10062a4544</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='This report is meant for review and subsequent approval from a certified reviewer. Under no circumstances this report shall be provided to the patient without the approval from a certified reviewer.']/parent::*</value>
+      <webElementGuid>1c91b9d3-6c58-460e-a200-6ab692225014</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/span[2]</value>
+      <webElementGuid>c8cc1f5d-f4c8-4c02-874a-cd3e1d5d34ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'This report is meant for review and subsequent approval from a certified reviewer. Under no circumstances this report shall be provided to the patient without the approval from a certified reviewer.' or . = 'This report is meant for review and subsequent approval from a certified reviewer. Under no circumstances this report shall be provided to the patient without the approval from a certified reviewer.')]</value>
+      <webElementGuid>f83b69fb-5040-432f-bde7-a621a32059e8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RTN_002_Verify the retaining of patch selections when multiple patches are selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c43f0737-7cd8-47ea-8cc9-079ce9b79393</testCaseGuid>
+</TestCaseEntity>

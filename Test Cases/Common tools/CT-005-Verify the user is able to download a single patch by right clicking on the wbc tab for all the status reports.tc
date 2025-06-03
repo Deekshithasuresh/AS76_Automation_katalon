@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-005-Verify the user is able to download a single patch by right clicking on the wbc tab for all the status reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b26b2f00-30f0-47f1-af92-87e41bef64b8</testCaseGuid>
+</TestCaseEntity>

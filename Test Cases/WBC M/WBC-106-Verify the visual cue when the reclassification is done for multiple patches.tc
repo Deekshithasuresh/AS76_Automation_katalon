@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-106-Verify the visual cue when the reclassification is done for multiple patches</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>15e5cf9e-93d9-4961-96b3-ec9312f4e13c</testCaseGuid>
+</TestCaseEntity>

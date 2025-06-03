@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Report Rejected681-MGG   has been succe_354352</name>
+   <tag></tag>
+   <elementGuidId>03e29f89-7d58-48ab-986c-3e1de447f250</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[4]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation6.MuiSnackbarContent-root.css-wy4bgv</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=alert</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>5e8b4323-3b87-4578-87da-d20d9b514a03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiPaper-root MuiPaper-elevation MuiPaper-elevation6 MuiSnackbarContent-root css-wy4bgv</value>
+      <webElementGuid>edc7a6e0-7345-4350-9aa3-ebf04cd1a398</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>alert</value>
+      <webElementGuid>8604373d-d784-4b65-8782-08dd2ae522c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>direction</name>
+      <type>Main</type>
+      <value>down</value>
+      <webElementGuid>2e010cbb-d937-4160-a662-0e35ba10464b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Report Rejected681-MGG   has been successfully rejected</value>
+      <webElementGuid>0a35c6da-e14e-4d85-bc96-3f2bf935249f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;MuiSnackbar-root MuiSnackbar-anchorOriginTopRight css-3sz7wh&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-elevation6 MuiSnackbarContent-root css-wy4bgv&quot;]</value>
+      <webElementGuid>49e065bb-2895-4a13-86f1-7608f04ab50b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[4]/div</value>
+      <webElementGuid>574bffe5-40a2-431a-a67b-293b5f51c758</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[5]/following::div[3]</value>
+      <webElementGuid>1f1df07e-84b8-4e55-98bb-d9de1fbd69a7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div</value>
+      <webElementGuid>49f3ca39-6833-4a7c-b62f-b4aaad011050</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Report Rejected681-MGG   has been successfully rejected' or . = 'Report Rejected681-MGG   has been successfully rejected')]</value>
+      <webElementGuid>bf3e666a-c79a-4a82-a556-714a0017fb1e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

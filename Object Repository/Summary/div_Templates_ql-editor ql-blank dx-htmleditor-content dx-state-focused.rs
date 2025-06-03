@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Templates_ql-editor ql-blank dx-htmleditor-content dx-state-focused</name>
+   <tag></tag>
+   <elementGuidId>a27428d2-7657-4ab2-b4f2-87854a5ef8db</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.dx-show-invalid-badge.dx-htmleditor.dx-htmleditor-outlined.dx-widget.dx-state-focused > div.dx-quill-container.ql-container > div.ql-editor.ql-blank.dx-htmleditor-content.dx-state-focused</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[4]/div[2]/div[4]/div[2]/div/div/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^HemoparasiteTemplatesOKCancel$/ >> internal:role=textbox</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>8546af40-bd76-41ad-b68f-bbc7aafc1a6f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ql-editor ql-blank dx-htmleditor-content dx-state-focused</value>
+      <webElementGuid>edbce3ad-dd6f-4388-8ae4-35407474082b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>contenteditable</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>2c16c37d-4368-4f25-95bb-a6f961fa7781</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>textbox</value>
+      <webElementGuid>a316dd66-6fcb-4afd-a17f-4384d8d071fe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-placeholder</name>
+      <type>Main</type>
+      <value>Add details</value>
+      <webElementGuid>3fec230a-804b-4f2c-a5d7-7bbb9856d40b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>76246db9-6212-4916-869d-243056094cac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2 reportSummary_pane--special__zbjyX&quot;]/div[@class=&quot;reportSummary_pane-report__UbK-u&quot;]/div[@class=&quot;morphology-parent undefined&quot;]/div[@class=&quot;smearReport_morphology-editor__46VNO&quot;]/div[@class=&quot;widget-container&quot;]/div[@class=&quot;dx-show-invalid-badge dx-htmleditor dx-htmleditor-outlined dx-widget dx-state-focused&quot;]/div[@class=&quot;dx-quill-container ql-container&quot;]/div[@class=&quot;ql-editor ql-blank dx-htmleditor-content dx-state-focused&quot;]</value>
+      <webElementGuid>0760c618-2a65-4a1a-b12c-657152012853</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[4]/div[2]/div[4]/div[2]/div/div/div/div</value>
+      <webElementGuid>decd3b18-bc71-413b-bac7-6c80dbe9b669</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Templates'])[4]/following::div[5]</value>
+      <webElementGuid>102f3c54-4b76-4b40-ba3d-e546ede2612b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hemoparasite'])[1]/following::div[7]</value>
+      <webElementGuid>8c8b9543-f53d-4785-86a0-049a7bf40a42</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='OK'])[4]/preceding::div[11]</value>
+      <webElementGuid>87a1580c-8ffd-4906-b73a-1bc9172af043</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[4]/preceding::div[15]</value>
+      <webElementGuid>5fa7b18c-cee1-4945-ab69-57390acfa093</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[4]/div[2]/div/div/div/div</value>
+      <webElementGuid>e9f3bf6b-9e54-44ab-a80c-3da487cd757e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

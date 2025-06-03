@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_1 patch reclassified</name>
+   <tag></tag>
+   <elementGuidId>dd2eacc4-2cc3-4222-b40a-bd33e39c244f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.header</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/div/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;1 patch reclassified&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>e3a7e923-49db-44e5-a2a0-27da7c67796d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>header</value>
+      <webElementGuid>4a84f613-a9d3-48ce-b367-78f412959c4b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1 patch reclassified</value>
+      <webElementGuid>38e360cb-3bbd-4934-93a6-ca006d5612b5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;box MuiBox-root css-i9gxme&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9.2 grid-right css-k8aoie&quot;]/div[@class=&quot;patches-tab&quot;]/div[@class=&quot;MuiSnackbar-root MuiSnackbar-anchorOriginTopRight css-3sz7wh&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-elevation6 MuiSnackbarContent-root jss3 jss4 css-a7e5sw&quot;]/div[@class=&quot;MuiSnackbarContent-message css-1w0ym84&quot;]/div[@class=&quot;classified-snackbar&quot;]/div[@class=&quot;header-row&quot;]/div[@class=&quot;header&quot;]</value>
+      <webElementGuid>afa422c4-0d98-4cf6-ae16-846da573a6c9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/div/div[2]</value>
+      <webElementGuid>47ee20bd-eb3f-46f0-a048-62e504645860</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Neutrophils with Toxic Granules'])[1]/following::div[17]</value>
+      <webElementGuid>5cf78384-e6cc-4ef8-a2d9-238a94fd7090</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Band Forms'])[2]/following::div[24]</value>
+      <webElementGuid>a15b7f25-17d6-40b0-bc52-13ed4ea11b69</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Neutrophils with Toxic Granules to Eosinophils'])[1]/preceding::div[1]</value>
+      <webElementGuid>c4956094-6dbb-4748-ba1d-481af27d0561</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='1 patch reclassified']/parent::*</value>
+      <webElementGuid>67fa9a28-8130-4433-995c-610e7cd42028</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[2]/div/div/div/div/div[2]</value>
+      <webElementGuid>3e50e5e8-4ce7-4452-b6db-9cfc5f2e5bb4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '1 patch reclassified' or . = '1 patch reclassified')]</value>
+      <webElementGuid>ad3ae202-2c25-4b0b-bc37-05cfdf8bd629</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

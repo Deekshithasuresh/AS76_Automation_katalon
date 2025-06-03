@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RTN_001_Verify the retaining of patch selection when a single patch is selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2644563a-073c-4550-b56b-b374af3c760a</testCaseGuid>
+</TestCaseEntity>

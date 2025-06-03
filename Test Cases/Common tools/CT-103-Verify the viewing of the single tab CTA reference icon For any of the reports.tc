@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-103-Verify the viewing of the single tab CTA reference icon For any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>890226e6-4fb1-444d-bc00-8567f9c1f1af</testCaseGuid>
+</TestCaseEntity>

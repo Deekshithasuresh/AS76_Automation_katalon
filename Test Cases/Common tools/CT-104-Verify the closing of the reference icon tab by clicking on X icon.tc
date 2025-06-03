@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-104-Verify the closing of the reference icon tab by clicking on X icon</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>423f9303-40ee-4457-bae8-9a5101c4e964</testCaseGuid>
+</TestCaseEntity>

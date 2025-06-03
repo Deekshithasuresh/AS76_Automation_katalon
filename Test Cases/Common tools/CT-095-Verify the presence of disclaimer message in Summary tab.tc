@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-095-Verify the presence of disclaimer message in Summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6a3a9925-0b97-4915-89f9-5a9285af2adf</testCaseGuid>
+</TestCaseEntity>

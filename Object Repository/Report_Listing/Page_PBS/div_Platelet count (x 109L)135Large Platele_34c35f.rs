@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Platelet count (x 109L)135Large Platele_34c35f</name>
+   <tag></tag>
+   <elementGuidId>dccc5863-fadc-4d4e-b8d5-ba10cb61f515</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[3]/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Platelet count (x 10^9/L)135Large PlateletsDetectedPlatelet ClumpsDetectedPlatel&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>9cd0a841-267b-4096-bd76-c5f472de3c60</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>reportSummary_pane-body__jz6aq</value>
+      <webElementGuid>ab055f53-4b1b-4429-a1d2-80840a9a1f3b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Platelet count (x 10^9/L)135Large PlateletsDetectedPlatelet ClumpsDetectedPlatelet clumps are detected. Platelet count might be underestimated.</value>
+      <webElementGuid>e754fe62-9c50-4891-acd7-47943f97c67e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2&quot;]/div[@class=&quot;reportSummary_pane-body__jz6aq&quot;]</value>
+      <webElementGuid>718c688c-0491-4d65-a93b-dfc9f16a9d69</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[3]/div[2]</value>
+      <webElementGuid>3e7a26fc-f985-46ff-b595-3d75bab44d86</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Platelet'])[1]/following::div[1]</value>
+      <webElementGuid>0338b098-457a-4c08-a523-2b0867502085</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Poikilocytosis'])[1]/following::div[10]</value>
+      <webElementGuid>c4ad4469-a7b5-49a8-a499-fac3b5c8bd48</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[2]</value>
+      <webElementGuid>23d2a5d0-6457-451c-b3ee-5e53ad48d53a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Platelet count (x 10^9/L)135Large PlateletsDetectedPlatelet ClumpsDetectedPlatelet clumps are detected. Platelet count might be underestimated.' or . = 'Platelet count (x 10^9/L)135Large PlateletsDetectedPlatelet ClumpsDetectedPlatelet clumps are detected. Platelet count might be underestimated.')]</value>
+      <webElementGuid>654dee5a-c556-4c84-a118-7588fe888755</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

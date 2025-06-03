@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-056-verify the user is able to give the comment on bookmarked report which are Ready for review in statu</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>73e341ad-203d-4d8b-b307-77b6fb8e7b48</testCaseGuid>
+</TestCaseEntity>

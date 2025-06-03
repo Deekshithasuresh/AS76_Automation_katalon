@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-018-Verify the confirmation pop-up If the configured period is decreased and clicks on save button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1a35513a-b0c3-47e8-bb45-529b2caef242</testCaseGuid>
+</TestCaseEntity>

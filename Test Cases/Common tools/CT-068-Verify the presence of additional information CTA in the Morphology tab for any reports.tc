@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-068-Verify the presence of additional information CTA in the Morphology tab for any reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2bf57111-fd0c-4e53-9ed8-b46e0ce9d5c9</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Report RejectedSIG0146   has been successfully rejected</name>
+   <tag></tag>
+   <elementGuidId>8cc7226b-58b7-4aae-afe8-2dda864ada32</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[4]/div/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.classified-snackbar</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Report RejectedSIG0146 has been successfully rejected&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>3fc09edf-8cd1-4762-a98f-1a86e847de0e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>classified-snackbar</value>
+      <webElementGuid>bafc303b-ae11-4135-aaba-7e9d12e8b572</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Report RejectedSIG0146   has been successfully rejected</value>
+      <webElementGuid>f9ee0815-ed1b-464b-8e07-aa2804e9c693</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;MuiSnackbar-root MuiSnackbar-anchorOriginTopRight css-3sz7wh&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-elevation6 MuiSnackbarContent-root css-wy4bgv&quot;]/div[@class=&quot;MuiSnackbarContent-message css-1w0ym84&quot;]/div[@class=&quot;classified-snackbar&quot;]</value>
+      <webElementGuid>847cfda0-9f71-4b90-9afd-42e78f20fedf</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[4]/div/div/div</value>
+      <webElementGuid>3f0fc29a-152a-428b-b7aa-f3881fd8365d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[5]/following::div[5]</value>
+      <webElementGuid>9b06a3ad-ed95-4f3b-b38a-a5a542883427</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div/div</value>
+      <webElementGuid>59d46176-9fea-472f-9e8a-57f940a36de4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Report RejectedSIG0146   has been successfully rejected' or . = 'Report RejectedSIG0146   has been successfully rejected')]</value>
+      <webElementGuid>1263d102-56db-4cd3-a92a-362376c6bf67</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

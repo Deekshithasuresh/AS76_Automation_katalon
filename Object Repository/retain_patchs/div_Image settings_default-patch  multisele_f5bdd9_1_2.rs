@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Image settings_default-patch  multisele_f5bdd9_1_2</name>
+   <tag></tag>
+   <elementGuidId>cdf4667a-195d-4bfa-9b9b-c731a644c953</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='wbc_12640_9868.jpg-patch-image-reivew']/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.default-patch.multiselect-patch.show-subcell-lable.enabled.patch-menu-container</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[id=&quot;wbc_12640_9868\.jpg-patch-image-reivew&quot;] div >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>56367e5e-adc9-40cc-bf1c-ac0f306431b2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value> default-patch  multiselect-patch show-subcell-lable  enabled patch-menu-container</value>
+      <webElementGuid>e923affb-2f6a-4ae3-9316-9ea303f64664</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;wbc_12640_9868.jpg-patch-image-reivew&quot;)/div[@class=&quot;patch-img-container multiselect-patch&quot;]/div[@class=&quot;default-patch  multiselect-patch show-subcell-lable  enabled patch-menu-container&quot;]</value>
+      <webElementGuid>46f85e25-0e85-41c4-8e34-1251d64f8299</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='wbc_12640_9868.jpg-patch-image-reivew']/div/div</value>
+      <webElementGuid>636b0598-b719-4f82-8cf8-96f682ea474b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::div[27]</value>
+      <webElementGuid>856cec41-dd94-4862-9982-7fc699b8e086</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Number of WBCs counted is &lt;200. Differential count might not be accurate'])[1]/following::div[33]</value>
+      <webElementGuid>8e8075bf-d5f7-460b-9166-cd9dab102dd9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div/div[4]/div/div</value>
+      <webElementGuid>ae187275-cd09-4eb5-82ee-640d6671e279</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

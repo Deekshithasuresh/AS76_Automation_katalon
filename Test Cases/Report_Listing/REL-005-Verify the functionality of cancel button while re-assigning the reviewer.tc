@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-005-Verify the functionality of cancel button while re-assigning the reviewer</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5e95b488-78cc-4be0-a149-a2974ee9d685</testCaseGuid>
+</TestCaseEntity>

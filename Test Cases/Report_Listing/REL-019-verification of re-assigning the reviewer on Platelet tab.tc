@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-019-verification of re-assigning the reviewer on Platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5d15cec9-681e-4663-800a-f4bcc9bb1e3b</testCaseGuid>
+</TestCaseEntity>

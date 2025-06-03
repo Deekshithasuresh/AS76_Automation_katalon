@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-015-verification of re-assigning the reviewer on WBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>df4de1a5-7859-4b75-bf97-700124757774</testCaseGuid>
+</TestCaseEntity>

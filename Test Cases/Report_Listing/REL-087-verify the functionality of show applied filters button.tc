@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-087-verify the functionality of show applied filters button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0c775572-2de0-4b4e-a1da-8ef3efa26f0d</testCaseGuid>
+</TestCaseEntity>

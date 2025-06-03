@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-065-Verify the visual cue present on the patch when the main class is classified into its own subclass</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ca7a4ca5-b6e5-4688-b014-bd929da23aff</testCaseGuid>
+</TestCaseEntity>

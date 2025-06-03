@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Image settings_default-patch  multisele_f5bdd9</name>
+   <tag></tag>
+   <elementGuidId>accdb1c9-5b78-4b15-b63a-0f6da3ec71c5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.default-patch.multiselect-patch.show-subcell-lable.enabled.patch-menu-container</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='wbc_47496_8013.jpg-patch-image-reivew']/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[id=&quot;wbc_47496_8013\.jpg-patch-image-reivew&quot;] div >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>e196b964-b43b-4c8e-a044-3b9956b27289</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value> default-patch  multiselect-patch show-subcell-lable  enabled patch-menu-container</value>
+      <webElementGuid>4be9af1d-f0f3-4305-acd4-bc745a3cd176</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;wbc_47496_8013.jpg-patch-image-reivew&quot;)/div[@class=&quot;patch-img-container multiselect-patch&quot;]/div[@class=&quot;default-patch  multiselect-patch show-subcell-lable  enabled patch-menu-container&quot;]</value>
+      <webElementGuid>4f284a9a-051a-4714-a69e-cff4aadd2ab1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='wbc_47496_8013.jpg-patch-image-reivew']/div/div</value>
+      <webElementGuid>ee25b7c7-8261-4238-95f1-c424e32a1c06</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::div[15]</value>
+      <webElementGuid>46005ea0-432e-4343-9de9-9ad4809653f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[3]/following::div[20]</value>
+      <webElementGuid>647069e9-363f-4362-9e82-931f1f335f4f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[2]/div/div/div/div/div/div[2]/div/div</value>
+      <webElementGuid>2e8d7b19-c3e2-4629-b934-eb4c017e22a7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

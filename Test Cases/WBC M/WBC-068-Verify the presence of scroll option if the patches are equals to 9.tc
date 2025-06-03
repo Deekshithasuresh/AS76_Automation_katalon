@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-068-Verify the presence of scroll option if the patches are equals to 9</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>21c4c8aa-a15b-425f-9811-340e1cd3bcf4</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_073_Verify the presence of the warning message when the WBC count is less than 200 for Approved report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7cb5fc1f-3e34-42c5-abd4-e48ef5330dee</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-074-Verify the user is able to reclassify any WBC cell type to its own subcell type or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4c7be14e-fd4b-450d-be2e-df516f10806d</testCaseGuid>
+</TestCaseEntity>

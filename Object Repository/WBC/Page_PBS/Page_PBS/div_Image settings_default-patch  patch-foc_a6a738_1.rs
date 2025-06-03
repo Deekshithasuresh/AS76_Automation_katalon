@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Image settings_default-patch  patch-foc_a6a738_1</name>
+   <tag></tag>
+   <elementGuidId>8b7719a4-567b-48de-a9b4-19bde980d005</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='wbc_13426_9388.jpg-patch-image-reivew']/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.default-patch.patch-focus-mode.show-subcell-lable.enabled.patch-menu-container</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[id=&quot;wbc_13426_9388\.jpg-patch-image-reivew&quot;] div >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>02d43601-7ac4-410b-afa5-5341969456a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value> default-patch  patch-focus-mode show-subcell-lable  enabled patch-menu-container</value>
+      <webElementGuid>08a0c13f-008b-4dc2-80fc-98f6e4866424</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;wbc_13426_9388.jpg-patch-image-reivew&quot;)/div[@class=&quot;patch-img-container patch-focus-mode&quot;]/div[@class=&quot;default-patch  patch-focus-mode show-subcell-lable  enabled patch-menu-container&quot;]</value>
+      <webElementGuid>303eb3fb-787a-47ef-929e-f64ec4726d11</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='wbc_13426_9388.jpg-patch-image-reivew']/div/div</value>
+      <webElementGuid>097a4592-260b-4220-ac7a-c835b0faff16</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::div[9]</value>
+      <webElementGuid>87b8e8c7-95fc-4b18-9327-4d914977b2dc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='* Manual sub-classification'])[1]/following::div[15]</value>
+      <webElementGuid>c553a324-ec84-40f1-a8fc-be2f19558188</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div[2]/div/div/div/div/div/div/div/div</value>
+      <webElementGuid>a31caf97-1033-46e3-bb19-a9645471f725</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='wbc_26859_15248.jpg-patch-image-reivew']/div/div</value>
+      <webElementGuid>f1ca94ed-2b18-4bd8-bca7-dce512fcde18</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::div[21]</value>
+      <webElementGuid>ba30e7a3-d737-484e-9a60-fa92566030fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Number of WBCs counted is &lt;200. Differential count might not be accurate'])[1]/following::div[27]</value>
+      <webElementGuid>425d7134-2756-4255-ba36-0b8453a98817</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div/div[3]/div/div</value>
+      <webElementGuid>5e417e9b-ad49-4f61-944c-6e007843431b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

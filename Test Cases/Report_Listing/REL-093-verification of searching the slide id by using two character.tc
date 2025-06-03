@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-093-verification of searching the slide id by using two character</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3e999b68-638c-483e-8762-7f14c3c2ab07</testCaseGuid>
+</TestCaseEntity>
