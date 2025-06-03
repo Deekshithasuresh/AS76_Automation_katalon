@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-049-Verify the platelet count level and platelet per cu mm is updating or not when the N,M and G values are changed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d80ff9f6-b672-46e6-b8a2-ecd0c26b569e</testCaseGuid>
+</TestCaseEntity>

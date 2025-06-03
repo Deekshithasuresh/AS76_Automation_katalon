@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-027-Verify the navigation of fovs using right arrow key</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8a0ca6a9-6c5d-4059-b010-af403f227596</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-049-Verify the user is able to enter less than 3 characters in the username field</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cacebbc7-0055-4277-b2ca-dbd70121ecd0</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-066-Verify the presence of Filter option in the list user view page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1f742202-84da-44dd-98ff-a62470fc7842</testCaseGuid>
+</TestCaseEntity>

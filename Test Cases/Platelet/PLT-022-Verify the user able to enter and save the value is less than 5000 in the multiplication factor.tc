@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-022-Verify the user able to enter and save the value is less than 5000 in the multiplication factor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>eaef8943-9de9-40bb-b801-70983ed54a01</testCaseGuid>
+</TestCaseEntity>

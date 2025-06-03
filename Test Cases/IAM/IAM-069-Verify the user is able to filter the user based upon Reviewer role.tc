@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-069-Verify the user is able to filter the user based upon Reviewer role</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>77eb7421-c3bc-4bf0-a389-9ceefff6b878</testCaseGuid>
+</TestCaseEntity>

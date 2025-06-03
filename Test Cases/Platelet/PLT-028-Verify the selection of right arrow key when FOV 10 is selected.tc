@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-028-Verify the selection of right arrow key when FOV 10 is selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>77b21c54-89fe-4dd7-b2f8-10dc8bbbbec6</testCaseGuid>
+</TestCaseEntity>

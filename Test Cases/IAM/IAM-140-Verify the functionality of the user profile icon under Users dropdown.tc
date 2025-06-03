@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-140-Verify the functionality of the user profile icon under Users dropdown</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>83b57e0b-0312-43de-a0d1-157da6c45cbb</testCaseGuid>
+</TestCaseEntity>

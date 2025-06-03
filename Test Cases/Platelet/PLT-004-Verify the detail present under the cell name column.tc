@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-004-Verify the detail present under the cell name column</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4b29fb5d-dae1-430c-8e61-3ea623f0b3c6</testCaseGuid>
+</TestCaseEntity>

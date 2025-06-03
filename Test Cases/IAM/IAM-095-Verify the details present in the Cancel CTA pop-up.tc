@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-095-Verify the details present in the Cancel CTA pop-up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e3b0789e-0437-4438-8522-4252c50672c0</testCaseGuid>
+</TestCaseEntity>

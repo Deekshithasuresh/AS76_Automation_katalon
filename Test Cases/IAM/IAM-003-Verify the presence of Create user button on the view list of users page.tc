@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-003-Verify the presence of Create user button on the view list of users page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7d4d1cb6-91cb-497e-b9dc-b3bd964ac392</testCaseGuid>
+</TestCaseEntity>

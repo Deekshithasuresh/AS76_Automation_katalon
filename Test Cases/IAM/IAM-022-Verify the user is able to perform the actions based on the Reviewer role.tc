@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-022-Verify the user is able to perform the actions based on the Reviewer role</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>27573c4e-3065-46cb-b16e-9d897699c399</testCaseGuid>
+</TestCaseEntity>

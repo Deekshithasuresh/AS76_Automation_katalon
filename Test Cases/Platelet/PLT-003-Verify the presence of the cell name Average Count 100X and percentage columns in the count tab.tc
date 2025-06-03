@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-003-Verify the presence of the cell name Average Count 100X and percentage columns in the count tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f9bfeda1-64f0-4023-be87-f4d2d036afe7</testCaseGuid>
+</TestCaseEntity>

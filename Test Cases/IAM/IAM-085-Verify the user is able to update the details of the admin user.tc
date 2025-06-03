@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-085-Verify the user is able to update the details of the admin user</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bdefb46d-edeb-44c9-9167-d23709a0fbdb</testCaseGuid>
+</TestCaseEntity>

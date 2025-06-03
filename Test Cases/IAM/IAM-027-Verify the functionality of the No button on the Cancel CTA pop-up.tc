@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-027-Verify the functionality of the No button on the Cancel CTA pop-up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1315ba8d-28b3-4db2-9240-bfec6c035337</testCaseGuid>
+</TestCaseEntity>

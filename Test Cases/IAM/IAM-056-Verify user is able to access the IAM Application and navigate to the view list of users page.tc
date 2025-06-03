@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-056-Verify user is able to access the IAM Application and navigate to the view list of users page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cf1426df-9fab-4748-99ff-96d0016ebb4d</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-128-Verify the Functionality of NO button on the Confirmation pop up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>60a346b7-518f-42c6-80c9-30939e26fd7d</testCaseGuid>
+</TestCaseEntity>

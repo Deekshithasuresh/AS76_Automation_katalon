@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-013-Verify the functionality of the cancel button on create new user pop-up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c802fec3-8f45-4b3c-9823-cf5e14638a7b</testCaseGuid>
+</TestCaseEntity>

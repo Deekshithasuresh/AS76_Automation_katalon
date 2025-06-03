@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-017-Verify the admin user able to create new user without a Name</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2a7af7ad-b097-4213-b1f4-fb47989b98b3</testCaseGuid>
+</TestCaseEntity>

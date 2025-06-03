@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-013-Verify the presence of hide annotation CTA</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0be82653-cae1-4450-b6ed-b2d8ae8cd38e</testCaseGuid>
+</TestCaseEntity>

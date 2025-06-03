@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-078-Verify the functionality of the combination of status filters</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9da2b7b6-ecab-4dfa-8908-441e8aad5442</testCaseGuid>
+</TestCaseEntity>

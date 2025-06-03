@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-057-Verify the UI element present on the View list of users page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8923b8d9-f6e5-439a-9918-d3493cf4119d</testCaseGuid>
+</TestCaseEntity>

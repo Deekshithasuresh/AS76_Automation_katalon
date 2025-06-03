@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-026-Verify the functionality of the Yes button on the Cancel CTA pop-up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>df344210-5985-4c02-a1c7-8aab6b268df7</testCaseGuid>
+</TestCaseEntity>

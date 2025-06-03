@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-110-Verify that the user is able to enter a email between 21 to 40 characters in the email field</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8e4dd19d-6a08-47c1-80cc-e064dd05a99c</testCaseGuid>
+</TestCaseEntity>

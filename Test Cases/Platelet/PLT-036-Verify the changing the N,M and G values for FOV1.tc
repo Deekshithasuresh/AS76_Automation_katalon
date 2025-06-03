@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-036-Verify the changing the N,M and G values for FOV1</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fe052c6a-9255-48fd-9e87-c54ac1c1f936</testCaseGuid>
+</TestCaseEntity>
