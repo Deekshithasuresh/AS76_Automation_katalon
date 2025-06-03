@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_070_Verify the Warning Display Based on Modified WBC Count (Not Original Count)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>63958b92-4c12-4862-bc08-cb56334c7ae0</testCaseGuid>
+</TestCaseEntity>

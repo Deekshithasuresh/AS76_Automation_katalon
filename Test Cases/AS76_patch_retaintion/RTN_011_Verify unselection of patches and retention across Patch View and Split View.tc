@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RTN_011_Verify unselection of patches and retention across Patch View and Split View</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c4b3fc70-eedd-4a88-859d-19ec5005e34e</testCaseGuid>
+</TestCaseEntity>

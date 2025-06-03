@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RTN_005_Verify that switching views after making new selections updates the view correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c3514ad4-2eb6-47c8-af0c-8bb2d98a65d2</testCaseGuid>
+</TestCaseEntity>

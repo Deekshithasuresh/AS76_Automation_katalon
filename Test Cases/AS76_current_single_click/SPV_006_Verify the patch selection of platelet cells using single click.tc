@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPV_006_Verify the patch selection of platelet cells using single click</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>86781f4e-6a54-44bb-aacf-7d76dcde9ff4</testCaseGuid>
+</TestCaseEntity>

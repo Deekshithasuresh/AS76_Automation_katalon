@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_051_Verification of the entering of special characters in the add details field for self assigned report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7c66bcac-911e-4e76-a2dd-e4f778caa081</testCaseGuid>
+</TestCaseEntity>

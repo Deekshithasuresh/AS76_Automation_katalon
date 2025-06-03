@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_045_Verification of the presence of the Info icon for platelet count sub-section in the summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9e187818-5546-47d1-92d3-77d7ef69c083</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_077_Verify that Hemo-parasite is changed to Hemoparasite in the Preview Report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5dd7f600-099c-4369-93d4-86a927a189d6</testCaseGuid>
+</TestCaseEntity>

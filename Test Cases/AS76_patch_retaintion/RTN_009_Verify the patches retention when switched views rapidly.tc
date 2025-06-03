@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RTN_009_Verify the patches retention when switched views rapidly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f39d9bd3-6696-4639-b588-187e045b2fd2</testCaseGuid>
+</TestCaseEntity>

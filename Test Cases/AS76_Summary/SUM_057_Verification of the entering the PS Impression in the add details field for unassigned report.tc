@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_057_Verification of the entering the PS Impression in the add details field for unassigned report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b495814a-aea4-4a1d-88c3-73d5c331d195</testCaseGuid>
+</TestCaseEntity>

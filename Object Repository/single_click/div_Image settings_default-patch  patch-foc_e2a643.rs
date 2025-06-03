@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Image settings_default-patch  patch-foc_e2a643</name>
+   <tag></tag>
+   <elementGuidId>34cde51b-0f83-4fdd-a54d-09721b9d0aae</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='microcyte_rbc_47343_16973.jpg-patch-image-reivew']/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.default-patch.patch-focus-mode.show-subcell-lable.rbc-patch.enabled.patch-menu-container</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[id=&quot;microcyte_rbc_47343_16973\.jpg-patch-image-reivew&quot;] div >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>812dc26f-7691-4935-9cb8-900f1d26580b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value> default-patch  patch-focus-mode show-subcell-lable rbc-patch enabled patch-menu-container</value>
+      <webElementGuid>90e84269-2fe1-47c5-9cf8-2fb488c62981</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;microcyte_rbc_47343_16973.jpg-patch-image-reivew&quot;)/div[@class=&quot;patch-img-container patch-focus-mode  rbc-patch&quot;]/div[@class=&quot;default-patch  patch-focus-mode show-subcell-lable rbc-patch enabled patch-menu-container&quot;]</value>
+      <webElementGuid>b2380b48-4a6f-4476-a579-951921f5a0aa</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='microcyte_rbc_47343_16973.jpg-patch-image-reivew']/div/div</value>
+      <webElementGuid>977fe587-eb2d-4e50-973b-702a49eb80d8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::div[9]</value>
+      <webElementGuid>b6007718-c819-495d-a656-56e98462e857</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total number of RBCs counted for size based classification is 5346'])[1]/following::div[15]</value>
+      <webElementGuid>2cb28687-70f3-4124-9325-606ad3f76a20</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div[2]/div/div/div[2]/div/div/div/div/div/div/div/div</value>
+      <webElementGuid>3e27a992-a3e0-49fa-bf46-e57d2c026f1c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

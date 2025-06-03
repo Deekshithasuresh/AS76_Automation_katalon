@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPV_004_PLT_Verify the selected patches are deselected or not on the single click</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>93064327-f699-4ea3-8a15-200bb4cd0426</testCaseGuid>
+</TestCaseEntity>

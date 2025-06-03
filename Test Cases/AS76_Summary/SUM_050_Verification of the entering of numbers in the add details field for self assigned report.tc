@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_050_Verification of the entering of numbers in the add details field for self assigned report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3d56ed6f-7636-43b2-b73d-57b13b420a2f</testCaseGuid>
+</TestCaseEntity>
