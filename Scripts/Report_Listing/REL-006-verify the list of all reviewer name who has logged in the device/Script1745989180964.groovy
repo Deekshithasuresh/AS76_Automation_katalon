@@ -49,15 +49,15 @@ WebUI.waitForPageLoad(10)
 //WebUI.setEncryptedText(findTestObject('Object Repository/Page_Admin_Login/input_Password_loginPassword'), 'adminEncryptedPass')
 //WebUI.click(findTestObject('Object Repository/Page_Admin_Login/button_Sign in'))
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/div_User'))
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/users_option'))
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/img'))
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/span_Administrator'))
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/span_Reviewer'))
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Status'))
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/span_Active'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_User'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/users_option'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/img'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/span_Administrator'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/span_Reviewer'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Status'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/span_Active'))
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Apply'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Apply'))
 WebUI.waitForPageLoad(10)
 
 

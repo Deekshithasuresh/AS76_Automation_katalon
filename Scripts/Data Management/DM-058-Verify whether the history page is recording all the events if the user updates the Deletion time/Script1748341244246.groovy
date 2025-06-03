@@ -23,12 +23,12 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 
 CustomKeywords.'generic.dataManagement.loginAdmin'()
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/path'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/path'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/li_History'), 'History')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/li_History'), 'History')
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/li_History'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/li_History'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/div_History'), 'History')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_History'), 'History')
 
 CustomKeywords.'generic.history.verifyRetentionDurationUpdates'()

@@ -11,21 +11,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 CustomKeywords.'generic.dataManagement.loginAdmin'()
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/div_Storage management'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_Storage management'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/button_Configure retention policy'), 'Configure retention policy')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Configure retention policy'), 'Configure retention policy')
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Configure retention policy'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Configure retention policy'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/button_Edit Policy'), 'Edit Policy')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Edit Policy'), 'Edit Policy')
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Edit Policy'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Edit Policy'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Admin Console/input_Days_retention-days-input'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Days_retention-days-input'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Admin Console/input_Time_deletion-time-input'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Time_deletion-time-input'), 0)
 
-TestObject daysInput = findTestObject('Object Repository/Page_Admin Console/input_Days_retention-days-input')
+TestObject daysInput = findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Days_retention-days-input')
 
 TestObject inputRetention = new TestObject("inputRetention")
 inputRetention.addProperty("xpath", ConditionType.EQUALS, "//input[@id='retention-days-input']")
@@ -56,7 +56,7 @@ String daysValue = WebUI.getAttribute(daysInput, 'value')
 assert daysValue == '50' : "Expected '50', got '${daysValue}'"
 
 
-TestObject timeInput = findTestObject('Object Repository/Page_Admin Console/input_Time_deletion-time-input')
+TestObject timeInput = findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Time_deletion-time-input')
 
 // Clear the input
 WebUI.sendKeys(timeInput, Keys.chord(Keys.COMMAND, 'a'))
@@ -66,7 +66,7 @@ WebUI.sendKeys(timeInput, Keys.chord(Keys.DELETE))
 WebUI.setText(timeInput, '10:30 AM')
 
 // Optional: click somewhere to trigger validation
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/section_Retention durationPlease enter the _8cfc85'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/section_Retention durationPlease enter the _8cfc85'))
 
 String timeValue = WebUI.getAttribute(timeInput, 'value')  // e.g., "22:30"
 
@@ -93,7 +93,7 @@ cancelBtnPopup.addProperty("xpath", ConditionType.EQUALS, "/html[1]/body[1]/div[
 WebUI.click(cancelBtnPopup)
 
 //
-TestObject cancelButton = findTestObject('Object Repository/Page_Admin Console/button_Cancel')
+TestObject cancelButton = findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Cancel')
 WebUI.click(cancelButton)
 //
 String finaldaysValue = WebUI.getAttribute(daysInput, 'value')

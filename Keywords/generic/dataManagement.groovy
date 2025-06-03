@@ -14,13 +14,13 @@ public class dataManagement {
 
 		WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
 
-		WebUI.setText(findTestObject('Object Repository/Page_Admin Console/input_Username_loginId'), 'manju')
+		WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Username_loginId'), 'manju')
 
-		WebUI.setEncryptedText(findTestObject('Object Repository/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+		WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 
-		WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Sign in'))
+		WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Sign in'))
 
-		WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/h2_Admin Portal'), 'Admin Portal')
+		WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/h2_Admin Portal'), 'Admin Portal')
 
 		WebUI.waitForPageLoad(5)
 	}

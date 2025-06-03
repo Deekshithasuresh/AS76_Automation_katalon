@@ -37,26 +37,26 @@ WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC')
 
 Map<String, String> uiWbcData =CustomKeywords.'generic.Wbc_helper.getWbcDifferentialFromUI'()
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_RBC'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_RBC (1)'))
 
 
 Map<String, String> rbcGradesSize = CustomKeywords.'generic.Wbc_helper.getRbcGradesFromUI'()
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Shape'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Shape'))
 
 
 Map<String, String> rbcGradesShape = CustomKeywords.'generic.Wbc_helper.getRbcGradesFromUI'()
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Colour'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Colour'))
 
 Map<String, String> rbcGradesColour = CustomKeywords.'generic.Wbc_helper.getRbcGradesFromUI'()
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Inclusions'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Inclusions'))
 
 Map<String, String> rbcGradesInclusion = CustomKeywords.'generic.Wbc_helper.getRbcGradesFromUI'()
 
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Platelets'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Platelets'))
 
 
 

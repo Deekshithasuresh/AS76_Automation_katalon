@@ -19,21 +19,21 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.dataManagement.loginAdmin'()
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/div_Storage management'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_Storage management'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/button_Configure retention policy'), 'Configure retention policy')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Configure retention policy'), 'Configure retention policy')
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Configure retention policy'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Configure retention policy'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/button_Edit Policy'), 'Edit Policy')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Edit Policy'), 'Edit Policy')
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Edit Policy'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Edit Policy'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Admin Console/input_Days_retention-days-input'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Days_retention-days-input'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Admin Console/input_Time_deletion-time-input'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Time_deletion-time-input'), 0)
 
-TestObject daysInput = findTestObject('Object Repository/Page_Admin Console/input_Days_retention-days-input')
+TestObject daysInput = findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Days_retention-days-input')
 
 
 // 2. Clear and try to set a decimal number

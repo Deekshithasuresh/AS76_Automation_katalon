@@ -43,26 +43,26 @@ String secoundUsername = randomName
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
-WebUI.setText(findTestObject('Object Repository/Page_Admin Console/input_Username_loginId'), 'manju')
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Sign in'))
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Username_loginId'), 'manju')
+WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Sign in'))
 
 // Step 2: Create a new reviewer user
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/div_User'))
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Users'))
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Create User'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_User'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Users'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Create User'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Admin Console/input_Name_rbc-input-box'), randomName)
-WebUI.setText(findTestObject('Object Repository/Page_Admin Console/input_Email_rbc-input-box error'), randomEmail)
-WebUI.setText(findTestObject('Object Repository/Page_Admin Console/input_Username_rbc-input-box'), randomUsername)
-WebUI.setText(findTestObject('Object Repository/Page_Admin Console/input_Password_rbc-input-box'), password)
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/input_Reviewer_userRole'))
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/button_Create new user'), 'Create new user')
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Create new user'))
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/button_Create and copy'), 'Create and copy')
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Create and copy'))
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/profile_img'))
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/li_Logout (1)'))
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Name_rbc-input-box'), randomName)
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Email_rbc-input-box error'), randomEmail)
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Username_rbc-input-box'), randomUsername)
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Password_rbc-input-box'), password)
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Reviewer_userRole'))
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Create new user'), 'Create new user')
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Create new user'))
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Create and copy'), 'Create and copy')
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Create and copy'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/profile_img'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/li_Logout (1)'))
 
 
 
@@ -75,24 +75,24 @@ GlobalVariable.generatedEmail = randomEmail
 WebUI.executeJavaScript("window.open('https://as76-pbs.sigtuple.com/login','_blank');", null)
 WebUI.switchToWindowIndex(1)
 
-WebUI.setText(findTestObject('Object Repository/Login_page/input_username_loginId'), randomUsername)
-WebUI.setText(findTestObject('Object Repository/Login_page/input_password_loginPassword'), password)
-WebUI.click(findTestObject('Object Repository/Login_page/button_Sign In'))
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_username_loginId'), randomUsername)
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_password_loginPassword'), password)
+WebUI.click(findTestObject('Object Repository/Report_Listing/Login_page/button_Sign In'))
 WebUI.waitForPageLoad(10)
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/Page_PBS/button_I Accept'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_PBS/button_I Accept'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Admin Console/Page_PBS/input_New password_new-password'), password)
-WebUI.setText(findTestObject('Object Repository/Page_Admin Console/Page_PBS/input_Confirm password_confirm-password'), password)
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_PBS/input_New password_new-password'), password)
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_PBS/input_Confirm password_confirm-password'), password)
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/Page_PBS/button_Confirm password'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_PBS/button_Confirm password'))
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/Page_PBS/button_Sign in_confirm'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_PBS/button_Sign in_confirm'))
 
 
-WebUI.setText(findTestObject('Object Repository/Login_page/input_username_loginId'), randomUsername)
-WebUI.setText(findTestObject('Object Repository/Login_page/input_password_loginPassword'), password)
-WebUI.click(findTestObject('Object Repository/Login_page/button_Sign In'))
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_username_loginId'), randomUsername)
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_password_loginPassword'), password)
+WebUI.click(findTestObject('Object Repository/Report_Listing/Login_page/button_Sign In'))
 WebUI.waitForPageLoad(10)
 
 
@@ -162,14 +162,14 @@ WebUI.click(findTestObject('Object Repository/WBC_m/Page_PBS/li_Logout_report'))
 
 WebUI.switchToWindowIndex(0)
 
-WebUI.setText(findTestObject('Object Repository/Page_Admin Console/input_Username_loginId'), 'manju')
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Sign in'))
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Username_loginId'), 'manju')
+WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Sign in'))
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/div_User'))
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Users'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_User'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Users'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Admin Console/Page_Admin Console/search_field'), randomUsername)
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_Admin Console/search_field'), randomUsername)
 
 Robot robot = new Robot()
 robot.delay(500)  // small delay to ensure focus is set
@@ -185,9 +185,9 @@ WebUI.click(firstUserRow)
 
 
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/Page_Admin Console/button_Delete_user_delete'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_Admin Console/button_Delete_user_delete'))
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/Page_Admin Console/button_Yes_delet_user'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_Admin Console/button_Yes_delet_user'))
 //WebUI.refresh()
 
 
@@ -221,16 +221,16 @@ WebUI.delay(5)
 WebUI.refresh()
 
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/profile_img'))
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/li_Logout (1)'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/profile_img'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/li_Logout (1)'))
 
 WebUI.switchToWindowIndex(1)
 
 WebUI.refresh()
 WebUI.waitForPageLoad(10)
-WebUI.setText(findTestObject('Object Repository/Login_page/input_username_loginId'), 'manju')
-WebUI.setEncryptedText(findTestObject('Object Repository/Login_page/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Login_page/button_Sign In'))
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_username_loginId'), 'manju')
+WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Login_page/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.click(findTestObject('Object Repository/Report_Listing/Login_page/button_Sign In'))
 WebUI.waitForPageLoad(10)
 
 TestObject searchBox = findTestObject("Object Repository/Report_Listing/Page_PBS/search_input_text")
@@ -274,49 +274,49 @@ WebUI.delay(5)
 	
 	WebUI.switchToWindowIndex(0)
 	
-	WebUI.setText(findTestObject('Object Repository/Page_Admin Console/input_Username_loginId'), 'manju')
-	WebUI.setEncryptedText(findTestObject('Object Repository/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Sign in'))
+	WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Username_loginId'), 'manju')
+	WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Sign in'))
 	
 	
 	// Step 2: Create a new reviewer user
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/div_User'))
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Users'))
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Create User'))
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_User'))
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Users'))
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Create User'))
 	
-	WebUI.setText(findTestObject('Object Repository/Page_Admin Console/input_Name_rbc-input-box'), secondName)
-	WebUI.setText(findTestObject('Object Repository/Page_Admin Console/input_Email_rbc-input-box error'), secondEmail)
-	WebUI.setText(findTestObject('Object Repository/Page_Admin Console/input_Username_rbc-input-box'), secondName)
-	WebUI.setText(findTestObject('Object Repository/Page_Admin Console/input_Password_rbc-input-box'), password)
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/input_Reviewer_userRole'))
-	WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/button_Create new user'), 'Create new user')
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Create new user'))
-	WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/button_Create and copy'), 'Create and copy')
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Create and copy'))
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/profile_img'))
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/li_Logout (1)'))
+	WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Name_rbc-input-box'), secondName)
+	WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Email_rbc-input-box error'), secondEmail)
+	WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Username_rbc-input-box'), secondName)
+	WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Password_rbc-input-box'), password)
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Reviewer_userRole'))
+	WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Create new user'), 'Create new user')
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Create new user'))
+	WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Create and copy'), 'Create and copy')
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Create and copy'))
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/profile_img'))
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/li_Logout (1)'))
 	
 	//WebUI.executeJavaScript("window.open('https://as76-pbs.sigtuple.com/login','_blank');", null)
 	WebUI.switchToWindowIndex(1)
 	
-	WebUI.setText(findTestObject('Object Repository/Login_page/input_username_loginId'), secondName)
-	WebUI.setText(findTestObject('Object Repository/Login_page/input_password_loginPassword'), password)
-	WebUI.click(findTestObject('Object Repository/Login_page/button_Sign In'))
+	WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_username_loginId'), secondName)
+	WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_password_loginPassword'), password)
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Login_page/button_Sign In'))
 	WebUI.waitForPageLoad(10)
 	
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/Page_PBS/button_I Accept'))
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_PBS/button_I Accept'))
 	
-	WebUI.setText(findTestObject('Object Repository/Page_Admin Console/Page_PBS/input_New password_new-password'), password)
-	WebUI.setText(findTestObject('Object Repository/Page_Admin Console/Page_PBS/input_Confirm password_confirm-password'), password)
+	WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_PBS/input_New password_new-password'), password)
+	WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_PBS/input_Confirm password_confirm-password'), password)
 	
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/Page_PBS/button_Confirm password'))
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_PBS/button_Confirm password'))
 	
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/Page_PBS/button_Sign in_confirm'))
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_PBS/button_Sign in_confirm'))
 	
 	
-	WebUI.setText(findTestObject('Object Repository/Login_page/input_username_loginId'), secondName)
-	WebUI.setText(findTestObject('Object Repository/Login_page/input_password_loginPassword'), password)
-	WebUI.click(findTestObject('Object Repository/Login_page/button_Sign In'))
+	WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_username_loginId'), secondName)
+	WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_password_loginPassword'), password)
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Login_page/button_Sign In'))
 	WebUI.waitForPageLoad(10)
 	
 	String rowXpath="//tr/td[text()='${slideID}']/following-sibling::td/div[text()='${scanDateBeforeApproval}']/parent::td/parent::tr"
@@ -356,16 +356,16 @@ WebUI.delay(5)
 	
 	WebUI.switchToWindowIndex(0)
 	
-	WebUI.setText(findTestObject('Object Repository/Page_Admin Console/input_Username_loginId'), 'manju')
-	WebUI.setEncryptedText(findTestObject('Object Repository/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Sign in'))
+	WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Username_loginId'), 'manju')
+	WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Sign in'))
 	
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/div_User'))
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Users'))
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_User'))
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Users'))
 	
 	
 	//delete second user
-	WebUI.setText(findTestObject('Object Repository/Page_Admin Console/Page_Admin Console/search_field'), secondName)
+	WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_Admin Console/search_field'), secondName)
 	
 	robot.delay(500)  // small delay to ensure focus is set
 	robot.keyPress(KeyEvent.VK_ENTER)
@@ -373,8 +373,8 @@ WebUI.delay(5)
 	// Click the first row
 	WebUI.click(firstUserRow)
 	WebUI.delay(5)
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/Page_Admin Console/button_Delete_user_delete'))
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/Page_Admin Console/button_Yes_delet_user'))
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_Admin Console/button_Delete_user_delete'))
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/Page_Admin Console/button_Yes_delet_user'))
 	WebUI.delay(5)
 	//WebUI.refresh()
 	
@@ -400,8 +400,8 @@ if (rowsSecound.size() == 0) {
 
     println("✅ First row status is Inactive.")
 }	
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/profile_img'))
-	WebUI.click(findTestObject('Object Repository/Page_Admin Console/li_Logout (1)'))
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/profile_img'))
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/li_Logout (1)'))
 	
 	
 	
@@ -409,9 +409,9 @@ if (rowsSecound.size() == 0) {
 	WebUI.switchToWindowIndex(1)
 	WebUI.refresh()
 	WebUI.waitForPageLoad(10)
-	WebUI.setText(findTestObject('Object Repository/Login_page/input_username_loginId'), 'manju')
-	WebUI.setEncryptedText(findTestObject('Object Repository/Login_page/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-	WebUI.click(findTestObject('Object Repository/Login_page/button_Sign In'))
+	WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_username_loginId'), 'manju')
+	WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Login_page/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+	WebUI.click(findTestObject('Object Repository/Report_Listing/Login_page/button_Sign In'))
 	WebUI.waitForPageLoad(10)
 	
 	//TestObject searchBox = findTestObject("Object Repository/Report_Listing/Page_PBS/search_input_text")

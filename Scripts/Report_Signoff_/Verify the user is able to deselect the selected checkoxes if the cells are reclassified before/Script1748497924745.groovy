@@ -39,7 +39,7 @@ js.executeScript("arguments[0].click();", apElement)
 
 WebUI.click(findTestObject('Object Repository/WBC_m/Page_PBS/button_Confirm_after_aR'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Add supporting images'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Add supporting images'))
 
 
 WebDriver driver = DriverFactory.getWebDriver()

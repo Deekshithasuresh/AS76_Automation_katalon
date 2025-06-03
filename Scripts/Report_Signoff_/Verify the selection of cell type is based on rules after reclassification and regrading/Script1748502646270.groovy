@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Object Repository/WBC_m/Page_PBS/button_Morphology')
 WebUI.delay(1)
 CustomKeywords.'generic.Reclassification.classifyFromCellToCellMultiplePlatelet'("Large Platelets", "Platelet Clumps", 2)
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_RBC'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_RBC (1)'))
 
 valueGettingStrikeOfAfterRegrading()
 
@@ -42,7 +42,7 @@ WebElement apElement = WebUiCommonHelper.findWebElement(approveButton, 10)
 JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getWebDriver()
 js.executeScript("arguments[0].click();", apElement)
 WebUI.click(findTestObject('Object Repository/WBC_m/Page_PBS/button_Confirm_after_aR'))
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Add supporting images'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Add supporting images'))
 
 WebDriver driver = DriverFactory.getWebDriver()
 
@@ -209,7 +209,7 @@ plateletRules.each { cellName, threshold ->
 	public void valueGettingStrikeOfAfterRegrading() {
 		WebDriver driver =DriverFactory.getWebDriver()
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/Page_PBS/Cell_rows'),10)
+				findTestObject('Object Repository/Report_Listing/Page_PBS/Cell_rows'),10)
 		for (WebElement row : cellRows) {
 			//WebElement percentageElement = row.findElement(By.xpath(".//div[3]"))
 			WebElement cellname_ele = row.findElement(By.xpath(".//div[1]"))

@@ -19,11 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.dataManagement.loginAdmin'()
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/div_Storage type'), 'Storage type')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_Storage type'), 'Storage type')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/div_Storage size'), 'Storage size')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_Storage size'), 'Storage size')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/div_Stored report count'), 'Stored report count')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_Stored report count'), 'Stored report count')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Admin Console/storage_parcentage'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Report_Listing/Page_Admin Console/storage_parcentage'), 0)
 

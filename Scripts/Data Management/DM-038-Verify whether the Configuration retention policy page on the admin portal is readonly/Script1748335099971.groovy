@@ -21,24 +21,24 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
 
-WebUI.setText(findTestObject('Object Repository/Page_Admin Console/input_Username_loginId'), 'manju')
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Username_loginId'), 'manju')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Sign in'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Sign in'))
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/div_Storage management'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_Storage management'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/button_Configure retention policy'), 'Configure retention policy')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Configure retention policy'), 'Configure retention policy')
 
-WebUI.click(findTestObject('Object Repository/Page_Admin Console/button_Configure retention policy'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Configure retention policy'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_Admin Console/div_Retention duration'), 'Retention duration')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_Retention duration'), 'Retention duration')
 
-WebUI.verifyElementClickable(findTestObject('Object Repository/Page_Admin Console/button_Edit Policy'))
+WebUI.verifyElementClickable(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Edit Policy'))
 
 
-TestObject timeField = findTestObject('Object Repository/Page_Admin Console/div_time_value')
+TestObject timeField = findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_time_value')
 
 // Verify the element is not an input
 String tagName = WebUI.executeJavaScript(
@@ -50,7 +50,7 @@ println("✅ Field is a non-editable div (read-only)")
 
 
 
-TestObject dayField = findTestObject('Object Repository/Page_Admin Console/div_days')
+TestObject dayField = findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_days')
 
 // Verify the element is not an input
 String tagNameday = WebUI.executeJavaScript(

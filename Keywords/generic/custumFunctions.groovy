@@ -24,9 +24,9 @@ public class custumFunctions {
 	def login() {
 		WebUI.openBrowser('')
 		WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-		WebUI.setText(findTestObject('Object Repository/Login_page/input_username_loginId'), 'manju')
-		WebUI.setEncryptedText(findTestObject('Object Repository/Login_page/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-		WebUI.click(findTestObject('Object Repository/Login_page/button_Sign In'))
+		WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_username_loginId'), 'manju')
+		WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Login_page/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+		WebUI.click(findTestObject('Object Repository/Report_Listing/Login_page/button_Sign In'))
 		WebUI.waitForPageLoad(10)
 	}
 
