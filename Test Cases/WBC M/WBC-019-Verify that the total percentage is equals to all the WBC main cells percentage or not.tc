@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-019-Verify that the total percentage is equals to all the WBC main cells percentage or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1f552f8-28eb-4c74-a5dc-13052cd93ac6</testCaseGuid>
+</TestCaseEntity>

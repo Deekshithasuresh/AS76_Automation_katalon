@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-002-Verification of the assigning of the specific reviewer to a report by searching the assignees from the list</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fd54dd01-a979-44fa-b97c-9af1b7d40a98</testCaseGuid>
+</TestCaseEntity>

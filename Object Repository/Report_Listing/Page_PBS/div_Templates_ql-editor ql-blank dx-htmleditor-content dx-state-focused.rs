@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Templates_ql-editor ql-blank dx-htmleditor-content dx-state-focused</name>
+   <tag></tag>
+   <elementGuidId>b5eadd1e-911e-4e90-9230-0c85ed711647</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.ql-editor.ql-blank.dx-htmleditor-content.dx-state-focused</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div[2]/div/div/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^WBC MorphologyTemplatesOKCancel$/ >> internal:role=textbox</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>1eb4402b-a53e-4caa-b23f-07db9f1378ef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ql-editor ql-blank dx-htmleditor-content dx-state-focused</value>
+      <webElementGuid>b5156f9c-9392-4cd3-81c9-0500e06e4f90</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>contenteditable</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>fcb7f289-10f0-4279-bf02-e5cd9182fc1a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>textbox</value>
+      <webElementGuid>a2a7b2cf-0d98-4e6c-b774-2f02326b0304</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-placeholder</name>
+      <type>Main</type>
+      <value>Add details</value>
+      <webElementGuid>79cb371a-ba0c-48f1-b9e1-3ed6f89b949c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>e944e4bf-1a6c-4ba6-8566-b1974ac7fdec</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2 reportSummary_pane--special__zbjyX&quot;]/div[@class=&quot;reportSummary_pane-report__UbK-u&quot;]/div[@class=&quot;morphology-parent undefined&quot;]/div[@class=&quot;smearReport_morphology-editor__46VNO&quot;]/div[@class=&quot;widget-container&quot;]/div[@class=&quot;dx-show-invalid-badge dx-htmleditor dx-htmleditor-outlined dx-widget dx-state-focused&quot;]/div[@class=&quot;dx-quill-container ql-container&quot;]/div[@class=&quot;ql-editor ql-blank dx-htmleditor-content dx-state-focused&quot;]</value>
+      <webElementGuid>6f5a6a41-a444-4bd2-8770-9911871eec9f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[4]/div[2]/div[2]/div[2]/div/div/div/div</value>
+      <webElementGuid>8875e031-5b44-4095-8f49-5e69d8c85e66</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Templates'])[2]/following::div[5]</value>
+      <webElementGuid>9000d5d0-d167-40f0-b55f-049c3c9808a7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='WBC Morphology'])[1]/following::div[7]</value>
+      <webElementGuid>0baf26ef-9cd6-4193-a6d6-a64d3ab38145</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='OK'])[2]/preceding::div[11]</value>
+      <webElementGuid>096fb06e-baa4-43d6-a5e5-e704fcd11a85</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[2]/preceding::div[15]</value>
+      <webElementGuid>8192ff3b-c83f-47d9-bd74-47cf16d2c0c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div[2]/div[2]/div[2]/div/div/div/div</value>
+      <webElementGuid>2f7ab33b-ebe3-4246-84c9-d5955f0c283c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

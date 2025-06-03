@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-024-Verification of editing the reports before assigning the report to any users on summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c1cf950b-6c48-4006-bfa9-60ee6e3abc2a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-100-Verify the functionality if all the filter options are applied</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>231a0eda-7e62-48db-99a7-1cd56bc3d2ab</testCaseGuid>
+</TestCaseEntity>

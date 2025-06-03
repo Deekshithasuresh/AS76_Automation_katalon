@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-107-Verify the user is able to cancel the visual cue when the reclassification is done for single or multiple patches</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>54bfb319-34ff-4bb2-96b4-a8c375cff055</testCaseGuid>
+</TestCaseEntity>

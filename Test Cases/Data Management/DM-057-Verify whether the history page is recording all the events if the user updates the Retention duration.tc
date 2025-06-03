@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-057-Verify whether the history page is recording all the events if the user updates the Retention duration</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0d103650-6f62-49c8-8d04-44749fd8002b</testCaseGuid>
+</TestCaseEntity>

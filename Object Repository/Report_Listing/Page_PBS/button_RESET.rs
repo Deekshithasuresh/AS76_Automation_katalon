@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_RESET</name>
+   <tag></tag>
+   <elementGuidId>cc14f43d-c218-4a82-8036-4cf5612fc50e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.scanDatePage_popover-reset-button__D6qqw > button</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='End Date'])[1]/following::button[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;RESET&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>ce09cbdf-684c-494c-98de-f14ea784ba67</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>RESET</value>
+      <webElementGuid>d8cd982a-3871-471e-8218-a8d109156c70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;dx-device-desktop dx-device-generic&quot;]/div[@class=&quot;MuiPopover-root MuiModal-root css-jp7szo&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper css-1dmzujt&quot;]/div[@class=&quot;scanDatePage_popover-container__9orlU&quot;]/div[@class=&quot;scanDatePage_popover-buttons-container__NT73N&quot;]/div[@class=&quot;scanDatePage_popover-reset-button__D6qqw&quot;]/button[1]</value>
+      <webElementGuid>012e7e31-717e-45e0-a285-77ebb4bcd46d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End Date'])[1]/following::button[1]</value>
+      <webElementGuid>061e1ff2-fe90-4c8a-b28b-97431fa69d26</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Start Date'])[1]/following::button[2]</value>
+      <webElementGuid>b41c32cc-3e81-430a-9931-dd9e9afb1f98</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select date'])[1]/preceding::button[1]</value>
+      <webElementGuid>8ea5e98b-d8a9-405b-9114-8fca6f9356c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tue, May 6'])[1]/preceding::button[1]</value>
+      <webElementGuid>e16b01b6-f440-48c6-86d7-36b7e50b945a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='RESET']/parent::*</value>
+      <webElementGuid>ae5de802-99fe-467f-b40f-777b5af456c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div[2]/button</value>
+      <webElementGuid>3d5a6cc9-624e-4a8e-9a7e-392cb5175cd8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'RESET' or . = 'RESET')]</value>
+      <webElementGuid>157eeb29-9635-451b-b3fd-e786d1bceece</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Mon, May 5'])[1]/preceding::button[1]</value>
+      <webElementGuid>05022dcd-b95c-4f1e-9237-961dd68ec890</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

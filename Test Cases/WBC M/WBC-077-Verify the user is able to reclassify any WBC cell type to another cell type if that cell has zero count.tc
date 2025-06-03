@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-077-Verify the user is able to reclassify any WBC cell type to another cell type if that cell has zero count</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>09bc00d6-65f7-48f0-bf54-5993c05374f5</testCaseGuid>
+</TestCaseEntity>

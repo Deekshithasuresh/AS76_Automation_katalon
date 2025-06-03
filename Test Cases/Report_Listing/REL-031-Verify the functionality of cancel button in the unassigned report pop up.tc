@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-031-Verify the functionality of cancel button in the unassigned report pop up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>625e155a-c089-4355-8605-900bf10f3a12</testCaseGuid>
+</TestCaseEntity>

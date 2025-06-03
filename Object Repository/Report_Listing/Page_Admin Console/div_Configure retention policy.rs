@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Configure retention policy</name>
+   <tag></tag>
+   <elementGuidId>0e725bb2-927f-4740-9f89-2eceaad2ad23</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.title</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Configure retention policy$/</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>242e4eb5-edfa-4cd5-bda5-3fc781c48385</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>title</value>
+      <webElementGuid>9014497c-af45-4234-bef0-548076519223</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Configure retention policy</value>
+      <webElementGuid>51fe5375-024a-4815-88bc-f9707254a6c4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;css-10fsrl8&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container css-1y82ffr&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9.5 css-70qs4m&quot;]/div[@class=&quot;retention-policy-container&quot;]/div[@class=&quot;title-container&quot;]/div[@class=&quot;title&quot;]</value>
+      <webElementGuid>498dc891-efdc-4d7f-ae6e-66631f8c9a15</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/div/div</value>
+      <webElementGuid>e0305ea1-83c7-4ec8-b97e-4eadcae94b8e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Platelet level limits'])[3]/following::div[4]</value>
+      <webElementGuid>bc8c2b2e-5bdf-4c47-a9cd-bc29ca25d929</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='RBC grade limits'])[3]/following::div[4]</value>
+      <webElementGuid>8917c4c2-526c-4fb1-a7cc-8d6834946a31</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit Policy'])[1]/preceding::div[1]</value>
+      <webElementGuid>970ddf77-f268-458a-ac71-a4042a84b2bd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Retention duration'])[1]/preceding::div[2]</value>
+      <webElementGuid>2def63c6-e503-462f-a6e6-154d73eb98c9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div</value>
+      <webElementGuid>6898e07c-e6a1-45fc-9913-ca39cf187269</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Configure retention policy' or . = 'Configure retention policy')]</value>
+      <webElementGuid>dbd19b32-f5d6-470d-aff9-2aa105ef8a5b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

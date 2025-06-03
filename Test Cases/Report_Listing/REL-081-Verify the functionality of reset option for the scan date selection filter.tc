@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-081-Verify the functionality of reset option for the scan date selection filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>96455dcf-c241-4b21-9855-d3024058a1c0</testCaseGuid>
+</TestCaseEntity>

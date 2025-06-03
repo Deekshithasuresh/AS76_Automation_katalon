@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-028-Verification of trying to edit fovs of any cell type on platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5ad4947f-22f3-4366-ad2a-fdfd56b36b6b</testCaseGuid>
+</TestCaseEntity>

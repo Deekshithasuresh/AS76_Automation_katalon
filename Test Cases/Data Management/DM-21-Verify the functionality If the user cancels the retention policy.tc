@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-21-Verify the functionality If the user cancels the retention policy</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>19527f1b-b1a3-4080-a024-ad4ee6da7955</testCaseGuid>
+</TestCaseEntity>

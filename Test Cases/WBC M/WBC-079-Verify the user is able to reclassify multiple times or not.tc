@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-079-Verify the user is able to reclassify multiple times or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4f87025b-e288-4e06-9039-f7fc70b04fa6</testCaseGuid>
+</TestCaseEntity>

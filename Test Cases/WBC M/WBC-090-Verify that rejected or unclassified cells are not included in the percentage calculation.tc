@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-090-Verify that rejected or unclassified cells are not included in the percentage calculation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9880c36b-c717-4129-96b6-bb0a3b712a0e</testCaseGuid>
+</TestCaseEntity>

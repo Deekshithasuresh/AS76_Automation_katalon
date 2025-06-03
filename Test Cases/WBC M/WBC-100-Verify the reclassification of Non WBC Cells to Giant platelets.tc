@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-100-Verify the reclassification of Non WBC Cells to Giant platelets</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bfa2fbd5-882d-4a9a-853a-55aa46963247</testCaseGuid>
+</TestCaseEntity>

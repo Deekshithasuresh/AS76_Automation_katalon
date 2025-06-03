@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Assigned to</name>
+   <tag></tag>
+   <elementGuidId>7b6fe031-1e2d-4f4a-9e0f-3a3eec761f57</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>p.appBar_pathologist__title__vJuKK</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div/div[3]/p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Assigned to:&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>0f054e3f-4040-4c49-904e-940a47069161</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>appBar_pathologist__title__vJuKK</value>
+      <webElementGuid>122064a0-0f94-4c71-a882-d450b7fdf467</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Assigned to:</value>
+      <webElementGuid>ea80ec74-ee5a-4eb0-9e02-b0ff65c5a1e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;appBar_container__0NckD&quot;]/div[@class=&quot;appBar_container__left__d4Fc2&quot;]/div[@class=&quot;appBar_pathologist__title__vJuKK&quot;]/p[@class=&quot;appBar_pathologist__title__vJuKK&quot;]</value>
+      <webElementGuid>eab13003-fa9b-40eb-8296-6d89c6590f13</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div/div[3]/p</value>
+      <webElementGuid>a09abcbf-9f38-4dbf-8d2e-7c8f42a1ac86</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Slide Id:'])[1]/following::p[1]</value>
+      <webElementGuid>dcef8bc4-a274-4255-b8c8-e6a85e693a9c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[1]/preceding::p[1]</value>
+      <webElementGuid>fc7a1536-c3a8-4545-a195-0c78ce1de8e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reject report'])[1]/preceding::p[1]</value>
+      <webElementGuid>f21dab77-ac8e-41aa-b9ee-bd271dfdd5f5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Assigned to']/parent::*</value>
+      <webElementGuid>974f240b-07ff-4420-9cf0-980b0dae1fe9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p</value>
+      <webElementGuid>ab10d3fa-151b-4378-a632-ac6e7ec622a5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Assigned to:' or . = 'Assigned to:')]</value>
+      <webElementGuid>c5b3874c-f167-44fd-85f3-cbbe1de03395</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

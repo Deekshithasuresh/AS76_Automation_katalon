@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-093-Verify the user is able to reclassify the more than one cell to another cellsubcell type using right click and reclassify CTA option for any NON WBC cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>68010287-7f18-46f4-9bfd-03a2260ea050</testCaseGuid>
+</TestCaseEntity>

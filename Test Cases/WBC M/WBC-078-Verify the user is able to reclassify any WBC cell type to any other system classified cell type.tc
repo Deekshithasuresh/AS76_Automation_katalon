@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-078-Verify the user is able to reclassify any WBC cell type to any other system classified cell type</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>80108b86-6f6c-432f-b115-6b86d41f0280</testCaseGuid>
+</TestCaseEntity>

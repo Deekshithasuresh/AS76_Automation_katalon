@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-026-Verification of entering the details in the Peripheral Smear Report section present in the summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f2c8f5ef-65dc-4c34-a337-8a426af3c179</testCaseGuid>
+</TestCaseEntity>

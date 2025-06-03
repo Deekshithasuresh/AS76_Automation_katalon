@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-046-Verify the persistence of retention if the report is modified by the multiple users</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>76c2c14b-3cd6-4be0-b514-419ca58ba1b1</testCaseGuid>
+</TestCaseEntity>

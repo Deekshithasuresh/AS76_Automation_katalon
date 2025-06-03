@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-085-Verify the functionality of the status selection filter for report under review</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>26abf1f0-27df-4882-aea6-d5ec2c9aed26</testCaseGuid>
+</TestCaseEntity>

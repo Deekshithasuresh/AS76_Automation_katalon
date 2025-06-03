@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-013-Verify the user is able to configure the retention policy period of 1 day or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bfc8134e-e42b-496a-888d-82557abdf638</testCaseGuid>
+</TestCaseEntity>

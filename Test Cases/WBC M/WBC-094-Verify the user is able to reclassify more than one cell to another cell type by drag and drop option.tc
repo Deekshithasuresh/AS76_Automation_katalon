@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-094-Verify the user is able to reclassify more than one cell to another cell type by drag and drop option</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fc820391-8f2f-4eeb-a442-b4ba18fab6b6</testCaseGuid>
+</TestCaseEntity>

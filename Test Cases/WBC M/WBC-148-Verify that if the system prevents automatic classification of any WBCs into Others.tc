@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-148-Verify that if the system prevents automatic classification of any WBCs into Others</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8f20d13a-78e6-4de1-9190-a819c080b818</testCaseGuid>
+</TestCaseEntity>

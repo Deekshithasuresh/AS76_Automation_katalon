@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-061-Verify the user is able to view Non-WBC patches or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fecf17e4-c7a6-4064-9459-3320380f9543</testCaseGuid>
+</TestCaseEntity>

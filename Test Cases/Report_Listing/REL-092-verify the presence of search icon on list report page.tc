@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-092-verify the presence of search icon on list report page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b3aa9575-5e50-4559-b73d-91c85b57eb1c</testCaseGuid>
+</TestCaseEntity>

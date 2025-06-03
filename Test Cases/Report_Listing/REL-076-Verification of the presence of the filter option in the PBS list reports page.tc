@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-076-Verification of the presence of the filter option in the PBS list reports page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d6a7b066-666f-4746-96aa-281cc3739ce0</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-073-verification of my report functionality when user has applied any filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4f9d678b-058a-40b0-9785-5fc41af8588c</testCaseGuid>
+</TestCaseEntity>

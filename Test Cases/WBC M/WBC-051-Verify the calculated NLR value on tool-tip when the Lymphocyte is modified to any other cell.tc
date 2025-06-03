@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-051-Verify the calculated NLR value on tool-tip when the Lymphocyte is modified to any other cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>72452682-5636-4f1e-acbb-9af97dd347cc</testCaseGuid>
+</TestCaseEntity>

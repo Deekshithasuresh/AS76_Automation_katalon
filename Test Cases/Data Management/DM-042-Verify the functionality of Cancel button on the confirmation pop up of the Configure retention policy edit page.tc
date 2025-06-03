@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>when we increasedecrease the Retention duration</description>
+   <name>DM-042-Verify the functionality of Cancel button on the confirmation pop up of the Configure retention policy edit page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3f77c0e1-6fba-461e-abc6-c8c58b2dc8d6</testCaseGuid>
+</TestCaseEntity>

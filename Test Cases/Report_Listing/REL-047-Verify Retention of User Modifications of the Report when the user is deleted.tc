@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-047-Verify Retention of User Modifications of the Report when the user is deleted</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d24ab175-2357-481b-9cdf-9fd8a584c0e4</testCaseGuid>
+</TestCaseEntity>
