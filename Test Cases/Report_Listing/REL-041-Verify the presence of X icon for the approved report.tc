@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-041-Verify the presence of X icon for the approved report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3ef654e2-9f5f-4a73-b71c-43c136af17df</testCaseGuid>
+</TestCaseEntity>

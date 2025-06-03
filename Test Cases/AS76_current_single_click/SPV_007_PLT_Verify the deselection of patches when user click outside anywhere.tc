@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPV_007_PLT_Verify the deselection of patches when user click outside anywhere</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1fcf812-2b82-4b8c-a65a-486ae277b6ca</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-016-Verify the user is able to configure the retention policy period of more than 5000 days or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5a3f4ea4-5b28-4179-929f-9d0597006a07</testCaseGuid>
+</TestCaseEntity>

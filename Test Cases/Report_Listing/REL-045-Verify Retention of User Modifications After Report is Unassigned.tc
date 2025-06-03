@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-045-Verify Retention of User Modifications After Report is Unassigned</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>feb4d896-db20-45fd-9237-942ce1ea2dde</testCaseGuid>
+</TestCaseEntity>

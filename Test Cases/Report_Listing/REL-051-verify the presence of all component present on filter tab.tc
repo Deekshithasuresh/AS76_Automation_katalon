@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-051-verify the presence of all component present on filter tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f76bb7b3-1b7e-4e32-a870-208bd768550d</testCaseGuid>
+</TestCaseEntity>

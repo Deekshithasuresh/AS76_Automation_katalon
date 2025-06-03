@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-049-Verify the calculated NLR value on tool-tip when the Lymphocyte is modified to Neutrophil</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3a6a1a7b-1d5a-4451-b315-b852c56db570</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-122-Verify that the My Report checkbox is unselected when the user applies the assigned to filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>25e27201-7f3f-4460-8e78-040c7aecb396</testCaseGuid>
+</TestCaseEntity>

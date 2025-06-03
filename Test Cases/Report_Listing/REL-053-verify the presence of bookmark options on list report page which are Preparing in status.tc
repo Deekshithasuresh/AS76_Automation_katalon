@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-053-verify the presence of bookmark options on list report page which are Preparing in status</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c13ea305-b45b-4ce1-8ac1-7de30a24ed73</testCaseGuid>
+</TestCaseEntity>

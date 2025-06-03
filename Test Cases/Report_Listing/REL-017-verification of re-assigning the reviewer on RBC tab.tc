@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-017-verification of re-assigning the reviewer on RBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f75f1d73-71c0-4aa3-9de8-c83e2c3931df</testCaseGuid>
+</TestCaseEntity>

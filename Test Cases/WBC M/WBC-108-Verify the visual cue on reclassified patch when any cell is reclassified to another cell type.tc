@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-108-Verify the visual cue on reclassified patch when any cell is reclassified to another cell type</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bbdd92d5-f0f9-4110-8fd5-e1045b08f151</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_018_Verify the presence of the cell names and grades if the RBC shape grade values are significant</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e1a91e37-f5f0-429d-98e2-2983574f3ae1</testCaseGuid>
+</TestCaseEntity>

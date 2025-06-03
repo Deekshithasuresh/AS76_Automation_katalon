@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-120-Verify that the My Report checkbox is selected when the user applies the scan date filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9c85e8fc-09f7-4373-9628-00072486e54e</testCaseGuid>
+</TestCaseEntity>

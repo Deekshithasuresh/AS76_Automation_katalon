@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-049-Verify the status of the modified approved report ,when the user is deleted</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2ed923a4-2b4b-4be7-9a51-d6181151f9ee</testCaseGuid>
+</TestCaseEntity>

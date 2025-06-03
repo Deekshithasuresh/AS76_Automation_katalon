@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPV_004_WBC_Verify the selected patches are deselected or not on the single click</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fb85d4f5-9d60-4975-9d40-c2ed3926f74d</testCaseGuid>
+</TestCaseEntity>

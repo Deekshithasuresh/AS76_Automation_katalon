@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-104-Verify the reclassification of Non WBC Cells to Platelet Clump</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a91b58cc-736d-4067-9eb7-200bb2afb0fd</testCaseGuid>
+</TestCaseEntity>

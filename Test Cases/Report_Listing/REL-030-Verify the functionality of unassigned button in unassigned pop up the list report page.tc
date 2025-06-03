@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-030-Verify the functionality of unassigned button in unassigned pop up the list report page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9005cd4f-c152-442e-ac4e-ed3aeb9a2e26</testCaseGuid>
+</TestCaseEntity>

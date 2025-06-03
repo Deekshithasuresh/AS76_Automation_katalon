@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-047-Verify the rounding off of NLR value on tool-tip</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>034ba520-1296-4d4a-a438-f97d94ee72ca</testCaseGuid>
+</TestCaseEntity>

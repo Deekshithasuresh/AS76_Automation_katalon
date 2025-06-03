@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-078-Verify whether the user is able to reset the applied filter or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f2fa045c-e3f2-46d1-8758-638b8f37cce6</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-001-verify that the user is able to assign the reviewer from the list report page based on user logged in</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>595e5b1b-46c4-4201-90d2-16a96f6f00de</testCaseGuid>
+</TestCaseEntity>

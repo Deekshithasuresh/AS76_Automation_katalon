@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-050-Verify the status of the modified rejected report when the user is deleted</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3612fc01-7324-4a11-9562-329d36ef7f44</testCaseGuid>
+</TestCaseEntity>

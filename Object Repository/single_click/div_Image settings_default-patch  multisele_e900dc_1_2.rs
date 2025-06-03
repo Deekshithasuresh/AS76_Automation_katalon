@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Image settings_default-patch  multisele_e900dc_1_2</name>
+   <tag></tag>
+   <elementGuidId>2d4f5ad4-3307-4625-96fd-506feb57764d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='ovalocyte_rbc_49468_14380.jpg-patch-image-reivew']/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.default-patch.multiselect-patch.show-subcell-lable.rbc-patch.enabled.patch-menu-container</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[id=&quot;ovalocyte_rbc_49468_14380\.jpg-patch-image-reivew&quot;] div >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>f4496963-4dc7-4a5a-ab31-a9dc23eaa93c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value> default-patch  multiselect-patch show-subcell-lable rbc-patch enabled patch-menu-container</value>
+      <webElementGuid>e5eaef83-fc2f-4fa2-94b5-33f3f19c3d7f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ovalocyte_rbc_49468_14380.jpg-patch-image-reivew&quot;)/div[@class=&quot;patch-img-container multiselect-patch  rbc-patch&quot;]/div[@class=&quot;default-patch  multiselect-patch show-subcell-lable rbc-patch enabled patch-menu-container&quot;]</value>
+      <webElementGuid>7c9d73aa-d962-43ca-8044-bd152a8da486</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='ovalocyte_rbc_49468_14380.jpg-patch-image-reivew']/div/div</value>
+      <webElementGuid>12efad13-ff63-4a3f-9a30-063177a677d8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::div[21]</value>
+      <webElementGuid>21030be3-bea1-46fb-b694-8c97e1b0eb6b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*Manual grading only'])[1]/following::div[27]</value>
+      <webElementGuid>eb4c30f6-6608-44e1-80d5-9735a57a5902</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div[2]/div/div/div/div/div/div[3]/div/div</value>
+      <webElementGuid>b8955f0a-224a-4c8f-bda7-00e6deb16e19</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

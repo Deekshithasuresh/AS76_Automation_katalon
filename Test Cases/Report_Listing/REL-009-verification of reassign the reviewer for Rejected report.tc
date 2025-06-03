@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-009-verification of reassign the reviewer for Rejected report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e217c702-8b18-4dde-9e23-07de35db33d3</testCaseGuid>
+</TestCaseEntity>

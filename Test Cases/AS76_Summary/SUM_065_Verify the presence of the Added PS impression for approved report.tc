@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_065_Verify the presence of the Added PS impression for approved report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3e2d6cec-f1a9-46e5-b2bd-fd5bd278d895</testCaseGuid>
+</TestCaseEntity>

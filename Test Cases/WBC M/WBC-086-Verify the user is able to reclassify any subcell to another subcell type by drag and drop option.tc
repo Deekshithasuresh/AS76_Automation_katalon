@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-086-Verify the user is able to reclassify any subcell to another subcell type by drag and drop option</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0fc8e61e-504a-4152-9410-995a75c7f620</testCaseGuid>
+</TestCaseEntity>
