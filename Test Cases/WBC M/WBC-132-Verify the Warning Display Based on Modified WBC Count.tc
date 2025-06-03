@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-132-Verify the Warning Display Based on Modified WBC Count</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1753670b-a66f-4724-aff8-dad1f4d5d4d5</testCaseGuid>
+</TestCaseEntity>

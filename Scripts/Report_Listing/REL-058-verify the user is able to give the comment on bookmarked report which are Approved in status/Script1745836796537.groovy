@@ -17,53 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Ready for review'))
 
-WebUI.setText(findTestObject('Object Repository/Login_page/input_username_loginId'), 'santosh')
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Reviewed'))
 
-WebUI.setEncryptedText(findTestObject('null'), 'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Reviewed_1'), 'Reviewed')
 
-WebUI.click(findTestObject('Object Repository/Login_page/button_Sign In'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.verifyElementText(findTestObject('null'), 'Reviewed')
-
-WebUI.verifyElementText(findTestObject('null'), 'Approved')
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.setText(findTestObject('null'), 't')
-
-WebUI.setText(findTestObject('null'), 'te')
-
-WebUI.setText(findTestObject('null'), 'tes')
-
-WebUI.setText(findTestObject('null'), 'test')
-
-WebUI.setText(findTestObject('null'), 'test1')
-
-WebUI.setText(findTestObject('null'), 'test12')
-
-WebUI.setText(findTestObject('null'), 'test123')
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.verifyElementText(findTestObject('null'), 'test123')
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
+CustomKeywords.'generic.bookmark.manageCommentOnBookmarkedReport'("Approved","hiii manju","How are you?")
 
 WebUI.closeBrowser()
 

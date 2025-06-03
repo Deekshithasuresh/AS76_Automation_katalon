@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>REL040-Verify the user is able to un-assign the rejected report</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>84842206-c974-4cc2-b2fe-ef5cf6847e44</testCaseGuid>
-</TestCaseEntity>

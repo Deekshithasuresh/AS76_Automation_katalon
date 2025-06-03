@@ -3,15 +3,15 @@
    <description></description>
    <name>button_Count</name>
    <tag></tag>
-   <elementGuidId>72f5cc7e-0112-4fef-9af0-3b693cbdbe8f</elementGuidId>
+   <elementGuidId>822b0135-3c0c-4dd5-b5f9-89f10485eb71</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//button[@id='plateleteCountTab']</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>#plateleteCountTab</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='plateleteCountTab']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>7422ad01-2895-4dd4-b278-42c3e8426a8f</webElementGuid>
+      <webElementGuid>4487f111-143f-4a23-8270-45ada575c6ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>active-selection-btn view-selection-btn</value>
-      <webElementGuid>26120e9a-aebc-45da-95c1-330199f1fdd4</webElementGuid>
+      <webElementGuid>d27dcc99-e76f-4a41-b409-edf98d06263b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>id</name>
       <type>Main</type>
       <value>plateleteCountTab</value>
-      <webElementGuid>81533287-2b75-47b8-a45c-0d97841ad2eb</webElementGuid>
+      <webElementGuid>114cb0c8-c981-41f2-a97e-c71f651e42cc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Count</value>
-      <webElementGuid>176e4186-99df-4aaf-b05f-a42e0efbe85e</webElementGuid>
+      <webElementGuid>383c3e71-ab24-4947-9676-e4a0a487ac82</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;plateleteCountTab&quot;)</value>
-      <webElementGuid>a1737777-eeea-4fb2-93aa-db24d0f933f4</webElementGuid>
+      <webElementGuid>57e1c75e-2369-42c8-aaaf-4d443801dfbc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@id='plateleteCountTab']</value>
-      <webElementGuid>7201975c-c88f-4ac2-bc92-e6b6b3dde317</webElementGuid>
+      <webElementGuid>1d906f71-31a6-44f0-a1cd-7fcfc3cc57bf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/button</value>
-      <webElementGuid>b06e0097-e2f6-4c12-934b-6049c9d671a1</webElementGuid>
+      <webElementGuid>e2e1c2cc-add4-4641-a090-f3b63cdbdd7a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CBC report could not be retrieved'])[1]/following::button[1]</value>
-      <webElementGuid>8486e136-c17a-43a9-a494-6cd7201da953</webElementGuid>
+      <webElementGuid>1432402d-3590-4378-9ade-83fbb564fe69</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CBC report'])[2]/following::button[2]</value>
-      <webElementGuid>8d3d6c7d-47f7-4388-b8e7-33f70617b297</webElementGuid>
+      <webElementGuid>4769cd61-3282-4473-a415-6d2b42215184</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Morphology'])[1]/preceding::button[1]</value>
-      <webElementGuid>5e3f6a02-59f6-44aa-8796-44f01ef95677</webElementGuid>
+      <webElementGuid>04bf2595-4b6a-47a0-ab8b-fec165a0c3a8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cell name'])[1]/preceding::button[2]</value>
-      <webElementGuid>35bb850c-5980-4155-a760-40c3c80e0b5a</webElementGuid>
+      <webElementGuid>50211010-efc6-4cdc-9993-46fde4c000a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Count']/parent::*</value>
-      <webElementGuid>a290fe60-e3c1-42fe-a43d-5f92300d8fc8</webElementGuid>
+      <webElementGuid>76b9e745-857e-4e80-b408-ac0e0cc66277</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/div/button</value>
-      <webElementGuid>53fef8ab-321e-4667-ad91-bbfa7d63ee56</webElementGuid>
+      <webElementGuid>92aac294-4e8c-4acf-8671-da15fc0010c4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,6 +133,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@id = 'plateleteCountTab' and (text() = 'Count' or . = 'Count')]</value>
-      <webElementGuid>89db42c0-a51b-4bca-b5fa-127180876ca6</webElementGuid>
+      <webElementGuid>cc83f9c6-79ff-46d7-ba0f-12a02f0b5225</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

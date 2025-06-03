@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-130-Verify the presence of the warning message when the WBC count is less than 200 regardless of the reports status</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5ee3ad07-278d-4229-aeec-e68bec7b83f0</testCaseGuid>
+</TestCaseEntity>

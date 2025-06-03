@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-150-Verify that a user can classify multiple WBC cells as Others</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8283a5b1-335e-44cd-9b3f-f0991ad85988</testCaseGuid>
+</TestCaseEntity>

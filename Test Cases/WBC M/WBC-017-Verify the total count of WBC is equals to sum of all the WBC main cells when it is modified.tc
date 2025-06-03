@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-017-Verify the total count of WBC is equals to sum of all the WBC main cells when it is modified</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d20a4a98-cc99-4362-9fab-692fb3834729</testCaseGuid>
+</TestCaseEntity>

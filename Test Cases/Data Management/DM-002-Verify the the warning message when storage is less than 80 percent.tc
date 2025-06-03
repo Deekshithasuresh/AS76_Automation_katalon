@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-002-Verify the the warning message when storage is less than 80 percent</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bf606e0a-b47a-4b1b-8eac-8040cb10e689</testCaseGuid>
+</TestCaseEntity>

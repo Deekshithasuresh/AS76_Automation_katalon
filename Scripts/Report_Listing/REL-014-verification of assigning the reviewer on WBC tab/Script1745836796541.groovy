@@ -21,9 +21,9 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_WBC'), 'WBC')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'), 'WBC')
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_WBC'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('pooja',true)
 

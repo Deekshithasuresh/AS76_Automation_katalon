@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-101-Verify the functionality if combination of filter options are applied</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>644fdf9b-f446-489f-840a-96286819adda</testCaseGuid>
+</TestCaseEntity>

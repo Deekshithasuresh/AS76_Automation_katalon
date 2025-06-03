@@ -18,17 +18,32 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.ConditionType
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 
 // Open browser and navigate to login
 CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Ready for review'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Ready for review'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Reviewed'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Reviewed'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_Reviewed_1'), 'Reviewed')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Reviewed_1'), 'Reviewed')
 
-CustomKeywords.'generic.custumFunctions.assignReviewerToReport'('Rejected', 'manju')
+// Create dynamic TestObject for the input field
+TestObject assignedToInput = new TestObject('AssignedToInput')
+assignedToInput.addProperty("xpath", ConditionType.EQUALS, "//span[text()='Rejected']//parent::div/parent::td/following-sibling::td[1]//input")
 
-WebUI.closeBrowser()
+// Get the value of 'disabled' attribute
+String isDisabled = WebUI.getAttribute(assignedToInput, "disabled")
+
+// Fail the test if not disabled
+assert isDisabled != null : "❌ Assigned To input is editable. Expected it to be disabled."
+
+println("✅ Assigned To input is not editable (disabled).")
+
+
 

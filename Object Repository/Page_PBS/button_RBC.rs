@@ -3,14 +3,15 @@
    <description></description>
    <name>button_RBC</name>
    <tag></tag>
-   <elementGuidId>6915dc6c-04f1-4a61-9524-195cd202834b</elementGuidId>
+   <elementGuidId>6969c122-445d-4499-a2c2-d2fb010ba483</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/div/div[2]/div/div/div/button[3]</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>52cdefbd-a0e6-4b35-9f44-dce6356a8e92</webElementGuid>
+      <webElementGuid>20a29a08-b326-4a6f-ae7e-bcc0119f4da1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>cell-buttons cell-tab</value>
-      <webElementGuid>5c2d5c1d-499b-4d76-a6e4-28cb4b1e2472</webElementGuid>
+      <webElementGuid>66c1b982-1bef-4fbe-ba9d-eb917fb29e8a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>RBC </value>
-      <webElementGuid>26ca141a-7e83-47f4-8a6a-96f8ddc9ede8</webElementGuid>
+      <webElementGuid>eea88556-6d24-4f57-a2a6-7e48d8af0b79</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-nav&quot;]/div[@class=&quot;review-nav__selection&quot;]/div[@class=&quot;review-nav__selection__cell&quot;]/button[@class=&quot;cell-buttons cell-tab&quot;]</value>
-      <webElementGuid>aa7c88e4-8157-4095-ae41-d87cbe3262b7</webElementGuid>
+      <webElementGuid>9eb44364-ca7f-4554-994a-5c7550cc3fc6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -60,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div/div/div/button[3]</value>
-      <webElementGuid>ec9af0c7-b7f7-412f-9a6f-1a0b48069560</webElementGuid>
+      <webElementGuid>fefea340-5214-459d-b35e-b33641b91e60</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -68,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='WBC'])[1]/following::button[1]</value>
-      <webElementGuid>292cc17f-c356-47b1-bc1d-cd962f9d2bb7</webElementGuid>
+      <webElementGuid>59e007ee-4bbd-47b0-ab4c-2a706f12f692</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -76,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::button[2]</value>
-      <webElementGuid>dcbb3751-16a7-42de-8564-4eec67ec388f</webElementGuid>
+      <webElementGuid>2f569932-494a-422e-bec6-4dec3497f0cf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -84,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Platelets'])[1]/preceding::button[1]</value>
-      <webElementGuid>ce793684-2b50-493e-b05c-090d0a480d27</webElementGuid>
+      <webElementGuid>5331c684-7111-4c82-8151-81c6ee3de09b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[3]</value>
-      <webElementGuid>fca83436-e372-4c4b-9859-520bd2edcd82</webElementGuid>
+      <webElementGuid>db32fa4e-7a2d-4e25-8af5-026953bee3d6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -100,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'RBC ' or . = 'RBC ')]</value>
-      <webElementGuid>5ff7b906-05b2-4d13-8866-5bfc271d4dee</webElementGuid>
+      <webElementGuid>9e0418c6-2282-427f-92eb-0c5ae4c875bb</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

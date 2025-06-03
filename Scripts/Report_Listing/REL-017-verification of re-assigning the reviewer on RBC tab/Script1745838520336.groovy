@@ -21,11 +21,9 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_RBC'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_RBC'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_Cell name'), 'Cell name')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/div_Cell name'), 'Cell name')
 
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('pooja',true)
-
-WebUI.closeBrowser()
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('prem',true)
 

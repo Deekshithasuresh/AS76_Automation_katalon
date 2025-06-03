@@ -24,7 +24,7 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Summary'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'))
 
 WebUI.waitForPageLoad(10)
 
@@ -65,6 +65,3 @@ if (bad) {
 } else {
     WebUI.comment('✅ All editor containers are correctly disabled on Summary tab.')
 }
-
-// 5) Teardown
-WebUI.closeBrowser()

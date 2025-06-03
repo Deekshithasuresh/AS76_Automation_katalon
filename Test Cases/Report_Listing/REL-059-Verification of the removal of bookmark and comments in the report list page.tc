@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-059-Verification of the removal of bookmark and comments in the report list page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2148e84c-01a6-4652-ab5a-66e188eba844</testCaseGuid>
+</TestCaseEntity>

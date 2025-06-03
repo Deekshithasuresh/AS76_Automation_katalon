@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-073-Verify the functionality of navigation view and zoom options available in the split view</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>db82a85e-2889-49f4-982c-a4b297050f22</testCaseGuid>
+</TestCaseEntity>

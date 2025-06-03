@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-109-Verify the visual cue on reclassified patches when more than one cells are reclassified to another cell type</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0393d26b-ed63-412d-887a-e564c1ee3654</testCaseGuid>
+</TestCaseEntity>

@@ -21,7 +21,5 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_PBS/assign__dd'),
-	0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/assign__dd'), 0)
 
-WebUI.closeBrowser()

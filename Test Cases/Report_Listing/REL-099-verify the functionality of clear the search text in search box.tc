@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-099-verify the functionality of clear the search text in search box</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2642cbbd-ad9c-4c7a-ae41-fc9268b749ae</testCaseGuid>
+</TestCaseEntity>

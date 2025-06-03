@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-082-Verify the user is able to reclassify any main cell to another sub cell type by using right click option</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>67936048-a166-4de2-b268-b0512687c6df</testCaseGuid>
+</TestCaseEntity>

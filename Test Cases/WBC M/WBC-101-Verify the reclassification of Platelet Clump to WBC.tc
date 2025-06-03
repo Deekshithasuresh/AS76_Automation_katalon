@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-101-Verify the reclassification of Platelet Clump to WBC</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c81b97b4-708e-478a-943f-75f308aaa243</testCaseGuid>
+</TestCaseEntity>

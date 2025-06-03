@@ -19,11 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Ready for review'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Ready for review'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Reviewed'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Reviewed'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_Reviewed_1'), 'Reviewed')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Reviewed_1'), 'Reviewed')
 
 CustomKeywords.'generic.custumFunctions.unassignOrCancel'('Rejected', false)
 

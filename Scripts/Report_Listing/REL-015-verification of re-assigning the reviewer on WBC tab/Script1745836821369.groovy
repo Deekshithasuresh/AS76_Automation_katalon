@@ -21,13 +21,12 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_WBC'), 'WBC')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'), 'WBC')
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_WBC'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_PBS/div_WBC'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/div_WBC'), 0)
 
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('nakul',true)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('chida',true)
 
-WebUI.closeBrowser()
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-091-Verify the user is able to reclassify more than one cell to another cell or subcell type by using right click optionn</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3d2f6788-0fa9-463b-a27e-7b31885910ae</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-003-Verify the the warning message when storage is more than 80 and less than 90</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>652c289f-479d-470d-bf38-140a513ff49c</testCaseGuid>
+</TestCaseEntity>

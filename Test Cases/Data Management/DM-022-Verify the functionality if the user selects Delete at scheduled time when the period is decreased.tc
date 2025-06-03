@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-022-Verify the functionality if the user selects Delete at scheduled time when the period is decreased</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4d923380-118c-4cb4-9b43-60c6210f8adc</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-087-Verify that the user is able to reclassify a single patch using drag-and-drop functionality</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1066b689-27a6-4051-bbf1-0a7c787d0570</testCaseGuid>
+</TestCaseEntity>

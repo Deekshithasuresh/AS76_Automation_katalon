@@ -24,11 +24,10 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/button_Summary'), 'Summary')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
 
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('nakul',true)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('prem',true)
 
-WebUI.closeBrowser()
 
 
 

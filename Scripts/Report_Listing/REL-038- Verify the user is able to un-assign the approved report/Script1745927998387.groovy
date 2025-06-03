@@ -19,18 +19,18 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Ready for review'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Ready for review'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Reviewed'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Reviewed'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_Reviewed_1'), 'Reviewed')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Reviewed_1'), 'Reviewed')
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Approved')
 
-WebUI.waitForElementNotPresent(findTestObject('Object Repository/Page_PBS/assign__dd'),
+WebUI.waitForElementNotPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/assign__dd'),
 	0)
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/Page_PBS/input_Slide Id_assigned_to'))
+WebUI.verifyElementNotClickable(findTestObject('Object Repository/Report_Listing/Page_PBS/input_Slide Id_assigned_to'))
 
 WebUI.closeBrowser()
 

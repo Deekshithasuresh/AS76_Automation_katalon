@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-062-Verification of the editing of the entered bookmark comments</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dbeec1c7-36c5-4f79-ae5a-53e4033753d9</testCaseGuid>
+</TestCaseEntity>

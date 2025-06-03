@@ -24,4 +24,3 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.verifyCancelButtonDuringReassign'('Under review', 'manju')
 
-WebUI.closeBrowser()

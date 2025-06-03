@@ -24,12 +24,12 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_WBC'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
 
-//WebUI.click(findTestObject('Object Repository/Page_PBS/first_patch'))
+//WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/first_patch'))
 
 // assume you’ve already built your dynamic TestObject or have one in the repo:
-TestObject myElement = findTestObject('Object Repository/Page_PBS/first_patch')
+TestObject myElement = findTestObject('Object Repository/Report_Listing/Page_PBS/first_patch')
 
 // wait for it to be clickable/visible first
 WebUI.waitForElementVisible(myElement, 10)
@@ -44,13 +44,10 @@ WebUI.waitForElementVisible(menuList, 5)
 
 // 3) Define the “Reclassification” menu item
 TestObject reclassItem = new TestObject('reclassItem')
-reclassItem.addProperty('xpath', ConditionType.EQUALS,
-	"//ul[@role='menu']//li[normalize-space(text())='Reclassification']")
+reclassItem.addProperty('xpath', ConditionType.EQUALS,"//li//span[normalize-space(text())='Classify']")
 
 // 4) Verify it is NOT present
 WebUI.verifyElementNotPresent(reclassItem, 3)
 
 WebUI.comment("✅ 'Reclassification' menu option is not present as expected.")
-
-WebUI.closeBrowser()
 

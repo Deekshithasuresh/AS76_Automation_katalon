@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the selection of cell type is based on rules after reclassification and regrading</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f15bdb45-951f-482e-9956-a49d7ee939e1</testCaseGuid>
+</TestCaseEntity>

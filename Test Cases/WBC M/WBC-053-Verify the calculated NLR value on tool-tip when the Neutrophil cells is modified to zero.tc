@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-053-Verify the calculated NLR value on tool-tip when the Neutrophil cells is modified to zero</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4f71bb85-5488-4da6-9670-01a06fc0f127</testCaseGuid>
+</TestCaseEntity>

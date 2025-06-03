@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-113-verify the logged user is able view and edit the bookmark comment which is done by last user</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bdd28ac1-79d7-4128-96dd-ec3fd7d551f0</testCaseGuid>
+</TestCaseEntity>

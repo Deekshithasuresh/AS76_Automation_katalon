@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-106-Verification of the presence of the Slide ID column in the list reports page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dd07239d-b6e8-49bf-b954-b7eff69cda1b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-080-Verify the functionality of scan date selection filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1df0e8bb-6157-4723-b2dc-af283fe08767</testCaseGuid>
+</TestCaseEntity>

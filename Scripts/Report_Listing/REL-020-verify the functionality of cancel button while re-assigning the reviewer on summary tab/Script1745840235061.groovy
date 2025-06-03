@@ -24,12 +24,7 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/button_Summary'), 'Summary')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
 
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('ratt',false)
-
-WebUI.closeBrowser()
-
-
-
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 

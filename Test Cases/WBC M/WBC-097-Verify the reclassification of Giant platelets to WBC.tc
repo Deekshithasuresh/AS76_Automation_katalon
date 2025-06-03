@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-097-Verify the reclassification of Giant platelets to WBC</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>727b84f0-0d20-4bee-8715-c51928893aab</testCaseGuid>
+</TestCaseEntity>

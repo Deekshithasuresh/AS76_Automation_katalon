@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-083-Verify the functionality of Assigned to selection filter for multiple user selection</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5164ad05-38bb-4fa9-9538-d93bacf8f481</testCaseGuid>
+</TestCaseEntity>

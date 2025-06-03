@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-099-Verify the reclassification of Giant platelets to Non WBC Cells</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a45f62fe-6ab0-49f9-863c-651a32e2865b</testCaseGuid>
+</TestCaseEntity>

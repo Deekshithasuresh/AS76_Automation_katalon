@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-104-Verification of retention of filter after viewing a report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e43b220e-daf1-41c8-8a25-49b07a940311</testCaseGuid>
+</TestCaseEntity>

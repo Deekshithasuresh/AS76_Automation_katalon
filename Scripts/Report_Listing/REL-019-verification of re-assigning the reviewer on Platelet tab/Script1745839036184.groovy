@@ -21,10 +21,9 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Platelets'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Platelets'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/button_Count'), 'Count')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Count'), 'Count')
 
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('harishk',true)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('harishk', true)
 
-WebUI.closeBrowser()

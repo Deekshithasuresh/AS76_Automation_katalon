@@ -22,12 +22,11 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_RBC'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_RBC'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_Cell name'), 'Cell name')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/div_Cell name'), 'Cell name')
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/Page_PBS/div_Microcytes_grade-div'))
+WebUI.verifyElementNotClickable(findTestObject('Object Repository/Report_Listing/Page_PBS/div_Microcytes_grade-div'))
 
-WebUI.closeBrowser()
 
 

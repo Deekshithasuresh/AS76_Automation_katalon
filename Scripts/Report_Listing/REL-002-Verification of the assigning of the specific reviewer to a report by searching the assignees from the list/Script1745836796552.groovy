@@ -22,7 +22,6 @@ import org.openqa.selenium.Keys as Keys
 // Open browser and navigate to login
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.assignReviewerToReport'('Under review', 'pooja')
+CustomKeywords.'generic.custumFunctions.assignReviewerToReport'('Under review', 'chida')
 
-WebUI.closeBrowser()
 

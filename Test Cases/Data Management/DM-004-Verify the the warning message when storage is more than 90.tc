@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-004-Verify the the warning message when storage is more than 90</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>eb8b7772-b66e-4e98-9245-434efcec3a73</testCaseGuid>
+</TestCaseEntity>

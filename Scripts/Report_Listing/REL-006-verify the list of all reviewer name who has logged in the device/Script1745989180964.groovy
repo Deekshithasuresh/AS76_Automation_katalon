@@ -82,5 +82,4 @@ assert reportingReviewers == adminReviewers :
     "Reviewer lists do not match!\nReporting: ${reportingReviewers}\nAdmin:     ${adminReviewers}"
 WebUI.comment('✅ Reviewer lists match exactly.')
 
-// 10) Teardown
-WebUI.closeBrowser()
+

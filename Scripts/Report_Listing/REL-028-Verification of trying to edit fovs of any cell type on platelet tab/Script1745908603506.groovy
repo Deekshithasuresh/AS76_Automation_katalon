@@ -21,12 +21,12 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Platelets'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Platelets'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/button_Count'), 'Count')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Count'), 'Count')
 
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/Page_PBS/input_FOV 1_fov-edit-input'))
+WebUI.verifyElementNotClickable(findTestObject('Object Repository/Report_Listing/Page_PBS/input_FOV 1_fov-edit-input'))
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/Page_PBS/fov_textfield'))
+WebUI.verifyElementNotClickable(findTestObject('Object Repository/Report_Listing/Page_PBS/fov_textfield'))
 
