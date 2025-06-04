@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-027_Verify the functionality when the user selects Single patch</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>512999b1-330e-4f4b-a771-31545e65aaaa</testCaseGuid>
+</TestCaseEntity>

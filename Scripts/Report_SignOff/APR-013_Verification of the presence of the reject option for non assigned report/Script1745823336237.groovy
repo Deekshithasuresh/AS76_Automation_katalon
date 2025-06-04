@@ -19,23 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
+WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
 
-WebUI.click(findTestObject('null'))
+WebUI.setText(findTestObject('Object Repository/Report-Signoff/input_username_loginId'), 'santosh')
 
-WebUI.doubleClick(findTestObject('null'))
+WebUI.setEncryptedText(findTestObject('Object Repository/Report-Signoff/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Sign In'))
 
-WebUI.setText(findTestObject('null'), 'John Doe')
+WebUI.click(findTestObject('Object Repository/Report-Signoff/div_09-Apr-2025, 0126 PM (EAT)'))
 
-WebUI.setText(findTestObject('null'), 'ThisIsNotAPassword')
-
-WebUI.doubleClick(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.setEncryptedText(findTestObject('null'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
-
-WebUI.click(findTestObject('null'))
+WebUI.verifyElementNotVisible(findTestObject('Object Repository/Report-Signoff/div__appBar_container__right__PwWvg'))
 

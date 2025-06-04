@@ -17,25 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
-
-WebUI.click(findTestObject('null'))
-
-WebUI.doubleClick(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.setText(findTestObject('null'), 'John Doe')
-
-WebUI.setText(findTestObject('null'), 'ThisIsNotAPassword')
-
-WebUI.doubleClick(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.setEncryptedText(findTestObject('null'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
-
-WebUI.click(findTestObject('null'))
-

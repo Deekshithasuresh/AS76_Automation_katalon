@@ -17,25 +17,29 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.click(findTestObject('null'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-WebUI.doubleClick(findTestObject('null'))
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh')
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
 
-WebUI.setText(findTestObject('null'), 'John Doe')
+WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
 
-WebUI.setText(findTestObject('null'), 'ThisIsNotAPassword')
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
 
-WebUI.doubleClick(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Modify'))
 
-WebUI.click(findTestObject('null'))
+//WebUI.verifyElementPresent(findTestObject('Object Repository/Report-Signoff/span_Add to report'), 0)
+WebUI.delay(2)
 
-WebUI.setEncryptedText(findTestObject('null'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
+WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Report-Signoff/span_Modify'))
 
+WebUI.delay(2)
+//WebUI.verifyElementPresent(findTestObject('Object Repository/Report-Signoff/button_Add to report'), 0)
+
+WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel'))

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Modify_1_2_3_4_5</name>
+   <tag></tag>
+   <elementGuidId>3ad63d1a-dede-4cec-9950-bb6b8fdba484</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div[2]/li/div/div[2]/div[2]/div/button/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^RBCOvalocytes ModifyFragmented Cells ModifyEchinocytes Modify$/ >> internal:role=button >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>ea5ed642-7de0-4df6-b34e-322d600a9930</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>css-1igme87</value>
+      <webElementGuid>87bec605-3cad-4978-a71f-40028e725ecd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Modify</value>
+      <webElementGuid>ad7065ad-5eb6-4d1c-a0e1-3b3b93addccf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;css-1f46vhq&quot;]/div[@class=&quot;approval-content-container&quot;]/div[@class=&quot;image-approval-content&quot;]/li[@class=&quot;MuiImageListItem-root css-rq94w1&quot;]/div[1]/div[@class=&quot;css-855yfa&quot;]/div[@class=&quot;viewer-set-container&quot;]/div[@class=&quot;viewer-header-row&quot;]/button[@class=&quot;MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-g8diby&quot;]/span[@class=&quot;css-1igme87&quot;]</value>
+      <webElementGuid>749bdf6c-aead-4d48-9ac4-fea1d2670b40</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div[2]/li/div/div[2]/div[2]/div/button/span</value>
+      <webElementGuid>e34a0266-ae93-402f-a538-cf7771c4c397</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Fragmented Cells'])[1]/following::span[1]</value>
+      <webElementGuid>c82e65e7-1922-48f5-afd8-05ef88f65267</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modify'])[5]/following::span[2]</value>
+      <webElementGuid>dda22cbc-58f3-4bbf-82cf-2cf566d24a7a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Echinocytes'])[1]/preceding::span[4]</value>
+      <webElementGuid>cc4e4d75-0827-4bed-a8e5-39e36f61fc83</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modify'])[7]/preceding::span[4]</value>
+      <webElementGuid>70d47465-73de-494b-9703-7b4e8d937a57</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/button/span</value>
+      <webElementGuid>55c4fedd-2b41-4d33-922e-52b8a61a5137</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Modify' or . = 'Modify')]</value>
+      <webElementGuid>54cdb8b0-7f26-436a-83fa-b06a64408b70</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Macrocytes'])[1]/following::span[1]</value>
+      <webElementGuid>42eabab6-76d0-4459-98f7-a53f33d0e7e1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modify'])[6]/following::span[2]</value>
+      <webElementGuid>13fee55c-df18-4b82-a3b9-4624ea003c38</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ovalocytes'])[1]/preceding::span[2]</value>
+      <webElementGuid>5772624d-ef1a-4c53-951f-2f404b36601d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modify'])[8]/preceding::span[2]</value>
+      <webElementGuid>ae90417f-0e91-4110-9ff1-452dd85197eb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

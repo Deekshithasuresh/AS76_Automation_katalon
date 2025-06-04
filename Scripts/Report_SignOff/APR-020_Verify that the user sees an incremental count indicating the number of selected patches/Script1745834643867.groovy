@@ -17,25 +17,33 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-WebUI.click(findTestObject('null'))
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh')
 
-WebUI.doubleClick(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
 
-WebUI.setText(findTestObject('null'), 'John Doe')
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
 
-WebUI.setText(findTestObject('null'), 'ThisIsNotAPassword')
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Modify'))
 
-WebUI.doubleClick(findTestObject('null'))
+WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_1'), '1')
 
-WebUI.click(findTestObject('null'))
+WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_2'), '2')
 
-WebUI.setEncryptedText(findTestObject('null'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
+WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_2b6ddc'))
 
-WebUI.click(findTestObject('null'))
+WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_3'), '3')
+
+WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_4f0e64'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_4'), '4')
+
+WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_081a47'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_5'), '5')
 

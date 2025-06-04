@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_RBC MorphologyTemplatesABC123def456OKCa_6a3000</name>
+   <tag></tag>
+   <elementGuidId>dbd7d904-765c-4ac8-b483-fe9a8f209932</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.reportSummary_pane-report__UbK-u</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[4]/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;RBC MorphologyTemplatesABC123@#%^&amp;*def456OKCancelDoneWBC MorphologyTemplatesOKCa&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>416ee664-e4a3-469e-90ae-98a97b480bd0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>reportSummary_pane-report__UbK-u</value>
+      <webElementGuid>38585acf-227d-48d5-a957-ce6251ba0c0e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>RBC MorphologyTemplatesABC123@#%^&amp;*def456OKCancelDoneWBC MorphologyTemplatesOKCancelPlatelet MorphologyTemplatesOKCancelHemoparasiteTemplatesOKCancelImpressionTemplatesOKCancel</value>
+      <webElementGuid>8d871975-cef2-4b53-92a5-4959f42483af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2 reportSummary_pane--special__zbjyX&quot;]/div[@class=&quot;reportSummary_pane-report__UbK-u&quot;]</value>
+      <webElementGuid>766edf24-266d-4bcd-b419-46f76f7a77c1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[4]/div[2]</value>
+      <webElementGuid>f34898d2-1bc2-4c25-ac8c-fcd9626408bf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Peripheral Smear Report'])[1]/following::div[1]</value>
+      <webElementGuid>cb8c4b33-be59-409b-a818-368d016ae5ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Platelet clumps are detected. Platelet count might be underestimated.'])[1]/following::div[3]</value>
+      <webElementGuid>5ec829d6-b63e-4dd3-aa72-782141a40905</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div[2]</value>
+      <webElementGuid>9bdf6919-8cac-4ae5-979e-9f64cbe4bd9e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'RBC MorphologyTemplatesABC123@#%^&amp;*def456OKCancelDoneWBC MorphologyTemplatesOKCancelPlatelet MorphologyTemplatesOKCancelHemoparasiteTemplatesOKCancelImpressionTemplatesOKCancel' or . = 'RBC MorphologyTemplatesABC123@#%^&amp;*def456OKCancelDoneWBC MorphologyTemplatesOKCancelPlatelet MorphologyTemplatesOKCancelHemoparasiteTemplatesOKCancelImpressionTemplatesOKCancel')]</value>
+      <webElementGuid>011d41da-2a3d-4060-82bf-7164a6162437</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

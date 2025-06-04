@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-005_Verify the values present in the PS impression section when the PS impression are added Manually from the summary page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5c56da26-02e8-4b2c-b8c0-f891dbe9a9f2</testCaseGuid>
+</TestCaseEntity>

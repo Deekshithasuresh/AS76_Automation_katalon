@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_0_1</name>
+   <tag></tag>
+   <elementGuidId>9932f2bf-774d-4002-9c67-1ad271c45200</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div[2]/div/div[2]/div/div[3]/div[2]/span[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^000$/ >> span >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>a25d91f5-61d1-49f0-895c-9538936e832b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>21f071f0-3b23-4983-b6ee-ef8f8debb5a7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;split-view-contaier&quot;]/div[@class=&quot;split-view-fov-section&quot;]/div[1]/div[@class=&quot;fov-table-section&quot;]/div[1]/div[@class=&quot;fov-tuple&quot;]/div[@class=&quot;fov-fields&quot;]/span[2]</value>
+      <webElementGuid>2fd06beb-5454-44d4-a4d7-53caf689553d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div[2]/div/div[2]/div/div[3]/div[2]/span[2]</value>
+      <webElementGuid>62a13efd-209c-48ad-bc3e-8e60b9867ab1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FOV 3'])[1]/following::span[2]</value>
+      <webElementGuid>4d0a71ec-2a41-4023-8089-9988a499aca7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FOV 2'])[1]/following::span[2]</value>
+      <webElementGuid>1032cc58-33b2-4c9f-b721-33d8e653a123</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FOV 4'])[1]/preceding::span[2]</value>
+      <webElementGuid>068ad744-8573-4d90-a7a3-5f4a9f9ee422</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FOV 5'])[1]/preceding::span[5]</value>
+      <webElementGuid>db6de665-523c-4b81-ab9e-24470bba3abd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div[2]/span[2]</value>
+      <webElementGuid>c9276b79-22b9-4d8e-98d2-8459213f24d5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '0' or . = '0')]</value>
+      <webElementGuid>83bb92d1-96da-4467-87c8-adaef6ed9d1b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

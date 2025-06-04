@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_Lymphocytes_MuiImageListItem-img qa_pat_c14b0b</name>
+   <tag></tag>
+   <elementGuidId>b48a0718-c9d5-43c8-bd2a-d55c2d824ef9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>li.MuiImageListItem-root.MuiImageListItem-standard.selected-modification-patch.css-sk132e > img.MuiImageListItem-img.qa_patch_rank-1</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='random-uid']/div[3]/div/div[2]/ul/li/img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>li >> internal:has-text=&quot;1&quot;i >> internal:attr=[alt=&quot;Patch&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>466158c5-d902-4575-a1cc-cd3095c891b0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>/dcm4chee-arc/aets/DCM4CHEE/rs/studies/1.2.826.0.1.3680043.8.498.12169165847176262512242878738325901085/series/1.2.826.0.1.3680043.8.498.35895343789272862379392387264229986597/instances/1.2.826.0.1.3680043.8.498.79671290050461345000641166719031653571/frames/138/rendered</value>
+      <webElementGuid>780d1c20-81db-4f91-8fb2-dd5db6cb853a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>Patch</value>
+      <webElementGuid>caf93dd9-2a71-4c2d-8dfd-fd5e99fe498f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiImageListItem-img qa_patch_rank-1</value>
+      <webElementGuid>ef70e26b-e3b4-46bd-bd54-29d53ecd227a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;random-uid&quot;)/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper css-1dmzujt&quot;]/div[@class=&quot;css-5iws7d&quot;]/div[@class=&quot;patch-list-contianer&quot;]/ul[@class=&quot;MuiImageList-root MuiImageList-standard patches-image-list css-1l0hbq8&quot;]/li[@class=&quot;MuiImageListItem-root MuiImageListItem-standard selected-modification-patch css-sk132e&quot;]/img[@class=&quot;MuiImageListItem-img qa_patch_rank-1&quot;]</value>
+      <webElementGuid>78fcbb2e-8631-411d-9633-2e617bf791d1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='random-uid']/div[3]/div/div[2]/ul/li/img</value>
+      <webElementGuid>a870305d-edd5-4dcc-b764-bf573a537f65</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>(//img[@alt='Patch'])[20]</value>
+      <webElementGuid>db9f42a8-8d20-448c-8d26-0d7428eb3277</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div[2]/ul/li/img</value>
+      <webElementGuid>69917901-d346-4781-92a9-5f9ed787562b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '/dcm4chee-arc/aets/DCM4CHEE/rs/studies/1.2.826.0.1.3680043.8.498.12169165847176262512242878738325901085/series/1.2.826.0.1.3680043.8.498.35895343789272862379392387264229986597/instances/1.2.826.0.1.3680043.8.498.79671290050461345000641166719031653571/frames/138/rendered' and @alt = 'Patch']</value>
+      <webElementGuid>d0a39871-0100-4b53-b659-c85b0b3dd8f5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>(//img[@alt='Patch'])[19]</value>
+      <webElementGuid>565139e7-1f87-4f7e-99a4-cb5b07cae253</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '/dcm4chee-arc/aets/DCM4CHEE/rs/studies/1.2.826.0.1.3680043.8.498.73856960334650848773889915478677647112/series/1.2.826.0.1.3680043.8.498.28631048386893442956659584771773717256/instances/1.2.826.0.1.3680043.8.498.16191660723119306952929682271518490099/frames/377/rendered' and @alt = 'Patch']</value>
+      <webElementGuid>a2511884-89f2-40d0-ba1c-c731a4535560</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

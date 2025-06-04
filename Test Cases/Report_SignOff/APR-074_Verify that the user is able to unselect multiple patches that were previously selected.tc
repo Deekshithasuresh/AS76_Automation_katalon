@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-074_Verify that the user is able to unselect multiple patches that were previously selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a8c23531-ef24-4f4b-b07c-a97fb635eeb4</testCaseGuid>
+</TestCaseEntity>

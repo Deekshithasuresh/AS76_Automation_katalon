@@ -19,23 +19,19 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
+WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
 
-WebUI.click(findTestObject('null'))
+WebUI.setText(findTestObject('Object Repository/Report-Signoff/input_username_loginId'), 'santosh')
 
-WebUI.doubleClick(findTestObject('null'))
+WebUI.setEncryptedText(findTestObject('Object Repository/Report-Signoff/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Sign In'))
 
-WebUI.setText(findTestObject('null'), 'John Doe')
+WebUI.click(findTestObject('Object Repository/Report-Signoff/input_Clear filters_PrivateSwitchBase-input_068da8'))
 
-WebUI.setText(findTestObject('null'), 'ThisIsNotAPassword')
+WebUI.click(findTestObject('Object Repository/Report-Signoff/div_22-Apr-2025, 0410 PM (EAT)'))
 
-WebUI.doubleClick(findTestObject('null'))
+WebUI.verifyElementText(findTestObject('Object Repository/Report-Signoff/button_Reject report'), 'Reject report')
 
-WebUI.click(findTestObject('null'))
-
-WebUI.setEncryptedText(findTestObject('null'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
-
-WebUI.click(findTestObject('null'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Report-Signoff/button_Reject report'), 0)
 

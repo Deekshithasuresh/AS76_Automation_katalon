@@ -17,25 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-WebUI.click(findTestObject('null'))
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh')
 
-WebUI.doubleClick(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
 
-WebUI.setText(findTestObject('null'), 'John Doe')
+WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
 
-WebUI.setText(findTestObject('null'), 'ThisIsNotAPassword')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_Approve the report without supporting images'), 
+    'Approve the report without supporting images?')
 
-WebUI.doubleClick(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.setEncryptedText(findTestObject('null'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
-
-WebUI.click(findTestObject('null'))
+WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_Are you sure you dont want to add suppo_d50012'), 
+    'Are you sure you don’t want to add supporting images to this report? This action is not reversible.')
 

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Reject report</name>
+   <tag></tag>
+   <elementGuidId>8e6df965-e020-45c7-b58d-6c76a925e564</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[3]/div/button</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.appBar_normal-button__KjuH2</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;Reject report&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>24decff8-1f1c-41ed-9d90-420558ee92c5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>appBar_normal-button__KjuH2</value>
+      <webElementGuid>eff641b4-00b5-4e4c-8bf1-235321422a75</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Reject report</value>
+      <webElementGuid>f2c7fc2e-4c65-4fb1-a849-b4f409cb4abf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;appBar_container__0NckD&quot;]/div[@class=&quot;appBar_container__right__PwWvg&quot;]/div[@class=&quot;appBar_buttons__WZYGF&quot;]/button[@class=&quot;appBar_normal-button__KjuH2&quot;]</value>
+      <webElementGuid>633e7e6a-428d-473b-b072-ee98966d049a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[3]/div/button</value>
+      <webElementGuid>d3a93710-b170-4189-97d1-d3848ff3be8e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[1]/following::button[1]</value>
+      <webElementGuid>8671ae1a-30f5-4667-9af1-bc47da2a9068</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Slide Id:'])[1]/following::button[2]</value>
+      <webElementGuid>94cdf7cf-1bbd-4f5d-bd7d-e4fb4aed2dc9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/preceding::button[3]</value>
+      <webElementGuid>9d545259-268a-4568-bfb8-96da064607a7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Reject report']/parent::*</value>
+      <webElementGuid>78ec3101-3c42-4909-a7af-5d37020797be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/button</value>
+      <webElementGuid>3caedba9-2966-48d5-ae67-dac823340cc3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[(text() = 'Reject report' or . = 'Reject report')]</value>
+      <webElementGuid>6d4e9c79-d6a3-492d-b1f5-d62f215d413d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SIG0004'])[1]/following::button[2]</value>
+      <webElementGuid>56874114-179e-4db3-af9e-edba6522f37a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SIG013'])[1]/following::button[2]</value>
+      <webElementGuid>60134045-cb4e-44d3-8f54-d5879f2f7fc4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

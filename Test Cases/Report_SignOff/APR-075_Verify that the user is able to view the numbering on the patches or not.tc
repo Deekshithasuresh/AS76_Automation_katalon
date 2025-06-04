@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-075_Verify that the user is able to view the numbering on the patches or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cc2171cf-4884-4ce4-8a86-121851d40fa4</testCaseGuid>
+</TestCaseEntity>

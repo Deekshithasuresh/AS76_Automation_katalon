@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_abc_1_2</name>
+   <tag></tag>
+   <elementGuidId>8791da0e-18c6-4b23-ae2b-fdba7b3120af</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/table/tr[6]/td[2]/p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=row[name=&quot;Impression abc&quot;i] >> internal:role=paragraph</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>b6b35d05-c752-49d2-8f13-9f8037db4272</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>abc</value>
+      <webElementGuid>f70d9217-dd1c-4e7b-8c85-bd393b53b89e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;css-1f46vhq&quot;]/div[@class=&quot;approve-page-content&quot;]/div[@class=&quot;css-1qg1det&quot;]/table[@class=&quot;approval-table-container&quot;]/tr[@class=&quot;table-row&quot;]/td[@class=&quot;impression-text&quot;]/p[1]</value>
+      <webElementGuid>913b40a5-b19f-42ff-8500-519d93e5f7fe</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/table/tr[6]/td[2]/p</value>
+      <webElementGuid>0e9a527a-72d2-4bbc-a82b-17990085ad89</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Impression'])[2]/following::p[1]</value>
+      <webElementGuid>24468406-b157-4870-9385-c4e770381474</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hemoparasite'])[1]/following::p[2]</value>
+      <webElementGuid>c6c89dca-f887-47de-95bf-9a7694a79152</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='WBC differential count'])[1]/preceding::p[1]</value>
+      <webElementGuid>38d9f259-d029-4119-98fb-f3e19d15db98</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[2]/preceding::p[1]</value>
+      <webElementGuid>d899e533-2749-460a-af91-9e39b5871777</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[6]/td[2]/p</value>
+      <webElementGuid>cd41c96f-501a-41c6-84a2-4be688ea3f13</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'abc' or . = 'abc')]</value>
+      <webElementGuid>97e934a4-d785-44c6-8070-319ac14ff168</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

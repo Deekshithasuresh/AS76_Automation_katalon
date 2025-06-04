@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Slide Id</name>
+   <tag></tag>
+   <elementGuidId>642cb015-5312-4623-af61-e5d4d4d564d6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.appBar_slide-details__title__0owel</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div/div[2]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Slide Id:&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>1c9894eb-bb8b-47dd-accb-52b090de95bb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>appBar_slide-details__title__0owel</value>
+      <webElementGuid>14b002cb-d0c9-4ae5-8437-b45eeee00f8d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Slide Id:</value>
+      <webElementGuid>4f6f20dd-def2-4fab-a032-5f1711153fa6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;appBar_container__0NckD&quot;]/div[@class=&quot;appBar_container__left__d4Fc2&quot;]/div[@class=&quot;appBar_slide-details__23K5X&quot;]/div[@class=&quot;appBar_slide-details__title__0owel&quot;]</value>
+      <webElementGuid>3f677754-62b6-4dd2-9347-1da0fb831abd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div/div[2]/div</value>
+      <webElementGuid>ff4f5bf8-4ca1-490e-a08b-767b9afc33e5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SIG0004'])[1]/preceding::div[1]</value>
+      <webElementGuid>efdf1aff-3a73-4458-ad8a-6c20037eb40c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[1]/preceding::div[4]</value>
+      <webElementGuid>ad13a221-7f82-4eaf-b0a4-a2f0b5ca2e8f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Slide Id']/parent::*</value>
+      <webElementGuid>a28c100b-e8e4-4db6-bed9-e3e429a4b251</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/div[2]/div</value>
+      <webElementGuid>42f133c7-9c48-4221-9c61-091d06e86551</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Slide Id:' or . = 'Slide Id:')]</value>
+      <webElementGuid>00b16058-fe1b-4858-b42a-341fb27d4784</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

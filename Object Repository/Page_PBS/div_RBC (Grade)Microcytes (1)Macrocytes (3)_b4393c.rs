@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_RBC (Grade)Microcytes (1)Macrocytes (3)_b4393c</name>
+   <tag></tag>
+   <elementGuidId>7a926fdd-7cf5-4edc-9064-e19f91d806cd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.css-w8ffts > div:nth-of-type(2)</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/div/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;RBC (Grade)Microcytes (1+)Macrocytes (3+)Ovalocytes (2+)Elliptocytes (1+)Teardro&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>ff5991df-4cee-46b8-a74a-8510fcbf5823</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>RBC (Grade)Microcytes (1+)Macrocytes (3+)Ovalocytes (2+)Elliptocytes (1+)Teardrop Cells (1+)Fragmented Cells (1+)Target Cells (2+)Echinocytes (1+)Hypochromic Cells (0+)Polychromatic Cells (0+)</value>
+      <webElementGuid>7baadb30-09c9-4b7b-9887-b8a76ee1aaa7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;css-1f46vhq&quot;]/div[@class=&quot;approval-content-container&quot;]/div[@class=&quot;image-approval-selector&quot;]/div[@class=&quot;css-w8ffts&quot;]/div[2]</value>
+      <webElementGuid>63c5808e-68eb-4969-b541-3ac0517308db</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/div/div[2]</value>
+      <webElementGuid>36b9fdb3-2a6a-4fa2-ba04-4f1aa618a71c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Smudge Cells (0.0)'])[1]/following::div[1]</value>
+      <webElementGuid>a96c07f8-f32c-45d1-90fc-e060e8c6fc64</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NRBC (0.0)'])[1]/following::div[3]</value>
+      <webElementGuid>6c9b8c31-9fbf-4bbf-b024-d2121cfb4d7f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div[2]</value>
+      <webElementGuid>00b14505-e250-425a-9d69-451a6301258e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'RBC (Grade)Microcytes (1+)Macrocytes (3+)Ovalocytes (2+)Elliptocytes (1+)Teardrop Cells (1+)Fragmented Cells (1+)Target Cells (2+)Echinocytes (1+)Hypochromic Cells (0+)Polychromatic Cells (0+)' or . = 'RBC (Grade)Microcytes (1+)Macrocytes (3+)Ovalocytes (2+)Elliptocytes (1+)Teardrop Cells (1+)Fragmented Cells (1+)Target Cells (2+)Echinocytes (1+)Hypochromic Cells (0+)Polychromatic Cells (0+)')]</value>
+      <webElementGuid>6936f597-49a1-4894-8f4e-799c27e7d8dd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

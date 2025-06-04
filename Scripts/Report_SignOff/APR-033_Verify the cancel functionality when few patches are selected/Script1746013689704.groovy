@@ -16,26 +16,32 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+//Login and assign
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh')
+// Approve flow
 
-WebUI.click(findTestObject('null'))
 
-WebUI.doubleClick(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
 
-WebUI.setText(findTestObject('null'), 'John Doe')
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
 
-WebUI.setText(findTestObject('null'), 'ThisIsNotAPassword')
+// Selecting few patches
 
-WebUI.doubleClick(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Modify'))
 
-WebUI.click(findTestObject('null'))
+WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_1'), '1')
 
-WebUI.setEncryptedText(findTestObject('null'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
+WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_2'), '2')
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_2b6ddc'))
 
+WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_3'), '3')
+
+// Cance the flow
+WebUI.click(findTestObject('Object Repository/Page_PBS/button_Cancel'))

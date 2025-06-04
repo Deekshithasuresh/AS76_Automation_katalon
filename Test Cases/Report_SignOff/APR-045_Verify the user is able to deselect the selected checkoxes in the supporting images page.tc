@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-045_Verify the user is able to deselect the selected checkoxes in the supporting images page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ec846525-f40f-4559-bbd9-5aca29982947</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_First kind of impression for Hemo Parasite</name>
+   <tag></tag>
+   <elementGuidId>fd6850e3-3bf9-4dcc-b50c-0dfa0a1fc5a5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/table/tr[5]/td[2]/p[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;\&quot;First kind of impression for Hemo Parasite.\&quot;&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>2371a970-00ad-4202-9dd3-411108b14e05</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>&quot;First kind of impression for Hemo Parasite.&quot;</value>
+      <webElementGuid>73792a81-ed6f-45aa-9f57-cd138137fcee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;css-1f46vhq&quot;]/div[@class=&quot;approve-page-content&quot;]/div[@class=&quot;css-1qg1det&quot;]/table[@class=&quot;approval-table-container&quot;]/tr[@class=&quot;table-row&quot;]/td[@class=&quot;impression-text&quot;]/p[2]</value>
+      <webElementGuid>067da7d4-b082-4520-a07e-06e3367778ad</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/table/tr[5]/td[2]/p[2]</value>
+      <webElementGuid>adc86891-249b-45bc-a88b-f76710d97472</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hemoparasite'])[1]/following::p[2]</value>
+      <webElementGuid>bd6c4615-6848-4cd8-ab94-60c9afbfbd0a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Impression'])[2]/preceding::p[1]</value>
+      <webElementGuid>1583ee1f-d9fc-4025-a4c9-54b4855ac663</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='&quot;First kind of impression for Hemo Parasite.&quot;']/parent::*</value>
+      <webElementGuid>77c44144-a0cb-4df0-bc4c-d3546c1b9b07</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[5]/td[2]/p[2]</value>
+      <webElementGuid>3d7c038b-817b-4d7f-a04c-9b2d79aa3a9a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = '&quot;First kind of impression for Hemo Parasite.&quot;' or . = '&quot;First kind of impression for Hemo Parasite.&quot;')]</value>
+      <webElementGuid>33bbdf5c-f2e3-427e-b69d-399a9a98735d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

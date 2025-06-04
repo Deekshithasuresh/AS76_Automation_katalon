@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Templates_1_2_3</name>
+   <tag></tag>
+   <elementGuidId>1e534349-10c9-444b-921d-a5e1c3317f1f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[4]/div[2]/div[4]/div/div[2]/div/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Templates&quot;i >> nth=3</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>fd3dfac4-a8c7-4a6d-b9dd-4bece120b3b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Templates</value>
+      <webElementGuid>74047282-9395-49d4-8c28-9f261a223465</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2 reportSummary_pane--special__zbjyX&quot;]/div[@class=&quot;reportSummary_pane-report__UbK-u&quot;]/div[@class=&quot;morphology-parent undefined&quot;]/div[@class=&quot;smearReport_morphology-header__tMXIO&quot;]/div[2]/div[@class=&quot;templatePopover_dropdown__oeeZ2&quot;]/span[1]</value>
+      <webElementGuid>9aea181c-2b60-4861-afa7-17de3938294d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[4]/div[2]/div[4]/div/div[2]/div/span</value>
+      <webElementGuid>e3490c8a-44d3-4983-9d0f-357cc628227c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hemoparasite'])[1]/following::span[1]</value>
+      <webElementGuid>f354a961-bf06-4773-b60d-f3cae3ae1a96</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[3]/following::span[2]</value>
+      <webElementGuid>30ba88e9-f445-4e66-8ac3-9053951bed0f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='OK'])[4]/preceding::span[1]</value>
+      <webElementGuid>5c74d4b9-2371-4004-8799-2c827576a9c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[4]/preceding::span[2]</value>
+      <webElementGuid>fa090f24-dc70-41ae-a719-a0d173f93238</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/div/div[2]/div/span</value>
+      <webElementGuid>07acdaa8-e8b1-4d0c-ae84-de83a458e242</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Templates' or . = 'Templates')]</value>
+      <webElementGuid>090eedf3-2afe-4f97-8263-c0205afe6f22</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

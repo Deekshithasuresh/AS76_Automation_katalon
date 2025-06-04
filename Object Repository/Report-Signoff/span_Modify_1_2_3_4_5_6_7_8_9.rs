@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Modify_1_2_3_4_5_6_7_8_9</name>
+   <tag></tag>
+   <elementGuidId>0e631b37-e0da-4f53-b38f-5329830bc8c9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div[2]/li/div/div[2]/div[7]/div/button/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div:nth-child(9) > .viewer-header-row > .MuiButtonBase-root</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>11898004-3876-45e0-9d4f-90a0d2915e0f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>css-1igme87</value>
+      <webElementGuid>2785f6c3-5151-494b-a33d-91e049157d92</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Modify</value>
+      <webElementGuid>1d2e496f-0507-4e11-a737-557e7ef9cf7d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;css-1f46vhq&quot;]/div[@class=&quot;approval-content-container&quot;]/div[@class=&quot;image-approval-content&quot;]/li[@class=&quot;MuiImageListItem-root css-rq94w1&quot;]/div[1]/div[@class=&quot;css-855yfa&quot;]/div[@class=&quot;viewer-set-container&quot;]/div[@class=&quot;viewer-header-row&quot;]/button[@class=&quot;MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-g8diby&quot;]/span[@class=&quot;css-1igme87&quot;]</value>
+      <webElementGuid>affaf198-5f98-463a-a77f-a961642996c8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div[2]/li/div/div[2]/div[7]/div/button/span</value>
+      <webElementGuid>59b52c06-0876-4286-8cca-19d6a0eb508c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Echinocytes'])[1]/following::span[1]</value>
+      <webElementGuid>3f146197-800f-466c-9feb-e21fa565d2e8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modify'])[11]/following::span[2]</value>
+      <webElementGuid>31e59dc6-fa67-43b3-897d-bc285dcc37e1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hypochromic Cells'])[1]/preceding::span[2]</value>
+      <webElementGuid>39090440-06ec-4f85-ad25-3e90f10df0c3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modify'])[13]/preceding::span[2]</value>
+      <webElementGuid>d6cc383e-5d1c-4d7b-bcb0-de422f360009</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[7]/div/button/span</value>
+      <webElementGuid>82f3fb52-10c5-4b04-9484-0a826335904f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Modify' or . = 'Modify')]</value>
+      <webElementGuid>d6aca1b7-f7db-4ef8-9a05-808f101ba3b3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

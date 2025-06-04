@@ -17,25 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-WebUI.click(findTestObject('null'))
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh')
 
-WebUI.doubleClick(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/button_Reject report'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/button_Reject report_1'))
 
-WebUI.setText(findTestObject('null'), 'John Doe')
-
-WebUI.setText(findTestObject('null'), 'ThisIsNotAPassword')
-
-WebUI.doubleClick(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.setEncryptedText(findTestObject('null'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
-
-WebUI.click(findTestObject('null'))
+WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_Report Rejected'), 'Report Rejected')
 
