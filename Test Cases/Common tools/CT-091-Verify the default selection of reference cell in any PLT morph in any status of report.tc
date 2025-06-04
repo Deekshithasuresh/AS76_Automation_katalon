@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-091-Verify the default selection of reference cell in any PLT morph in any status of report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4724c44f-fd4e-4558-8744-fcde460883bd</testCaseGuid>
+</TestCaseEntity>

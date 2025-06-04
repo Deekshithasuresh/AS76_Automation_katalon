@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-075-Verify the functionality of clear filter on the list user view page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e0c6639b-645a-4e25-910b-296364c12be6</testCaseGuid>
+</TestCaseEntity>

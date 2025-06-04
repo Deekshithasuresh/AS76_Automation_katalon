@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>wbc image first neutrophile (1)</name>
+   <tag></tag>
+   <elementGuidId>e1469f03-c04f-4365-a5c5-5cb026cf9b3d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='wbc_31983_26722.jpg-patch-image-reivew']//img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>DIV</value>
+      <webElementGuid>c40c018f-516b-4912-89d0-a3889a813646</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>xpath1746698258500</value>
+      <webElementGuid>e75793f7-66a3-461d-9140-44efa4ca45d9</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

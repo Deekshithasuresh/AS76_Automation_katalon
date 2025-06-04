@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-103-Verify that the user is able to update a name between 3 to 20 characters in the name field</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>67f9c4b0-b3b0-4389-9447-65f2e18fedaa</testCaseGuid>
+</TestCaseEntity>

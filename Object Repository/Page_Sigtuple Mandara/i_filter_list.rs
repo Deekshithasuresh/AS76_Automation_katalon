@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_filter_list</name>
+   <tag></tag>
+   <elementGuidId>d6d7b804-c0d2-46b7-96cc-d3f36abe62aa</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='cached'])[1]/following::i[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.filter-section.search-input-field > i.material-icons.pointer.color-hover</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;filter_list&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>791a3919-7460-491c-9753-33f7ef1a208a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>material-icons pointer color-hover</value>
+      <webElementGuid>82e86961-b4de-4bc1-ace6-9c32efa418ab</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Filter</value>
+      <webElementGuid>130b4432-d973-42e4-96f6-2d49cc205df6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> filter_list</value>
+      <webElementGuid>2d65062a-be2a-4cfd-a08d-951389dee1b0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/app-root[1]/div[@class=&quot;mandara-app&quot;]/div[1]/app-list-reports[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;list-reports&quot;]/app-toolbar[1]/div[@class=&quot;toolbar-reports ng-star-inserted&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;analysis-toolbar&quot;]/div[@class=&quot;toolbar-user-tools-section&quot;]/div[@class=&quot;search-bar-section&quot;]/div[@class=&quot;filter-section search-input-field&quot;]/i[@class=&quot;material-icons pointer color-hover&quot;]</value>
+      <webElementGuid>d174c3ca-7346-4241-aa94-e5c658c9da0f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='cached'])[1]/following::i[1]</value>
+      <webElementGuid>63222b5c-53c3-42c3-8505-c7820b06e548</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Analysis Reports'])[1]/following::i[3]</value>
+      <webElementGuid>0a1972dd-47c1-48b3-a0b6-9e6696e87b2f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='file_download'])[1]/preceding::i[1]</value>
+      <webElementGuid>7b727b00-e948-499e-b5b2-59c67b919cca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PRIORITY'])[1]/preceding::i[2]</value>
+      <webElementGuid>2648fa5d-a6f5-4175-b4ab-eb47a45ac55a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='filter_list']/parent::*</value>
+      <webElementGuid>2fe5daab-e114-47d9-b63a-2bd3165bfa18</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/i</value>
+      <webElementGuid>05c67244-60aa-49b3-b2aa-213d41da1471</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//i[@title = 'Filter' and (text() = ' filter_list' or . = ' filter_list')]</value>
+      <webElementGuid>bbf8d896-483d-4780-810a-0e4a1bfe1825</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

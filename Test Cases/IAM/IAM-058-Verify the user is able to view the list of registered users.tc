@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-058-Verify the user is able to view the list of registered users</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7f4ba6db-eccb-48c7-954d-6840e64a097c</testCaseGuid>
+</TestCaseEntity>

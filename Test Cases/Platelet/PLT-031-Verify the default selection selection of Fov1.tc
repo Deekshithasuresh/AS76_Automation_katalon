@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-031-Verify the default selection selection of Fov1</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1a2ab1e6-e029-4d50-9d88-57608af0ed13</testCaseGuid>
+</TestCaseEntity>

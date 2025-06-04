@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-135-Verify the presence of the warning message when the WBC count is less than 200 for generated report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>335792d1-29ca-4293-8899-bb047c128431</testCaseGuid>
+</TestCaseEntity>

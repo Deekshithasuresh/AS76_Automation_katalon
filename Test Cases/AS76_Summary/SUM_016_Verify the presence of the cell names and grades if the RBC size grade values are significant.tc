@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_016_Verify the presence of the cell names and grades if the RBC size grade values are significant</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>15275287-8fa9-41f9-adad-85ea3ae5d707</testCaseGuid>
+</TestCaseEntity>

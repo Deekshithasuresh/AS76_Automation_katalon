@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-012_Verify the UI elements present in the Rejection confirmation popup</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>eaac8a1a-14c4-4636-a51e-f0b6d1f67a5f</testCaseGuid>
+</TestCaseEntity>

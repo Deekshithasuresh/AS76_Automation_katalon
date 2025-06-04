@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_First kind of impression for Platelet</name>
+   <tag></tag>
+   <elementGuidId>6a1a947e-b541-41c6-8a2c-7265c5be7c14</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/table/tr[4]/td[2]/p[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;\&quot;First kind of impression for Platelet.\&quot;&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>28bf9fe9-dc04-4b97-a9c3-82e05ebec947</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>&quot;First kind of impression for Platelet.&quot;</value>
+      <webElementGuid>93478f47-8065-483a-bba4-9c6ae4cf9a3f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;css-1f46vhq&quot;]/div[@class=&quot;approve-page-content&quot;]/div[@class=&quot;css-1qg1det&quot;]/table[@class=&quot;approval-table-container&quot;]/tr[@class=&quot;table-row&quot;]/td[@class=&quot;impression-text&quot;]/p[2]</value>
+      <webElementGuid>6ef6f250-00ba-4574-bb02-ad505e9fcb12</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/table/tr[4]/td[2]/p[2]</value>
+      <webElementGuid>7a83187f-169b-4cfa-a9dc-41fffa1016bf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Platelet Morphology'])[1]/following::p[2]</value>
+      <webElementGuid>5dbb0adf-2b8b-4c90-bad7-083537105593</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hemoparasite'])[1]/preceding::p[1]</value>
+      <webElementGuid>be7af51f-1202-4f08-80c2-32127ba114b9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='&quot;First kind of impression for Platelet.&quot;']/parent::*</value>
+      <webElementGuid>034a8364-4fd9-4898-8448-b70a895d4d64</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td[2]/p[2]</value>
+      <webElementGuid>241e85b5-5d1e-4175-9360-4381d3b627d5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = '&quot;First kind of impression for Platelet.&quot;' or . = '&quot;First kind of impression for Platelet.&quot;')]</value>
+      <webElementGuid>9778e9b2-933a-4b01-a9ed-09cee3374e63</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-059-Verify that the admin user is able to scroll through the entire list of users</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c84c2de7-ff6f-4287-bbc6-ca16c744ea08</testCaseGuid>
+</TestCaseEntity>

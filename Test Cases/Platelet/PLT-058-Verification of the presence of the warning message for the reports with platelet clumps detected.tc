@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-058-Verification of the presence of the warning message for the reports with platelet clumps detected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>554d09d4-f70d-497b-9b40-3c9ec0b0f23e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-007-Verify the presence of multiplication factor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9792c463-4969-462a-a7d4-d3e61fbef6e8</testCaseGuid>
+</TestCaseEntity>

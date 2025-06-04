@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Password_rbc-input-box error_1_2_3_4_5_6_7</name>
+   <tag></tag>
+   <elementGuidId>58226a78-1ba4-48c9-8e51-0435d154bf93</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@value='Sigtuple']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^PasswordPassword must be 8\+ chars, with letters, numbers, and a special char\.$/ >> internal:role=textbox</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>71e0f6a1-0dfa-4442-b405-90697a5f5900</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>rbc-input-box error</value>
+      <webElementGuid>eb05a9e8-57aa-4a79-b81d-8f4c80dbf760</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>string</value>
+      <webElementGuid>552da8c4-a91b-41a3-9cbd-42b94330bd51</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Sigtuple</value>
+      <webElementGuid>d139e617-b649-46c2-93a1-dd09eb9936ed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;MuiModal-root css-8ndowl&quot;]/div[@class=&quot;css-hwagmm&quot;]/div[@class=&quot;add-identity-body&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-15j76c0&quot;]/section[1]/div[@class=&quot;identity-userdetails-section&quot;]/div[@class=&quot;section-content&quot;]/div[@class=&quot;section-content-row&quot;]/div[2]/div[@class=&quot;tooptipStyle right create-user&quot;]/input[@class=&quot;rbc-input-box error&quot;]</value>
+      <webElementGuid>8d42dbf1-7957-49b1-9717-4315322c6b38</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@value='Sigtuple']</value>
+      <webElementGuid>6ce733a4-65f5-4df6-9491-34e51cb49839</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/input</value>
+      <webElementGuid>ff8de0c3-1d62-4ef1-ae10-c0a831a29a0b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'string']</value>
+      <webElementGuid>1efa572c-d0e8-496e-b962-0fb8d94e336d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

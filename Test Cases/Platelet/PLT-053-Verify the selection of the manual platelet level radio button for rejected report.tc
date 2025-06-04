@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-053-Verify the selection of the manual platelet level radio button for rejected report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9e68ec97-0b68-41fb-b6d6-c521d6298a64</testCaseGuid>
+</TestCaseEntity>

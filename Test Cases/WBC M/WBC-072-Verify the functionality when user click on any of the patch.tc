@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-072-Verify the functionality when user click on any of the patch</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>40e3f5bc-1c23-46c9-a6b5-2675b27600dd</testCaseGuid>
+</TestCaseEntity>

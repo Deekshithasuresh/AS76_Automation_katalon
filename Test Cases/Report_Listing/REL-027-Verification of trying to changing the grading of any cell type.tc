@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-027-Verification of trying to changing the grading of any cell type</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4ffaec02-ffaa-4a19-a485-0f7c5f38b66c</testCaseGuid>
+</TestCaseEntity>

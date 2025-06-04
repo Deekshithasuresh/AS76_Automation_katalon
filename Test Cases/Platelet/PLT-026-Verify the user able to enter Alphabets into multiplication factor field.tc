@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-026-Verify the user able to enter Alphabets into multiplication factor field</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0dcfcd03-142b-4d47-badb-fe5776b55a68</testCaseGuid>
+</TestCaseEntity>

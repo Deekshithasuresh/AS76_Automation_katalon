@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_012_Verify whether user is able to change the calculated percentage</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0fd70364-e435-4ea1-8817-6e7872dee7a3</testCaseGuid>
+</TestCaseEntity>

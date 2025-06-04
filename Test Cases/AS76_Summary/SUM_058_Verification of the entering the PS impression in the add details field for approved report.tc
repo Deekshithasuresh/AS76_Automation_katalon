@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_058_Verification of the entering the PS impression in the add details field for approved report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0f02cea6-4080-4a27-86c7-170d8baa30a6</testCaseGuid>
+</TestCaseEntity>

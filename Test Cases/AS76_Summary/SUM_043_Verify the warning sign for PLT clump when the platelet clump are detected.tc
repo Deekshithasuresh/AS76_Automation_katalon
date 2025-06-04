@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_043_Verify the warning sign for PLT clump when the platelet clump are detected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c7ebde41-3a8a-434a-ac03-96ab6740d474</testCaseGuid>
+</TestCaseEntity>

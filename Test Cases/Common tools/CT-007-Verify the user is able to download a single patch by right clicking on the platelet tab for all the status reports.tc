@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-007-Verify the user is able to download a single patch by right clicking on the platelet tab for all the status reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>aa909008-824e-4056-8ccf-b738f4cd6e9d</testCaseGuid>
+</TestCaseEntity>

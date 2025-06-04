@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-060-Verify the presence of search bar option in the list user view page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6c97ec49-a4f1-4b31-bb81-88feb4fcda15</testCaseGuid>
+</TestCaseEntity>

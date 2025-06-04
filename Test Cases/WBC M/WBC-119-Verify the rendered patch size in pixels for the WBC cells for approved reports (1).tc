@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-119-Verify the rendered patch size in pixels for the WBC cells for approved reports (1)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>01d8d448-d45b-45b2-a7a9-6602fb899684</testCaseGuid>
+</TestCaseEntity>

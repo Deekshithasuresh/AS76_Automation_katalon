@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-089-verify the functionality of clear filter button when filter has applied</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>61179ce2-7744-4bc1-9964-79d6c5752ebe</testCaseGuid>
+</TestCaseEntity>

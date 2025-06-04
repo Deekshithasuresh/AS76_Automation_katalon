@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-045-Verify that the user is able to set the Configuration retention policy as an admin user only</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d080ebb9-81bf-4482-ba74-e93e76f73111</testCaseGuid>
+</TestCaseEntity>

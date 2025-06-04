@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-096-Verify the presence of disclaimer message in Wbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>992c64ff-b4ba-4c46-a2a7-fd194a1e4743</testCaseGuid>
+</TestCaseEntity>

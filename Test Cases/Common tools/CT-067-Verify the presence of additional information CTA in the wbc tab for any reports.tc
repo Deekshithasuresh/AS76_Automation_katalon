@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-067-Verify the presence of additional information CTA in the wbc tab for any reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ba6b61ae-aea9-4e3c-a543-fbf2093102c6</testCaseGuid>
+</TestCaseEntity>

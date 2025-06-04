@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>approve_button_pdf</name>
+   <tag></tag>
+   <elementGuidId>19c56396-90de-4cca-a9df-c3be1ac827c2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value> //button[contains(@class, 'MuiButton-root') and text()='Approve report']
+</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>DIV</value>
+      <webElementGuid>55dbc69e-bbfd-484e-b585-c502c9f8ff41</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>xpath1746704988547</value>
+      <webElementGuid>c8461ab8-2c41-4333-92ac-9dab7c490faa</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

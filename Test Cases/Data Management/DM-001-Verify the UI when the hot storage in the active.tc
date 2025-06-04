@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-001-Verify the UI when the hot storage in the active</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>75f2954c-bcb9-4a6b-870a-c53a04657982</testCaseGuid>
+</TestCaseEntity>

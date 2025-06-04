@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-001_Verify the availablity of Approve Reporrt button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8ccdd365-d262-4acb-94a3-78a733b0aae3</testCaseGuid>
+</TestCaseEntity>

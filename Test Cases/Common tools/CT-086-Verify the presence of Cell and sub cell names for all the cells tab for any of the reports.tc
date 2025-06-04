@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-086-Verify the presence of Cell and sub cell names for all the cells tab for any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d9845325-7d03-4d93-8241-9ff50d33285f</testCaseGuid>
+</TestCaseEntity>

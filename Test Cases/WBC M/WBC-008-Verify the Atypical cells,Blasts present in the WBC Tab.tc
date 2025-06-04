@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-008-Verify the Atypical cells,Blasts present in the WBC Tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>02f21aa7-5e7c-42cf-886e-4e9ba303f8d3</testCaseGuid>
+</TestCaseEntity>

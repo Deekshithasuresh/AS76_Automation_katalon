@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-017-Verify the presence of edit CTA for multiplication factor for approved report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>14552e09-ba1b-4211-839d-280aec589de5</testCaseGuid>
+</TestCaseEntity>

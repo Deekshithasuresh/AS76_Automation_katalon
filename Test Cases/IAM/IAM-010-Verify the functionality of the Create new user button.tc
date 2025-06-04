@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-010-Verify the functionality of the Create new user button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8a5650a5-8171-4e27-aaaf-1e63343286d4</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-070-Verify the rank image cell name appearing in the additional information pop up in wbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f5463b51-bbd2-4929-892b-43a89b08516a</testCaseGuid>
+</TestCaseEntity>

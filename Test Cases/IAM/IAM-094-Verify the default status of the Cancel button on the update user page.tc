@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-094-Verify the default status of the Cancel button on the update user page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>95cf05df-1180-4f76-b89d-d2cc91e87746</testCaseGuid>
+</TestCaseEntity>

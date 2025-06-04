@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ul_1234</name>
+   <tag></tag>
+   <elementGuidId>e57a4649-d6db-48ea-a25f-1a79b9c47728</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>ul.MuiImageList-root.MuiImageList-standard.patches-image-list.css-1l0hbq8</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='random-uid']/div[3]/div/div[2]/ul</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;1234&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>ul</value>
+      <webElementGuid>042c62c4-ac73-4c4b-ae8e-ced06d203fa5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiImageList-root MuiImageList-standard patches-image-list css-1l0hbq8</value>
+      <webElementGuid>ca18b0be-fed4-4811-bdc1-38bebbe9edf2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1234</value>
+      <webElementGuid>e5a695bc-0c70-4461-8d8f-4cf2c4f4b848</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;random-uid&quot;)/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper css-1dmzujt&quot;]/div[@class=&quot;css-5iws7d&quot;]/div[@class=&quot;patch-list-contianer&quot;]/ul[@class=&quot;MuiImageList-root MuiImageList-standard patches-image-list css-1l0hbq8&quot;]</value>
+      <webElementGuid>eba0e5fe-29ee-476c-bb0e-a0c5d42ff04b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='random-uid']/div[3]/div/div[2]/ul</value>
+      <webElementGuid>9827bcf8-9518-4b73-8b03-edaf87f4daf6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Neutrophils'])[2]/following::ul[1]</value>
+      <webElementGuid>50235b57-89bb-42b1-9647-d7f8e6691171</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Modify'])[10]/following::ul[2]</value>
+      <webElementGuid>1b8c8a7c-cb21-44c0-bbef-b0b906fe64bd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[2]/preceding::ul[1]</value>
+      <webElementGuid>f08eeb29-77f0-490d-a6db-f122f641fe4e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add to report'])[1]/preceding::ul[1]</value>
+      <webElementGuid>5a4e994a-e5ad-4102-b8e4-89b0ff7aa55b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div[2]/ul</value>
+      <webElementGuid>5c60a90d-3f97-465c-8ce2-12f02b55522a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//ul[(text() = '1234' or . = '1234')]</value>
+      <webElementGuid>6ccc9250-ebeb-4656-91d0-f03891686b88</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

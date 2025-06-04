@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-008-Verify the default state of the cancel button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b8b18d06-2f5c-4275-b610-30046faf357b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-023-Verify the functionality if the user selects Delete now when the period is decreased</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>11fd670a-f52c-4450-8dad-fb5342868e45</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-131-Verify the Sticky Behavior of Warning Message with Scroll</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5ea78912-6aa6-4301-97a0-0800a9758f12</testCaseGuid>
+</TestCaseEntity>

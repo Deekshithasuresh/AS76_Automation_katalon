@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RTN_012_Verify that switching views after unselecting all patches works correctly</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>53092b5a-3453-45db-b533-a94bb206ea53</testCaseGuid>
+</TestCaseEntity>

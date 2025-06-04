@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-011-Verify the functionality of cancel button while configuring the retention period</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8a66811c-712a-4267-b2d4-d389c9a3041b</testCaseGuid>
+</TestCaseEntity>

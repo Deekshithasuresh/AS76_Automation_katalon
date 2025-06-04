@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-079-Verification of the closing of the filter box while clicking on the cross button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1ecf1371-1429-4a1a-ae7e-28357e95717a</testCaseGuid>
+</TestCaseEntity>

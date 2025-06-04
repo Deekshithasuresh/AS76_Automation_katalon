@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-102-Verify the closing of the CBC tab by clicking on X icon</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5c8dad78-6eee-4db3-b04b-3b0ea45d0972</testCaseGuid>
+</TestCaseEntity>

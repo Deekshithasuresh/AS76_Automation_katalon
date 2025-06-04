@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-036- Verify the user is able to un-assign the rejected report from the list report page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a966b017-fba1-471d-891b-e5b2b0cb8e52</testCaseGuid>
+</TestCaseEntity>

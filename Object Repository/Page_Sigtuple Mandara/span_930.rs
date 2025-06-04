@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_930</name>
+   <tag></tag>
+   <elementGuidId>45db1464-f224-47d5-9c6f-288fecd36e0c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='tablecontainer']/table/tbody/tr[4]/td[2]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=cell[name=&quot;930&quot;i] >> span >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>345f157a-c841-4d31-b3b0-48220b4d440f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>column-value ng-tns-c42-62 ng-star-inserted</value>
+      <webElementGuid>c9b41bab-bd5f-4ecf-b83d-280c6b9d6edc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> 930 </value>
+      <webElementGuid>face2cfb-8e35-48aa-ab3c-a8d0b5d996b6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;tablecontainer&quot;)/table[@class=&quot;ng-tns-c42-62&quot;]/tbody[@class=&quot;ng-tns-c42-62&quot;]/tr[@class=&quot;ng-tns-c42-62 cursor-pointer ng-star-inserted&quot;]/td[@class=&quot;ng-star-inserted&quot;]/span[@class=&quot;column-value ng-tns-c42-62 ng-star-inserted&quot;]</value>
+      <webElementGuid>0e90659a-0a23-4aef-b4cc-16afb5a19db2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='tablecontainer']/table/tbody/tr[4]/td[2]/span</value>
+      <webElementGuid>68b57ab7-c0fe-41a3-9cb9-a66d09076ee0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lymphocytes'])[1]/following::span[1]</value>
+      <webElementGuid>303ffbc7-ec92-4c7a-b5ae-a81633d626a6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hypersegmented*'])[1]/following::span[9]</value>
+      <webElementGuid>045e10ca-575c-4700-808d-ba7c054af547</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='remove_circle_outline'])[2]/preceding::span[6]</value>
+      <webElementGuid>9396c103-338d-475b-a83d-e0637699b172</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reactive Lymph*'])[1]/preceding::span[7]</value>
+      <webElementGuid>eeee6efe-dbea-4fed-8a54-4ee62bc7d151</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[4]/td[2]/span</value>
+      <webElementGuid>ef307334-277e-4c29-a693-9b6e1bbeaec5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = ' 930 ' or . = ' 930 ')]</value>
+      <webElementGuid>eccd99e3-aa55-4fca-b1cf-ccba6ed74aaf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

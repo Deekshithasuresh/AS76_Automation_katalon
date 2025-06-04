@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_030_Verify comparison of the grade values for RBC size cells in the RBC and summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>17e44c0f-7d33-41f1-bf8d-58339c29ff3e</testCaseGuid>
+</TestCaseEntity>

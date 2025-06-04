@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPV_003_Verify the single click on the the patch for un assigned report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>19b447b6-e959-49c0-a314-3730dfbdad28</testCaseGuid>
+</TestCaseEntity>

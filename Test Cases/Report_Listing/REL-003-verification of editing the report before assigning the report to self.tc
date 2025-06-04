@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-003-verification of editing the report before assigning the report to self</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9e85908d-315a-4144-a967-96998c512253</testCaseGuid>
+</TestCaseEntity>

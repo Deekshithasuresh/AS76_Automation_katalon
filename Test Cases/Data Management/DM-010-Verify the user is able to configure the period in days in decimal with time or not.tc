@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-010-Verify the user is able to configure the period in days in decimal with time or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a725add8-e02d-4077-9b6b-4fb021404de9</testCaseGuid>
+</TestCaseEntity>

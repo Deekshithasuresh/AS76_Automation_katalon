@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-041-Verify the user able to change the N,M,G values for approved reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>531813a9-a795-4999-b02f-5a1b22daece0</testCaseGuid>
+</TestCaseEntity>

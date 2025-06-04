@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-019-Verify the cell count and the number of patches for any non WBC cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c396d60a-501b-4820-835d-d29d2586a5e8</testCaseGuid>
+</TestCaseEntity>

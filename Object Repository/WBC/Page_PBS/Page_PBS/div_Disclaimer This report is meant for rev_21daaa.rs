@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Disclaimer This report is meant for rev_21daaa</name>
+   <tag></tag>
+   <elementGuidId>9c702526-6b70-40bc-9e15-b93537c3e3bb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.bottomDisclaimer_container__XJPK2</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Disclaimer: This report is meant for review and subsequent approval from a certi&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>72932c77-8c2d-4d6d-813e-5e8ed7ad4337</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>bottomDisclaimer_container__XJPK2</value>
+      <webElementGuid>e88c471f-0075-44bf-af1e-369a2e9451f9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Disclaimer:  This report is meant for review and subsequent approval from a certified reviewer. Under no circumstances this report shall be provided to the patient without the approval from a certified reviewer.</value>
+      <webElementGuid>aed38f65-623a-4e5e-9b6d-b40834a70016</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;bottomDisclaimer_container__XJPK2&quot;]</value>
+      <webElementGuid>5b3b1397-3a1a-4f57-8497-84259580905d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[3]</value>
+      <webElementGuid>f1be895a-463e-4d19-9703-4b04dcd8ea7d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[5]/following::div[1]</value>
+      <webElementGuid>218fa0e7-625a-4886-bc74-2eae9da08211</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='OK'])[5]/following::div[5]</value>
+      <webElementGuid>13998ad4-4a5f-4bb4-b3fe-3cdba284cc42</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]</value>
+      <webElementGuid>4fb16993-b098-4db2-8c67-a22f9aa10d8c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Disclaimer:  This report is meant for review and subsequent approval from a certified reviewer. Under no circumstances this report shall be provided to the patient without the approval from a certified reviewer.' or . = 'Disclaimer:  This report is meant for review and subsequent approval from a certified reviewer. Under no circumstances this report shall be provided to the patient without the approval from a certified reviewer.')]</value>
+      <webElementGuid>0eceb3b2-5f7a-4b33-8dea-c09c84e45122</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

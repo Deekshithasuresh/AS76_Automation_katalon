@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-082-Verify the functionality of Assigned to selection filter for single-user selection</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1530ac5e-d72b-4b1e-b707-6af360c401df</testCaseGuid>
+</TestCaseEntity>

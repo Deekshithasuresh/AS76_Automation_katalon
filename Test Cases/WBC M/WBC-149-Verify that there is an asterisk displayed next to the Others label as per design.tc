@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-149-Verify that there is an asterisk displayed next to the Others label as per design</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c3cb4398-56e9-42ca-83cf-894b717bf4a4</testCaseGuid>
+</TestCaseEntity>

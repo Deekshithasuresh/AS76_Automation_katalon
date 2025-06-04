@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-063-Verification of the viewing of the reports which are in the ready for review status</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>369cac7e-e6ff-4545-94b1-1072b5799174</testCaseGuid>
+</TestCaseEntity>

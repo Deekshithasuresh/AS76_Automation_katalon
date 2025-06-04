@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-045-Verify the Contact number field on the Create user page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2ff68b62-b9c8-444a-8561-a2138009be89</testCaseGuid>
+</TestCaseEntity>

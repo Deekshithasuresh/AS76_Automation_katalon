@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-089-Verify that the system calculates and displays the Neutrophil to Lymphocyte Ratio NLR correctly after reclassification</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3cc6aa8a-ab81-4376-899a-b1f5aa30d8b3</testCaseGuid>
+</TestCaseEntity>

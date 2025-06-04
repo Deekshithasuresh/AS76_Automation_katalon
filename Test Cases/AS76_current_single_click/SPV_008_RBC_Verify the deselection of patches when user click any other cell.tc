@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SPV_008_RBC_Verify the deselection of patches when user click any other cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1034e2fa-b165-4d14-8985-72d7d433ef49</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-019-Verify the downloading and saving a multiple patches in the platelet tab for any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>88a03755-7282-43f2-9d63-ff90a55af841</testCaseGuid>
+</TestCaseEntity>

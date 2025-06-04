@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-143-Verify that the count of the Others cell group is included in the total WBC differential calculation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8c940496-469b-4bff-bbd0-c6975a0d0ba8</testCaseGuid>
+</TestCaseEntity>

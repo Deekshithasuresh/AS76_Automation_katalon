@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-145-Verify that if changing the count of the Others cell group updates the WBC differential calculation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>820d8cbc-c9ba-4d4c-97a1-4e1dd6d88694</testCaseGuid>
+</TestCaseEntity>

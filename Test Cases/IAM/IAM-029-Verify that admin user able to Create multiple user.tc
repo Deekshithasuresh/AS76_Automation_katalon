@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-029-Verify that admin user able to Create multiple user</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>89a61cb4-1667-4cd6-8512-788f23bde936</testCaseGuid>
+</TestCaseEntity>

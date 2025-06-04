@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-021-Verify the user able to enter and save the 5000 value in the multiplication factor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5b5857e8-ec5a-4054-a87f-55c676c09bb5</testCaseGuid>
+</TestCaseEntity>

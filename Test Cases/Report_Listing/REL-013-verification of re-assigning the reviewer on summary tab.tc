@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-013-verification of re-assigning the reviewer on summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1bde4abb-8a88-46bc-a0e0-d011e3dd5365</testCaseGuid>
+</TestCaseEntity>

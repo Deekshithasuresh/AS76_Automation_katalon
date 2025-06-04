@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Image settings_default-patch  multisele_e900dc_1_2_3</name>
+   <tag></tag>
+   <elementGuidId>746c2a23-bb5f-448c-bd5c-1c32b33147b5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='hypochromic_rbc_51254_12793.jpg-patch-image-reivew']/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.default-patch.multiselect-patch.show-subcell-lable.rbc-patch.enabled.patch-menu-container</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[id=&quot;hypochromic_rbc_51254_12793\.jpg-patch-image-reivew&quot;] div >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>ce36e61f-ed1a-4daa-a136-6a527e24e98c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value> default-patch  multiselect-patch show-subcell-lable rbc-patch enabled patch-menu-container</value>
+      <webElementGuid>83a3e40c-3a38-4864-a51f-cefcd5be16e4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;hypochromic_rbc_51254_12793.jpg-patch-image-reivew&quot;)/div[@class=&quot;patch-img-container multiselect-patch  rbc-patch&quot;]/div[@class=&quot;default-patch  multiselect-patch show-subcell-lable rbc-patch enabled patch-menu-container&quot;]</value>
+      <webElementGuid>29382ed8-d83d-4871-ab23-f4a2e2c79938</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='hypochromic_rbc_51254_12793.jpg-patch-image-reivew']/div/div</value>
+      <webElementGuid>892c7cc3-3744-4338-b2e7-7ef3ab2adbe0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::div[15]</value>
+      <webElementGuid>c33e59e8-adf9-4618-98d5-8f308b4d75ee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total number of RBCs counted for color based classification is4571'])[1]/following::div[21]</value>
+      <webElementGuid>68e67a16-41fe-47ba-b25b-673768634cc9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div[2]/div/div/div/div/div/div[2]/div/div</value>
+      <webElementGuid>01a8a1e8-27b4-46bb-8b32-a165429f73d6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

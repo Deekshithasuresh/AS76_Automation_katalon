@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-075-Verify the presence of switch to original report option in any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>743fe8e3-1967-4776-9033-59bdedba07a2</testCaseGuid>
+</TestCaseEntity>

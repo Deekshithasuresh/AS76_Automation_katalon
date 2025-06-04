@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_First kind of impression for Impression</name>
+   <tag></tag>
+   <elementGuidId>e1299e29-d95f-44be-bd3d-1bf51982fdb1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/table/tr[6]/td[2]/p[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;\&quot;First kind of impression for Impression.\&quot;&quot;i >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>fedf924b-b640-4b92-819b-de273aab6586</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>&quot;First kind of impression for Impression.&quot;</value>
+      <webElementGuid>efd6892e-36d2-4a8d-96a3-8c2132b79209</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;css-1f46vhq&quot;]/div[@class=&quot;approve-page-content&quot;]/div[@class=&quot;css-1qg1det&quot;]/table[@class=&quot;approval-table-container&quot;]/tr[@class=&quot;table-row&quot;]/td[@class=&quot;impression-text&quot;]/p[2]</value>
+      <webElementGuid>d8a9adb9-066e-430a-aeb2-1830c225fb02</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/table/tr[6]/td[2]/p[2]</value>
+      <webElementGuid>77b9bb40-9239-45da-9fa7-8bb4ffa37a65</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Impression'])[2]/following::p[2]</value>
+      <webElementGuid>12f81e33-3eda-4e1e-9512-b5d3830709f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='WBC differential count'])[1]/preceding::p[3]</value>
+      <webElementGuid>1af22d9c-425a-440a-8b1d-1a73914620a2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='&quot;First kind of impression for Impression.&quot;']/parent::*</value>
+      <webElementGuid>7c3236a0-08c1-49c5-a16b-15982f4cd34c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[6]/td[2]/p[2]</value>
+      <webElementGuid>57cde2cb-09b2-4a34-ab0c-aa2df18831a2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = '&quot;First kind of impression for Impression.&quot;' or . = '&quot;First kind of impression for Impression.&quot;')]</value>
+      <webElementGuid>7555309f-dc20-416b-9a20-9e040ffb53ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='WBC differential count'])[1]/preceding::p[1]</value>
+      <webElementGuid>139ec6c5-47b5-4bd9-a087-7208e16e5bb3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[2]/preceding::p[1]</value>
+      <webElementGuid>72adff1d-8fcc-4c29-acc1-676756260dca</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-005-Verify the message for manual sub-classification at the bottom of WBC TabVerify the message for manual sub-classification at the bottom of WBC Tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3b13d186-f62b-448c-b164-9b00d8e7631c</testCaseGuid>
+</TestCaseEntity>

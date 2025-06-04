@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-138-Verify the presence of profile icon in the admin portal page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b473f335-6802-42d9-abe7-c2bc052f3e35</testCaseGuid>
+</TestCaseEntity>

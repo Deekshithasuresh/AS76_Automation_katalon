@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-052-Verify the selection of the manual platelet level radio button for unassigned report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>de73dfdd-4da6-4d44-9030-8660cb9cd85b</testCaseGuid>
+</TestCaseEntity>

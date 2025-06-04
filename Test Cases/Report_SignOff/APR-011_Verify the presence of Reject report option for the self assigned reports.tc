@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-011_Verify the presence of Reject report option for the self assigned reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d327075d-84be-43cd-a96a-7c3e3087c85f</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-156-Verify that the Others cell group is included in the PDF report under the WBC section</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f5eb8b98-3807-4b9d-84d0-c20e59f3ec5c</testCaseGuid>
+</TestCaseEntity>

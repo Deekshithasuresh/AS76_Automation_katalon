@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_076_Verify that Hemo-parasite cell name is changed to Hemoparasite in the history page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5f9e75b1-1e14-4b3b-965e-0817a082b62b</testCaseGuid>
+</TestCaseEntity>

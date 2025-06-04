@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-020-Verify the calculation of percntage value for All WBC cell type</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4fb0b4ba-8fad-4241-a21c-649abfe1fa85</testCaseGuid>
+</TestCaseEntity>

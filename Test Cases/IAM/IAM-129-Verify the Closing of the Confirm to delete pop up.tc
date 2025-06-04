@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-129-Verify the Closing of the Confirm to delete pop up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>db43565b-b7a4-482c-a6fe-364896dcf5f6</testCaseGuid>
+</TestCaseEntity>

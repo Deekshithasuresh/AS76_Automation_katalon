@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-054-Verify the selection of normal platelet count level</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>99094cc5-d9ca-4465-83ef-fc9b745a387a</testCaseGuid>
+</TestCaseEntity>

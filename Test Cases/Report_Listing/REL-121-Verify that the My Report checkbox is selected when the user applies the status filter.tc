@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-121-Verify that the My Report checkbox is selected when the user applies the status filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6987ec93-0cef-47f0-93a0-e2aa8d3f2dae</testCaseGuid>
+</TestCaseEntity>

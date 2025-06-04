@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-073-Verify the Functionality of show applied filters in the filter pop up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ceeaa69a-200a-405c-808d-191fcbbd81b3</testCaseGuid>
+</TestCaseEntity>

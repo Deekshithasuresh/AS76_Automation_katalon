@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-092-Verify the default selection of reference cell in all the status of the reports for the Morphology tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>79584397-2e78-4bdf-ad2d-6e13752fab27</testCaseGuid>
+</TestCaseEntity>

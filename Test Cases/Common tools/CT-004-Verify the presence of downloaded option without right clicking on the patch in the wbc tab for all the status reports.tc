@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-004-Verify the presence of downloaded option without right clicking on the patch in the wbc tab for all the status reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5445bd73-0077-4b45-94f6-f9f5cbc453be</testCaseGuid>
+</TestCaseEntity>

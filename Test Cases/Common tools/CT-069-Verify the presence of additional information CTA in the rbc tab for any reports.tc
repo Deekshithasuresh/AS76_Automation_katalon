@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-069-Verify the presence of additional information CTA in the rbc tab for any reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7998d132-cbd4-4961-b9c4-caee780018f0</testCaseGuid>
+</TestCaseEntity>

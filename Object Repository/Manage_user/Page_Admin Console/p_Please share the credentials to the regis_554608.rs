@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Please share the credentials to the regis_554608</name>
+   <tag></tag>
+   <elementGuidId>dcc87da6-564d-4581-b0c6-fd8471cdda5a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='modal-modal-description']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#modal-modal-description</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Please share the credentials to the registered user&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>3c859636-ba59-4c0c-b372-92f947eff2fd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTypography-root MuiTypography-body1 css-yg30e6</value>
+      <webElementGuid>7ce22e3e-0302-42c6-b0bb-62ab8a5bccee</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>modal-modal-description</value>
+      <webElementGuid>b813f31c-2975-4cd4-950b-f2adc3706d03</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Please share the credentials to the registered user</value>
+      <webElementGuid>cff91629-bd3b-4148-9aec-d18520cfaf93</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;MuiModal-root css-1ydukw5&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1y8e9mf&quot;]/div[@class=&quot;css-fpoild&quot;]/div[@class=&quot;modal-content&quot;]/div[@class=&quot;modal-main-title&quot;]/p[@id=&quot;modal-modal-description&quot;]</value>
+      <webElementGuid>98eb5044-e426-49f9-86cf-1acf4ace472d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='modal-modal-description']</value>
+      <webElementGuid>06cbbe15-2972-4313-9309-8e27f7b31eb8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Share the Credentials'])[1]/following::p[1]</value>
+      <webElementGuid>9c32102b-af0b-4613-bb7f-e3d5ef6fbc77</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Update'])[1]/following::p[1]</value>
+      <webElementGuid>8b35504e-85b5-4c20-aae0-90206568fc7f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Oriennnto'])[2]/preceding::p[2]</value>
+      <webElementGuid>e628b924-5dc2-458a-9fe8-eb370a013305</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='********'])[1]/preceding::p[3]</value>
+      <webElementGuid>0f48d0cf-2298-4368-9b61-80e945837374</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Please share the credentials to the registered user']/parent::*</value>
+      <webElementGuid>d4230520-3a7e-485a-b00d-522a0b8650e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p</value>
+      <webElementGuid>61cfcbf1-dfa3-4f51-98dd-2416beae7f0f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[@id = 'modal-modal-description' and (text() = 'Please share the credentials to the registered user' or . = 'Please share the credentials to the registered user')]</value>
+      <webElementGuid>11744733-0519-4565-96d1-b91c29011f0f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

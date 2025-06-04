@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-046-Verify that the user is able to enter more than 25 characters in the contact number field</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a87ac9d9-f128-481f-b089-d26e4d046db0</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-076-Verify the presence of switch to modified report option in any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8a8c0ecc-2adb-4273-b679-d5af89c1cdab</testCaseGuid>
+</TestCaseEntity>

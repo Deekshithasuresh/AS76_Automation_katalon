@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-025-Verify the user is able to re-configure the increased retention period for a deletion of the report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>af602f17-60fe-4fe2-a705-c04bdb7f45b9</testCaseGuid>
+</TestCaseEntity>

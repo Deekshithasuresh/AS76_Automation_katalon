@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-068-Verify the user is able to filter the user based upon Operator role</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4679177a-e156-41ce-ada0-3fa5980d6957</testCaseGuid>
+</TestCaseEntity>

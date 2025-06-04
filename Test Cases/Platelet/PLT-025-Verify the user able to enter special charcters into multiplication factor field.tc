@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-025-Verify the user able to enter special charcters into multiplication factor field</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3c5b6bb3-7be4-4f3c-a61a-d4914456d97d</testCaseGuid>
+</TestCaseEntity>

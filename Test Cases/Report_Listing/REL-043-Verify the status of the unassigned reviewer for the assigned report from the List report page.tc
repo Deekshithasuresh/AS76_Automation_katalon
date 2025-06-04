@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-043-Verify the status of the unassigned reviewer for the assigned report from the List report page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a9441b97-2e3d-43f1-880e-3f6b445841d0</testCaseGuid>
+</TestCaseEntity>

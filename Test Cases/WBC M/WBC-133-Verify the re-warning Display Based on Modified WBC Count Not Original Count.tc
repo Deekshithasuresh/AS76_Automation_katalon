@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-133-Verify the re-warning Display Based on Modified WBC Count Not Original Count</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e215d528-0d4e-4b2a-b0f0-1d0c657ff103</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-011-Verification of the message present below the FOV list</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d97da77d-d5b9-416e-a455-0bcc67fe7726</testCaseGuid>
+</TestCaseEntity>

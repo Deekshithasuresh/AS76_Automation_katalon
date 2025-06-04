@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-105-Verify the user is able to enter min 8 characters in the email field</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>999e8b7a-5d11-438f-bf60-3240e484ffa7</testCaseGuid>
+</TestCaseEntity>

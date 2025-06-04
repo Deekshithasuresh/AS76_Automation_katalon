@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_038_Verify the presence of the manual level value in the summary when the manual level report is selected from the platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6bb7c49a-831d-4809-9201-b7c6269b5f08</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REL-105-verification when no result is available for the applied filter criteria</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9a359210-7c95-4f82-b26a-7f873c8cf656</testCaseGuid>
+</TestCaseEntity>

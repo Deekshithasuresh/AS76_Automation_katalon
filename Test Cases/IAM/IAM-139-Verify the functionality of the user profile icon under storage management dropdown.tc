@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-139-Verify the functionality of the user profile icon under storage management dropdown</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>024e9e71-37a5-4f25-8337-6e7e5302467a</testCaseGuid>
+</TestCaseEntity>

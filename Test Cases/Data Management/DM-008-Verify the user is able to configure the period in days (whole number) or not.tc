@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-008-Verify the user is able to configure the period in days (whole number) or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8ba98660-ae5e-46cf-a50a-d8d32e21ed27</testCaseGuid>
+</TestCaseEntity>

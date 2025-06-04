@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-152-Verify Inclusion of Others in WBC Differential Calculation (1)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f56a732a-ee5b-487b-85fb-01b021b74921</testCaseGuid>
+</TestCaseEntity>

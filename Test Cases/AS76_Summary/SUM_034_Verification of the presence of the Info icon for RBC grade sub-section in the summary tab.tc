@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_034_Verification of the presence of the Info icon for RBC grade sub-section in the summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b5f73a12-ed21-4911-bcff-a4b0e29ad481</testCaseGuid>
+</TestCaseEntity>

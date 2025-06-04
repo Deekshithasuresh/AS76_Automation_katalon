@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-081-Verify the presence of reference icon in the Rbc tab for any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3e175a88-166b-46fc-ba80-e2050bba865b</testCaseGuid>
+</TestCaseEntity>
