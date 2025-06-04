@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-093-Verify the functionality of zoom out option in the platelet count tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>44b175fe-2736-491f-b558-4587434f0609</testCaseGuid>
+</TestCaseEntity>

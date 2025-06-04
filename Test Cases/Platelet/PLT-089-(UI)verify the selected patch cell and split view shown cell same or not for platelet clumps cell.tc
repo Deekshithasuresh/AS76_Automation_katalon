@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-089-(UI)verify the selected patch cell and split view shown cell same or not for platelet clumps cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9baa3581-42b7-4e74-81c9-eed7e5b5c94a</testCaseGuid>
+</TestCaseEntity>

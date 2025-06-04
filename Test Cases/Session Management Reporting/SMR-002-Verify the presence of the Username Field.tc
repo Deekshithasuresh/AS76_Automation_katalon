@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMR-002-Verify the presence of the Username Field</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5a3e8054-02f5-4e3a-b57c-4451d85c6945</testCaseGuid>
+</TestCaseEntity>

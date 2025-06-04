@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM-040-Verification of the logout functionality on the admin portal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6aa0cc4a-5883-4e48-b360-bedc154f1d0e</testCaseGuid>
+</TestCaseEntity>

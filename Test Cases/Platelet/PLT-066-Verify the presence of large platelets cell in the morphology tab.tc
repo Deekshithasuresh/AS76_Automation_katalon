@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-066-Verify the presence of large platelets cell in the morphology tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7647d9c7-81dc-48ee-9bbd-af2396d28713</testCaseGuid>
+</TestCaseEntity>

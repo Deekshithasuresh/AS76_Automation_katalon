@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-065-Verifyt the whether user able to select morphology tab or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5e8b1f16-fed0-46fc-bdba-0a7746143ee8</testCaseGuid>
+</TestCaseEntity>

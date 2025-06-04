@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-090(1)-Verify the functionality of zoom in button from the platelet morphology tab(plt clumps)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cfd016b8-0069-41ac-b658-2dbc3b6e0665</testCaseGuid>
+</TestCaseEntity>

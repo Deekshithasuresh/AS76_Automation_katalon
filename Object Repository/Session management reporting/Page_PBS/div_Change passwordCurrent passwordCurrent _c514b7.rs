@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Change passwordCurrent passwordCurrent _c514b7</name>
+   <tag></tag>
+   <elementGuidId>1d8bf783-e110-4ece-86f6-37cfe2473263</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div/form/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.form-template</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Change passwordCurrent passwordCurrent passwordNew passwordNew passwordPassword &quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>e9674737-d2ba-4db8-891a-e78576cb13a1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-template</value>
+      <webElementGuid>3874c702-3fee-4fba-8252-9d6a169f1cb2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Change passwordCurrent passwordCurrent passwordNew passwordNew passwordPassword must be atleast 8 characters longConfirm passwordConfirm passwordNew password and Confirm password does not match  Is alphanumeric  Contains at-least 8 characters  Has at-least 1 special characterConfirm passwordCancel</value>
+      <webElementGuid>b481aeef-a788-44e5-b71a-75cda8bc3f1e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;login-page css-10fsrl8&quot;]/div[@class=&quot;css-10r805p&quot;]/form[1]/div[@class=&quot;form-template&quot;]</value>
+      <webElementGuid>886d0c1c-8ac2-420c-93f4-ab4018b46f81</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div/form/div</value>
+      <webElementGuid>ac68a663-1e1d-455a-be2e-5789d16710ab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PBS'])[2]/following::div[3]</value>
+      <webElementGuid>058aae39-09ca-4342-8b3f-e43ef427161d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//form/div</value>
+      <webElementGuid>813fbaf8-323c-4cd3-9d3d-7518960ff044</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Change passwordCurrent passwordCurrent passwordNew passwordNew passwordPassword must be atleast 8 characters longConfirm passwordConfirm passwordNew password and Confirm password does not match  Is alphanumeric  Contains at-least 8 characters  Has at-least 1 special characterConfirm passwordCancel' or . = 'Change passwordCurrent passwordCurrent passwordNew passwordNew passwordPassword must be atleast 8 characters longConfirm passwordConfirm passwordNew password and Confirm password does not match  Is alphanumeric  Contains at-least 8 characters  Has at-least 1 special characterConfirm passwordCancel')]</value>
+      <webElementGuid>702582b0-df73-467e-a38e-5ff904655591</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

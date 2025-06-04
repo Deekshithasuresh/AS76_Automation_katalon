@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_08-May-2025, 1246 PM (IST)</name>
+   <tag></tag>
+   <elementGuidId>8060f3e8-23e4-45d8-87be-82d12716ba60</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.time</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='historyContainer']/div/div/div/div/div/div[2]/div/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;08-May-2025, 12:46 PM (IST)&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>1e8aaa2c-c41d-44c8-a3d6-d66e91c79f67</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>time</value>
+      <webElementGuid>e985f6b9-c49d-4fe7-9379-245fd74eda78</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>08-May-2025, 12:46 PM (IST)</value>
+      <webElementGuid>001039e3-ea23-403f-9bc1-a4de65d4ff8b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;historyContainer&quot;)/div[@class=&quot;history-content&quot;]/div[@class=&quot;history-stepper-container&quot;]/div[@class=&quot;infinite-scroll-component__outerdiv&quot;]/div[@class=&quot;infinite-scroll-component&quot;]/div[@class=&quot;stepper-container&quot;]/div[@class=&quot;stepper-content&quot;]/div[@class=&quot;stepper-title&quot;]/div[@class=&quot;time&quot;]</value>
+      <webElementGuid>1594435e-eb82-4cb5-9a9a-69ded2ba4930</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='historyContainer']/div/div/div/div/div/div[2]/div/div[2]</value>
+      <webElementGuid>74b3faac-b537-4134-b443-ed7fe3fcef0e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='User created'])[1]/following::div[1]</value>
+      <webElementGuid>554e5e84-081e-4952-97f0-65d6a459fa4f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='History'])[2]/following::div[14]</value>
+      <webElementGuid>48bb8707-e523-4dc8-887b-64cb1381278c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='adminuser created new user adminuserr'])[1]/preceding::div[1]</value>
+      <webElementGuid>bd4fb57b-9345-47d1-9724-c9cd697b34f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='User created'])[2]/preceding::div[6]</value>
+      <webElementGuid>3dec5de6-f0c7-4379-b48c-2a210e5129a8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='08-May-2025, 12:46 PM (IST)']/parent::*</value>
+      <webElementGuid>113d344a-0b3f-4547-b47f-98df7cf39bd3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div/div[2]/div/div[2]</value>
+      <webElementGuid>f52bceaa-6fde-4bdf-b398-551660f4265e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '08-May-2025, 12:46 PM (IST)' or . = '08-May-2025, 12:46 PM (IST)')]</value>
+      <webElementGuid>318c59f1-c2db-4f01-989a-b6adf5d33964</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM-043-Verify that the User views the currently configured time zone</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5f58da1a-afaf-4724-afb9-f8392e62ba70</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMR-001-Verify the presence of the logo in the login page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ddab5399-a693-4c0c-ba69-24d85e45a074</testCaseGuid>
+</TestCaseEntity>

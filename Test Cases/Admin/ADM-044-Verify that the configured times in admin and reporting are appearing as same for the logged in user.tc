@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM-044-Verify that the configured times in admin and reporting are appearing as same for the logged in user</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a3cef1b4-033a-4526-91db-b540c90cf9e5</testCaseGuid>
+</TestCaseEntity>

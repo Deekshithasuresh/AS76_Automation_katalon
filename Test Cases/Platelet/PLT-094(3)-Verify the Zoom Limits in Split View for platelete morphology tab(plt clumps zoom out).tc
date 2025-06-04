@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-094(3)-Verify the Zoom Limits in Split View for platelete morphology tab(plt clumps zoom out)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>eaff8521-4e73-4a70-9930-5b0894b79507</testCaseGuid>
+</TestCaseEntity>

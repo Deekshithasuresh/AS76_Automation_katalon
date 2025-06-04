@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_PBSChange passwordCurrent passwordCurre_03e21a</name>
+   <tag></tag>
+   <elementGuidId>c4a1acc1-a7db-44fa-957a-4f2bb17382d7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.login-page.css-10fsrl8</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;PBSChange passwordCurrent passwordCurrent passwordNew passwordNew passwordConfir&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>b6369322-9c9c-4439-8b90-49acfcdd48aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>login-page css-10fsrl8</value>
+      <webElementGuid>93a6e27d-6dfb-4ede-941c-fcb0d40b8ba0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>PBSChange passwordCurrent passwordCurrent passwordNew passwordNew passwordConfirm passwordConfirm password  Is alphanumeric  Contains at-least 8 characters  Has at-least 1 special characterConfirm passwordCancel</value>
+      <webElementGuid>e38139b1-50d1-4f5f-b92f-299a02c6a171</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;login-page css-10fsrl8&quot;]</value>
+      <webElementGuid>b98688c3-2bf0-4a6b-9720-90a0d2f76463</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div</value>
+      <webElementGuid>31714271-2946-4947-a2b9-f3bab37fb9cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div</value>
+      <webElementGuid>c33768f2-fc7c-40ea-b1b4-d47cc0fec898</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'PBSChange passwordCurrent passwordCurrent passwordNew passwordNew passwordConfirm passwordConfirm password  Is alphanumeric  Contains at-least 8 characters  Has at-least 1 special characterConfirm passwordCancel' or . = 'PBSChange passwordCurrent passwordCurrent passwordNew passwordNew passwordConfirm passwordConfirm password  Is alphanumeric  Contains at-least 8 characters  Has at-least 1 special characterConfirm passwordCancel')]</value>
+      <webElementGuid>f402d834-cc69-430e-82eb-1df1013caa1f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

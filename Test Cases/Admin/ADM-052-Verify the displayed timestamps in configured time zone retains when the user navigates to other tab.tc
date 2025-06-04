@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM-052-Verify the displayed timestamps in configured time zone retains when the user navigates to other tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>84e05438-d6b0-4e48-a382-0320d2741e53</testCaseGuid>
+</TestCaseEntity>

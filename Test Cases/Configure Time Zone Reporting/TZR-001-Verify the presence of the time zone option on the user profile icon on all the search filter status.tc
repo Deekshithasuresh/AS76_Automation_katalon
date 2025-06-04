@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-001-Verify the presence of the time zone option on the user profile icon on all the search filter status</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>23596c52-aa0a-49d9-a786-07d799cc1094</testCaseGuid>
+</TestCaseEntity>

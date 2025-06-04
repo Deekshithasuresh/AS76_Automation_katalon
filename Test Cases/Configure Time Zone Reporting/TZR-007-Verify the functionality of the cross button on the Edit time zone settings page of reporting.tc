@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-007-Verify the functionality of the cross button on the Edit time zone settings page of reporting</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>83db254d-7a51-441a-87e8-07db3c2861a5</testCaseGuid>
+</TestCaseEntity>

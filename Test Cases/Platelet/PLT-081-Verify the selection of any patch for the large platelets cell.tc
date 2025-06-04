@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-081-Verify the selection of any patch for the large platelets cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>07230691-89e8-465f-b121-9ac35d1b436e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-018-Verify that the date gets changed according to the change in time zone</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ba596b09-4b8f-4738-a8e0-70e3b3ff1915</testCaseGuid>
+</TestCaseEntity>

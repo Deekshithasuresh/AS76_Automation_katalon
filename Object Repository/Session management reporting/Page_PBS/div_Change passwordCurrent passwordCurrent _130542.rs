@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Change passwordCurrent passwordCurrent _130542</name>
+   <tag></tag>
+   <elementGuidId>199ff441-b962-4911-8d09-ea75f71bfcdc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.form-template</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div/form/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Change passwordCurrent passwordCurrent passwordNew passwordNew passwordPassword &quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>8ec9eaa6-2284-462a-b16c-df965fdeab5b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-template</value>
+      <webElementGuid>fc6cb58b-0ba0-4d2b-ace4-552c22649cd5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Change passwordCurrent passwordCurrent passwordNew passwordNew passwordPassword must have atleast 1 special characterConfirm passwordConfirm password  Is alphanumeric  Contains at-least 8 characters  Has at-least 1 special characterConfirm passwordCancel</value>
+      <webElementGuid>c1fde315-4f4d-463b-a1b9-a0d4ad6585e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;login-page css-10fsrl8&quot;]/div[@class=&quot;css-10r805p&quot;]/form[1]/div[@class=&quot;form-template&quot;]</value>
+      <webElementGuid>48832882-344b-4f48-ba78-6bf72a42bcd2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div/form/div</value>
+      <webElementGuid>904e3213-1fea-44d2-a19e-80fbcb014363</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PBS'])[2]/following::div[3]</value>
+      <webElementGuid>27b9dd7a-38c8-474a-9c87-9d27876b816a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//form/div</value>
+      <webElementGuid>1b8731f9-10d9-4a1a-99a0-469043eb7144</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Change passwordCurrent passwordCurrent passwordNew passwordNew passwordPassword must have atleast 1 special characterConfirm passwordConfirm password  Is alphanumeric  Contains at-least 8 characters  Has at-least 1 special characterConfirm passwordCancel' or . = 'Change passwordCurrent passwordCurrent passwordNew passwordNew passwordPassword must have atleast 1 special characterConfirm passwordConfirm password  Is alphanumeric  Contains at-least 8 characters  Has at-least 1 special characterConfirm passwordCancel')]</value>
+      <webElementGuid>4829b871-00b2-4d84-9614-fb39b704d17f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
