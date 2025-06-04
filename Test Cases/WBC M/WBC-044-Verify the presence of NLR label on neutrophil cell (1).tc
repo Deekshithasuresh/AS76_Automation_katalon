@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case12</name>
+   <name>WBC-044-Verify the presence of NLR label on neutrophil cell (1)</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>c90f30c0-b5fc-4411-b4cf-9b2b439af6d7</testCaseGuid>
+   <testCaseGuid>b48fd56f-3122-4064-b46d-b33c2fe3abc4</testCaseGuid>
 </TestCaseEntity>
