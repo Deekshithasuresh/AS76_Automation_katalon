@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-049-Verify the levels present in the Platelet Level Limits page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e9ed4e3e-7268-4d74-8e67-9b6754e5b47d</testCaseGuid>
+</TestCaseEntity>

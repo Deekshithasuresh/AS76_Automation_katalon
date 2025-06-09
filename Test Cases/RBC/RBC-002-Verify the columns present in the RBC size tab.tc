@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-002-Verify the columns present in the RBC size tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>269837fc-6a8a-44ee-95c8-2066e65d5481</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-030-Verify the value present in the grade 0 column of the RBC size, shape and colour tabs</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cad11e13-3e08-4443-afd6-68e45a646b1c</testCaseGuid>
+</TestCaseEntity>

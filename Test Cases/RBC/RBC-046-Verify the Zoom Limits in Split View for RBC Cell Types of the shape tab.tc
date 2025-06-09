@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-046-Verify the Zoom Limits in Split View for RBC Cell Types of the shape tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6c2b0329-7e41-48ce-bd4c-bb247daf362d</testCaseGuid>
+</TestCaseEntity>

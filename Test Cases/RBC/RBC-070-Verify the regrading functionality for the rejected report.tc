@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-070-Verify the regrading functionality for the rejected report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a92ea95c-9d61-4630-aa2e-4185729db9f1</testCaseGuid>
+</TestCaseEntity>

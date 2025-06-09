@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Home_zoom_CTA</name>
+   <tag></tag>
+   <elementGuidId>df3e51e6-6ed2-4423-b197-de3976e64b79</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//img[@alt=&quot;home&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.ant-layout.ant-layout-has-sider.css-1x0dypw > div.ant-layout.css-1x0dypw > main.ant-layout-content.css-1x0dypw > div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>.ant-layout > .ant-layout > .ant-layout-content > div >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>a2342cc5-7d7d-44bb-b1f2-d05d346711b7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9.2 css-k8aoie&quot;]/div[@class=&quot;patches-tab&quot;]/div[@class=&quot;viewer-patches-container&quot;]/div[@class=&quot;patches-viewer-section&quot;]/div[@class=&quot;viewer-section&quot;]/div[@class=&quot;ant-layout css-1x0dypw&quot;]/main[@class=&quot;ant-layout-content css-1x0dypw&quot;]/div[@class=&quot;ant-layout ant-layout-has-sider css-1x0dypw&quot;]/div[@class=&quot;ant-layout css-1x0dypw&quot;]/main[@class=&quot;ant-layout-content css-1x0dypw&quot;]/div[1]</value>
+      <webElementGuid>b9936f4d-e7e7-4e77-bb34-4bc6f8734b4d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/main/div/div/main/div</value>
+      <webElementGuid>15f72fa8-70d6-4d78-952e-23d52da7e5f2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::div[73]</value>
+      <webElementGuid>cf7ad177-a951-48df-87e6-40ae401ebe60</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total number of RBCs counted for size based classification is 2589'])[1]/following::div[79]</value>
+      <webElementGuid>19b44ce1-6140-4b16-84fa-29c57da78273</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='+'])[1]/preceding::div[7]</value>
+      <webElementGuid>294d7f20-cd00-4ff8-b9ff-d5b8c8f3de22</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='–'])[1]/preceding::div[7]</value>
+      <webElementGuid>4c90477c-503e-4ffe-b3af-4fd69b951a15</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main/div/div/main/div</value>
+      <webElementGuid>003ddba2-4bf3-42f3-ab19-ed33292a39cf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

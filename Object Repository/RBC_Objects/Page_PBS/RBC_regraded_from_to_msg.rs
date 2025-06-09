@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>RBC_regraded_from_to_msg</name>
+   <tag></tag>
+   <elementGuidId>526cf83e-75ee-4a92-a6c3-d607950e592c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[contains(text(), 'regraded from')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.header</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Microcytes regraded from 1 to 2&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>bfd565d6-d603-4a8e-8906-6915ed5e9f3b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>header</value>
+      <webElementGuid>ae33b342-6c1f-4375-81d0-a14398e7b7c0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Microcytes regraded from 1 to 2</value>
+      <webElementGuid>56b2cfab-3493-4d52-bd52-3072c94f9723</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;MuiSnackbar-root MuiSnackbar-anchorOriginTopRight css-3sz7wh&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-elevation6 MuiSnackbarContent-root jss3 jss4 css-a7e5sw&quot;]/div[@class=&quot;MuiSnackbarContent-message css-1w0ym84&quot;]/div[@class=&quot;classified-snackbar&quot;]/div[@class=&quot;header-row&quot;]/div[@class=&quot;header&quot;]</value>
+      <webElementGuid>4cbdd594-5eef-4324-9e07-ddcc6996e2a7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div[2]/div/div/div/div/div[2]</value>
+      <webElementGuid>3ed2dee5-90f8-4132-9dc7-4391c08f5c20</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::div[135]</value>
+      <webElementGuid>65fd804e-59d4-440a-b92a-70a746c81506</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total number of RBCs counted for size based classification is 3309'])[1]/following::div[141]</value>
+      <webElementGuid>3dd5bc5d-800e-46f5-b507-737251fcb535</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Microcytes is now significant'])[1]/preceding::div[1]</value>
+      <webElementGuid>bedd54a6-70dd-4dca-843e-89366fb13867</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Microcytes regraded from 1 to 2']/parent::*</value>
+      <webElementGuid>b5c732f4-4a23-4ed8-b7b4-8280b83d0005</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div[2]/div/div/div/div/div[2]</value>
+      <webElementGuid>f23485a0-49b6-4e1c-9180-9f4e825b3ef1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Microcytes regraded from 1 to 2' or . = 'Microcytes regraded from 1 to 2')]</value>
+      <webElementGuid>5ab27ca7-ab1d-4e3b-a2c6-ef078a79de71</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

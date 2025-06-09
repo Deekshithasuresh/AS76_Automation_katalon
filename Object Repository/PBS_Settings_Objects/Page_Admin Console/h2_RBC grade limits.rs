@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h2_RBC grade limits</name>
+   <tag></tag>
+   <elementGuidId>7b02b29c-d091-45b9-a79f-ca49d2b079ae</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/div/div/h2</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h2.rbc-grade-title</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=heading[name=&quot;RBC grade limits %&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h2</value>
+      <webElementGuid>76324451-e5e0-4c68-aad5-cdbcfae7538d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>rbc-grade-title</value>
+      <webElementGuid>c0477a91-da86-4107-bd99-eccfa3612002</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>RBC grade limits %</value>
+      <webElementGuid>c2ff1159-4a20-49c1-a9cd-b0dcc4702268</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;css-10fsrl8&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container css-1y82ffr&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9.5 css-70qs4m&quot;]/div[@class=&quot;rbc-grade-page&quot;]/div[1]/div[@class=&quot;grade-heading&quot;]/h2[@class=&quot;rbc-grade-title&quot;]</value>
+      <webElementGuid>61def9cb-fcf3-49da-afb6-a78a122afb56</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/div/div/h2</value>
+      <webElementGuid>162a92cd-c030-4f45-974e-996161484d65</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Platelet level limits'])[3]/following::h2[1]</value>
+      <webElementGuid>244ecc62-2cd0-412e-a269-bc00bfb453e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='RBC grade limits'])[3]/following::h2[1]</value>
+      <webElementGuid>56b82d34-6c96-49f5-a5e2-cf612e93b4ba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit size settings'])[1]/preceding::h2[1]</value>
+      <webElementGuid>6c8cc28e-8fbf-4844-9e63-54f2b2918800</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Size'])[1]/preceding::h2[1]</value>
+      <webElementGuid>32f68182-4fd8-4f67-9c0d-06dd76f87a5d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='RBC grade limits %']/parent::*</value>
+      <webElementGuid>0d7440d2-6256-4ffd-901a-21985840cac9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/h2</value>
+      <webElementGuid>8a9c88de-4377-42ba-9b02-d62e8678507c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h2[(text() = 'RBC grade limits %' or . = 'RBC grade limits %')]</value>
+      <webElementGuid>d01ce898-71cf-4fc8-8448-efa3ceb6a9df</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

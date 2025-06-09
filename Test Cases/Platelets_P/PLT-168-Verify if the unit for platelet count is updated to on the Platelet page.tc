@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-168-Verify if the unit for platelet count is updated to on the Platelet page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>af0f09f8-7d0f-4d7b-a099-5247e8c6c42f</testCaseGuid>
+</TestCaseEntity>

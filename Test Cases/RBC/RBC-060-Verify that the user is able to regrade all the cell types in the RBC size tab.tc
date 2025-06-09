@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-060-Verify that the user is able to regrade all the cell types in the RBC size tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7efc7688-f65b-48ad-b9b6-82fb2a230ae4</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-059-Verify the Auto Navigation in Split View for all cell types present in RBC shape tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>120a4082-78a0-45ed-a32c-a4263283db7c</testCaseGuid>
+</TestCaseEntity>

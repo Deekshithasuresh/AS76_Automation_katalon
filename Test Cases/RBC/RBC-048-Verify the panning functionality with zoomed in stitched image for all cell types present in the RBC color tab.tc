@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-048-Verify the panning functionality with zoomed in stitched image for all cell types present in the RBC color tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>beb598ee-105c-45ae-bedc-df96ca5ded6d</testCaseGuid>
+</TestCaseEntity>
