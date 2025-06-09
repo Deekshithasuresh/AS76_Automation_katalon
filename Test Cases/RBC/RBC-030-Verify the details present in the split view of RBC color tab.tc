@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-030-Verify the details present in the split view of RBC color tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>45f56b92-dbc8-41a2-bc40-a2bbb4c786b1</testCaseGuid>
+</TestCaseEntity>

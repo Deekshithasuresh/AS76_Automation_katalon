@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Decreased_rbc-input-box</name>
+   <tag></tag>
+   <elementGuidId>69f41668-e708-425d-9eab-937bbddad50d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@class='rbc-input-box '])[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.tooptipStyle.center.plateletLevel > input.rbc-input-box</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Decreased$/ >> input[type=&quot;string&quot;]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>037a74e7-dbec-4d34-bb5d-60ce272a2fa3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>rbc-input-box </value>
+      <webElementGuid>7fd93654-d609-49b8-a000-aec9adaab4e5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>string</value>
+      <webElementGuid>fa6dc781-bea7-4ed2-8256-3f6a05981f5d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>790</value>
+      <webElementGuid>9de23f86-b12f-44db-ae3b-bc83f6ef0613</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;MuiModal-root css-1plwxbw&quot;]/div[@class=&quot;modal-container&quot;]/div[@class=&quot;platelet-level-page&quot;]/div[1]/div[@class=&quot;input-container&quot;]/div[@class=&quot;input-sub-container&quot;]/div[@class=&quot;normal-input-container&quot;]/div[@class=&quot;tooptipStyle center plateletLevel&quot;]/input[@class=&quot;rbc-input-box&quot;]</value>
+      <webElementGuid>dfc25285-82b6-4924-9492-5a7224e804b4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@value='790']</value>
+      <webElementGuid>884ae85b-2df0-4ec6-8f01-b7a0adaa7141</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/input</value>
+      <webElementGuid>3a86e694-ae93-440e-876e-f2b030ae1dfe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'string']</value>
+      <webElementGuid>fd74a592-463c-419d-8d7f-d39c2a77c747</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

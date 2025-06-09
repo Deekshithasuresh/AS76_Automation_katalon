@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-133-Verify the unassigned User Can Modify LargePlatelet from Detected to Not Detected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0c9ac5f5-afc7-4b6d-8e45-a87e8a7665b5</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-141-Verify No Note Is Displayed When Platelet Clumps Are Modified to Not Detected in the count tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b1849798-2304-410c-923d-70a8b8845fae</testCaseGuid>
+</TestCaseEntity>

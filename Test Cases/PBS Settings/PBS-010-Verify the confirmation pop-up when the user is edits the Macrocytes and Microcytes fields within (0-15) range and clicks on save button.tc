@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-010-Verify the confirmation pop-up when the user is edits the Macrocytes and Microcytes fields within (0-15) range and clicks on save button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3d747007-c864-4a3e-9cc7-66d5ea94478d</testCaseGuid>
+</TestCaseEntity>

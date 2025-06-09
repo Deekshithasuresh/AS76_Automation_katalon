@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-092-Verify the rendered patch size in pixels for the RBC cells in RBC color tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>04bd3152-0bd8-40c2-91b0-f44b68d56474</testCaseGuid>
+</TestCaseEntity>

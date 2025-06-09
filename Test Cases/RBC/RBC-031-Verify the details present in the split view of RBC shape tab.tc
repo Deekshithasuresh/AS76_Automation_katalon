@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-031-Verify the details present in the split view of RBC shape tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e9d0474f-98a2-47fe-9877-22d06b9f19fd</testCaseGuid>
+</TestCaseEntity>

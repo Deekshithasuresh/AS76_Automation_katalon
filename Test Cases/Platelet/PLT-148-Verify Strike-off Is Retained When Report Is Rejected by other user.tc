@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-148-Verify Strike-off Is Retained When Report Is Rejected by other user</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d2b96bbf-3979-4f57-a137-26e756830031</testCaseGuid>
+</TestCaseEntity>

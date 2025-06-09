@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-105-Verify that the RBC shape patches are getting sorted based on the quality score</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>73f32e25-9a33-46d7-ba01-a9a5368f69d6</testCaseGuid>
+</TestCaseEntity>

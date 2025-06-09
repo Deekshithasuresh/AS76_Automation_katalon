@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-042-Verify the panning on the stitched image for all cell types present in the RBC color tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>408055c7-c72f-463b-ae30-4623fa6221fc</testCaseGuid>
+</TestCaseEntity>

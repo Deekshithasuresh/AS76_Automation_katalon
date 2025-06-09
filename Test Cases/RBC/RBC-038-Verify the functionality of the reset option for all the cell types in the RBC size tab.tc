@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-038-Verify the functionality of the reset option for all the cell types in the RBC size tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f4edd1a8-a34d-4370-9cd1-13a6a8bd36c7</testCaseGuid>
+</TestCaseEntity>

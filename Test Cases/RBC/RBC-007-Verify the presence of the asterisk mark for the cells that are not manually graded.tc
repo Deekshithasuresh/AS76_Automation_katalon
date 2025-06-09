@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-007-Verify the presence of the asterisk mark for the cells that are not manually graded</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c10ca295-f35d-4f80-8a50-3c066c9bef31</testCaseGuid>
+</TestCaseEntity>

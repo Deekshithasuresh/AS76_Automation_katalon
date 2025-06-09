@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-106-Verify that the RBC color patches are getting sorted based on the quality score</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>260e119c-7a6f-4dca-8738-60712b5b9077</testCaseGuid>
+</TestCaseEntity>

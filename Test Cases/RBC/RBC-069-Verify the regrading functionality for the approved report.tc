@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-069-Verify the regrading functionality for the approved report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7f47990d-42ca-4224-b49e-2b45a1ddcd5f</testCaseGuid>
+</TestCaseEntity>

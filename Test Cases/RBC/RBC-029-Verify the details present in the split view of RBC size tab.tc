@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-029-Verify the details present in the split view of RBC size tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8857a13b-5a32-4688-af70-efa2c24987ee</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-008-Verify the user is able edit the XX and YY field values for Macrocytes and Microcytes within (0-15) range or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ba783098-9e0c-46a8-9089-ffe26c0b5974</testCaseGuid>
+</TestCaseEntity>

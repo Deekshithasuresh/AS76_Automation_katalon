@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-007-Verify the available limits for RBC diameter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ef1ec753-cd81-4134-bc9f-9161a64aa046</testCaseGuid>
+</TestCaseEntity>

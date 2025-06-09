@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-006-Verify the relevant cell names and its order in the RBC shape subtab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1d7861c7-b8e2-417b-b1bd-14b0753d8695</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-013-Verify the relevant cell names and its order in the RBC color subtab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b83b7939-009f-48cf-b475-c49b1311188f</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-027-Verify the Tabs present for the RBC Grade Limits page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6ab103d5-3d06-4b3b-b825-56e560d86ca6</testCaseGuid>
+</TestCaseEntity>
