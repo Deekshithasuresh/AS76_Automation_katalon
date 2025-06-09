@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-021-Verify that no grade ,percentage values, significant and nonsignificant legends are present for the cells in the inclusion tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c3d5ee40-05b9-44c6-8c1c-80e374800bff</testCaseGuid>
+</TestCaseEntity>

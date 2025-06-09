@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-063-Verify the manual grading of all cell types present in the inclusions tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c973bb7a-5f57-4f4d-8b09-a30e97b27755</testCaseGuid>
+</TestCaseEntity>

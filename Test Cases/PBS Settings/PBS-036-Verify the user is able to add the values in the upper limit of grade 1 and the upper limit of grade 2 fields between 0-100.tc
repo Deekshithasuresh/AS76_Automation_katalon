@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-036-Verify the user is able to add the values in the upper limit of grade 1 and the upper limit of grade 2 fields between 0-100</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>01c9da86-ba19-4209-8ad8-eb3cbcaf775c</testCaseGuid>
+</TestCaseEntity>

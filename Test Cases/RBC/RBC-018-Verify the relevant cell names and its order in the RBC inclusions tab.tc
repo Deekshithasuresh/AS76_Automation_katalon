@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-018-Verify the relevant cell names and its order in the RBC inclusions tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6b1b8b5e-7f6d-48c8-8d81-4d282d91c397</testCaseGuid>
+</TestCaseEntity>

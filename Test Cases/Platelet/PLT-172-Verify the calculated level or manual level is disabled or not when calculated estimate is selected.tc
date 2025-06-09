@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-172-Verify the calculated level or manual level is disabled or not when calculated estimate is selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4ed9b6fc-8a14-4b60-9b67-148a2cef1c8d</testCaseGuid>
+</TestCaseEntity>

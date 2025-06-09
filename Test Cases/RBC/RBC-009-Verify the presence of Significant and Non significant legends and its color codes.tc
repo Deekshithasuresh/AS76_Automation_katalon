@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-009-Verify the presence of Significant and Non significant legends and its color codes</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>efd6b99c-978a-4e7f-bce9-6bbfb17dd914</testCaseGuid>
+</TestCaseEntity>

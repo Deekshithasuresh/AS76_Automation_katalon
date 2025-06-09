@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-073-Verify the calculation of percaentage value for all cell types present in the RBC color tab after regrading</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0e54c791-d125-45cf-91d5-8ed13aa79d5e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-052-Verify image clarity at various zoom levels for all cell types present in the RBC color tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>307f68f8-aa6e-49c0-b945-bc479f287619</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-155-Verify that a legend is displayed for the color used for platelet clump annotations</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9a713dcc-ab3a-4dc8-9301-9a6cf890d125</testCaseGuid>
+</TestCaseEntity>

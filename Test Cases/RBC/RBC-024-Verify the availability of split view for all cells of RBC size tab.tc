@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-024-Verify the availability of split view for all cells of RBC size tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cd59b96f-5a19-4836-81da-11b1c011b977</testCaseGuid>
+</TestCaseEntity>

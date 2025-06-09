@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-047-Verify the Panning Functionality with Zoomed-In Stitched Image for all cell types present in the RBC size tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f80074e1-744d-44df-a02e-27d9d5da2f45</testCaseGuid>
+</TestCaseEntity>

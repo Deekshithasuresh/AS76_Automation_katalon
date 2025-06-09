@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-055-Verify the Patch Consistency between Patch View and Split View for all the cell types present in the RBC shape tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>deb3f429-00bf-49ff-927b-d4f66ba984d5</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-061-Verify that the user is able to regrade all the cell types in the RBC shape tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1be9c87c-e581-4864-ac68-eb4d919b44fa</testCaseGuid>
+</TestCaseEntity>

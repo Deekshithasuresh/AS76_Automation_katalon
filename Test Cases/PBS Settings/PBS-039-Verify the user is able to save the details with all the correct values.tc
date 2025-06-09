@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-039-Verify the user is able to save the details with all the correct values</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>54a43743-5a19-44a5-8e82-b001e7023e4f</testCaseGuid>
+</TestCaseEntity>

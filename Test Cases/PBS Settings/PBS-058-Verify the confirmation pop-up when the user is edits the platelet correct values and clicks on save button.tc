@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-058-Verify the confirmation pop-up when the user is edits the platelet correct values and clicks on save button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>56a0063a-d507-4562-8312-468075193360</testCaseGuid>
+</TestCaseEntity>
