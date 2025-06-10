@@ -7,7 +7,9 @@ import org.apache.pdfbox.pdmodel.PDDocument
 import org.apache.pdfbox.rendering.PDFRenderer
 import org.apache.pdfbox.text.PDFTextStripper
 
+
 class PdfReader {
+
 
 	static File getLatestPdfReport(String downloadsDirPath) {
 		File downloadsDir = new File(downloadsDirPath)
@@ -50,3 +52,4 @@ class PdfReader {
 		document.close()
 	}
 }
+
