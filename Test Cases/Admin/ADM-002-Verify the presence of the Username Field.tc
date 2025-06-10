@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM-002-Verify the presence of the Username Field</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>55ef90fe-aa9b-4422-ab21-804b845ca07b</testCaseGuid>
+</TestCaseEntity>

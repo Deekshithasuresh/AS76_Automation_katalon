@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-116-Verify the user is able to update the predefined roles for Operator</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dbea05ed-08c4-4023-a4e2-e3663bef1667</testCaseGuid>
+</TestCaseEntity>

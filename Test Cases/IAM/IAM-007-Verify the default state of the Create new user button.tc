@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-007-Verify the default state of the Create new user button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>94f80cf6-b28e-445b-803f-13126a185036</testCaseGuid>
+</TestCaseEntity>

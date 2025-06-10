@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-029-Verify if the time zone configured on the reporting application same on the admin portal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1f0b72a0-c861-464d-9117-f315439f1f06</testCaseGuid>
+</TestCaseEntity>

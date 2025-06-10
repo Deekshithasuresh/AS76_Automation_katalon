@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-091-Verify the zoomin functionality for the platelet count tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b364f42f-4bd4-44a6-88d6-57694e4973ef</testCaseGuid>
+</TestCaseEntity>

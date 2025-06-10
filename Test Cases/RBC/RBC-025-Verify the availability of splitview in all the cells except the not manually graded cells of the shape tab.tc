@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-025-Verify the availability of splitview in all the cells except the not manually graded cells of the shape tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d8fd5541-0830-4e25-a0c5-2c46eb91e70b</testCaseGuid>
+</TestCaseEntity>

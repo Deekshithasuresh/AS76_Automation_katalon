@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-115-Verify the user is able to update the predefined roles for admin</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>62ed9f48-5b9d-4317-b466-12c7db04fd78</testCaseGuid>
+</TestCaseEntity>

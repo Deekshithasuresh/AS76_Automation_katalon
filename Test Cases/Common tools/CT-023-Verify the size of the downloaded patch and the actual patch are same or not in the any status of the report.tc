@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-023-Verify the size of the downloaded patch and the actual patch are same or not in the any status of the report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>176c0811-2dde-4887-bdb9-9faada8d87f7</testCaseGuid>
+</TestCaseEntity>

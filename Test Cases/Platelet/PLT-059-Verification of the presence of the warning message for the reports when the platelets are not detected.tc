@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-059-Verification of the presence of the warning message for the reports when the platelets are not detected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e733683b-e757-41c0-9937-fe96f2de6e55</testCaseGuid>
+</TestCaseEntity>

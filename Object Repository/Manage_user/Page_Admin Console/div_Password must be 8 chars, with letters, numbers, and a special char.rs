@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Password must be 8 chars, with letters, numbers, and a special char</name>
+   <tag></tag>
+   <elementGuidId>c0c80450-ead2-46fe-bfb8-ec66dd9a7ff2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[(text() = 'Password must be 8+ chars, with letters, numbers, and a special char.' or . = 'Password must be 8+ chars, with letters, numbers, and a special char.')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value></value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>dea3eea5-7802-45cb-8589-fb0d90842d8b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>error-message</value>
+      <webElementGuid>fb114d50-f109-4edf-a705-6ec95c01ac6f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Password must be 8+ chars, with letters, numbers, and a special char.</value>
+      <webElementGuid>d64bbf7c-38e9-4990-aeb2-af3b75cfeea6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/div[@class=&quot;error-message&quot;]</value>
+      <webElementGuid>f194157e-ddec-4fe4-906a-fd83c90224fd</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Password must be 8+ chars, with letters, numbers, and a special char.' or . = 'Password must be 8+ chars, with letters, numbers, and a special char.')]</value>
+      <webElementGuid>012ef856-65e1-428e-980e-048b5cbb0338</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

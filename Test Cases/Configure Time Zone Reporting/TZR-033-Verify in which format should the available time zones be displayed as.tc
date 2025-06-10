@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-033-Verify in which format should the available time zones be displayed as</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9c68da26-c1fc-4175-b24f-f9c16e8804f7</testCaseGuid>
+</TestCaseEntity>

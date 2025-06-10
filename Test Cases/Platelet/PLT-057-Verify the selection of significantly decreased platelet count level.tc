@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-057-Verify the selection of significantly decreased platelet count level</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>70681672-e3a8-47aa-b04b-2d933b51ada6</testCaseGuid>
+</TestCaseEntity>

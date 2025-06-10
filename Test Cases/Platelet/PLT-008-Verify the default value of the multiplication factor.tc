@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-008-Verify the default value of the multiplication factor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>502b57b3-6c7f-4083-bf27-0c391e185e5b</testCaseGuid>
+</TestCaseEntity>

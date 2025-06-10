@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM-042-Verify that the User can access the Time Zone configuration from the profile icon</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7291b423-adc9-4ca1-8add-683f474247ea</testCaseGuid>
+</TestCaseEntity>

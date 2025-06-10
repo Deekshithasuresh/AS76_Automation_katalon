@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMR-027-Verify the presence of the user profile icon on the processing tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7fa29f07-3c18-4535-85b3-953b3f35bd93</testCaseGuid>
+</TestCaseEntity>

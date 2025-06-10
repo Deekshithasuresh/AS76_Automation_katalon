@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-071-Verify the rank image cell name appearing in the additional information pop up in morphology tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9f3be580-7729-4051-b33e-5b536578718e</testCaseGuid>
+</TestCaseEntity>

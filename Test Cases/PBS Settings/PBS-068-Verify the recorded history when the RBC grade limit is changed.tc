@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-068-Verify the recorded history when the RBC grade limit is changed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>783281a8-69b9-4066-a7e7-7a2f10c0225d</testCaseGuid>
+</TestCaseEntity>

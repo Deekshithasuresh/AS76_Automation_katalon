@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMR-022-Verify the logout functionality</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d52ad3b9-5eac-4e4e-b11d-bf30289aab1c</testCaseGuid>
+</TestCaseEntity>

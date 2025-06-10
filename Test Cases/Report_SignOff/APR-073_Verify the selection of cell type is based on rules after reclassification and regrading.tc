@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-073_Verify the selection of cell type is based on rules after reclassification and regrading</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0739b5f2-710c-4f9b-8668-cb80858c1bb6</testCaseGuid>
+</TestCaseEntity>

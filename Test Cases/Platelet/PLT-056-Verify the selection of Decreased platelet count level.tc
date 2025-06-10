@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-056-Verify the selection of Decreased platelet count level</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2ddbf7ae-204f-46fd-a2e5-a32a21d0a3aa</testCaseGuid>
+</TestCaseEntity>

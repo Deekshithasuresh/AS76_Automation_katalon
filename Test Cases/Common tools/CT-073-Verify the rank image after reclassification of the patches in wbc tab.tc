@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-073-Verify the rank image after reclassification of the patches in wbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ce48cb71-583f-4772-98e8-48569f197d73</testCaseGuid>
+</TestCaseEntity>

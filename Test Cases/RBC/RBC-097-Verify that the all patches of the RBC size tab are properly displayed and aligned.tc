@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-097-Verify that the all patches of the RBC size tab are properly displayed and aligned</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>66434e2f-e602-4cfa-b7ea-bfe64ceb274c</testCaseGuid>
+</TestCaseEntity>

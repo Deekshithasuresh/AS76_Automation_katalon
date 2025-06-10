@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM-054-Verify the searching and selection of time zone from the dropdown</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>014b09b3-0b46-4981-8954-63e0022b08ad</testCaseGuid>
+</TestCaseEntity>

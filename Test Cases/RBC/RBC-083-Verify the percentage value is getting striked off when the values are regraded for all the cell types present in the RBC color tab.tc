@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-083-Verify the percentage value is getting striked off when the values are regraded for all the cell types present in the RBC color tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>51de887a-69db-4003-861f-5e197a53195a</testCaseGuid>
+</TestCaseEntity>

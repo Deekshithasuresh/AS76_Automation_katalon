@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-102-Verify the single patch reclassification from large platelets to platelet clumps</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3019472e-fdb8-4d78-9f2b-85ebb3f9cdd6</testCaseGuid>
+</TestCaseEntity>

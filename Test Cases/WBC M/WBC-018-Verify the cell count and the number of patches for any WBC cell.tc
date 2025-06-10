@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-018-Verify the cell count and the number of patches for any WBC cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e90d2258-f69c-4605-820e-9ee1085cf6de</testCaseGuid>
+</TestCaseEntity>

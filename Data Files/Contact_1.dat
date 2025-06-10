@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>Contact_1</name>
+   <tag></tag>
+   <connectionProperties/>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>3a4ed50e-2a1d-42be-9484-2e6d87fd4cc7</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>%2B1-203-688-5500</data>
+   <data>%2B61%282%2992999999</data>
+   <data>%2B8103-3443-8111</data>
+   <data>%2B12125551234</data>
+   <data>%2B442079460958</data>
+   <data>%2B49301234567</data>
+   <data>%2B8131234678</data>
+   <data>%2B33170189920</data>
+   <data>%2B9112345678910</data>
+   <data>%2B27111234567</data>
+   <data>%2B447911124456</data>
+   <data>%2B34912345678</data>
+   <data>%2B912212345678</data>
+   <data>%2B6561234567</data>
+   <data>%2B23411234567</data>
+   <data>%2B254201234567</data>
+   <data>%2B6791234567</data>
+   <data>%2B902121234567</data>
+   <data>%2B85212345678</data>
+   <data>%2B1-%28800%29-123-456-7890-09876</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>Data</name>
+      <size>20</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

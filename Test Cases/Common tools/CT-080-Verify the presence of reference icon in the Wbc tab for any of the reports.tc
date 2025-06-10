@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-080-Verify the presence of reference icon in the Wbc tab for any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>db1dc16a-bd54-450c-a1f7-8b654c4fa183</testCaseGuid>
+</TestCaseEntity>

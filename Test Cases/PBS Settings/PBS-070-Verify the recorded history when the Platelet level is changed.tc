@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-070-Verify the recorded history when the Platelet level is changed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3bd6b2af-0a9f-46b9-b0ea-737265956eb1</testCaseGuid>
+</TestCaseEntity>

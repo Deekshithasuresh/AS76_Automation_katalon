@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-067-Verification of the components available on the filter pop-up screen</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>993b0b1f-69cb-4e9e-bf56-9ee45a29814f</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-049-Verify the panning functionality with zoomed-in stitched image for the cell types present in the shape tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e2513645-d97e-49bb-843f-9fb3aeb07e4f</testCaseGuid>
+</TestCaseEntity>

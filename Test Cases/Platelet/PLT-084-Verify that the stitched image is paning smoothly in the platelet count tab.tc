@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-084-Verify that the stitched image is paning smoothly in the platelet count tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1da98bf7-71ab-4ce9-a20c-0efac67303ab</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-146-Verify Strike-off Is Retained When Report Is Reassigned</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>129c2c88-ba03-4f89-8f67-77514ba6bbe5</testCaseGuid>
+</TestCaseEntity>

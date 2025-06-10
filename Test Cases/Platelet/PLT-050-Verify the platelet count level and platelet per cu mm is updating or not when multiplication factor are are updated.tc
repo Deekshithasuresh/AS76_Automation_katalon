@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-050-Verify the platelet count level and platelet per cu mm is updating or not when multiplication factor are are updated</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>260fc744-31dc-4ddf-9160-94d5f1faac7f</testCaseGuid>
+</TestCaseEntity>

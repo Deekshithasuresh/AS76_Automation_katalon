@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-016-Verify the note message present in the RBC color tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>70850154-2dcd-437f-aed6-be77a9680902</testCaseGuid>
+</TestCaseEntity>

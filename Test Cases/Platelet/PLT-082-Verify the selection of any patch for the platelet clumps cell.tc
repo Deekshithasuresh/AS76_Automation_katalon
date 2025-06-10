@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-082-Verify the selection of any patch for the platelet clumps cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>893681f5-ec9b-4146-9be0-ecca9a48b56a</testCaseGuid>
+</TestCaseEntity>

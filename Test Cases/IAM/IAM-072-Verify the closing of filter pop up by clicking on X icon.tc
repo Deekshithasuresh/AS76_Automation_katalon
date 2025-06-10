@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-072-Verify the closing of filter pop up by clicking on X icon</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>af92e64c-cbdd-4a75-980d-97bbadb2f0b3</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-048-Verify the user is able to enter max 50 characters in the username field</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b21aa7ad-b185-47e7-b093-b55fb09491b3</testCaseGuid>
+</TestCaseEntity>

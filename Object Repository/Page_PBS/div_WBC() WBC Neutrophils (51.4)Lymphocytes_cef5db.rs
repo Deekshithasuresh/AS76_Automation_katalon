@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_WBC() WBC Neutrophils (51.4)Lymphocytes_cef5db</name>
+   <tag></tag>
+   <elementGuidId>b1ba521b-0c52-4856-b827-894f1a101ee2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.css-w8ffts > div</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;WBC(%) WBC Neutrophils (51.4)Lymphocytes (27.4)Eosinophils (2.8)Monocytes (13.2)&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>9d6d7d4d-6681-404e-912f-7dfc9e79146b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>WBC(%) WBC Neutrophils (51.4)Lymphocytes (27.4)Eosinophils (2.8)Monocytes (13.2)Basophils (0.9)Immature Granulocytes (1.9)Atypical Cells/Blasts (2.4)Immature Eosinophils (0.0)Immature Basophils (0.0)Promonocytes (0.0)Prolymphocytes (0.0)Hairy Cells (0.0)Sezary Cells (0.0)Plasma Cells (0.0)Others (0.0)Non-WBCNRBC (0.0)Smudge Cells (0.0)</value>
+      <webElementGuid>555b9516-97fa-4468-abaf-662d89aab8ce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;css-1f46vhq&quot;]/div[@class=&quot;approval-content-container&quot;]/div[@class=&quot;image-approval-selector&quot;]/div[@class=&quot;css-w8ffts&quot;]/div[1]</value>
+      <webElementGuid>02f79714-099f-444c-9991-8f8012079b66</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div[2]/div/div/div</value>
+      <webElementGuid>53d585da-2efc-4384-8df8-e39cb2280484</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::div[5]</value>
+      <webElementGuid>6c8a23f0-1c42-4a9c-b845-07544587c460</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div</value>
+      <webElementGuid>afa097e3-0f12-4144-a60c-868b618486b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'WBC(%) WBC Neutrophils (51.4)Lymphocytes (27.4)Eosinophils (2.8)Monocytes (13.2)Basophils (0.9)Immature Granulocytes (1.9)Atypical Cells/Blasts (2.4)Immature Eosinophils (0.0)Immature Basophils (0.0)Promonocytes (0.0)Prolymphocytes (0.0)Hairy Cells (0.0)Sezary Cells (0.0)Plasma Cells (0.0)Others (0.0)Non-WBCNRBC (0.0)Smudge Cells (0.0)' or . = 'WBC(%) WBC Neutrophils (51.4)Lymphocytes (27.4)Eosinophils (2.8)Monocytes (13.2)Basophils (0.9)Immature Granulocytes (1.9)Atypical Cells/Blasts (2.4)Immature Eosinophils (0.0)Immature Basophils (0.0)Promonocytes (0.0)Prolymphocytes (0.0)Hairy Cells (0.0)Sezary Cells (0.0)Plasma Cells (0.0)Others (0.0)Non-WBCNRBC (0.0)Smudge Cells (0.0)')]</value>
+      <webElementGuid>1cd8ead1-0749-4b6c-8664-e0ad05eabe70</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

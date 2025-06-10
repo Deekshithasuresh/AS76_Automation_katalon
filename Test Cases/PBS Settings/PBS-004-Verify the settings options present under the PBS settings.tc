@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-004-Verify the settings options present under the PBS settings</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bdcfe378-9149-44be-a2f6-401de638b486</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM-004-Verify the presence of Sign in button</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>38532bb3-69de-4ebd-bdee-4a3433194acf</testCaseGuid>
+</TestCaseEntity>

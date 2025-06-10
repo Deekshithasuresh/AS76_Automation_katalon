@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-034-Verify the functionality of zoom in plus button for the cell types for the RBC shape tab except for the cells which are not manually graded</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b124369e-0ae7-4365-9c1c-2807a6141c81</testCaseGuid>
+</TestCaseEntity>

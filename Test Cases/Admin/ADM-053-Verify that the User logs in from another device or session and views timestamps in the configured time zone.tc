@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM-053-Verify that the User logs in from another device or session and views timestamps in the configured time zone</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3be6436b-c7ab-406b-8d55-d6d4e0e6c1c7</testCaseGuid>
+</TestCaseEntity>

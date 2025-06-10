@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-016-Verify the downloading and saving a single patch in the wbc tab for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cf63dc3c-939a-4119-8b8d-4621d7e789bc</testCaseGuid>
+</TestCaseEntity>

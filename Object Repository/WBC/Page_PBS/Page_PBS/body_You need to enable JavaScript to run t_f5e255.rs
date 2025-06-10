@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>body_You need to enable JavaScript to run t_f5e255</name>
+   <tag></tag>
+   <elementGuidId>ceb17e82-7fce-4d9d-ac28-68443aab629d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//body</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>body.dx-device-desktop.dx-device-generic</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>body</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>body</value>
+      <webElementGuid>6809e1b7-2b0e-472b-8f25-c5f73c54e57a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dx-device-desktop dx-device-generic</value>
+      <webElementGuid>e00f59f9-6865-4d7c-b799-871838225928</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>You need to enable JavaScript to run this app.Slide Id:SIG0015Assigned to:​Reject report Approve reportSummaryWBCRBC Platelets CBC reportReferencesCBC reportCBC report could not be retrievedCell nameCount%WBCNLRNLR = 8.0Neutrophils1634.8Band Forms--Hypersegmented*--Neutrophils with Toxic Granules*--Lymphocytes24.3Reactive--Large Granular Lymphocytes*--Eosinophils510.9Monocytes919.6Basophils--Immature Granulocytes--Promyelocytes--Myelocytes--Metamyelocytes--Atypical Cells/Blasts1430.4Atypical Cells*--Lymphoid Blasts*--Myeloid Blasts*--Immature Eosinophils*--Immature Basophils*--Promonocytes*--Prolymphocytes*--Hairy Cells*--Sezary Cells*--Plasma Cells*--Others*--Total46100Non-WBCNRBC--Smudge Cells--Degenerate Cells--Stain Artefacts--Unclassified1-Rejected99-* Manual sub-classificationNumber of WBCs counted is &lt;200. Differential count might not be accurateImage settingsDisclaimer:  This report is meant for review and subsequent approval from a certified reviewer. Under no circumstances this report shall be provided to the patient without the approval from a certified reviewer.id(&quot;wbc_15505_8663.jpg-patch-image-reivew&quot;)/div[@class=&quot;patch-img-container multiselect-patch&quot;]/div[@class=&quot;default-patch  multiselect-patch show-subcell-lable  enabled patch-menu-container&quot;]</value>
+      <webElementGuid>e85c38fd-916a-4ed0-84f6-8396ee0c939d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;dx-device-desktop dx-device-generic&quot;]</value>
+      <webElementGuid>01283fb3-f2e0-4a11-9d73-8488ac481d7e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//body</value>
+      <webElementGuid>fc9600fd-979f-4014-a332-e37265d3df1f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//body[(text() = 'You need to enable JavaScript to run this app.Slide Id:SIG0015Assigned to:​Reject report Approve reportSummaryWBCRBC Platelets CBC reportReferencesCBC reportCBC report could not be retrievedCell nameCount%WBCNLRNLR = 8.0Neutrophils1634.8Band Forms--Hypersegmented*--Neutrophils with Toxic Granules*--Lymphocytes24.3Reactive--Large Granular Lymphocytes*--Eosinophils510.9Monocytes919.6Basophils--Immature Granulocytes--Promyelocytes--Myelocytes--Metamyelocytes--Atypical Cells/Blasts1430.4Atypical Cells*--Lymphoid Blasts*--Myeloid Blasts*--Immature Eosinophils*--Immature Basophils*--Promonocytes*--Prolymphocytes*--Hairy Cells*--Sezary Cells*--Plasma Cells*--Others*--Total46100Non-WBCNRBC--Smudge Cells--Degenerate Cells--Stain Artefacts--Unclassified1-Rejected99-* Manual sub-classificationNumber of WBCs counted is &lt;200. Differential count might not be accurateImage settingsDisclaimer:  This report is meant for review and subsequent approval from a certified reviewer. Under no circumstances this report shall be provided to the patient without the approval from a certified reviewer.id(&quot;wbc_15505_8663.jpg-patch-image-reivew&quot;)/div[@class=&quot;patch-img-container multiselect-patch&quot;]/div[@class=&quot;default-patch  multiselect-patch show-subcell-lable  enabled patch-menu-container&quot;]' or . = 'You need to enable JavaScript to run this app.Slide Id:SIG0015Assigned to:​Reject report Approve reportSummaryWBCRBC Platelets CBC reportReferencesCBC reportCBC report could not be retrievedCell nameCount%WBCNLRNLR = 8.0Neutrophils1634.8Band Forms--Hypersegmented*--Neutrophils with Toxic Granules*--Lymphocytes24.3Reactive--Large Granular Lymphocytes*--Eosinophils510.9Monocytes919.6Basophils--Immature Granulocytes--Promyelocytes--Myelocytes--Metamyelocytes--Atypical Cells/Blasts1430.4Atypical Cells*--Lymphoid Blasts*--Myeloid Blasts*--Immature Eosinophils*--Immature Basophils*--Promonocytes*--Prolymphocytes*--Hairy Cells*--Sezary Cells*--Plasma Cells*--Others*--Total46100Non-WBCNRBC--Smudge Cells--Degenerate Cells--Stain Artefacts--Unclassified1-Rejected99-* Manual sub-classificationNumber of WBCs counted is &lt;200. Differential count might not be accurateImage settingsDisclaimer:  This report is meant for review and subsequent approval from a certified reviewer. Under no circumstances this report shall be provided to the patient without the approval from a certified reviewer.id(&quot;wbc_15505_8663.jpg-patch-image-reivew&quot;)/div[@class=&quot;patch-img-container multiselect-patch&quot;]/div[@class=&quot;default-patch  multiselect-patch show-subcell-lable  enabled patch-menu-container&quot;]')]</value>
+      <webElementGuid>62f0dfa1-2723-4a55-a441-ef17561af228</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

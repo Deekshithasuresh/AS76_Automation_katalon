@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-117-Verify the user is able to update the predefined roles for Reviewer</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>14f4120d-9ee8-4cef-9dc0-fa022690e29a</testCaseGuid>
+</TestCaseEntity>

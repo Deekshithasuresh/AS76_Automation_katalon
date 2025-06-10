@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-076-Verify the correctness of the grade value according to the percentage present for all cell types present in the RBC color tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ef4edb63-03b0-44f9-bc02-c71e91c3b57b</testCaseGuid>
+</TestCaseEntity>

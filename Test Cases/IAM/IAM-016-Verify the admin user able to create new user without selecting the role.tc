@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-016-Verify the admin user able to create new user without selecting the role</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>16eca612-ac5b-463b-b710-e52e35d91350</testCaseGuid>
+</TestCaseEntity>

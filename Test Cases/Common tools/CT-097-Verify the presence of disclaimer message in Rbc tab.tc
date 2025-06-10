@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-097-Verify the presence of disclaimer message in Rbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>69ed4e47-ea34-4d36-8bfa-cab46dd8b6b5</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-104-Verify that the RBC size patches are getting sorted based on the quality score</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f4962365-1f10-4c02-883b-a2c24b7fc03b</testCaseGuid>
+</TestCaseEntity>

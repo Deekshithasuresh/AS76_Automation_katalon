@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-083(1)-Verify the panning on stitched image for all cell types present in the platelet morphology(platelet clumps)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c4f1d284-1ca9-4146-9fad-96fd7e8f2257</testCaseGuid>
+</TestCaseEntity>

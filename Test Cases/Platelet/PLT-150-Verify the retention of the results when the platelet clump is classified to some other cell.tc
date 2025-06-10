@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-150-Verify the retention of the results when the platelet clump is classified to some other cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>67fb1da8-8c54-4151-b5af-465557118fbe</testCaseGuid>
+</TestCaseEntity>

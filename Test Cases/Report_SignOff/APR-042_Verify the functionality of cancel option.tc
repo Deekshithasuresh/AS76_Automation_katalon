@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-042_Verify the functionality of cancel option</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7aaf6815-3745-4608-8ea7-b615c89ac381</testCaseGuid>
+</TestCaseEntity>

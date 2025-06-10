@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_icon_digital_zoom_only</name>
+   <tag></tag>
+   <elementGuidId>4e7db616-0fea-4778-8df9-add9f6d0deff</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/main/div/div/main/div[2]/div/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.zoom-warning > img</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>.zoom-warning > img</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>06c92c6a-59f5-4c43-a73c-f0c4985da77e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>/icons/info-filled-black.svg</value>
+      <webElementGuid>c1da7019-22e7-4850-b7bf-2ce79cac4c32</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9.2 css-k8aoie&quot;]/div[@class=&quot;patches-tab&quot;]/div[@class=&quot;viewer-patches-container&quot;]/div[@class=&quot;patches-viewer-section&quot;]/div[@class=&quot;viewer-section&quot;]/div[@class=&quot;ant-layout css-1x0dypw&quot;]/main[@class=&quot;ant-layout-content css-1x0dypw&quot;]/div[@class=&quot;ant-layout ant-layout-has-sider css-1x0dypw&quot;]/div[@class=&quot;ant-layout css-1x0dypw&quot;]/main[@class=&quot;ant-layout-content css-1x0dypw&quot;]/div[@class=&quot;zoom-warning-container split&quot;]/div[@class=&quot;zoom-warning&quot;]/img[1]</value>
+      <webElementGuid>bafb966f-182b-46a7-970f-542d2f257f74</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/main/div/div/main/div[2]/div/img</value>
+      <webElementGuid>f70fab18-d61f-46d5-ac5e-401a60da4799</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main/div[2]/div/img</value>
+      <webElementGuid>fd658b74-b94e-42e5-b83d-7c0fbf9838a2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '/icons/info-filled-black.svg']</value>
+      <webElementGuid>9f06788b-4911-40de-8f2c-14bbb8563ee9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

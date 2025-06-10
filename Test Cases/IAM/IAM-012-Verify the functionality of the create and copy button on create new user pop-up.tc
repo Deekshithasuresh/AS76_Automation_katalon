@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-012-Verify the functionality of the create and copy button on create new user pop-up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>49715584-a615-4e10-aa73-e52e6202e8ce</testCaseGuid>
+</TestCaseEntity>

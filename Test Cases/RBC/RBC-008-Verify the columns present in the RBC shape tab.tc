@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-008-Verify the columns present in the RBC shape tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>99c6ccd9-f5b2-4839-94f9-63b2aa452367</testCaseGuid>
+</TestCaseEntity>

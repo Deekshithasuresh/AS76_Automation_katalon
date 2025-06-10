@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-043-Verification of the presence of the undo CTA for the FOV with modifications made</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2261aa54-cbcf-48b0-b19d-346faa7444cf</testCaseGuid>
+</TestCaseEntity>

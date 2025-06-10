@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_07-May-2025, 0111 PM (IST)</name>
+   <tag></tag>
+   <elementGuidId>2144b7fe-48a1-4f29-8149-4e6791ad6fdb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='specimen-info']/div[3]/div/div[2]/div[2]/div[2]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.time</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;07-May-2025, 01:11 PM (IST)&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>0edf6adb-ed1c-4547-a498-cc139d55b295</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>time</value>
+      <webElementGuid>5bc32028-9ef7-4f0f-915b-c61c97d3d8b6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>07-May-2025, 01:11 PM (IST)</value>
+      <webElementGuid>e88fd26f-6c61-4b45-9db3-341c2919ec6b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;specimen-info&quot;)/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-elevation16 MuiDrawer-paper MuiDrawer-paperAnchorLeft css-wf16b5&quot;]/div[1]/div[@class=&quot;slideInfoComponent_drawer__body__abbGp&quot;]/div[@class=&quot;slideInfoComponent_drawer__body-info__rBKp8&quot;]/div[@class=&quot;slideInfoComponent_drawer__body-info-item__vTpE3 slideInfoComponent_drawer__body-info-item--half-width__z8fuU&quot;]/div[@class=&quot;time&quot;]</value>
+      <webElementGuid>aa3aceef-c011-4dd8-96fd-4037d156e98e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='specimen-info']/div[3]/div/div[2]/div[2]/div[2]/div</value>
+      <webElementGuid>c43ea374-d62c-4b6a-9fe0-83164dd3f518</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Scanned on'])[1]/following::div[1]</value>
+      <webElementGuid>a9d5d945-fef1-4e25-9840-9366e90f0962</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='as76user'])[1]/following::div[2]</value>
+      <webElementGuid>9b471e13-0c1e-40c5-9846-296dff2aa68d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='07-May-2025, 01:11 PM (IST)']/parent::*</value>
+      <webElementGuid>68e470e8-e579-44c1-b0b8-7a8905472c73</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div[2]/div[2]/div[2]/div</value>
+      <webElementGuid>0910f8f4-b3b3-4f33-bedc-81d07c06d0ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '07-May-2025, 01:11 PM (IST)' or . = '07-May-2025, 01:11 PM (IST)')]</value>
+      <webElementGuid>dc3d7022-ca39-4951-9a70-47a784e8001f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

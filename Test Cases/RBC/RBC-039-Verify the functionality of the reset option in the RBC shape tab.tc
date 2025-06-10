@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-039-Verify the functionality of the reset option in the RBC shape tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e04f2c5d-c758-43cb-a77d-baddd8a8a48e</testCaseGuid>
+</TestCaseEntity>

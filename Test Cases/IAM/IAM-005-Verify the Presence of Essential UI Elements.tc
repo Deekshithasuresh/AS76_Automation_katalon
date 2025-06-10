@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-005-Verify the Presence of Essential UI Elements</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a3cbaed2-adec-458a-8fef-0cfba68bb511</testCaseGuid>
+</TestCaseEntity>

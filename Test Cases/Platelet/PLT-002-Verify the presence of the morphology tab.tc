@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-002-Verify the presence of the morphology tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>34dd9095-3333-438f-9afd-f62e22d1ad14</testCaseGuid>
+</TestCaseEntity>

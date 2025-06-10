@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-012-Verify the presence of the arrow keys</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2fdc9141-abee-44ec-8169-926e062d26bf</testCaseGuid>
+</TestCaseEntity>

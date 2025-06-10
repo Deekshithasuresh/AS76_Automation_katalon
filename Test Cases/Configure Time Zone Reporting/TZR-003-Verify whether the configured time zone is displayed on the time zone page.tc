@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-003-Verify whether the configured time zone is displayed on the time zone page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7d888757-d947-4028-bf90-a0bc451149a9</testCaseGuid>
+</TestCaseEntity>

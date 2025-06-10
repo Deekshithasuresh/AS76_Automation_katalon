@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-076-Verify the functionality of Remove options on the filter pop up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7233d8d8-f0cc-4710-9cb2-f83ec8a73e94</testCaseGuid>
+</TestCaseEntity>

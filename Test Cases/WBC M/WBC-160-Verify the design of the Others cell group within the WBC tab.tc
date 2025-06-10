@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-160-Verify the design of the Others cell group within the WBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a37d4d62-37b3-46b0-a0b7-66d3b810eee4</testCaseGuid>
+</TestCaseEntity>

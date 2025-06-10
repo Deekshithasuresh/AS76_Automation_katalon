@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-128-Verify the options present in the Results drop-down in the Platelet Morphology tab for other then self assigned report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>91c901f1-f144-4aa1-9a25-cd51888e91a8</testCaseGuid>
+</TestCaseEntity>

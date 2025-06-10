@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_02-May-2025, 0206 AM (MST)</name>
+   <tag></tag>
+   <elementGuidId>9bbfac0a-2d89-46ae-afa0-afff1b44ebe2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.time</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div/div/ul/li/div/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;02-May-2025, 02:06 AM (MST)&quot;i >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>ffc3d6f3-f475-43a0-b84a-532bd23f66d0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>time</value>
+      <webElementGuid>b6ed617c-e6b5-4940-8b9a-d53e159ed5e3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>02-May-2025, 02:06 AM (MST)</value>
+      <webElementGuid>a7c20889-0b3f-4c8b-8ac9-64ec4d864010</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;css-1ykz5jb&quot;]/ul[@class=&quot;events-container&quot;]/li[@class=&quot;css-1ecsk3j&quot;]/div[@class=&quot;event-header&quot;]/div[@class=&quot;event-title-container&quot;]/div[@class=&quot;time&quot;]</value>
+      <webElementGuid>6b499c25-6a4d-4b34-beeb-5610046fcab8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div/div/ul/li/div/div/div</value>
+      <webElementGuid>4cdd3b35-77b3-4409-8f4c-e92f38d72606</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bookmark Report'])[1]/following::div[1]</value>
+      <webElementGuid>3b3a5dd7-d20d-4363-b405-cd05293e543e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='History'])[1]/following::div[3]</value>
+      <webElementGuid>60869e0a-a3c9-40ed-aefa-cea4e865f768</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='How are you?'])[1]/preceding::div[2]</value>
+      <webElementGuid>2f9c9d7b-b2d1-434e-8fa0-43a927bedf24</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='02-May-2025, 02:06 AM (MST)']/parent::*</value>
+      <webElementGuid>37f16288-483a-4c87-b4cf-cbea2cba0b1e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li/div/div/div</value>
+      <webElementGuid>b6be2137-0474-4e41-9021-6ec405815b96</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '02-May-2025, 02:06 AM (MST)' or . = '02-May-2025, 02:06 AM (MST)')]</value>
+      <webElementGuid>a4596acd-122c-42b9-be49-eb6d8c812125</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

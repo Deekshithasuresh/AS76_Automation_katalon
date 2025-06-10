@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CBC-001-Verify the presence of CBC report CTA in summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dea141e8-dee3-4e30-9654-7901ae1f5e47</testCaseGuid>
+</TestCaseEntity>

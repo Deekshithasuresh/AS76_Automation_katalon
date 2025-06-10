@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CBC-005-Verify the accessibility of CBC report CTA in summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9074d95e-852c-47e9-8dca-f9d83a0e818f</testCaseGuid>
+</TestCaseEntity>

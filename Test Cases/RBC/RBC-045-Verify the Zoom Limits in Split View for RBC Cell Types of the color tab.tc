@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-045-Verify the Zoom Limits in Split View for RBC Cell Types of the color tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7815015f-8209-4860-8359-fa75412e300c</testCaseGuid>
+</TestCaseEntity>

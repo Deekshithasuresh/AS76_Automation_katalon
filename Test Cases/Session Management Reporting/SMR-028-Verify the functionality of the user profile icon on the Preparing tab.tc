@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMR-028-Verify the functionality of the user profile icon on the Preparing tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a290b935-d27c-453b-8c53-85812914371b</testCaseGuid>
+</TestCaseEntity>

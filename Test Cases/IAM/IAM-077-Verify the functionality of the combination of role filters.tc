@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-077-Verify the functionality of the combination of role filters</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6318dcf5-c4e6-4009-83aa-7dd002c72837</testCaseGuid>
+</TestCaseEntity>

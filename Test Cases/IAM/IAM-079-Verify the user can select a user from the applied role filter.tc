@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-079-Verify the user can select a user from the applied role filter</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a97cd494-7dbe-41b8-8292-4fb5de3f06a1</testCaseGuid>
+</TestCaseEntity>

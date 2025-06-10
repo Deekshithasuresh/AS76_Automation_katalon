@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>body_You need to enable JavaScript to run t_5865cc</name>
+   <tag></tag>
+   <elementGuidId>453f2d17-8260-4977-8c0f-37dfda58ae6c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>body.dx-device-desktop.dx-device-generic</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>body</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>body</value>
+      <webElementGuid>df4ad665-817e-4900-a20f-82638a546ef0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dx-device-desktop dx-device-generic</value>
+      <webElementGuid>3dd1b277-2faa-4a83-a3b6-f432fe9d33aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>You need to enable JavaScript to run this app.Slide Id:rAssigned to:​SummaryWBCRBC Platelets CBC reportReferencesCBC reportCBC report could not be retrievedCell nameCount%WBCNLRNLR = 6.8Neutrophils13057.8Band Forms--Hypersegmented*20.9Neutrophils with Toxic Granules*--Lymphocytes198.4Reactive--Large Granular Lymphocytes*--Eosinophils114.9Monocytes3314.7Basophils52.2Immature Granulocytes2712.0Promyelocytes--Myelocytes73.1Metamyelocytes208.9Atypical Cells/Blasts--Atypical Cells*--Lymphoid Blasts*--Myeloid Blasts*--Immature Eosinophils*--Immature Basophils*--Promonocytes*--Prolymphocytes*--Hairy Cells*--Sezary Cells*--Plasma Cells*--Others*--Total225100Non-WBCNRBC73.1Smudge Cells--Degenerate Cells--Stain Artefacts--Unclassified2-Rejected642-* Manual sub-classificationImage settingsDisclaimer:  This report is meant for review and subsequent approval from a certified reviewer. Under no circumstances this report shall be provided to the patient without the approval from a certified reviewer.id(&quot;wbc_32113_21010.jpg-patch-image-reivew&quot;)/div[@class=&quot;patch-img-container patch-focus-mode&quot;]/div[@class=&quot;default-patch  patch-focus-mode show-subcell-lable  enabled patch-menu-container&quot;]</value>
+      <webElementGuid>ec09e65f-06b7-4c91-9bdd-9279978de4f3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;dx-device-desktop dx-device-generic&quot;]</value>
+      <webElementGuid>8ee0972a-6cb5-4394-91ea-24e6447adbaa</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//body</value>
+      <webElementGuid>f22e2d14-49c0-402c-add8-6009d8c74920</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//body[(text() = 'You need to enable JavaScript to run this app.Slide Id:rAssigned to:​SummaryWBCRBC Platelets CBC reportReferencesCBC reportCBC report could not be retrievedCell nameCount%WBCNLRNLR = 6.8Neutrophils13057.8Band Forms--Hypersegmented*20.9Neutrophils with Toxic Granules*--Lymphocytes198.4Reactive--Large Granular Lymphocytes*--Eosinophils114.9Monocytes3314.7Basophils52.2Immature Granulocytes2712.0Promyelocytes--Myelocytes73.1Metamyelocytes208.9Atypical Cells/Blasts--Atypical Cells*--Lymphoid Blasts*--Myeloid Blasts*--Immature Eosinophils*--Immature Basophils*--Promonocytes*--Prolymphocytes*--Hairy Cells*--Sezary Cells*--Plasma Cells*--Others*--Total225100Non-WBCNRBC73.1Smudge Cells--Degenerate Cells--Stain Artefacts--Unclassified2-Rejected642-* Manual sub-classificationImage settingsDisclaimer:  This report is meant for review and subsequent approval from a certified reviewer. Under no circumstances this report shall be provided to the patient without the approval from a certified reviewer.id(&quot;wbc_32113_21010.jpg-patch-image-reivew&quot;)/div[@class=&quot;patch-img-container patch-focus-mode&quot;]/div[@class=&quot;default-patch  patch-focus-mode show-subcell-lable  enabled patch-menu-container&quot;]' or . = 'You need to enable JavaScript to run this app.Slide Id:rAssigned to:​SummaryWBCRBC Platelets CBC reportReferencesCBC reportCBC report could not be retrievedCell nameCount%WBCNLRNLR = 6.8Neutrophils13057.8Band Forms--Hypersegmented*20.9Neutrophils with Toxic Granules*--Lymphocytes198.4Reactive--Large Granular Lymphocytes*--Eosinophils114.9Monocytes3314.7Basophils52.2Immature Granulocytes2712.0Promyelocytes--Myelocytes73.1Metamyelocytes208.9Atypical Cells/Blasts--Atypical Cells*--Lymphoid Blasts*--Myeloid Blasts*--Immature Eosinophils*--Immature Basophils*--Promonocytes*--Prolymphocytes*--Hairy Cells*--Sezary Cells*--Plasma Cells*--Others*--Total225100Non-WBCNRBC73.1Smudge Cells--Degenerate Cells--Stain Artefacts--Unclassified2-Rejected642-* Manual sub-classificationImage settingsDisclaimer:  This report is meant for review and subsequent approval from a certified reviewer. Under no circumstances this report shall be provided to the patient without the approval from a certified reviewer.id(&quot;wbc_32113_21010.jpg-patch-image-reivew&quot;)/div[@class=&quot;patch-img-container patch-focus-mode&quot;]/div[@class=&quot;default-patch  patch-focus-mode show-subcell-lable  enabled patch-menu-container&quot;]')]</value>
+      <webElementGuid>861a1cab-b6c4-491c-9e80-6ab880375df0</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

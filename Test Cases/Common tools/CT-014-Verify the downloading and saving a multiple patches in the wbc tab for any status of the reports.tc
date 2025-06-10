@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-014-Verify the downloading and saving a multiple patches in the wbc tab for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a5ea385c-9213-40c1-9e97-67545125abc1</testCaseGuid>
+</TestCaseEntity>

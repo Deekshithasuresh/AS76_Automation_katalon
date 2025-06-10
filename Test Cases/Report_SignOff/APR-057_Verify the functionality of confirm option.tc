@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-057_Verify the functionality of confirm option</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5eb27329-b6d3-43a9-8be7-ced177671584</testCaseGuid>
+</TestCaseEntity>

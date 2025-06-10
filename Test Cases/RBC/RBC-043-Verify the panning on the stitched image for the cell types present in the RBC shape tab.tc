@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-043-Verify the panning on the stitched image for the cell types present in the RBC shape tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4c4addfd-e6fe-430c-a685-4d2eab23eece</testCaseGuid>
+</TestCaseEntity>

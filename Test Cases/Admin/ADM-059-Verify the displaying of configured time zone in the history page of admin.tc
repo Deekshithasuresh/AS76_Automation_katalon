@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM-059-Verify the displaying of configured time zone in the history page of admin</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>229045e9-6c71-4e8a-a7e3-f0d31509356d</testCaseGuid>
+</TestCaseEntity>

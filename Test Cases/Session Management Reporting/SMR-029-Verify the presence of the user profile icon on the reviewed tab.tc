@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMR-029-Verify the presence of the user profile icon on the reviewed tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>25ac07f5-ff02-40c8-b293-c2f902f5b8cf</testCaseGuid>
+</TestCaseEntity>

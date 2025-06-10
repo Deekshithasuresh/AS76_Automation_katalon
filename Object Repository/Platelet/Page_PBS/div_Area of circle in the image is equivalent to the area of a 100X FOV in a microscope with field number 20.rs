@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Area of circle in the image is equivalent to the area of a 100X FOV in a microscope with field number 20</name>
+   <tag></tag>
+   <elementGuidId>1bb3e46c-a8da-47c3-aa35-8f9a9a516679</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.split-view-fov-section > div.alert-info-container > div.text</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div[2]/div[2]/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Area of circle in the image is equivalent to the area of a 100X FOV in a microsc&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>a293aebd-5f5f-45bd-9a3c-bcbf0855602a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>text</value>
+      <webElementGuid>03fecb98-256b-4b3a-a873-4c84f0a685bb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Area of circle in the image is equivalent to the area of a 100X FOV in a microscope with field number 20</value>
+      <webElementGuid>df93e55c-33b7-404f-a7e1-a4f0f13d42a8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;split-view-contaier&quot;]/div[@class=&quot;split-view-fov-section&quot;]/div[@class=&quot;alert-info-container&quot;]/div[@class=&quot;text&quot;]</value>
+      <webElementGuid>f2d82037-4795-4f1a-9252-a40b0d54b4b7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div[2]/div[2]/div[2]</value>
+      <webElementGuid>9e1e1e6e-61b2-4bff-ac84-d654ad90fd4b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FOV 10'])[1]/following::div[4]</value>
+      <webElementGuid>65ac0c6f-8aa9-432c-af4b-fd3ca05a1330</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FOV 9'])[1]/following::div[7]</value>
+      <webElementGuid>ed8915dc-2856-46c5-be39-394972fd9673</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hide annotations'])[1]/preceding::div[4]</value>
+      <webElementGuid>63b91b6c-4adf-4fcb-8c1b-2cd37bfda888</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Area of circle in the image is equivalent to the area of a 100X FOV in a microscope with field number 20']/parent::*</value>
+      <webElementGuid>ed978ec0-3048-4911-ac81-4a7913dfb54f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div[2]</value>
+      <webElementGuid>774ddecf-7d95-4111-b7b6-9d2c5b066daf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Area of circle in the image is equivalent to the area of a 100X FOV in a microscope with field number 20' or . = 'Area of circle in the image is equivalent to the area of a 100X FOV in a microscope with field number 20')]</value>
+      <webElementGuid>beff1f30-7be9-4c10-896c-e3aae014f050</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

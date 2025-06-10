@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-009-Verify the user is able to download multiple patch by right clicking on the any of the tab for any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a7b8b97f-4a61-499b-b082-a4848b945380</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-067-Verify the grading changes are getting auto saved for all cell types present in the inclusions tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e72fc4a6-e63e-497f-9e40-2be12f40756d</testCaseGuid>
+</TestCaseEntity>

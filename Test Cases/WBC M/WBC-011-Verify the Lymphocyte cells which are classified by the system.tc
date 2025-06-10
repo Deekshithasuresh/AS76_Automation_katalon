@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-011-Verify the Lymphocyte cells which are classified by the system</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>023f33da-eeda-4ebf-a81c-8116d5ecd786</testCaseGuid>
+</TestCaseEntity>

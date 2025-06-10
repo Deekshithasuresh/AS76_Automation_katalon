@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-098-Verify the functionality of the Cancel button on the update user page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>15f43b7c-3a56-4053-849d-6ffe6f977e9d</testCaseGuid>
+</TestCaseEntity>

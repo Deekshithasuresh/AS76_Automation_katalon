@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-009-Verify missing time zones or incomplete time zones</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>82cf3799-9a3d-46b5-b52f-8708d8ee498f</testCaseGuid>
+</TestCaseEntity>

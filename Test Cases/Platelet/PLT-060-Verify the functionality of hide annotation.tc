@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-060-Verify the functionality of hide annotation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9257d5da-52f7-481d-a052-e94dd1949c6c</testCaseGuid>
+</TestCaseEntity>

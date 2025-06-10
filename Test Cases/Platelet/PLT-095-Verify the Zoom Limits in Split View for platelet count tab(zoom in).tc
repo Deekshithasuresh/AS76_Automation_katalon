@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-095-Verify the Zoom Limits in Split View for platelet count tab(zoom in)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2522d8d8-0d49-44be-889f-fdefe4a1d528</testCaseGuid>
+</TestCaseEntity>

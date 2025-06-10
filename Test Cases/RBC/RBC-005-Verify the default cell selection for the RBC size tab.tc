@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-005-Verify the default cell selection for the RBC size tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6cdf2a93-a117-49b9-9f1a-6780b0d014b3</testCaseGuid>
+</TestCaseEntity>

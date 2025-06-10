@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-050-Verify the user is able to enter more than 50 characters in the username field</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dac99820-f63d-4493-a5aa-5617f7d24900</testCaseGuid>
+</TestCaseEntity>

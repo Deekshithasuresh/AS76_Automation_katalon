@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-001-Verify the presence of count tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>af5f1201-0f10-4826-b60a-14a2bd0b4afd</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-023-Verify the presence of the manual grading footnote in the inclusions sub tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0d88295b-5592-4adc-8dfd-d15bc9c2e387</testCaseGuid>
+</TestCaseEntity>

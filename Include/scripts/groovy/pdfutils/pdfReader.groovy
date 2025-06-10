@@ -1,13 +1,11 @@
 package pdfutils
-import org.apache.pdfbox.pdmodel.PDDocument
-import org.apache.pdfbox.text.PDFTextStripper
-import org.apache.pdfbox.rendering.PDFRenderer
+import java.awt.image.BufferedImage
 
 import javax.imageio.ImageIO
-import java.awt.image.BufferedImage
-import java.io.File
-import java.io.FilenameFilter
-import java.io.FileNotFoundException
+
+import org.apache.pdfbox.pdmodel.PDDocument
+import org.apache.pdfbox.rendering.PDFRenderer
+import org.apache.pdfbox.text.PDFTextStripper
 
 class PdfReader {
 

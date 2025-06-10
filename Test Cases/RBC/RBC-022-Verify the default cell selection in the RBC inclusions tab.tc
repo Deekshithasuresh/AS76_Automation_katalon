@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-022-Verify the default cell selection in the RBC inclusions tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3e2f540c-a092-47b2-ac8a-25d7a152b419</testCaseGuid>
+</TestCaseEntity>

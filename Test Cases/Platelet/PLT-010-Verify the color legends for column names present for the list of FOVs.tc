@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-010-Verify the color legends for column names present for the list of FOVs</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>31f0e663-aa54-4585-8cc0-dce68778700c</testCaseGuid>
+</TestCaseEntity>

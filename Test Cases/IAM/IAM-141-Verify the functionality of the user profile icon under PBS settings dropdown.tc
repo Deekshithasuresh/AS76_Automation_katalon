@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-141-Verify the functionality of the user profile icon under PBS settings dropdown</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>325a5ca5-ea40-41ef-b42e-e095670bd676</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-069-Verify the recorded history when the RBC diameter limit is changed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b2db59c0-1de7-49c2-964c-6360aaca30cc</testCaseGuid>
+</TestCaseEntity>

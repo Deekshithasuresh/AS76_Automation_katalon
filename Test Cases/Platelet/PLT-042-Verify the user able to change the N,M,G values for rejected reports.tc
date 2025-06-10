@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-042-Verify the user able to change the N,M,G values for rejected reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7dfc6c27-4403-47a7-bcc1-981e933ffb05</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-132-verify the auto logout of the admin user when the admin user is deleted from the admin portal</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8b690ae5-858f-494c-9c42-3e8e95464d20</testCaseGuid>
+</TestCaseEntity>

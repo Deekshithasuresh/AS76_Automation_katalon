@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-089-Verify the default selection of reference cell in all the status of the reports for the Wbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>15623759-f8d3-4970-86e5-f008f23a86c4</testCaseGuid>
+</TestCaseEntity>

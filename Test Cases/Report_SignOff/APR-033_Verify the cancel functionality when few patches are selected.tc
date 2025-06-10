@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-033_Verify the cancel functionality when few patches are selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>06ffe029-c865-49dc-b2a3-30b276e460ad</testCaseGuid>
+</TestCaseEntity>

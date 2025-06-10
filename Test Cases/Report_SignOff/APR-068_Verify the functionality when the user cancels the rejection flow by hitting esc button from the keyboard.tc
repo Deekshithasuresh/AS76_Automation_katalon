@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-068_Verify the functionality when the user cancels the rejection flow by hitting esc button from the keyboard</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3e5201be-7aaf-4dd9-86a7-4afa4e75f872</testCaseGuid>
+</TestCaseEntity>

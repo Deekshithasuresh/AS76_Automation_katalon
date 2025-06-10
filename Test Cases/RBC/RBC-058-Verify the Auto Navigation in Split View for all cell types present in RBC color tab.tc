@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-058-Verify the Auto Navigation in Split View for all cell types present in RBC color tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2dee830d-ba40-413a-9a81-b474c538f1ae</testCaseGuid>
+</TestCaseEntity>

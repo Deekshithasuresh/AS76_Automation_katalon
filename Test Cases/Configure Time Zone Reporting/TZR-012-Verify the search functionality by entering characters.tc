@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-012-Verify the search functionality by entering characters</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>abf7bb9d-b092-47f7-8f8b-3a625f9119cf</testCaseGuid>
+</TestCaseEntity>

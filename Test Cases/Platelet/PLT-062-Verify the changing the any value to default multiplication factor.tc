@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-062-Verify the changing the any value to default multiplication factor</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>474c8d76-b66c-4771-8a27-9c6851c17e9c</testCaseGuid>
+</TestCaseEntity>

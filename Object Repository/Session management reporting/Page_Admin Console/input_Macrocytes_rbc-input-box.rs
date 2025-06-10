@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Macrocytes_rbc-input-box</name>
+   <tag></tag>
+   <elementGuidId>05697a15-5e42-459c-93ea-c70da03778c8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.tooptipStyle.center.rbcdiameter > input.rbc-input-box</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[3]/div/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Macrocytes$/ >> internal:role=textbox</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>febffe75-ace4-43a1-ae31-d1da5267eb8b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>rbc-input-box </value>
+      <webElementGuid>509a565d-7ed4-47e8-b837-c355ee7d492c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>string</value>
+      <webElementGuid>1f6229ba-1a42-43e8-8376-0ec94ad14cc1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>7</value>
+      <webElementGuid>4b422368-241c-4483-99a6-789c1f75ddd9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;MuiModal-root css-1plwxbw&quot;]/div[@class=&quot;modal-container&quot;]/div[@class=&quot;rbc-diameter-page&quot;]/div[1]/div[@class=&quot;input-container&quot;]/div[@class=&quot;input-sub-container&quot;]/div[@class=&quot;tooptipStyle center rbcdiameter&quot;]/input[@class=&quot;rbc-input-box&quot;]</value>
+      <webElementGuid>7d0bba32-b56c-437e-a3bb-cc1361a1aa6d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//input[@value='7'])[2]</value>
+      <webElementGuid>f9b25032-cbb0-4d70-a026-a1c72945779c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/input</value>
+      <webElementGuid>4184e5e1-e2db-47e8-8caf-ea70927fa428</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'string']</value>
+      <webElementGuid>711e1088-d5a3-4db1-a6c8-9e6702cbe8e8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IAM-062-Verify the search functionality by entering the user-role</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f1ee6ca7-63d9-493c-af2c-0312e3df3534</testCaseGuid>
+</TestCaseEntity>

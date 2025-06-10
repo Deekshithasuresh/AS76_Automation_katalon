@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-032-Verify the functionality of zoom in button from the RBC size tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8b01424c-3ca7-48be-b564-27e34518f5ef</testCaseGuid>
+</TestCaseEntity>
