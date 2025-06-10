@@ -538,8 +538,8 @@ boolean checkForApprovedReport(String slideId) {
 }
 
 // Now check if PS impressions are editable for this user
-WebUI.comment('Checking if PS impressions are accessible for this user...')
-WebUI.comment('Expected behavior: All sections should be NON-EDITABLE since this is an approved report')
+println('Checking if PS impressions are accessible for this user...')
+println('Expected behavior: All sections should be NON-EDITABLE since this is an approved report')
 
 // Function to check if a section is editable using only existing objects
 def checkSectionEditability(sectionName, spanObject, divObject) {
@@ -619,7 +619,7 @@ def checkSectionEditability(sectionName, spanObject, divObject) {
 }
 
 // Navigate through the report sections to reach Impression section
-WebUI.comment('=== Starting PS Impressions Editability Validation ===')
+println('=== Starting PS Impressions Editability Validation ===')
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/span_Peripheral Smear Report'), 'Peripheral Smear Report')
 
 boolean hasEditableFields = false
@@ -673,12 +673,12 @@ if (checkSectionEditability('Impression',
 // Final validation summary
 WebUI.comment('=== PS Impressions Editability Validation Complete ===')
 if (!hasEditableFields) {
-	WebUI.comment('✓ VALIDATION PASSED: All PS impression sections are correctly NON-EDITABLE FOR AN APPROVED REPORT')
-	WebUI.comment('✓ System properly restricts editing of approved reports for an approved report')
+	println('✓ VALIDATION PASSED: All PS impression sections are correctly NON-EDITABLE FOR AN APPROVED REPORT')
+	println('✓ System properly restricts editing of approved reports for an approved report')
 } else {
-	WebUI.comment('❌ VALIDATION FAILED: Found editable sections in approved report!')
-	WebUI.comment("❌ Editable sections detected: ${editableFields.join(', ')}")
-	WebUI.comment('❌ CRITICAL ISSUE: Approved reports should not allow editing')
+	println('❌ VALIDATION FAILED: Found editable sections in approved report!')
+	println("❌ Editable sections detected: ${editableFields.join(', ')}")
+	println('❌ CRITICAL ISSUE: Approved reports should not allow editing')
 }
 
 WebUI.comment('Proceeding to check remaining fields...')

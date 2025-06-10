@@ -222,7 +222,7 @@ try {
 // Verify and click on RBC
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/span_RBC'), 'RBC')
 WebUI.click(findTestObject('Object Repository/Summary/span_RBC'))
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/button_Color'),'Color')
+WebUI.verifyElementText(findTestObject('Object Repository/Summary/button_Color'),'Colour')
 WebUI.click(findTestObject('Object Repository/Summary/button_Color'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/div_Cell name'), 'Cell name')

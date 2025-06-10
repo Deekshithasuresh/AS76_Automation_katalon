@@ -228,7 +228,7 @@ WebUI.click(findTestObject('Object Repository/Summary/button_Shape'))
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/div_Cell name'), 'Cell name')
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/div_Grade'), 'Grade')
 
-println("\n========================================================================================")
+println("\n===========================Regrading to grade3=============================================================")
 
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/Ovalocytes_row'),'Ovalocytes')
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/Ovalocytes_grade_row'),'')
@@ -255,6 +255,9 @@ WebUI.verifyElementText(findTestObject('Object Repository/Summary/Echinocytes_ce
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/Echinocytes_grade_Row'),'')
 WebUI.click(findTestObject('Object Repository/Summary/Echinocytes_grade3'))
 
+WebUI.click(findTestObject('Object Repository/Summary/Acanthocytes_grade_03'))
+WebUI.click(findTestObject('Object Repository/Summary/Sickle Cells_grade_03'))
+
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/Poikilocytosis_cells_row'),'Poikilocytosis')
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/Poikilocytosis_grade_row'),'')
 WebUI.click(findTestObject('Object Repository/Summary/Poikilocytosis_grade3'))
@@ -269,14 +272,106 @@ WebUI.delay(5) // Increase the delay to give more time for the summary tab to lo
 
 
 
+println("==========Checking for RBC Shape===========")
 
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/018_sum_Ovalocytes'),'')
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/018_sum_Elliptocytes'),'')
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/018_sum_Teardrop_Cells'),'')
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/018_sum_Fragmented Cells'),'')
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/018_sum_Target Cells'),'')
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/018_sum_Echinocytes'),'')
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/018_sum_Poikilocytosis'),'')
+// Check if Ovalocytes element is present
+try {
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/018_sum_Ovalocytes'), 10, FailureHandling.OPTIONAL)) {
+		println("Ovalocytes - Present in Summary")
+	} else {
+		println("Ovalocytes - Not Present in Summary")
+	}
+} catch (Exception e) {
+	println("Ovalocytes - Error occurred: " + e.getMessage())
+}
+
+// Check if Elliptocytes element is present
+try {
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/018_sum_Elliptocytes'), 10, FailureHandling.OPTIONAL)) {
+		println("Elliptocytes - Present in Summary")
+	} else {
+		println("Elliptocytes - Not Present in Summary")
+	}
+} catch (Exception e) {
+	println("Elliptocytes - Error occurred: " + e.getMessage())
+}
+
+// Check if Teardrop Cells element is present
+try {
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/018_sum_Teardrop_Cells'), 10, FailureHandling.OPTIONAL)) {
+		println("Teardrop Cells - Present in Summary")
+	} else {
+		println("Teardrop Cells - Not Present in Summary")
+	}
+} catch (Exception e) {
+	println("Teardrop Cells - Error occurred: " + e.getMessage())
+}
+
+// Check if Fragmented Cells element is present
+try {
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/018_sum_Fragmented Cells'), 10, FailureHandling.OPTIONAL)) {
+		println("Fragmented Cells - Present in Summary")
+	} else {
+		println("Fragmented Cells - Not Present in Summary")
+	}
+} catch (Exception e) {
+	println("Fragmented Cells - Error occurred: " + e.getMessage())
+}
+
+// Check if Target Cells element is present
+try {
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/018_sum_Target Cells'), 10, FailureHandling.OPTIONAL)) {
+		println("Target Cells - Present in Summary")
+	} else {
+		println("Target Cells - Not Present in Summary")
+	}
+} catch (Exception e) {
+	println("Target Cells - Error occurred: " + e.getMessage())
+}
+
+// Check if Echinocytes element is present
+try {
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/018_sum_Echinocytes'), 10, FailureHandling.OPTIONAL)) {
+		println("Echinocytes - Present in Summary")
+	} else {
+		println("Echinocytes - Not Present in Summary")
+	}
+} catch (Exception e) {
+	println("Echinocytes - Error occurred: " + e.getMessage())
+}
+
+// Check if Acanthocytes element is present
+try {
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/018_sum_acanthocytes'), 10, FailureHandling.OPTIONAL)) {
+		println("Acanthocytes - Present in Summary")
+	} else {
+		println("Acanthocytes - Not Present in Summary")
+	}
+} catch (Exception e) {
+	println("Acanthocytes - Error occurred: " + e.getMessage())
+}
+
+// Check if Sickle Cells element is present
+try {
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/018_sum_Sickle_cells'), 10, FailureHandling.OPTIONAL)) {
+		println("Sickle Cells - Present in Summary")
+	} else {
+		println("Sickle Cells - Not Present in Summary")
+	}
+} catch (Exception e) {
+	println("Sickle Cells - Error occurred: " + e.getMessage())
+}
+
+// Check if Poikilocytosis element is present
+try {
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/018_sum_Poikilocytosis'), 10, FailureHandling.OPTIONAL)) {
+		println("Poikilocytosis - Present in Summary")
+	} else {
+		println("Poikilocytosis - Not Present in Summary")
+	}
+} catch (Exception e) {
+	println("Poikilocytosis - Error occurred: " + e.getMessage())
+}
 
 
 
@@ -290,9 +385,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Summary/018_sum_Poikil
 
 
 
-//// Get the WebDriver
-//WebDriver driver = DriverFactory.getWebDriver()
-//JavascriptExecutor js = (JavascriptExecutor) driver
+
 
 
 

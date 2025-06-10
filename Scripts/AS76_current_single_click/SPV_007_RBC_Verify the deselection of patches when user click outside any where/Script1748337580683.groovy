@@ -340,7 +340,7 @@ println('=======================================================================
 
 println('Selecting RBC color tab')
 WebUI.waitForElementPresent(findTestObject('Object Repository/single_click/button_Color'),20)
-WebUI.verifyElementText(findTestObject('Object Repository/single_click/button_Color'),'Color')
+WebUI.verifyElementText(findTestObject('Object Repository/single_click/button_Color'),'Colour')
 WebUI.click(findTestObject('Object Repository/single_click/button_Color'))
 
 // Start with patch view
@@ -579,6 +579,8 @@ try {
 WebUI.verifyElementText(findTestObject('Object Repository/retain_patchs/img_Platelets_patch-view'), '')
 WebUI.click(findTestObject('Object Repository/retain_patchs/img_Platelets_patch-view'))
 println("✅ Confirmed that we are still in patch view")
+
+println("====End of the testcase====")
 
 println('=============================================================================================================')
 	

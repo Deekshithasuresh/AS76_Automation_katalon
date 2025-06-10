@@ -56,7 +56,7 @@ WebUI.click(findTestObject('Object Repository/Summary/span_RBC'))
 
 //WebUI.verifyElementText(findTestObject('Object Repository/Summary/button_Size'), 'Size')
 //WebUI.verifyElementText(findTestObject('Object Repository/Summary/button_Color'), 'Color')
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/button_Color'), 'Color')
+WebUI.verifyElementText(findTestObject('Object Repository/Summary/button_Color'), 'Colour')
 WebUI.click(findTestObject('Object Repository/Summary/button_Color'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/div_Cell name'), 'Cell name')

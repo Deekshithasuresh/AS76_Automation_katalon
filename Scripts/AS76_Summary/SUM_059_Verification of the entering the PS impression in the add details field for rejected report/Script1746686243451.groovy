@@ -665,12 +665,11 @@ if (checkSectionEditability('Impression',
 // Final validation summary
 WebUI.comment('=== PS Impressions Editability Validation Complete ===')
 if (!hasEditableFields) {
-	WebUI.comment('✓ VALIDATION PASSED: All PS impression sections are correctly NON-EDITABLE FOR A REJECTED REPORT')
-	WebUI.comment('✓ System properly restricts editing of approved reports for arejected report')
+	println('✓ VALIDATION PASSED: All PS impression sections are correctly NON-EDITABLE FOR A REJECTED REPORT')
+	println('✓ System properly restricts editing of approved reports for arejected report')
 } else {
-	WebUI.comment('❌ VALIDATION FAILED: Found editable sections in approved report!')
-	WebUI.comment("❌ Editable sections detected: ${editableFields.join(', ')}")
-	WebUI.comment('❌ CRITICAL ISSUE: Approved reports should not allow editing')
+	println('❌ VALIDATION FAILED: Found editable sections in approved report!')
+	println("❌ Editable sections detected: ${editableFields.join(', ')}")
+	println('❌ CRITICAL ISSUE: Approved reports should not allow editing')
 }
 
-WebUI.comment('Proceeding to check remaining fields...')

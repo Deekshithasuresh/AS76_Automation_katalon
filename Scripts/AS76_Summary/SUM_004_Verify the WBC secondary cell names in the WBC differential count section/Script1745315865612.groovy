@@ -27,27 +27,62 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Summary/Page_PBS (1)/in
 
 WebUI.sendKeys(findTestObject('Object Repository/Summary/Page_PBS (1)/input_password_loginPassword'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/Summary/Page_PBS (1)/td_44'))
+WebUI.maximizeWindow()
+// Click on the report with ID SIG0004 to open it
+WebUI.click(findTestObject('Object Repository/Summary/Page_PBS (1)/td_SIG0004'))
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/td_Band Forms'), 0)
+// Define secondary cells to check
+def secondaryCells = [
+	'Band Forms',
+	'Hypersegmented*',
+	'Neutrophils with Toxic Granules*',
+	'Reactive',
+	'Large Granular Lymphocytes*',
+	'Promyelocytes',
+	'Myelocytes',
+	'Metamyelocytes',
+	'Atypical Cells*',
+	'Lymphoid Blasts*',
+	'Myeloid Blasts*'
+]
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/td_Hypersegmented'), 0)
+WebUI.comment("=== CHECKING SECONDARY CELLS IN SUMMARY ===")
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/td_Neutrophils with Toxic Granules'), 0)
+// Scroll to ensure all content is loaded
+WebUI.executeJavaScript("window.scrollTo(0, document.body.scrollHeight)", null)
+WebUI.delay(2)
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/td_Reactive'), 0)
+def foundCells = []
+def notFoundCells = []
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/td_Large Granular Lymphocytes'), 0)
+// Check each secondary cell
+for (String cellName : secondaryCells) {
+	def cellExists = WebUI.executeJavaScript(
+		"return Array.from(document.querySelectorAll('td')).some(td => td.textContent.trim() === '${cellName}');",
+		null
+	)
+	
+	if (cellExists) {
+		foundCells.add(cellName)
+		WebUI.comment("❌ FOUND: ${cellName}")
+	} else {
+		notFoundCells.add(cellName)
+		WebUI.comment("✓ NOT FOUND: ${cellName}")
+	}
+}
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/td_Promyelocytes'), 0)
+// Summary
+WebUI.comment("=== RESULTS ===")
+WebUI.comment("Secondary cells found in summary: ${foundCells.size()}")
+WebUI.comment("Secondary cells not found in summary: ${notFoundCells.size()}")
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/td_Myelocytes'), 0)
+if (foundCells.isEmpty()) {
+	WebUI.comment("🎉 SUCCESS: No secondary cells found in summary")
+} else {
+	WebUI.comment("❌ ISSUE: Secondary cells should not appear in summary")
+	WebUI.comment("Found cells: ${foundCells}")
+}
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/td_Metamyelocytes'), 0)
-
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/td_Atypical Cells'), 0)
-
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/td_Lymphoid Blasts'), 0)
-
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/td_Myeloid Blasts'), 0)
-
+// Scroll back to top
+WebUI.executeJavaScript("window.scrollTo(0, 0)", null)
+WebUI.delay(1)

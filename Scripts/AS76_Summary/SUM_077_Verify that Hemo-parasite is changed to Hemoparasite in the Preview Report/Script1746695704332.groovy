@@ -319,11 +319,11 @@ def verifyHemoparasiteTextInPreview() {
 	try {
 		// Get the text from the preview page
 		previewText = WebUI.getText(findTestObject('Object Repository/Summary/td_Hemoparasite'))
-		WebUI.comment("Text found in preview: " + previewText)
+		println("Text found in preview: " + previewText)
 		
 		// Compare with expected text
 		if (previewText == expectedText) {
-			WebUI.comment("PASS: Preview shows '" + expectedText + "' as expected")
+			println("PASS: Preview shows '" + expectedText + "' as expected")
 			// Continue with the test flow - click Confirm
 			WebUI.verifyElementText(findTestObject('Object Repository/Summary/button_Confirm'), 'Confirm')
 			WebUI.click(findTestObject('Object Repository/Summary/button_Confirm'))

@@ -306,64 +306,51 @@ try {
 }
 
 // Navigate to Platelets section
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/span_Platelets'), 'Platelets')
-WebUI.click(findTestObject('Object Repository/Summary/span_Platelets'))
+WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/button_Platelets'), 'Platelets')
+WebUI.click(findTestObject('Object Repository/Summary/Page_PBS (1)/button_Platelets'))
 
-// Verify Manual level section
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/span_Manual level'), 'Manual level')
-
-// Verify and select Platelet count level
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/div_Platelet count level'), 'Platelet count level')
-WebUI.click(findTestObject('Object Repository/Summary/Page_PBS (1)/input_Platelet count level_platelet-count-levels'))
+// Click on manual level platelet count level
+WebUI.click(findTestObject('Object Repository/Summary/manual_level_platelet_count_level'))
 
 // Navigate to Summary
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/button_Summary'), 'Summary')
-WebUI.click(findTestObject('Object Repository/Summary/Page_PBS (1)/button_Summary'))
+WebUI.verifyElementText(findTestObject('Object Repository/Summary/button_Summary'), 'Summary')
+WebUI.click(findTestObject('Object Repository/Summary/button_Summary'))
 
-// Verify basic elements in Summary
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/span_Platelet'), 'Platelet')
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/span_Platelet count level'), 'Platelet count level')
+// Wait for the summary tab to load
+WebUI.delay(2)
 
-// Create Test Object dynamically using the provided XPath
-TestObject significantlyDecreasedElement = new TestObject('SignificantlyDecreased')
-significantlyDecreasedElement.addProperty('xpath', ConditionType.EQUALS,
-	"//div[contains(@class, 'reportSummary_pane-body__table-row__Yg0cg')]//span[contains(text(), 'Significantly decreased')]")
+// Create XPath-based test object for the platelet count level row
+TestObject plateletCountLevelObject = new TestObject()
+plateletCountLevelObject.addProperty('xpath', ConditionType.EQUALS, "//div[contains(@class, 'reportSummary_pane-body__table-row') and .//span[contains(text(), 'Platelet count level')]]")
 
-// Check if "Significantly decreased" is present and handle accordingly
-try {
-	// Wait for the element to be present (with timeout)
-	WebUI.waitForElementPresent(significantlyDecreasedElement, 10)
-	
-	if (WebUI.verifyElementPresent(significantlyDecreasedElement, FailureHandling.OPTIONAL)) {
-		
-		// Element is present - verify its text
-		WebUI.verifyElementText(significantlyDecreasedElement, 'Significantly decreased')
-		println("✓ 'Significantly decreased' is present in the summary")
-		
-		// Additional verification - you can also verify the element is visible
-		WebUI.verifyElementVisible(significantlyDecreasedElement)
-		
-	} else {
-		// Element is not present
-		println("✗ 'Significantly decreased' is NOT present in the summary")
-		// You can choose to fail the test or continue based on your requirements
-		// WebUI.comment("Expected 'Significantly decreased' element is missing")
-	}
-	
-} catch (Exception e) {
-	// Handle any exceptions during verification
-	println("⚠ Error while checking for 'Significantly decreased': " + e.getMessage())
-	// You can choose to fail or continue the test
-}
+// Capture the actual text from platelet count level row
+String actualText = WebUI.getText(plateletCountLevelObject)
 
-// Alternative approach using conditional verification with the XPath
-boolean isSignificantlyDecreasedPresent = WebUI.verifyElementPresent(significantlyDecreasedElement, FailureHandling.OPTIONAL)
+// Define expected text
+String expectedText = "Platelet count level"
 
-if (isSignificantlyDecreasedPresent) {
-	println("Status: Platelet count level shows 'Significantly decreased'")
-	// Verify the element is in the correct table row context
-	WebUI.verifyElementVisible(significantlyDecreasedElement)
+// Extract just the label part (without the value)
+String actualLabel = actualText.replaceAll("\\s+\\w+.*\$", "").trim()
+
+// Compare expected vs actual
+println "==== Platelet Count Level Text Verification ===="
+println "Expected Text: '${expectedText}'"
+println "Actual Full Text: '${actualText}'"
+println "Actual Label: '${actualLabel}'"
+println "Match: ${actualLabel == expectedText}"
+println "=============================================="
+
+// Verify the comparison
+if (actualLabel == expectedText) {
+	println "✅ PASS: Platelet count level text matches expected"
 } else {
-	println("Status: Platelet count level does not show 'Significantly decreased'")
-	// Add verification for other expected values if needed
+	println "❌ FAIL: Platelet count level text does not match"
+	println "   Expected: '${expectedText}'"
+	println "   Actual: '${actualLabel}'"
 }
+
+// Verify element is present
+WebUI.verifyElementPresent(plateletCountLevelObject, 10)
+
+// Log the result
+println("Platelet count level verification - Expected: '${expectedText}', Actual: '${actualLabel}'")

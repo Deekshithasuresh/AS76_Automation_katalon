@@ -6,12 +6,12 @@
    <elementGuidId>3ee67a07-14dc-40b4-b6c8-eafbb6db3adf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.rbc-cells-highlight.css-1ua49gz</value>
+         <key>XPATH</key>
+         <value>//div[contains(@class, 'rbc-btn-div')]//button[contains(text(), 'Size')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[6]</value>
+         <key>CSS</key>
+         <value>button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.rbc-cells-highlight.css-1ua49gz</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>a6d7159f-7d88-42ed-92f2-bab072fe9d04</webElementGuid>
+      <webElementGuid>5def2d76-8564-4eb5-b051-d04fbce7872a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium rbc-cells-highlight css-1ua49gz</value>
-      <webElementGuid>72bc4736-71ac-4e27-86f9-941f510228cb</webElementGuid>
+      <webElementGuid>142616bb-7ffc-4b9a-b0c0-c26426a9a103</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>5ff89afc-2b13-444e-8027-0d5eb1c26a73</webElementGuid>
+      <webElementGuid>a4f6f7c3-3f97-4842-a590-e472c09664d0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>31406a86-25bd-440e-9ca9-3cc9b62fa9bf</webElementGuid>
+      <webElementGuid>baf4471b-026d-4303-93e6-26853fe83a16</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Size</value>
-      <webElementGuid>d1ba9452-8eeb-48f2-a1cb-cf2505ceb70d</webElementGuid>
+      <webElementGuid>1cae3829-b561-4508-aa65-d748479b46d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2.8 css-lufqp2&quot;]/div[@class=&quot;grid-container&quot;]/div[1]/div[@class=&quot;rbc-btn-div&quot;]/button[@class=&quot;MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium rbc-cells-highlight css-1ua49gz&quot;]</value>
-      <webElementGuid>585aa5b0-d340-41f1-a21b-895f35486aa7</webElementGuid>
+      <webElementGuid>a0cc1de8-f5c0-414a-bd46-ce902bfa56e8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[6]</value>
-      <webElementGuid>89b49a89-a4a7-4746-ae32-8beeaa2c8bcd</webElementGuid>
+      <webElementGuid>511fc4b6-0b69-497b-a7f3-8877eaa9ecf1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/div/button</value>
-      <webElementGuid>5e61dfbf-df40-44aa-9177-3d3945af4bef</webElementGuid>
+      <webElementGuid>f5fc6460-7904-4fb1-bf1d-2f2523e515ac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CBC report could not be retrieved'])[1]/following::button[1]</value>
-      <webElementGuid>9d887ebd-3cc2-4f61-bdae-2a5d4ee02a4a</webElementGuid>
+      <webElementGuid>9a4578b6-be31-4d63-9c58-e7a2b239bf02</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CBC report'])[2]/following::button[2]</value>
-      <webElementGuid>b71b245d-3449-41f8-9641-586c54d7687e</webElementGuid>
+      <webElementGuid>fda47c6c-0ad5-4472-9878-d2004550aa70</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Shape'])[1]/preceding::button[1]</value>
-      <webElementGuid>2b20e34a-b5da-40f3-ad89-ad8451f0bc6c</webElementGuid>
+      <webElementGuid>8c93683e-a3fc-4d18-9971-22df66b22255</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Color'])[1]/preceding::button[2]</value>
-      <webElementGuid>d6d983eb-85a7-4b6b-bbf4-b28b22bd9760</webElementGuid>
+      <webElementGuid>ef5fc4b6-bc8c-4352-ad2b-8e60cad7ef8c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Size']/parent::*</value>
-      <webElementGuid>295ab3e7-a746-4da0-8390-8915ee8b9f7e</webElementGuid>
+      <webElementGuid>f4bdf9e7-6e67-4e44-9930-d69d932d7089</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +133,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[2]/div/div/div/div/div/div/button</value>
-      <webElementGuid>67e0cb2a-1ce0-48b8-a4e4-41b327fd9603</webElementGuid>
+      <webElementGuid>dcca889e-400e-4e93-955e-de52e7707dd6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,6 +141,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Size' or . = 'Size')]</value>
-      <webElementGuid>3f54a7b0-0cc9-4f3e-a12a-6046bebb3d26</webElementGuid>
+      <webElementGuid>abc31775-b95e-402c-8fee-cd39a555e2bf</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

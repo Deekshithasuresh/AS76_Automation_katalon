@@ -483,16 +483,16 @@ try {
 
 	// Verify the text has changed from "hemo-parasite" to "hemoparasite"
 	if (containsHemoparasite && !containsHemoWithHyphen) {
-		WebUI.comment("Success: Text has been changed from 'Hemo-parasite' to 'Hemoparasite'")
+		println("Success: Text has been changed from 'Hemo-parasite' to 'Hemoparasite'")
 	} else if (!containsHemoparasite && containsHemoWithHyphen) {
-		WebUI.comment("Failed: Text is still 'Hemo-parasite' and has not been changed to 'Hemoparasite'")
+		println("Failed: Text is still 'Hemo-parasite' and has not been changed to 'Hemoparasite'")
 		// Use the correct method to mark test as failed
 		assert false : "Text verification failed - expected 'Hemoparasite' but found 'Hemo-parasite'"
 	} else if (!containsHemoparasite && !containsHemoWithHyphen) {
-		WebUI.comment("Warning: Neither 'Hemoparasite' nor 'Hemo-parasite' found in PDF")
+		println("Warning: Neither 'Hemoparasite' nor 'Hemo-parasite' found in PDF")
 		assert false : "Neither expected text variations found in PDF"
 	} else {
-		WebUI.comment("Warning: Both 'Hemoparasite' and 'Hemo-parasite' found in PDF")
+		println("Warning: Both 'Hemoparasite' and 'Hemo-parasite' found in PDF")
 		assert false : "Both text variations found - ambiguous result"
 	}
 

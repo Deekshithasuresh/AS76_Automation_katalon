@@ -222,7 +222,7 @@ try {
 // Verify and click on RBC
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/span_RBC'), 'RBC')
 WebUI.click(findTestObject('Object Repository/Summary/span_RBC'))
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/button_Color'),'Color')
+WebUI.verifyElementText(findTestObject('Object Repository/Summary/button_Color'),'Colour')
 WebUI.click(findTestObject('Object Repository/Summary/button_Color'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/div_Cell name'), 'Cell name')
@@ -244,6 +244,29 @@ WebUI.click(findTestObject('Object Repository/Summary/Polychromatic_grade3'))
 println("\n==== Navigating to Summary Tab ====")
 WebUI.click(findTestObject('Object Repository/Summary/button_Summary'))
 WebUI.delay(5) // Increase the delay to give more time for the summary tab to load
+println("==========Checking for RBC Colour===========")
+
+// Check if Hypochromic Cells element is present
+try {
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/20_sum_Hypochromic Cells'), 10, FailureHandling.OPTIONAL)) {
+		println("Hypochromic Cells - Present in Summary")
+	} else {
+		println("Hypochromic Cells - Not Present in Summary")
+	}
+} catch (Exception e) {
+	println("Hypochromic Cells - Error occurred: " + e.getMessage())
+}
+
+// Check if Polychromatic element is present
+try {
+	if (WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/20_sum_Polychromatic'), 10, FailureHandling.OPTIONAL)) {
+		println("Polychromatic - Present in Summary")
+	} else {
+		println("Polychromatic - Not Present in Summary")
+	}
+} catch (Exception e) {
+	println("Polychromatic - Error occurred: " + e.getMessage())
+}
 
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/20_sum_Hypochromic Cells'),'')
 

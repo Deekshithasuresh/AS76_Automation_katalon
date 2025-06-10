@@ -447,7 +447,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/single_click/button_Mo
 
 WebUI.click(findTestObject('Object Repository/single_click/button_Morphology'))
 
-println('✅ RBC tab is clicked successfully and verifying for platelet')
+println('✅ Platelet morphology tab is clicked successfully and verifying for platelet')
 
 // Start with patch view
 

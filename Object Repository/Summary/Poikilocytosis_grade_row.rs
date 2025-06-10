@@ -6,12 +6,11 @@
    <elementGuidId>75ac0849-a9b2-4eda-b5a3-4c0186c7c106</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(//div[contains(@class, 'cell-row')]//div[contains(@class,'significant')]/parent::div)[9]/following-sibling::div[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[contains(@class, 'cell-row')]//div[contains(@class,'significant')]/parent::div)[7]/following-sibling::div[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

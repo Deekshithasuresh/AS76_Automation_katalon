@@ -30,10 +30,10 @@ WebUI.sendKeys(findTestObject('Object Repository/Summary/Page_PBS (1)/input_pass
 
 WebUI.click(findTestObject('Object Repository/Summary/Page_PBS (1)/td_44'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/img'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/i_icon_summ_wbc'), 0)
 
 // Verify if info button is present
-boolean isInfoButtonPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/img'), 10, FailureHandling.OPTIONAL)
+boolean isInfoButtonPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/i_icon_summ_wbc'), 10, FailureHandling.OPTIONAL)
 
 // Print message about info button presence
 if (isInfoButtonPresent) {

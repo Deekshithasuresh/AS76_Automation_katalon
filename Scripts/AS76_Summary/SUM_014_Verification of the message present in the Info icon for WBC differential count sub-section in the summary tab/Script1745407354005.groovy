@@ -17,6 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+// Login steps
 WebUI.openBrowser('')
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
 WebUI.setText(findTestObject('Object Repository/Summary/Page_PBS (1)/input_username_loginId'), 'deekshithaS')
@@ -24,5 +25,46 @@ WebUI.click(findTestObject('Object Repository/Summary/Page_PBS (1)/input_usernam
 WebUI.setEncryptedText(findTestObject('Object Repository/Summary/Page_PBS (1)/input_password_loginPassword'), 'ghLSEQG5l8dyyQdYVN+LYg==')
 WebUI.sendKeys(findTestObject('Object Repository/Summary/Page_PBS (1)/input_password_loginPassword'), Keys.chord(Keys.ENTER))
 WebUI.click(findTestObject('Object Repository/Summary/Page_PBS (1)/td_44'))
-WebUI.mouseOver(findTestObject('Object Repository/Summary/Page_PBS (1)/img'))
-println("Page_PBS (1)/img")
+
+// Wait for page to load
+WebUI.delay(3)
+
+// Define expected tooltip text
+String expectedText = "Please check the WBC tab for complete evaluation"
+
+println("Expected tooltip text: " + expectedText)
+
+// Hover over the WBC info icon
+WebUI.mouseOver(findTestObject('Object Repository/Summary/i icon WBC'))
+println("Hovering over WBC info icon...")
+
+// Wait for tooltip to appear
+WebUI.delay(2)
+
+// Check if tooltip text appears on the page
+String jsScript = '''
+    var expectedText = arguments[0];
+    var allElements = document.querySelectorAll('*');
+    
+    for (var i = 0; i < allElements.length; i++) {
+        var element = allElements[i];
+        var text = element.textContent || element.innerText || '';
+        
+        if (text.trim() === expectedText) {
+            return true;
+        }
+    }
+    return false;
+'''
+
+boolean tooltipFound = WebUI.executeJavaScript(jsScript, [expectedText])
+
+if (tooltipFound) {
+	println("✓ PASS: Expected tooltip text is appearing on hover")
+	println("Tooltip text found: " + expectedText)
+} else {
+	println("✗ FAIL: Expected tooltip text is NOT appearing on hover")
+	println("Expected: " + expectedText)
+}
+
+WebUI.closeBrowser()

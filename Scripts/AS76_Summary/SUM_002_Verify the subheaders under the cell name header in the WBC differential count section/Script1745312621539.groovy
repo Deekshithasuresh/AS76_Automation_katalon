@@ -43,7 +43,21 @@ println('Selecting report with ID: ' + reportId)
 // Click on a report (can be any report, not necessarily SIG0015)
 WebUI.click(findTestObject('Object Repository/Summary/Page_PBS (1)/td_SIG0015'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/th_WBC'), 'WBC')
+// WBC Text Verification with Conditional Statements
 
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/th_Non-WBC'), 'Non-WBC')
+// Verify WBC element text
+if (WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/th_WBC'), 'WBC')) {
+    println("WBC text verification - Passed")
+} else {
+    println("WBC text verification - Failed")
+    KeywordUtil.markFailed("WBC text does not match expected value")
+}
+
+// Verify Non-WBC element text
+if (WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/th_Non-WBC'), 'Non-WBC')) {
+    println("Non-WBC text verification - Passed")
+} else {
+    println("Non-WBC text verification - Failed")
+    KeywordUtil.markFailed("Non-WBC text does not match expected value")
+}
 

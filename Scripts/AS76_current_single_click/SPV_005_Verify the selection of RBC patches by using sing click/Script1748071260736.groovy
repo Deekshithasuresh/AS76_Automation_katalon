@@ -412,7 +412,7 @@ println"==================================================================="
 // Starting rbc color tab interactions
 WebUI.comment('Starting rbc color tab interactions')
 
-WebUI.verifyElementText(findTestObject('Object Repository/single_click/button_Color'), 'Color')
+WebUI.verifyElementText(findTestObject('Object Repository/single_click/button_Color'), 'Colour')
 
 WebUI.click(findTestObject('Object Repository/single_click/button_Color'))
 

@@ -26,8 +26,26 @@ WebUI.setText(findTestObject('Object Repository/Summary/Page_PBS (1)/input_usern
 WebUI.setEncryptedText(findTestObject('Object Repository/Summary/Page_PBS (1)/input_password_loginPassword'), 'ghLSEQG5l8dyyQdYVN+LYg==')
 
 WebUI.sendKeys(findTestObject('Object Repository/Summary/Page_PBS (1)/input_password_loginPassword'), Keys.chord(Keys.ENTER))
-
 WebUI.click(findTestObject('Object Repository/Summary/Page_PBS (1)/td_44'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/img'), 0)
 
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/i_icon_summ_RBC'),0)
+//WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/i_icon_summ_wbc'), 0)
+
+
+// Verify if info button is present
+boolean isInfoButtonPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/i_icon_summ_RBC'), 10, FailureHandling.OPTIONAL)
+
+// Print message about info button presence
+if (isInfoButtonPresent) {
+	WebUI.comment("INFO: The info button is present on the page")
+	println("INFO: The info button is present on the page")
+} else {
+	WebUI.comment("INFO: The info button is NOT present on the page")
+	println("INFO: The info button is NOT present on the page")
+}
+
+
+
+//WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/i_icon_summ_RBC'))

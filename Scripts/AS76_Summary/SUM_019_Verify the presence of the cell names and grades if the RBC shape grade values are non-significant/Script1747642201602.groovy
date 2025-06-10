@@ -254,6 +254,12 @@ WebUI.verifyElementText(findTestObject('Object Repository/Summary/Echinocytes_ce
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/Echinocytes_grade_Row'),'')
 WebUI.click(findTestObject('Object Repository/Summary/Echinocytes_grade0'))
 
+
+
+WebUI.click(findTestObject('Object Repository/Summary/Acanthocytes_grade0'))
+WebUI.click(findTestObject('Object Repository/Summary/Sickle Cells_grade0'))
+
+
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/Poikilocytosis_cells_row'),'Poikilocytosis')
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/Poikilocytosis_grade_row'),'')
 WebUI.click(findTestObject('Object Repository/Summary/Poikilocytosis_grade0'))

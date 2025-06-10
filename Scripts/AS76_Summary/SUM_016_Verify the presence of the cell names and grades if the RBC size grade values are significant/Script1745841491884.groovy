@@ -220,8 +220,8 @@ try {
 }
 
 // Verify and click on RBC
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/span_RBC'), 'RBC')
-WebUI.click(findTestObject('Object Repository/Summary/span_RBC'))
+WebUI.verifyElementText(findTestObject('Object Repository/single_click/button_RBC'),'RBC')
+WebUI.click(findTestObject('Object Repository/single_click/button_RBC'))
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/button_Size'), 'Size')
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/div_Cell name'), 'Cell name')
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/div_Grade'), 'Grade')
