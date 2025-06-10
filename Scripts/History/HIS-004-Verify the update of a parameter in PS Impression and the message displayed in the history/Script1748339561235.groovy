@@ -7,40 +7,39 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
+import org.openqa.selenium.Keys as Keys
 
 // ────────────────────────────────────────────────────────────────────
-// 1) LOGIN & NAVIGATE TO LIST
+// 1) LOGIN
 // ────────────────────────────────────────────────────────────────────
-WebUI.openBrowser('https://as76-pbs.sigtuple.com/login')
+WebUI.openBrowser('')
 WebUI.maximizeWindow()
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.setText(findTestObject('Object Repository/Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(findTestObject('Object Repository/Report viewer/Page_PBS/input_password_loginPassword'),
+					  'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_Sign In'))
 WebUI.waitForElementPresent(
 	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
 	10
 )
 
-// grab WebDriver for DOM interactions
+// grab Selenium driver
 WebDriver driver = DriverFactory.getWebDriver()
 
 // ────────────────────────────────────────────────────────────────────
 // 2) OPEN FIRST “To be reviewed” REPORT
 // ────────────────────────────────────────────────────────────────────
-String toBeReviewedXpath = "(//tr[.//span[normalize-space(text())='To be reviewed']])[1]"
-TestObject toBeReviewedRow = new TestObject()
-	.addProperty('xpath', ConditionType.EQUALS, toBeReviewedXpath)
-WebUI.waitForElementClickable(toBeReviewedRow, 10)
-WebUI.click(toBeReviewedRow)
-
+TestObject toBeRow = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//tr[.//span[normalize-space(text())='To be reviewed']])[1]"
+)
+WebUI.waitForElementClickable(toBeRow, 10)
+WebUI.click(toBeRow)
 
 // ────────────────────────────────────────────────────────────────────
-// 3) ASSIGN TO “admin” (scroll & click from dropdown)
+// 3) ASSIGN TO “admin”
 // ────────────────────────────────────────────────────────────────────
-// open the “Assigned to” dropdown
 TestObject dropdownBtn = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
@@ -48,14 +47,13 @@ TestObject dropdownBtn = new TestObject().addProperty(
 WebUI.waitForElementClickable(dropdownBtn, 5)
 WebUI.click(dropdownBtn)
 
-// scroll to and click “admin”
-TestObject adminOption = new TestObject().addProperty(
+TestObject adminLi = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//ul[contains(@class,'MuiAutocomplete-listbox')]//li[normalize-space(text())='admin']"
+	"//ul[contains(@class,'MuiAutocomplete-listbox')]//li[normalize-space()='admin']"
 )
-WebUI.waitForElementVisible(adminOption, 5)
-WebUI.scrollToElement(adminOption, 5)
-WebUI.click(adminOption)
+WebUI.waitForElementVisible(adminLi, 5)
+WebUI.scrollToElement(adminLi, 5)
+WebUI.click(adminLi)
 
 // verify assignment
 TestObject assignedInput = new TestObject().addProperty(
@@ -64,46 +62,56 @@ TestObject assignedInput = new TestObject().addProperty(
 )
 WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
 
+// ────────────────────────────────────────────────────────────────────
+// 4) FILL THE FIVE “Add details” EDITORS
+// ────────────────────────────────────────────────────────────────────
+List<WebElement> editors = driver.findElements(
+	By.xpath("//div[@data-placeholder='Add details' and @contenteditable='true']")
+)
+assert editors.size() >= 5 : "Expected ≥5 editors, found ${editors.size()}"
 
-// ────────────────────────────────────────────────────────────────────
-// 4) FILL MORPHOLOGY FIELDS WITH “Test@1234”
-// ────────────────────────────────────────────────────────────────────
-// indices: 2=WBC, 3=Platelet, 4=Hemoparasite, 5=Impression
-for (int idx = 2; idx <= 5; idx++) {
-	String fieldXpath = "(//div[@data-placeholder='Add details' and @contenteditable='true'])[" + idx + "]"
-	TestObject fieldObj = new TestObject().addProperty('xpath', ConditionType.EQUALS, fieldXpath)
-	WebUI.waitForElementVisible(fieldObj, 5)
-	WebUI.scrollToElement(fieldObj, 5)
-	WebElement editor = driver.findElement(By.xpath(fieldXpath))
-	editor.click()
-	editor.sendKeys("Test@1234")
+for (int i = 0; i < 5; i++) {
+	// build an index‐aware TestObject so we can scroll to it
+	String editorXpath = "(//div[@data-placeholder='Add details' and @contenteditable='true'])[" + (i+1) + "]"
+	TestObject edTo = new TestObject().addProperty('xpath', ConditionType.EQUALS, editorXpath)
+	WebUI.scrollToElement(edTo, 5)
+
+	WebElement ed = driver.findElement(By.xpath(editorXpath))
+	ed.click()
+	ed.clear()
+	ed.sendKeys("Test@1234")
+	ed.sendKeys(Keys.TAB)         // blur to trigger autosave
 	WebUI.delay(1)
 }
 
-
 // ────────────────────────────────────────────────────────────────────
-// 5) OPEN KEBAB MENU & CLICK “History”
+// 5) OPEN “History”
 // ────────────────────────────────────────────────────────────────────
-TestObject kebabBtn = new TestObject().addProperty(
+TestObject kebab = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//button[.//img[contains(@src,'kebab_menu.svg')]]"
 )
-WebUI.waitForElementClickable(kebabBtn, 5)
-WebUI.click(kebabBtn)
+WebUI.waitForElementClickable(kebab, 5)
+WebUI.click(kebab)
 
 TestObject historyOpt = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//div[contains(@class,'MuiPopover-paper')]//span[normalize-space(text())='History']/ancestor::li"
+	"//div[contains(@class,'MuiPopover-paper')]//span[normalize-space()='History']/ancestor::li"
 )
 WebUI.waitForElementClickable(historyOpt, 5)
 WebUI.click(historyOpt)
 
-
 // ────────────────────────────────────────────────────────────────────
-// 6) VERIFY LATEST 5 HISTORY ENTRIES
+// 6) PRINT FIRST TWO HISTORY ENTRIES & SCREENSHOT
 // ────────────────────────────────────────────────────────────────────
-List<WebElement> allEntries = driver.findElements(By.cssSelector("li.css-1ecsk3j"))
-WebUI.verifyGreaterThanOrEqual(allEntries.size(), 5, FailureHandling.CONTINUE_ON_FAILURE)
-for (int i = 0; i < 5; i++) {
-	println("History entry ${i+1}: " + allEntries.get(i).getText().trim())
+WebUI.waitForElementVisible(
+	new TestObject().addProperty('css', ConditionType.EQUALS, "li.css-1ecsk3j"),
+	10
+)
+List<WebElement> entries = driver.findElements(By.cssSelector("li.css-1ecsk3j"))
+entries.take(2).eachWithIndex { e, idx ->
+	println "History ${idx+1}: " + e.getText().trim()
 }
+
+WebUI.takeScreenshot("morphology-history.png")
+

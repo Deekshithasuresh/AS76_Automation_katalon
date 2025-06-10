@@ -4,37 +4,4 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
-<<<<<<< HEAD
-=======
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>''</initValue>
-      <name>generatedUsername</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>''</initValue>
-      <name>generatedPassword</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>''</initValue>
-      <name>generatedEmail</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'manju'</initValue>
-      <name>AdminUsername</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'Sigtuple@123'</initValue>
-      <name>AdminPassword</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>''</initValue>
-      <name>AssignedSlideID</name>
-   </GlobalVariableEntity>
->>>>>>> origin/main
 </GlobalVariableEntities>

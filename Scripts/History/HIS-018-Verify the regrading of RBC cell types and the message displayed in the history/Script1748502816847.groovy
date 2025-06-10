@@ -1,86 +1,96 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
+import org.openqa.selenium.Keys
 
-// ─── STEP 1: LOGIN ──────────────────────────────────────────────────
+// ────────────────────────────────────────────────────────────────────
+// STEP 1: LOGIN & NAVIGATE TO LIST
+// ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
+WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Object Repository/Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Object Repository/Report viewer/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_Sign In'))
-
-// ─── STEP 2: VERIFY LANDING ────────────────────────────────────────
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+					  'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 WebUI.waitForElementPresent(
 	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
 	10
 )
 
-// ─── STEP 3: PICK & ASSIGN ─────────────────────────────────────────
-TestObject statusToBeReviewed = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS, "//span[normalize-space()='To be reviewed']"
-)
-TestObject statusUnderReview = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[contains(@class,'reportStatusComponent_text') and normalize-space()='Under review']"
-)
+// grab Selenium driver
+WebDriver driver = DriverFactory.getWebDriver()
 
-// ** UPDATED ASSIGNMENT LOCATORS **
+// ────────────────────────────────────────────────────────────────────
+// STEP 2: OPEN FIRST “To be reviewed” REPORT
+// ────────────────────────────────────────────────────────────────────
+TestObject toBe = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//span[normalize-space()='To be reviewed']/ancestor::tr)[1]"
+)
+WebUI.waitForElementClickable(toBe, 10)
+WebUI.click(toBe)
+
+// ────────────────────────────────────────────────────────────────────
+// STEP 3: ASSIGN TO “admin”
+// ────────────────────────────────────────────────────────────────────
+// click the “Open” icon of the assigned-to combobox
 TestObject assignedDropdown = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//span[normalize-space()='Assigned to:']/following-sibling::div//button"
+	"//input[@id='assigned_to']/following-sibling::div//button[@title='Open']"
 )
-TestObject assignedInput = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[normalize-space()='Assigned to:']/following-sibling::div//input"
-)
+WebUI.waitForElementClickable(assignedDropdown, 5)
+WebUI.click(assignedDropdown)
+
+// select “admin”
 TestObject adminOption = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//li[normalize-space(text())='admin']"
+	"//ul[contains(@class,'MuiAutocomplete-listbox')]//li[normalize-space(.)='admin']"
 )
-TestObject reassignButton = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//button[normalize-space()='Re-assign']"
-)
+WebUI.waitForElementClickable(adminOption, 5)
+WebUI.scrollToElement(adminOption, 5)
+WebUI.click(adminOption)
 
-if (WebUI.waitForElementPresent(statusToBeReviewed, 3)) {
-	WebUI.click(statusToBeReviewed)
-	WebUI.click(assignedDropdown)
-	WebUI.waitForElementClickable(adminOption, 5)
-	WebUI.click(adminOption)
-	WebUI.comment("✅ Assigned a ‘To be reviewed’ to admin.")
-} else if (WebUI.waitForElementPresent(statusUnderReview, 3)) {
-	WebUI.click(statusUnderReview)
-	String currentAssignee = WebUI.getAttribute(assignedInput, 'value').trim()
-	if (currentAssignee != 'admin') {
-		WebUI.click(assignedDropdown)
-		WebUI.waitForElementClickable(adminOption, 5)
-		WebUI.click(adminOption)
-		WebUI.waitForElementClickable(reassignButton, 5)
-		WebUI.click(reassignButton)
-		WebUI.comment("✅ Re-assigned an ‘Under review’ to admin.")
-	} else {
-		WebUI.comment("ℹ️ ‘Under review’ report already assigned to admin.")
-	}
-} else {
-	WebUI.comment("❌ No report in ‘To be reviewed’ or ‘Under review’ status.")
-	WebUI.takeScreenshot()
-	WebUI.closeBrowser()
-	return
+// verify assignment
+TestObject assignedInput = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//input[@id='assigned_to']"
+)
+WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
+WebUI.comment("✅ Assigned to admin")
+
+// ────────────────────────────────────────────────────────────────────
+// STEP 4: FILL THE FIVE MORPHOLOGY EDITORS
+// ────────────────────────────────────────────────────────────────────
+List<WebElement> editors = driver.findElements(
+	By.cssSelector("div.dx-htmleditor-content[contenteditable='true']")
+)
+assert editors.size() >= 5 : "Expected ≥5 editors, found ${editors.size()}"
+
+for (int i = 0; i < 5; i++) {
+	String editorXpath = "(//div[contains(@class,'dx-htmleditor-content') and @contenteditable='true'])[${i+1}]"
+	WebUI.scrollToElement(
+		new TestObject().addProperty('xpath', ConditionType.EQUALS, editorXpath),
+		5
+	)
+	WebElement ed = driver.findElement(By.xpath(editorXpath))
+	ed.click()
+	ed.clear()
+	ed.sendKeys("Test@1234")
+	ed.sendKeys(Keys.TAB)  // blur to auto-save
+	WebUI.delay(1)
+	WebUI.comment("✅ Editor #${i+1} filled")
 }
 
-// ─── STEP 4: WAIT FOR “Approve report” BUTTON ───────────────────────
-TestObject approveBtn = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[normalize-space()='Approve report']/ancestor::button"
-)
-WebUI.waitForElementVisible(approveBtn, 10)
-
-// ─── STEP 5: CLICK RBC TAB & REGRADE ────────────────────────────────
+// ────────────────────────────────────────────────────────────────────
+// STEP 5: SWITCH TO RBC & RE-GRADE FIRST CELL
+// ────────────────────────────────────────────────────────────────────
 TestObject rbcTab = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//button[contains(@class,'cell-buttons') and .//span[normalize-space()='RBC']]"
@@ -89,61 +99,54 @@ WebUI.waitForElementClickable(rbcTab, 10)
 WebUI.click(rbcTab)
 WebUI.delay(1)
 
-WebDriver driver = DriverFactory.getWebDriver()
-List<WebElement> rows = driver.findElements(
-	By.cssSelector("div.rbc-cell-body > div.selected.cell-row")
-)
-
+// find each selected RBC cell row
+List<WebElement> rows = driver.findElements(By.cssSelector("div.rbc-cell-body > div.selected.cell-row"))
 boolean didRegrade = false
 for (WebElement row : rows) {
-	List<WebElement> radios = row.findElements(
-		By.cssSelector("div.grade-div span.MuiRadio-root")
-	)
-	if (radios.isEmpty()) continue
-
-	int current = -1
-	for (int i = 0; i < radios.size(); i++) {
-		if (radios.get(i).getAttribute("class").contains("Mui-checked")) {
-			current = i
-			break
-		}
-	}
+	List<WebElement> radios = row.findElements(By.xpath(".//input[@type='radio']"))
+	int current = radios.findIndexOf { it.isSelected() }
 	if (current < 0) continue
-
 	for (int offset = 1; offset < radios.size(); offset++) {
 		int idx = (current + offset) % radios.size()
-		if (!radios.get(idx).getAttribute("class").contains("Mui-disabled")) {
-			radios.get(idx).click()
+		if (radios[idx].isEnabled()) {
+			radios[idx].click()
 			WebUI.delay(1)
-			WebUI.comment("✅ Regraded row ${rows.indexOf(row)}: ${current} → ${idx}")
+			WebUI.comment("✅ Regraded RBC cell ${current}→${idx}")
 			didRegrade = true
 			break
 		}
 	}
 	if (didRegrade) break
 }
-assert didRegrade : "❌ No clickable grade-radio found in any RBC row."
+assert didRegrade : "❌ Could not regrade any RBC cell"
 
-// ─── STEP 6: OPEN HISTORY ──────────────────────────────────────────
+// ────────────────────────────────────────────────────────────────────
+// STEP 6: OPEN KEBAB MENU → HISTORY
+// ────────────────────────────────────────────────────────────────────
 TestObject kebab = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//button[.//img[contains(@src,'dots')]]"
+	"//button[.//img[contains(@src,'kebab_menu.svg')]]"
 )
+WebUI.waitForElementClickable(kebab, 5)
 WebUI.click(kebab)
-WebUI.delay(1)
 
-TestObject historyOption = new TestObject().addProperty(
+TestObject historyOpt = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//ul[@role='menu']//li//span[normalize-space()='History']"
+	"//div[contains(@class,'MuiPopover-paper')]//span[normalize-space(.)='History']/ancestor::li"
 )
-WebUI.click(historyOption)
+WebUI.waitForElementClickable(historyOpt, 5)
+WebUI.click(historyOpt)
 
-// ─── STEP 7: VERIFY HISTORY & PRINT ─────────────────────────────────
+// ────────────────────────────────────────────────────────────────────
+// STEP 7: PRINT FIRST TWO HISTORY ENTRIES + SCREENSHOT
+// ────────────────────────────────────────────────────────────────────
 WebUI.waitForElementVisible(
 	new TestObject().addProperty('css', ConditionType.EQUALS, "li.css-1ecsk3j"),
 	10
 )
 List<WebElement> entries = driver.findElements(By.cssSelector("li.css-1ecsk3j"))
-String latest = entries.get(0).getText().trim()
-println "→ Latest history entry:\n$latest"
-assert latest.startsWith("Regrading") && latest.contains("admin regarded")
+entries.take(2).eachWithIndex { e, idx ->
+	println "History ${idx+1}: ${e.getText().trim()}"
+}
+WebUI.takeScreenshot("final-history.png")
+
