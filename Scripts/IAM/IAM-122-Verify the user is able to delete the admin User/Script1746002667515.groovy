@@ -402,7 +402,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin C
 WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Create User'))
 
 WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Name_rbc-input-box'))
-WebUI.sendKeys(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Name_rbc-input-box'), 'pawan')
+WebUI.sendKeys(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Name_rbc-input-box'), 'pawan kumar')
 
 WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Email_rbc-input-box'))
 WebUI.sendKeys(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Email_rbc-input-box'), 'testadmin@123.com')
@@ -493,7 +493,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Manage_user/Page_Admin
     '')
 
 // Step 2: Enter the keyword in the search field
-String searchKeyword = 'pawan'
+String searchKeyword = 'pawan kumar'
 
 String Exp_username = uniqueUsername
 
@@ -526,31 +526,25 @@ WebUI.click(findTestObject('Manage_user/Page_Admin Console/button_Yes'))
 
 //toast message validation
 // === Customize your expected dynamic message here ===
-String expectedPartial1 = 'User deleted User deleted'
+// === Toast message validation for delete ===
+String expectedPartial1 = 'User deleted'
 
 int deletetimeout = 20
 
-// === Define Toast TestObject based on your structure ===
 TestObject toastObject1 = new TestObject('dynamicToast')
+toastObject1.addProperty('xpath', ConditionType.EQUALS, '//*[@role="alert"]')
 
-toastObject.addProperty('xpath', ConditionType.EQUALS, '//*[@role=\'alert\']')
+if (WebUI.waitForElementPresent(toastObject1, deletetimeout)) {
+	String toastText = WebUI.getText(toastObject1).replaceAll('\\s+', ' ').trim()
+	WebUI.comment("✅ Toast message after delete: '$toastText'")
 
-// === Wait for the toast to appear ===
-if (WebUI.waitForElementPresent(toastObject, timeout)) {
-    String toastText = WebUI.getText(toastObject)
-
-    toastText = toastText.replaceAll('\\s+', ' ').trim( // normalize white space
-        )
-
-    WebUI.comment("✅ Toast message: '$toastText'")
-
-    if (toastText.contains(expectedPartial)) {
-        KeywordUtil.markPassed("✅ Toast matched: '$toastText'")
-    } else {
-        KeywordUtil.markFailed("⚠️ Toast appeared but message mismatch.Expected to contain: '$expectedPartial'Actual: '$toastText'")
-    }
+	if (toastText.contains(expectedPartial1)) {
+		KeywordUtil.markPassed("✅ Toast matched: '$toastText'")
+	} else {
+		KeywordUtil.markFailed("⚠️ Toast mismatch. Expected to contain: '$expectedPartial1', Actual: '$toastText'")
+	}
 } else {
-    KeywordUtil.markFailed("❌ Toast message did not appear within $timeout seconds.")
+	KeywordUtil.markFailed("❌ Toast did not appear within $deletetimeout seconds.")
 }
 
 WebUI.delay(2)
