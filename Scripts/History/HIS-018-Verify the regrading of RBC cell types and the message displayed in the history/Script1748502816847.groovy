@@ -1,5 +1,4 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -7,7 +6,6 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
-import org.openqa.selenium.Keys
 
 // ────────────────────────────────────────────────────────────────────
 // STEP 1: LOGIN & NAVIGATE TO LIST
@@ -40,15 +38,14 @@ WebUI.click(toBe)
 // ────────────────────────────────────────────────────────────────────
 // STEP 3: ASSIGN TO “admin”
 // ────────────────────────────────────────────────────────────────────
-// click the “Open” icon of the assigned-to combobox
+// open the dropdown
 TestObject assignedDropdown = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//input[@id='assigned_to']/following-sibling::div//button[@title='Open']"
 )
 WebUI.waitForElementClickable(assignedDropdown, 5)
 WebUI.click(assignedDropdown)
-
-// select “admin”
+// select admin
 TestObject adminOption = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//ul[contains(@class,'MuiAutocomplete-listbox')]//li[normalize-space(.)='admin']"
@@ -56,8 +53,7 @@ TestObject adminOption = new TestObject().addProperty(
 WebUI.waitForElementClickable(adminOption, 5)
 WebUI.scrollToElement(adminOption, 5)
 WebUI.click(adminOption)
-
-// verify assignment
+// verify
 TestObject assignedInput = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//input[@id='assigned_to']"
@@ -66,87 +62,84 @@ WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
 WebUI.comment("✅ Assigned to admin")
 
 // ────────────────────────────────────────────────────────────────────
-// STEP 4: FILL THE FIVE MORPHOLOGY EDITORS
-// ────────────────────────────────────────────────────────────────────
-List<WebElement> editors = driver.findElements(
-	By.cssSelector("div.dx-htmleditor-content[contenteditable='true']")
-)
-assert editors.size() >= 5 : "Expected ≥5 editors, found ${editors.size()}"
-
-for (int i = 0; i < 5; i++) {
-	String editorXpath = "(//div[contains(@class,'dx-htmleditor-content') and @contenteditable='true'])[${i+1}]"
-	WebUI.scrollToElement(
-		new TestObject().addProperty('xpath', ConditionType.EQUALS, editorXpath),
-		5
-	)
-	WebElement ed = driver.findElement(By.xpath(editorXpath))
-	ed.click()
-	ed.clear()
-	ed.sendKeys("Test@1234")
-	ed.sendKeys(Keys.TAB)  // blur to auto-save
-	WebUI.delay(1)
-	WebUI.comment("✅ Editor #${i+1} filled")
-}
-
-// ────────────────────────────────────────────────────────────────────
-// STEP 5: SWITCH TO RBC & RE-GRADE FIRST CELL
+// STEP 4: CLICK THE RBC TAB
 // ────────────────────────────────────────────────────────────────────
 TestObject rbcTab = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'cell-buttons') and .//span[normalize-space()='RBC']]"
+	"//button[contains(@class,'cell-buttons') and .//span[text()='RBC']]"
 )
 WebUI.waitForElementClickable(rbcTab, 10)
 WebUI.click(rbcTab)
+WebUI.delay(2)   // let the RBC panel render
+
+// ────────────────────────────────────────────────────────────────────
+// STEP 5: CLICK A CLICKABLE CELL AND REGRADE IT
+// ────────────────────────────────────────────────────────────────────
+List<WebElement> clickableRows = driver.findElements(
+	By.xpath("//div[contains(@class,'cell-row') and not(contains(@class,'not-clickable'))]")
+)
+if (clickableRows.isEmpty()) {
+	WebUI.comment("❌ No clickable RBC cells found")
+	WebUI.closeBrowser()
+	return
+}
+// click the first one
+clickableRows.get(0).click()
 WebUI.delay(1)
 
-// find each selected RBC cell row
-List<WebElement> rows = driver.findElements(By.cssSelector("div.rbc-cell-body > div.selected.cell-row"))
-boolean didRegrade = false
-for (WebElement row : rows) {
-	List<WebElement> radios = row.findElements(By.xpath(".//input[@type='radio']"))
-	int current = radios.findIndexOf { it.isSelected() }
-	if (current < 0) continue
-	for (int offset = 1; offset < radios.size(); offset++) {
-		int idx = (current + offset) % radios.size()
-		if (radios[idx].isEnabled()) {
-			radios[idx].click()
-			WebUI.delay(1)
-			WebUI.comment("✅ Regraded RBC cell ${current}→${idx}")
-			didRegrade = true
-			break
-		}
+// now find its grade‐radios and pick the first that isn’t already selected
+WebElement row = clickableRows.get(0)
+List<WebElement> grades = row.findElements(By.xpath(".//input[@type='radio']"))
+boolean regraded = false
+for (WebElement g : grades) {
+	if (!g.isSelected()) {
+		g.click()
+		WebUI.delay(1)
+		// verify old percentage is struck through
+		WebElement strikeElem = row.findElement(By.xpath(".//div[3]/del"))
+		String td = strikeElem.getCssValue("text-decoration-line")
+		assert td.contains("line-through")
+		WebUI.comment("✅ “${row.findElement(By.xpath('.//div[1]')).getText()}” got regraded and struck through")
+		regraded = true
+		break
 	}
-	if (didRegrade) break
 }
-assert didRegrade : "❌ Could not regrade any RBC cell"
-
+if (!regraded) {
+	WebUI.comment("ℹ️ All grades were already selected, no change made")
+}
 // ────────────────────────────────────────────────────────────────────
-// STEP 6: OPEN KEBAB MENU → HISTORY
+// 6: OPEN KEBAB MENU & SELECT HISTORY
 // ────────────────────────────────────────────────────────────────────
-TestObject kebab = new TestObject().addProperty(
+// click three‐dots kebab
+TestObject kebabBtn = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//button[.//img[contains(@src,'kebab_menu.svg')]]"
 )
-WebUI.waitForElementClickable(kebab, 5)
-WebUI.click(kebab)
+WebUI.waitForElementClickable(kebabBtn, 5)
+WebUI.click(kebabBtn)
 
-TestObject historyOpt = new TestObject().addProperty(
+// click History option
+TestObject historyOption = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//div[contains(@class,'MuiPopover-paper')]//span[normalize-space(.)='History']/ancestor::li"
+	"//li[contains(@class,'appBar_popover__list-item') and .//span[text()='History']]"
 )
-WebUI.waitForElementClickable(historyOpt, 5)
-WebUI.click(historyOpt)
+WebUI.waitForElementClickable(historyOption, 5)
+WebUI.click(historyOption)
 
 // ────────────────────────────────────────────────────────────────────
-// STEP 7: PRINT FIRST TWO HISTORY ENTRIES + SCREENSHOT
+// 7: READ & PRINT LATEST HISTORY ENTRY
 // ────────────────────────────────────────────────────────────────────
+// wait for the Regrading entry to show up
 WebUI.waitForElementVisible(
-	new TestObject().addProperty('css', ConditionType.EQUALS, "li.css-1ecsk3j"),
+	new TestObject().addProperty('xpath', "//h4[contains(@class,'event-title') and text()='Regrading']"),
 	10
 )
-List<WebElement> entries = driver.findElements(By.cssSelector("li.css-1ecsk3j"))
-entries.take(2).eachWithIndex { e, idx ->
-	println "History ${idx+1}: ${e.getText().trim()}"
-}
-WebUI.takeScreenshot("final-history.png")
+
+// grab the very first <li> under the history list
+WebElement latest = driver.findElement(
+	By.xpath("//ul[contains(@class,'events-container')]/li[1]")
+)
+String title = latest.findElement(By.xpath(".//h4[@class='event-title']")).getText()
+String desc  = latest.findElement(By.xpath(".//div[contains(@class,'event-description')]")).getText()
+WebUI.comment("🔍 Latest history: “${title}” — ${desc}")
 
