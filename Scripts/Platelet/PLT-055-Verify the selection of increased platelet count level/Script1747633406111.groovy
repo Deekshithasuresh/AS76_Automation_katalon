@@ -9,7 +9,7 @@ CustomKeywords.'generic.custumFunctions.login'()
 WebUI.maximizeWindow()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-CustomKeywords.'generic.custumFuctions.assignOrReassignOnTabs'('pawan', true)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'), 'Platelets')
 
