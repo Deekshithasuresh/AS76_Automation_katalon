@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-068-Verify the regrading functionality for the Report which is assigned to different user</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>efac6822-24e0-4618-aa57-d7a85d1d6259</testCaseGuid>
+</TestCaseEntity>

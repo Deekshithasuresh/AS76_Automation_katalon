@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-053-Verify the Exclusion of Manually Gradable Cell Types for the cell types present in the RBC shape tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>daaa7a1b-eb64-4d4c-96b9-4b679a7131af</testCaseGuid>
+</TestCaseEntity>

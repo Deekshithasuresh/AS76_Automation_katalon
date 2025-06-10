@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-099-Verify that the all patches of the RBC color tab are properly displayed and aligned</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2af7231d-a5c1-4fd5-bc39-5eec6313f51a</testCaseGuid>
+</TestCaseEntity>

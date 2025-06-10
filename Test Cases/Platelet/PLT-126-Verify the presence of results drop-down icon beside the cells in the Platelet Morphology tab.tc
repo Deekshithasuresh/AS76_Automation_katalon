@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-126-Verify the presence of results drop-down icon beside the cells in the Platelet Morphology tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3b4ee59a-6630-4d59-8af2-16b2301e42ab</testCaseGuid>
+</TestCaseEntity>

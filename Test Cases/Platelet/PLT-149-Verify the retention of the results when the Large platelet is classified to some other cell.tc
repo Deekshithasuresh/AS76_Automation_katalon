@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-149-Verify the retention of the results when the Large platelet is classified to some other cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5cf077e4-06a2-48ab-88d4-54405398b3a5</testCaseGuid>
+</TestCaseEntity>

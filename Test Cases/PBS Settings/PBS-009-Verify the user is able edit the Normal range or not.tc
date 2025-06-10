@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-009-Verify the user is able edit the Normal range or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>27dddaa3-9261-4845-a213-da9cf874f91e</testCaseGuid>
+</TestCaseEntity>

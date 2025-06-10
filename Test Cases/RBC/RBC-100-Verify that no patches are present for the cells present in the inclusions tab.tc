@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-100-Verify that no patches are present for the cells present in the inclusions tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3ee3508e-2a19-4be7-a0e3-c531dbb77d09</testCaseGuid>
+</TestCaseEntity>

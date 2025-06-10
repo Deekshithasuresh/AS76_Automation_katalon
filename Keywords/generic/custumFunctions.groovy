@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
@@ -234,7 +235,8 @@ public class custumFunctions {
 		List<WebElement> els = WebUiCommonHelper.findWebElements(allOpts, 5)
 		List<String> names = els.collect { it.getText().trim() }
 		WebUI.comment("Available reviewers: ${names}")
-
+		
+		
 		// 5) Proceed only if current != reviewerName
 		if (current != reviewerName) {
 			if (!names.contains(reviewerName)) {
@@ -254,7 +256,7 @@ public class custumFunctions {
 				def reassignBtn = findTestObject('Object Repository/Report_Listing/Page_PBS/button_Re-assign')
 				def cancelBtn   = findTestObject('Object Repository/Report_Listing/Page_PBS/button_Cancel')
 
-				if (WebUI.verifyElementPresent(popup, 3)) {
+			if (WebUI.verifyElementPresent(popup, 3, FailureHandling.OPTIONAL)) {
 					WebUI.comment("Re-assign popup appeared.")
 					if (confirmReassign) {
 						WebUI.comment("Clicking Re-assign...")

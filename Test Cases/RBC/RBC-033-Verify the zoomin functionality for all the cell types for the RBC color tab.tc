@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-033-Verify the zoomin functionality for all the cell types for the RBC color tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>34327fe9-7ac9-48eb-8a06-6689f51d1967</testCaseGuid>
+</TestCaseEntity>

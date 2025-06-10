@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-002-Verify the reviewer user is able to view the PBS settings admin portal or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d0281594-8318-4447-baff-62c7313a22b7</testCaseGuid>
+</TestCaseEntity>

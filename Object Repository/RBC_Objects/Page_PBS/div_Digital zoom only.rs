@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Digital zoom only</name>
+   <tag></tag>
+   <elementGuidId>bf6da42c-c864-433c-88e7-dfc58bf616cc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/main/div/div/main/div[2]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.zoom-warning</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>.zoom-warning</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>29c0d284-a35b-4aa7-8f0e-addcd8e7b978</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>zoom-warning</value>
+      <webElementGuid>2eb51ba7-0290-48e5-b754-17298daaf10b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value> Digital zoom only</value>
+      <webElementGuid>14f617fe-f749-49c6-a1ca-eb888aa514c2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9.2 css-k8aoie&quot;]/div[@class=&quot;patches-tab&quot;]/div[@class=&quot;viewer-patches-container&quot;]/div[@class=&quot;patches-viewer-section&quot;]/div[@class=&quot;viewer-section&quot;]/div[@class=&quot;ant-layout css-1x0dypw&quot;]/main[@class=&quot;ant-layout-content css-1x0dypw&quot;]/div[@class=&quot;ant-layout ant-layout-has-sider css-1x0dypw&quot;]/div[@class=&quot;ant-layout css-1x0dypw&quot;]/main[@class=&quot;ant-layout-content css-1x0dypw&quot;]/div[@class=&quot;zoom-warning-container split&quot;]/div[@class=&quot;zoom-warning&quot;]</value>
+      <webElementGuid>dbc31777-3deb-44ac-b3db-ac0c7f0a35f1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div/div/div[2]/div[2]/div/main/div/div/main/div[2]/div</value>
+      <webElementGuid>969fc756-34c7-4a70-8a24-26770c52c9f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::div[75]</value>
+      <webElementGuid>a3e9d3a1-929f-4b5d-9252-7ccbe581697a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total number of RBCs counted for size based classification is 2589'])[1]/following::div[81]</value>
+      <webElementGuid>d6ca480d-1244-4f22-95ac-893ba541907c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='+'])[1]/preceding::div[7]</value>
+      <webElementGuid>c24edcae-a477-4749-8046-60c36803ca02</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='–'])[1]/preceding::div[7]</value>
+      <webElementGuid>a2468967-e535-485f-99b4-ef781ca56764</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main/div[2]/div</value>
+      <webElementGuid>37bf53d0-06f2-45c3-9b60-da336465521f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = ' Digital zoom only' or . = ' Digital zoom only')]</value>
+      <webElementGuid>d38ab98f-f856-4859-b407-0b48b248de67</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

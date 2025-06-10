@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-074-Verify the correctness of the grade value according to the percentage present for all cell types present in the RBC size tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3d2b2a64-b54b-453b-a744-60fd9c636a63</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-072-Verify the calculation of percaentage value for all cell types present in the RBC shape after regrading</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>29f75ee8-e702-4052-98a2-ff147bcd6e4b</testCaseGuid>
+</TestCaseEntity>

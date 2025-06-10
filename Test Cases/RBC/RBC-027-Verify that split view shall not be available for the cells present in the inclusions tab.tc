@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-027-Verify that split view shall not be available for the cells present in the inclusions tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>64b2fe6f-8851-4af3-a04a-8e709f3ed4fb</testCaseGuid>
+</TestCaseEntity>

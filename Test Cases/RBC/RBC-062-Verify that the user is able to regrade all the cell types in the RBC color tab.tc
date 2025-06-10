@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-062-Verify that the user is able to regrade all the cell types in the RBC color tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>685c7b96-e79d-495c-8a61-7da743d36f9a</testCaseGuid>
+</TestCaseEntity>

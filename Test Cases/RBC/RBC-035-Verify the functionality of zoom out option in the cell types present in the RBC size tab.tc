@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-035-Verify the functionality of zoom out option in the cell types present in the RBC size tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5e0f9fba-b22b-4fb4-b439-b25443e442ac</testCaseGuid>
+</TestCaseEntity>
