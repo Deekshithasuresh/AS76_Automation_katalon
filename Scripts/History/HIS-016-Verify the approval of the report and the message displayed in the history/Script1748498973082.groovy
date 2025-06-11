@@ -1,12 +1,16 @@
-import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.model.FailureHandling
-import org.openqa.selenium.chrome.ChromeOptions
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.chrome.ChromeDriver
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.driver.DriverFactory
+
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+
+// for List<>
+import java.util.List
 
 
 // ---------- STEP 1: Login ----------
