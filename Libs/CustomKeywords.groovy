@@ -21,6 +21,15 @@ def static "generic.history.verifyRetentionDurationUpdates"() {
 }
 
 
+def static "generic.Reclacification.classifyFromCellToCell"(
+    	String fromCellName	
+     , 	String toCellName	) {
+    (new generic.Reclacification()).classifyFromCellToCell(
+        	fromCellName
+         , 	toCellName)
+}
+
+
 def static "generic.PBSAutomationKeywords.loginToAdminConsole"(
     	String username	
      , 	String encryptedPassword	) {
@@ -453,6 +462,155 @@ def static "generic.bookmark.verifyBookmarkLifecycle"() {
 }
 
 
+def static "generic.Reclassificationvj.reclassifyAllWBCtoPlateletInBatches"(
+    	String toPlateletCell	
+     , 	int batchSize	) {
+    (new generic.Reclassificationvj()).reclassifyAllWBCtoPlateletInBatches(
+        	toPlateletCell
+         , 	batchSize)
+}
+
+
+def static "generic.Reclassificationvj.reclassifyPlateletToWBC"(
+    	String fromPlateletCell	
+     , 	String toWbcCell	
+     , 	int patchCount	) {
+    (new generic.Reclassificationvj()).reclassifyPlateletToWBC(
+        	fromPlateletCell
+         , 	toWbcCell
+         , 	patchCount)
+}
+
+
+def static "generic.Reclassificationvj.reclassifyWBCToPlatelet"(
+    	String fromCellName	
+     , 	String toPlateletCell	
+     , 	int patchCount	) {
+    (new generic.Reclassificationvj()).reclassifyWBCToPlatelet(
+        	fromCellName
+         , 	toPlateletCell
+         , 	patchCount)
+}
+
+
+def static "generic.Reclassificationvj.getCellCountInCurrentTab"(
+    	WebDriver driver	
+     , 	String cellName	) {
+    (new generic.Reclassificationvj()).getCellCountInCurrentTab(
+        	driver
+         , 	cellName)
+}
+
+
+def static "generic.Reclassificationvj.classifyMultipleSelectedPatches"(
+    	String fromCellName	
+     , 	String toSubCellName	
+     , 	int numberOfPatches	) {
+    (new generic.Reclassificationvj()).classifyMultipleSelectedPatches(
+        	fromCellName
+         , 	toSubCellName
+         , 	numberOfPatches)
+}
+
+
+def static "generic.Reclassificationvj.classifyMultiplePatchesToCell"(
+    	String fromCellName	
+     , 	String toCellName	
+     , 	int patchCount	) {
+    (new generic.Reclassificationvj()).classifyMultiplePatchesToCell(
+        	fromCellName
+         , 	toCellName
+         , 	patchCount)
+}
+
+
+def static "generic.Reclassificationvj.classifyToSubCell"(
+    	String mainCell	
+     , 	String subCell	) {
+    (new generic.Reclassificationvj()).classifyToSubCell(
+        	mainCell
+         , 	subCell)
+}
+
+
+def static "generic.Reclassificationvj.classifyFromCellToCellMultiple"(
+    	String fromCellName	
+     , 	String toCellName	
+     , 	int times	) {
+    (new generic.Reclassificationvj()).classifyFromCellToCellMultiple(
+        	fromCellName
+         , 	toCellName
+         , 	times)
+}
+
+
+def static "generic.Reclassificationvj.classifyFromCellToCell"(
+    	String fromCellName	
+     , 	String toCellName	) {
+    (new generic.Reclassificationvj()).classifyFromCellToCell(
+        	fromCellName
+         , 	toCellName)
+}
+
+
+def static "generic.Reclassificationvj.classifyFromCellToSubCellAny"(
+    	String fromCellName	
+     , 	String toSubCellName	) {
+    (new generic.Reclassificationvj()).classifyFromCellToSubCellAny(
+        	fromCellName
+         , 	toSubCellName)
+}
+
+
+def static "generic.Reclassificationvj.dragAndDropFromCellToCell"(
+    	String fromCellName	
+     , 	String toCellName	) {
+    (new generic.Reclassificationvj()).dragAndDropFromCellToCell(
+        	fromCellName
+         , 	toCellName)
+}
+
+
+def static "generic.Reclassificationvj.dragAndDropMultipleSelectedPatches"(
+    	String fromCellName	
+     , 	String toCellName	
+     , 	int numberOfPatches	) {
+    (new generic.Reclassificationvj()).dragAndDropMultipleSelectedPatches(
+        	fromCellName
+         , 	toCellName
+         , 	numberOfPatches)
+}
+
+
+def static "generic.Reclassificationvj.classifyPlateletToWbcSubCell"(
+    	String fromPlateletCell	
+     , 	String toWbcSubCell	
+     , 	int patchCount	) {
+    (new generic.Reclassificationvj()).classifyPlateletToWbcSubCell(
+        	fromPlateletCell
+         , 	toWbcSubCell
+         , 	patchCount)
+}
+
+
+def static "generic.Reclassificationvj.reclassifyPlateletToAllWBCMainCells"(
+    	String fromPlateletCell	
+     , 	String toWbcCell	
+     , 	int patchCount	) {
+    (new generic.Reclassificationvj()).reclassifyPlateletToAllWBCMainCells(
+        	fromPlateletCell
+         , 	toWbcCell
+         , 	patchCount)
+}
+
+
+def static "generic.Reclassificationvj.reclassifyAllWBCtoPlateletInBatches"(
+    	String toPlateletCell	) {
+    (new generic.Reclassificationvj()).reclassifyAllWBCtoPlateletInBatches(
+        	toPlateletCell)
+}
+
+
 def static "generic.dataManagement.loginAdmin"() {
     (new generic.dataManagement()).loginAdmin()
 }
@@ -513,6 +671,75 @@ def static "generic.helper.assignOrReassignOnTabs"(
 }
 
 
+def static "generic.custumFunctionsvj.selectReportByStatus"(
+    	String status	) {
+    (new generic.custumFunctionsvj()).selectReportByStatus(
+        	status)
+}
+
+
+def static "generic.custumFunctionsvj.verifyCancelButtonDuringReassign"(
+    	String reportStatus	
+     , 	String originalReviewer	) {
+    (new generic.custumFunctionsvj()).verifyCancelButtonDuringReassign(
+        	reportStatus
+         , 	originalReviewer)
+}
+
+
+def static "generic.custumFunctionsvj.assignOrReassignOnTabs"(
+    	String reviewerName	
+     , 	boolean confirmReassign	) {
+    (new generic.custumFunctionsvj()).assignOrReassignOnTabs(
+        	reviewerName
+         , 	confirmReassign)
+}
+
+
+def static "generic.custumFunctionsvj.unassignOrCancel"(
+    	String reportStatus	
+     , 	boolean confirm	) {
+    (new generic.custumFunctionsvj()).unassignOrCancel(
+        	reportStatus
+         , 	confirm)
+}
+
+
+def static "generic.custumFunctionsvj.assignOrReassignOnTabs"(
+    	String reviewerName	) {
+    (new generic.custumFunctionsvj()).assignOrReassignOnTabs(
+        	reviewerName)
+}
+
+ /**
+	 * Checks if a canvas image is blurry using edge variance.
+	 * Accepts optional selector and sharpness threshold.
+	 *s
+	 * @param jsCanvasSelector JS string to locate canvas element. Defaults to "#pbs-volumeViewport canvas".
+	 * @param threshold Variance threshold below which image is considered blurry. Default is 5.0.
+	 * @return true if blurry, false if sharp
+	 */ 
+def static "imageutils.blurChecker.isCanvasImageBlurry"(
+    	String jsCanvasSelector	
+     , 	double threshold	) {
+    (new imageutils.blurChecker()).isCanvasImageBlurry(
+        	jsCanvasSelector
+         , 	threshold)
+}
+
+
+def static "imageutils.blurChecker.isCanvasImageBlurry"(
+    	String jsCanvasSelector	) {
+    (new imageutils.blurChecker()).isCanvasImageBlurry(
+        	jsCanvasSelector)
+}
+
+
+def static "imageutils.blurChecker.isCanvasImageBlurry"() {
+    (new imageutils.blurChecker()).isCanvasImageBlurry()
+}
+
+
 def static "generic.scroll.checkCellImageCountExceedsLimit"(
     	int threshold	) {
     (new generic.scroll()).checkCellImageCountExceedsLimit(
@@ -532,6 +759,22 @@ def static "generic.scroll.checkScrollBehaviorBasedOnPatchCountForSplitView"() {
 
 def static "generic.scroll.checkCellImageCountExceedsLimit"() {
     (new generic.scroll()).checkCellImageCountExceedsLimit()
+}
+
+
+def static "loginPackage.Login.assignReviewerToReport"(
+    	String initialStatus	
+     , 	String reviewerName	) {
+    (new loginPackage.Login()).assignReviewerToReport(
+        	initialStatus
+         , 	reviewerName)
+}
+
+
+def static "loginPackage.Login.selectReportByStatus"(
+    	String status	) {
+    (new loginPackage.Login()).selectReportByStatus(
+        	status)
 }
 
 
