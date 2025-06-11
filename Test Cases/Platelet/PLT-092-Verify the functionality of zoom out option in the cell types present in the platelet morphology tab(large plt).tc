@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-092-Verify the functionality of zoom out option in the cell types present in the platelet morphology tab(large plt)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>476786ca-44e0-41aa-92c7-0ae726d07455</testCaseGuid>
+</TestCaseEntity>

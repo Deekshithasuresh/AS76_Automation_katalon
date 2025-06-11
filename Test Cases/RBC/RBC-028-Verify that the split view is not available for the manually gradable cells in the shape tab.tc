@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-028-Verify that the split view is not available for the manually gradable cells in the shape tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5430fd35-ebf9-4cfe-b778-0036ef8ef2e2</testCaseGuid>
+</TestCaseEntity>

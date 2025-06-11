@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM-050-Verify the Scroll Behavior After Search Input</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f76458a0-901b-4219-9b6f-f9c8622119e1</testCaseGuid>
+</TestCaseEntity>

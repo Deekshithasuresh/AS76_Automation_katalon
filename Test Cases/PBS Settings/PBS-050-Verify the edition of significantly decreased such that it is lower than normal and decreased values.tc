@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-050-Verify the edition of significantly decreased such that it is lower than normal and decreased values</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f90252a7-4286-4eba-ae8a-a5591bec7f7e</testCaseGuid>
+</TestCaseEntity>

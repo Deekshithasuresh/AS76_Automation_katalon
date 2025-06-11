@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-157-Verify that the platelet clumps legend is displayed in the modified report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5e618ea9-81fb-43b9-b48e-945f678ded24</testCaseGuid>
+</TestCaseEntity>

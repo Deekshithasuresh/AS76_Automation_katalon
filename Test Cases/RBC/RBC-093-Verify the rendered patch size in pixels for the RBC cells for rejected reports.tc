@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-093-Verify the rendered patch size in pixels for the RBC cells for rejected reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>29c42b34-4327-432f-afcd-57d7090d881a</testCaseGuid>
+</TestCaseEntity>

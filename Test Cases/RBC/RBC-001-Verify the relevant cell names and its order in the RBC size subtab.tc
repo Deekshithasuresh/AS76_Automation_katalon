@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-001-Verify the relevant cell names and its order in the RBC size subtab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b16e19f7-0113-4978-b4c7-5553cb4d030b</testCaseGuid>
+</TestCaseEntity>

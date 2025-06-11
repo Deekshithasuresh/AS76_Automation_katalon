@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_06-May-2025, 0821 AM (WAT)</name>
+   <tag></tag>
+   <elementGuidId>33f18059-3f77-4f86-a22e-8b85f5a26288</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='historyContainer']/div/div/div/div/div[5]/div[2]/div/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;06-May-2025, 08:21 AM (WAT)&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>b0f060a0-8886-4b88-8507-e0bbb6c744c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>time</value>
+      <webElementGuid>cd336013-46d4-4abb-a25e-e8ed17a3db14</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>06-May-2025, 08:21 AM (WAT)</value>
+      <webElementGuid>2df5e457-5f5c-426b-871c-cfa3c702f58a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;historyContainer&quot;)/div[@class=&quot;history-content&quot;]/div[@class=&quot;history-stepper-container&quot;]/div[@class=&quot;infinite-scroll-component__outerdiv&quot;]/div[@class=&quot;infinite-scroll-component&quot;]/div[@class=&quot;stepper-container&quot;]/div[@class=&quot;stepper-content&quot;]/div[@class=&quot;stepper-title&quot;]/div[@class=&quot;time&quot;]</value>
+      <webElementGuid>0e4cb76a-206c-4809-a00b-2609f053ab7e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='historyContainer']/div/div/div/div/div[5]/div[2]/div/div[2]</value>
+      <webElementGuid>efc6a9da-b9f5-4ca4-94ea-d78949061b0b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reports deleted'])[1]/following::div[1]</value>
+      <webElementGuid>5b11f3d4-da6f-458c-994f-9f4b56ea41a8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='as76user updated RBC diamter of macrocyte'])[3]/following::div[10]</value>
+      <webElementGuid>9909d270-69bb-4413-8c21-bf5fb6ab007f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='storage'])[1]/preceding::div[1]</value>
+      <webElementGuid>bd803343-1e18-45ce-bc12-d5395759c49d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='06-May-2025, 08:21 AM (WAT)']/parent::*</value>
+      <webElementGuid>464adcbd-4303-49f5-b926-0c6ed33d417d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div[2]/div/div[2]</value>
+      <webElementGuid>84592d0b-9780-4aac-924b-5f624164687e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '06-May-2025, 08:21 AM (WAT)' or . = '06-May-2025, 08:21 AM (WAT)')]</value>
+      <webElementGuid>8c4d2160-d2ee-4ad8-a34a-b843147d095f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

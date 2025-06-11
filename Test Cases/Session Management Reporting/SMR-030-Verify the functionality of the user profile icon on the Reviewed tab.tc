@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMR-030-Verify the functionality of the user profile icon on the Reviewed tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a1164703-b155-4843-83c7-bf6304a5d1f6</testCaseGuid>
+</TestCaseEntity>

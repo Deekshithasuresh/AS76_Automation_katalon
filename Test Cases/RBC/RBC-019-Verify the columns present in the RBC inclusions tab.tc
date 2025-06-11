@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-019-Verify the columns present in the RBC inclusions tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9486b5c3-ff95-4128-9c57-41d31382501e</testCaseGuid>
+</TestCaseEntity>

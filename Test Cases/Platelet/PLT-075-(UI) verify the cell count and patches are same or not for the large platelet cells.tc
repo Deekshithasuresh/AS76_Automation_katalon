@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-075-(UI) verify the cell count and patches are same or not for the large platelet cells</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0bf1c298-cf77-4b72-8b1d-ce50025726e2</testCaseGuid>
+</TestCaseEntity>

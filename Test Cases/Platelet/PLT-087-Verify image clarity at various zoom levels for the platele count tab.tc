@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-087-Verify image clarity at various zoom levels for the platele count tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7634314b-c6f1-4c04-a526-d413cf1b9c1c</testCaseGuid>
+</TestCaseEntity>

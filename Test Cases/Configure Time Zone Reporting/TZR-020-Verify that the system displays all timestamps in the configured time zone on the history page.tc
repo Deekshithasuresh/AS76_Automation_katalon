@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-020-Verify that the system displays all timestamps in the configured time zone on the history page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>24a1ed8f-cc3f-4912-a4bc-1152074668c5</testCaseGuid>
+</TestCaseEntity>

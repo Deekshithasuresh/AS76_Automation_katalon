@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-015-Verify that the scan time for existing scans get changed when time zone is changed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c0ef215e-db09-47a3-abd2-559545054ab8</testCaseGuid>
+</TestCaseEntity>

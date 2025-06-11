@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-026-Verify the availability of the split view for all the cells present in the RBC color tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5603c9ec-71ba-4a73-9052-f1c9b844533f</testCaseGuid>
+</TestCaseEntity>

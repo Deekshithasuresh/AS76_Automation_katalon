@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-001-Verify whether the admin user is able to view the PBS settings admin portal or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1acdf1f0-1498-4aab-80ea-e25f1f87683c</testCaseGuid>
+</TestCaseEntity>

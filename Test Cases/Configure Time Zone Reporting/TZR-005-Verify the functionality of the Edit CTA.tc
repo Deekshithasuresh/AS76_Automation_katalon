@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-005-Verify the functionality of the Edit CTA</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>80f06b0f-d37f-4aa2-92ab-2e76e5619697</testCaseGuid>
+</TestCaseEntity>

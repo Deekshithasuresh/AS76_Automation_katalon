@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PBS-038-Verify the user is able to add the values such that Upper limit of grade 2 is lower than upper limit of grade 1</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1c59d7c6-1262-4ef1-a3b6-542269b716dc</testCaseGuid>
+</TestCaseEntity>

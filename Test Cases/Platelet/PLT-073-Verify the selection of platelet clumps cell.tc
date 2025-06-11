@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-073-Verify the selection of platelet clumps cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4f007408-ab19-4dbf-83e3-7d616b1224b4</testCaseGuid>
+</TestCaseEntity>

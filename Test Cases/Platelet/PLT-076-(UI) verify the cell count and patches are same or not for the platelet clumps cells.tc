@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-076-(UI) verify the cell count and patches are same or not for the platelet clumps cells</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5bbf88b4-80a7-4aa8-8c3b-5ae24c51d276</testCaseGuid>
+</TestCaseEntity>

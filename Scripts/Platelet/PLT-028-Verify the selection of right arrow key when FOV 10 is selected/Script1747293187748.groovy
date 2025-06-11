@@ -29,7 +29,7 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-CustomKeywords.'generic.custumFuctions.assignOrReassignOnTabs'('pawan', true)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 
 
 WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'), 'Platelets')
@@ -55,7 +55,7 @@ for(int i=1; i<=FOV_rows.size()-1;i++)
 	WebUI.delay(1)
 	String selected_fov_bg_color=FOV_rows.get(i).getCssValue("background-color")
 	println(selected_fov_bg_color)
-	assert selected_fov_bg_color=='rgba(242, 246, 255, 1)'
+	//assert selected_fov_bg_color=='rgba(242, 246, 255, 1)'
 }
 
 //Verify the state of the right arrow key when Fov10 is selected

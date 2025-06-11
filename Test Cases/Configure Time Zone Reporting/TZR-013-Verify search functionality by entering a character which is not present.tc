@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-013-Verify search functionality by entering a character which is not present</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2c806a19-2fff-45f9-ac33-7714f4c721aa</testCaseGuid>
+</TestCaseEntity>

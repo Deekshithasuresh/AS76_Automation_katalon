@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-002-Verify the default time for a new user</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0c33da6c-2d95-46bf-bf51-1a87ecc6d3d6</testCaseGuid>
+</TestCaseEntity>

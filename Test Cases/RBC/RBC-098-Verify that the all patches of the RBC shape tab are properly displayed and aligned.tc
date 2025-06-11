@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-098-Verify that the all patches of the RBC shape tab are properly displayed and aligned</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>980e6722-9b1b-4972-ad94-e0dd41d99db5</testCaseGuid>
+</TestCaseEntity>

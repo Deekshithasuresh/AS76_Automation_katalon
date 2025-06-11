@@ -35,7 +35,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/t
 
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/td_Smudge Cells'), 'Smudge Cells')
 
-/ /Get all cell rows
+//Get all cell rows
 def cellRows = WebUI.findWebElements(findTestObject('Object Repository/Page_PBS/table_cells'), 10)
 
 // Initialize variables to track positions

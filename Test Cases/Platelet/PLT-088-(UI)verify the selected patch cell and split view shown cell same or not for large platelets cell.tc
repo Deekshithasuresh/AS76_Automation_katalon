@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-088-(UI)verify the selected patch cell and split view shown cell same or not for large platelets cell</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7bca1d97-8a55-418a-ab7d-21b768cb1e68</testCaseGuid>
+</TestCaseEntity>

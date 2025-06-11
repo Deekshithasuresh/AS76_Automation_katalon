@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM-001-Verify the presence of the logo in the login page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d6be4bcb-e1a6-4ea5-b465-b1df8df64f48</testCaseGuid>
+</TestCaseEntity>

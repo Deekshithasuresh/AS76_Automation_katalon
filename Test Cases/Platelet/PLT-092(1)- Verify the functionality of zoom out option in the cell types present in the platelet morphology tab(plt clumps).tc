@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-092(1)- Verify the functionality of zoom out option in the cell types present in the platelet morphology tab(plt clumps)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6453a70d-ef87-499b-8ed2-4b238c04301b</testCaseGuid>
+</TestCaseEntity>

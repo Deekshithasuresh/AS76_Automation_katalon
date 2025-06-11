@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-129-Verify User Can Modify LargePlatelet from Detected to Not Detected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c8764c15-feb0-4834-8e38-7d827a9f3b9e</testCaseGuid>
+</TestCaseEntity>

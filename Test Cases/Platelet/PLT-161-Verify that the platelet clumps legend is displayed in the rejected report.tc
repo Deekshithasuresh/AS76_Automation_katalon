@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-161-Verify that the platelet clumps legend is displayed in the rejected report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>708f2aad-4c9f-42b9-8dd0-866d08fe6b32</testCaseGuid>
+</TestCaseEntity>

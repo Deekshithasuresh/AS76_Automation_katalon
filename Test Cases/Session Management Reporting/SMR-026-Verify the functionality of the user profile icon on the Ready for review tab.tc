@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SMR-026-Verify the functionality of the user profile icon on the Ready for review tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c5859d28-9747-4f09-b6c7-c1813ee3d549</testCaseGuid>
+</TestCaseEntity>

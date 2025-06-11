@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-026_Verify the functionality when the selects less than12 patches greater than 1 patch</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ff4989d3-2af3-4f51-b3bb-a9dd35ee87ee</testCaseGuid>
+</TestCaseEntity>

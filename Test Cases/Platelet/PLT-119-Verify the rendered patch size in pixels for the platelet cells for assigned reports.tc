@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-119-Verify the rendered patch size in pixels for the platelet cells for assigned reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0f1ffedd-8fa5-4fd2-89a1-9f2acb27ed6a</testCaseGuid>
+</TestCaseEntity>

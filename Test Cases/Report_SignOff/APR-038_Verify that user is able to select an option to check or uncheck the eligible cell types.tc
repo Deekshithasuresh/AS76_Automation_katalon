@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-038_Verify that user is able to select an option to check or uncheck the eligible cell types</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>410c39e8-4dfb-4005-bdaf-ed7df19151df</testCaseGuid>
+</TestCaseEntity>

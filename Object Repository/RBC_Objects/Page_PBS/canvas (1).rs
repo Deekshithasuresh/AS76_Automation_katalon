@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>canvas (1)</name>
+   <tag></tag>
+   <elementGuidId>e84c3628-462a-4d1a-83ca-322c55465912</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='pbs-volumeViewport']/div/div/div/canvas</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.ol-layer > canvas</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>canvas >> nth=1</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>canvas</value>
+      <webElementGuid>09170221-404e-40df-948f-0e35fd2ce231</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>width</name>
+      <type>Main</type>
+      <value>970</value>
+      <webElementGuid>f1e6d978-eeaf-47d7-9bf7-9839c62b2738</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>height</name>
+      <type>Main</type>
+      <value>920</value>
+      <webElementGuid>8ff62852-cdd9-4386-8ef9-e624fec8e205</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;pbs-volumeViewport&quot;)/div[@class=&quot;ol-viewport&quot;]/div[@class=&quot;ol-unselectable ol-layers&quot;]/div[@class=&quot;ol-layer&quot;]/canvas[1]</value>
+      <webElementGuid>09a6398f-9f58-4c90-a9a9-a6582aa277dc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='pbs-volumeViewport']/div/div/div/canvas</value>
+      <webElementGuid>aec103d1-24aa-4730-a30d-10b251f1fcb4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/canvas</value>
+      <webElementGuid>101c949e-ed75-4356-8fb6-d376f8576bd6</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

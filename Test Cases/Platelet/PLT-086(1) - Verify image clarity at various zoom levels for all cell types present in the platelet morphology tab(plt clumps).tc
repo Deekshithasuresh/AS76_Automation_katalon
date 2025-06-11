@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-086(1) - Verify image clarity at various zoom levels for all cell types present in the platelet morphology tab(plt clumps)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e9b94c07-1b12-4fc7-8051-9f15a415e378</testCaseGuid>
+</TestCaseEntity>

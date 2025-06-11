@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-154-Verify the displaying of platelet clumps name and counts on the LHS</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6ffdd934-ffeb-47d4-895b-0db3642a5348</testCaseGuid>
+</TestCaseEntity>

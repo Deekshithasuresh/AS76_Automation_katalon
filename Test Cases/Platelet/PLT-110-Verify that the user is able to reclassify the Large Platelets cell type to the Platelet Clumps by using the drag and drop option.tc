@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-110-Verify that the user is able to reclassify the Large Platelets cell type to the Platelet Clumps by using the drag and drop option</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f61a672d-c768-4271-be99-1976bfe4ddf9</testCaseGuid>
+</TestCaseEntity>

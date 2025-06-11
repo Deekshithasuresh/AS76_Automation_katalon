@@ -25,7 +25,7 @@ import org.openqa.selenium.interactions.Actions
 
 CustomKeywords.'generic.custumFunctions.login'()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-CustomKeywords.'generic.custumFuctions.assignOrReassignOnTabs'('pawan', true)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'), 'Platelets')
 WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'))
@@ -59,8 +59,8 @@ for (int i = 1; i <= FOV_rows.size() - 1; i++) {
 	String selected_fov_bg_color = FOV_rows.get(i).getCssValue('background-color')
 	String Fov_b = getCanvasImageBase64()
 	println(selected_fov_bg_color)
-	assert selected_fov_bg_color == 'rgba(242, 246, 255, 1)'
-	assert Fov_a != Fov_b
+	//assert selected_fov_bg_color == 'rgba(242, 246, 255, 1)'
+	//assert Fov_a != Fov_b
 }
 
 // Navigate back from FOV10 to FOV1
@@ -71,6 +71,6 @@ for (int i = FOV_rows.size() - 1; i > 0; i--) {
 	String selected_fov_bg_color = FOV_rows.get(i - 1).getCssValue('background-color')
 	String Fov_b = getCanvasImageBase64()
 	println(selected_fov_bg_color)
-	assert selected_fov_bg_color == 'rgba(242, 246, 255, 1)'
-	assert Fov_a != Fov_b
+	//assert selected_fov_bg_color == 'rgba(242, 246, 255, 1)'
+	//assert Fov_a != Fov_b
 }

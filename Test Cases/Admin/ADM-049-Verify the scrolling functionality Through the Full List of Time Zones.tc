@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM-049-Verify the scrolling functionality Through the Full List of Time Zones</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>55c82d66-8946-4caa-abcd-8aced99f9dee</testCaseGuid>
+</TestCaseEntity>

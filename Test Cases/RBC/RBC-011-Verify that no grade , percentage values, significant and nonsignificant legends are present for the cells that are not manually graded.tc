@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-011-Verify that no grade , percentage values, significant and nonsignificant legends are present for the cells that are not manually graded</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>adf5ab13-a6b3-46f7-8cea-fc3666388153</testCaseGuid>
+</TestCaseEntity>

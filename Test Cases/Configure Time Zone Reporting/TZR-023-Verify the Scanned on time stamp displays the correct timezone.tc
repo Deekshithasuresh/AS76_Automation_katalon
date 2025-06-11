@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-023-Verify the Scanned on time stamp displays the correct timezone</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>17955374-1eac-4ab1-bd86-964007f13306</testCaseGuid>
+</TestCaseEntity>

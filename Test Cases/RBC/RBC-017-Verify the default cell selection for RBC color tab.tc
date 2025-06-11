@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RBC-017-Verify the default cell selection for RBC color tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dc9b3cca-74a0-4496-b8b4-e33324bf940c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZR-006-Verify the functionality of edit CTA, the second time after a given time zone has configured</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f29fc511-e75a-4105-8693-142f6a856589</testCaseGuid>
+</TestCaseEntity>

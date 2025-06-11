@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ADM-041-Verify the functionality of the logout button under the user profile section</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cf0869da-a31b-495a-bd4d-1f54c6b818ed</testCaseGuid>
+</TestCaseEntity>

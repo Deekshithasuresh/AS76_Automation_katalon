@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PLT-103-Verify the multiple patch reclassification from platelets cells into to WBC cells</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>208f7810-687c-4a90-9374-e618c444d5b9</testCaseGuid>
+</TestCaseEntity>
