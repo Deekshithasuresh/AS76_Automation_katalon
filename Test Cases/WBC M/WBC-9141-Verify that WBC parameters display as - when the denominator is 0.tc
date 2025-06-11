@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-9141-Verify that WBC parameters display as - when the denominator is 0</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fd14dcad-f06b-4196-9437-480e81c8ff5d</testCaseGuid>
+</TestCaseEntity>

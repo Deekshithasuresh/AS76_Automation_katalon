@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-9142-Verify that WBC parameters with a denominator of 0 remain as - after reloading the report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>33b39e4c-7ba6-4a49-b43a-0d2c3f9d2fac</testCaseGuid>
+</TestCaseEntity>
