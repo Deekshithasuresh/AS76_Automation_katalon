@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-006(A)-Verify the user is able to download a single patch by right clicking on the rbc tab all the approved reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0dff3a64-e5e3-40b7-a82d-2e4ddeb5b623</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_052_Verification of the entering of alphanumeric characters in the add details field for self assigned report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8bd1085b-291b-4af8-b556-ed2b34b0f016</testCaseGuid>
+</TestCaseEntity>

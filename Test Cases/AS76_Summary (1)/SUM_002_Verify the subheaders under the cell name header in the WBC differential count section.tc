@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_002_Verify the subheaders under the cell name header in the WBC differential count section</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>10f9e0e9-5ed4-46b3-a100-97f18977be9f</testCaseGuid>
+</TestCaseEntity>

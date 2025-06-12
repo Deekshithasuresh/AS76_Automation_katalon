@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_006_Verify the non presence of the Unclassified, rejected, stain artefacts, degenerate cells on the summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5f914b4a-985d-488e-87a1-ef0eac9b946a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_010_Verify comparison of the WBC cells calculation percentage in the summary and WBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8a8b5155-45d3-4761-841f-18a5a30579f8</testCaseGuid>
+</TestCaseEntity>

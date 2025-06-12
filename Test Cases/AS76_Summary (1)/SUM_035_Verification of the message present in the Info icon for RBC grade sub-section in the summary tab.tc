@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_035_Verification of the message present in the Info icon for RBC grade sub-section in the summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1d00084f-b179-4f40-a17c-c3559ee59173</testCaseGuid>
+</TestCaseEntity>

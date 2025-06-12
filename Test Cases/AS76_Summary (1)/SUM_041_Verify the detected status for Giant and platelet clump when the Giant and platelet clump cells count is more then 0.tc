@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_041_Verify the detected status for Giant and platelet clump when the Giant and platelet clump cells count is more then 0</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>186eb904-7710-4b03-a246-fe16a8538770</testCaseGuid>
+</TestCaseEntity>

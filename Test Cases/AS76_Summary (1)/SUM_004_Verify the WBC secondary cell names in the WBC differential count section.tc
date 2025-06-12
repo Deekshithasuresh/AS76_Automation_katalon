@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_004_Verify the WBC secondary cell names in the WBC differential count section</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>94ecb1fc-aba0-41f6-8470-b69aee75c3b7</testCaseGuid>
+</TestCaseEntity>

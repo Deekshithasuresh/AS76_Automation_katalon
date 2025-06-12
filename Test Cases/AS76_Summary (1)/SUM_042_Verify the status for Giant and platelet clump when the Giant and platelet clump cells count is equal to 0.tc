@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_042_Verify the status for Giant and platelet clump when the Giant and platelet clump cells count is equal to 0</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8cc6dd8b-6d0d-4219-a7de-1434eaaa88df</testCaseGuid>
+</TestCaseEntity>

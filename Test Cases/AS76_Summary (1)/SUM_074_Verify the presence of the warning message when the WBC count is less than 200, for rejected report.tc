@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_074_Verify the presence of the warning message when the WBC count is less than 200, for rejected report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>02cc9bf9-164e-4c3c-88ee-9737ba17dc5b</testCaseGuid>
+</TestCaseEntity>

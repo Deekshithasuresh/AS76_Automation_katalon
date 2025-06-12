@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_015_Verify the details present in the RBC grading section on the summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a75644f1-f7bf-40dd-8f67-102f6d30fc56</testCaseGuid>
+</TestCaseEntity>

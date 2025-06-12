@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_068_Verify the presence of the warning message when the WBC count is less than 200 regardless of the report status</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e6f19bbc-968c-4c81-a4f1-542466c3677d</testCaseGuid>
+</TestCaseEntity>

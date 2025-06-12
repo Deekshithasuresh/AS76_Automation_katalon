@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_036_Verify the default presence of the Platelet count value in the summary</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c0f81141-975b-4157-8b92-5ae4d5c25ab4</testCaseGuid>
+</TestCaseEntity>

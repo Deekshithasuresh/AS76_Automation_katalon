@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_049_Verification of the entering of alphabet in the add details field for self assigned report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>33c68a5a-9afa-4873-baff-767679a15fa3</testCaseGuid>
+</TestCaseEntity>

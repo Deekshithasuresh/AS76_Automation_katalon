@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_033_Verify comparison of the grade values for RBC inclusion cells in the RBC and summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9aeb737c-75ab-418a-8b76-61b6f9a63a86</testCaseGuid>
+</TestCaseEntity>

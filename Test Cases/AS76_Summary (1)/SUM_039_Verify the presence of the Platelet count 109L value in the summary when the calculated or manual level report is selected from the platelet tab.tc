@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_039_Verify the presence of the Platelet count 109L value in the summary when the calculated or manual level report is selected from the platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>44501412-f8b4-4eb7-91af-ab4a254542ac</testCaseGuid>
+</TestCaseEntity>

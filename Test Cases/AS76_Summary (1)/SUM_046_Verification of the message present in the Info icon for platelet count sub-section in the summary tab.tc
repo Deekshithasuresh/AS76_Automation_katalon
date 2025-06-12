@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_046_Verification of the message present in the Info icon for platelet count sub-section in the summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c895677a-8c84-4b59-a6b0-2ee2d108c082</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_007_Verify the calculated percentage values are rounded to one decimal point for WBC cells on the summary tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a300c631-cdd8-44ff-9ba5-5f2c8b342587</testCaseGuid>
+</TestCaseEntity>

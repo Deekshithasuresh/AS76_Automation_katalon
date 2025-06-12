@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SUM_003_Verify the WBC primary cell list in the WBC differential count section</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2aa11cfa-e5b1-472c-a093-c284f49fab0c</testCaseGuid>
+</TestCaseEntity>
