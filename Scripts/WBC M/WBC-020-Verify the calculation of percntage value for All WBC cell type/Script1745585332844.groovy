@@ -87,31 +87,3 @@ for(WebElement row:WBC_cellname_row)
 		
 }
 
-//WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/td_Neutrophils'), 'Neutrophils')
-//
-//Act_Nuet_count = WebUI.getText(findTestObject('Object Repository/WBC/Page_PBS/td_19'), FailureHandling.STOP_ON_FAILURE)
-//
-//OverAll_count = WebUI.getText(findTestObject('Object Repository/WBC/Page_PBS/td_56'), FailureHandling.STOP_ON_FAILURE)
-//
-//
-//
-//float_Act_Nuet_count=Float.parseFloat(Act_Nuet_count)
-//
-//
-//println(float_Act_Nuet_count)
-//println(float_OverAll_count)
-//
-//
-//
-//Actual_Neut_percentage = WebUI.getText(findTestObject('Object Repository/WBC/Page_PBS/td_33.9'), FailureHandling.STOP_ON_FAILURE)
-//float_Act_Nuet_percentage=Float.parseFloat(Actual_Neut_percentage)
-//
-//
-//float calculated_neut_percentage=(((float_Act_Nuet_count/float_OverAll_count))*100)
-//
-//float rounded_calculated_neut_percentage = Math.round(calculated_neut_percentage * 10) / 10.0
-//println "Rounded: " + rounded_calculated_neut_percentage
-//
-//assert float_Act_Nuet_percentage==rounded_calculated_neut_percentage
-
-
