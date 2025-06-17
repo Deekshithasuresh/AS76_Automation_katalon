@@ -38,7 +38,7 @@ WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'
 
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'), 'RBC')
 
-WebUI.click(findTestObject('Object Repository/Commontools/li_Macrocytes'), FailureHandling.STOP_ON_FAILURE)
+//WebUI.click(findTestObject('Object Repository/Commontools/li_Macrocytes'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 

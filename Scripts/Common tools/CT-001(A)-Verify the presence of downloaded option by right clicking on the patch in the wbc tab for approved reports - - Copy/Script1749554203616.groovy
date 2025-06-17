@@ -24,7 +24,6 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/in
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In'))
 
 //WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
-
 CustomKeywords.'generic.custumFunctions.login'()
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Ready for review'))
@@ -34,6 +33,7 @@ WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Revie
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Reviewed_1'), 'Reviewed')
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Approved')
+
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_WBC'))
 
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
@@ -52,7 +52,7 @@ WebElement patchfirst = driver.findElement(By.xpath('(//div[@class=\'Card patche
 
 actions.contextClick(patchfirst).perform()
 
-WebUI.click(findTestObject('Commontools/2ndpatch'))
+WebUI.click(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 

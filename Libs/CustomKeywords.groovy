@@ -711,34 +711,6 @@ def static "generic.custumFunctionsvj.assignOrReassignOnTabs"(
         	reviewerName)
 }
 
- /**
-	 * Checks if a canvas image is blurry using edge variance.
-	 * Accepts optional selector and sharpness threshold.
-	 *s
-	 * @param jsCanvasSelector JS string to locate canvas element. Defaults to "#pbs-volumeViewport canvas".
-	 * @param threshold Variance threshold below which image is considered blurry. Default is 5.0.
-	 * @return true if blurry, false if sharp
-	 */ 
-def static "imageutils.blurChecker.isCanvasImageBlurry"(
-    	String jsCanvasSelector	
-     , 	double threshold	) {
-    (new imageutils.blurChecker()).isCanvasImageBlurry(
-        	jsCanvasSelector
-         , 	threshold)
-}
-
-
-def static "imageutils.blurChecker.isCanvasImageBlurry"(
-    	String jsCanvasSelector	) {
-    (new imageutils.blurChecker()).isCanvasImageBlurry(
-        	jsCanvasSelector)
-}
-
-
-def static "imageutils.blurChecker.isCanvasImageBlurry"() {
-    (new imageutils.blurChecker()).isCanvasImageBlurry()
-}
-
 
 def static "generic.scroll.checkCellImageCountExceedsLimit"(
     	int threshold	) {
