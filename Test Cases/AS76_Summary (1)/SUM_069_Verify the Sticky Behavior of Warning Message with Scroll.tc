@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>SUM_069_Verify the Sticky Behavior of Warning Message with Scroll</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>85cc98d9-ad80-44ca-9be2-f8feb3666f6f</testCaseGuid>
-</TestCaseEntity>

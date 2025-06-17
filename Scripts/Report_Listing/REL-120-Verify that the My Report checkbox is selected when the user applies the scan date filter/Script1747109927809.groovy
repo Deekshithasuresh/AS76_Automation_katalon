@@ -27,7 +27,7 @@ WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/filter_but
 WebUI.verifyElementPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/img_1'), 5)
 
 // Step 6: Apply date filter and verify
-Boolean result = CustomKeywords.'generic.FilterFunctions.applyAndVerifyDateFilter'("11-05-2025", "12-05-2025")
+Boolean result = CustomKeywords.'generic.FilterFunctions.applyAndVerifyDateFilter'("12-06-2025", "13-06-2025")
 assertTrue(result)
 
 // Step 7: Check if checkbox is selected

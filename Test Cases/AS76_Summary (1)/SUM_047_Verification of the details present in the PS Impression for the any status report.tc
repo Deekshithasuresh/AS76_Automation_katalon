@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>SUM_047_Verification of the details present in the PS Impression for the any status report</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>88b11400-757b-4246-8515-d8749eba5bda</testCaseGuid>
-</TestCaseEntity>

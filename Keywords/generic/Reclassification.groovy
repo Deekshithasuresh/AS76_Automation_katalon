@@ -167,7 +167,7 @@ public class Reclassification {
 
 		try {
 			// Step 1: Go to Platelets tab and get initial count
-			 
+
 
 			int fromInitialCount = getCellCountInCurrentTab(driver, fromPlateletCell)
 			WebUI.comment("Initial Platelet Count (${fromPlateletCell}): ${fromInitialCount}")
@@ -457,10 +457,9 @@ public class Reclassification {
 
 			// Step 6: Verify success message
 			try {
-			WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/div_1 patch subclassified'), 10)
-				} catch (Exception e) {
-					WebUI.comment("confirmation massage")
-				
+				WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/div_1 patch subclassified'), 10)
+			} catch (Exception e) {
+				WebUI.comment("confirmation massage")
 			}
 			WebUI.delay(2)
 
@@ -700,8 +699,8 @@ public class Reclassification {
 
 					// Wait for classification success
 					try {
-					WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/div_1 patch reclassified'), 10)
-					WebUI.delay(2)  // Optional wait for table refresh
+						WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/div_1 patch reclassified'), 10)
+						WebUI.delay(2)  // Optional wait for table refresh
 					} catch (Exception e) {
 						WebUI.comment("✅ Classification massage  verified.")
 					}
@@ -1113,10 +1112,10 @@ public class Reclassification {
 			return 0
 		}
 	}
-	
-	
-	
-	
+
+
+
+
 	@Keyword
 	def classifyFromCellToCellMultiplePlatelet(String fromCellName, String toCellName, int times) {
 		WebDriver driver = DriverFactory.getWebDriver()
@@ -1135,8 +1134,8 @@ public class Reclassification {
 					// Click on fromCell row
 					//WebElement cellRow = driver.findElement(By.xpath("//table/tbody/tr/td[1][text()='" + fromCellName + "']"))
 					WebElement cellRow = driver.findElement(By.xpath("//div[text()='" + fromCellName + "']/parent::div"))
-					
-					
+
+
 					cellRow.click()
 					WebUI.comment("Clicked on cell row: ${fromCellName}")
 					// Right-click on the image
@@ -1154,7 +1153,7 @@ public class Reclassification {
 					// Wait for classification success
 					WebUI.verifyElementPresent(findTestObject('Object Repository/Platelets/Page_PBS/toast_msg_header'), 10)
 					WebUI.delay(2)  // Optional wait for table refresh
-					
+
 					// Step 3: Get final counts
 					int fromFinalCount = getCellCountPlatelet(driver, fromCellName)
 					int toFinalCount = getCellCountPlatelet(driver, toCellName)
@@ -1173,7 +1172,7 @@ public class Reclassification {
 			throw e
 		}
 	}
-	
+
 	private int getCellCountPlatelet(WebDriver driver, String cellName) {
 		try {
 			WebElement row = driver.findElement(By.xpath("//div[text()='"+cellName+"']/parent::div"))
@@ -1185,11 +1184,4 @@ public class Reclassification {
 			return 0
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
 }

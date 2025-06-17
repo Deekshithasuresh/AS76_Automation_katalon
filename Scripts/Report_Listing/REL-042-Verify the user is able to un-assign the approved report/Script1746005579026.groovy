@@ -32,6 +32,5 @@ WebUI.waitForElementNotPresent(findTestObject('Object Repository/Report_Listing/
 
 //WebUI.verifyElementNotClickable(findTestObject('Object Repository/Report_Listing/Page_PBS/input_Slide Id_assigned_to'))
 
-WebUI.closeBrowser()
 
 

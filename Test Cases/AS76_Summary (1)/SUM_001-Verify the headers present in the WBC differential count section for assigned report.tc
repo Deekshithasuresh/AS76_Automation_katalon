@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>SUM_001-Verify the headers present in the WBC differential count section for assigned report</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>3337b61d-4e5a-4b33-a408-5a37be0ddb6b</testCaseGuid>
-</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>SUM_060_Verification of the availability of the scroll option in the add details field of the RBC Morphology sections when long comments are entered</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>cc1dd43a-5567-4bfa-831a-e6f686ace867</testCaseGuid>
-</TestCaseEntity>

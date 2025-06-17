@@ -25,7 +25,6 @@ WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PB
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
 
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('pooja',true)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('chida',true)
 
-WebUI.closeBrowser()
 

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>SUM_011_Verify comparison of the Non-WBC cells calculation percentage in the summary and WBC tab</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>f97fc2e5-b85e-43b2-b6b0-9f2c44420bb8</testCaseGuid>
-</TestCaseEntity>
