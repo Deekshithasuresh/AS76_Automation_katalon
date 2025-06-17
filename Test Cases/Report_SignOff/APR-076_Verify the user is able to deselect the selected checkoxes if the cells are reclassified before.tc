@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify the user is able to deselect the selected checkoxes if the cells are reclassified before</name>
+   <name>APR-076_Verify the user is able to deselect the selected checkoxes if the cells are reclassified before</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
