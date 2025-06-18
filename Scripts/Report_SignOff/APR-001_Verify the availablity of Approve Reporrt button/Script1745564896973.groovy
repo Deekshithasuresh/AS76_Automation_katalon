@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'("To be reviewed")
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("santosh")
 

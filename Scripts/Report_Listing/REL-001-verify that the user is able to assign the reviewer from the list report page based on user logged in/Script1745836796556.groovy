@@ -22,5 +22,5 @@ import org.openqa.selenium.Keys as Keys
 // Open browser and navigate to login
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.assignReviewerToReport'('Under review', 'jyothi')
+CustomKeywords.'generic.custumFunctions.assignReviewerToReport'('To be reviewed', 'jyothi')
 

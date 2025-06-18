@@ -27,9 +27,10 @@ WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Sign In'
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Platelets/Page_PBS/span_My reports'), 30)
 
-custFuns.selectReportByStatus('To be reviewed')
 
-custFuns.assignOrReassignOnTabs('jyothi')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
+
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('jyothi')
 
 WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Platelets'))
 
