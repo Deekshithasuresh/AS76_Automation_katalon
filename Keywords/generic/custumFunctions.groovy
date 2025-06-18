@@ -25,7 +25,7 @@ public class custumFunctions {
 	def login() {
 		WebUI.openBrowser('')
 		WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-		WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_username_loginId'), 'santosh')
+		WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_username_loginId'), 'manju')
 		WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Login_page/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 		WebUI.click(findTestObject('Object Repository/Report_Listing/Login_page/button_Sign In'))
 		WebUI.waitForPageLoad(10)
@@ -235,8 +235,8 @@ public class custumFunctions {
 		List<WebElement> els = WebUiCommonHelper.findWebElements(allOpts, 5)
 		List<String> names = els.collect { it.getText().trim() }
 		WebUI.comment("Available reviewers: ${names}")
-		
-		
+
+
 		// 5) Proceed only if current != reviewerName
 		if (current != reviewerName) {
 			if (!names.contains(reviewerName)) {
@@ -256,7 +256,7 @@ public class custumFunctions {
 				def reassignBtn = findTestObject('Object Repository/Report_Listing/Page_PBS/button_Re-assign')
 				def cancelBtn   = findTestObject('Object Repository/Report_Listing/Page_PBS/button_Cancel')
 
-			if (WebUI.verifyElementPresent(popup, 3, FailureHandling.OPTIONAL)) {
+				if (WebUI.verifyElementPresent(popup, 3, FailureHandling.OPTIONAL)) {
 					WebUI.comment("Re-assign popup appeared.")
 					if (confirmReassign) {
 						WebUI.comment("Clicking Re-assign...")
