@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-052-Verify that there is a message when the zoom level is between 100 to 200 in the platelet morphology splitview</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1b278e33-6675-4429-8a4c-c4f4436ea22d</testCaseGuid>
+</TestCaseEntity>

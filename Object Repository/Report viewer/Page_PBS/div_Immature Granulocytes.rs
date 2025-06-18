@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Immature Granulocytes</name>
+   <tag></tag>
+   <elementGuidId>22c931dc-0702-41c3-8384-3f56b794baa7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[6]/td/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Immature Granulocytes&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>a46b51be-9691-4302-bbc6-9c5e081de77f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>cell-label </value>
+      <webElementGuid>614ff183-61df-4866-8531-e4e8789aadc4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Immature Granulocytes</value>
+      <webElementGuid>672eb56a-7e3e-4e19-aeaa-3493a8df13f6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[1]/div[1]/div[@class=&quot;microscopic-left-pane&quot;]/div[1]/table[@class=&quot;theame-table&quot;]/tbody[1]/tr[@class=&quot;valid&quot;]/td[1]/div[@class=&quot;cell-selection&quot;]/div[@class=&quot;cell-label&quot;]</value>
+      <webElementGuid>be29c20f-dcc2-44e1-85e6-f89044c405be</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[6]/td/div/div</value>
+      <webElementGuid>26413875-75d6-455b-b15d-b0527e0b8b03</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Basophils'])[1]/following::div[4]</value>
+      <webElementGuid>a9d33058-00c3-49d4-8dc6-e4744a839369</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Monocytes'])[1]/following::div[8]</value>
+      <webElementGuid>eef6e002-887c-4ed5-9e91-cbf55684e747</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Atypical Cells/Blasts'])[1]/preceding::div[3]</value>
+      <webElementGuid>37012679-5588-4e6b-afb2-b57be2e14b25</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Immature Eosinophils'])[1]/preceding::div[7]</value>
+      <webElementGuid>5a3095d3-cd6f-4b9b-9a06-a99c49d59457</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Immature Granulocytes']/parent::*</value>
+      <webElementGuid>ca827f82-6839-4a56-ac52-2ba51e112cd2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//tr[6]/td/div/div</value>
+      <webElementGuid>9ba16394-b650-4a8a-80fb-ccb8713a7f21</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Immature Granulocytes' or . = 'Immature Granulocytes')]</value>
+      <webElementGuid>811b1f60-9cd4-4cc2-8d45-9227ecb3301f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

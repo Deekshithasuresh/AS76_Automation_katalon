@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-039-Verify the presence of Mark area CTA option in the microscopic view for wbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>74b93485-e249-4441-b4a0-63c6f6fea4fe</testCaseGuid>
+</TestCaseEntity>

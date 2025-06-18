@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-027-Verify the user is able to minimize the navigational panel in RBC tab for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ba5f370d-34b3-49bb-a41c-f81a5ec8d7cb</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-051-Verify that there is a message when the zoom level is between 100 to 200 in the Platelet count splitview</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>530e59ae-aaf9-4204-9ec0-b63d5db75187</testCaseGuid>
+</TestCaseEntity>

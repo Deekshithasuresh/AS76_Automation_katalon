@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-056-Verify the zoom level in the spilt view of the platelet morphology</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>17cd2f55-41cb-4d78-8edf-0ff78d3e74b6</testCaseGuid>
+</TestCaseEntity>

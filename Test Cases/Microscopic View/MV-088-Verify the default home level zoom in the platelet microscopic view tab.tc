@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-088-Verify the default home level zoom in the platelet microscopic view tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f373509c-377f-44f9-988b-d1d778d4bc58</testCaseGuid>
+</TestCaseEntity>

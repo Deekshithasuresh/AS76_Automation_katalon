@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-72- Verification of the disappearance of the line when the line option is deselected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2ffa54a8-05cd-40ad-9e15-f4676a34216f</testCaseGuid>
+</TestCaseEntity>

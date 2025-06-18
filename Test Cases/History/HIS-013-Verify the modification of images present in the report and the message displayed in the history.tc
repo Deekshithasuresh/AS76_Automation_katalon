@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HIS-013-Verify the modification of images present in the report and the message displayed in the history</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7b6197b4-d4f7-4fb4-8c40-007bc77260e1</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-73-Verification of the moving of the line across the image to measure different cells</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ed950ba6-d7ea-4cea-9b4e-701aeb24f5da</testCaseGuid>
+</TestCaseEntity>

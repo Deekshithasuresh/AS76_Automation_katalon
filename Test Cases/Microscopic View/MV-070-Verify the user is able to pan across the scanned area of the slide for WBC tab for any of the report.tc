@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-070-Verify the user is able to pan across the scanned area of the slide for WBC tab for any of the report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>46b1fea0-3314-406b-8182-b1bb317a9be7</testCaseGuid>
+</TestCaseEntity>

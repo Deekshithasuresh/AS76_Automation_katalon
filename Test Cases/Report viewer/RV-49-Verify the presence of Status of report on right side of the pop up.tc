@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-49-Verify the presence of Status of report on right side of the pop up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>892d200a-e3a0-4e1c-9287-00497bc11412</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Image Size</name>
+   <tag></tag>
+   <elementGuidId>c23a6fe6-e62b-4b30-923b-94012bbba17e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.control-title</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='simple-popover']/div[3]/div/div[3]/div/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Image Size&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>801a21b7-c12b-4477-a640-37e785afa98c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>control-title</value>
+      <webElementGuid>4043b134-6d31-46f2-8bbc-dbc11cd61108</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Image Size</value>
+      <webElementGuid>b1561250-dd9d-4840-a788-da11a24f7486</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;simple-popover&quot;)/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper css-1dmzujt&quot;]/div[@class=&quot;img-utils-container&quot;]/div[@class=&quot;img-utils-body&quot;]/div[@class=&quot;template-contaier&quot;]/div[@class=&quot;control-title&quot;]</value>
+      <webElementGuid>2fb0df0e-7dee-4a7b-81b7-5d0da78c3e4c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='simple-popover']/div[3]/div/div[3]/div/div</value>
+      <webElementGuid>d7efa6e7-f5c8-4e15-be7a-103157739c08</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[2]/following::div[3]</value>
+      <webElementGuid>ee0e8f2c-6e33-4781-a2a3-57cca7b4cc01</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Brightness'])[1]/preceding::div[2]</value>
+      <webElementGuid>d02bc453-d0d3-465e-9e01-6a1662347f0e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Contrast'])[1]/preceding::div[6]</value>
+      <webElementGuid>30c5f2ab-02b1-40ef-a73b-6f8ba067c85b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Image Size']/parent::*</value>
+      <webElementGuid>3f8f7cd4-de62-42c1-8e45-2a9eb7d227c5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div[3]/div/div</value>
+      <webElementGuid>d612fe7c-ebc0-43cc-83ad-cf26c03cbeb3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Image Size' or . = 'Image Size')]</value>
+      <webElementGuid>464e131c-fa79-4c49-b10d-45ba00882f92</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

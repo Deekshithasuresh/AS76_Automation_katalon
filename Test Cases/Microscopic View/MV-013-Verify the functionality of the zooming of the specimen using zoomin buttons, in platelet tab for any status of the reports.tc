@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-013-Verify the functionality of the zooming of the specimen using zoomin buttons, in platelet tab for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1d6ff58f-7ba0-4f43-9faf-cbb771a50a36</testCaseGuid>
+</TestCaseEntity>

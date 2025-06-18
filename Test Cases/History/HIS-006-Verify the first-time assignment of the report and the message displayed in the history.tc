@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HIS-006-Verify the first-time assignment of the report and the message displayed in the history</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6915edb8-5599-4dab-83cd-2b16770f56f1</testCaseGuid>
+</TestCaseEntity>

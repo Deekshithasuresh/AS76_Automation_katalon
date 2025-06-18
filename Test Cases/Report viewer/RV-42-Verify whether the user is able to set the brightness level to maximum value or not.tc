@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-42-Verify whether the user is able to set the brightness level to maximum value or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>56d61112-e15d-45f7-84d1-893348f8eaf9</testCaseGuid>
+</TestCaseEntity>

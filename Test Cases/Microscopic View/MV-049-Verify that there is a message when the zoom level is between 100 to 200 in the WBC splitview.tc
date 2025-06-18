@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-049-Verify that there is a message when the zoom level is between 100 to 200 in the WBC splitview</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b462c76e-9c3e-4757-8bfe-5c9277d59530</testCaseGuid>
+</TestCaseEntity>

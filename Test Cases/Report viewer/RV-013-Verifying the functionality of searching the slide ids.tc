@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-013-Verifying the functionality of searching the slide ids</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>da739b7f-3f23-4b2c-9e71-f17972970582</testCaseGuid>
+</TestCaseEntity>

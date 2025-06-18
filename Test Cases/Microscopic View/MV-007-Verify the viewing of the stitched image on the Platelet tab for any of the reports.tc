@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-007-Verify the viewing of the stitched image on the Platelet tab for any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>db7979cb-57e0-4e2c-be8b-cdd19585542f</testCaseGuid>
+</TestCaseEntity>

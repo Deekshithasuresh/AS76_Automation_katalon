@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-087-Verify the default home level zoom in the Rbc microscopic view tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>47e9b4c1-e978-4013-af63-a4fb98961d75</testCaseGuid>
+</TestCaseEntity>

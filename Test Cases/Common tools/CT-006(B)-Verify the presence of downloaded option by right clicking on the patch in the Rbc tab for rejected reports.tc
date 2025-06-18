@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-006(B)-Verify the presence of downloaded option by right clicking on the patch in the Rbc tab for rejected reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f38e09b1-d567-4ecc-a9b0-fd38f01aa0a8</testCaseGuid>
+</TestCaseEntity>

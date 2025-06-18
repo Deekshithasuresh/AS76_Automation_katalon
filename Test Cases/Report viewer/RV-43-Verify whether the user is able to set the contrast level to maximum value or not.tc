@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-43-Verify whether the user is able to set the contrast level to maximum value or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5d52d94f-8764-4bd8-8712-2e17ac3f6661</testCaseGuid>
+</TestCaseEntity>

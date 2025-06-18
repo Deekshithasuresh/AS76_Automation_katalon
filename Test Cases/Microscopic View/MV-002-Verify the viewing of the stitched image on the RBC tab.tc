@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-002-Verify the viewing of the stitched image on the RBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>43b2726e-a47b-4594-b779-3c6c5c16db4d</testCaseGuid>
+</TestCaseEntity>

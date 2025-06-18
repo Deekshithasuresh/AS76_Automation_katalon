@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-021-Verify the functionality of home button in any of the reports in Rbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6a00cc32-ecde-4684-a1c1-db3c3621aaec</testCaseGuid>
+</TestCaseEntity>

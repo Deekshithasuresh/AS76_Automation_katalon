@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-044-Verify the options present below the Mark CTA option in the microscopic view for Morphology tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>35830820-2b27-47db-a3a0-571b1e676cad</testCaseGuid>
+</TestCaseEntity>

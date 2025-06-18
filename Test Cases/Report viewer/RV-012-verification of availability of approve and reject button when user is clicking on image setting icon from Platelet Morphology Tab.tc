@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-012-verification of availability of approve and reject button when user is clicking on image setting icon from Platelet Morphology Tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>561d588d-f18e-4c72-827c-f046b259ee4e</testCaseGuid>
+</TestCaseEntity>

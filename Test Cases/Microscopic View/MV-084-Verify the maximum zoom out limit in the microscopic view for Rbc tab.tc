@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-084-Verify the maximum zoom out limit in the microscopic view for Rbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cd6c9852-8b92-460f-a4e2-164b00444665</testCaseGuid>
+</TestCaseEntity>

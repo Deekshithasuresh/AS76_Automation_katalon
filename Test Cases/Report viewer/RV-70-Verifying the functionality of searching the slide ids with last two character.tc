@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-70-Verifying the functionality of searching the slide ids with last two character</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>93b415b8-8f72-410e-9506-4e013dc1dce7</testCaseGuid>
+</TestCaseEntity>

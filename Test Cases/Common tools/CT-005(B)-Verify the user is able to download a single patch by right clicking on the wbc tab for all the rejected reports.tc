@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-005(B)-Verify the user is able to download a single patch by right clicking on the wbc tab for all the rejected reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>098b0dfb-3f9a-4a05-abf0-46b2ffcc9c60</testCaseGuid>
+</TestCaseEntity>

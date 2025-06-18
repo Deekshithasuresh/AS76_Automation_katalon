@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-63-Verify viewing the visual cue for area of extraction from which the WBC cell are extracted</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0bcd6745-7c51-49b4-b4d3-f3a616354c9e</testCaseGuid>
+</TestCaseEntity>

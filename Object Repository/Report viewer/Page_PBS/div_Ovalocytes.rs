@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Ovalocytes</name>
+   <tag></tag>
+   <elementGuidId>0c28b23a-57de-4c2d-acbb-06f278b5c18f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/div[3]/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.selected.cell-row > div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Ovalocytes&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>7993d28f-c776-4e71-a293-ec610bf02f0f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Ovalocytes</value>
+      <webElementGuid>dcb97b26-4ec9-4b35-8a26-d21e211172f8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2.8 css-lufqp2&quot;]/div[@class=&quot;grid-container&quot;]/div[1]/div[@class=&quot;rbc-cell-body&quot;]/div[@class=&quot;selected cell-row&quot;]/div[1]</value>
+      <webElementGuid>803ea950-b4fe-40a0-8e1e-b2776287561c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/div[3]/div/div</value>
+      <webElementGuid>1bf8922a-645f-4d75-93b5-53a91bb80208</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='%'])[1]/following::div[3]</value>
+      <webElementGuid>cdcef6d6-f96a-41e4-8a0f-1e93d6abff6a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Grade'])[1]/following::div[6]</value>
+      <webElementGuid>f5b25dc7-36f3-45cf-841e-1796227a5e8e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Elliptocytes'])[1]/preceding::div[5]</value>
+      <webElementGuid>072f74bd-8c91-451d-841f-ba9c2aa381cd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Teardrop Cells'])[1]/preceding::div[11]</value>
+      <webElementGuid>b4a1dfaf-65a6-448d-8453-471ed343cb07</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Ovalocytes']/parent::*</value>
+      <webElementGuid>6b129701-7417-40f0-9d0a-148ff4855b32</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div/div[3]/div/div</value>
+      <webElementGuid>919e6c1c-e814-4114-a731-947c75ce35f3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Ovalocytes' or . = 'Ovalocytes')]</value>
+      <webElementGuid>96e8027f-618a-437c-9963-7456478b1648</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

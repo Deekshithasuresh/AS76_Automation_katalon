@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Significant</name>
+   <tag></tag>
+   <elementGuidId>a7cce238-48e9-4c2e-9db8-55b92ebcc803</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/div[4]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.significant-info > div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Significant&quot;s</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>861e1e0d-1834-4a7c-bea1-e23ccfa054fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Significant</value>
+      <webElementGuid>7936c6b8-efdd-4310-9997-e3e96026c685</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2.8 css-lufqp2&quot;]/div[@class=&quot;grid-container&quot;]/div[1]/div[@class=&quot;significant-info&quot;]/div[1]</value>
+      <webElementGuid>636f2184-2e0b-4c30-96f7-351f611cdb1f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/div[4]/div</value>
+      <webElementGuid>8f7a15e7-5656-44da-89c2-71bc921f3b71</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Polychromatic Cells'])[1]/following::div[5]</value>
+      <webElementGuid>64768aeb-ddd1-4f0a-bd76-72e43f946ede</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hypochromic Cells'])[1]/following::div[11]</value>
+      <webElementGuid>0e404639-f5e2-48ac-ab7b-dfd2002b3386</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Non Significant'])[1]/preceding::div[2]</value>
+      <webElementGuid>41420fef-1b13-4132-8ff1-eebe7e2b1bee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total number of RBCs counted for color based classification is5465'])[1]/preceding::div[5]</value>
+      <webElementGuid>b6b4b1af-aece-4f7f-940f-57b6e47e9fcb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Significant']/parent::*</value>
+      <webElementGuid>8d33627e-6bb3-4ba1-8d56-d6120a7b3871</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/div/div[4]/div</value>
+      <webElementGuid>f9d1f4b1-6d13-4437-b07e-96f03d707236</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Significant' or . = 'Significant')]</value>
+      <webElementGuid>4960a13e-315d-4a79-8aa6-578be7b41489</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Poikilocytosis'])[1]/following::div[5]</value>
+      <webElementGuid>eb78136d-fe2c-457b-8dcf-b0709a512cbe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Stomatocytes*'])[1]/following::div[11]</value>
+      <webElementGuid>33de2f5f-ac54-47e7-8405-a5fcf22aee53</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total number of RBCs counted for shape based classification is 6095'])[1]/preceding::div[5]</value>
+      <webElementGuid>5ab82aa7-d7f7-4751-8140-83620e89caec</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

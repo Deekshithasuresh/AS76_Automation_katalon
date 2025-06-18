@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-025-Verify the color code of legends in RBC-size tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a2f6bbc5-8000-4e5b-8fae-3a526b147b35</testCaseGuid>
+</TestCaseEntity>

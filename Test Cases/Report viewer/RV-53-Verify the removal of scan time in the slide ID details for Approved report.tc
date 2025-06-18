@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-53-Verify the removal of scan time in the slide ID details for Approved report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f3350626-17a8-4930-849e-a5ea88e7bce3</testCaseGuid>
+</TestCaseEntity>

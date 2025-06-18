@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-062-Verify the viewing of the cell extracted flagged area on the navigation of RBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e0eb30ca-a557-43ea-a4a6-a1a1bd02129b</testCaseGuid>
+</TestCaseEntity>

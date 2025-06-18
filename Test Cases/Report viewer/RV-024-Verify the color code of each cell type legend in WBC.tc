@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-024-Verify the color code of each cell type legend in WBC</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ea6d7e95-a53d-4eb7-b841-fab5d33ba683</testCaseGuid>
+</TestCaseEntity>

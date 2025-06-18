@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-079-Verify the functionality of home button when the navigational panel is opened</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f565f916-e4b0-40f8-b3fd-825d86fd8d38</testCaseGuid>
+</TestCaseEntity>

@@ -23,9 +23,10 @@ WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Sign In'
 // Select a sample
 //WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/td_SIG0146'))
 
-cus.selectReportByStatus('To be reviewed')
 
-cus.assignOrReassignOnTabs("jyothi")
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
+
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('jyothi')
 
 //Reclassify Large platelets to sub-cell of WBC
 res.classifyPlateletToWbcSubCell("Large Platelets","Band Forms", 2)

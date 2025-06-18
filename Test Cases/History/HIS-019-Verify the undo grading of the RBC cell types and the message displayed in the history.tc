@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HIS-019-Verify the undo grading of the RBC cell types and the message displayed in the history</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1b5ca8bd-f65c-4166-9a91-ddf27b796ac9</testCaseGuid>
+</TestCaseEntity>

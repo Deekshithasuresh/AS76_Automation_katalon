@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-076-Verify the user is able to un-select the area marking by selecting the Mark area CTA in the wbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>196c43b7-c2f0-435a-bde2-aebb6936da92</testCaseGuid>
+</TestCaseEntity>

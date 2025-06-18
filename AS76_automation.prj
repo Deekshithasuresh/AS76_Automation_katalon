@@ -11,7 +11,11 @@
    <modifiedEdition>ENTERPRISE</modifiedEdition>
    <modifiedVersion>10.1.1</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+<<<<<<< HEAD
    <projectFileLocation>/Users/santosh.hiremath/git/AS76_Automation_katalon/AS76_automation.prj</projectFileLocation>
+=======
+   <projectFileLocation>/Users/manjunathcg/Documents/github/AS76_Automation_katalon/AS76_automation.prj</projectFileLocation>
+>>>>>>> 2d2c5b8e38ffcb4d4295c61b513b4fcd6f4c95c3
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

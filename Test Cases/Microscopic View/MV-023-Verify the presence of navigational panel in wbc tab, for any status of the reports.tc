@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-023-Verify the presence of navigational panel in wbc tab, for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ac4ca3ef-cf7d-40d5-a0f4-bb7df9c97d81</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-027-Verify whether the user is able to increase the size of Image</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f0739546-bd0a-42ef-93d4-b99d458e2624</testCaseGuid>
+</TestCaseEntity>

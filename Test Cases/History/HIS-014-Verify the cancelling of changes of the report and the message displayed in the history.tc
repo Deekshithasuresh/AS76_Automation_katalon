@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HIS-014-Verify the cancelling of changes of the report and the message displayed in the history</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>35f2f1e7-af20-4111-983b-0fb3b3eac192</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-022-Verify the details present in the Microscopic view tab of a RBC-shape</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>128a2813-09f4-4d01-a24a-f1cb89d8cb9e</testCaseGuid>
+</TestCaseEntity>

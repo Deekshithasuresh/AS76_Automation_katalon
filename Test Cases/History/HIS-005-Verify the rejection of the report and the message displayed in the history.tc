@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HIS-005-Verify the rejection of the report and the message displayed in the history</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5c0d2022-26bb-4774-8334-9840efd3d4ab</testCaseGuid>
+</TestCaseEntity>

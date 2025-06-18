@@ -1,0 +1,24 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Report viewer/Page_PBS/button_WBC",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div[2]/div/div/div/button[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027​\u0027])[1]/following::button[3]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Report viewer/Page_PBS/button_WBC_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Report viewer/Page_PBS/button_Summary",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div[2]/div/div/div/button",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[@id\u003d\u0027root\u0027]/div/div[2]/div/div/div/button",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Report viewer/Page_PBS/button_Summary_idRelative.png"
+    }
+  ]
+}

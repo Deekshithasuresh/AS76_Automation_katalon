@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-047-Verify that there is a message when the zoom level is between 100 to 200 in the Platelet count microscopic view</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6149a8c6-d3c9-493c-b04a-88dbac77422f</testCaseGuid>
+</TestCaseEntity>

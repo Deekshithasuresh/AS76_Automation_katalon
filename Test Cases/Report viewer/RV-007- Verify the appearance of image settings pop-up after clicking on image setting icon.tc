@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-007- Verify the appearance of image settings pop-up after clicking on image setting icon</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>6fc744eb-9c59-406c-956a-09c175a12976</testCaseGuid>
+</TestCaseEntity>

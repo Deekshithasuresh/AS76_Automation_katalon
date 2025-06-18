@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-55-Verify the details present in the Microscopic view tab of a Platelets-count</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bff0b056-e00e-4342-8bdd-1c7738bd5ce7</testCaseGuid>
+</TestCaseEntity>

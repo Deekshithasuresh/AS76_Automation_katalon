@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-022-Verify the functionality of home button in any of the reports in Platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ddb25fa4-f2b7-43d0-addc-3883bd04e204</testCaseGuid>
+</TestCaseEntity>

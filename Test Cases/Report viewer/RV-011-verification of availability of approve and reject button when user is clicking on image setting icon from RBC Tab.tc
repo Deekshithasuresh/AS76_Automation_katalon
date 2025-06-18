@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-011-verification of availability of approve and reject button when user is clicking on image setting icon from RBC Tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>19d8315c-9e26-4102-a93d-9f67c1be7293</testCaseGuid>
+</TestCaseEntity>

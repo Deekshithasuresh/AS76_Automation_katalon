@@ -25,7 +25,7 @@ import org.openqa.selenium.interactions.Actions
 
 CustomKeywords.'generic.custumFunctions.login'()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-CustomKeywords.'generic.custumFuctions.assignOrReassignOnTabs'('pawan', true)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'), 'Platelets')
 WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'))

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-028-Verify whether the user is able to decrease the size of Image</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4bb03b66-8e39-48e9-bfe3-6b6654a856b5</testCaseGuid>
+</TestCaseEntity>

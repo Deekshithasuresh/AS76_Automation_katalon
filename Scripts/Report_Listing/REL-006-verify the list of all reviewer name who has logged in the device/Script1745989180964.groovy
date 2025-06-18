@@ -51,7 +51,7 @@ WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/div_User'))
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/users_option'))
-WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/img'))
+WebUI.click(findTestObject('Object Repository/View list of users/Page_Admin Console/image-filter-icon'))
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/span_Administrator'))
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/span_Reviewer'))
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Status'))
@@ -66,7 +66,7 @@ WebUI.waitForPageLoad(10)
 
 // 7) Collect reviewers from Admin page
 TestObject adminItems = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-    "//table/tbody/tr/td[2]")
+    "//table/tbody/tr/td[1]")
 List<WebElement> adminEls = WebUiCommonHelper.findWebElements(adminItems, 10)
 List<String> adminReviewers = adminEls.collect { it.getText().trim() }
 WebUI.comment("Admin reviewers:     ${adminReviewers}")

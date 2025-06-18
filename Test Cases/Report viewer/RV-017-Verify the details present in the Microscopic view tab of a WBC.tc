@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-017-Verify the details present in the Microscopic view tab of a WBC</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>567f7e5f-4b1f-4931-b7a6-b84973ba17f8</testCaseGuid>
+</TestCaseEntity>

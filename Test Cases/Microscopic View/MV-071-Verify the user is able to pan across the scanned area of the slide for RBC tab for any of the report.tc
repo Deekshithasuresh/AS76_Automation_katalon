@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-071-Verify the user is able to pan across the scanned area of the slide for RBC tab for any of the report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5994e304-30a2-476c-b099-10909e9b891e</testCaseGuid>
+</TestCaseEntity>

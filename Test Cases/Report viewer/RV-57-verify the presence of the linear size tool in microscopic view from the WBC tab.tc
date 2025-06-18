@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-57-verify the presence of the linear size tool in microscopic view from the WBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0dce4336-15ff-4b8b-9576-f3cedfc3ae72</testCaseGuid>
+</TestCaseEntity>

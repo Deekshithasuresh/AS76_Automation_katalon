@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button</name>
+   <tag></tag>
+   <elementGuidId>1281cec1-ff22-4f8e-83b3-4d9e340315a2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div/main/div/div/main/div/button[3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>main.ant-layout-content.css-1x0dypw > div > button:nth-of-type(3)</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=button[name=&quot;zoom-tool&quot;i]</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>e1e8280f-5385-4581-b2f0-8ab472c5d42c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[1]/div[2]/div[@class=&quot;ant-layout css-1x0dypw&quot;]/main[@class=&quot;ant-layout-content css-1x0dypw&quot;]/div[@class=&quot;ant-layout ant-layout-has-sider css-1x0dypw&quot;]/div[@class=&quot;ant-layout css-1x0dypw&quot;]/main[@class=&quot;ant-layout-content css-1x0dypw&quot;]/div[1]/button[3]</value>
+      <webElementGuid>0acf69f9-af91-4766-85de-4e3381b6817b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div/main/div/div/main/div/button[3]</value>
+      <webElementGuid>38a494ab-556c-4f3c-8863-3d9c8ff919b6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total number of RBCs counted for size based classification is 5549'])[1]/following::button[3]</value>
+      <webElementGuid>1edda442-45a1-48ac-8fac-5db192d9ae66</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Macrocytes'])[1]/following::button[3]</value>
+      <webElementGuid>eb9f1c23-97e0-4403-bfad-93315ed1a8d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='+'])[1]/preceding::button[1]</value>
+      <webElementGuid>d61626c4-5c87-4606-a88d-60be7a617082</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='–'])[1]/preceding::button[2]</value>
+      <webElementGuid>f7445ff4-d872-44a2-83d5-84e68bc57022</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//main/div/button[3]</value>
+      <webElementGuid>87c6e918-eb6e-493f-bb92-3490f4491a38</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

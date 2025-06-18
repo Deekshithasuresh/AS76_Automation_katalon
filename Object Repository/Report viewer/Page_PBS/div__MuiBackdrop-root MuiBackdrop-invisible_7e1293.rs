@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div__MuiBackdrop-root MuiBackdrop-invisible_7e1293</name>
+   <tag></tag>
+   <elementGuidId>ac123b50-ff86-4505-8634-855b4d80b880</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.MuiBackdrop-root.MuiBackdrop-invisible.MuiModal-backdrop.css-esi9ax</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='search-list']/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>#search-list div >> nth=0</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>5e1e3c67-0f0e-47bd-b964-a41bf5925d84</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>04649ae0-901f-4173-a1a6-98e1c2b2f365</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-esi9ax</value>
+      <webElementGuid>71980923-e31f-4b1c-bbaf-94b0f031f49d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;search-list&quot;)/div[@class=&quot;MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-esi9ax&quot;]</value>
+      <webElementGuid>21cd54dc-c74b-424d-9206-adbcb16b1c83</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='search-list']/div</value>
+      <webElementGuid>5fce615c-3ed6-4d74-a1be-ad9ba4dc864b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div</value>
+      <webElementGuid>2d0299c8-64db-4735-9745-bdf2ca38d488</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

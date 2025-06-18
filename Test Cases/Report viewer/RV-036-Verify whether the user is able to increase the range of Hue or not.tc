@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-036-Verify whether the user is able to increase the range of Hue or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1c45dc6e-15e1-4041-95ca-71f5fb586eed</testCaseGuid>
+</TestCaseEntity>

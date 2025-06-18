@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-040-Verify the presence of Mark area CTA option in the microscopic view for Rbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d7bd1694-7baa-45e4-8f91-06f775d78e8c</testCaseGuid>
+</TestCaseEntity>

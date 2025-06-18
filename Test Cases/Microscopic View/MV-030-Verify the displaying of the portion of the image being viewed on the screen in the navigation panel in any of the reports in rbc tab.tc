@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-030-Verify the displaying of the portion of the image being viewed on the screen in the navigation panel in any of the reports in rbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5eb05718-65e7-422a-996e-643d112db74f</testCaseGuid>
+</TestCaseEntity>

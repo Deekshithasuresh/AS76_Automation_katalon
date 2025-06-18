@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-004-Verify the viewing of the stitched image on the Platelet Morphology tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ecabc8be-e99c-41a9-9814-966174b7460d</testCaseGuid>
+</TestCaseEntity>

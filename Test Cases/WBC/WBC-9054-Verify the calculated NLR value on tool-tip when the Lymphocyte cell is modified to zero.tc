@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-9054-Verify the calculated NLR value on tool-tip when the Lymphocyte cell is modified to zero</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c24bb8c4-50c7-4c1e-8dfa-91c17f37b8cf</testCaseGuid>
+</TestCaseEntity>

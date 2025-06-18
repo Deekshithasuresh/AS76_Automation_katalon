@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CT-11-Verify the dowloaded patch and saved patch are same in the downloaded folder in the rbc tab for any of the status reports</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>1667392a-30b4-4928-8856-b24d48aab086</testCaseGuid>
-</TestCaseEntity>

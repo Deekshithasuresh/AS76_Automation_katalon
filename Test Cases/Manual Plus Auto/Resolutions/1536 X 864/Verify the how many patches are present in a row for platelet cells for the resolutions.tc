@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1366*768</description>
+   <name>Verify the how many patches are present in a row for platelet cells for the resolutions</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>94236935-cc9d-4367-ad3d-b3e6f5872fb2</testCaseGuid>
+</TestCaseEntity>

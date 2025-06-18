@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-085-Verify the maximum zoom out limit in the microscopic view for Platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>80bcd46b-bf62-490b-ba8e-dc16a6c8dec0</testCaseGuid>
+</TestCaseEntity>

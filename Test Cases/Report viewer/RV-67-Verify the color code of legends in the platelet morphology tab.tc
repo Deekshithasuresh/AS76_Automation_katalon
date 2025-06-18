@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-67-Verify the color code of legends in the platelet morphology tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7b3d4d1e-89d8-4467-b0e0-505dd0bf1a0b</testCaseGuid>
+</TestCaseEntity>

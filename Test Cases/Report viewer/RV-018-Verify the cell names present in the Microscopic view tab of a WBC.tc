@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-018-Verify the cell names present in the Microscopic view tab of a WBC</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cad3cd1d-e346-45bf-8ce0-21d47d9ecd88</testCaseGuid>
+</TestCaseEntity>

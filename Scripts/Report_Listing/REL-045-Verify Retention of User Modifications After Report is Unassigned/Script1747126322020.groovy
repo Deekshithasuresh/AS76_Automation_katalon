@@ -45,7 +45,7 @@ WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_PBS/div_Temp
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'))
 
 
-WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/img'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/unassign_img'))//need to change element
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/li_as76admin st'))
 

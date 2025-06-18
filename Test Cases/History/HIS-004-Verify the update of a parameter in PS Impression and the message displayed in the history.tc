@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HIS-004-Verify the update of a parameter in PS Impression and the message displayed in the history</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4096049e-58a8-4e23-ac73-41db29f6d8a0</testCaseGuid>
+</TestCaseEntity>

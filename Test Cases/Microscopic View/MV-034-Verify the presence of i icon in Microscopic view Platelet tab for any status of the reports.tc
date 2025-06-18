@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-034-Verify the presence of i icon in Microscopic view Platelet tab for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7edeae67-92e4-46ce-abe1-41667322c048</testCaseGuid>
+</TestCaseEntity>

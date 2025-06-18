@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-010-verification of availability of approve and reject button when user is clicking on image setting icon from WBC Tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>50042226-7669-402c-8025-447bcf86f0b5</testCaseGuid>
+</TestCaseEntity>

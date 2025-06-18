@@ -167,7 +167,6 @@ WebUI.click(findTestObject('Object Repository/Commontools/div_Hypochromic Cells'
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_Platelets'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Morphology'))
-
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/button_Morphology'), 'Morphology')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Commontools/Page_PBS/div_References'), 0)
