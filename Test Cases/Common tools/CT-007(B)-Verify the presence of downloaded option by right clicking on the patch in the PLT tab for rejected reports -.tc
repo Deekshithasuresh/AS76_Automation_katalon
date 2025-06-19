@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-007(B)-Verify the presence of downloaded option by right clicking on the patch in the PLT tab for rejected reports -</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>090cd6f6-2c08-4e63-a071-a1e935472e44</testCaseGuid>
+</TestCaseEntity>

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[contains(@class, 'platelet-morph-row') and contains(., 'Platelet Clumps')]</value>
+         <value>//div[contains(@class,'platelet-morph-row')]/div[text()='Platelet Clumps']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

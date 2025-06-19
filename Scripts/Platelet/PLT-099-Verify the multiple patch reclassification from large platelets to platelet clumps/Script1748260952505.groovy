@@ -27,9 +27,9 @@ WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Sign In'
 // Select a sample
 //WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/td_SIG0146'))
 
-cus.selectReportByStatus('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
-cus.assignOrReassignOnTabs("jyothi")
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('jyothi')
 
 
 // Navigate to Platelets -> Morphology tab

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-001(A)-Verify the presence of downloaded option by right clicking on the patch in the wbc tab for approved reports - - Copy</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d69c359d-eec6-4184-943f-5eabae57ed67</testCaseGuid>
+</TestCaseEntity>

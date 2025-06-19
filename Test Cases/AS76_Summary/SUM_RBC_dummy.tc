@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>SUM_RBC_dummy</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>b6be7fde-d168-4a5e-b3f0-0dfee9e95c8d</testCaseGuid>
-</TestCaseEntity>

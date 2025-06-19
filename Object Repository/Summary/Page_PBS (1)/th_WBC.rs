@@ -6,12 +6,12 @@
    <elementGuidId>99f7641a-3937-40fc-92c9-1336f0d945b3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>tr.table-sub-header > th</value>
+         <key>XPATH</key>
+         <value>//tr[@class='table-sub-header']//th[contains(text(), 'WBC')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div[2]/div/table/tr[2]/th</value>
+         <key>CSS</key>
+         <value>tr.table-sub-header > th</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>b62be2f7-cf13-49fa-a1bf-31539deaac21</webElementGuid>
+      <webElementGuid>1ca1f06a-8b5f-4e67-b605-c84628ac1b1a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>WBC</value>
-      <webElementGuid>bf254ca5-01cc-4849-addd-19423119fa4a</webElementGuid>
+      <webElementGuid>72652e52-dbf0-432f-a026-7fddabdd08d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2&quot;]/div[@class=&quot;reportSummary_pane-flex__pDBLO&quot;]/div[@class=&quot;css-vtkee7&quot;]/table[@class=&quot;wbc-summary-correction-table&quot;]/tr[@class=&quot;table-sub-header&quot;]/th[1]</value>
-      <webElementGuid>01eceee4-ab7d-4661-9522-e4abf132f109</webElementGuid>
+      <webElementGuid>e84f0686-265f-4189-a5ef-6dd7dba29b91</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div[2]/div/table/tr[2]/th</value>
-      <webElementGuid>f69750c3-3c56-4cd9-948c-e1e86327df5a</webElementGuid>
+      <webElementGuid>79e6355b-feb4-4226-9161-e1a928cff0b9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='%'])[1]/following::th[1]</value>
-      <webElementGuid>41fcc973-bdf5-46d5-9cb2-99aafaaff222</webElementGuid>
+      <webElementGuid>ca3e24d3-bc7b-4fa3-a551-ef8b4d6a79ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cell name'])[1]/following::th[2]</value>
-      <webElementGuid>883b3549-3654-42c3-ac31-a1c74ffed302</webElementGuid>
+      <webElementGuid>e11bbac6-72c2-4926-9db6-6104d4461c8a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Neutrophils'])[1]/preceding::th[2]</value>
-      <webElementGuid>fc0a5565-6000-41d5-842e-c1ff1be92ed4</webElementGuid>
+      <webElementGuid>f3e30a31-3af8-4ea2-a4c7-43543bf47a7c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Lymphocytes'])[1]/preceding::th[2]</value>
-      <webElementGuid>e729a1ae-3326-4039-bc0e-8b32967c3eaa</webElementGuid>
+      <webElementGuid>09a08700-c97f-41d3-975e-0c133a5ac817</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[2]/th</value>
-      <webElementGuid>c459baa5-721d-4785-8243-87f400308155</webElementGuid>
+      <webElementGuid>397a9dff-62e0-476e-8ead-879ff740274c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[(text() = 'WBC' or . = 'WBC')]</value>
-      <webElementGuid>3daf0b27-a4fb-488b-b729-d5ffaefd034b</webElementGuid>
+      <webElementGuid>538419d3-b3aa-48eb-89ba-10a780588a2d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

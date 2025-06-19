@@ -9,12 +9,30 @@ import com.kms.katalon.core.main.TestCaseMain
  */
 public class GlobalVariable {
      
+    /**
+     * <p></p>
+     */
+    public static Object generatedUsername
+     
+    /**
+     * <p></p>
+     */
+    public static Object generatedPassword
+     
+    /**
+     * <p></p>
+     */
+    public static Object generatedEmail
+     
 
     static {
         try {
             def selectedVariables = TestCaseMain.getGlobalVariables("default")
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
     
+            generatedUsername = selectedVariables['generatedUsername']
+            generatedPassword = selectedVariables['generatedPassword']
+            generatedEmail = selectedVariables['generatedEmail']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

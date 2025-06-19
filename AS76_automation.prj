@@ -9,9 +9,12 @@
    <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>ENTERPRISE</modifiedEdition>
-   <modifiedVersion>10.2.0</modifiedVersion>
+   <modifiedVersion>10.1.1</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/uthara/Downloads/AS76_Automation_katalon-main/AS76_automation.prj</projectFileLocation>
+
+</projectFileLocation>
+>>>>>>> 2d2c5b8e38ffcb4d4295c61b513b4fcd6f4c95c3
+>>>>>>> 67be292e8545f2d6dbc37403c0e8af0adc5f9511
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

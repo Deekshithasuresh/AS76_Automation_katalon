@@ -14,5 +14,5 @@
    <filteringBuiltIn>com.kms.katalon.execution.platform.DynamicBuiltInSearch</filteringBuiltIn>
    <filteringExtension></filteringExtension>
    <filteringPlugin></filteringPlugin>
-   <filteringText>name=(WBC-1) </filteringText>
+   <filteringText>name=(WBC-) </filteringText>
 </FilteringTestSuiteEntity>

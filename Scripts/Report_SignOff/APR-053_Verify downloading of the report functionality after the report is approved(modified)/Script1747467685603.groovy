@@ -6,7 +6,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 // Log in and approve the report as before
 CustomKeywords.'generic.custumFunctions.login'()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 def driver = DriverFactory.getWebDriver()
 // Navigate to WBC tab and open Neutrophil cell details
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_WBC'))

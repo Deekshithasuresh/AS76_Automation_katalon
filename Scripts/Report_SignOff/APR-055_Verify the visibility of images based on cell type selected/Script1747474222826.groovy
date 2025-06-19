@@ -8,7 +8,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 // Log in and select report
 CustomKeywords.'generic.custumFunctions.login'()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 // Approve flow
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))

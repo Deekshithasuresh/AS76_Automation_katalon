@@ -264,16 +264,16 @@ public class Wbc_helper {
 			WebUI.comment("❌ No rendered patch images found.")
 		}
 	}
-	
-	
-	
+
+
+
 	@Keyword
 	Map<String, String> getWbcDifferentialFromUI() {
 		WebDriver driver = DriverFactory.getWebDriver()
 		Map<String, String> wbcData = [:]
-		
+
 		List<WebElement> rows = driver.findElements(By.xpath("//table[contains(@class, 'theame-table')]//tbody//tr"))
-		
+
 		for (WebElement row : rows) {
 			List<WebElement> cells = row.findElements(By.tagName("td"))
 			if (cells.size() >= 2) {
@@ -286,24 +286,24 @@ public class Wbc_helper {
 		}
 		return wbcData
 	}
-	
-	
+
+
 	@Keyword
 	Map<String, String> getRbcGradesFromUI() {
 		WebDriver driver = DriverFactory.getWebDriver()
 		Map<String, String> rbcData = [:]
-	
+
 		// All rows in RBC section (each cell type row)
 		List<WebElement> cellRows = driver.findElements(By.xpath("//div[contains(@class, 'cell-row')]"))
-	
+
 		for (WebElement row : cellRows) {
 			try {
 				// Get the cell name (e.g., "Microcytes")
 				String cellName = row.findElement(By.xpath(".//div[contains(@class,'significant')]")).getText().trim()
-	
+
 				// Loop through grade radio buttons (divs with numbers 0,1,2,3) and find the selected one
 				List<WebElement> gradeOptions = row.findElements(By.xpath(".//span[contains(@class,'MuiButtonBase-root')"))
-	
+
 				int selectedGrade = -1
 				for (int i = 0; i < gradeOptions.size(); i++) {
 					if (gradeOptions[i].getAttribute("class").contains("Mui-checked")) {
@@ -311,7 +311,7 @@ public class Wbc_helper {
 						break
 					}
 				}
-	
+
 				if (cellName && selectedGrade != -1) {
 					rbcData[cellName] = selectedGrade.toString()
 				}
@@ -319,14 +319,8 @@ public class Wbc_helper {
 				WebUI.comment("⚠️ Skipping row due to: ${e.message}")
 			}
 		}
-	
+
 		return rbcData
 	}
-	
-	
-	
-	
-	
-	
 }
 

@@ -16,7 +16,7 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 // Navigate to WBC tab and open Neutrophil cell details
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_WBC'))

@@ -21,4 +21,3 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.unassignOrCancel'('Under review', true)
 
-WebUI.closeBrowser()
