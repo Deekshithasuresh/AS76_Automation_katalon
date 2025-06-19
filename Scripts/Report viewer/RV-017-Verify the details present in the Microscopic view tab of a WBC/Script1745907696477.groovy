@@ -3,49 +3,56 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.TestObject as TestObject
 
-// ---------- STEP 1: Login ----------
+// 1) LOGIN
+// ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
-
 WebUI.maximizeWindow()
-
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(
+	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA=='
+)
+WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-WebUI.setText(findTestObject('Object Repository/Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+// ────────────────────────────────────────────────────────────────────
+// 2) VERIFY LANDING ON REPORT LIST
+// ────────────────────────────────────────────────────────────────────
+WebUI.waitForElementPresent(
+	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
+	10
+)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Report viewer/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+// ────────────────────────────────────────────────────────────────────
+// 3) OPEN FIRST “Under review” REPORT
+// ────────────────────────────────────────────────────────────────────
+String underReviewXpath = "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+TestObject underReviewRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, underReviewXpath)
 
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_Sign In'))
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
 
-// ---------- STEP 2: Verify landing on list reports page ----------
-WebUI.verifyElementPresent(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//span[contains(text(),\'PBS\')]'), 
-    10)
+// ────────────────────────────────────────────────────────────────────
+// 4) ASSIGN TO “admin”
+// ────────────────────────────────────────────────────────────────────
+TestObject assignedDropdown = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
+)
+TestObject adminOption = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//li[@role='option' and normalize-space(text())='admin']"
+)
+TestObject assignedInput = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//input[@id='assigned_to']"
+)
 
-// ---------- STEP 3: Open any report ----------
-TestObject toBe = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//span[normalize-space()=\'To be reviewed\']')
-
-if (WebUI.waitForElementPresent(toBe, 5)) {
-    WebUI.scrollToElement(toBe, 5)
-
-    WebUI.click(toBe)
-
-    WebUI.comment('✔ Opened a ‘To be reviewed’ report')
-} else {
-    TestObject under = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//span[normalize-space()=\'Under review\']')
-
-    if (WebUI.waitForElementPresent(under, 5)) {
-        WebUI.scrollToElement(under, 5)
-
-        WebUI.click(under)
-
-        WebUI.comment('✔ Opened an ‘Under review’ report')
-    } else {
-        WebUI.comment('❌ No report in ‘To be reviewed’ or ‘Under review’')
-
-        WebUI.closeBrowser()
-
-        return null
-    }
-}
+WebUI.click(assignedDropdown)
+WebUI.waitForElementClickable(adminOption, 5)
+WebUI.click(adminOption)
+WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
 
 // ---------- STEP 4: Click on the WBC tab ----------
 TestObject wbcTab = new TestObject().addProperty('xpath', ConditionType.EQUALS, '//button[contains(@class,\'cell-tab\') and .//span[normalize-space()=\'WBC\']]')

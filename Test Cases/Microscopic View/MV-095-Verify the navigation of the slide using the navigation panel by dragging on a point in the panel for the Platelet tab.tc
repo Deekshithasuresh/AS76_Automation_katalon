@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>MV-095-Verify the navigation of the slide using the navigation panel by dragging on a specific point on the centre of the image in the panel for the Platelet tab</name>
+   <name>MV-095-Verify the navigation of the slide using the navigation panel by dragging on a point in the panel for the Platelet tab</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
