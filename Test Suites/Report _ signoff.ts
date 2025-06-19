@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FilteringTestSuiteEntity>
    <description></description>
-   <name>Report_Listing_Dynamic Test Suite</name>
+   <name>Report _ signoff</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,9 +10,9 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>79537df5-5316-41c5-80e6-a43ed1d48577</testSuiteGuid>
+   <testSuiteGuid>ac83fe1b-15d5-4288-8c7c-285315e1dacd</testSuiteGuid>
    <filteringBuiltIn>com.kms.katalon.execution.platform.DynamicBuiltInSearch</filteringBuiltIn>
    <filteringExtension></filteringExtension>
    <filteringPlugin></filteringPlugin>
-   <filteringText>name=(REL-) </filteringText>
+   <filteringText>name=(APR-) </filteringText>
 </FilteringTestSuiteEntity>

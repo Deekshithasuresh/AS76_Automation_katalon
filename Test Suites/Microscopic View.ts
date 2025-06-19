@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FilteringTestSuiteEntity>
    <description></description>
-   <name>Single_click_Dynamic Test Suite</name>
+   <name>Microscopic View</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,9 +10,9 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>7101f193-e31b-4593-ab80-4a8c7357b025</testSuiteGuid>
+   <testSuiteGuid>257db1e9-5526-4588-b0f7-7c885a2a5ba8</testSuiteGuid>
    <filteringBuiltIn>com.kms.katalon.execution.platform.DynamicBuiltInSearch</filteringBuiltIn>
    <filteringExtension></filteringExtension>
    <filteringPlugin></filteringPlugin>
-   <filteringText>name=(SPV_) </filteringText>
+   <filteringText>name=(MV-) </filteringText>
 </FilteringTestSuiteEntity>

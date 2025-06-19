@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>WBC-140-Verify that empty WBC parameters remain as - after reloading the report</name>
+   <name>WBC-9140-Verify that empty WBC parameters remain as - after reloading the report</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

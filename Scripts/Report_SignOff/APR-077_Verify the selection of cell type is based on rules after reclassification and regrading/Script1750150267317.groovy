@@ -33,6 +33,10 @@ CustomKeywords.'generic.Reclassification.classifyFromCellToCellMultiplePlatelet'
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_RBC (1)'))
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Shape'), 10)
+
+WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Shape'))
+
 valueGettingStrikeOfAfterRegrading()
 
 
@@ -125,7 +129,7 @@ wbcRules.each { cellName, threshold ->
             WebUI.click(checkboxObj)
             WebUI.delay(1)
 
-            TestObject cellInMiddleObj = createTestObject("//div[contains(@class,'viewer-set-container')]//div[contains(text(),'${cellName}')]")
+            TestObject cellInMiddleObj = createTestObject("(//div[contains(@class,'viewer-set-container')]//div[contains(text(),'${cellName}')])[1]")
             boolean isRemoved = WebUI.verifyElementNotPresent(cellInMiddleObj, 3, FailureHandling.OPTIONAL)
             println isRemoved ?
                 "✅ ${cellName} removed from middle pane after unchecking" :

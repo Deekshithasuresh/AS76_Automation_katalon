@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FilteringTestSuiteEntity>
    <description></description>
-   <name>patch_retains_ Dynamic Test Suite</name>
+   <name>Report viewer</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,9 +10,9 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>7b5fce33-42f5-4d24-9a0a-36c4b2b56ed4</testSuiteGuid>
+   <testSuiteGuid>47afd9bb-69c3-40d8-9574-c240618d169e</testSuiteGuid>
    <filteringBuiltIn>com.kms.katalon.execution.platform.DynamicBuiltInSearch</filteringBuiltIn>
    <filteringExtension></filteringExtension>
    <filteringPlugin></filteringPlugin>
-   <filteringText>name=(RTN_) </filteringText>
+   <filteringText>name=(RV-) </filteringText>
 </FilteringTestSuiteEntity>

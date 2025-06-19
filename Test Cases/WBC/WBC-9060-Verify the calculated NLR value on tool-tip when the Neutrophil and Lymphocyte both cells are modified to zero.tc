@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>WBC-060-Verify the calculated NLR value on tool-tip when the Neutrophil and Lymphocyte both cells are modified to zero</name>
+   <name>WBC-9060-Verify the calculated NLR value on tool-tip when the Neutrophil and Lymphocyte both cells are modified to zero</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
