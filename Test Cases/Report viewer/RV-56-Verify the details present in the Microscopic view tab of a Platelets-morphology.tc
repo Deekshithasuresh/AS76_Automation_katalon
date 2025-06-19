@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-56-Verify the details present in the Microscopic view tab of a Platelets-morphology</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>280b5866-06bd-450c-b9fe-c6ed84b14f65</testCaseGuid>
+</TestCaseEntity>

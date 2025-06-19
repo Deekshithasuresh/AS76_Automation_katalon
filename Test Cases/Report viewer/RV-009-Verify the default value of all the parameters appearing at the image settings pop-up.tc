@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-009-Verify the default value of all the parameters appearing at the image settings pop-up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5deb58cf-236a-4eb9-9c50-c04a95634c44</testCaseGuid>
+</TestCaseEntity>

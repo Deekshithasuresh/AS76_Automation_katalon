@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-096-Verify the home zoom level when user re-switches to microscopic view from any other tabs</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bdfb14f7-cca8-496a-9e16-8b1c4e33e32a</testCaseGuid>
+</TestCaseEntity>

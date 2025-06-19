@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-015-Verify the functionality of the zooming of the specimen using zoom out buttons, in RBC tabs for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b6ddcc74-1196-4e2b-a91d-b6b598b366f2</testCaseGuid>
+</TestCaseEntity>

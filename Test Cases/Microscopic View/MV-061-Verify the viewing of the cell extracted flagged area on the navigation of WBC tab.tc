@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-061-Verify the viewing of the cell extracted flagged area on the navigation of WBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>21419493-592f-4d5a-8652-6d7cbab035fc</testCaseGuid>
+</TestCaseEntity>

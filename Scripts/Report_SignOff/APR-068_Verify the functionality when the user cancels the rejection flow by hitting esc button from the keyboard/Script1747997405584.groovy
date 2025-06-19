@@ -12,7 +12,7 @@ WebUI.openBrowser('')
 // Login and select a report
 CustomKeywords.'generic.custumFunctions.login'()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 // Click the "Reject report" button to open popup
 WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Reject report'))

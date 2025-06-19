@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-003(A)-Verify the presence of downloaded option by right clicking on the patch in the PLT tab for approved reports - - - Copy</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>90016d58-f1c4-4a00-ac3b-4fbc512ac056</testCaseGuid>
+</TestCaseEntity>

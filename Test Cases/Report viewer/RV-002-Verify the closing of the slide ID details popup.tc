@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-002-Verify the closing of the slide ID details popup</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a3ed6540-34ef-4a0c-a5dd-88ae6505b625</testCaseGuid>
+</TestCaseEntity>

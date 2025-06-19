@@ -17,19 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
-
-WebUI.setText(findTestObject('Object Repository/Report-Signoff/input_username_loginId'), 'santosh')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Report-Signoff/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Sign In'))
-
-WebUI.click(findTestObject('Object Repository/Report-Signoff/input_Clear filters_PrivateSwitchBase-input_068da8'))
-
-WebUI.click(findTestObject('Object Repository/Report-Signoff/div_22-Apr-2025, 0410 PM (EAT)'))
+// Step 1: Login and assign reviewer
+CustomKeywords.'generic.custumFunctions.login'()
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
 WebUI.verifyElementText(findTestObject('Object Repository/Report-Signoff/button_Reject report'), 'Reject report')
 

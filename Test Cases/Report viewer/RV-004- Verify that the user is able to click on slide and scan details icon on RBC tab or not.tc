@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-004- Verify that the user is able to click on slide and scan details icon on RBC tab or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>eeda98f7-2958-4ab1-9c19-254eac0c2ae0</testCaseGuid>
+</TestCaseEntity>

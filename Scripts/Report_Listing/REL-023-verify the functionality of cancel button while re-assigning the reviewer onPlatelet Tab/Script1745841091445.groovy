@@ -25,5 +25,5 @@ WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Plate
 
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Count'), 'Count')
 
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('ratt', false)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('chida', false)
 

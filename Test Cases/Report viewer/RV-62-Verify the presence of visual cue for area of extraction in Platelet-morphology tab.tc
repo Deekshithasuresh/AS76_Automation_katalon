@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-62-Verify the presence of visual cue for area of extraction in Platelet-morphology tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>468a2f08-6e71-4d59-a27c-e2b957749bdf</testCaseGuid>
+</TestCaseEntity>

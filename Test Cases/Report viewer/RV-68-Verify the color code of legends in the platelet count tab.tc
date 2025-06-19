@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-68-Verify the color code of legends in the platelet count tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9cf63f0f-7950-419d-955b-1dd091a1c82c</testCaseGuid>
+</TestCaseEntity>

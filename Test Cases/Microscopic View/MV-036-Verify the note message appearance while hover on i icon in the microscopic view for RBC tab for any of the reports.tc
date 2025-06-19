@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-036-Verify the note message appearance while hover on i icon in the microscopic view for RBC tab for any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>554f52db-64a2-4ab7-add4-225119fc1dfd</testCaseGuid>
+</TestCaseEntity>

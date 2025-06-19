@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CT-004(B)-Verify the presence of downloaded option without right clicking on the patch in the wbc tab for all the Rejected reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>73eb5cf1-7a2f-42ea-b574-8dd80377d89f</testCaseGuid>
+</TestCaseEntity>

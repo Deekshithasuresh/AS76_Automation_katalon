@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-026-Verify the color code of legends in RBC shape tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>70ea005b-a5b3-4e2f-b10c-1209416bc9a2</testCaseGuid>
+</TestCaseEntity>

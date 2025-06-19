@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-32-Verify whether the user is able to reset the brightness level to zero or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>75c750b7-acaf-4aba-a8d3-02444bc50308</testCaseGuid>
+</TestCaseEntity>

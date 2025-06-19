@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-69-Verification of the altering of the size of the line between 5μm and 20μm</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e93f653f-41c8-4745-a20f-e23b4788acf1</testCaseGuid>
+</TestCaseEntity>

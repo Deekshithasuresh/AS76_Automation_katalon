@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-016-Verify the functionality of the zooming of the specimen using zoom out buttons, in Platelet tab for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>47f1e568-0329-45e1-ac42-019cab997299</testCaseGuid>
+</TestCaseEntity>

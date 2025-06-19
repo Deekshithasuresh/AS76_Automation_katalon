@@ -36,12 +36,11 @@ WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_usern
 WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In'))
-WebUI.click(findTestObject('Object Repository/Commontools/td_14-May-2025, 0530 PM (IST)'))
 
 //WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
-//CustomKeywords.'chida.wbcFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'chida.wbcFunctions.selectReportByStatus'('To be reviewed')
 
-//CustomKeywords.'chida.wbcFunctions.assignOrReassignOnTabs'('Chidu', true)
+CustomKeywords.'chida.wbcFunctions.assignOrReassignOnTabs'('Chidu', true)
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_WBC'))
 

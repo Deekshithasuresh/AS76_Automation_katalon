@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-025-Verify the presence of navigational panel in Platelet tab, for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>91b915c3-37b0-4612-a62d-8717e3cea4b6</testCaseGuid>
+</TestCaseEntity>

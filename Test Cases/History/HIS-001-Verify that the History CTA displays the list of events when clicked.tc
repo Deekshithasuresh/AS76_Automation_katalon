@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HIS-001-Verify that the History CTA displays the list of events when clicked</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dc1a84b8-1b8b-47c3-859a-436feaf81194</testCaseGuid>
+</TestCaseEntity>

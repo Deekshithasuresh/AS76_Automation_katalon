@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HIS-007-Verify that each event log contains all necessary details</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a0fa9c49-0a09-40d0-be4f-789726eb1abd</testCaseGuid>
+</TestCaseEntity>

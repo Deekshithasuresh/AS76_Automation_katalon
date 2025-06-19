@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-072-Verify the user is able to pan across the scanned area of the slide for Platelet tab for any of the report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b800a373-4c56-44f0-b5f3-fe48c3b036b7</testCaseGuid>
+</TestCaseEntity>

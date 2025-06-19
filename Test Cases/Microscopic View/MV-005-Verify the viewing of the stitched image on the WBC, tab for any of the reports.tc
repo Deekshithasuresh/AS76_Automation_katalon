@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-005-Verify the viewing of the stitched image on the WBC, tab for any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0f39fb57-02f4-4c47-b769-c40ff075ccb7</testCaseGuid>
+</TestCaseEntity>

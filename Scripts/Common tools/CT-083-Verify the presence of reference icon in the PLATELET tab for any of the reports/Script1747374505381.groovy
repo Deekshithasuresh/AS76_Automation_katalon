@@ -40,4 +40,16 @@ WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/b
 WebUI.verifyElementPresent(findTestObject('Object Repository/Commontools/Page_PBS/div_References'), 0)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/div_References'), 'References')
+WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/span_References'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Commontools/div_Large Platelets'), 0)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Commontools/div_Large Platelets'), 'Large Platelets')
+
+WebUI.click(findTestObject('Object Repository/Commontools/div_Large Platelets'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Commontools/li_Platelet Clumps'), 0)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Commontools/li_Platelet Clumps'), 'Platelet Clumps')
+
 

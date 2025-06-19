@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-054-Verify that the zoom level in the microscopic view of the RBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>be5566fa-0add-4ba9-ba93-19d6b178e6d4</testCaseGuid>
+</TestCaseEntity>

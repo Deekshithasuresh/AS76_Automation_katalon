@@ -43,7 +43,7 @@ WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/div_Templa
 WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_PBS/div_Templates_ql-editor ql-blank dx-htmledi_1a290a'), rbcText)
 
 
-WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/img'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/unassign_img'))
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/li_as76admin st'))
 
@@ -57,7 +57,7 @@ WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Una
 
 //WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/RBC_text_verify'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/RBC_text_verify'), 'ABC123@#%^&*def456')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/div_Templates_ql-editor ql-blank dx-htmledi_1a290a'), 'ABC123@#%^&*def456')
 
 WebUI.back()
 
@@ -65,7 +65,7 @@ WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/img_PBS_ic
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/li_Logout'))
 
-WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_PBS/input_username_loginId'), 'santosh')
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_PBS/input_username_loginId'), 'Chidu')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 
@@ -91,7 +91,7 @@ TestObject searchBox = findTestObject("Object Repository/Report_Listing/Page_PBS
 
 		def wbcText = 'ABC123@#%^&*def456'
 		
-		CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh', true)
+		CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('Chidu', true)
 		
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Report_Listing/Page_PBS/div_Templates_ql-editor ql-blank dx-htmleditor-content dx-state-focused'),
 		   10)
@@ -101,7 +101,7 @@ TestObject searchBox = findTestObject("Object Repository/Report_Listing/Page_PBS
 		WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_PBS/div_Templates_ql-editor ql-blank dx-htmleditor-content dx-state-focused'), wbcText)
 		
 		
-		WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/img'))
+		WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/unassign_img'))
 		
 		WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/li_as76admin st'))
 		

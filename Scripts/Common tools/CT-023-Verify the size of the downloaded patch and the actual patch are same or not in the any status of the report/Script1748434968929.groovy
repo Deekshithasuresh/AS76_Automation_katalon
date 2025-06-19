@@ -34,7 +34,9 @@ WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign I
 
 // --- Step 2: Navigate to RBC section ---
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_19-May-2025, 0931 AM (IST) (3)'))
+
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'))
+
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'), 'RBC')
 
 // --- Step 3: Right-click and download patch ---

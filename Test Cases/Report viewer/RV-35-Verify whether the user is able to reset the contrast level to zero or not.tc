@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-35-Verify whether the user is able to reset the contrast level to zero or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9826dfa7-1063-4867-9fbe-334454b06815</testCaseGuid>
+</TestCaseEntity>

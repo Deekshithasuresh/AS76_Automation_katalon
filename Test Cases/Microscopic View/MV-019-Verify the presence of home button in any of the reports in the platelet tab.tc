@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-019-Verify the presence of home button in any of the reports in the platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b0573a25-840f-4779-9721-18a24f3e3fba</testCaseGuid>
+</TestCaseEntity>

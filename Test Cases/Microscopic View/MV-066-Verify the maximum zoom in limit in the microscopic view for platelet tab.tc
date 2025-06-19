@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-066-Verify the maximum zoom in limit in the microscopic view for platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d07a0681-2f21-4512-84ae-8834eb76fc13</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-060-Verify that the zoom level in the microscopic view for the platelet morphology taB</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ac21f063-b656-4adb-8d64-72b9de067368</testCaseGuid>
+</TestCaseEntity>

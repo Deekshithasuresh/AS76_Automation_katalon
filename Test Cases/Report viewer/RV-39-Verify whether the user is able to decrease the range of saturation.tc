@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-39-Verify whether the user is able to decrease the range of saturation</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ca3f5e71-2a26-45b5-b96b-4896ee8a5b11</testCaseGuid>
+</TestCaseEntity>

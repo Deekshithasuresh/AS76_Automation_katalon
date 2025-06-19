@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-043-Verify the options present below the Mark CTA option in the microscopic view for Rbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e5b2f092-8081-4604-b144-96e7914fc19b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-074-Verify the functionality of Mark area CTA in the RBC tab for 100x</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f14037d9-edad-4d1c-9e4e-b420b3a9b6b8</testCaseGuid>
+</TestCaseEntity>

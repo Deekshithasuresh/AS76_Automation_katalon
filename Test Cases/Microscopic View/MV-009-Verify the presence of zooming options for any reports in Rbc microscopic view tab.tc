@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-009-Verify the presence of zooming options for any reports in Rbc microscopic view tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3540894b-ae95-444e-8034-315295664b05</testCaseGuid>
+</TestCaseEntity>

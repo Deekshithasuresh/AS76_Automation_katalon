@@ -16,5 +16,10 @@ build
 .project
 
 .cache
+<<<<<<< HEAD
  3f9740b1c4d8ea267af917d1bc6f48c574160b49
 
+=======
+.DS_Store
+.DS_Store
+>>>>>>> 67be292e8545f2d6dbc37403c0e8af0adc5f9511

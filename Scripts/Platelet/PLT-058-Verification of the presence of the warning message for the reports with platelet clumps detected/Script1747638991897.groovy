@@ -24,7 +24,7 @@ CustomKeywords.'generic.custumFunctions.login'()
 //CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/td_3edtfygu'))
 
-//CustomKeywords.'generic.custumFuctions.assignOrReassignOnTabs'('pawan', true)
+//CustomKeywords.'generic.PawanCustomFunction.assignOrReassignOnTabs'('pawan', true)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'), 'Platelets')
 

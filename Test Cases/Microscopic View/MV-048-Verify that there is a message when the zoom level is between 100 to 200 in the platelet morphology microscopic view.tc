@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-048-Verify that there is a message when the zoom level is between 100 to 200 in the platelet morphology microscopic view</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0f19aaf3-b3c0-49e6-b008-c44dab08acea</testCaseGuid>
+</TestCaseEntity>

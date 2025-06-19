@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-47-Verify whether the user is able to close the image settings pop-up or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>356695f7-c67e-4887-ad20-d4da94d16ef5</testCaseGuid>
+</TestCaseEntity>

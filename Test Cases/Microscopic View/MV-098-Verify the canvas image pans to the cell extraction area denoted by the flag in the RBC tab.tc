@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-098-Verify the canvas image pans to the cell extraction area denoted by the flag in the RBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>190e04d5-1767-4eea-b78c-09cdbd047e68</testCaseGuid>
+</TestCaseEntity>

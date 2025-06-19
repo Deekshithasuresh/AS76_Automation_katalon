@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-37-Verify whether the user is able to decrease the range of Hue</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0a60b89f-73db-4762-becc-dc573c5b2f73</testCaseGuid>
+</TestCaseEntity>

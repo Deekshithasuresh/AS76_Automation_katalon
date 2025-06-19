@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-073-Verify the functionality of Mark area CTA in the WBC tab for 100x</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7a8c1083-d283-4af3-b407-caac4d2fc348</testCaseGuid>
+</TestCaseEntity>

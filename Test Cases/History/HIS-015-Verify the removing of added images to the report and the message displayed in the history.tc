@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>HIS-015-Verify the removing of added images to the report and the message displayed in the history</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9b922724-8deb-4815-9b5c-492b4a1c7c6d</testCaseGuid>
+</TestCaseEntity>

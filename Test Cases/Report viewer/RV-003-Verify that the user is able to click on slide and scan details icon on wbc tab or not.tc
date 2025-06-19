@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-003-Verify that the user is able to click on slide and scan details icon on wbc tab or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>371e6f14-9ed5-4301-a84d-ce5b51b978dd</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-48-Verify the availability of Slide id on left side of the pop up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8ea626a7-95f6-4283-8ab5-5407428009af</testCaseGuid>
+</TestCaseEntity>

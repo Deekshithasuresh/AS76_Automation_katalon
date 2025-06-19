@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-032-Verify the presence of i icon in Microscopic view wbc tab for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c44b5031-0cf0-4fd4-8222-2a652c899c09</testCaseGuid>
+</TestCaseEntity>

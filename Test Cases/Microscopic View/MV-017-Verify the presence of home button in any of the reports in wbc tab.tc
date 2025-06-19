@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-017-Verify the presence of home button in any of the reports in wbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3438c4aa-1454-4e73-ac6d-67fcdf132f86</testCaseGuid>
+</TestCaseEntity>

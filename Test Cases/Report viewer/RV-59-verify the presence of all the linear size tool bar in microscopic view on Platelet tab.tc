@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-59-verify the presence of all the linear size tool bar in microscopic view on Platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a8e1869d-3772-47ef-892f-5b9d06eea68c</testCaseGuid>
+</TestCaseEntity>

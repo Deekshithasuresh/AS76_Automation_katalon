@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-024-Verify the presence of navigational panel in rbc tab, for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cf3fb62d-3fb5-42e2-b36f-52f6c18384ff</testCaseGuid>
+</TestCaseEntity>

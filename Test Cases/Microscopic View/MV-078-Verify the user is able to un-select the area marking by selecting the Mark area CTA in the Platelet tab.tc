@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-078-Verify the user is able to un-select the area marking by selecting the Mark area CTA in the Platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9aa0b6af-4814-416e-8197-58fa5b6e49e1</testCaseGuid>
+</TestCaseEntity>

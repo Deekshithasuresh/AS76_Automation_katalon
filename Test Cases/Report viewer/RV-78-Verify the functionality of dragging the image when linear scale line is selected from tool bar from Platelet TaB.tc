@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-78-Verify the functionality of dragging the image when linear scale line is selected from tool bar from Platelet TaB</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>44a6b7c2-8e6e-498b-beb7-322752fbdef6</testCaseGuid>
+</TestCaseEntity>

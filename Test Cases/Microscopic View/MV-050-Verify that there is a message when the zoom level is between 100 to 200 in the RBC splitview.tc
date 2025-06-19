@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-050-Verify that there is a message when the zoom level is between 100 to 200 in the RBC splitview</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>55d78010-5752-4964-b20d-e2100b3123c6</testCaseGuid>
+</TestCaseEntity>

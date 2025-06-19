@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-012-Verify the functionality of the zooming of the specimen using zoom in buttons, in Rbc microscopic view tab for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f98c085d-e70a-4c64-bb59-6173815a3648</testCaseGuid>
+</TestCaseEntity>

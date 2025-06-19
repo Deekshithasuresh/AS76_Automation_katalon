@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-037-Verify the note message appearance while hover on i icon in the microscopic view for Platelet count tab for any of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cd718f9b-a881-45e7-aa1e-806b009d7ecc</testCaseGuid>
+</TestCaseEntity>

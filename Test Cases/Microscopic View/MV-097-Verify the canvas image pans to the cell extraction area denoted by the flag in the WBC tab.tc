@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-097-Verify the canvas image pans to the cell extraction area denoted by the flag in the WBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>33767c70-ab70-4775-95d6-63ac252126be</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-077-Verify the user is able to un-select the area marking by selecting the Mark area CTA in the rbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4938c3f4-a20b-413c-9b9b-92b06100edec</testCaseGuid>
+</TestCaseEntity>

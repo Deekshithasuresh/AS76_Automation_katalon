@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-75-Verification of the altering of the size of the circle between 5μm and 20μm</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1145a526-a40d-4dec-9250-a813025fe73e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Hypochromic Cells_1</name>
+   <tag></tag>
+   <elementGuidId>b5536861-bef5-46e9-b29c-f035b9bcb5df</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/div[2]/table/tbody/tr/td/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.cell-label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:text=&quot;Hypochromic Cells&quot;i</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>cc1e47e6-7b10-4508-ba4a-95602fb74ba5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>cell-label </value>
+      <webElementGuid>3be3af5f-0432-4d97-8e7d-98bd8c70c105</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Hypochromic Cells</value>
+      <webElementGuid>d3cdfeac-9468-4758-931e-2090bf7d3332</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[1]/div[1]/div[@class=&quot;rbc-microscopic-left-pane&quot;]/div[1]/div[2]/table[@class=&quot;theame-table&quot;]/tbody[1]/tr[1]/td[1]/div[@class=&quot;cell-selection&quot;]/div[@class=&quot;cell-label&quot;]</value>
+      <webElementGuid>89b18ab0-e2c7-4c8b-8ce3-b6730ed8230e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/div[2]/table/tbody/tr/td/div/div</value>
+      <webElementGuid>c8841363-2587-4959-bbc7-9a76ab1dc5b5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='%'])[1]/following::div[2]</value>
+      <webElementGuid>950dda0c-9ed7-4f53-bc12-6c626781a926</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Count'])[1]/following::div[2]</value>
+      <webElementGuid>c2fcf053-efbf-442b-80d5-5f169d365cf2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Polychromatic Cells'])[1]/preceding::div[3]</value>
+      <webElementGuid>cf0e43fd-fcfd-46f5-bad2-b990f84f3e06</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total number of RBCs counted for color based classification is5465'])[1]/preceding::div[8]</value>
+      <webElementGuid>95905eae-e8fa-4e41-8cbc-3a4823a177ce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Hypochromic Cells']/parent::*</value>
+      <webElementGuid>6f1b11c6-7077-4a72-804b-fbd4917c80c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/div/div</value>
+      <webElementGuid>57d1b787-569c-436b-be14-abf4e8300575</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Hypochromic Cells' or . = 'Hypochromic Cells')]</value>
+      <webElementGuid>f4232748-98bf-47d0-aa8b-579e8ec7539a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

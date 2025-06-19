@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-33-Verify whether the user is able to increase the range of contrast or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f425188e-0811-419a-8e2f-83db275c96c9</testCaseGuid>
+</TestCaseEntity>

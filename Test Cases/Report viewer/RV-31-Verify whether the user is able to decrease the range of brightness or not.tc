@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-31-Verify whether the user is able to decrease the range of brightness or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ae16b5f8-4d42-4125-852b-f1866f075d96</testCaseGuid>
+</TestCaseEntity>

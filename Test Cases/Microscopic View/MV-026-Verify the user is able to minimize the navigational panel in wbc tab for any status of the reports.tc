@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-026-Verify the user is able to minimize the navigational panel in wbc tab for any status of the reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bd993307-acda-4ee2-92c2-f7446bd2a8f1</testCaseGuid>
+</TestCaseEntity>

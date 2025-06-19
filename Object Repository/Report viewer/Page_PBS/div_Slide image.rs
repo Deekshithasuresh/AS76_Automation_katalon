@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Slide image</name>
+   <tag></tag>
+   <elementGuidId>a7a23292-8415-49dd-8ec1-ffeb4ede62f6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.slideInfoComponent_drawer__body-image__gInf7</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='specimen-info']/div[3]/div/div[2]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Slide image$/</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>4c034fe9-11af-4caf-a803-8a3ce66a1cfb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>slideInfoComponent_drawer__body-image__gInf7</value>
+      <webElementGuid>c51b5871-37c8-486d-9af9-cb0b56232f65</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Slide image</value>
+      <webElementGuid>3fff35f8-6101-46ab-a05e-b89a3edcedf9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;specimen-info&quot;)/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-elevation16 MuiDrawer-paper MuiDrawer-paperAnchorLeft css-wf16b5&quot;]/div[1]/div[@class=&quot;slideInfoComponent_drawer__body__abbGp&quot;]/div[@class=&quot;slideInfoComponent_drawer__body-image__gInf7&quot;]</value>
+      <webElementGuid>6273f274-e36d-46ed-b3e3-c7750d79da78</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='specimen-info']/div[3]/div/div[2]/div</value>
+      <webElementGuid>c8114069-18a7-4719-afa2-d3ba4beae62a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Under review'])[1]/following::div[2]</value>
+      <webElementGuid>11bea960-5ff7-42d8-af35-a7087c9d9c7b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='r'])[2]/following::div[4]</value>
+      <webElementGuid>d8d8e3fc-1ea9-4148-94cc-d8d926f5846d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Scanned by'])[1]/preceding::div[1]</value>
+      <webElementGuid>d5dd156c-c3d8-43a0-90f2-8d81c9f0ecad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[3]/div/div[2]/div</value>
+      <webElementGuid>29d41de6-0a91-4614-8fb6-b12050e78f8e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Slide image' or . = 'Slide image')]</value>
+      <webElementGuid>5b5c1b00-aa25-4f27-a698-0f325b1d1db7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

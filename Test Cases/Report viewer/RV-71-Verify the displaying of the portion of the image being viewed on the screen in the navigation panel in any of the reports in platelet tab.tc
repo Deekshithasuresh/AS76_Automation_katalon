@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-71-Verify the displaying of the portion of the image being viewed on the screen in the navigation panel in any of the reports in platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>24f1a073-cf14-4955-94ae-8b82ea18c0e9</testCaseGuid>
+</TestCaseEntity>

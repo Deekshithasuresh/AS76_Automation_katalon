@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>RV-40-Verify whether the user is able to reset the Hue level to zero or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>249a0a58-0b3e-47d8-9cb7-7e7e779ea737</testCaseGuid>
+</TestCaseEntity>

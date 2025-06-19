@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>MV-080-Verify the panning of the image with the circle fixed in the centre of the canvas for wbc tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ed881362-901b-4acd-8af8-4f0c6579aa92</testCaseGuid>
+</TestCaseEntity>
