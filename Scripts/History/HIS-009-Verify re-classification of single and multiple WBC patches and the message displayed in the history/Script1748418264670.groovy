@@ -3,64 +3,58 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.By
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.interactions.Actions
-
-// ────────────────────────────────────────────────────────────────────
-// CONFIGURATION
-// ────────────────────────────────────────────────────────────────────
-String baseUrl  = 'https://as76-pbs.sigtuple.com/login'
-String username = 'adminuserr'
-String password = 'JBaPNhID5RC7zcsLVwaWIA=='
 
 // ────────────────────────────────────────────────────────────────────
 // 1) LOGIN
 // ────────────────────────────────────────────────────────────────────
-WebUI.openBrowser(baseUrl)
+WebUI.openBrowser('')
 WebUI.maximizeWindow()
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), username)
-WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'), password)
+WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(
+	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA=='
+)
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+
+// ────────────────────────────────────────────────────────────────────
+// 2) VERIFY LANDING ON REPORT LIST
+// ────────────────────────────────────────────────────────────────────
 WebUI.waitForElementPresent(
 	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
 	10
 )
 
-// grab WebDriver & Actions
-WebDriver driver = DriverFactory.getWebDriver()
-Actions actions = new Actions(driver)
-
-
 // ────────────────────────────────────────────────────────────────────
-// 2) OPEN FIRST “To be reviewed” REPORT
+// 3) OPEN FIRST “Under review” REPORT
 // ────────────────────────────────────────────────────────────────────
-TestObject toBeReviewedRow = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"(//tr[.//span[normalize-space(text())='To be reviewed']])[1]"
-)
-WebUI.waitForElementClickable(toBeReviewedRow, 10)
-WebUI.click(toBeReviewedRow)
+String underReviewXpath = "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+TestObject underReviewRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, underReviewXpath)
 
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
 
 // ────────────────────────────────────────────────────────────────────
-// 3) ASSIGN TO “admin”
+// 4) ASSIGN TO “admin”
 // ────────────────────────────────────────────────────────────────────
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
+TestObject assignedDropdown = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
 	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-))
-TestObject adminOption = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//ul[contains(@class,'MuiAutocomplete-listbox')]//li[normalize-space(text())='admin']"
 )
-WebUI.waitForElementVisible(adminOption, 5)
-WebUI.scrollToElement(adminOption, 5)
-WebUI.click(adminOption)
-WebUI.waitForElementAttributeValue(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//input[@id='assigned_to']"),
-	'value', 'admin', 5
+TestObject adminOption = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//li[@role='option' and normalize-space(text())='admin']"
+)
+TestObject assignedInput = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//input[@id='assigned_to']"
 )
 
+WebUI.click(assignedDropdown)
+WebUI.waitForElementClickable(adminOption, 5)
+WebUI.click(adminOption)
+WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
 
 // ────────────────────────────────────────────────────────────────────
 // 4) CLICK ON WBC TAB
