@@ -6,12 +6,12 @@
    <elementGuidId>a9e1d483-d68c-44a1-b5b9-15e8f2c30bcc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>tr:nth-of-type(32) > td</value>
+         <key>XPATH</key>
+         <value>//td[text()='Stain Artefacts']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[32]/td</value>
+         <key>CSS</key>
+         <value>tr:nth-of-type(32) > td</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>8ae50a78-5eaf-4591-82c8-a47b92f1c9f3</webElementGuid>
+      <webElementGuid>5696f2a6-ac81-4f49-bac9-c5eca7e0c6c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Stain Artefacts</value>
-      <webElementGuid>dc269859-73ef-4b19-986f-5c2f3bc6fbcc</webElementGuid>
+      <webElementGuid>ab5af70a-4c3d-4762-8392-714fd554a06a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;box MuiBox-root css-i9gxme&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2.8 grid-left wbc css-lufqp2&quot;]/div[@class=&quot;cell-table-tab&quot;]/table[@class=&quot;theame-table&quot;]/tbody[1]/tr[32]/td[1]</value>
-      <webElementGuid>92dd1f3b-291a-4225-8534-00ab89f0a15c</webElementGuid>
+      <webElementGuid>3c223444-5313-451b-83c2-9622920d259f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[32]/td</value>
-      <webElementGuid>99a41e1a-b4fd-4a43-bc81-a14ad885a20a</webElementGuid>
+      <webElementGuid>ed15e5d1-52b1-4856-80bd-5972612e8443</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[48]/following::td[1]</value>
-      <webElementGuid>5234d909-b9ea-4f26-8bdf-b7b935aa6a8c</webElementGuid>
+      <webElementGuid>34c4d307-43b3-4043-9655-f0ba99953375</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[47]/following::td[2]</value>
-      <webElementGuid>eb98d9d5-3b7e-4e52-8088-282f963b4000</webElementGuid>
+      <webElementGuid>55f93bdc-df70-4591-b6eb-3c1d2099904b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[49]/preceding::td[1]</value>
-      <webElementGuid>7f652a24-50dd-4bc9-94cc-a2fbdd22642c</webElementGuid>
+      <webElementGuid>011f2a14-4e09-4720-9d43-d39035f43f4a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[50]/preceding::td[2]</value>
-      <webElementGuid>b687060c-ee8c-473b-8608-a6367349e725</webElementGuid>
+      <webElementGuid>6f5579f4-3a5e-4f92-a984-4624f3ef8aa1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Stain Artefacts']/parent::*</value>
-      <webElementGuid>958661c0-9d31-4a05-baf2-e851362fe9a6</webElementGuid>
+      <webElementGuid>9e5850f8-43f7-4891-914c-9327046e6e1a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[32]/td</value>
-      <webElementGuid>02fdadc3-ea59-4100-9e6d-b0736cf90931</webElementGuid>
+      <webElementGuid>fa939abf-2272-4439-942e-7dc1624ae3f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'Stain Artefacts' or . = 'Stain Artefacts')]</value>
-      <webElementGuid>e3cf0afb-ab1e-456a-b96c-22099a3239db</webElementGuid>
+      <webElementGuid>e4dfa2e5-341d-4b48-98e5-d9e36f7b1758</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

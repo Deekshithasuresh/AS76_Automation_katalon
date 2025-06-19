@@ -6,12 +6,12 @@
    <elementGuidId>9d4601d1-3577-48c7-ae01-b74d2d2cf6ef</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.reportSummary_pane-title__GMEw1.reportSummary_pane-title--info__7FI4g > span</value>
+         <key>XPATH</key>
+         <value>//span[contains(text(), 'WBC differential count')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/span</value>
+         <key>CSS</key>
+         <value>div.reportSummary_pane-title__GMEw1.reportSummary_pane-title--info__7FI4g > span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>0f87e288-8d5c-41c2-b58a-b5dcbeadf729</webElementGuid>
+      <webElementGuid>1a984cfc-738c-4ff8-b410-9b87d2a339c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>WBC differential count (%)</value>
-      <webElementGuid>36bbc161-2c1b-4bb3-a93d-b2dbe0c04898</webElementGuid>
+      <webElementGuid>3ae586aa-c670-4d56-a2dd-de0dbdd2fb17</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2&quot;]/div[@class=&quot;reportSummary_pane-title__GMEw1 reportSummary_pane-title--info__7FI4g&quot;]/span[1]</value>
-      <webElementGuid>1f2bd53c-58b4-4378-b266-08305e0f875e</webElementGuid>
+      <webElementGuid>34ff1db4-ecb7-40b3-8d48-d1ad56d57887</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/span</value>
-      <webElementGuid>f237beea-fa56-4fd4-aab4-56413574f482</webElementGuid>
+      <webElementGuid>6ac91441-6167-4dfa-874c-2208cbeaba6a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CBC report could not be retrieved'])[1]/following::span[1]</value>
-      <webElementGuid>c87cc927-1371-4bf2-a526-e8cd603ffe09</webElementGuid>
+      <webElementGuid>da3cfd3e-246a-4dcf-bff5-9010a8accb19</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CBC report'])[2]/following::span[3]</value>
-      <webElementGuid>66290ceb-8856-4a6e-adef-e370d882ce23</webElementGuid>
+      <webElementGuid>8e3fcfeb-20ed-4dc3-8bb1-8596b03a0ed1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cell name'])[1]/preceding::span[2]</value>
-      <webElementGuid>aead1bdb-21e8-4fda-8a5d-ffcf528c33c6</webElementGuid>
+      <webElementGuid>f6dedcac-4622-4522-92d8-bc5881b53616</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='%'])[1]/preceding::span[2]</value>
-      <webElementGuid>e6a1aabc-285f-4d7a-8fb6-b3955be59022</webElementGuid>
+      <webElementGuid>e09c7b6f-1875-4849-b9af-8e6df83cec57</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='WBC differential count']/parent::*</value>
-      <webElementGuid>7966911d-eda1-44af-8dfe-ec2dd4b4b5c7</webElementGuid>
+      <webElementGuid>db9cd988-2ad4-4a73-aa44-53304bccc353</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/div/span</value>
-      <webElementGuid>e8dd4da3-a7d5-4be5-9f5f-c500d5e7f3b7</webElementGuid>
+      <webElementGuid>fd55f4fd-2465-4621-93c6-c61a15d8fb12</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'WBC differential count (%)' or . = 'WBC differential count (%)')]</value>
-      <webElementGuid>d4d2d8d2-4aff-40ea-98f9-d7b94aab5cb3</webElementGuid>
+      <webElementGuid>6a4b46c0-fca3-4765-a2b8-aede45920e34</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

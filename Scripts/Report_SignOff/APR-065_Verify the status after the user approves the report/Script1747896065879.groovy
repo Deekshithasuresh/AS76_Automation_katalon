@@ -8,7 +8,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 // Log in and approve the report as before
 CustomKeywords.'generic.custumFunctions.login'()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 // Step 2: Capture the Slide ID dynamically (assuming it's visible before approval)
 TestObject slideIdObject = new TestObject().addProperty("xpath", ConditionType.EQUALS, "/html/body/div/div/div[1]/div[1]/div[2]/div[2]/span")

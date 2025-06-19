@@ -6,12 +6,12 @@
    <elementGuidId>387edcaa-be94-489d-928c-79f72475f342</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>th.col-cell-name</value>
+         <key>XPATH</key>
+         <value>//th[contains(@class, 'col-cell-name') and contains(text(), 'Cell name')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div[2]/div/table/tr/th</value>
+         <key>CSS</key>
+         <value>th.col-cell-name</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>th</value>
-      <webElementGuid>e40630f2-4d43-4366-8aa8-4303a5ffa9db</webElementGuid>
+      <webElementGuid>f4da3d38-f090-4e61-9b4e-ea0f7e15ca5f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>col-cell-name</value>
-      <webElementGuid>35d93de3-7a21-4d09-96f1-81df8711926c</webElementGuid>
+      <webElementGuid>390bff04-5628-4460-915a-1b3896b136c7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Cell name</value>
-      <webElementGuid>507461ed-0552-4e42-b65d-5f58b5577849</webElementGuid>
+      <webElementGuid>c96095a3-4b6e-4a12-9d74-fc411b10785d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2&quot;]/div[@class=&quot;reportSummary_pane-flex__pDBLO&quot;]/div[@class=&quot;css-vtkee7&quot;]/table[@class=&quot;wbc-summary-correction-table&quot;]/tr[@class=&quot;header-row&quot;]/th[@class=&quot;col-cell-name&quot;]</value>
-      <webElementGuid>6e557ede-4226-45eb-b81e-e7bd48c4658f</webElementGuid>
+      <webElementGuid>aca218ee-99e3-4097-836c-96df9c702408</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div[2]/div/table/tr/th</value>
-      <webElementGuid>4bc895a5-eb33-4052-be61-a0998476e21b</webElementGuid>
+      <webElementGuid>63871fd8-9a6c-4b11-9b4e-f0fcdd5f8176</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CBC report could not be retrieved'])[1]/following::th[1]</value>
-      <webElementGuid>bd41bdda-2bf4-465a-bd51-c2585bf38323</webElementGuid>
+      <webElementGuid>c6d6d7aa-8d95-4086-aabe-7b97b2d5afe0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='%'])[1]/preceding::th[1]</value>
-      <webElementGuid>31cfea23-943a-496f-80b7-fd44a0145a1e</webElementGuid>
+      <webElementGuid>95adddc7-2813-47cf-929e-5d18547772cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='WBC'])[2]/preceding::th[2]</value>
-      <webElementGuid>ecc6f78a-980d-482c-aded-3d129a1f4acd</webElementGuid>
+      <webElementGuid>df51bcc0-9062-4083-afcc-1a48391d6e11</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Cell name']/parent::*</value>
-      <webElementGuid>6de34786-26e5-493b-8f64-4a21c9844ef3</webElementGuid>
+      <webElementGuid>616e6ed3-9b78-4563-afab-eb0f385a01d0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//th</value>
-      <webElementGuid>3463a553-5351-4770-9a18-dd95bdf511c2</webElementGuid>
+      <webElementGuid>6536e628-50cd-463d-9b2f-e37da02234da</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//th[(text() = 'Cell name' or . = 'Cell name')]</value>
-      <webElementGuid>6d2371aa-5914-4282-a8f8-3f9c4934c0cc</webElementGuid>
+      <webElementGuid>4404ccc4-d662-49b8-8bd2-adfd0e5435e5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
