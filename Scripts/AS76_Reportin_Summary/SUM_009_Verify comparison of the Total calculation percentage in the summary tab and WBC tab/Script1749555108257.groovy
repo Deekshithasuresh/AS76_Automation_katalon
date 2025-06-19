@@ -1,0 +1,91 @@
+
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+
+
+
+
+
+
+
+
+
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import com.kms.katalon.core.testobject.TestObjectProperty as TestObjectProperty
+import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
+/**
+ * Test Case: PBS Report Assignment
+ * This test checks for reports with "To be reviewed" status and assigns them to deekshithaS.
+ * If no "To be reviewed" reports are found, it checks the 3rd report.
+ * If the 3rd report is not assigned to deekshithaS, it reassigns it.
+ */
+
+// Open browser and login to PBS system
+WebUI.openBrowser('')
+WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.setText(findTestObject('Object Repository/Summary/Page_PBS (1)/input_username_loginId'), 'deekshithaS')
+WebUI.setEncryptedText(findTestObject('Object Repository/Summary/Page_PBS (1)/input_password_loginPassword'), 'ghLSEQG5l8dyyQdYVN+LYg==')
+WebUI.sendKeys(findTestObject('Object Repository/Summary/Page_PBS (1)/input_password_loginPassword'), Keys.chord(Keys.ENTER))
+WebUI.maximizeWindow()
+
+// Wait for the page to load
+WebUI.waitForPageLoad(30)
+WebUI.delay(3) // Add a small delay to ensure all elements are loaded
+
+// Get the WebDriver instance
+WebDriver driver = DriverFactory.getWebDriver()
+JavascriptExecutor js = (JavascriptExecutor) driver
+
+// Wait for the table to be visible
+WebUI.waitForElementVisible(findTestObject('Object Repository/Summary/Page_PBS (1)/table'), 30)
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
+
+
+
+
+// Wait for page to load, if necessary
+WebUI.waitForElementVisible(findTestObject('Object Repository/Summary/Page_PBS (1)/button_Summary'), 10)
+
+// Extract Summary total as string and convert to float
+String summaryTotalStr = WebUI.getText(findTestObject('Object Repository/Summary/Page_PBS (1)/td_100.0'))
+Float summaryTotal = summaryTotalStr.toFloat()
+
+// Go to WBC tab
+WebUI.click(findTestObject('Object Repository/Summary/span_WBC'))
+
+// Extract WBC total as string and convert to float
+String wbcTotalStr = WebUI.getText(findTestObject('Object Repository/Summary/Page_PBS (1)/td_100'))
+Float wbcTotal = wbcTotalStr.toFloat()
+
+// Compare both values and log the result
+if (summaryTotal == wbcTotal) {
+	WebUI.comment("✅ Summary total ($summaryTotal) matches WBC total ($wbcTotal)")
+} else {
+	WebUI.comment("❌ Mismatch: Summary total ($summaryTotal) does NOT match WBC total ($wbcTotal)")
+	WebUI.takeScreenshot()
+	WebUI.verifyMatch(summaryTotal.toString(), wbcTotal.toString(), false)  // This will fail the test
+}
+
+WebUI.closeBrowser()
+
+
