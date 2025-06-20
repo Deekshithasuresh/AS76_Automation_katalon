@@ -25,5 +25,5 @@ WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_RBC
 
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/div_Cell name'), 'Cell name')
 
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('pooja', false)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('chida', false)
 

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-007_Verify the functionality of back to report button present in pop-up after the user click on back to report button</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>3e132359-7a4e-4fcc-87cb-fa3ce1119025</testCaseGuid>
-</TestCaseEntity>

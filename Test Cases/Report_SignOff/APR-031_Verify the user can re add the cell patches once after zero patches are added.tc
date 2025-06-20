@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-031_Verify the user can re add the cell patches once after zero patches are added</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>33341ad1-be3e-4607-9af6-ce9d23b8d917</testCaseGuid>
-</TestCaseEntity>

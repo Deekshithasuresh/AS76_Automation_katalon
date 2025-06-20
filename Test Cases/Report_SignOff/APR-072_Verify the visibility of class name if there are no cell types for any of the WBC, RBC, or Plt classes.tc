@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-072_Verify the visibility of class name if there are no cell types for any of the WBC, RBC, or Plt classes</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>a1e771d9-8ce7-476b-96c9-0a1679fff92f</testCaseGuid>
-</TestCaseEntity>

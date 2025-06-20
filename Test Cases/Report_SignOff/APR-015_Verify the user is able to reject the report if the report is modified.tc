@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-015_Verify the user is able to reject the report if the report is modified</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>1bed2603-a536-4f4e-b06a-d102e4399a44</testCaseGuid>
-</TestCaseEntity>

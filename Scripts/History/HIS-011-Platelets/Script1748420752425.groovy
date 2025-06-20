@@ -12,40 +12,57 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.Locale
 
-// ────────────────────────────────────────────────────────────────────
-// FULL FLOW: LOGIN → ASSIGN → PLATELETS FLOW → MORPHOLOGY → HISTORY
-// ────────────────────────────────────────────────────────────────────
-
+/ ────────────────────────────────────────────────────────────────────
 // 1) LOGIN
+// ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
 WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
+WebUI.setEncryptedText(
+    findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+    'JBaPNhID5RC7zcsLVwaWIA=='
 )
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+
+// ────────────────────────────────────────────────────────────────────
+// 2) VERIFY LANDING ON REPORT LIST
+// ────────────────────────────────────────────────────────────────────
 WebUI.waitForElementPresent(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-	10
+    new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
+    10
 )
 
-// 2) OPEN FIRST “To be reviewed” & ASSIGN TO ADMIN
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"(//tr[.//span[normalize-space(text())='To be reviewed']])[1]"
-))
-// open assignee dropdown
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-))
-// select ‘admin’
-TestObject adminOption = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//ul[contains(@class,'MuiAutocomplete-listbox')]//li[normalize-space(text())='admin']"
+// ────────────────────────────────────────────────────────────────────
+// 3) OPEN FIRST “Under review” REPORT
+// ────────────────────────────────────────────────────────────────────
+String underReviewXpath = "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+TestObject underReviewRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, underReviewXpath)
+
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
+
+// ────────────────────────────────────────────────────────────────────
+// 4) ASSIGN TO “admin”
+// ────────────────────────────────────────────────────────────────────
+TestObject assignedDropdown = new TestObject().addProperty(
+    'xpath', ConditionType.EQUALS,
+    "//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
 )
-WebUI.waitForElementVisible(adminOption, 5)
-WebUI.scrollToElement(adminOption, 5)
+TestObject adminOption = new TestObject().addProperty(
+    'xpath', ConditionType.EQUALS,
+    "//li[@role='option' and normalize-space(text())='admin']"
+)
+TestObject assignedInput = new TestObject().addProperty(
+    'xpath', ConditionType.EQUALS,
+    "//input[@id='assigned_to']"
+)
+
+WebUI.click(assignedDropdown)
+WebUI.waitForElementClickable(adminOption, 5)
 WebUI.click(adminOption)
-WebUI.comment("✅ Assigned report to admin")
+WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
 
 // prepare driver & actions
 WebDriver driver = DriverFactory.getWebDriver()

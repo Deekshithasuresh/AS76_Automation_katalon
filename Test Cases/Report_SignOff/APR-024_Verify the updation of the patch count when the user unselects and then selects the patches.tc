@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-024_Verify the updation of the patch count when the user unselects and then selects the patches</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>e9dde57e-8b03-4798-8139-15a02810cc15</testCaseGuid>
-</TestCaseEntity>

@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
+<<<<<<<< HEAD:Test Cases/Common tools/CT-090-Verify the default selection of reference cell in any status of the reports for the Rbc tab.tc
    <name>CT-090-Verify the default selection of reference cell in any status of the reports for the Rbc tab</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
    <testCaseGuid>14615d53-ae79-4202-a834-a6b5e63806cf</testCaseGuid>
+========
+   <name>Verify the how many patches are present in a row for RBC cells for the resolutions</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c6fd3e7f-b59a-493d-8f67-95e86cc5d7ac</testCaseGuid>
+>>>>>>>> 14fb8eb4dcb8ab09a2c0c3471b6fba42fd965d30:Test Cases/Manual Plus Auto/Resolutions/1366 X 768/Verify the how many patches are present in a row for RBC cells for the resolutions.tc
 </TestCaseEntity>

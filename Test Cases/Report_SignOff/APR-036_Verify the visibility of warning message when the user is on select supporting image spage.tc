@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-036_Verify the visibility of warning message when the user is on select supporting image spage</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>8f43ea48-e394-45eb-8010-8756f123d271</testCaseGuid>
-</TestCaseEntity>

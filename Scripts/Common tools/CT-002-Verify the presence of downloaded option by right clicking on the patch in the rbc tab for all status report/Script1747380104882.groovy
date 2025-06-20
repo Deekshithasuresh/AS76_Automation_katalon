@@ -31,6 +31,8 @@ WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/s
 
 WebUI.click(findTestObject('Commontools/Macrocytes_cell_name'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.click(findTestObject('Object Repository/Commontools/li_Macrocytes'), FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 10)

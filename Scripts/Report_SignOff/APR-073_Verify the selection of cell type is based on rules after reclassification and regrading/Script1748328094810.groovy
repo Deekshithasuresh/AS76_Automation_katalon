@@ -20,7 +20,7 @@ CustomKeywords.'generic.custumFunctions.login'()
 WebUI.comment("Selecting report with 'To be reviewed' status.")
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 WebUI.comment("Assigning report to 'santosh'.")
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 // === RECLASSIFY WBC (Neutrophils) ===
 WebUI.comment("Clicking on WBC tab.")

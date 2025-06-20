@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-034_Verify the availability of add supporting images button in the preview report page</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>092a9e4d-60a7-43e9-b3d2-f3f25bbcfd7f</testCaseGuid>
-</TestCaseEntity>

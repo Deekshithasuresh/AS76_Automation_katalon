@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-016_Verify the functionality when the user cancels the rejection flow by clicking on cancel button from the pop up</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>ea090370-702a-4429-9ba0-72b1049c4b1d</testCaseGuid>
-</TestCaseEntity>

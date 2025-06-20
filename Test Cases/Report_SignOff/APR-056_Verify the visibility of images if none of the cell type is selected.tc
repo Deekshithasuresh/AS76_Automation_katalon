@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-056_Verify the visibility of images if none of the cell type is selected</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>203da837-0d8f-487a-b305-dbbb7ef9e3ea</testCaseGuid>
-</TestCaseEntity>

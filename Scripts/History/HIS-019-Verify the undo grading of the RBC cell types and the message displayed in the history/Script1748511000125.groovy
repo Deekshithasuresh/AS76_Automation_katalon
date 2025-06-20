@@ -7,58 +7,57 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 
-// ────────────────────────────────────────────────────────────────────
-// 1. LOGIN & NAVIGATE TO FIRST “To be reviewed” REPORT
+/ ────────────────────────────────────────────────────────────────────
+// 1) LOGIN
 // ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-
-// credentials
 WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-					  'JBaPNhID5RC7zcsLVwaWIA==')
-// sign in
+WebUI.setEncryptedText(
+    findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+    'JBaPNhID5RC7zcsLVwaWIA=='
+)
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
-WebUI.waitForElementPresent(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-	10
-)
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-// pick the first "To be reviewed" row
-TestObject toBe = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"(//span[normalize-space()='To be reviewed']/ancestor::tr)[1]"
-)
-WebUI.waitForElementClickable(toBe, 10)
-WebUI.click(toBe)
 
 // ────────────────────────────────────────────────────────────────────
-// 2. ASSIGN REPORT TO “admin”
+// 2) VERIFY LANDING ON REPORT LIST
+// ────────────────────────────────────────────────────────────────────
+WebUI.waitForElementPresent(
+    new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
+    10
+)
+
+// ────────────────────────────────────────────────────────────────────
+// 3) OPEN FIRST “Under review” REPORT
+// ────────────────────────────────────────────────────────────────────
+String underReviewXpath = "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+TestObject underReviewRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, underReviewXpath)
+
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
+
+// ────────────────────────────────────────────────────────────────────
+// 4) ASSIGN TO “admin”
 // ────────────────────────────────────────────────────────────────────
 TestObject assignedDropdown = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/following-sibling::div//button[@title='Open']"
+    'xpath', ConditionType.EQUALS,
+    "//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
 )
-WebUI.waitForElementClickable(assignedDropdown, 5)
-WebUI.click(assignedDropdown)
-
 TestObject adminOption = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//ul[contains(@class,'MuiAutocomplete-listbox')]//li[normalize-space(text())='admin']"
+    'xpath', ConditionType.EQUALS,
+    "//li[@role='option' and normalize-space(text())='admin']"
 )
-WebUI.waitForElementClickable(adminOption, 5)
-WebUI.scrollToElement(adminOption, 5)
-WebUI.click(adminOption)
-
 TestObject assignedInput = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']"
+    'xpath', ConditionType.EQUALS,
+    "//input[@id='assigned_to']"
 )
+
+WebUI.click(assignedDropdown)
+WebUI.waitForElementClickable(adminOption, 5)
+WebUI.click(adminOption)
 WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
-WebUI.comment("✅ Assigned to admin")
 
 // ────────────────────────────────────────────────────────────────────
 // 3. OPEN RBC TAB & THEN THE SHAPE SUB-TAB

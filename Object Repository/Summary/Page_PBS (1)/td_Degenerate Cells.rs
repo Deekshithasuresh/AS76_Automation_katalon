@@ -6,12 +6,12 @@
    <elementGuidId>b313f875-51e9-497e-9fec-2f1da967a507</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>tr:nth-of-type(31) > td</value>
+         <key>XPATH</key>
+         <value>//td[text()='Degenerate Cells']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[31]/td</value>
+         <key>CSS</key>
+         <value>tr:nth-of-type(31) > td</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>18c0f484-9f9e-476d-8bf7-a577c95648f3</webElementGuid>
+      <webElementGuid>46c9fa40-212b-4a21-88e2-a5d8a8c2bb08</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Degenerate Cells</value>
-      <webElementGuid>26d47b15-62f6-4dd4-9f54-4a9f148eacd1</webElementGuid>
+      <webElementGuid>0172738e-a4df-4442-9d13-3a1395922a85</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;box MuiBox-root css-i9gxme&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2.8 grid-left wbc css-lufqp2&quot;]/div[@class=&quot;cell-table-tab&quot;]/table[@class=&quot;theame-table&quot;]/tbody[1]/tr[31]/td[1]</value>
-      <webElementGuid>54c65c22-c493-4629-a3f0-0d9806544c1b</webElementGuid>
+      <webElementGuid>ba772d84-101b-4990-89e2-45935acdb5ae</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[31]/td</value>
-      <webElementGuid>bfc4f1ad-7843-46ff-b768-dc00d3aacaea</webElementGuid>
+      <webElementGuid>bc60ddc1-6b99-4e0b-baef-0b31c59b7a30</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[46]/following::td[1]</value>
-      <webElementGuid>2a9b5db9-afe3-4b24-a0c5-e109c7186db6</webElementGuid>
+      <webElementGuid>f75a4740-16f1-4895-b7e4-538804758178</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[45]/following::td[2]</value>
-      <webElementGuid>4b6fd9fe-bb2c-424a-a7df-ab1c6cdb1fbd</webElementGuid>
+      <webElementGuid>dbb1e2e4-74bb-4f0e-a042-a2ee7a8c74b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[47]/preceding::td[1]</value>
-      <webElementGuid>a7f2bdb9-17b5-4747-8bf2-5012baf72fa6</webElementGuid>
+      <webElementGuid>fe68e6b2-5316-454a-a17b-8ceb544f52f9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[48]/preceding::td[2]</value>
-      <webElementGuid>a5778a69-7a97-42af-863f-f9f1599f99a2</webElementGuid>
+      <webElementGuid>103d0dac-f7aa-4e58-9e6f-b0c8375e3dec</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Degenerate Cells']/parent::*</value>
-      <webElementGuid>7cd18e0f-0a27-43ee-befe-73dc5e74b017</webElementGuid>
+      <webElementGuid>2ff8ad45-37fd-46c9-8abe-efaa73fea43a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[31]/td</value>
-      <webElementGuid>bfbc1160-b6d9-4f6e-abbf-f3fec4f8462d</webElementGuid>
+      <webElementGuid>f5411153-e45e-47c3-a4d3-76d3b56ddfff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'Degenerate Cells' or . = 'Degenerate Cells')]</value>
-      <webElementGuid>698d1ccd-b295-4300-a097-4491dc0c145f</webElementGuid>
+      <webElementGuid>df3b83a9-0683-4121-91b0-526f7620ec3c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

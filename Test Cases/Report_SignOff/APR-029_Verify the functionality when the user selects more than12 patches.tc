@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-029_Verify the functionality when the user selects more than12 patches</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>b2b5724c-4138-4cf3-bf92-f32dc6b2e568</testCaseGuid>
-</TestCaseEntity>

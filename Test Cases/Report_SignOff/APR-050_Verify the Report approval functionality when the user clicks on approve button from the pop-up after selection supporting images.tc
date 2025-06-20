@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-050_Verify the Report approval functionality when the user clicks on approve button from the pop-up after selection supporting images</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>63855f06-de1e-4959-a86d-2ee6937fdd25</testCaseGuid>
-</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-009_Verify the pop-up when the user click on approve button from the select supporting image page</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>436fbff2-b881-42ad-826f-d267d9577fd3</testCaseGuid>
-</TestCaseEntity>

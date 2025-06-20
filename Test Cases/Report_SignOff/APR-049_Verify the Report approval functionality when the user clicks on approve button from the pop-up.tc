@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-049_Verify the Report approval functionality when the user clicks on approve button from the pop-up</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>837fe1d5-2192-48e1-96a3-dea1a9502337</testCaseGuid>
-</TestCaseEntity>

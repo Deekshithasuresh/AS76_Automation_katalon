@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'("To be reviewed")
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("santosh")
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
 WebUI.click(findTestObject('Object Repository/Report-Signoff/div_09-Apr-2025, 1226 PM (EAT)'))
 

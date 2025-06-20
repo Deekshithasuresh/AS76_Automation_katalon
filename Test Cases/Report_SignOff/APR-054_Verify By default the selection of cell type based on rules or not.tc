@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-054_Verify By default the selection of cell type based on rules or not</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>7860797e-7467-4db0-948a-a4b7ccbfd755</testCaseGuid>
-</TestCaseEntity>
