@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-006_Verify the functionality of back to reports button present in the preview report page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7a690a76-ef75-45c8-8790-8a21464be323</testCaseGuid>
+</TestCaseEntity>

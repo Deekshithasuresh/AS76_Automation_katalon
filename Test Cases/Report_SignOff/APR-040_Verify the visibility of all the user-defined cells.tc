@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-040_Verify the visibility of all the user-defined cells</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>10f33de4-1cdf-4b5b-923a-6fc78fde666b</testCaseGuid>
+</TestCaseEntity>

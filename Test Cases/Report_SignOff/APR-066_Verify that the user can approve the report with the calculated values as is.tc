@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-066_Verify that the user can approve the report with the calculated values as is</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>de853fc6-1c30-45f2-a10f-b8ae0afe39a2</testCaseGuid>
+</TestCaseEntity>

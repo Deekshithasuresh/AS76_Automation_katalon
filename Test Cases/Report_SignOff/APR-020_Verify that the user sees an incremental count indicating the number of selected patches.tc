@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-020_Verify that the user sees an incremental count indicating the number of selected patches</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4c3bcd8d-de91-4796-8f25-6bf214930d29</testCaseGuid>
+</TestCaseEntity>

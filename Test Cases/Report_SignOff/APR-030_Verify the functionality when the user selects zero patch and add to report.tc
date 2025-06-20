@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-030_Verify the functionality when the user selects zero patch and add to report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>140be5af-c5c5-428f-ba2f-3e01e8b87022</testCaseGuid>
+</TestCaseEntity>

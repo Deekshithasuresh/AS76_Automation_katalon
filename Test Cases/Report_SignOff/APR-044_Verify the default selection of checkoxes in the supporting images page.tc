@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-044_Verify the default selection of checkoxes in the supporting images page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f71ce437-8443-4c54-8e0a-c3edca806f9b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-065_Verify the status after the user approves the report</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e7cd7b3d-d4d7-4d91-acf9-56b70abefbaf</testCaseGuid>
+</TestCaseEntity>
