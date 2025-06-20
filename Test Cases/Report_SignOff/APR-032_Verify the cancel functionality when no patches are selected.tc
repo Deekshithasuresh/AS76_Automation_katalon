@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-032_Verify the cancel functionality when no patches are selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1edab44e-429c-46d6-baac-a7f824b575d7</testCaseGuid>
+</TestCaseEntity>

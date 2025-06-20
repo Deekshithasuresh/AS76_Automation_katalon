@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-035_Verify the functionality of add supporting images button in the preview and approve report page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a33102ca-7550-43d2-97a4-5e2e4ce78036</testCaseGuid>
+</TestCaseEntity>

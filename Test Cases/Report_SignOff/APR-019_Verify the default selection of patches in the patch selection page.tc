@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-019_Verify the default selection of patches in the patch selection page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e1273967-2447-46a1-8220-e19126dc8d74</testCaseGuid>
+</TestCaseEntity>

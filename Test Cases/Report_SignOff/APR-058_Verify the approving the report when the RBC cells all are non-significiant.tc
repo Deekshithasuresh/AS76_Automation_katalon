@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-058_Verify the approving the report when the RBC cells all are non-significiant</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7492b3f8-b2e4-4b33-8407-2147a26d2615</testCaseGuid>
+</TestCaseEntity>

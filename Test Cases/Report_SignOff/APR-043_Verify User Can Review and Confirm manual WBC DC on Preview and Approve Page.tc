@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-043_Verify User Can Review and Confirm manual WBC DC on Preview and Approve Page</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>49c66660-dffd-463a-9f49-a8f7ad1a5297</testCaseGuid>
+</TestCaseEntity>
