@@ -5,7 +5,7 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.model.FailureHandling
 import org.openqa.selenium.Keys
 
-/ ────────────────────────────────────────────────────────────────────
+
 // 1) LOGIN
 // ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
