@@ -12,20 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import java.time.Duration as Duration
-import java.util.concurrent.TimeoutException as TimeoutException
-import org.openqa.selenium.*
-import org.openqa.selenium.interactions.Actions as Actions
-import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
-import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
-import com.kms.katalon.core.annotation.Keyword as Keyword
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testobject.ConditionType as ConditionType
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
@@ -47,14 +34,13 @@ WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PB
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Rejected')
 
-WebUI.waitForElementNotPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/assign__dd'),
-	0)
+WebUI.waitForElementNotPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/assign__dd'), 0)
+
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'), 'RBC')
+WebUI.verifyElementText(findTestObject('Commontools/Page_PBS/span_RBC (4)'), 'RBC')
 
-
-WebUI.click(findTestObject('Object Repository/Commontools/li_Macrocytes'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Commontools/Macrocytes_cell_name'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
@@ -62,7 +48,7 @@ WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 1
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
 
-WebUI.doubleClick(findTestObject('Object Repository/Commontools/Page_PBS/div_Image settings_default-patch  patch-foc_a6a738'))
+WebUI.doubleClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebDriver driver = DriverFactory.getWebDriver()
 

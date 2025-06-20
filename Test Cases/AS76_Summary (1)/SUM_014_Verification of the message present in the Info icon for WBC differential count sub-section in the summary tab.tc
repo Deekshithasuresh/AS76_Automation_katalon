@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>SUM_014_Verification of the message present in the Info icon for WBC differential count sub-section in the summary tab</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>7f40d58f-dc3c-42e6-bbf7-94898a8a09d4</testCaseGuid>
-</TestCaseEntity>

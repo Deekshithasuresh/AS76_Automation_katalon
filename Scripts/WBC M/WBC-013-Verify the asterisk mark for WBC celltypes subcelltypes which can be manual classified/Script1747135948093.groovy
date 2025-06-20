@@ -25,7 +25,7 @@ WebUI.setText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/input_user
 
 WebUI.setEncryptedText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 
-WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/img'))
+
 
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/button_Sign In'))
 

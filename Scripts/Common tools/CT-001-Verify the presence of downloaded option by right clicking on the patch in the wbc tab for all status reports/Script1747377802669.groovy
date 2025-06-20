@@ -23,10 +23,8 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/in
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In'))
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'("To be reviewed")
-
-//WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
-
+//CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_WBC'))
 
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
@@ -35,7 +33,7 @@ WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 1
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
 
-WebUI.doubleClick(findTestObject('Object Repository/Commontools/Page_PBS/div_Image settings_default-patch  patch-foc_a6a738'))
+WebUI.doubleClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebDriver driver = DriverFactory.getWebDriver()
 

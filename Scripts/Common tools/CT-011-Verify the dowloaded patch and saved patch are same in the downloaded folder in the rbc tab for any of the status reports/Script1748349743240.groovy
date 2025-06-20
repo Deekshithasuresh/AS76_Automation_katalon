@@ -69,6 +69,7 @@ WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_02-May-20
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'), 'RBC')
+WebUI.click(findTestObject('Commontools/Macrocytes_cell_name'), FailureHandling.STOP_ON_FAILURE)
 
 // ========== DEFINE AND VERIFY FIRST PATCH IMG ==========
 TestObject firstPatchImage = new TestObject('dynamicPatchImage')

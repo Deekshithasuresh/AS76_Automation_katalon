@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CT-090-Verify the default selection of reference cell in all the status of the reports for the Rbc tab</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>14615d53-ae79-4202-a834-a6b5e63806cf</testCaseGuid>
-</TestCaseEntity>

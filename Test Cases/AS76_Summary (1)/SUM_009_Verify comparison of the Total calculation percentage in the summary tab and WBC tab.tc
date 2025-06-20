@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>SUM_009_Verify comparison of the Total calculation percentage in the summary tab and WBC tab</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>ffcc2168-ac25-44de-a566-7116de3a6fbf</testCaseGuid>
-</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>SUM_067_Verify the Warning Display Based on Modified WBC Count Not Original Count other then self assigned report</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>1b461a85-f9d9-4887-9d16-d5bfdef23df7</testCaseGuid>
-</TestCaseEntity>
