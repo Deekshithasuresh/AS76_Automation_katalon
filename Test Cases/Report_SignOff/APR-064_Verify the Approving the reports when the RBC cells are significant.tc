@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-064_Verify the Approving the reports when the RBC cells are significant</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>6f2b9ce2-9cab-4ed4-93e4-90163b2e4146</testCaseGuid>
-</TestCaseEntity>

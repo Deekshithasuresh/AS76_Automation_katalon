@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-017_Verify the availability of Modify CTA on all the selected cell types</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>04c3f6b5-172a-4435-83b4-15768f1cb084</testCaseGuid>
-</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-047_Verify the cancel functionality present on the approve pop-up</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>dc27c714-4255-4e59-b8cf-de6cb1da4843</testCaseGuid>
-</TestCaseEntity>

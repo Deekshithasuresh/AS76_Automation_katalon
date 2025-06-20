@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-071_Verify the visibility of images based on sorting score if the cell has only one 1 image</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>17b0eb86-c5ae-4635-979f-20337a87164e</testCaseGuid>
-</TestCaseEntity>

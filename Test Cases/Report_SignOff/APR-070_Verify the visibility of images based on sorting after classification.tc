@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-070_Verify the visibility of images based on sorting after classification</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>7760e961-f6dd-4158-9a97-57de55671c11</testCaseGuid>
-</TestCaseEntity>

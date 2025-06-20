@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-055_Verify the visibility of images based on cell type selected</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>695356f5-70a9-42ce-ba5d-da5c7d702379</testCaseGuid>
-</TestCaseEntity>

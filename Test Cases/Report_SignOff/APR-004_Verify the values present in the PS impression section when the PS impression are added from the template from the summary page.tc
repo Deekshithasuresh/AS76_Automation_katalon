@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-004_Verify the values present in the PS impression section when the PS impression are added from the template from the summary page</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>5269c5d4-490c-46e4-8a3a-819929931fea</testCaseGuid>
-</TestCaseEntity>

@@ -6,11 +6,11 @@
    <elementGuidId>e7c6cae8-3d1a-4cda-9739-9dcc15d11f54</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//td[text()='Unclassified']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[33]/td</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>3f91d142-972f-4e16-9c0f-3d4bf27e063c</webElementGuid>
+      <webElementGuid>d2a01fd1-bf48-447d-b5f1-a2b95be64e2e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,7 +36,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Unclassified</value>
-      <webElementGuid>0ac0730d-3e93-43a9-b920-a7cd13972392</webElementGuid>
+      <webElementGuid>bbdce72e-deef-4bbe-88a8-0e9e4da9ffd1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -44,7 +44,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;box MuiBox-root css-i9gxme&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2.8 grid-left wbc css-lufqp2&quot;]/div[@class=&quot;cell-table-tab&quot;]/table[@class=&quot;theame-table&quot;]/tbody[1]/tr[@class=&quot;enabled&quot;]/td[1]</value>
-      <webElementGuid>e3688739-3dfb-4642-8f89-6e62ecb25da8</webElementGuid>
+      <webElementGuid>1418c4db-2fd5-42a6-9ec0-8b87f6b978bc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -52,7 +52,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[33]/td</value>
-      <webElementGuid>de4c18e0-ffcf-41c4-805c-f3a5d129a736</webElementGuid>
+      <webElementGuid>5ad19afd-41dc-4056-b671-0ff6563b05fe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -60,7 +60,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[50]/following::td[1]</value>
-      <webElementGuid>c2e76acd-88fc-41f0-904d-cccf00a63fed</webElementGuid>
+      <webElementGuid>fa43c710-e2ae-413d-a91c-18b922f9070c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -68,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[49]/following::td[2]</value>
-      <webElementGuid>56bfbbf2-32d0-4835-aa86-bc53a327d8fb</webElementGuid>
+      <webElementGuid>8f4d0841-1e65-4aa7-9266-9afcdd768de4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -76,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[51]/preceding::td[2]</value>
-      <webElementGuid>01c32f7e-229e-4610-9b6a-95379e4ea7ed</webElementGuid>
+      <webElementGuid>6ae8e292-a65f-4744-a553-2b37fcb509cb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -84,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rejected'])[1]/preceding::td[3]</value>
-      <webElementGuid>bdc12086-d2ba-4cdd-84d6-41406584adff</webElementGuid>
+      <webElementGuid>4696f7ff-ab3c-4e18-9959-67c593577362</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Unclassified']/parent::*</value>
-      <webElementGuid>097e127b-ec87-4d7d-adee-edd5936c58de</webElementGuid>
+      <webElementGuid>d9ab56e4-50c0-4b32-a9ce-4bdd1a171ead</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -100,7 +100,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//tr[33]/td</value>
-      <webElementGuid>9d03777c-12aa-40d4-b67c-011b7b343904</webElementGuid>
+      <webElementGuid>81bb8828-3dab-47e6-a5b1-dc31b4cc4155</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -108,6 +108,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'Unclassified' or . = 'Unclassified')]</value>
-      <webElementGuid>4ce6a999-25f9-4682-af69-af25919c2e6a</webElementGuid>
+      <webElementGuid>61f20eba-9c31-47b8-8469-32d8f8796451</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

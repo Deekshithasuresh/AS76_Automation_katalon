@@ -34,8 +34,8 @@ WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PB
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Rejected')
 
-WebUI.waitForElementNotPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/assign__dd'),
-	0)
+WebUI.waitForElementNotPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/assign__dd'), 0)
+
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_WBC'))
 
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
@@ -44,7 +44,7 @@ WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 1
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
 
-WebUI.doubleClick(findTestObject('Object Repository/Commontools/Page_PBS/div_Image settings_default-patch  patch-foc_a6a738'))
+WebUI.doubleClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebDriver driver = DriverFactory.getWebDriver()
 

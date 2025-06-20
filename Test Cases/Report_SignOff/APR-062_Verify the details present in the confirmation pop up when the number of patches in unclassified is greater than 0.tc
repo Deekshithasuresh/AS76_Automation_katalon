@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-062_Verify the details present in the confirmation pop up when the number of patches in unclassified is greater than 0</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>3cf83925-91bd-41e5-b5fc-b57b2ab2f1cb</testCaseGuid>
-</TestCaseEntity>

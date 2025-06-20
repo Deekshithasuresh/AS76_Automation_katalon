@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-067_Verify the presence of Reject report option for the assigned reports other than self</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>521f2baf-96a3-4067-a56d-c5a6b78c919c</testCaseGuid>
-</TestCaseEntity>

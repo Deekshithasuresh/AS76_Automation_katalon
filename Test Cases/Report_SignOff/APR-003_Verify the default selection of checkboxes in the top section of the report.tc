@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-003_Verify the default selection of checkboxes in the top section of the report</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>26e402b2-53fc-49dd-96d5-f5494fde6dc7</testCaseGuid>
-</TestCaseEntity>

@@ -55,7 +55,7 @@ WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download')
 // Get the most recently modified .jpg file
 // Find existing patch files
 // If the file exists (rare), delete it first to avoid rename failure
-WebUI.doubleClick(findTestObject('Object Repository/Commontools/Page_PBS/div_Image settings_default-patch  patch-foc_a6a738 (2)'))
+WebUI.doubleClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebDriver driver = DriverFactory.getWebDriver()
 
@@ -71,8 +71,8 @@ WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 10)
 
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download')) // Find .jpg files that are not already renamed to patchX.jpg
-// Get the most recently modified .jpg file
+WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download') // Find .jpg files that are not already renamed to patchX.jpg
+    ) // Get the most recently modified .jpg file
 // Find existing patch files
 // If the file exists (rare), delete it first to avoid rename failure
 

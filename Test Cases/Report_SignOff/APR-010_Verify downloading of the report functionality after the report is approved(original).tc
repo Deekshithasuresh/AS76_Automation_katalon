@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-010_Verify downloading of the report functionality after the report is approved(original)</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>47ade714-7804-4b49-94c4-4a987d1fe4a2</testCaseGuid>
-</TestCaseEntity>

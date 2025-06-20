@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-060_Verify that The order of patches in the report matches the order in which they were selected</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>1dc24bac-c208-4847-8f77-d819ca2ae916</testCaseGuid>
-</TestCaseEntity>

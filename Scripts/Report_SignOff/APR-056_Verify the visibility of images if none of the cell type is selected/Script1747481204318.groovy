@@ -8,7 +8,7 @@ import com.kms.katalon.core.testobject.TestObject
 // Log in and select report
 CustomKeywords.'generic.custumFunctions.login'()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 // Add a short wait to ensure the page loads
 WebUI.delay(3)

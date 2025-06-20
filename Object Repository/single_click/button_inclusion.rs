@@ -6,11 +6,11 @@
    <elementGuidId>beb9445e-ce5b-49a4-864b-c35e08d4dc15</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[8]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'rbc-btn-div')]//button[normalize-space(text())='Inclusions']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

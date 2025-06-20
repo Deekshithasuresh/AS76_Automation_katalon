@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-008_Verify the pop-up when the user click on approve button from the preview report page</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>11a552cc-9a05-4a6d-83f2-e913cfb62cea</testCaseGuid>
-</TestCaseEntity>

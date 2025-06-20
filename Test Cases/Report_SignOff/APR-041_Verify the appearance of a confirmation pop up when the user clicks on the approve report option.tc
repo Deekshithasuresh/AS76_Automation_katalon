@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-041_Verify the appearance of a confirmation pop up when the user clicks on the approve report option</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>ce997166-929e-44c3-a959-688e9efa4aa2</testCaseGuid>
-</TestCaseEntity>

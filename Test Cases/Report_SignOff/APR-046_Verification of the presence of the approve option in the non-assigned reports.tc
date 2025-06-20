@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-046_Verification of the presence of the approve option in the non-assigned reports</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>9b22b2c6-6c7d-4696-9929-d66d69a7458d</testCaseGuid>
-</TestCaseEntity>

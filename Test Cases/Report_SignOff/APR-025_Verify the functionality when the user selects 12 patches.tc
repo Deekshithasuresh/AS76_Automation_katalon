@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-025_Verify the functionality when the user selects 12 patches</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>826ba20f-f508-438f-be6f-73db9b0c1c63</testCaseGuid>
-</TestCaseEntity>

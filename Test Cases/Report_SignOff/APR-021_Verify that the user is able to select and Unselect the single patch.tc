@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-021_Verify that the user is able to select and Unselect the single patch</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>02848a71-0c1b-4ec4-bbc7-c79df24849f0</testCaseGuid>
-</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-023_Vrify that The order of patches in the report matches the order in which they were selected</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>a2d038ad-e718-4e63-b8b3-501a80858f0c</testCaseGuid>
-</TestCaseEntity>

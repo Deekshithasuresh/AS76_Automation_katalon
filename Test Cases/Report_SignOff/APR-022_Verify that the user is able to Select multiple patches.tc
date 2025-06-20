@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-022_Verify that the user is able to Select multiple patches</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>afb8c250-a756-479a-9748-a2ac21c81504</testCaseGuid>
-</TestCaseEntity>

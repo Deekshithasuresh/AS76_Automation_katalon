@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>APR-076_Verify the user is able to deselect the selected checkoxes if the cells are reclassified before</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>b5fd5eae-cdbe-4d73-93ae-98f130fcbe94</testCaseGuid>
-</TestCaseEntity>

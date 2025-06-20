@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify the how many patches are present in a row for WBC cells for the resolutions</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>3dffdef4-6b53-4aff-8df9-41dbde0c2851</testCaseGuid>
-</TestCaseEntity>

@@ -9,9 +9,13 @@
    <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>ENTERPRISE</modifiedEdition>
-   <modifiedVersion>10.2.0</modifiedVersion>
+   <modifiedVersion>10.2.2</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/sigtupleitadmin/Downloads/AS76_Automation_katalon-main 3/AS76.prj</projectFileLocation>
+<<<<<<< HEAD
+   <projectFileLocation>/Users/uthara/Katalon Studio/AS76/AS76.prj</projectFileLocation>
+=======
+   <projectFileLocation>/Users/manjunathcg/Documents/github/AS76_Automation_katalon/AS76.prj</projectFileLocation>
+>>>>>>> 14fb8eb4dcb8ab09a2c0c3471b6fba42fd965d30
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

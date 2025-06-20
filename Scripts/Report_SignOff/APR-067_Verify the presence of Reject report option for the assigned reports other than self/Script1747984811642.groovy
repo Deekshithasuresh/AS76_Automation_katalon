@@ -6,7 +6,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 // assign the report to someone else
 CustomKeywords.'generic.custumFunctions.login'()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh')
 
 // Define the TestObject for the "Reject report" button
 TestObject rejectButton = new TestObject("RejectButton")

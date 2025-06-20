@@ -21,7 +21,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
 
-WebUI.setText(findTestObject('Object Repository/Report-Signoff/input_username_loginId'), 'santosh')
+WebUI.setText(findTestObject('Object Repository/Report-Signoff/input_username_loginId'), 'manju')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Report-Signoff/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 
