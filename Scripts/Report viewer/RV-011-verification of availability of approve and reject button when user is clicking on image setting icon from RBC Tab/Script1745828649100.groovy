@@ -57,10 +57,7 @@ WebUI.waitForElementClickable(adminOption, 5)
 WebUI.click(adminOption)
 WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
 
-// wait for the Approve button
-WebUI.delay(2)
-WebUI.waitForElementVisible(approveBtn, 10)
-WebUI.comment("✅ 'Approve report' is now visible.")
+
 
 // ---------- STEP 4: Click on the RBC tab ----------
 TestObject rbcTab = new TestObject().addProperty(

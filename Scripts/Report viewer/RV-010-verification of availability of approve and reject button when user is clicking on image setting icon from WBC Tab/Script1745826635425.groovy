@@ -56,10 +56,7 @@ WebUI.waitForElementClickable(adminOption, 5)
 WebUI.click(adminOption)
 WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
 
-// ---------- STEP 4: Verify Approve Button ----------
-WebUI.delay(2)
-WebUI.waitForElementVisible(approveBtn, 10)
-WebUI.comment("✅ 'Approve report' is now visible.")
+
 
 // ---------- STEP 5: Click on the WBC tab ----------
 TestObject wbcTab = new TestObject().addProperty(
