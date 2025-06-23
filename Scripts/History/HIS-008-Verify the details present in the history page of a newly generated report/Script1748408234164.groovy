@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.model.FailureHandling
@@ -19,17 +20,16 @@ WebUI.waitForElementPresent(
 	10
 )
 
-
 // ────────────────────────────────────────────────────────────────────
-// 2) OPEN FIRST “To be reviewed” REPORT (no scrolling)
+// 2) OPEN FIRST “To be reviewed” REPORT
 // ────────────────────────────────────────────────────────────────────
 TestObject toBeReviewedRow = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"(//tr[.//span[normalize-space(text())='To be reviewed']])[1]"
 )
-WebUI.waitForElementClickable(toBeReviewedRow, 10)
+WebUI.waitForElementVisible(toBeReviewedRow, 10)
+WebUI.scrollToElement(toBeReviewedRow, 5)
 WebUI.click(toBeReviewedRow)
-
 
 // ────────────────────────────────────────────────────────────────────
 // 3) OPEN KEBAB MENU & SELECT “History”
@@ -48,7 +48,6 @@ TestObject historyItem = new TestObject().addProperty(
 WebUI.waitForElementClickable(historyItem, 5)
 WebUI.click(historyItem)
 
-
 // ────────────────────────────────────────────────────────────────────
 // 4) VERIFY “No events to show” MESSAGE
 // ────────────────────────────────────────────────────────────────────
@@ -58,3 +57,4 @@ TestObject emptyMsg = new TestObject().addProperty(
 )
 WebUI.waitForElementVisible(emptyMsg, 5)
 WebUI.comment("Verified that the history panel shows: 'No events to show'.")
+

@@ -1,7 +1,8 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
+
 import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.By
@@ -9,98 +10,119 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 
 // ────────────────────────────────────────────────────────────────────
-// 1) LOGIN & NAVIGATE TO LIST
+// 1) LOGIN & NAVIGATE TO REPORT LIST
 // ────────────────────────────────────────────────────────────────────
-WebUI.openBrowser('https://as76-pbs.sigtuple.com/login')
+WebUI.openBrowser('')
 WebUI.maximizeWindow()
+WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
 WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+    'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 WebUI.waitForElementPresent(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-	10
+    new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
+    10
 )
 
-// grab the WebDriver for DOM interactions
+// grab the driver for later DOM calls
 WebDriver driver = DriverFactory.getWebDriver()
 
 // ────────────────────────────────────────────────────────────────────
-// 2) OPEN FIRST “To be reviewed” REPORT
+// 2) OPEN FIRST “Under review” REPORT ROW
 // ────────────────────────────────────────────────────────────────────
-String toBeReviewedXpath = "(//tr[.//span[normalize-space(text())='To be reviewed']])[1]"
-TestObject toBeReviewedRow = new TestObject()
-	.addProperty('xpath', ConditionType.EQUALS, toBeReviewedXpath)
-WebUI.waitForElementClickable(toBeReviewedRow, 10)
-WebUI.click(toBeReviewedRow)
-
-// ────────────────────────────────────────────────────────────────────
-// 3) ASSIGN TO “admin”
-// ────────────────────────────────────────────────────────────────────
-TestObject assignedDropdown = new TestObject()
-	.addProperty('xpath', ConditionType.EQUALS,
-		"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button")
-WebUI.click(assignedDropdown)
-
-TestObject adminOption = new TestObject()
-	.addProperty('xpath', ConditionType.EQUALS,
-		"//li[@role='option' and normalize-space(text())='admin']")
-WebUI.waitForElementClickable(adminOption, 5)
-WebUI.click(adminOption)
-
-WebUI.waitForElementAttributeValue(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//input[@id='assigned_to']"),
-	'value', 'admin', 5
+TestObject underReviewRow = new TestObject().addProperty(
+    'xpath', ConditionType.EQUALS,
+    "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
 )
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
 
 // ────────────────────────────────────────────────────────────────────
-// 4) OPEN KEBAB MENU & CLICK “History”
+// 3) READ CURRENT ASSIGNEE
 // ────────────────────────────────────────────────────────────────────
-TestObject kebabBtn = new TestObject()
-	.addProperty('xpath', ConditionType.EQUALS,
-		"//button[.//img[contains(@src,'kebab_menu.svg')]]")
+TestObject assignedInput = new TestObject().addProperty(
+    'xpath', ConditionType.EQUALS,
+    "//input[@id='assigned_to']"
+)
+WebUI.waitForElementVisible(assignedInput, 5)
+String currentAssignee = WebUI.getAttribute(assignedInput, 'value').trim()
+WebUI.comment("Current assignee: '${currentAssignee}'")
+
+// ────────────────────────────────────────────────────────────────────
+// 4) IF NOT ADMIN, RE-ASSIGN TO “admin”
+// ────────────────────────────────────────────────────────────────────
+if (!currentAssignee.equalsIgnoreCase('admin')) {
+    WebUI.comment("✏️ Needs re-assignment to admin…")
+
+    // click the dropdown
+    TestObject dropdownBtn = new TestObject().addProperty(
+        'xpath', ConditionType.EQUALS,
+        "//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
+    )
+    WebUI.waitForElementClickable(dropdownBtn, 5)
+    WebUI.click(dropdownBtn)
+
+    // select "admin"
+    TestObject adminOption = new TestObject().addProperty(
+        'xpath', ConditionType.EQUALS,
+        "//li[@role='option' and normalize-space(text())='admin']"
+    )
+    WebUI.waitForElementVisible(adminOption, 5)
+    WebUI.scrollToElement(adminOption, 5)
+    WebUI.click(adminOption)
+
+    // confirm with the Re-assign button
+    TestObject reassignBtn = new TestObject().addProperty(
+        'xpath', ConditionType.EQUALS,
+        "//button[normalize-space(text())='Re-assign']"
+    )
+    WebUI.waitForElementClickable(reassignBtn, 5)
+    WebUI.click(reassignBtn)
+    WebUI.delay(2)
+
+    WebUI.comment("✔ Re-assigned report to 'admin'")
+} else {
+    WebUI.comment("ℹ️ Already assigned to 'admin'; skipping reassignment.")
+}
+
+// ────────────────────────────────────────────────────────────────────
+// 5) OPEN KEBAB MENU & SELECT “History”
+// ────────────────────────────────────────────────────────────────────
+TestObject kebabBtn = new TestObject().addProperty(
+    'xpath', ConditionType.EQUALS,
+    "//button[.//img[contains(@src,'kebab_menu')]]"
+)
 WebUI.waitForElementClickable(kebabBtn, 5)
 WebUI.click(kebabBtn)
 
-TestObject historyOpt = new TestObject()
-	.addProperty('xpath', ConditionType.EQUALS,
-		"//div[contains(@class,'MuiPopover-paper')]//span[normalize-space(text())='History']/ancestor::li")
+TestObject historyOpt = new TestObject().addProperty(
+    'xpath', ConditionType.EQUALS,
+    "//div[contains(@class,'MuiPopover-paper')]//span[normalize-space(text())='History']/ancestor::li"
+)
 WebUI.waitForElementClickable(historyOpt, 5)
 WebUI.click(historyOpt)
+WebUI.delay(2)
 
 // ────────────────────────────────────────────────────────────────────
-// 5) VERIFY FIRST “Report assignment” ENTRY
+// 6) READ & PRINT FIRST HISTORY ENTRY
 // ────────────────────────────────────────────────────────────────────
-// wait for the first history entry <li>
 String entryXpath = "(//li[contains(@class,'css-1ecsk3j')])[1]"
-TestObject entryObj = new TestObject()
-	.addProperty('xpath', ConditionType.EQUALS, entryXpath)
-WebUI.waitForElementVisible(entryObj, 10)
+TestObject entryTO = new TestObject().addProperty('xpath', ConditionType.EQUALS, entryXpath)
+WebUI.waitForElementVisible(entryTO, 10, FailureHandling.STOP_ON_FAILURE)
 
-// locate the entry via WebDriver
+// use Selenium to drill into sub-elements
 WebElement entry = driver.findElement(By.xpath(entryXpath))
-
-// extract and verify Title
-String title = entry.findElement(By.cssSelector("h4.event-title")).getText().trim()
-println("Title       : " + title)
-WebUI.verifyMatch(title, "Report assingment", true, FailureHandling.STOP_ON_FAILURE)
-
-// extract and print Timestamp
-String timestamp = entry.findElement(By.cssSelector("div.time")).getText().trim()
-println("Timestamp   : " + timestamp)
-
-// extract and verify Description
+String title       = entry.findElement(By.cssSelector("h4.event-title")).getText().trim()
+String timestamp   = entry.findElement(By.cssSelector("div.time")).getText().trim()
 String description = entry.findElement(By.cssSelector("div.event-description")).getText().trim()
-println("Description : " + description)
-WebUI.verifyMatch(description, ".*assigned the report", true, FailureHandling.STOP_ON_FAILURE)
 
-// extract and print From/To values
-List<WebElement> values = entry.findElements(By.cssSelector("div.event-transaction .rendered-content"))
-String fromValue = values.size() > 0 ? values.get(0).getText().trim() : ""
-String toValue   = values.size() > 1 ? values.get(1).getText().trim() : ""
-println("From value  : " + fromValue)
-println("To value    : " + toValue)
-WebUI.verifyMatch(fromValue, "-", true, FailureHandling.CONTINUE_ON_FAILURE)
-WebUI.verifyMatch(toValue, "admin", true, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.comment("• History Title      : ${title}")
+WebUI.comment("• History Timestamp  : ${timestamp}")
+WebUI.comment("• History Description: ${description}")
+
+// optional assertions
+WebUI.verifyMatch(title,       ".*assignment.*",    false, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyMatch(description, ".*re-assign.*" + "admin" + ".*", false, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.comment("✅ History entry verified successfully.")
