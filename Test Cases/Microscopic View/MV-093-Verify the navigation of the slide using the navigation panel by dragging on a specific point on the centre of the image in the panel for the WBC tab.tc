@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>MV-093-Verify the navigation of the slide using the navigation panel by dragging on a specific point on the centre of the image in the panel for the WBC tab</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>8d687afd-989d-4440-98d9-9ee3af84e117</testCaseGuid>
-</TestCaseEntity>

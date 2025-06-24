@@ -1,50 +1,38 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.By
+import com.kms.katalon.core.model.FailureHandling
 
-// ──────────────────────────────────────────────────────────
-// STEP 1 – Login & open first “To be reviewed”/“Under review”
-// ──────────────────────────────────────────────────────────
+// 1) LOGIN
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.setText(
+	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
+	'adminuserr'
+)
+WebUI.setEncryptedText(
+	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA=='
+)
+WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-// fill credentials
-WebUI.setText(findTestObject('Object Repository/Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Object Repository/Report viewer/Page_PBS/input_password_loginPassword'),
-					   'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_Sign In'))
+// 2) VERIFY LANDING ON REPORT LIST
+TestObject pbsText = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//span[contains(text(),'PBS')]"
+)
+WebUI.waitForElementPresent(pbsText, 10)
 
-// wait for “PBS” header
-new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]").with {
-	WebUI.waitForElementPresent(it, 10)
-}
-
-// helper closure to click a status‐filter row if present
-def openFirstStatus = { String statusName ->
-	TestObject statusTO = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-		"//span[normalize-space()='$statusName']")
-	if (WebUI.waitForElementPresent(statusTO, 3, FailureHandling.OPTIONAL)) {
-		WebUI.scrollToElement(statusTO, 3)
-		WebUI.click(statusTO)
-		WebUI.comment("✔ Opened report with status ‘$statusName’")
-		return true
-	}
-	return false
-}
-
-// try “To be reviewed” first; if not found, try “Under review”
-if (!openFirstStatus('To be reviewed') && !openFirstStatus('Under review')) {
-	WebUI.comment("❌ No ‘To be reviewed’ or ‘Under review’ report found – aborting")
-	WebUI.closeBrowser()
-	return
-}
+// 3) OPEN FIRST “Under review” REPORT
+TestObject underReviewRow = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+)
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
 
 // ──────────────────────────────────────────────────────────
 // STEP 2 – Click “RBC” tab → Microscopic view icon

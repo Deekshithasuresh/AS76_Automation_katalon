@@ -1,98 +1,47 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.model.FailureHandling
 
-// ---------- STEP 1: Login ----------
+// 1) LOGIN
 WebUI.openBrowser('')
+WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Object Repository/Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Object Repository/Report viewer/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_Sign In'))
-
-// ---------- STEP 2: Verify landing on list reports page ----------
-WebUI.verifyElementPresent(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-	10
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(
+	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA=='
 )
+WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-// ---------- STEP 3: Pick & assign a report ----------
-TestObject statusToBeReviewed = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS, "//span[normalize-space()='To be reviewed']"
-)
-TestObject statusUnderReview = new TestObject().addProperty(
+// 2) VERIFY LANDING ON REPORT LIST
+TestObject pbsText = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//span[contains(@class,'reportStatusComponent_text') and normalize-space()='Under review']"
+	"//span[contains(text(),'PBS')]"
 )
-TestObject assignedDropdown = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-)
-TestObject assignedInput = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']"
-)
-TestObject adminOption = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//li[normalize-space(text())='admin']"
-)
-TestObject reassignButton = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//button[normalize-space()='Re-assign']"
-)
-TestObject approveBtn = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[normalize-space()='Approve report']/ancestor::button"
-)
+WebUI.waitForElementPresent(pbsText, 10)
 
-if (WebUI.waitForElementPresent(statusToBeReviewed, 3)) {
-	WebUI.scrollToElement(statusToBeReviewed, 5)
-	WebUI.click(statusToBeReviewed)
-	WebUI.click(assignedDropdown)
-	WebUI.waitForElementClickable(adminOption, 5)
-	WebUI.click(adminOption)
+// 3) OPEN FIRST “Under review” REPORT
+TestObject underReviewRow = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+)
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
 
-	WebUI.comment("Assigned a ‘To be reviewed’ report to admin.")
-} else if (WebUI.waitForElementPresent(statusUnderReview, 3)) {
-	WebUI.scrollToElement(statusUnderReview, 5)
-	WebUI.click(statusUnderReview)
-
-	// check current assignee
-	String currentAssignee = WebUI.getAttribute(assignedInput, 'value').trim()
-	if (currentAssignee != 'admin') {
-		// reassign only if not already admin
-		WebUI.click(assignedDropdown)
-		WebUI.waitForElementClickable(adminOption, 5)
-		WebUI.click(adminOption)
-		WebUI.waitForElementClickable(reassignButton, 5)
-		WebUI.click(reassignButton)
-		WebUI.comment("Re-assigned an ‘Under review’ report to admin.")
-	} else {
-		WebUI.comment("‘Under review’ report already assigned to admin—no reassignment needed.")
-	}
-} else {
-	WebUI.comment(" No report in ‘To be reviewed’ or ‘Under review’ status.")
-	WebUI.takeScreenshot()
-	WebUI.closeBrowser()
-	return
-}
-
-// wait for the Approve button
-WebUI.delay(2)
-WebUI.waitForElementVisible(approveBtn, 10)
-WebUI.comment("✅ 'Approve report' is now visible.")
-
-// ---------- STEP 9: Click on the WBC tab ----------
+// 4) CLICK ON THE WBC TAB
 TestObject wbcTab = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'cell-buttons cell-tab')]/span[normalize-space()='WBC']"
+	"//button[contains(@class,'cell-buttons cell-tab')]//span[normalize-space()='WBC']"
 )
 WebUI.waitForElementClickable(wbcTab, 10)
 WebUI.click(wbcTab)
-WebUI.comment('✔ WBC tab clicked')
-// ---------- STEP: Verify presence of Image Settings option ----------
+WebUI.comment("✔ WBC tab clicked")
+
+// 5) VERIFY PRESENCE OF IMAGE SETTINGS OPTION
 TestObject imageSettingsContainer = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//div[contains(@class,'patch-img-settings') and .//img[@class='image-settings' and @alt='image_setting']]"
@@ -100,7 +49,7 @@ TestObject imageSettingsContainer = new TestObject().addProperty(
 WebUI.waitForElementPresent(imageSettingsContainer, 10)
 WebUI.comment("✔ Image Settings option is present")
 
-// ---------- STEP: Click on Image Settings icon ----------
+// 6) CLICK ON IMAGE SETTINGS ICON
 TestObject imgSettingsIcon = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//div[contains(@class,'patch-img-settings')]//img[@class='image-settings' and @alt='image_setting']"
@@ -108,14 +57,14 @@ TestObject imgSettingsIcon = new TestObject().addProperty(
 WebUI.waitForElementClickable(imgSettingsIcon, 10)
 WebUI.click(imgSettingsIcon)
 
-// ---------- STEP: Wait for the popover container ----------
+// 7) WAIT FOR THE POPOVER CONTAINER
 TestObject popover = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//div[contains(@class,'MuiPopover-paper') and .//div[@class='img-utils-container']]"
 )
 WebUI.waitForElementVisible(popover, 10)
 
-// 1) SIZE: Medium should be active, Large should NOT be active
+// 8) VERIFY IMAGE SIZE SLIDER DEFAULTS
 TestObject mediumActive = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//div[@class='control-title' and normalize-space()='Image Size']" +
@@ -132,7 +81,6 @@ WebUI.verifyElementPresent(largeInactive, 5)
 
 // Helper closure to verify a parameter’s “0” display
 def verifyZeroValue = { String parameter ->
-	// e.g. parameter = "Brightness"
 	TestObject val = new TestObject().addProperty(
 		'xpath', ConditionType.EQUALS,
 		"//div[@class='control-title' and normalize-space()='$parameter']" +
@@ -142,22 +90,20 @@ def verifyZeroValue = { String parameter ->
 	WebUI.comment("✔ $parameter default = 0")
 }
 
-// 2) Brightness
+// 9) Brightness default
 verifyZeroValue('Brightness')
 
-// 3) Contrast
+// 10) Contrast default
 verifyZeroValue('Contrast')
 
-// 4) Hue
+// 11) Hue default
 verifyZeroValue('Hue')
 
-// 5) saturation
-// scroll a little to bring it into view
+// 12) Saturation default (scroll into view first)
 WebUI.scrollToElement(new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//div[@class='control-title' and normalize-space()='Hue']"
 ), 1)
-
 verifyZeroValue('saturation')
 
-WebUI.comment("✅ All Image-settings defaults are correct.")
+WebUI.comment("✅ All Image Settings defaults are correct.")

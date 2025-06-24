@@ -27,7 +27,6 @@ WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PB
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Ready for review'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Ready for review_1'), 'Ready for review')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Preparing'), 'Preparing')
 

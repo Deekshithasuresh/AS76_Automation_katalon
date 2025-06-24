@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[6]</value>
+         <value>//span[(text() = 'Approve report' or . = 'Approve report')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>53b37704-6264-41de-8296-c951470df9fb</webElementGuid>
+      <webElementGuid>e96f67d9-89b0-427e-a602-42bfaa3c3ea0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary backtoReportBtn css-1lfr6uj</value>
-      <webElementGuid>7b7e09e4-06ff-4f98-8204-8ccf19d08d6f</webElementGuid>
+      <webElementGuid>c4f0dabb-4135-4551-bd32-dabbcad84912</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>3efbdf95-b578-4e04-859b-079f847c7cf9</webElementGuid>
+      <webElementGuid>1de5dc4c-a1a7-4d77-a02c-cf421c53a625</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>4f64e7de-fcbc-4d7a-bdb3-9c56881637a4</webElementGuid>
+      <webElementGuid>2a23627c-2c83-42ad-8175-3d8136dcb34b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Approve report</value>
-      <webElementGuid>5be29b46-5c26-48f0-b1a2-487e1f1843b6</webElementGuid>
+      <webElementGuid>ecc73ae6-ce6b-4d1f-b1aa-bb916b55c9e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[@class=&quot;dx-device-desktop dx-device-generic&quot;]/div[@class=&quot;MuiModal-root css-8ndowl&quot;]/div[@class=&quot;css-dbndpz&quot;]/div[@class=&quot;modal-actions&quot;]/button[@class=&quot;MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary backtoReportBtn css-1lfr6uj&quot;]</value>
-      <webElementGuid>805a6ae8-6fb2-4dfe-bb17-b74b29ef5cd1</webElementGuid>
+      <webElementGuid>65fe6c9d-5417-4211-9468-c944d8921e60</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[6]</value>
-      <webElementGuid>c1f6a322-6821-4bf6-b73f-a367b85b5ad1</webElementGuid>
+      <webElementGuid>fffd7ebe-b282-4790-ba1a-d199a8857d0d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/following::button[1]</value>
-      <webElementGuid>7e42f70a-1f3c-4098-b42c-1340de7f451c</webElementGuid>
+      <webElementGuid>587f4784-0bdf-4e05-80aa-e485373be1df</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Approve the report without supporting images?'])[1]/following::button[2]</value>
-      <webElementGuid>4e6c86eb-633c-4b1b-b5c0-34d1e80d9bbe</webElementGuid>
+      <webElementGuid>73268e37-74b4-42e3-8f4c-bf8d10b171ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/button[2]</value>
-      <webElementGuid>c97949f1-2a2f-4d0f-953f-42090a98d67b</webElementGuid>
+      <webElementGuid>6848c01d-9a3d-4ee5-abe4-4be72ea12dca</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Approve report' or . = 'Approve report')]</value>
-      <webElementGuid>119549ca-1bd4-45d5-a704-7aba37cd21a8</webElementGuid>
+      <webElementGuid>8110dacd-20c3-4f22-bdb0-a7dd47fde440</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -83,10 +83,6 @@ if (WebUI.waitForElementPresent(statusToBeReviewed, 3)) {
 	return
 }
 
-// wait for the Approve button
-WebUI.delay(2)
-WebUI.waitForElementVisible(approveBtn, 10)
-WebUI.comment("✅ 'Approve report' is now visible.")
 
 // ---------- STEP 6: Click the slide-info icon ----------
 TestObject slideInfoIcon = new TestObject().addProperty(

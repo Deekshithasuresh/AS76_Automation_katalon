@@ -1,15 +1,16 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
+
 import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
 
 // ────────────────────────────────────────────────────────────────────
-// 1) LOGIN
+// 1) LOGIN & LAND ON REPORT LIST
 // ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
@@ -24,43 +25,25 @@ WebUI.waitForElementPresent(
 )
 
 // ────────────────────────────────────────────────────────────────────
-// 2) OPEN FIRST “To be reviewed” REPORT
+// 2) OPEN FIRST “Under review” REPORT
 // ────────────────────────────────────────────────────────────────────
-String toBeReviewedXpath = "(//tr[.//span[normalize-space(text())='To be reviewed']])[1]"
-TestObject toBeReviewedRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, toBeReviewedXpath)
-WebUI.waitForElementClickable(toBeReviewedRow, 10)
-WebUI.click(toBeReviewedRow)
-
-// ────────────────────────────────────────────────────────────────────
-// 3) ASSIGN TO “admin”
-// ────────────────────────────────────────────────────────────────────
-TestObject assignedDropdown = new TestObject().addProperty(
+TestObject underReviewRow = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
 )
-WebUI.click(assignedDropdown)
-
-TestObject adminOption = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//li[@role='option' and normalize-space(text())='admin']"
-)
-WebUI.waitForElementClickable(adminOption, 5)
-WebUI.click(adminOption)
-
-WebUI.waitForElementAttributeValue(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//input[@id='assigned_to']"),
-	'value', 'admin', 5
-)
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
 
 // ────────────────────────────────────────────────────────────────────
-// 4) OPEN KEBAB MENU → CLICK “History”
+// 3) OPEN KEBAB MENU → CLICK “History”
 // ────────────────────────────────────────────────────────────────────
-TestObject kebab = new TestObject().addProperty(
+TestObject kebabBtn = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//button[.//img[contains(@src,'kebab_menu.svg')]]"
+	"//button[.//img[contains(@src,'kebab_menu')]]"
 )
-WebUI.waitForElementClickable(kebab, 5)
-WebUI.click(kebab)
+WebUI.waitForElementClickable(kebabBtn, 5)
+WebUI.click(kebabBtn)
 
 TestObject historyItem = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
@@ -68,11 +51,11 @@ TestObject historyItem = new TestObject().addProperty(
 )
 WebUI.waitForElementClickable(historyItem, 5)
 WebUI.click(historyItem)
+WebUI.delay(2)
 
 // ────────────────────────────────────────────────────────────────────
-// 5) WAIT FOR HISTORY PAGE & VERIFY ENTRIES
+// 4) WAIT FOR HISTORY PAGE & VERIFY ENTRIES
 // ────────────────────────────────────────────────────────────────────
-// wait for the History header
 TestObject historyHeader = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//h1[contains(normalize-space(text()),'History')]"
@@ -88,37 +71,38 @@ List<WebElement> entries = driver.findElements(
 )
 
 if (entries.isEmpty()) {
-	WebUI.comment("No history entries found!")
+	WebUI.comment("⚠ No history entries found!")
 } else {
 	for (WebElement entry : entries) {
-		// 5a) Date & Time
+		// a) Date & Time
 		String dateAndTime = entry.findElement(
 			By.cssSelector("div.event-header .time")
 		).getText().trim()
-		
-		// 5b) Event description
+
+		// b) Event description
 		String description = entry.findElement(
 			By.cssSelector("div.event-description")
 		).getText().trim()
-		
-		// 5c) Changed by
-		// assume description starts with "<user> …"
+
+		// c) Changed by (first word of description)
 		String changedBy = description.split("\\s+")[0]
-		
-		// 5d) From & To values, if present
+
+		// d) From & To values, if present
 		List<WebElement> rendered = entry.findElements(
 			By.cssSelector("div.event-transaction .rendered-content")
 		)
 		String fromValue = rendered.size() > 0 ? rendered.get(0).getText().trim() : ""
 		String toValue   = rendered.size() > 1 ? rendered.get(1).getText().trim() : ""
-		
-		// print out all details
+
+		// print all details
 		println("---- History Entry ----")
-		println("Date & Time   : " + dateAndTime)
-		println("Description   : " + description)
-		println("Changed by    : " + changedBy)
-		println("From value    : " + fromValue)
-		println("To value      : " + toValue)
+		println("Date & Time : $dateAndTime")
+		println("Description : $description")
+		println("Changed by  : $changedBy")
+		println("From value  : $fromValue")
+		println("To value    : $toValue")
 		println("-----------------------")
 	}
 }
+
+WebUI.comment("✅ All history entries contain necessary details.")

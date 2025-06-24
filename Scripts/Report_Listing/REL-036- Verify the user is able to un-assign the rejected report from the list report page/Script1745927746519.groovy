@@ -27,4 +27,3 @@ WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PB
 
 CustomKeywords.'generic.custumFunctions.unassignOrCancel'('Rejected', false)
 
-WebUI.closeBrowser()

@@ -3,29 +3,35 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 
-// ---------- STEP 1: Login ----------
+// 1) LOGIN
 WebUI.openBrowser('')
+WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Object Repository/Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Object Repository/Report viewer/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_Sign In'))
+WebUI.setText(
+	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
+	'adminuserr'
+)
+WebUI.setEncryptedText(
+	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA=='
+)
+WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-// ---------- STEP 2: Open a “To be reviewed” or “Under review” report ----------
-TestObject toBeReviewed2 = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//span[normalize-space()='To be reviewed']"
+// 2) VERIFY LANDING ON REPORT LIST
+TestObject pbsText = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//span[contains(text(),'PBS')]"
 )
-TestObject underReview2 = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//span[contains(@class,'reportStatusComponent_text') and normalize-space()='Under review']"
+WebUI.waitForElementPresent(pbsText, 10)
+
+// 3) OPEN FIRST “Under review” REPORT
+TestObject underReviewRow = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
 )
-if (WebUI.waitForElementPresent(toBeReviewed2, 5)) {
-    WebUI.scrollToElement(toBeReviewed2, 5)
-    WebUI.click(toBeReviewed2)
-} else {
-    WebUI.scrollToElement(underReview2, 5)
-    WebUI.click(underReview2)
-}
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
 
 // ---------- STEP 3: Click on the Platelets tab ----------
 TestObject plateletsTab = new TestObject().addProperty(

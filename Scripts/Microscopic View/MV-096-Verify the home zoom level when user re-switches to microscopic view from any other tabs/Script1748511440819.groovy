@@ -6,36 +6,35 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebDriver
 
-// ─── STEP 1: LOGIN ──────────────────────────────────────────────────
+// 1) LOGIN
 WebUI.openBrowser('')
+WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Object Repository/Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Object Repository/Report viewer/Page_PBS/input_password_loginPassword'),
-					  'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_Sign In'))
+WebUI.setText(
+	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
+	'adminuserr'
+)
+WebUI.setEncryptedText(
+	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA=='
+)
+WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-// ─── STEP 2: WAIT FOR REPORT LIST ─────────────────────────────────
-TestObject listReady = new TestObject().addProperty(
+// 2) VERIFY LANDING ON REPORT LIST
+TestObject pbsText = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//span[contains(text(),'PBS')]"
 )
-WebUI.waitForElementPresent(listReady, 10)
+WebUI.waitForElementPresent(pbsText, 10)
 
-// ─── STEP 3: PICK & OPEN A REPORT ─────────────────────────────────
-TestObject toBeReviewed = new TestObject().addProperty(
+// 3) OPEN FIRST “Under review” REPORT
+TestObject underReviewRow = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//span[normalize-space()='To be reviewed']"
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
 )
-TestObject underReview = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[contains(@class,'reportStatusComponent_text') and normalize-space()='Under review']"
-)
-if (WebUI.waitForElementPresent(toBeReviewed, 5)) {
-	WebUI.scrollToElement(toBeReviewed, 5)
-	WebUI.click(toBeReviewed)
-} else {
-	WebUI.click(underReview)
-}
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
 
 // ─── STEP 4: SWITCH TO WBC → MICROSCOPIC VIEW ─────────────────────
 TestObject wbcTab = new TestObject().addProperty(

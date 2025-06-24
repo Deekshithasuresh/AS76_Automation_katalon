@@ -9,35 +9,35 @@ import org.openqa.selenium.JavascriptExecutor
 import java.nio.file.Files
 import java.nio.file.Paths
 
-// ────────────────────────────────────────────────────────────────────
-// STEP 1: Login to PBS
+// 1) LOGIN
 WebUI.openBrowser('')
+WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setText(
+	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
+	'adminuserr'
+)
 WebUI.setEncryptedText(
 	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
 	'JBaPNhID5RC7zcsLVwaWIA=='
 )
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-// ────────────────────────────────────────────────────────────────────
-// STEP 2: Open any “To be reviewed” or “Under review” report
-TestObject toBe = new TestObject().addProperty(
+// 2) VERIFY LANDING ON REPORT LIST
+TestObject pbsText = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//span[normalize-space()='To be reviewed']"
+	"//span[contains(text(),'PBS')]"
 )
-TestObject under = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[contains(@class,'reportStatusComponent_text') and normalize-space()='Under review']"
-)
+WebUI.waitForElementPresent(pbsText, 10)
 
-if (WebUI.waitForElementPresent(toBe, 5)) {
-	WebUI.scrollToElement(toBe, 5)
-	WebUI.click(toBe)
-} else {
-	WebUI.scrollToElement(under, 5)
-	WebUI.click(under)
-}
+// 3) OPEN FIRST “Under review” REPORT
+TestObject underReviewRow = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+)
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
 
 // ────────────────────────────────────────────────────────────────────
 // STEP 3: Switch to WBC tab

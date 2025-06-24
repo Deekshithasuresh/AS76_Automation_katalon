@@ -3,6 +3,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.util.KeywordUtil
 
 // ────────────────────────────────────────────────────────────────────
 // 1) LOGIN
@@ -24,63 +25,57 @@ WebUI.verifyElementPresent(
 )
 
 // ────────────────────────────────────────────────────────────────────
-// 3) PICK & ASSIGN A REPORT
+// 3) FIND THE FIRST “Under review” ROW AND CLICK IT
 // ────────────────────────────────────────────────────────────────────
-TestObject statusToBeReviewed = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//tr[.//span[normalize-space(text())='To be reviewed']][1]"
+TestObject statusUnderReview = new TestObject('statusUnderReview').addProperty(
+	'xpath',
+	ConditionType.EQUALS,
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
 )
-TestObject statusUnderReview = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']][1]"
-)
-TestObject assignedDropdown = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-)
-TestObject assignedInput = new TestObject().addProperty(
+
+// if no “Under review” row, fail
+if (!WebUI.waitForElementPresent(statusUnderReview, 5)) {
+	KeywordUtil.markFailedAndStop("No ‘Under review’ report found on the page")
+}
+
+// bring it into view & open
+WebUI.scrollToElement(statusUnderReview, 5)
+WebUI.click(statusUnderReview)
+
+// ────────────────────────────────────────────────────────────────────
+// 4) CHECK ASSIGNEE & (RE-)ASSIGN IF NEEDED
+// ────────────────────────────────────────────────────────────────────
+TestObject assignedInput    = new TestObject('assignedInput').addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//input[@id='assigned_to']"
 )
-TestObject adminOption = new TestObject().addProperty(
+TestObject assignedDropdown = new TestObject('assignedDropdown').addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
+)
+TestObject adminOption      = new TestObject('adminOption').addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//li[@role='option' and normalize-space(text())='admin']"
 )
-TestObject reassignButton = new TestObject().addProperty(
+TestObject reassignButton   = new TestObject('reassignBtn').addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//button[normalize-space(text())='Re-assign']"
 )
 
-if (WebUI.waitForElementPresent(statusToBeReviewed, 3)) {
-	WebUI.scrollToElement(statusToBeReviewed, 5)
-	WebUI.click(statusToBeReviewed)
+String currentAssignee = WebUI.getAttribute(assignedInput, 'value').trim()
+
+if (currentAssignee != 'admin') {
 	WebUI.click(assignedDropdown)
 	WebUI.waitForElementClickable(adminOption, 5)
 	WebUI.click(adminOption)
-	WebUI.comment("Assigned a ‘To be reviewed’ report to admin.")
-	
-} else if (WebUI.waitForElementPresent(statusUnderReview, 3)) {
-	WebUI.scrollToElement(statusUnderReview, 5)
-	WebUI.click(statusUnderReview)
-	
-	// check current assignee
-	String currentAssignee = WebUI.getAttribute(assignedInput, 'value').trim()
-	if (currentAssignee != 'admin') {
-		WebUI.click(assignedDropdown)
-		WebUI.waitForElementClickable(adminOption, 5)
-		WebUI.click(adminOption)
-		WebUI.waitForElementClickable(reassignButton, 5)
-		WebUI.click(reassignButton)
-		WebUI.comment("Re-assigned an ‘Under review’ report to admin.")
-	} else {
-		WebUI.comment("‘Under review’ report already assigned to admin—no reassignment needed.")
-	}
-	
+	WebUI.waitForElementClickable(reassignButton, 5)
+	WebUI.click(reassignButton)
+	WebUI.comment("Re-assigned the ‘Under review’ report to admin.")
 } else {
-	WebUI.comment("No report in ‘To be reviewed’ or ‘Under review’ status.")
-	WebUI.takeScreenshot()
-	return
+	WebUI.comment("‘Under review’ report is already assigned to admin. Opened for review.")
+	// if you have a separate “Open” or “View” button, define its xpath here and click it
 }
+
 
 // ────────────────────────────────────────────────────────────────────
 // 4) CLICK THE “Reject report” BUTTON

@@ -108,6 +108,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/in
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In'))
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'))
+WebUI.click(findTestObject('Commontools/Macrocytes_cell_name'), FailureHandling.STOP_ON_FAILURE)
 
 WebDriver driver = DriverFactory.getWebDriver()
 Actions actions = new Actions(driver)
