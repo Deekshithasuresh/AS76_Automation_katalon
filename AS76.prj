@@ -11,11 +11,7 @@
    <modifiedEdition>ENTERPRISE</modifiedEdition>
    <modifiedVersion>10.2.2</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-<<<<<<< HEAD
-   <projectFileLocation>/Users/deekshithas/Documents/Github/AS76_automation/AS76.prj</projectFileLocation>
-=======
    <projectFileLocation>/Users/manjunathcg/Documents/github/AS76_Automation_katalon/AS76.prj</projectFileLocation>
->>>>>>> e20a5c866a08edcceaf62bd5a51f3fca3961a5d3
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
