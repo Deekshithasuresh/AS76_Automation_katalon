@@ -111,7 +111,6 @@ WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PB
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'(randomUsername, true)
 
-WebUI.refresh()
 
 String SlideIDXpath = '/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/span[1]'
 
@@ -170,14 +169,19 @@ WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_PBS/div_Temp
 
 WebUI.delay(3)
 
-//WebUI.verifyElementVisible(findTestObject('Object Repository/WBC_m/Page_PBS/span_Approve report'))
-//WebUI.click(findTestObject('Object Repository/WBC_m/Page_PBS/span_Approve report'))
-TestObject rejectButton = findTestObject('Object Repository/Report_Listing/Page_PBS/button_Reject report_mainpage')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'), 'WBC')
+
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
+
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Reject report_mainpage'))
+
+
+//TestObject rejectButton = findTestObject('Object Repository/Report_Listing/Page_PBS/button_Reject report_mainpage')
 
 //JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getWebDriver()
-js.executeScript('arguments[0].click();', rejectButton)
+//js.executeScript('arguments[0].click();', rejectButton)
 
-WebElement rjElement = WebUiCommonHelper.findWebElement(rejectButton, 10)
+//WebElement rjElement = WebUiCommonHelper.findWebElement(rejectButton, 10)
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Reject report_last'))
 
@@ -213,8 +217,8 @@ WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Consol
 
 Robot robot = new Robot()
 
-robot.delay(500 // small delay to ensure focus is set
-    )
+robot.delay(500) // small delay to ensure focus is set
+	
 
 robot.keyPress(KeyEvent.VK_ENTER)
 
