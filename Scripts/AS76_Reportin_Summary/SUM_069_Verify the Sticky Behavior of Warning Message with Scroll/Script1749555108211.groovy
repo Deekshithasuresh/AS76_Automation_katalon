@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -16,11 +17,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 // ✅ Add these imports:
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.JavascriptExecutor
 import com.kms.katalon.core.webui.driver.DriverFactory
 
 
@@ -41,8 +45,9 @@ findTestObject('Object Repository/Summary/td_SIG013')
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_WBC'))
 
 WebDriver driver = DriverFactory.getWebDriver()
+JavascriptExecutor js = (DriverFactory.getWebDriver() as JavascriptExecutor)
 
-JavascriptExecutor js = ((driver) as JavascriptExecutor)
+//JavascriptExecutor js = ((driver) as JavascriptExecutor)
 
 // Step 1: Check WBC Total
 WebElement totalRow = driver.findElement(By.xpath('//td[normalize-space()=\'Total\']/following-sibling::td[1]'))

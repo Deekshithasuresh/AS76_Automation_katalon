@@ -67,14 +67,14 @@ CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 WebUI.waitForElementVisible(findTestObject('Object Repository/Summary/Page_PBS (1)/button_Summary'), 10)
 
 // Extract Summary total as string and convert to float
-String summaryTotalStr = WebUI.getText(findTestObject('Object Repository/Summary/Page_PBS (1)/td_100.0'))
+String summaryTotalStr = WebUI.getText(findTestObject('Object Repository/Summary/Page_PBS (1)/td_100.0_summ'))
 Float summaryTotal = summaryTotalStr.toFloat()
 
 // Go to WBC tab
 WebUI.click(findTestObject('Object Repository/Summary/span_WBC'))
 
 // Extract WBC total as string and convert to float
-String wbcTotalStr = WebUI.getText(findTestObject('Object Repository/Summary/Page_PBS (1)/td_100'))
+String wbcTotalStr = WebUI.getText(findTestObject('Object Repository/Summary/Page_PBS (1)/td_100_wbc'))
 Float wbcTotal = wbcTotalStr.toFloat()
 
 // Compare both values and log the result

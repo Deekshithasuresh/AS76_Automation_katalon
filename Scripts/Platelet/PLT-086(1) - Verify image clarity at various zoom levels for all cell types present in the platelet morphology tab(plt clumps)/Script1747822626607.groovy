@@ -1,5 +1,6 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+
 import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
 
@@ -8,6 +9,8 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 import imageutils.BlurChecker
+
+
 
 WebUI.openBrowser('')
 

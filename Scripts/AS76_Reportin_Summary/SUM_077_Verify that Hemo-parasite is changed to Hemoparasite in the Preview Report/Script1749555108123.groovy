@@ -66,6 +66,11 @@ def verifyHemoparasiteTextInPreview() {
 	WebUI.verifyElementText(findTestObject('Object Repository/Summary/button_Approve report'), 'Approve report')
 	WebUI.click(findTestObject('Object Repository/Summary/button_Approve report'))
 	
+	WebUI.verifyElementText(findTestObject('Object Repository/Summary/confirm_button'),'Confirm')
+	WebUI.click(findTestObject('Object Repository/Summary/confirm_button'))
+	
+	
+	
 	// Now we should be on the preview page, verify and get the text
 	String previewText = ""
 	try {
@@ -76,9 +81,6 @@ def verifyHemoparasiteTextInPreview() {
 		// Compare with expected text
 		if (previewText == expectedText) {
 			println("PASS: Preview shows '" + expectedText + "' as expected")
-			// Continue with the test flow - click Confirm
-			WebUI.verifyElementText(findTestObject('Object Repository/Summary/button_Confirm'), 'Confirm')
-			WebUI.click(findTestObject('Object Repository/Summary/button_Confirm'))
 			return true
 		} else {
 			String failMsg = "FAIL: Text mismatch - Found: '" + previewText +
