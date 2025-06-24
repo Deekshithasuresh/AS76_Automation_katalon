@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>td_100.0</name>
+   <name>td_100_wbc</name>
    <tag></tag>
-   <elementGuidId>e28457df-9cbc-4005-b309-a7a8d57470ee</elementGuidId>
+   <elementGuidId>a005a833-9b18-4d4a-b841-58f66f5c17b7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>td.total-text.selected</value>
+         <value>tr.report-highlights > td:nth-of-type(3)</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div[2]/div/table/tr[18]/td[2]</value>
+         <value>//td[text()='Total']/following-sibling::td[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=cell[name=&quot;100.0&quot;i]</value>
+         <value>internal:role=cell[name=&quot;100&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,55 +29,47 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>2bed89e5-7043-44b5-be94-ff4162d53656</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>total-text selected</value>
-      <webElementGuid>a19636d6-b172-49b8-bf3c-4b66ae16e727</webElementGuid>
+      <webElementGuid>0a82c4cc-4a87-40ec-ba42-912c08c536f2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>100.0</value>
-      <webElementGuid>5922550a-e3cb-4994-9c55-a980d77829f0</webElementGuid>
+      <value>100</value>
+      <webElementGuid>25d4812f-f56a-4315-a115-5f6c45721eae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2&quot;]/div[@class=&quot;reportSummary_pane-flex__pDBLO&quot;]/div[@class=&quot;css-vtkee7&quot;]/table[@class=&quot;wbc-summary-correction-table&quot;]/tr[@class=&quot;table-border-bottom&quot;]/td[@class=&quot;total-text selected&quot;]</value>
-      <webElementGuid>d8b0698e-84c1-4e48-a11c-b2f73df41951</webElementGuid>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;box MuiBox-root css-i9gxme&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2.8 grid-left wbc css-lufqp2&quot;]/div[@class=&quot;cell-table-tab&quot;]/table[@class=&quot;theame-table&quot;]/tbody[1]/tr[@class=&quot;report-highlights&quot;]/td[3]</value>
+      <webElementGuid>cecba1de-dac0-4203-81b9-40cf2fdca2e6</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div[2]/div/table/tr[18]/td[2]</value>
-      <webElementGuid>82db8150-18c2-43d6-9dce-86d50ae0e4e5</webElementGuid>
+      <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/table/tbody/tr[27]/td[3]</value>
+      <webElementGuid>f3e7d706-d8f2-415e-8f28-1dfe87b177ae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total'])[1]/following::td[1]</value>
-      <webElementGuid>a54d1ef8-f602-4b0d-b96f-a6d5953982f4</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total'])[1]/following::td[2]</value>
+      <webElementGuid>8e1d995c-6b02-4057-ae49-56fed4a03b72</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[9]/following::td[2]</value>
-      <webElementGuid>ff635b05-71b2-4cc3-bdb0-3a61e3cff7ca</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[36]/following::td[3]</value>
+      <webElementGuid>83934ed7-dc1d-41d0-856e-2f7a1aca799a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,46 +77,46 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Non-WBC'])[1]/preceding::td[1]</value>
-      <webElementGuid>b9035960-c04c-4e16-9427-f8706369e467</webElementGuid>
+      <webElementGuid>9f1d5357-6ea2-47d0-9dab-fc9f2ebc9e76</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='NRBC'])[1]/preceding::td[1]</value>
-      <webElementGuid>be60e447-24ed-4759-9d03-4c0fc68e8a40</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NRBC'])[1]/preceding::td[4]</value>
+      <webElementGuid>f5b2fba6-8a12-46d7-ba84-164e9edabce7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='100.0']/parent::*</value>
-      <webElementGuid>ddd01f20-af31-47a7-959d-af89ec89634d</webElementGuid>
+      <value>//*/text()[normalize-space(.)='100']/parent::*</value>
+      <webElementGuid>d7707bd0-335f-49ff-992e-2733353df846</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//tr[18]/td[2]</value>
-      <webElementGuid>41d4a5e2-7e90-4560-a920-3f995a2fa6e5</webElementGuid>
+      <value>//tr[27]/td[3]</value>
+      <webElementGuid>f44c86c1-27cd-40ed-8168-8224fb9e293f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '100.0' or . = '100.0')]</value>
-      <webElementGuid>5b451fb7-3d15-41db-b4ce-4549ef7ffe41</webElementGuid>
+      <value>//td[(text() = '100' or . = '100')]</value>
+      <webElementGuid>82a0dd60-a258-4834-bfe4-0eb5692c1606</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[11]/following::td[2]</value>
-      <webElementGuid>efe8ac28-7b95-46b6-82fd-3b4e6458d1ca</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[44]/following::td[3]</value>
+      <webElementGuid>d43abff2-e68d-4f7a-b2ff-c7d3c39a5914</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

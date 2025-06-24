@@ -29,10 +29,23 @@ WebUI.sendKeys(findTestObject('Object Repository/Summary/Page_PBS (1)/input_pass
 
 WebUI.maximizeWindow()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('deekshithaS')
+//CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('deekshithaS')
 
 
 //WebUI.click(findTestObject('Object Repository/Summary/Page_PBS (1)/td_SIG0015'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/img'), '')
+WebUI.verifyElementText(findTestObject('Object Repository/Summary/i_icon_summ_platelet'),0)
 
+
+
+// Verify if info button is present
+boolean isInfoButtonPresent = WebUI.verifyElementPresent(findTestObject('Object Repository/Summary/i_icon_summ_platelet'), 10, FailureHandling.OPTIONAL)
+
+// Print message about info button presence
+if (isInfoButtonPresent) {
+	WebUI.comment("INFO: The info button is present on the page")
+	println("INFO: The info button is present on the page")
+} else {
+	WebUI.comment("INFO: The info button is NOT present on the page")
+	println("INFO: The info button is NOT present on the page")
+}

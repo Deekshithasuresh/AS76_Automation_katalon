@@ -9,9 +9,9 @@
    <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>ENTERPRISE</modifiedEdition>
-   <modifiedVersion>10.2.0</modifiedVersion>
+   <modifiedVersion>10.2.2</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>/Users/sigtupleitadmin/Downloads/AS76_Automation_katalon-main 3/AS76.prj</projectFileLocation>
+   <projectFileLocation>/Users/deekshithas/Documents/Github/AS76_automation/AS76.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
