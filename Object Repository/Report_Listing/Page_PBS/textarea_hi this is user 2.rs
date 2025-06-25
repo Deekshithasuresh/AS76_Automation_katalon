@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[20]/following::textarea[1]</value>
+         <value>//textarea</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>textarea</value>
-      <webElementGuid>4ef35743-53aa-43f4-88dd-2e4395fe9e9b</webElementGuid>
+      <webElementGuid>6ad36f9c-6ace-482d-82d6-7507cbf56136</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Start writing</value>
-      <webElementGuid>9741167f-e719-49d5-8d06-6b5f9596c03b</webElementGuid>
+      <webElementGuid>b7ffcf70-3038-482e-a50b-5b6ab79a9efe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>class</name>
       <type>Main</type>
       <value>commentPopoverComponent_comment-text__-WWk7</value>
-      <webElementGuid>afb42aa0-260f-4956-b556-3d2e4e4d1efe</webElementGuid>
+      <webElementGuid>ede37915-9f88-4f30-b1d2-0a825a926a3a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>rows</name>
       <type>Main</type>
       <value>5</value>
-      <webElementGuid>321b7913-1328-4c8c-b9fd-84ae3a30ea8a</webElementGuid>
+      <webElementGuid>0ed189df-f5d3-4387-90f3-401d5e55d368</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>hi this is user 2</value>
-      <webElementGuid>07964f3e-4e0f-4df7-8eab-f7aa7a81a9f1</webElementGuid>
+      <webElementGuid>744922fa-0329-4a8b-b3ba-4f8985d6e6f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[@class=&quot;dx-device-desktop dx-device-generic&quot;]/div[@class=&quot;MuiPopover-root MuiModal-root css-jp7szo&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper css-1dmzujt&quot;]/div[@class=&quot;commentPopoverComponent_comment-container__wytwn&quot;]/textarea[@class=&quot;commentPopoverComponent_comment-text__-WWk7&quot;]</value>
-      <webElementGuid>ec9a1355-1e2f-44ee-9329-7277a690b5f6</webElementGuid>
+      <webElementGuid>d7affdd0-4fe0-422a-8c9f-6813ad59d015</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[20]/following::textarea[1]</value>
-      <webElementGuid>54ad2955-9569-44be-a7ea-9624d0fd3767</webElementGuid>
+      <webElementGuid>d8f7db41-27fd-4528-ae83-92d3217d07b6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Under review'])[15]/following::textarea[1]</value>
-      <webElementGuid>b66d3bfd-90e2-41a2-8779-705e72132099</webElementGuid>
+      <webElementGuid>5009dc0a-2801-434e-a9ba-05cce4d960f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='hi this is user 2']/parent::*</value>
-      <webElementGuid>6e12482c-b9e9-4416-b077-31bfd2236774</webElementGuid>
+      <webElementGuid>712a5381-9673-4dd3-8eaf-f4c4999af1ff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//textarea</value>
-      <webElementGuid>6fbc0d47-654a-4723-9f1a-b37f17240e64</webElementGuid>
+      <webElementGuid>e8676a37-3169-4ed6-bb49-b1c7470b8678</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//textarea[@placeholder = 'Start writing' and (text() = 'hi this is user 2' or . = 'hi this is user 2')]</value>
-      <webElementGuid>e61dea87-910d-4517-9e69-45dad3bbebf4</webElementGuid>
+      <webElementGuid>ff1b5415-7ea4-4e24-b2af-f40cc4152d92</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
