@@ -25,7 +25,8 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-import imageutils.blurChecker
+import imageUtils.blurChecker
+
 
 
 public class ZoomInOut {
