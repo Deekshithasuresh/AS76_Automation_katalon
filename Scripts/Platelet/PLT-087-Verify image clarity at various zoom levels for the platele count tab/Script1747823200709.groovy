@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -16,7 +17,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import imageutils.BlurChecker
+//import imageutils.BlurChecker
+import imageUtils.blurChecker
+
 
 WebUI.openBrowser('')
 
@@ -44,7 +47,7 @@ WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_zoom-in'
 
 WebUI.delay(5)
 
-BlurChecker checker = new BlurChecker()
+blurChecker checker = new blurChecker()
 // Option 1: Default canvas selector
 boolean isBlurry = checker.isCanvasImageBlurry()
 // Option 2: Custom canvas by ID
