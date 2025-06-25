@@ -27,8 +27,8 @@ WebUI.setEncryptedText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/i
 
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/button_Sign In'))
 
-WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/div_13-May-2025, 1127 AM (IST)'))
-
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
+ 
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/span_WBC'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/span_WBC'), 'WBC')

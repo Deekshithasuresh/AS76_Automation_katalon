@@ -31,4 +31,4 @@ CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/button_Summary'), 0)
 
-WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/td_Others'), 'Others')
+WebUI.verifyElementText(findTestObject('Object Repository/WBC_m/Page_PBS/other'), 'Others')

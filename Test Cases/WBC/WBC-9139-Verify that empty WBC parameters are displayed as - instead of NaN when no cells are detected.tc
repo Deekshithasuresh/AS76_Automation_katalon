@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>WBC-139-Verify that empty WBC parameters are displayed as - instead of NaN when no cells are detected</name>
+   <name>WBC-9139-Verify that empty WBC parameters are displayed as - instead of NaN when no cells are detected</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
