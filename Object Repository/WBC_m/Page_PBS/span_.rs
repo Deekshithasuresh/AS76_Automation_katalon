@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pbs-volumeViewport']/div/div[3]/div[5]/button/span</value>
+         <value>//span[(text() = '›' or . = '›')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>3244b4c4-14fc-4c72-8ce4-be6c3edb8387</webElementGuid>
+      <webElementGuid>d6aa5a5a-572d-48da-a2d6-63c754df610f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>›</value>
-      <webElementGuid>ed8e91e4-2824-4405-bca4-40c99733699a</webElementGuid>
+      <webElementGuid>bb9f21db-b879-443e-9355-edbf941cbe19</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pbs-volumeViewport&quot;)/div[@class=&quot;ol-viewport&quot;]/div[@class=&quot;ol-overlaycontainer-stopevent&quot;]/div[@class=&quot;ol-overviewmap ol-unselectable ol-control ol-collapsed&quot;]/button[1]/span[1]</value>
-      <webElementGuid>8227c142-c726-495e-841e-f6b2aa0d77eb</webElementGuid>
+      <webElementGuid>249e9092-54da-4c32-af9d-8bb1b0a016cf</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pbs-volumeViewport']/div/div[3]/div[5]/button/span</value>
-      <webElementGuid>670897c0-1fb1-4914-b7a6-72f4bc743f49</webElementGuid>
+      <webElementGuid>f5b0eeb7-d864-473b-b7cd-9690f4c244f3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='–'])[1]/following::span[1]</value>
-      <webElementGuid>c65b8b21-757d-4f72-a68c-c175c0c2bcb6</webElementGuid>
+      <webElementGuid>31ce252a-7ee5-4593-99f8-8f57387ceffc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='+'])[1]/following::span[1]</value>
-      <webElementGuid>a76be5b7-c34e-4808-992b-025a2169d4eb</webElementGuid>
+      <webElementGuid>4cc0be97-e818-4f7f-8aa3-a214b04f5da9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='›']/parent::*</value>
-      <webElementGuid>3b575a71-5418-4bff-bca0-1bff14e2592d</webElementGuid>
+      <webElementGuid>75804774-2029-40e9-a277-29a3abb2477d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/button/span</value>
-      <webElementGuid>ba0d5b95-0b42-4dfe-b216-7a83616b3219</webElementGuid>
+      <webElementGuid>ede3969d-cad6-4d74-b3cb-82f15c16e77a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,6 +93,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = '›' or . = '›')]</value>
-      <webElementGuid>521567bb-f84a-4f36-8de3-000bd8330492</webElementGuid>
+      <webElementGuid>d8103881-6357-4b47-9542-14f1cf44cbd3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

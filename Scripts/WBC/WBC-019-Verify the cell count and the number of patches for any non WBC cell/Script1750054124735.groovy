@@ -113,5 +113,7 @@ for(WebElement row:WBC_cellname_row)
 		
 	}
 	}
-	assert ((result.count)==(cell_count1)): "failed in assertion"
+	assert result.count == cell_count1 : "❌ Image count (${result.count}) does not match neutrophil count from table (${cell_count1})"
+	
+	//assert ((result.count)==(cell_count1)): "failed in assertion"
 

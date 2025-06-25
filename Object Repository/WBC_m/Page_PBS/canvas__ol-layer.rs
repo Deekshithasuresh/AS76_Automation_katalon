@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='pbs-volumeViewport']/div/div[3]/div[5]/div/div/div/canvas</value>
+         <value>(//div[@id=&quot;pbs-volumeViewport&quot;]//canvas)[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>canvas</value>
-      <webElementGuid>2a8eb078-746b-437b-93e9-03d8f02cab4b</webElementGuid>
+      <webElementGuid>6042943f-7cd7-4679-b181-a7b655f3ac69</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>width</name>
       <type>Main</type>
       <value>264</value>
-      <webElementGuid>eae7ae21-3de2-40bb-b257-7a6544986da8</webElementGuid>
+      <webElementGuid>f41121cc-c80b-422e-b3b6-6b78b54006d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>height</name>
       <type>Main</type>
       <value>434</value>
-      <webElementGuid>1f89f420-2b68-4578-afe0-e8f250b23332</webElementGuid>
+      <webElementGuid>34d9022b-abf7-4c66-89b2-440bee5d2323</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ol-layer</value>
-      <webElementGuid>8698168b-9377-423b-a947-7f0fb14ee732</webElementGuid>
+      <webElementGuid>69fe3363-3d79-490a-957b-e8b88d656b9d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pbs-volumeViewport&quot;)/div[@class=&quot;ol-viewport&quot;]/div[@class=&quot;ol-overlaycontainer-stopevent&quot;]/div[@class=&quot;ol-overviewmap ol-unselectable ol-control&quot;]/div[@class=&quot;ol-overviewmap-map&quot;]/div[@class=&quot;ol-viewport&quot;]/div[@class=&quot;ol-unselectable ol-layers&quot;]/canvas[@class=&quot;ol-layer&quot;]</value>
-      <webElementGuid>e8460b3e-dca0-470e-ae51-36574165d37d</webElementGuid>
+      <webElementGuid>32f7041c-1965-4806-b5f1-c0b5ad109723</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pbs-volumeViewport']/div/div[3]/div[5]/div/div/div/canvas</value>
-      <webElementGuid>35b28c26-2295-4b76-8c77-3b8a88eb6be8</webElementGuid>
+      <webElementGuid>92e3b1bd-051e-4be0-8893-ce91b4f067a1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +77,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/div/div/div/canvas</value>
-      <webElementGuid>98436a10-a240-4e65-b2ad-623e69adc6bc</webElementGuid>
+      <webElementGuid>56507ae1-7e0e-41c9-b1d1-cb86d8ff7338</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
