@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[8]</value>
+         <value>//button[@type = 'button' and @title = 'Overview' and (text() = '›' or . = '›')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>769b88f1-aac4-45bc-a4bf-b1d754c300e1</webElementGuid>
+      <webElementGuid>a93b842e-cd08-4b8b-8d0e-e8689d0df472</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>1b86d3c1-3067-4d4e-99a5-a38f8f539abc</webElementGuid>
+      <webElementGuid>b99f35f5-2a89-4d19-aae1-326e5de055c9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Overview</value>
-      <webElementGuid>39f2d4f5-a467-4c81-8b8a-d722fb16c636</webElementGuid>
+      <webElementGuid>1d0cd527-966e-4567-a7df-2647cf8a9e37</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>text</name>
       <type>Main</type>
       <value>›</value>
-      <webElementGuid>e147c7d4-0a12-4aa2-bfd1-fa1d54a19f7c</webElementGuid>
+      <webElementGuid>65b72bd4-ecfb-4523-90a1-956b012dcaae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pbs-volumeViewport&quot;)/div[@class=&quot;ol-viewport&quot;]/div[@class=&quot;ol-overlaycontainer-stopevent&quot;]/div[@class=&quot;ol-overviewmap ol-unselectable ol-control ol-collapsed&quot;]/button[1]</value>
-      <webElementGuid>e4f490d6-612b-4653-bc5e-ec08ae287e3a</webElementGuid>
+      <webElementGuid>2b9d7639-221d-461b-958d-241339b33ce0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[8]</value>
-      <webElementGuid>789f51ff-b0f4-45b3-94db-afacb59a0df7</webElementGuid>
+      <webElementGuid>cf4a4f78-c967-41de-ae2e-d9145cb6c31b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pbs-volumeViewport']/div/div[3]/div[5]/button</value>
-      <webElementGuid>6bc1a165-3d31-4c9d-898c-a6c661b67146</webElementGuid>
+      <webElementGuid>f70f234d-8db6-45c1-a1ce-7c1345f9ad1c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='–'])[1]/following::button[2]</value>
-      <webElementGuid>daa8acde-dd8d-4fcb-a605-86aa9eaec96c</webElementGuid>
+      <webElementGuid>9f7b0c67-f6a7-4670-81a1-a98946179338</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='+'])[1]/following::button[3]</value>
-      <webElementGuid>0d08cd3d-8c38-4777-ac48-8e8cf659b052</webElementGuid>
+      <webElementGuid>f8846d50-edc8-411e-83fc-bae5ff69a2c1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/button</value>
-      <webElementGuid>c22610d4-0f38-47cc-91b1-d49add0333de</webElementGuid>
+      <webElementGuid>00f1b420-9e0b-475e-a3ad-259e1be3ad08</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and @title = 'Overview' and (text() = '›' or . = '›')]</value>
-      <webElementGuid>dc810915-8949-40d0-bb70-f77f2874c7ff</webElementGuid>
+      <webElementGuid>67619cc0-dfc5-4820-9f90-f2f2494c7aa7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
