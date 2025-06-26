@@ -1,4 +1,6 @@
+
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 
 import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
@@ -7,7 +9,8 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-import imageutils.BlurChecker
+import imageUtils.blurChecker
+
 
 WebUI.openBrowser('')
 
@@ -70,7 +73,7 @@ if (largePlateletCount == 0 || largePlateletRow == null) {
 	WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_zoom-out'))
 	WebUI.delay(5)
 	
-	BlurChecker checker = new BlurChecker()
+	blurChecker checker = new blurChecker()
 	// Option 1: Default canvas selector
 	boolean isBlurry = checker.isCanvasImageBlurry()
 	// Option 2: Custom canvas by ID

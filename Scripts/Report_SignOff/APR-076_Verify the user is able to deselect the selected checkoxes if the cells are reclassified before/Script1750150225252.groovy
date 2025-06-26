@@ -95,7 +95,7 @@ cellTypes.each { cellName, threshold ->
     WebUI.delay(1)  // Allow UI update
 
     // XPath to the corresponding cell in the middle pane
-    String cellInMiddleXpath = "//div[contains(@class,'viewer-set-container')]//div[contains(text(),'${cellName}')]"
+    String cellInMiddleXpath = "(//div[contains(@class,'viewer-set-container')]//div[contains(text(),'${cellName}')])[1]"
     TestObject cellInMiddleObj = createTestObject(cellInMiddleXpath)
 
     boolean isPresent = WebUI.verifyElementNotPresent(cellInMiddleObj, 3, FailureHandling.CONTINUE_ON_FAILURE)

@@ -38,6 +38,7 @@ WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_19-May-20
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'), 'RBC')
+WebUI.click(findTestObject('Commontools/Macrocytes_cell_name'), FailureHandling.STOP_ON_FAILURE)
 
 // --- Step 3: Right-click and download patch ---
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))

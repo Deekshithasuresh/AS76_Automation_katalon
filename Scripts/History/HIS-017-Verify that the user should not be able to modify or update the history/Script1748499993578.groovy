@@ -1,115 +1,107 @@
-import com.kms.katalon.core.webui.driver.DriverFactory
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.model.FailureHandling
-import org.openqa.selenium.chrome.ChromeOptions
+import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebDriver
-import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-// ---------- STEP 1: Login ----------
+// ────────────────────────────────────────────────────────────────────
+// 1) LOGIN
+// ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
+WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Object Repository/Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Object Repository/Report viewer/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_Sign In'))
 
-// ---------- STEP 2: Verify landing on list reports page ----------
-WebUI.verifyElementPresent(
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+
+// ────────────────────────────────────────────────────────────────────
+// 2) VERIFY LANDING ON REPORT LIST
+// ────────────────────────────────────────────────────────────────────
+WebUI.waitForElementPresent(
 	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
 	10
 )
 
-// ---------- STEP 3: Pick & assign a report ----------
-TestObject statusToBeReviewed = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS, "//span[normalize-space()='To be reviewed']"
-)
-TestObject statusUnderReview = new TestObject().addProperty(
+// grab the WebDriver
+WebDriver driver = DriverFactory.getWebDriver()
+
+// ────────────────────────────────────────────────────────────────────
+// 3) OPEN FIRST “Under review” REPORT
+// ────────────────────────────────────────────────────────────────────
+TestObject underReviewRow = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//span[contains(@class,'reportStatusComponent_text') and normalize-space()='Under review']"
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
 )
-TestObject assignedDropdown = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-)
-TestObject assignedInput = new TestObject().addProperty(
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
+
+// ────────────────────────────────────────────────────────────────────
+// 4) ASSIGN TO “admin” IF NOT ALREADY
+// ────────────────────────────────────────────────────────────────────
+TestObject assignedInputTO = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//input[@id='assigned_to']"
 )
-TestObject adminOption = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//li[normalize-space(text())='admin']"
-)
-TestObject reassignButton = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//button[normalize-space()='Re-assign']"
-)
-TestObject approveBtn = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[normalize-space()='Approve report']/ancestor::button"
-)
-
-if (WebUI.waitForElementPresent(statusToBeReviewed, 3)) {
-	WebUI.scrollToElement(statusToBeReviewed, 5)
-	WebUI.click(statusToBeReviewed)
-	WebUI.click(assignedDropdown)
-	WebUI.waitForElementClickable(adminOption, 5)
-	WebUI.click(adminOption)
-	WebUI.comment("Assigned a ‘To be reviewed’ report to admin.")
-} else if (WebUI.waitForElementPresent(statusUnderReview, 3)) {
-	WebUI.scrollToElement(statusUnderReview, 5)
-	WebUI.click(statusUnderReview)
-
-	// check current assignee
-	String currentAssignee = WebUI.getAttribute(assignedInput, 'value').trim()
-	if (currentAssignee != 'admin') {
-		// reassign only if not already admin
-		WebUI.click(assignedDropdown)
-		WebUI.waitForElementClickable(adminOption, 5)
-		WebUI.click(adminOption)
-		WebUI.waitForElementClickable(reassignButton, 5)
-		WebUI.click(reassignButton)
-		WebUI.comment("Re-assigned an ‘Under review’ report to admin.")
-	} else {
-		WebUI.comment("‘Under review’ report already assigned to admin—no reassignment needed.")
-	}
+WebUI.waitForElementVisible(assignedInputTO, 5)
+String currentAssignee = WebUI.getAttribute(assignedInputTO, 'value').trim()
+if (!currentAssignee.equalsIgnoreCase('admin')) {
+	WebUI.comment("⚙️ Currently assigned to '${currentAssignee}', re-assigning to admin…")
+	TestObject dropdownTO = new TestObject().addProperty(
+		'xpath', ConditionType.EQUALS,
+		"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
+	)
+	TestObject adminOptionTO = new TestObject().addProperty(
+		'xpath', ConditionType.EQUALS,
+		"//li[contains(@role,'option') and normalize-space(text())='admin']"
+	)
+	TestObject reassignBtnTO = new TestObject().addProperty(
+		'xpath', ConditionType.EQUALS,
+		"//button[normalize-space()='Re-assign']"
+	)
+	WebUI.click(dropdownTO)
+	WebUI.waitForElementClickable(adminOptionTO, 5)
+	WebUI.scrollToElement(adminOptionTO, 5)
+	WebUI.click(adminOptionTO)
+	WebUI.waitForElementClickable(reassignBtnTO, 5)
+	WebUI.click(reassignBtnTO)
+	WebUI.delay(2)
+	WebUI.comment("✔ Re-assigned to admin.")
 } else {
-	WebUI.comment("❌ No report in ‘To be reviewed’ or ‘Under review’ status.")
-	WebUI.takeScreenshot()
-	WebUI.closeBrowser()
-	return
+	WebUI.comment("ℹ️ Already assigned to admin; skipping reassignment.")
 }
-// 1) Click the kebab (three-dots) icon
-TestObject kebabBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+
+// ────────────────────────────────────────────────────────────────────
+// 5) OPEN KEBAB MENU & SELECT “History”
+// ────────────────────────────────────────────────────────────────────
+TestObject kebabBtn = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
 	"//button[.//img[contains(@src,'kebab_menu.svg')]]"
 )
-WebUI.waitForElementVisible(kebabBtn, 10)
+WebUI.waitForElementClickable(kebabBtn, 5)
 WebUI.click(kebabBtn)
-
-// 2) Give it a moment to render the menu
 WebUI.delay(1)
 
-// 3) Click “History” by looking for the role=menuitem
-TestObject historyOption = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//ul[@role='menu']//li[@role='menuitem']//span[normalize-space()='History']"
+TestObject historyOption = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//ul[@role='menu']//li[@role='menuitem']//span[normalize-space()='History']/ancestor::li"
 )
 WebUI.waitForElementClickable(historyOption, 10)
 WebUI.click(historyOption)
 
-
-// 3) WAIT FOR HISTORY ENTRIES TO APPEAR
-TestObject firstEntry = new TestObject().addProperty(
-	'css', ConditionType.EQUALS,
-	"li.css-1ecsk3j"
+// ────────────────────────────────────────────────────────────────────
+// 6) VERIFY NO EDITABLE FIELDS IN HISTORY PANEL
+// ────────────────────────────────────────────────────────────────────
+WebUI.waitForElementVisible(
+	new TestObject().addProperty('css', ConditionType.EQUALS, "li.css-1ecsk3j"),
+	10
 )
-WebUI.waitForElementVisible(firstEntry, 10)
-
-// 4) ASSERT NO EDITABLE FIELDS IN HISTORY PANEL
-WebDriver driver = DriverFactory.getWebDriver()
 
 // look for any <textarea> inside the history container
 List<WebElement> textareas = driver.findElements(
@@ -124,4 +116,3 @@ List<WebElement> inputs = driver.findElements(
 assert inputs.isEmpty(): "❌ Found unexpected <input> in history!"
 
 WebUI.comment("✅ History entries are read-only — no editable fields found.")
-

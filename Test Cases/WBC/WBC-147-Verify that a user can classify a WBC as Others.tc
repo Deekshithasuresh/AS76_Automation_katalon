@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>WBC-147-Verify that a user can classify a WBC as Others</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>2f29dfb2-5748-41a7-84f0-0ef08caf9682</testCaseGuid>
-</TestCaseEntity>

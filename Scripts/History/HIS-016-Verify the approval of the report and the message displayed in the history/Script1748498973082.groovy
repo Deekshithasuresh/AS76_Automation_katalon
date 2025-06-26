@@ -4,168 +4,140 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.driver.DriverFactory
-
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
-
-// for List<>
 import java.util.List
 
-
-// ---------- STEP 1: Login ----------
+// ────────────────────────────────────────────────────────────────────
+// 1) LOGIN
+// ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
+WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Object Repository/Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Object Repository/Report viewer/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_Sign In'))
 
-// ---------- STEP 2: Verify landing on list reports page ----------
-WebUI.verifyElementPresent(
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+
+// ────────────────────────────────────────────────────────────────────
+// 2) VERIFY LANDING ON REPORT LIST
+// ────────────────────────────────────────────────────────────────────
+WebUI.waitForElementPresent(
 	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
 	10
 )
 
-// ---------- STEP 3: Pick & assign a report ----------
-TestObject statusToBeReviewed = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS, "//span[normalize-space()='To be reviewed']"
-)
-TestObject statusUnderReview = new TestObject().addProperty(
+// grab the driver for later
+WebDriver driver = DriverFactory.getWebDriver()
+
+// ────────────────────────────────────────────────────────────────────
+// 3) OPEN FIRST “Under review” REPORT
+// ────────────────────────────────────────────────────────────────────
+TestObject underReviewRow = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//span[contains(@class,'reportStatusComponent_text') and normalize-space()='Under review']"
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
 )
-TestObject assignedDropdown = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-)
-TestObject assignedInput = new TestObject().addProperty(
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
+
+// ────────────────────────────────────────────────────────────────────
+// 4) ASSIGN TO “admin” IF NEEDED
+// ────────────────────────────────────────────────────────────────────
+TestObject assignedInputTO = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//input[@id='assigned_to']"
 )
-TestObject adminOption = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//li[normalize-space(text())='admin']"
-)
-TestObject reassignButton = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//button[normalize-space()='Re-assign']"
-)
-TestObject approveBtn = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[normalize-space()='Approve report']/ancestor::button"
-)
+WebUI.waitForElementVisible(assignedInputTO, 5)
+String currentAssignee = WebUI.getAttribute(assignedInputTO, 'value').trim()
+if (!currentAssignee.equalsIgnoreCase('admin')) {
+	WebUI.comment("⚙️ Currently assigned to '${currentAssignee}', changing to admin…")
+	TestObject dropdownTO = new TestObject().addProperty(
+		'xpath', ConditionType.EQUALS,
+		"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
+	)
+	TestObject adminOptTO = new TestObject().addProperty(
+		'xpath', ConditionType.EQUALS,
+		"//li[@role='option' and normalize-space(text())='admin']"
+	)
+	TestObject reassignBtnTO = new TestObject().addProperty(
+		'xpath', ConditionType.EQUALS,
+		"//button[normalize-space()='Re-assign']"
+	)
 
-if (WebUI.waitForElementPresent(statusToBeReviewed, 3)) {
-	WebUI.scrollToElement(statusToBeReviewed, 5)
-	WebUI.click(statusToBeReviewed)
-	WebUI.click(assignedDropdown)
-	WebUI.waitForElementClickable(adminOption, 5)
-	WebUI.click(adminOption)
-
-	WebUI.comment("Assigned a ‘To be reviewed’ report to admin.")
-} else if (WebUI.waitForElementPresent(statusUnderReview, 3)) {
-	WebUI.scrollToElement(statusUnderReview, 5)
-	WebUI.click(statusUnderReview)
-
-	// check current assignee
-	String currentAssignee = WebUI.getAttribute(assignedInput, 'value').trim()
-	if (currentAssignee != 'admin') {
-		// reassign only if not already admin
-		WebUI.click(assignedDropdown)
-		WebUI.waitForElementClickable(adminOption, 5)
-		WebUI.click(adminOption)
-		WebUI.waitForElementClickable(reassignButton, 5)
-		WebUI.click(reassignButton)
-		WebUI.comment("Re-assigned an ‘Under review’ report to admin.")
-	} else {
-		WebUI.comment("‘Under review’ report already assigned to admin—no reassignment needed.")
-	}
+	WebUI.click(dropdownTO)
+	WebUI.waitForElementClickable(adminOptTO, 5)
+	WebUI.scrollToElement(adminOptTO, 5)
+	WebUI.click(adminOptTO)
+	WebUI.waitForElementClickable(reassignBtnTO, 5)
+	WebUI.click(reassignBtnTO)
+	WebUI.delay(2)
+	WebUI.comment("✔ Re-assigned to admin.")
 } else {
-	WebUI.comment("❌ No report in ‘To be reviewed’ or ‘Under review’ status.")
-	WebUI.takeScreenshot()
-	WebUI.closeBrowser()
-	return
+	WebUI.comment("ℹ️ Already assigned to admin; skipping re-assignment.")
 }
 
-// wait for the Approve button
-WebUI.delay(2)
-WebUI.waitForElementVisible(approveBtn, 10)
-WebUI.comment(" 'Approve report' is now visible.")
-
 // ────────────────────────────────────────────────────────────────────
-// 3) APPROVE REPORT BUTTON
+// 5) CLICK “Approve report” & HANDLE POPUPS
 // ────────────────────────────────────────────────────────────────────
-TestObject btnApprove = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[.//span[contains(normalize-space(),'Approve report')]]")
+TestObject btnApprove = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//button[.//span[contains(normalize-space(),'Approve report')]]"
+)
 WebUI.waitForElementClickable(btnApprove, 10)
 WebUI.click(btnApprove)
 
-// confirmation popup
-TestObject popupConfirm = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//span[text()='Are you sure you want to approve']")
-WebUI.waitForElementVisible(popupConfirm, 5)
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'backtoReportBtn') and normalize-space(.)='Confirm']"))
-
-// 1) click the blue “Approve report” button in header
-TestObject btnApproveHeader = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[normalize-space()='Approve report']/ancestor::button"
-)
-WebUI.waitForElementClickable(btnApproveHeader, 10)
-WebUI.click(btnApproveHeader)
-
-// 2) confirm the “Are you sure you want to approve?” popup
-TestObject popupFirst = new TestObject().addProperty(
+// first “Are you sure you want to approve” dialog
+TestObject popupConfirm = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//span[contains(text(),'Are you sure you want to approve')]"
 )
-WebUI.waitForElementVisible(popupFirst, 5)
-TestObject btnConfirmFirst = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'backtoReportBtn') and normalize-space()='Confirm']"
-)
-WebUI.click(btnConfirmFirst)
+WebUI.waitForElementVisible(popupConfirm, 5)
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	"//button[contains(@class,'backtoReportBtn') and normalize-space()='Confirm']"))
 
-// 3) handle the “Approve without supporting images?” warning
+// second warning about “without supporting images?”
 TestObject popupWarn = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//span[contains(text(),'without supporting images')]"
 )
 WebUI.waitForElementVisible(popupWarn, 5)
-TestObject btnConfirmNoImgs = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'backtoReportBtn') and normalize-space()='Approve report']"
-)
-WebUI.click(btnConfirmNoImgs)
+WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	"//button[contains(@class,'backtoReportBtn') and normalize-space()='Approve report']"))
 
-// 4) wait for final processing
+// give it time to complete
 WebUI.delay(120)
 
-// 5) Open kebab → History
-TestObject btnKebab = new TestObject().addProperty(
+// ────────────────────────────────────────────────────────────────────
+// 6) OPEN HISTORY & VERIFY LATEST ENTRY
+// ────────────────────────────────────────────────────────────────────
+TestObject kebabBtn = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//button[.//img[contains(@src,'kebab_menu.svg')]]"
 )
-WebUI.click(btnKebab)
-TestObject menuHistory = new TestObject().addProperty(
+WebUI.waitForElementClickable(kebabBtn, 5)
+WebUI.click(kebabBtn)
+
+TestObject historyOpt = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//li[.//span[normalize-space()='History']]"
 )
-WebUI.click(menuHistory)
+WebUI.waitForElementClickable(historyOpt, 5)
+WebUI.click(historyOpt)
 
-// 6) grab & assert the latest entry
 WebUI.waitForElementVisible(
 	new TestObject().addProperty('css', ConditionType.EQUALS, "li.css-1ecsk3j"),
 	10
 )
-List<WebElement> historyEntries = driver.findElements(By.cssSelector("li.css-1ecsk3j"))
-assert historyEntries.size() >= 1 : "No history entries found!"
+List<WebElement> entries = driver.findElements(By.cssSelector("li.css-1ecsk3j"))
+assert entries.size() >= 1 : "No history entries found!"
 
-String first = historyEntries.get(0).getText().trim()
-println "Latest history entry: ${first}"
-assert first.toLowerCase().contains("approved the report") :
-	   "Expected entry to mention approval, but was: ${first}"
+String latest = entries.get(0).getText().trim()
+println "➤ Latest history entry: ${latest}"
+assert latest.toLowerCase().contains("approved the report") :
+	"Expected approval entry, but got: ${latest}"
 
-// optional: screenshot
+// optional screenshot
 WebUI.takeScreenshot("History_ApproveOnly.png")

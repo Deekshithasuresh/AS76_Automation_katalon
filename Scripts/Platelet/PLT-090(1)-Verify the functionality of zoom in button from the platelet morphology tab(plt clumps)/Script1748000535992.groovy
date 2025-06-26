@@ -1,5 +1,6 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+
 import java.awt.Robot
 import java.awt.event.InputEvent
 import java.awt.image.BufferedImage

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>MV-095-Verify the navigation of the slide using the navigation panel by dragging on a specific point on the centre of the image in the panel for the Platelet tab</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>724955fb-2b50-40a1-acd5-1787d96c9b22</testCaseGuid>
-</TestCaseEntity>

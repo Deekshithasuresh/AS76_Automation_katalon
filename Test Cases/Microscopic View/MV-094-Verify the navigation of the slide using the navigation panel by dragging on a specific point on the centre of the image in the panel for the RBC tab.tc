@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>MV-094-Verify the navigation of the slide using the navigation panel by dragging on a specific point on the centre of the image in the panel for the RBC tab</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>8a0af644-4ac1-484e-a1b0-cc0251629fa1</testCaseGuid>
-</TestCaseEntity>

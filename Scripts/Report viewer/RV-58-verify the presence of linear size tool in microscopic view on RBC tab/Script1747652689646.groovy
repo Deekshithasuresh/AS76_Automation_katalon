@@ -1,32 +1,38 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.model.FailureHandling
 
-// ────────────────────────────────────────────────────────────────────
-// STEP 1: Login to PBS
+// 1) LOGIN
 WebUI.openBrowser('')
+WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setText(
+	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
+	'adminuserr'
+)
 WebUI.setEncryptedText(
 	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
 	'JBaPNhID5RC7zcsLVwaWIA=='
 )
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-// ────────────────────────────────────────────────────────────────────
-// STEP 2: Open any “To be reviewed” or “Under review” report
-TestObject toBe = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//span[normalize-space()='To be reviewed']")
-TestObject under = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//span[contains(@class,'reportStatusComponent_text') and normalize-space()='Under review']")
-if (WebUI.waitForElementPresent(toBe, 5)) {
-	WebUI.scrollToElement(toBe, 5)
-	WebUI.click(toBe)
-} else {
-	WebUI.scrollToElement(under, 5)
-	WebUI.click(under)
-}
+// 2) VERIFY LANDING ON REPORT LIST
+TestObject pbsText = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//span[contains(text(),'PBS')]"
+)
+WebUI.waitForElementPresent(pbsText, 10)
+
+// 3) OPEN FIRST “Under review” REPORT
+TestObject underReviewRow = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+)
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
 
 // ────────────────────────────────────────────────────────────────────
 // STEP 3: Switch to RBC tab

@@ -4,35 +4,35 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.model.FailureHandling
 
-// ---------- STEP 1: Login ----------
+// 1) LOGIN
 WebUI.openBrowser('')
+WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Object Repository/Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Object Repository/Report viewer/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_Sign In'))
-
-// ---------- STEP 2: Wait for reports list ----------
-WebUI.waitForElementPresent(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-	10
+WebUI.setText(
+	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
+	'adminuserr'
 )
-
-// ---------- STEP 3: Open a “To be reviewed” or “Under review” report ----------
-TestObject toBeReviewed = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS, "//span[normalize-space()='To be reviewed']"
+WebUI.setEncryptedText(
+	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA=='
 )
-TestObject underReview = new TestObject().addProperty(
+WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+
+// 2) VERIFY LANDING ON REPORT LIST
+TestObject pbsText = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//span[contains(@class,'reportStatusComponent_text') and normalize-space()='Under review']"
+	"//span[contains(text(),'PBS')]"
 )
-if (WebUI.waitForElementPresent(toBeReviewed, 5)) {
-	WebUI.scrollToElement(toBeReviewed, 5)
-	WebUI.click(toBeReviewed)
-} else {
-	WebUI.scrollToElement(underReview, 5)
-	WebUI.click(underReview)
-}
-WebUI.comment("✔ Opened a report in ‘To be reviewed’ / ‘Under review’ status.")
+WebUI.waitForElementPresent(pbsText, 10)
+
+// 3) OPEN FIRST “Under review” REPORT
+TestObject underReviewRow = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+)
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
 
 // ---------- STEP 4: Click on the WBC tab ----------
 TestObject wbcTab = new TestObject().addProperty(

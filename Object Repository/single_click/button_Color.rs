@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>e2b17027-e8a5-401a-935d-8a0dfc8c15bc</webElementGuid>
+      <webElementGuid>e1dba98b-0a78-44c6-9a2d-d90072b7419c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium rbc-size-btn css-1ua49gz</value>
-      <webElementGuid>a47f75fd-48ad-434a-ad22-1a05760e21d9</webElementGuid>
+      <webElementGuid>d5b5ec0c-cf04-4a20-b91f-861cf994179b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -44,7 +44,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>0620d35e-1acf-439d-896f-0c1cbd93141d</webElementGuid>
+      <webElementGuid>df2a95a2-592d-4e42-834a-5b97c7063aed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -52,7 +52,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>4e57de47-0e3e-4c9d-b512-e0fda78029ff</webElementGuid>
+      <webElementGuid>e152b739-6cfe-4709-8a5b-36d1011adaf7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -60,7 +60,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Color</value>
-      <webElementGuid>ff9720cc-9544-4ff9-8731-d88d45feeaf1</webElementGuid>
+      <webElementGuid>38d5707e-5881-4747-94f0-bed6ea2c10e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -68,7 +68,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2.8 css-lufqp2&quot;]/div[@class=&quot;grid-container&quot;]/div[1]/div[@class=&quot;rbc-btn-div&quot;]/button[@class=&quot;MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium rbc-size-btn css-1ua49gz&quot;]</value>
-      <webElementGuid>734389c9-7c80-445b-a50c-996507630dce</webElementGuid>
+      <webElementGuid>9cd4a460-f00a-4caa-b2d0-ff49bbf21f4a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -76,7 +76,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[7]</value>
-      <webElementGuid>7157a0db-21bc-4554-9f21-731ad81793fd</webElementGuid>
+      <webElementGuid>f176e634-2931-4d5c-9b23-4738b23a2dda</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -84,7 +84,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/div/button[3]</value>
-      <webElementGuid>1295d63b-9d1e-45ec-bfa0-b3decda5356f</webElementGuid>
+      <webElementGuid>937c2880-0364-4cb1-a80e-ca72688f0948</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,7 +92,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Shape'])[1]/following::button[1]</value>
-      <webElementGuid>06a9c32e-13a1-4c5b-94d7-42bfeb70f0ec</webElementGuid>
+      <webElementGuid>f3d1d94f-b313-448b-9a34-1504a11927c5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -100,7 +100,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Size'])[1]/following::button[2]</value>
-      <webElementGuid>325d43ff-134b-4a1b-bf3c-1fd460e3e98f</webElementGuid>
+      <webElementGuid>043099cd-03fb-4334-91c5-8548a74b707d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -108,7 +108,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Inclusions'])[1]/preceding::button[1]</value>
-      <webElementGuid>1741c994-282d-4784-80a9-ec8f3daa168f</webElementGuid>
+      <webElementGuid>d163060c-9557-45c1-a294-3903c0b167a7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -116,7 +116,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cell name'])[1]/preceding::button[2]</value>
-      <webElementGuid>7671d845-bb4a-4dd3-8a49-28a896a6fd84</webElementGuid>
+      <webElementGuid>bfe2c1fd-5113-496d-b44e-39859fe738ae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -124,7 +124,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Color']/parent::*</value>
-      <webElementGuid>809ebd70-fa2f-4d27-8d1c-fff6c02e335a</webElementGuid>
+      <webElementGuid>dea0003b-ed55-44e8-8ee0-8d7f618ac51b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -132,7 +132,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/div/div/div/button[3]</value>
-      <webElementGuid>8a1c0471-9e4c-4191-be0a-1c46d80af79b</webElementGuid>
+      <webElementGuid>be930127-4b52-4e0b-b4b5-bf88c19ac553</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -140,6 +140,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Color' or . = 'Color')]</value>
-      <webElementGuid>5530fcc0-3865-436b-aae2-de3e350a5f95</webElementGuid>
+      <webElementGuid>ab33aade-310a-4e4f-a31b-2dac5e2f5af6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

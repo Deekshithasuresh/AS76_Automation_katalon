@@ -1,156 +1,145 @@
-import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.model.FailureHandling
-import org.openqa.selenium.chrome.ChromeOptions
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.chrome.ChromeDriver
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
 
-// ---------- STEP 1: Login ----------
+// ────────────────────────────────────────────────────────────────────
+// 1) LOGIN
+// ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
+WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Object Repository/Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Object Repository/Report viewer/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_Sign In'))
 
-// ---------- STEP 2: Verify landing on list reports page ----------
-WebUI.verifyElementPresent(
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(
+	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA=='
+)
+WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+
+// ────────────────────────────────────────────────────────────────────
+// 2) VERIFY LANDING ON REPORT LIST
+// ────────────────────────────────────────────────────────────────────
+WebUI.waitForElementPresent(
 	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
 	10
 )
 
-// ---------- STEP 3: Pick & assign a report ----------
-TestObject statusToBeReviewed = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS, "//span[normalize-space()='To be reviewed']"
-)
-TestObject statusUnderReview = new TestObject().addProperty(
+// ────────────────────────────────────────────────────────────────────
+// 3) OPEN FIRST “Under review” REPORT
+// ────────────────────────────────────────────────────────────────────
+TestObject underReviewRow = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//span[contains(@class,'reportStatusComponent_text') and normalize-space()='Under review']"
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
 )
-TestObject assignedDropdown = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-)
-TestObject assignedInput = new TestObject().addProperty(
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
+
+// ────────────────────────────────────────────────────────────────────
+// 4) ASSIGN TO “admin” (only if not already)
+// ────────────────────────────────────────────────────────────────────
+TestObject assignedInputTO = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//input[@id='assigned_to']"
 )
-TestObject adminOption = new TestObject().addProperty(
+TestObject dropdownTO = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//li[normalize-space(text())='admin']"
+	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
 )
-TestObject reassignButton = new TestObject().addProperty(
+TestObject adminOptionTO = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//ul[contains(@class,'MuiAutocomplete-listbox')]//li[normalize-space(text())='admin']"
+)
+TestObject reassignBtnTO = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//button[normalize-space()='Re-assign']"
 )
-TestObject approveBtn = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[normalize-space()='Approve report']/ancestor::button"
-)
 
-if (WebUI.waitForElementPresent(statusToBeReviewed, 3)) {
-	WebUI.scrollToElement(statusToBeReviewed, 5)
-	WebUI.click(statusToBeReviewed)
-	WebUI.click(assignedDropdown)
-	WebUI.waitForElementClickable(adminOption, 5)
-	WebUI.click(adminOption)
-
-	WebUI.comment("Assigned a ‘To be reviewed’ report to admin.")
-} else if (WebUI.waitForElementPresent(statusUnderReview, 3)) {
-	WebUI.scrollToElement(statusUnderReview, 5)
-	WebUI.click(statusUnderReview)
-
-	// check current assignee
-	String currentAssignee = WebUI.getAttribute(assignedInput, 'value').trim()
-	if (currentAssignee != 'admin') {
-		// reassign only if not already admin
-		WebUI.click(assignedDropdown)
-		WebUI.waitForElementClickable(adminOption, 5)
-		WebUI.click(adminOption)
-		WebUI.waitForElementClickable(reassignButton, 5)
-		WebUI.click(reassignButton)
-		WebUI.comment("Re-assigned an ‘Under review’ report to admin.")
-	} else {
-		WebUI.comment("‘Under review’ report already assigned to admin—no reassignment needed.")
-	}
+WebUI.waitForElementVisible(assignedInputTO, 5)
+String currentAssignee = WebUI.getAttribute(assignedInputTO, 'value').trim()
+if (!currentAssignee.equalsIgnoreCase('admin')) {
+	WebUI.comment("⚙️ Currently assigned to '${currentAssignee}', re-assigning to admin…")
+	WebUI.click(dropdownTO)
+	WebUI.waitForElementClickable(adminOptionTO, 5)
+	WebUI.scrollToElement(adminOptionTO, 5)
+	WebUI.click(adminOptionTO)
+	WebUI.waitForElementClickable(reassignBtnTO, 5)
+	WebUI.click(reassignBtnTO)
+	WebUI.delay(2)
+	WebUI.comment("✔ Re-assigned to admin.")
 } else {
-	WebUI.comment("❌ No report in ‘To be reviewed’ or ‘Under review’ status.")
-	WebUI.takeScreenshot()
-	WebUI.closeBrowser()
-	return
+	WebUI.comment("ℹ️ Already assigned to admin; skipping reassignment.")
 }
 
-// wait for the Approve button
-WebUI.delay(2)
-WebUI.waitForElementVisible(approveBtn, 10)
-WebUI.comment(" 'Approve report' is now visible.")
+// ────────────────────────────────────────────────────────────────────
+// 5) WAIT FOR “Approve report” BUTTON, THEN CLICK & CONFIRM
+// ────────────────────────────────────────────────────────────────────
+TestObject btnApprove = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//button[.//span[normalize-space()='Approve report']]"
+)
+TestObject popupConfirm = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//span[contains(.,'Are you sure you want to approve')]"
+)
+TestObject btnConfirm = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//button[contains(@class,'backtoReportBtn') and normalize-space(text())='Confirm']"
+)
 
-// ────────────────────────────────────────────────────────────────────
-// 3) APPROVE REPORT BUTTON
-// ────────────────────────────────────────────────────────────────────
-TestObject btnApprove = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[.//span[contains(normalize-space(),'Approve report')]]")
-WebUI.waitForElementClickable(btnApprove, 10)
+WebUI.delay(2)
+WebUI.waitForElementVisible(btnApprove, 10)
+WebUI.comment("✔ 'Approve report' is now visible.")
 WebUI.click(btnApprove)
 
-// confirmation popup
-TestObject popupConfirm = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//span[text()='Are you sure you want to approve']")
 WebUI.waitForElementVisible(popupConfirm, 5)
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'backtoReportBtn') and normalize-space(.)='Confirm']"))
+WebUI.click(btnConfirm)
 
 // ────────────────────────────────────────────────────────────────────
-// 4) ADD SUPPORTING IMAGES
+// 6) ADD SUPPORTING IMAGES
 // ────────────────────────────────────────────────────────────────────
-TestObject btnAddImgs = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[.//span[text()='Add supporting images']]")
+TestObject btnAddImgs = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//button[.//span[text()='Add supporting images']]"
+)
 WebUI.waitForElementClickable(btnAddImgs, 10)
 WebUI.click(btnAddImgs)
 
-// ─── 7) MODIFY PATCHES (updated) ────────────────────────────────────────
+// ────────────────────────────────────────────────────────────────────
+// 7) MODIFY PATCHES
+// ────────────────────────────────────────────────────────────────────
 WebDriver driver = DriverFactory.getWebDriver()
 List<WebElement> modifyBtns = driver.findElements(By.xpath("//button[.//span[text()='Modify']]"))
-
-// how many total patches you want selected (including the first two)
 int desiredTotal = 4
 
 modifyLoop:
 for (int i = 0; i < modifyBtns.size(); i++) {
 	modifyBtns.get(i).click()
 	WebUI.delay(1)
-
-	// wait for the list of patches to render
 	WebUI.waitForElementVisible(
-		new TestObject().addProperty('xpath', ConditionType.EQUALS,
-			"//ul[contains(@class,'patches-image-list')]"),
+		new TestObject().addProperty('xpath', ConditionType.EQUALS, "//ul[contains(@class,'patches-image-list')]"),
 		5
 	)
-
-	// grab **all** the <li> items in the grid
 	List<WebElement> allPatches = driver.findElements(
 		By.cssSelector("ul.patches-image-list li.MuiImageListItem-root")
 	)
-	int total = allPatches.size()
-
-	if (total < 4) {
-		// not enough to bother: cancel and try next
+	if (allPatches.size() < desiredTotal) {
 		WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
 			"//button[contains(@class,'cancel-btn') and normalize-space()='Cancel']"))
 		WebUI.delay(1)
 		continue
 	}
-
-	// first two are auto-selected; click the next ones up to desiredTotal
-	int toClick = Math.min(total, desiredTotal)
-	for (int j = 2; j < toClick; j++) {
+	// click first `desiredTotal` patches
+	for (int j = 0; j < desiredTotal; j++) {
 		allPatches.get(j).click()
 	}
-
-	// now confirm “Add to report”
 	WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
 		"//button[contains(@class,'save-btn') and normalize-space()='Add to report']"))
 	WebUI.delay(1)
@@ -158,61 +147,58 @@ for (int i = 0; i < modifyBtns.size(); i++) {
 }
 
 // ────────────────────────────────────────────────────────────────────
-// 2) CLICK BACK-TO-REPORT & CONFIRM DISCARD
+// 8) CLICK BACK → CONFIRM DISCARD
 // ────────────────────────────────────────────────────────────────────
-// click the “back” icon
-TestObject backIcon = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//img[@class='action-icon' and contains(@src,'back-btn-icon.svg')]")
+TestObject backIcon = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//img[@class='action-icon' and contains(@src,'back-btn-icon.svg')]"
+)
 WebUI.click(backIcon)
 
-// wait for discard confirmation
-TestObject discardPopup = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//span[text()='All changes made will be lost']")
+TestObject discardPopup = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//span[contains(.,'All changes made will be lost')]"
+)
 WebUI.waitForElementVisible(discardPopup, 5)
 
-// confirm “Back to report”
-TestObject btnBackToReport = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'backtoReportBtn') and normalize-space(.)='Back to report']")
+TestObject btnBackToReport = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//button[contains(@class,'backtoReportBtn') and normalize-space(text())='Back to report']"
+)
 WebUI.click(btnBackToReport)
 
 // ────────────────────────────────────────────────────────────────────
-// 3) OPEN HISTORY
+// 9) OPEN HISTORY
 // ────────────────────────────────────────────────────────────────────
-// open kebab menu
-TestObject kebab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[.//img[contains(@src,'kebab_menu.svg')]]")
+TestObject kebab = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//button[.//img[contains(@src,'kebab_menu.svg')]]"
+)
+TestObject hist = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//li[.//span[normalize-space()='History']]"
+)
 WebUI.waitForElementClickable(kebab, 5)
 WebUI.click(kebab)
-
-// click “History”
-TestObject hist = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//li[.//span[normalize-space()='History']]")
 WebUI.waitForElementClickable(hist, 5)
 WebUI.click(hist)
 
 // ────────────────────────────────────────────────────────────────────
-// 4) VERIFY LATEST ENTRY
+// 10) VERIFY LATEST HISTORY ENTRY & SCREENSHOT
 // ────────────────────────────────────────────────────────────────────
-// wait for at least one history entry
 WebUI.waitForElementVisible(
 	new TestObject().addProperty('css', ConditionType.EQUALS, "li.css-1ecsk3j"),
 	10
 )
 
-// grab the first (most recent) entry
 WebElement latest = driver.findElement(By.cssSelector("li.css-1ecsk3j"))
-
-// extract title & description
 String title = latest.findElement(By.cssSelector("h4.event-title")).getText().trim()
 String desc  = latest.findElement(By.cssSelector("div.event-description")).getText().trim()
 
 println "History Title: ${title}"
 println "History Desc : ${desc}"
 
-// assert it’s the “cancelled the final report selections”
+// make sure the description matches your expected text
 assert desc.toLowerCase().contains("cancelled the final report selections")
 
-// ────────────────────────────────────────────────────────────────────
-// 5) SCREENSHOT
-// ────────────────────────────────────────────────────────────────────
 WebUI.takeScreenshot("History_Final_Cancel.png")

@@ -1,156 +1,177 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
+
 import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.By
+
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
 import org.openqa.selenium.interactions.Actions
 
 // ────────────────────────────────────────────────────────────────────
-// CONFIGURATION
+// 1) LOGIN + LAND ON REPORT LIST
 // ────────────────────────────────────────────────────────────────────
-String baseUrl  = 'https://as76-pbs.sigtuple.com/login'
-String username = 'adminuserr'
-String password = 'JBaPNhID5RC7zcsLVwaWIA=='
-
-// ────────────────────────────────────────────────────────────────────
-// 1) LOGIN
-// ────────────────────────────────────────────────────────────────────
-WebUI.openBrowser(baseUrl)
+WebUI.openBrowser('')
 WebUI.maximizeWindow()
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), username)
-WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'), password)
+WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'),'adminuserr')
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 WebUI.waitForElementPresent(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
+	new TestObject().addProperty('xpath', ConditionType.EQUALS,
+		"//span[contains(text(),'PBS')]"),
 	10
 )
 
-// grab WebDriver & Actions
 WebDriver driver = DriverFactory.getWebDriver()
 Actions actions = new Actions(driver)
 
-
 // ────────────────────────────────────────────────────────────────────
-// 2) OPEN FIRST “To be reviewed” REPORT
+// 2) OPEN FIRST “Under review” REPORT
 // ────────────────────────────────────────────────────────────────────
-TestObject toBeReviewedRow = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"(//tr[.//span[normalize-space(text())='To be reviewed']])[1]"
+TestObject underReviewRow = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
 )
-WebUI.waitForElementClickable(toBeReviewedRow, 10)
-WebUI.click(toBeReviewedRow)
-
+WebUI.waitForElementClickable(underReviewRow,10)
+WebUI.scrollToElement(underReviewRow,5)
+WebUI.click(underReviewRow)
 
 // ────────────────────────────────────────────────────────────────────
-// 3) ASSIGN TO “admin”
+// 3) (RE-)ASSIGN TO admin IF NEEDED
 // ────────────────────────────────────────────────────────────────────
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-))
-TestObject adminOption = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//ul[contains(@class,'MuiAutocomplete-listbox')]//li[normalize-space(text())='admin']"
+TestObject assignedInputTO = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//input[@id='assigned_to']"
 )
-WebUI.waitForElementVisible(adminOption, 5)
-WebUI.scrollToElement(adminOption, 5)
-WebUI.click(adminOption)
-WebUI.waitForElementAttributeValue(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//input[@id='assigned_to']"),
-	'value', 'admin', 5
+WebUI.waitForElementVisible(assignedInputTO,5)
+String currentAssignee = WebUI.getAttribute(assignedInputTO,'value').trim()
+if (!currentAssignee.equalsIgnoreCase('admin')) {
+	// open dropdown
+	TestObject dropdown = new TestObject().addProperty(
+		'xpath', ConditionType.EQUALS,
+		"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
+	)
+	WebUI.click(dropdown)
+	// pick admin
+	TestObject adminOpt = new TestObject().addProperty(
+		'xpath', ConditionType.EQUALS,
+		"//li[normalize-space(text())='admin']"
+	)
+	WebUI.waitForElementClickable(adminOpt,5)
+	WebUI.scrollToElement(adminOpt,5)
+	WebUI.click(adminOpt)
+	// click Re-assign
+	TestObject reassignBtn = new TestObject().addProperty(
+		'xpath', ConditionType.EQUALS,
+		"//button[normalize-space(text())='Re-assign']"
+	)
+	WebUI.waitForElementClickable(reassignBtn,5)
+	WebUI.click(reassignBtn)
+	WebUI.delay(2)
+	WebUI.comment("✔ Re-assigned to admin")
+} else {
+	WebUI.comment("ℹ️ Already assigned to admin")
+}
+
+// ────────────────────────────────────────────────────────────────────
+// 4) SWITCH TO WBC TAB
+// ────────────────────────────────────────────────────────────────────
+TestObject wbcTab = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//button[contains(@class,'cell-buttons')][.//span[normalize-space(text())='WBC']]"
 )
-
-
-// ────────────────────────────────────────────────────────────────────
-// 4) CLICK ON WBC TAB
-// ────────────────────────────────────────────────────────────────────
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'cell-buttons') and .//span[normalize-space(text())='WBC']]"
-))
-
+WebUI.waitForElementClickable(wbcTab,10)
+WebUI.click(wbcTab)
 
 // ────────────────────────────────────────────────────────────────────
-// 5) RECLASSIFY SINGLE WBC PATCH → “Monocytes”
+// 5) RE-CLASSIFY PATCHES
 // ────────────────────────────────────────────────────────────────────
+// collect all patch elements
 List<WebElement> patches = driver.findElements(
-	By.xpath("//div[contains(@class,'patches-container')]")
+	By.cssSelector("div.patches-container .patch-item")
 )
-if (patches.size() >= 1) {
-	WebElement firstPatch = patches.get(0)
-	firstPatch.click()
-	WebUI.comment("✔️ Selected first patch")
+assert patches.size()>0 : "❌ No WBC patches found"
 
-	actions.contextClick(firstPatch).perform()
-	WebUI.comment("→ Opened context menu")
-
-	// click “Classify”
-	TestObject classifyItem = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-		"//li[contains(@class,'wbc-option')]//span[normalize-space(text())='Classify']"
-	)
-	WebUI.waitForElementClickable(classifyItem, 5)
-	WebUI.click(classifyItem)
-
-	// click “Monocytes”
-	TestObject monoOption = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-		"//li[not(contains(@class,'wbc-option'))]//div[normalize-space(text())='Monocytes']"
-	)
-	WebUI.waitForElementClickable(monoOption, 5)
-	WebUI.click(monoOption)
-
-	WebUI.comment("✅ Reclassified single patch to Monocytes")
-	WebUI.waitForElementPresent(
-		new TestObject().addProperty('xpath', ConditionType.EQUALS,
-			"//div[contains(text(),'patch reclassified') or contains(text(),'patches reclassified')]"
-		), 5
-	)
+// 5a) Single patch
+WebElement firstPatch = patches[0]
+firstPatch.click()
+WebUI.comment("✔ Selected patch #1")
+actions.contextClick(firstPatch).perform()
+WebUI.comment("→ Opened context menu")
+// click “Classify”
+new TestObject().addProperty('xpath',ConditionType.EQUALS,
+	"//li[contains(@class,'wbc-option')]/span[normalize-space(text())='Classify']"
+).with {
+	WebUI.waitForElementClickable(it,5)
+	WebUI.click(it)
 }
+// wait for the category list to appear
+WebUI.delay(1)
+// grab all classification options
+List<WebElement> categories = driver.findElements(
+	By.xpath("//ul[@role='menu']//li[not(contains(@class,'wbc-option'))]")
+)
+assert categories.size()>0 : "❌ No classification options!"
+String chosenCat = categories[0].getText().trim()
+categories[0].click()
+WebUI.comment("✅ Reclassified single patch → ${chosenCat}")
+WebUI.waitForElementPresent(
+	new TestObject().addProperty('xpath',ConditionType.EQUALS,
+		"//*[contains(text(),'reclassified') and contains(.,'${chosenCat}')]"
+	),5
+)
 
-
-// ────────────────────────────────────────────────────────────────────
-// 6) RECLASSIFY MULTIPLE WBC PATCHES → “Monocytes”
-// ────────────────────────────────────────────────────────────────────
-if (patches.size() > 1) {
-	int multiCount = Math.min(4, patches.size())
-	for (int i = 1; i < multiCount; i++) {
-		patches.get(i).click()
-		WebUI.comment("✔️ Selected patch #${i+1}")
-		WebUI.delay(0.2)
-	}
-
-	WebElement anySelected = patches.get(1)
-	actions.contextClick(anySelected).perform()
-	WebUI.comment("→ Opened context menu for multiple patches")
-
-	// click “Classify”
-	WebUI.waitForElementClickable(classifyItem, 5)
-	WebUI.click(classifyItem)
-	// click “Monocytes”
-	WebUI.waitForElementClickable(monoOption, 5)
-	WebUI.click(monoOption)
-
-	WebUI.comment("✅ Reclassified ${multiCount} patches to Monocytes")
-	WebUI.waitForElementPresent(
-		new TestObject().addProperty('xpath', ConditionType.EQUALS,
-			"//div[contains(text(),'patch reclassified') or contains(text(),'patches reclassified')]"
-		), 5
-	)
+// 5b) Multiple patches (up to 4)
+int multiCount = Math.min(4, patches.size())
+for(int i=1; i<multiCount; i++){
+	patches[i].click()
+	WebUI.comment("✔ Selected patch #${i+1}")
+	WebUI.delay(0.2)
 }
-
+actions.contextClick(patches[1]).perform()
+WebUI.comment("→ Opened context menu for multiple")
+WebUI.scrollToElement(
+	new TestObject().addProperty('xpath',ConditionType.EQUALS,
+		"//li[contains(@class,'wbc-option')]/span[normalize-space(text())='Classify']"
+	),5
+)
+WebUI.click(new TestObject().addProperty('xpath',ConditionType.EQUALS,
+	"//li[contains(@class,'wbc-option')]/span[normalize-space(text())='Classify']"
+))
+WebUI.delay(1)
+WebUI.click(new TestObject().addProperty('xpath',ConditionType.EQUALS,
+	"//ul[@role='menu']//li[normalize-space(text())='${chosenCat}']"
+))
+WebUI.comment("✅ Reclassified ${multiCount} patches → ${chosenCat}")
+WebUI.waitForElementPresent(
+	new TestObject().addProperty('xpath',ConditionType.EQUALS,
+		"//*[contains(text(),'patches reclassified') and contains(.,'${chosenCat}')]"
+	),5
+)
 
 // ────────────────────────────────────────────────────────────────────
-// 7) OPEN KEBAB MENU & PRINT LATEST 5 HISTORY ENTRIES
+// 6) OPEN HISTORY & VERIFY
 // ────────────────────────────────────────────────────────────────────
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
+WebUI.click(new TestObject().addProperty('xpath',ConditionType.EQUALS,
 	"//button[.//img[contains(@src,'kebab_menu.svg')]]"
 ))
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//span[normalize-space(text())='History']/ancestor::li"
+WebUI.click(new TestObject().addProperty('xpath',ConditionType.EQUALS,
+	"//li[.//span[normalize-space(text())='History']]"
 ))
 WebUI.delay(1)
 
+// grab the top history entry
 List<WebElement> entries = driver.findElements(By.cssSelector("li.css-1ecsk3j"))
-int toPrint = Math.min(5, entries.size())
-for (int i = 0; i < toPrint; i++) {
-	println("History entry ${i+1}: " + entries.get(i).getText().trim())
-}
+assert entries.size()>0 : "❌ No history entries"
+String text0 = entries[0].getText().trim()
+WebUI.comment("✔ History #1: ${text0}")
+
+// ensure the chosen category appears in that entry
+assert text0.contains(chosenCat) : "❌ History did not mention '${chosenCat}'"
+
+WebUI.comment("✅ All done — reclassification and history verified!")

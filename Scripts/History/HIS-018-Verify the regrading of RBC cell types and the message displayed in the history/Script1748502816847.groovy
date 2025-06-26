@@ -1,116 +1,133 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
-import org.openqa.selenium.By
 
 // ────────────────────────────────────────────────────────────────────
-// STEP 1: LOGIN & NAVIGATE TO LIST
+// 1) LOGIN
 // ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
 WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-					  'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.setEncryptedText(
+	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA=='
+)
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+
+// ────────────────────────────────────────────────────────────────────
+// 2) VERIFY LANDING ON REPORT LIST
+// ────────────────────────────────────────────────────────────────────
 WebUI.waitForElementPresent(
 	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
 	10
 )
 
-// grab Selenium driver
+// grab the Selenium WebDriver
 WebDriver driver = DriverFactory.getWebDriver()
 
 // ────────────────────────────────────────────────────────────────────
-// STEP 2: OPEN FIRST “To be reviewed” REPORT
+// 3) OPEN FIRST “Under review” REPORT
 // ────────────────────────────────────────────────────────────────────
-TestObject toBe = new TestObject().addProperty(
+TestObject underReviewRow = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"(//span[normalize-space()='To be reviewed']/ancestor::tr)[1]"
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
 )
-WebUI.waitForElementClickable(toBe, 10)
-WebUI.click(toBe)
+WebUI.waitForElementClickable(underReviewRow, 10)
+WebUI.scrollToElement(underReviewRow, 5)
+WebUI.click(underReviewRow)
 
 // ────────────────────────────────────────────────────────────────────
-// STEP 3: ASSIGN TO “admin”
+// 4) ASSIGN TO “admin” IF NEEDED
 // ────────────────────────────────────────────────────────────────────
-// open the dropdown
-TestObject assignedDropdown = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/following-sibling::div//button[@title='Open']"
-)
-WebUI.waitForElementClickable(assignedDropdown, 5)
-WebUI.click(assignedDropdown)
-// select admin
-TestObject adminOption = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//ul[contains(@class,'MuiAutocomplete-listbox')]//li[normalize-space(.)='admin']"
-)
-WebUI.waitForElementClickable(adminOption, 5)
-WebUI.scrollToElement(adminOption, 5)
-WebUI.click(adminOption)
-// verify
-TestObject assignedInput = new TestObject().addProperty(
+TestObject assignedInputTO = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//input[@id='assigned_to']"
 )
-WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
-WebUI.comment("✅ Assigned to admin")
+WebUI.waitForElementVisible(assignedInputTO, 5)
+String currentAssignee = WebUI.getAttribute(assignedInputTO, 'value').trim()
+if (!currentAssignee.equalsIgnoreCase('admin')) {
+	WebUI.comment("⚙️ Currently assigned to '${currentAssignee}', re-assigning to admin…")
+	TestObject dropdownTO = new TestObject().addProperty(
+		'xpath', ConditionType.EQUALS,
+		"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
+	)
+	TestObject adminOptionTO = new TestObject().addProperty(
+		'xpath', ConditionType.EQUALS,
+		"//ul[contains(@class,'MuiAutocomplete-listbox')]//li[normalize-space(text())='admin']"
+	)
+	TestObject reassignBtnTO = new TestObject().addProperty(
+		'xpath', ConditionType.EQUALS,
+		"//button[normalize-space()='Re-assign']"
+	)
+	WebUI.click(dropdownTO)
+	WebUI.waitForElementClickable(adminOptionTO, 5)
+	WebUI.scrollToElement(adminOptionTO, 5)
+	WebUI.click(adminOptionTO)
+	WebUI.waitForElementClickable(reassignBtnTO, 5)
+	WebUI.click(reassignBtnTO)
+	WebUI.delay(2)
+	WebUI.comment("✔ Re-assigned to admin.")
+} else {
+	WebUI.comment("ℹ️ Already assigned to admin; skipping reassignment.")
+}
 
 // ────────────────────────────────────────────────────────────────────
-// STEP 4: CLICK THE RBC TAB
+// 5) CLICK THE RBC TAB
 // ────────────────────────────────────────────────────────────────────
 TestObject rbcTab = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'cell-buttons') and .//span[text()='RBC']]"
+	"//button[contains(@class,'cell-buttons') and .//span[normalize-space(text())='RBC']]"
 )
 WebUI.waitForElementClickable(rbcTab, 10)
 WebUI.click(rbcTab)
 WebUI.delay(2)   // let the RBC panel render
 
 // ────────────────────────────────────────────────────────────────────
-// STEP 5: CLICK A CLICKABLE CELL AND REGRADE IT
+// 6) CLICK FIRST CLICKABLE CELL & RE-GRADE IT
 // ────────────────────────────────────────────────────────────────────
 List<WebElement> clickableRows = driver.findElements(
 	By.xpath("//div[contains(@class,'cell-row') and not(contains(@class,'not-clickable'))]")
 )
 if (clickableRows.isEmpty()) {
-	WebUI.comment("❌ No clickable RBC cells found")
+	WebUI.comment("No clickable RBC cells found")
 	WebUI.closeBrowser()
 	return
 }
-// click the first one
-clickableRows.get(0).click()
+
+WebElement targetRow = clickableRows.get(0)
+String cellName = targetRow.findElement(By.xpath(".//div[1]")).getText().trim()
+targetRow.click()
 WebUI.delay(1)
 
-// now find its grade‐radios and pick the first that isn’t already selected
-WebElement row = clickableRows.get(0)
-List<WebElement> grades = row.findElements(By.xpath(".//input[@type='radio']"))
+// pick the first radio that isn’t selected
+List<WebElement> grades = targetRow.findElements(By.xpath(".//input[@type='radio']"))
 boolean regraded = false
 for (WebElement g : grades) {
 	if (!g.isSelected()) {
 		g.click()
 		WebUI.delay(1)
-		// verify old percentage is struck through
-		WebElement strikeElem = row.findElement(By.xpath(".//div[3]/del"))
-		String td = strikeElem.getCssValue("text-decoration-line")
-		assert td.contains("line-through")
-		WebUI.comment("✅ “${row.findElement(By.xpath('.//div[1]')).getText()}” got regraded and struck through")
+		// verify strike-through on the old value
+		WebElement strikeElem = targetRow.findElement(By.xpath(".//div[3]/del"))
+		assert strikeElem.getCssValue("text-decoration-line").contains("line-through")
+		WebUI.comment("✅ “${cellName}” re-graded and strike-through verified")
 		regraded = true
 		break
 	}
 }
 if (!regraded) {
-	WebUI.comment("ℹ️ All grades were already selected, no change made")
+	WebUI.comment("⚠ All grades already selected—no re-grade performed")
 }
+
 // ────────────────────────────────────────────────────────────────────
-// 6: OPEN KEBAB MENU & SELECT HISTORY
+// 7) OPEN KEBAB MENU & SELECT “History”
 // ────────────────────────────────────────────────────────────────────
-// click three‐dots kebab
 TestObject kebabBtn = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//button[.//img[contains(@src,'kebab_menu.svg')]]"
@@ -118,7 +135,6 @@ TestObject kebabBtn = new TestObject().addProperty(
 WebUI.waitForElementClickable(kebabBtn, 5)
 WebUI.click(kebabBtn)
 
-// click History option
 TestObject historyOption = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//li[contains(@class,'appBar_popover__list-item') and .//span[text()='History']]"
@@ -127,19 +143,22 @@ WebUI.waitForElementClickable(historyOption, 5)
 WebUI.click(historyOption)
 
 // ────────────────────────────────────────────────────────────────────
-// 7: READ & PRINT LATEST HISTORY ENTRY
+// 8) WAIT FOR & VERIFY “Regrading” HISTORY ENTRY
 // ────────────────────────────────────────────────────────────────────
-// wait for the Regrading entry to show up
 WebUI.waitForElementVisible(
-	new TestObject().addProperty('xpath', "//h4[contains(@class,'event-title') and text()='Regrading']"),
-	10
+	new TestObject().addProperty(
+		'xpath', ConditionType.EQUALS,
+		"//h4[contains(@class,'event-title') and text()='Regrading']"
+	), 10
 )
 
-// grab the very first <li> under the history list
 WebElement latest = driver.findElement(
 	By.xpath("//ul[contains(@class,'events-container')]/li[1]")
 )
-String title = latest.findElement(By.xpath(".//h4[@class='event-title']")).getText()
-String desc  = latest.findElement(By.xpath(".//div[contains(@class,'event-description')]")).getText()
-WebUI.comment("🔍 Latest history: “${title}” — ${desc}")
+String title = latest.findElement(By.cssSelector("h4.event-title")).getText().trim()
+String desc  = latest.findElement(By.cssSelector("div.event-description")).getText().trim()
+
+WebUI.comment("🔍 History: ${title} — ${desc}")
+assert title == 'Regrading'
+assert desc.toLowerCase().contains(cellName.toLowerCase())
 

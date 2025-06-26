@@ -14,11 +14,19 @@ WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/filter_but
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/img_1'), 0)
 
-Boolean result = CustomKeywords.'generic.FilterFunctions.applyAndVerifyDateFilter'("11-05-2025","12-05-2025")
+Boolean result = CustomKeywords.'generic.FilterFunctions.applyAndVerifyDateFilter'("18-06-2025","22-06-2025")
 
 assertTrue(result)
 
-WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/img_1_2'))
+List<TestObject> beforeRows = WebUI.findWebElements(
+	new TestObject().addProperty("xpath", ConditionType.EQUALS, "//tbody/tr"),
+	10
+)
+int beforeCount = beforeRows.size()
+
+WebUI.comment("📊 Reports before filter: ${beforeCount}")
+
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/filter_button'))
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/div_6-5-2025 - 6-5-2025'))
 
@@ -38,3 +46,15 @@ WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(WebUiCommonHelper
 
 WebUI.delay(5)
 
+List<TestObject> afterRows = WebUI.findWebElements(
+	new TestObject().addProperty("xpath", ConditionType.EQUALS, "//tbody/tr"),
+	10
+)
+int afterCount = afterRows.size()
+WebUI.comment("📊 Reports after filter: ${afterCount}")
+
+// 5) Verify that the report count has changed
+assert beforeCount != afterCount :
+	"❌ Report count did not change after applying filter. Count = ${beforeCount}"
+
+WebUI.comment("✅ Report count changed: ${beforeCount} ➡ ${afterCount}")

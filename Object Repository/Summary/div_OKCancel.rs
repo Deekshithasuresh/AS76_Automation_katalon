@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[4]/div[2]/div/div[2]/div</value>
+         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[4]/div[2]/div[1]/div[2]/div</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>55fcf4c8-5a62-4720-a7b6-cd8e5fc6b706</webElementGuid>
+      <webElementGuid>9aa4d9f6-f780-4fdf-b577-45f5ba7a7d0c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>widget-container disabled</value>
-      <webElementGuid>67d64a99-ad10-49ba-91f5-0c7da35a6a49</webElementGuid>
+      <webElementGuid>861b12fc-6177-431b-ba33-3192ea9067e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>OKCancel</value>
-      <webElementGuid>21156266-a038-47a8-9448-a6509c060173</webElementGuid>
+      <webElementGuid>a6bd8afc-89b2-4d41-8327-9d3d4758ab46</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[1]/div[@class=&quot;reportSummary_container__0ygy0&quot;]/div[@class=&quot;reportSummary_pane__wyFf2 reportSummary_pane--special__zbjyX&quot;]/div[@class=&quot;reportSummary_pane-report__UbK-u&quot;]/div[@class=&quot;morphology-parent undefined&quot;]/div[@class=&quot;smearReport_morphology-editor__46VNO&quot;]/div[@class=&quot;widget-container disabled&quot;]</value>
-      <webElementGuid>6535edc4-033d-4b83-9250-a9e81229cff1</webElementGuid>
+      <webElementGuid>8f8097ad-d06f-4fda-84af-1308feb9b3b4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[4]/div[2]/div/div[2]/div</value>
-      <webElementGuid>49fcaa06-5d16-4f73-a933-eb5fb7761700</webElementGuid>
+      <webElementGuid>ba302e69-14fd-4e03-934b-282ea0614a76</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='RBC Morphology'])[1]/following::div[3]</value>
-      <webElementGuid>26874f1d-3849-4ed7-a5db-763e5a9f239a</webElementGuid>
+      <webElementGuid>0194e572-cfec-40e8-95d4-3555e1f67ed4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Peripheral Smear Report'])[1]/following::div[7]</value>
-      <webElementGuid>cc7231c1-ac5e-46e8-8296-15d1715d3d23</webElementGuid>
+      <webElementGuid>75ebd9a7-8d91-40eb-923d-b766c564b34d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div[2]/div/div[2]/div</value>
-      <webElementGuid>0fa622d1-cfef-49e9-b2e2-6d4608114569</webElementGuid>
+      <webElementGuid>c0c5e617-cd62-4256-be4f-b9dedb44f70e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'OKCancel' or . = 'OKCancel')]</value>
-      <webElementGuid>497a9770-4baf-4f16-8dbd-fe0590b75fc7</webElementGuid>
+      <webElementGuid>525701de-ef3b-4f74-a1ae-098b5d44be6b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[4]/div[2]/div[5]/div[2]/div</value>
-      <webElementGuid>cdc7e165-d2d9-45bc-ab15-040e8bcfa0ef</webElementGuid>
+      <webElementGuid>19ee9cf9-b798-4900-8cab-cb9c2176cd62</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Impression'])[1]/following::div[3]</value>
-      <webElementGuid>0ae0b69a-2eac-4ccf-b377-c5bab13a7fc0</webElementGuid>
+      <webElementGuid>7d08a9a5-68a1-4707-95be-948538eddad0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[4]/following::div[6]</value>
-      <webElementGuid>43bfc40d-981d-4d6b-a562-943f3dc9eca1</webElementGuid>
+      <webElementGuid>2480cf05-6dca-4fa1-bbab-93d046b27351</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +125,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/div[2]/div</value>
-      <webElementGuid>1d482d2e-86b5-43f1-a524-f86866674778</webElementGuid>
+      <webElementGuid>c78a05c0-59f0-443d-be4e-cf3ffa373f18</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

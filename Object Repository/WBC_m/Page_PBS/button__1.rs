@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[6]</value>
+         <value>//button[@type = 'button' and @title = 'Zoom out' and (text() = '–' or . = '–')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>ad9511bd-44d0-47aa-9be7-4830f786147c</webElementGuid>
+      <webElementGuid>40b1fea7-6d4b-42a5-a251-1954cf7986f6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ol-zoom-out</value>
-      <webElementGuid>cf2b8c7f-1a4f-44fa-8bf1-a6ec0184bd9a</webElementGuid>
+      <webElementGuid>8a38908d-ebc1-4734-84a8-8fc0987f3a21</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>454f2f95-e3c3-44f3-b031-f669469357ca</webElementGuid>
+      <webElementGuid>2b4477da-1246-4d95-969f-2d4ef8b8b034</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Zoom out</value>
-      <webElementGuid>bde670e1-59b3-4f6f-9d2d-803d781e07b1</webElementGuid>
+      <webElementGuid>3d4dfa04-d646-428f-b656-70e959086cc1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>–</value>
-      <webElementGuid>8f062d6a-524f-40f8-87a3-f9d95f9d39d8</webElementGuid>
+      <webElementGuid>c388ec72-ec28-45b1-ba50-577be407e73d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pbs-volumeViewport&quot;)/div[@class=&quot;ol-viewport&quot;]/div[@class=&quot;ol-overlaycontainer-stopevent&quot;]/div[@class=&quot;ol-zoom ol-unselectable ol-control&quot;]/button[@class=&quot;ol-zoom-out&quot;]</value>
-      <webElementGuid>c16e3057-6885-4cb7-92b1-6e30c9bb334c</webElementGuid>
+      <webElementGuid>e3220668-e77f-435a-a536-4eb9562bb865</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[6]</value>
-      <webElementGuid>996d1f28-ca65-4755-be61-e5db1fbcb131</webElementGuid>
+      <webElementGuid>d252c141-afd7-4153-ab1b-1c5e4fa0bf84</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pbs-volumeViewport']/div/div[3]/div[3]/button[2]</value>
-      <webElementGuid>95b39bf6-538a-49d3-9d1c-e54442eb0d22</webElementGuid>
+      <webElementGuid>dd2f1207-3a43-44be-82e9-9cfb5262bde6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='+'])[1]/following::button[1]</value>
-      <webElementGuid>9697f003-e1f3-4d98-bfc3-0c1d7c4684a2</webElementGuid>
+      <webElementGuid>cea81cce-3623-4714-b6bd-c0895f2c3363</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::button[2]</value>
-      <webElementGuid>b02eec69-2686-4167-b9d8-552bd88e9f51</webElementGuid>
+      <webElementGuid>d10ef219-471a-4306-9c2f-b772e47f80d1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='›'])[1]/preceding::button[2]</value>
-      <webElementGuid>1e869258-41c6-46a3-b909-08cf935f9121</webElementGuid>
+      <webElementGuid>e0f089fc-90f6-48b8-b4ba-b8b391d7d626</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='–']/parent::*</value>
-      <webElementGuid>aaff8df4-ce00-4e19-b4fe-2ae82302a082</webElementGuid>
+      <webElementGuid>0c5c24f2-34cf-4271-ab6b-367a2c2f84f4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/button[2]</value>
-      <webElementGuid>3cd7486c-0b61-4e18-b000-ab9217bbf7b8</webElementGuid>
+      <webElementGuid>f9731b11-387a-4478-8105-9aef87024e32</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,6 +133,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and @title = 'Zoom out' and (text() = '–' or . = '–')]</value>
-      <webElementGuid>c403810a-30ea-4347-8115-34e85bf0f0b8</webElementGuid>
+      <webElementGuid>945c7a3c-3a59-4078-ab6f-33fe903b9b7b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

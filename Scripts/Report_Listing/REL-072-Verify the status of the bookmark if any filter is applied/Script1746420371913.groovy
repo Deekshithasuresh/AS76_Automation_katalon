@@ -61,5 +61,4 @@ list.eachWithIndex { WebElement icon, int i ->
 }
 WebUI.comment("✅ All bookmark icons are unselected after applying 'Unbookmarked' filter.")
 
-WebUI.closeBrowser()
 

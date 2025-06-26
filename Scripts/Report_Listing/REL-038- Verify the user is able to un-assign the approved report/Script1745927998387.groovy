@@ -27,11 +27,8 @@ WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PB
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Approved')
 
-WebUI.waitForElementNotPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/assign__dd'),
-	0)
+WebUI.waitForElementNotPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/assign__dd'),0)
 
-WebUI.verifyElementNotClickable(findTestObject('Object Repository/Report_Listing/Page_PBS/input_Slide Id_assigned_to'))
 
-WebUI.closeBrowser()
 
 

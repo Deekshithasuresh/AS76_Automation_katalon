@@ -2,45 +2,9 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import org.openqa.selenium.*
-
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.*
 import org.openqa.selenium.interactions.Actions
 import javax.imageio.ImageIO
 import java.awt.image.BufferedImage
@@ -48,96 +12,121 @@ import java.io.*
 import java.util.zip.ZipEntry
 import java.util.zip.ZipOutputStream
 
-
-
+// Open browser and login
 WebUI.openBrowser('')
-
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
 
 WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId'), 'Chidu')
-
 WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In'))
-
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
-
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_WBC'))
 
+// Get driver instance
 WebDriver driver = DriverFactory.getWebDriver()
-
 Actions actions = new Actions(driver)
 
+// Method to get patches elements — now accepts driver parameter!
+def getPatches(WebDriver driver) {
+    return driver.findElements(By.xpath("//div[contains(@class,'patches-section ')]//div[contains(@class,'Card patches-container')]"))
+}
 
-List<WebElement> patches = driver.findElements(By.xpath("//div[contains(@class,'patches-section ')]//div[contains(@class,'Card patches-container')]"))
+// Get patches
+List<WebElement> patches = getPatches(driver)
+
 if (patches.size() < 3) {
-	WebUI.comment(":warning: Only found ${patches.size()} patches. Cannot select ${3}.")
-	return
+    WebUI.comment(":warning: Only found ${patches.size()} patches. Cannot select 3.")
+    WebUI.closeBrowser()
+    return
 }
+
+// Click first 3 patches
 for (int i = 0; i < 3; i++) {
-	patches[i].click()
-	WebUI.comment("Selected patch ${i + 1}")
-	WebUI.delay(0.2)
+    patches[i].click()
+    WebUI.comment("Selected patch ${i + 1}")
+    WebUI.delay(0.5)
 }
+
+// Right click on first patch
 actions.moveToElement(patches[0]).contextClick().build().perform()
-WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 10)
 
+// Verify download option present and click
+WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 10)
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
-WebUI.doubleClick(findTestObject('Object Repository/Commontools/Page_PBS/div_Image settings_default-patch  patch-foc_a6a738'))
+
+// Double click on specific patch to open
+WebUI.doubleClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
+
+WebUI.delay(2) // Let download happen
+
+// Again, click first 3 patches (to avoid stale element issue by re-fetching them)
+patches = getPatches(driver)
 
 if (patches.size() < 3) {
-	WebUI.comment(":warning: Only found ${patches.size()} patches. Cannot select ${3}.")
-	return
+    WebUI.comment(":warning: Only found ${patches.size()} patches. Cannot select 3.")
+    WebUI.closeBrowser()
+    return
 }
+
 for (int i = 0; i < 3; i++) {
-	patches[i].click()
-	WebUI.comment("Selected patch ${i + 1}")
-	WebUI.delay(5)
+    patches[i].click()
+    WebUI.comment("Selected patch ${i + 1} again")
+    WebUI.delay(0.5)
 }
 
-
+// Right click on second patch
 actions.moveToElement(patches[1]).contextClick().build().perform()
-WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 10)
 
+WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 10)
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
 
-// === 1. Set paths ===
+WebUI.delay(3) // Wait for download
+
+// Define file paths
 String downloadDir = System.getProperty("user.home") + File.separator + "Downloads"
-String sourceImagePath = downloadDir + File.separator + "patch.png" // Change if different
+String sourceImagePath = downloadDir + File.separator + "patch.png"
 String jpgPath = downloadDir + File.separator + "patch.jpg"
 String zipPath = downloadDir + File.separator + "patch.zip"
 
 try {
-	// === 2. Read original image ===
-	File sourceFile = new File(sourceImagePath)
-	BufferedImage bufferedImage = ImageIO.read(sourceFile)
+    // Read image file
+    File sourceFile = new File(sourceImagePath)
+    if (!sourceFile.exists()) {
+        WebUI.comment("Source image not found at: ${sourceImagePath}")
+        WebUI.closeBrowser()
+        return
+    }
 
-	// === 3. Convert and save as JPG ===
-	File jpgFile = new File(jpgPath)
-	ImageIO.write(bufferedImage, "jpg", jpgFile)
-	println "Converted image to JPG: ${jpgPath}"
+    BufferedImage bufferedImage = ImageIO.read(sourceFile)
 
-	// === 4. Zip the JPG file ===
-	FileOutputStream fos = new FileOutputStream(zipPath)
-	ZipOutputStream zos = new ZipOutputStream(fos)
+    // Save as JPG
+    File jpgFile = new File(jpgPath)
+    ImageIO.write(bufferedImage, "jpg", jpgFile)
+    println "Converted image to JPG: ${jpgPath}"
 
-	FileInputStream fis = new FileInputStream(jpgFile)
-	ZipEntry zipEntry = new ZipEntry(jpgFile.getName())
-	zos.putNextEntry(zipEntry)
+    // Zip the JPG file
+    FileOutputStream fos = new FileOutputStream(zipPath)
+    ZipOutputStream zos = new ZipOutputStream(fos)
+    FileInputStream fis = new FileInputStream(jpgFile)
+    ZipEntry zipEntry = new ZipEntry(jpgFile.getName())
+    zos.putNextEntry(zipEntry)
 
-	byte[] buffer = new byte[1024]
-	int length
-	while ((length = fis.read(buffer)) >= 0) {
-		zos.write(buffer, 0, length)
-	}
+    byte[] buffer = new byte[1024]
+    int length
+    while ((length = fis.read(buffer)) >= 0) {
+        zos.write(buffer, 0, length)
+    }
 
-	zos.closeEntry()
-	fis.close()
-	zos.close()
-	fos.close()
+    zos.closeEntry()
+    fis.close()
+    zos.close()
+    fos.close()
 
-	println "ZIP file created at: ${zipPath}"
+    println "ZIP file created at: ${zipPath}"
 
 } catch (Exception e) {
-	println "Error during image conversion or zipping: ${e.message}"
+    println "Error during image conversion or zipping: ${e.message}"
 }
+
+
+

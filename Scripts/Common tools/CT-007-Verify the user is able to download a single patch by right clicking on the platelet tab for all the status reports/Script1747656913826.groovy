@@ -22,12 +22,9 @@ import org.openqa.selenium.interactions.Actions as Actions
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import com.kms.katalon.core.annotation.Keyword as Keyword
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
-import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 WebUI.openBrowser('')
 
@@ -54,9 +51,10 @@ WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Morpho
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 10)
+
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
 
-WebUI.doubleClick(findTestObject('Object Repository/Commontools/Page_PBS/div_Image settings_default-patch  patch-foc_a6a738 (1)'))
+WebUI.doubleClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebDriver driver = DriverFactory.getWebDriver()
 
@@ -71,6 +69,6 @@ WebUI.click(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 10)
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
 
+WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
 
