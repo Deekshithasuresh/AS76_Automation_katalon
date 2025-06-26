@@ -26,11 +26,11 @@ CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
 
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Report-Signoff/span_Modify'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Report-Signoff/button_Modify_lymphocyte'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Report-Signoff/span_Modify_1'), 0)
 

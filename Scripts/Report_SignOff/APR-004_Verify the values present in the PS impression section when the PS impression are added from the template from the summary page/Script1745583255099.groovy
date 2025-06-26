@@ -1,14 +1,17 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.WebElement
+
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import org.openqa.selenium.Keys
-import org.openqa.selenium.WebElement
 
 // Step 1: Login and assign reviewer
 CustomKeywords.'generic.custumFunctions.login'()
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
 // Step 2: Enter text in PS Impression fields by selecting the first template
@@ -48,8 +51,24 @@ WebUI.click(findTestObject('Object Repository/Page_PBS/li_TemplateOption5'))
 WebUI.delay(5)
 
 // Step 3: Approve report
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
+//WebUI.click(findTestObject('Object Repository/Page_PBS/summary_Approve report_button'))
+//WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
+
+// Step 3: Approve report
+//WebUI.click(findTestObject('Object Repository/Page_PBS/summary_Approve report_button'))
+TestObject approveButton = findTestObject('Object Repository/WBC_m/Page_PBS/span_Approve report')
+WebElement apElement = WebUiCommonHelper.findWebElement(approveButton, 10)
+JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getWebDriver()
+js.executeScript("arguments[0].click();", apElement)
+// Wait for the popup and click the Confirm button
+TestObject confirmButton = new TestObject().addProperty(
+	"xpath",
+	ConditionType.EQUALS,
+	"//div[@class='modal-actions']//button[contains(., 'Confirm')]"
+)
+
+WebUI.waitForElementVisible(confirmButton, 10)
+WebUI.click(confirmButton)
 
 // Step 4: Verify text in PS Impression section
 WebUI.verifyTextPresent("First kind of impression for RBC.", false)

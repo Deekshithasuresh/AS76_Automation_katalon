@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Confirm</name>
+   <name>buttonclick_Confirm_approve (1)</name>
    <tag></tag>
-   <elementGuidId>f30e9fa0-d339-4983-acb5-346bf17e7002</elementGuidId>
+   <elementGuidId>1590fa48-c6ab-4790-bfc3-b7f54260c551</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[normalize-space(.)='Confirm']</value>
+      </entry>
       <entry>
          <key>CSS</key>
          <value>button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.backtoReportBtn.css-1lfr6uj</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[7]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>8b9ce73d-fc1d-4269-b4bb-54d02b6f26af</webElementGuid>
+      <webElementGuid>e7f0852b-7cdb-463d-861a-45be8ce3250e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary backtoReportBtn css-1lfr6uj</value>
-      <webElementGuid>e1f8a411-3e14-4757-ae48-23df0a919539</webElementGuid>
+      <webElementGuid>24f87598-0e2d-4f91-8130-835f8a807971</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>b00c1587-dab7-4171-a465-95a2ea2653be</webElementGuid>
+      <webElementGuid>1727cf92-b4be-4d8b-8699-660b30271e28</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>b16bd8e8-5856-4cee-b938-c6679c69524f</webElementGuid>
+      <webElementGuid>0be9801f-929b-4632-81e0-8f13d533522f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Confirm</value>
-      <webElementGuid>1614a3f3-f3fe-4ac7-9c79-1d8ba42af04c</webElementGuid>
+      <webElementGuid>5adc73c2-e731-444b-b089-d1799d5bae6e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[@class=&quot;dx-device-desktop dx-device-generic&quot;]/div[@class=&quot;MuiModal-root css-8ndowl&quot;]/div[@class=&quot;css-dbndpz&quot;]/div[@class=&quot;modal-actions&quot;]/button[@class=&quot;MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary backtoReportBtn css-1lfr6uj&quot;]</value>
-      <webElementGuid>0e6b8607-471b-4cc0-92d6-18763eb38159</webElementGuid>
+      <webElementGuid>b88d135b-f3d4-4848-9883-4df6d8c3a4af</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[7]</value>
-      <webElementGuid>1c21b6b8-df15-4b08-aa7f-2bc6ee3ef5aa</webElementGuid>
+      <webElementGuid>aae22fb1-887c-4ed1-84a1-5af1309ebb4b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[6]/following::button[1]</value>
-      <webElementGuid>207a119b-b470-4f60-afde-74c2030e2b3a</webElementGuid>
+      <webElementGuid>0e700cdc-f77e-4f30-9ada-5c2d65f930f5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Note:'])[1]/following::button[2]</value>
-      <webElementGuid>cd64faff-063f-432c-a83f-80c79aeea568</webElementGuid>
+      <webElementGuid>d9a825ce-2c6f-43ba-ba69-2505a97447cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Confirm']/parent::*</value>
-      <webElementGuid>b78d63a2-385b-463a-a0fd-d2b5da6a8006</webElementGuid>
+      <webElementGuid>6349b6be-83ea-4882-ae40-b2e9b39a8f79</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[6]/button[2]</value>
-      <webElementGuid>29987ae3-37c3-4468-8c25-aeb3a8d890fe</webElementGuid>
+      <webElementGuid>f94dad8f-5b2e-4690-bd98-08c218969627</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Confirm' or . = 'Confirm')]</value>
-      <webElementGuid>8f061545-1aff-419e-8d24-066caf163f88</webElementGuid>
+      <webElementGuid>bfa30861-2627-4a07-b471-a2426f0a92c4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[4]/following::button[1]</value>
-      <webElementGuid>b30d8d78-4cc7-44d3-9fe4-3c9006a54d0e</webElementGuid>
+      <webElementGuid>db6967ed-bf16-484f-9236-131a2449ab9a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,6 +133,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/button[2]</value>
-      <webElementGuid>e70c6976-b57f-41c2-af2c-7e189e4fc6b7</webElementGuid>
+      <webElementGuid>c60ba8e7-7c7e-4999-9d08-4715c447bc04</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

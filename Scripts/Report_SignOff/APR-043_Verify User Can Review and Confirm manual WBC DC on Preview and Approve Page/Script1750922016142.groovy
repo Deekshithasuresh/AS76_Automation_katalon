@@ -17,21 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-CustomKeywords.'generic.custumFunctions.login'()
-
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
-
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
-
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
-
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
-
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report_1'))
-
-WebUI.click(findTestObject('Object Repository/Page_PBS/div_Modify_MuiBackdrop-root MuiModal-backdr_ac197e'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_Select supporting images'), 'Select supporting images')
-

@@ -1,12 +1,16 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.WebElement
+
 import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 // Step 1: Login and assign reviewer
 CustomKeywords.'generic.custumFunctions.login'()
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
 // Step 2: Enter text in PS Impression fields
@@ -40,8 +44,15 @@ WebUI.executeJavaScript("document.querySelectorAll(\"div.ql-editor[contenteditab
 
 
 // Step 3: Approve report
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
+TestObject approveButton = findTestObject('Object Repository/WBC_m/Page_PBS/span_Approve report')
+WebElement apElement = WebUiCommonHelper.findWebElement(approveButton, 10)
+JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getWebDriver()
+js.executeScript("arguments[0].click();", apElement)
+
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
+
+WebUI.delay(5)
 
 // Step 4: Verify text in PS Impression section
 WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/p_RBC_Morphology'), 'RBC Morphology')

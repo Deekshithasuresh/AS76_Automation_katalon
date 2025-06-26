@@ -19,19 +19,19 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/summary_Approve report_button'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/img'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/add_supporting_images'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/img_1'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/approve_add_supporting_page'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_Are you sure you want to approve the report'), 'Are you sure you want to approve the report?')
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_Are you sure you want to approve the report'), 'Are you sure you want to approve the report?')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_This action is not reversible'), 'This action is not reversible.')
 

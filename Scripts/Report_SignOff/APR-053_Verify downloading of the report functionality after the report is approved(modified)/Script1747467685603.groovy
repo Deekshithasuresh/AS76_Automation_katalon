@@ -5,7 +5,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 
 // Log in and approve the report as before
 CustomKeywords.'generic.custumFunctions.login'()
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 def driver = DriverFactory.getWebDriver()
 // Navigate to WBC tab and open Neutrophil cell details
@@ -30,12 +30,27 @@ if (NeutrophilsBefore > 0) {
 }
 
 // Approve the report
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
+
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
+
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
+
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report_1'))
+
 WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report_1'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/img_1'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Download PDF report'))
+//WebUI.click(findTestObject('Object Repository/Page_PBS/summary_Approve report_button'))
+//WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
+//WebUI.click(findTestObject('Object Repository/Page_PBS/review_Approve report_button'))
+//WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report_1'))
+
+WebUI.click(findTestObject('Object Repository/Page_PBS/approve_add_supporting_page'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/kebab_dots_approve'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Download PDF report (1)'))
+//WebUI.click(findTestObject('Object Repository/Page_PBS/span_Download PDF report'))
 

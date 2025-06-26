@@ -26,7 +26,7 @@ CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
 
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
 
@@ -35,11 +35,11 @@ WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Modify'))
 //WebUI.verifyElementPresent(findTestObject('Object Repository/Report-Signoff/span_Add to report'), 0)
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel'))
+WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel_modify_neutrophil'))
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/span_Modify'))
+WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Modify_lymphocyte'))
 
 WebUI.delay(2)
 //WebUI.verifyElementPresent(findTestObject('Object Repository/Report-Signoff/button_Add to report'), 0)
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel'))
+WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel_modify_neutrophil'))

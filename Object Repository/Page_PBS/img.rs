@@ -3,22 +3,22 @@
    <description></description>
    <name>img</name>
    <tag></tag>
-   <elementGuidId>59fbb330-6842-4b01-95f3-b6a36d607dde</elementGuidId>
+   <elementGuidId>5ed9cdbd-f86c-4da0-a74b-ba0cbb14b5c6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>img[alt=&quot;Hide Password&quot;]</value>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div[2]/div[2]/div/img</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div/div/form/div/div[2]/div/div/button/img</value>
+         <key>CSS</key>
+         <value>div.reportTypeComponent_report-type-container__FrgJX > img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:label=&quot;Toggle password visibility&quot;i</value>
+         <value>div >> internal:has-text=/^Clear filtersMy reportsReady for review$/ >> internal:role=img >> nth=2</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,190 +29,46 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>fb192d3b-4db1-4036-b3d7-d7a75e9acfb9</webElementGuid>
+      <webElementGuid>29266ac8-bdd4-4241-ac5b-c4bbe0a99b2d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>src</name>
       <type>Main</type>
-      <value>/assets/icons/visibility-icon.svg</value>
-      <webElementGuid>40a9e5b1-8aaa-4914-b777-78d9ed612958</webElementGuid>
+      <value>/icons/down_arrow.svg</value>
+      <webElementGuid>13a8be68-73ab-48c5-acfb-5aac58f0ba13</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;login-page css-10fsrl8&quot;]/div[@class=&quot;css-1htdn29&quot;]/form[1]/div[@class=&quot;form-template&quot;]/div[@class=&quot;MuiFormControl-root MuiTextField-root form-input login-password-field css-7qqdow&quot;]/div[@class=&quot;MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd css-1ca5aka&quot;]/div[@class=&quot;MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeSmall css-1nvf7g0&quot;]/button[@class=&quot;MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk&quot;]/img[1]</value>
-      <webElementGuid>1699fb51-2608-40ed-9e88-e73405e0dfa0</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>alt</name>
-      <type>Main</type>
-      <value>Hide Password</value>
-      <webElementGuid>190a1858-d200-4b7a-96e6-15c4e771dad3</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-label</name>
-      <type>Main</type>
-      <value>The report has been modified. Please refresh the page for the updated report</value>
-      <webElementGuid>5910b926-a870-4e30-bb49-1a8ff0e2e990</webElementGuid>
+      <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[1]/div[@class=&quot;subHeaderComponent_container__-Zczc&quot;]/div[2]/div[@class=&quot;reportTypeComponent_report-type-container__FrgJX&quot;]/img[1]</value>
+      <webElementGuid>b9bc3e5b-291d-4084-bf9d-a1b54519bc6c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div/div/form/div/div[2]/div/div/button/img</value>
-      <webElementGuid>aa27fd01-e326-46d5-9488-0f216e1dfc5f</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:img</name>
-      <type>Main</type>
-      <value>//img[@alt='Hide Password']</value>
-      <webElementGuid>1a57b8dc-a3d1-45b3-b0d4-fee76399bd41</webElementGuid>
+      <value>//div[@id='root']/div/div/div[2]/div[2]/div/img</value>
+      <webElementGuid>6abe6022-a71d-47e0-aceb-cc051af7a20b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button/img</value>
-      <webElementGuid>36ade7cf-1ca1-4ceb-9e9f-7b560dea8327</webElementGuid>
+      <value>//div[2]/div/img</value>
+      <webElementGuid>8b6401b1-62be-4c09-8571-1a6ed56133d8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//img[@src = '/assets/icons/visibility-icon.svg' and @alt = 'Hide Password']</value>
-      <webElementGuid>caf27150-1d14-495d-b258-f8aa1cdf4681</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/div/div/div/img</value>
-      <webElementGuid>44da343e-1ef4-4604-bf5e-4722cd937b05</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//img</value>
-      <webElementGuid>d858afd0-6b51-412f-857c-9d4e7064833f</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//img[@src = '/icons/back_button.svg']</value>
-      <webElementGuid>1385d085-a8a8-43e0-97af-3ab5f734bcce</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/div/div/div/button/img</value>
-      <webElementGuid>031c1695-4c88-424f-8d55-39254598aad4</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:img</name>
-      <type>Main</type>
-      <value>//img[@alt='img-icon']</value>
-      <webElementGuid>f93d0400-89ff-44aa-83bd-a444390a4dae</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div/div/div/button/img</value>
-      <webElementGuid>5a530da4-8afc-40d0-9c35-c65ef82dd89f</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//img[@src = '/icons/supporting-image.svg' and @alt = 'img-icon']</value>
-      <webElementGuid>2f0b0624-a18a-42cc-9551-bedf197a7280</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/div/div[3]/div/button[2]/img</value>
-      <webElementGuid>ce299c6f-1875-46c9-88da-87a6e0617e63</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//button[2]/img</value>
-      <webElementGuid>8cb33fff-c338-4324-ba3a-53fbdf5cd2be</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//img[@src = '/icons/tick-active.svg']</value>
-      <webElementGuid>b985ae55-36ec-4918-92df-17890b845dbd</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/header/div/div[2]/div/img</value>
-      <webElementGuid>4280a593-baed-49ef-ad79-d2c7e6f9d1f5</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//div/img</value>
-      <webElementGuid>abc245b5-3ac0-4dde-8dec-ef17ad2c5d8e</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//img[@src = '/icons/warning-alert.svg']</value>
-      <webElementGuid>0140e6a0-57bf-45d2-ae85-a400e17a7159</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='root']/div/div/div/div[4]/div/div/div/button/img</value>
-      <webElementGuid>dd5195c6-4c61-404a-a7c0-019335b48b1f</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//img[@src = '/icons/popup-icon.svg']</value>
-      <webElementGuid>2cbe0fca-fcb9-4810-8fc9-034010718ed5</webElementGuid>
+      <value>//img[@src = '/icons/down_arrow.svg']</value>
+      <webElementGuid>278ad205-3f24-4ede-aa88-f436b5242073</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

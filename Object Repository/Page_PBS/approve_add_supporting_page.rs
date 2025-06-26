@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>img_1</name>
+   <name>approve_add_supporting_page</name>
    <tag></tag>
    <elementGuidId>fe6b82b0-92de-41fe-ada8-caaa32fed07f</elementGuidId>
    <selectorCollection>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div/div/div/button/img</value>
+         <value>//button[.//span[text()='Approve report']]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>8071e0ba-0898-4f41-a316-27326cd9b2ff</webElementGuid>
+      <webElementGuid>48861c1c-62ee-4548-9257-0b63e144bf63</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>src</name>
       <type>Main</type>
       <value>/icons/supporting-image.svg</value>
-      <webElementGuid>729cc931-cb19-4ba8-a8f4-c73ec145da70</webElementGuid>
+      <webElementGuid>3575f1a1-f129-4978-b268-551b0b18e8d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;css-1f46vhq&quot;]/div[@class=&quot;approve-selection-header&quot;]/div[@class=&quot;approval-selection-container&quot;]/button[@class=&quot;MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary add-image-btn css-17b54lo&quot;]/img[1]</value>
-      <webElementGuid>6e67c91d-7694-4d4a-bb14-275163261cce</webElementGuid>
+      <webElementGuid>85da4e29-7afb-4375-b3b5-9e4cad3706f3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>img-icon</value>
-      <webElementGuid>38874b98-ad5d-4cd8-896e-b8d42e4f5067</webElementGuid>
+      <webElementGuid>12912df7-5300-42a1-9218-087ab7dfd375</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/div/div/button/img</value>
-      <webElementGuid>8c203017-e7f6-4f24-9c26-043294377b96</webElementGuid>
+      <webElementGuid>1185a897-6801-4799-9a2d-8562fdd2609e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='img-icon']</value>
-      <webElementGuid>34fb2f8e-9684-45b9-bed0-15c6387650f2</webElementGuid>
+      <webElementGuid>ea9aad54-c572-4734-8e13-49d0ae760ee7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div/div/button/img</value>
-      <webElementGuid>c82ae857-db6e-4501-a1b3-b19fca383528</webElementGuid>
+      <webElementGuid>4d01be7a-0f56-42c2-a6c1-c65aba7d5a1a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '/icons/supporting-image.svg' and @alt = 'img-icon']</value>
-      <webElementGuid>6a46f2b6-ccb7-4b02-8e43-0d35456dda0c</webElementGuid>
+      <webElementGuid>16f58ac3-e69f-4dd1-8c9b-94ace1d41943</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/div[3]/button/img</value>
-      <webElementGuid>7bb65e81-b173-40a0-8b38-c78690099546</webElementGuid>
+      <webElementGuid>4ba9d4fe-31e2-4975-933c-50e28cdf48e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button/img</value>
-      <webElementGuid>8a3b478b-00dc-437e-a86c-fca006abe4be</webElementGuid>
+      <webElementGuid>d0890f65-b96e-49fb-89fe-75beabf4b683</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '/icons/kebab_menu.svg']</value>
-      <webElementGuid>b2651ff3-d44b-4409-91a7-a7df49f8d970</webElementGuid>
+      <webElementGuid>9a76209c-0804-4476-beb7-df39acd11ff1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/header/div/div[2]/button/img</value>
-      <webElementGuid>bcb855a4-3fef-4319-9dec-9aaf5862d411</webElementGuid>
+      <webElementGuid>32c06023-89d2-429f-a35f-a73e4f5b3ffb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/button/img</value>
-      <webElementGuid>548d135d-effb-4164-b345-6ac9d2296f70</webElementGuid>
+      <webElementGuid>197db1b0-f830-4e52-bf38-182f01572fb7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,6 +133,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '/icons/tick-active.svg']</value>
-      <webElementGuid>77c829da-f326-4fc6-82d7-dd795f2bf8f2</webElementGuid>
+      <webElementGuid>17b7dfac-f265-41db-8e4d-34f00071fffc</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

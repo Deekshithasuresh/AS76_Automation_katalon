@@ -23,9 +23,7 @@ CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/div_09-Apr-2025, 1226 PM (EAT)'))
-
 WebUI.verifyElementText(findTestObject('Object Repository/Report-Signoff/span_Approve report'), 'Approve report')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Report-Signoff/button_Approve report'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Report-Signoff/summary_Approve report_button'), 0)
 

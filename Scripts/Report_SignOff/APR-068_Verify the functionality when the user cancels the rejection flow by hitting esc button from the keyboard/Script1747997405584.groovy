@@ -18,10 +18,10 @@ CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Reject report'))
 
 // Wait for the popup to appear
-WebUI.verifyElementClickable(findTestObject('Object Repository/Report-Signoff/button_Cancel'))
+WebUI.verifyElementClickable(findTestObject('Object Repository/Report-Signoff/button_Cancel_modify_neutrophil'))
 
 // Wait until cancel button is visible (popup open)
-WebUI.verifyElementVisible(findTestObject('Object Repository/Report-Signoff/button_Cancel'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/Report-Signoff/button_Cancel_modify_neutrophil'))
 
 // Use Robot to send the ESCAPE key (closes popup)
 Robot robot = new Robot()
@@ -31,4 +31,4 @@ robot.keyRelease(KeyEvent.VK_ESCAPE)
 // Optional: wait to observe the effect
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel'))
+WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel_modify_neutrophil'))
