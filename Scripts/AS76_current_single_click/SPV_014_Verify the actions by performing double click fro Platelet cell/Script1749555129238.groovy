@@ -32,7 +32,6 @@ WebUI.sendKeys(findTestObject('Object Repository/retain_patchs/input_password_lo
 WebUI.maximizeWindow()
 //WebUI.maximizeWindow()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('deekshithaS')
 
 
 

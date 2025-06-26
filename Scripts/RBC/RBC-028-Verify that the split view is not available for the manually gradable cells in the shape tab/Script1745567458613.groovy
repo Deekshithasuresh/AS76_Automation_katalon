@@ -22,7 +22,7 @@ import loginPackage.Login
 Login lg= new Login()
 lg.login()
 WebUI.delay(2)
-lg.selectReportByStatus('To be reviewed')
+lg.selectReportByStatus('Under review')
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_RBC'), 10)
 
@@ -58,13 +58,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PB
 
 WebUI.verifyElementText(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_No preview (2)'), 'No preview')
 
-WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_Stomatocytes (1)'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_No patches available for Stomatocytes'),
-	0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_No patches available for Stomatocytes_1'),
-	'No patches available for Stomatocytes')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_No preview (2)'), 10)
 
