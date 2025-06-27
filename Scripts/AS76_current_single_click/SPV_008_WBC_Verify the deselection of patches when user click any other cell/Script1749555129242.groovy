@@ -1,6 +1,7 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 
 
+
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -83,177 +84,291 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Summary/Page_PBS (1)/in
 
 WebUI.sendKeys(findTestObject('Object Repository/Summary/Page_PBS (1)/input_password_loginPassword'), Keys.chord(Keys.ENTER))
 WebUI.maximizeWindow()
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import org.openqa.selenium.support.ui.WebDriverWait
+import org.openqa.selenium.support.ui.ExpectedConditions
+import org.openqa.selenium.JavascriptExecutor
+import com.kms.katalon.core.testobject.ConditionType
+import java.time.Duration
 
-// Wait for the page to load
-WebUI.waitForPageLoad(30)
-WebUI.maximizeWindow()
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('deekshithaS')
-
-
-// Select WBC tab
-WebUI.waitForElementPresent(findTestObject('Object Repository/retain_patchs/span_WBC'), 20)
-WebUI.verifyElementText(findTestObject('Object Repository/retain_patchs/span_WBC'), 'WBC')
-WebUI.click(findTestObject('Object Repository/retain_patchs/span_WBC'))
-
-// Start with patch view (reversed from original)
-WebUI.verifyElementText(findTestObject('Object Repository/retain_patchs/img_Platelets_patch-view'), '')
-WebUI.click(findTestObject('Object Repository/retain_patchs/img_Platelets_patch-view'))
-
-
-
-try {
-	// Wait for page to load completely
-	WebUI.delay(2)
-
-	// Get the WebDriver instance for element finding
+// Helper function to handle element interception with multiple strategies
+def robustClick(TestObject element, String elementName, int maxRetries = 3) {
 	WebDriver driver = DriverFactory.getWebDriver()
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15))
+	
+	for (int attempt = 1; attempt <= maxRetries; attempt++) {
+		try {
+			println("🔄 Attempt ${attempt} to click on ${elementName}")
+			
+			// Wait for element to be present and visible
+			WebUI.waitForElementPresent(element, 15)
+			WebUI.waitForElementVisible(element, 15)
+			
+			// Check if nlr-tag elements are present and try to handle them
+			try {
+				List<WebElement> nlrTags = driver.findElements(By.cssSelector(".nlr-tag"))
+				if (nlrTags.size() > 0) {
+					println("⚠️ Found ${nlrTags.size()} nlr-tag elements that might interfere")
+					// Hide nlr-tag elements temporarily using JavaScript
+					JavascriptExecutor js = (JavascriptExecutor) driver
+					js.executeScript("document.querySelectorAll('.nlr-tag').forEach(el => el.style.visibility = 'hidden');")
+					WebUI.delay(0.5)
+				}
+			} catch (Exception e) {
+				println("⚠️ Could not handle nlr-tag elements: " + e.getMessage())
+			}
+			
+			switch (attempt) {
+				case 1:
+					// Strategy 1: Standard click with scroll
+					println("📍 Strategy 1: Standard click with scroll")
+					WebUI.scrollToElement(element, 3)
+					WebUI.delay(1)
+					WebUI.waitForElementClickable(element, 10)
+					WebUI.click(element)
+					break
+					
+				case 2:
+					// Strategy 2: JavaScript click
+					println("📍 Strategy 2: JavaScript click")
+					WebElement webElement = driver.findElement(By.xpath(element.findPropertyValue("xpath")))
+					JavascriptExecutor js = (JavascriptExecutor) driver
+					js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", webElement)
+					WebUI.delay(1)
+					js.executeScript("arguments[0].click();", webElement)
+					break
+					
+				case 3:
+					// Strategy 3: Actions click with offset
+					println("📍 Strategy 3: Actions click with offset")
+					WebElement webElement = driver.findElement(By.xpath(element.findPropertyValue("xpath")))
+					JavascriptExecutor js = (JavascriptExecutor) driver
+					
+					// Move element to center of viewport
+					js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", webElement)
+					WebUI.delay(1)
+					
+					// Force click using coordinates
+					js.executeScript("""
+                        var rect = arguments[0].getBoundingClientRect();
+                        var event = new MouseEvent('click', {
+                            view: window,
+                            bubbles: true,
+                            cancelable: true,
+                            clientX: rect.left + rect.width / 2,
+                            clientY: rect.top + rect.height / 2
+                        });
+                        arguments[0].dispatchEvent(event);
+                    """, webElement)
+					break
+			}
+			
+			// Restore nlr-tag visibility
+			try {
+				JavascriptExecutor js = (JavascriptExecutor) driver
+				js.executeScript("document.querySelectorAll('.nlr-tag').forEach(el => el.style.visibility = 'visible');")
+			} catch (Exception e) {
+				// Ignore restoration errors
+			}
+			
+			WebUI.delay(2)
+			println("✅ Successfully clicked ${elementName} using strategy ${attempt}")
+			return true
+			
+		} catch (Exception e) {
+			println("❌ Attempt ${attempt} failed for ${elementName}: " + e.getMessage())
+			
+			// Restore nlr-tag visibility on error
+			try {
+				JavascriptExecutor js = (JavascriptExecutor) driver
+				js.executeScript("document.querySelectorAll('.nlr-tag').forEach(el => el.style.visibility = 'visible');")
+			} catch (Exception restoreError) {
+				// Ignore restoration errors
+			}
+			
+			if (attempt == maxRetries) {
+				println("❌ All ${maxRetries} attempts failed for ${elementName}")
+				WebUI.takeScreenshot()
+				throw e
+			}
+			WebUI.delay(1)
+		}
+	}
+	return false
+}
 
-	// Create the test object for single click
-	TestObject targetElement = new TestObject()
-	targetElement.addProperty("xpath", ConditionType.EQUALS, "//div[contains(@class, 'patch-img-container')]")
-
-	// Wait for element and verify it exists
-	WebUI.waitForElementPresent(targetElement, 30)
-	WebUI.waitForElementVisible(targetElement, 30)
-
-	// Perform first single click to select the patch
-	WebUI.click(targetElement)
-	println("✅ Patch has been selected with first single click")
-
-	// Wait a moment for selection to register
-	WebUI.delay(1)
-
-	// Verify patch is selected using the selected-patch class indicator
+// Helper function to safely find and click patches
+def findAndClickPatch() {
+	WebDriver driver = DriverFactory.getWebDriver()
+	
 	try {
-		List<WebElement> selectedPatches = driver.findElements(By.xpath("//div[contains(@class, 'selected-patch')]"))
-		if (selectedPatches.size() > 0) {
-			println("✅ Patch selection is confirmed - found " + selectedPatches.size() + " selected patch(es)")
+		// Wait for patches to load
+		WebUI.delay(3)
+		
+		TestObject patchElement = new TestObject()
+		patchElement.addProperty("xpath", ConditionType.EQUALS, "//div[contains(@class, 'patch-img-container')]")
+		
+		// Check if patches exist
+		if (WebUI.verifyElementPresent(patchElement, 10, FailureHandling.OPTIONAL)) {
+			WebUI.waitForElementVisible(patchElement, 15)
+			WebUI.click(patchElement)
+			println("✅ Patch selected successfully")
+			return true
 		} else {
-			println("⚠️ No selected patch indicator found, but proceeding with navigation")
+			println("⚠️ No patch containers found")
+			return false
 		}
 	} catch (Exception e) {
-		println("⚠️ Could not verify patch selection state: " + e.getMessage())
+		println("❌ Failed to select patch: " + e.getMessage())
+		return false
 	}
+}
 
-	// First ensure we're in Neutrophils section
+// Helper function to verify patch selection state
+def verifyPatchSelectionState(String expectedState) {
+	WebDriver driver = DriverFactory.getWebDriver()
+	
+	try {
+		WebUI.delay(1)
+		List<WebElement> selectedPatches = driver.findElements(By.xpath("//div[contains(@class, 'selected-patch')]"))
+		
+		if (expectedState == "selected") {
+			if (selectedPatches.size() > 0) {
+				println("✅ Patch selection confirmed - found ${selectedPatches.size()} selected patch(es)")
+				return true
+			} else {
+				println("⚠️ Expected selected patches but found none")
+				return false
+			}
+		} else if (expectedState == "deselected") {
+			if (selectedPatches.size() == 0) {
+				println("✅ Patch deselection confirmed - no selected patches found")
+				return true
+			} else {
+				println("⚠️ Expected no selected patches but found ${selectedPatches.size()}")
+				return false
+			}
+		}
+	} catch (Exception e) {
+		println("⚠️ Could not verify patch ${expectedState} state: " + e.getMessage())
+		return false
+	}
+}
+
+// Main test execution
+try {
+	// Initial setup
+	println("🚀 Starting test execution...")
+	WebUI.waitForPageLoad(30)
+	WebUI.maximizeWindow()
+	
+	CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
+	CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('deekshithaS')
+	
+	// Navigate to WBC tab
+	println("📋 Navigating to WBC tab...")
+	WebUI.waitForElementPresent(findTestObject('Object Repository/retain_patchs/span_WBC'), 20)
+	WebUI.verifyElementText(findTestObject('Object Repository/retain_patchs/span_WBC'), 'WBC')
+	WebUI.click(findTestObject('Object Repository/retain_patchs/span_WBC'))
+	
+	// Switch to patch view
+	println("🔍 Switching to patch view...")
+	WebUI.verifyElementText(findTestObject('Object Repository/retain_patchs/img_Platelets_patch-view'), '')
+	WebUI.click(findTestObject('Object Repository/retain_patchs/img_Platelets_patch-view'))
+	
+	// Step 1: Select a patch
+	println("🎯 Step 1: Selecting a patch...")
+	if (findAndClickPatch()) {
+		verifyPatchSelectionState("selected")
+	} else {
+		println("❌ Could not find patches to select")
+		throw new Exception("No patches available for selection")
+	}
+	
+	// Step 2: Ensure we're in Neutrophils section initially
+	println("🩸 Step 2: Ensuring we're in Neutrophils section...")
 	TestObject neutrophilsElement = new TestObject()
 	neutrophilsElement.addProperty("xpath", ConditionType.EQUALS, "//td[normalize-space(text())='Neutrophils']")
 	
 	try {
-		WebUI.waitForElementPresent(neutrophilsElement, 5)
-		if (WebUI.verifyElementPresent(neutrophilsElement, 5)) {
-			WebUI.click(neutrophilsElement)
-			WebUI.delay(1)
-			println("✅ Ensured we are in Neutrophils section initially")
+		if (WebUI.verifyElementPresent(neutrophilsElement, 10, FailureHandling.OPTIONAL)) {
+			robustClick(neutrophilsElement, "Neutrophils (initial)")
 		}
 	} catch (Exception e) {
-		println("⚠️ Could not ensure Neutrophils section: " + e.getMessage())
+		println("⚠️ Could not ensure initial Neutrophils section: " + e.getMessage())
 	}
-
-	// Create test object for Lymphocytes navigation
+	
+	// Step 3: Navigate to Lymphocytes (should deselect patches)
+	println("🔄 Step 3: Navigating to Lymphocytes to test deselection...")
 	TestObject lymphocytesElement = new TestObject()
 	lymphocytesElement.addProperty("xpath", ConditionType.EQUALS, "//td[normalize-space(text())='Lymphocytes']")
-
-	// Click on Lymphocytes to navigate away
-	try {
-		WebUI.waitForElementPresent(lymphocytesElement, 15)
-		WebUI.waitForElementClickable(lymphocytesElement, 15)
-		WebUI.click(lymphocytesElement)
-		WebUI.delay(3)
-		println("✅ Navigated to Lymphocytes section")
+	
+	if (WebUI.verifyElementPresent(lymphocytesElement, 15, FailureHandling.OPTIONAL)) {
+		robustClick(lymphocytesElement, "Lymphocytes")
+		WebUI.delay(2)
+		println("✅ Successfully navigated to Lymphocytes section")
+	} else {
+		println("⚠️ Lymphocytes element not found, trying alternative approach")
+		// Try alternative xpath for Lymphocytes
+		TestObject altLymphocytesElement = new TestObject()
+		altLymphocytesElement.addProperty("xpath", ConditionType.EQUALS, "//td[contains(text(),'Lymphocytes')]")
 		
-		// Verify we're in Lymphocytes by checking if patches are different
-		WebUI.delay(1)
-		
-	} catch (Exception e) {
-		println("❌ Failed to navigate to Lymphocytes: " + e.getMessage())
-		throw e
-	}
-
-	// Click on Neutrophils to return to original section
-	try {
-		WebUI.waitForElementPresent(neutrophilsElement, 15)
-		
-		// Try multiple approaches to click Neutrophils
-		try {
-			// First try: Scroll to element and wait
-			WebUI.scrollToElement(neutrophilsElement, 5)
-			WebUI.delay(1)
-			WebUI.waitForElementClickable(neutrophilsElement, 10)
-			WebUI.click(neutrophilsElement)
-			WebUI.delay(3)
-			println("✅ Returned to Neutrophils section")
-			
-		} catch (Exception clickError1) {
-			println("⚠️ First click attempt failed: " + clickError1.getMessage())
-			
-			// Second try: Use JavaScript click
-			try {
-				WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(driver.findElement(By.xpath("//td[normalize-space(text())='Neutrophils']"))))
-				WebUI.delay(3)
-				println("✅ Successfully returned to Neutrophils section using JavaScript click")
-				
-			} catch (Exception clickError2) {
-				println("⚠️ JavaScript click failed: " + clickError2.getMessage())
-				
-				// Third try: Use enhanced click with offset
-				try {
-					WebUI.enhancedClick(neutrophilsElement)
-					WebUI.delay(3)
-					println("✅ Successfully returned to Neutrophils section using enhanced click")
-					
-				} catch (Exception clickError3) {
-					println("❌ All click attempts failed for Neutrophils: " + clickError3.getMessage())
-					
-					// Final try: Find and click a different Neutrophils element if available
-					try {
-						TestObject altNeutrophilsElement = new TestObject()
-						altNeutrophilsElement.addProperty("xpath", ConditionType.EQUALS, "//td[contains(text(),'Neutrophils')]")
-						WebUI.waitForElementPresent(altNeutrophilsElement, 5)
-						WebUI.scrollToElement(altNeutrophilsElement, 3)
-						WebUI.click(altNeutrophilsElement)
-						WebUI.delay(3)
-						println("✅ Successfully returned to Neutrophils section using alternative xpath")
-					} catch (Exception finalError) {
-						println("❌ Final attempt failed: " + finalError.getMessage())
-						throw finalError
-					}
-				}
-			}
+		if (WebUI.verifyElementPresent(altLymphocytesElement, 10, FailureHandling.OPTIONAL)) {
+			robustClick(altLymphocytesElement, "Lymphocytes (alternative)")
 		}
-		
-	} catch (Exception e) {
-		println("❌ Failed to return to Neutrophils after all attempts: " + e.getMessage())
 	}
-
-	// Wait for the original patches to be visible again after navigation
-	WebUI.waitForElementPresent(targetElement, 10)
-	WebUI.waitForElementVisible(targetElement, 10)
-
-	// Verify patch is deselected after navigation using the selected-patch class indicator
-	try {
-		List<WebElement> selectedPatches = driver.findElements(By.xpath("//div[contains(@class, 'selected-patch')]"))
-		if (selectedPatches.size() == 0) {
-			println("✅ Patch deselection is confirmed - no selected patches found after navigation")
-		} else {
-			println("⚠️ Found " + selectedPatches.size() + " selected patch(es) - patch may still be selected after navigation")
-		}
-	} catch (Exception e) {
-		println("⚠️ Could not verify patch deselection state: " + e.getMessage())
+	
+	// Step 4: Return to Neutrophils section
+	println("↩️ Step 4: Returning to Neutrophils section...")
+	if (WebUI.verifyElementPresent(neutrophilsElement, 15, FailureHandling.OPTIONAL)) {
+		robustClick(neutrophilsElement, "Neutrophils (return)")
+		WebUI.delay(2)
+	} else {
+		println("⚠️ Neutrophils element not found for return navigation")
 	}
-
-	println("✅ Patch selection and deselection cycle completed successfully through navigation")
-
+	
+	// Step 5: Verify patch deselection after navigation
+	println("✅ Step 5: Verifying patch deselection after navigation...")
+	verifyPatchSelectionState("deselected")
+	
+	// Final verification - ensure we're still in patch view
+	println("🔍 Final verification: Confirming patch view...")
+	WebUI.verifyElementText(findTestObject('Object Repository/retain_patchs/img_Platelets_patch-view'), '')
+	WebUI.click(findTestObject('Object Repository/retain_patchs/img_Platelets_patch-view'))
+	println("✅ Confirmed that we are still in patch view")
+	
+	println("🎉 Test completed successfully!")
+	println('='.multiply(80))
+	
 } catch (Exception e) {
-	println("❌ Failed to perform patch selection/deselection: " + e.getMessage())
-	// Take screenshot for debugging
+	println("❌ Test execution failed: " + e.getMessage())
+	println("📸 Taking screenshot for debugging...")
 	WebUI.takeScreenshot()
+	
+	// Print stack trace for debugging
+	e.printStackTrace()
+	
+	println('='.multiply(80))
+	throw e
 }
-
-// Start with patch view
-WebUI.verifyElementText(findTestObject('Object Repository/retain_patchs/img_Platelets_patch-view'), '')
-WebUI.click(findTestObject('Object Repository/retain_patchs/img_Platelets_patch-view'))
-println("✅ Confirmed that we are still in patch view")
-
-println('=============================================================================================================')

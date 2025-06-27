@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>REl-088-verify the functionality of hide applied filters button</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>990bfde3-a321-4d45-b951-b465928bc2d8</testCaseGuid>
-</TestCaseEntity>

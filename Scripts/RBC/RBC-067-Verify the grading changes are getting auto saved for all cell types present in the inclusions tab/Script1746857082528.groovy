@@ -27,9 +27,9 @@ lg.login()
 
 WebUI.delay(2)
 
-lg.selectReportByStatus('To be reviewed')
+lg.selectReportByStatus('Under review')
 
-lg.assignOrReassignOnTabs('premkumar')
+lg.assignOrReassignOnTabs('chida')
 
 WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_RBC'))
 

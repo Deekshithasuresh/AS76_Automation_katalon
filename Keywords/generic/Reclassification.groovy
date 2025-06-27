@@ -925,7 +925,11 @@ public class Reclassification {
 				WebUI.comment("⚠️ Count for ${fromCellName} is ${fromInitial} (<1). Skipping drag and drop.")
 				return
 			}
+			
 
+				WebElement row = driver.findElement(By.xpath("//table/tbody/tr[td[1][text()='" + fromCellName + "']]"))
+
+			row.click()
 			// Locate source patch (assuming single visible patch for drag)
 			WebElement source = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/WBC_m/Page_PBS/patch'), 10)
 

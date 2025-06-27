@@ -1,56 +1,30 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import org.openqa.selenium.*
-import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
-import org.openqa.selenium.By
-import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement as WebElement
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+
+// Step 1: Login and navigate to WBC section
 WebUI.openBrowser('')
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
 WebUI.setText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/input_username_loginId'), 'Chidu')
 WebUI.setEncryptedText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/button_Sign In'))
+
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/span_To be reviewed'))
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/span_WBC'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/div_WBC'))
 WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/div_WBC'), 'WBC')
-	import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-	import com.kms.katalon.core.testobject.TestObject
-	import com.kms.katalon.core.testobject.ConditionType
-	
-	// Create a dynamic TestObject with XPath where text equals "Monocytes"
-	TestObject monocytesElement = new TestObject('dynamicMonocytes')
-	monocytesElement.addProperty('xpath', ConditionType.EQUALS, "//*[text()='Neutrophils']")
-	
-	// Click the element
-	WebUI.click(monocytesElement)
-	
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-// Ensure the page is loaded
-WebUI.waitForPageLoad(10)
-// Define JavaScript code as a single string
+
+// Step 2: Click on Neutrophils tab
+TestObject neutrophilsElement = new TestObject('dynamicNeutrophils')
+neutrophilsElement.addProperty('xpath', ConditionType.EQUALS, "//*[text()='Neutrophils']")
+WebUI.click(neutrophilsElement)
+
+// Step 3: Execute JS to count unique images in scroll
 String jsCode = '''
   return (async () => {
     const SCROLL_STEP = 200;
@@ -87,8 +61,9 @@ String jsCode = '''
     };
   })();
 '''
-// Execute JavaScript and retrieve result
 def result = WebUI.executeJavaScript(jsCode, null)
+
+// Step 4: Handle scroll result
 if (result instanceof Map && result.containsKey('error')) {
 	WebUI.comment("❌ Error: " + result.error)
 } else {
@@ -96,21 +71,24 @@ if (result instanceof Map && result.containsKey('error')) {
 	WebUI.comment("🖼️ Unique image URLs: " + result.images)
 }
 
-
+// Step 5: Get neutrophil count from table
 WebDriver driver = DriverFactory.getWebDriver()
-List<WebElement> WBC_cellname_row=driver.findElements(By.xpath("//table/tbody/tr"))
-int cell_count1
-for(WebElement row:WBC_cellname_row)
-	{
-		List<WebElement> cells=row.findElements(By.tagName("td"))
-		String cellname=(cells[0]).getText()
-		println(cellname)
-		if (cellname.equals('Neutrophils'))
-		{
-		String cell_count=(cells[1]).getText()
-		cell_count1=Integer.parseInt(cell_count)
-		println(cell_count1)
-		
+List<WebElement> WBC_rows = driver.findElements(By.xpath("//table/tbody/tr"))
+
+int neutrophilCountFromTable
+for (WebElement row : WBC_rows) {
+	List<WebElement> cells = row.findElements(By.tagName("td"))
+	if (cells.size() >= 2) {
+		String cellName = cells[0].getText().trim()
+		if (cellName.equalsIgnoreCase('Neutrophils')) {
+			String countText = cells[1].getText().trim()
+			neutrophilCountFromTable = Integer.parseInt(countText)
+			println("📊 Neutrophil count from table: ${neutrophilCountFromTable}")
+			break
+		}
 	}
-	}
-	assert (result.count)==(cell_count1): "failed in assertion"
+}
+
+// Step 6: Assertion
+assert result.count == neutrophilCountFromTable : "❌ Image count (${result.count}) does not match neutrophil count from table (${neutrophilCountFromTable})"
+WebUI.comment("✅ Image count matches Neutrophils count: ${neutrophilCountFromTable}")

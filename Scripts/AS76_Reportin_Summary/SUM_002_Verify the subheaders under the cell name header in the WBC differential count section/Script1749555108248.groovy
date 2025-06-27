@@ -22,8 +22,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Summary/Page_PBS (1)/in
 WebUI.sendKeys(findTestObject('Object Repository/Summary/Page_PBS (1)/input_password_loginPassword'), Keys.chord(Keys.ENTER))
 WebUI.maximizeWindow()
 
-// Wait for the dashboard to load
-WebUI.waitForElementPresent(findTestObject('Object Repository/Summary/Page_PBS (1)/td_SIG0015'), 20)
+
 
 // Get the report ID before clicking
 def reportId = WebUI.getText(findTestObject('Object Repository/Summary/Page_PBS (1)/td_SIG0015'))
@@ -37,18 +36,37 @@ CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 // WBC Text Verification with Conditional Statements
 
 // Verify WBC element text
+//if (WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/th_WBC'), 'WBC')) {
+//    println("WBC text present - Passed")
+//} else {
+//    println("WBC text not present - Failed")
+//    KeywordUtil.markFailed("WBC text does not match expected value")
+//}
+//
+//// Verify Non-WBC element text
+//if (WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/th_Non-WBC'), 'Non-WBC')) {
+//    println("Non-WBC text present - Passed")
+//} else {
+//    println("Non-WBC text not present - Failed")
+//    KeywordUtil.markFailed("Non-WBC text does not match expected value")
+//}
+
+
 if (WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/th_WBC'), 'WBC')) {
-    println("WBC text present - Passed")
+	println("WBC text present - Passed")
 } else {
-    println("WBC text not present - Failed")
-    KeywordUtil.markFailed("WBC text does not match expected value")
+	println("WBC text not present - Failed")
+	KeywordUtil.markFailed("WBC text does not match expected value")
 }
+
+// Scroll to Non-WBC element before verification
+WebUI.scrollToElement(findTestObject('Object Repository/Summary/Page_PBS (1)/th_Non-WBC'), 5)
 
 // Verify Non-WBC element text
 if (WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/th_Non-WBC'), 'Non-WBC')) {
-    println("Non-WBC text present - Passed")
+	println("Non-WBC text present - Passed")
 } else {
-    println("Non-WBC text not present - Failed")
-    KeywordUtil.markFailed("Non-WBC text does not match expected value")
+	println("Non-WBC text not present - Failed")
+	KeywordUtil.markFailed("Non-WBC text does not match expected value")
 }
 

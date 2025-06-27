@@ -25,7 +25,8 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-import imageutils.blurChecker
+import imageUtils.blurChecker
+
 
 
 public class ZoomInOut {
@@ -725,7 +726,8 @@ public class ZoomInOut {
 			WebElement cellname_ele = row.findElement(By.xpath(".//div[1]"))
 			String cellname = cellname_ele.getText()
 			println(cellname)
-
+			
+			
 			def getCanvasImageBase64 = {
 				JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getWebDriver()
 				String base64 = js.executeScript("""
@@ -767,20 +769,20 @@ public class ZoomInOut {
 			else{
 				for (int i = 1; i < total_no_of_patches; i++) {
 					// ✅ Re-locate element during each iteration
-					WebElement patch = driver.findElements(By.xpath('//div[@class="Card patches-container"]')).get(i)
+					WebElement patch = driver.findElements(By.xpath('(//div[@class="Card patches-container"]/div)')).get(i)
 
 					// Example interaction
 					if(TestCase.equals("checking consistancy on patches between patch view and split_View")) {
-						act.doubleClick(patch).perform()
-						WebUI.delay(3)
+						act.doubleClick(patch).build().perform()
+						WebUI.delay(8)
 						WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/patch_view_button'))
 					}
 					else {
 
-						WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/split_view_button'))
+						WebUI.click(findTestObject('RBC_Objects/Page_PBS/split-view_button'))
 						String beforeChangingPatch = getCanvasImageBase64()
-						act.doubleClick(patch).perform()
-						WebUI.delay(3)
+						act.doubleClick(patch).build().perform()
+						WebUI.delay(8)
 						String afterChangingPatch = getCanvasImageBase64()
 
 						// Log differences

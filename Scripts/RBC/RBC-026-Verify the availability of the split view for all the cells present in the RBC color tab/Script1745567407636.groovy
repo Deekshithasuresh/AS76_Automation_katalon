@@ -39,7 +39,7 @@ lg.login()
 
 WebUI.delay(2)
 
-lg.selectReportByStatus('To be reviewed')
+lg.selectReportByStatus('Under review')
 
 lg.assignOrReassignOnTabs('prem')
 

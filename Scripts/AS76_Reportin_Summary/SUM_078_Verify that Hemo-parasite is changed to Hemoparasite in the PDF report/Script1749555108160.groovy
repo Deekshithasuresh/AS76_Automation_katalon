@@ -96,7 +96,6 @@ import java.nio.file.Paths
 import java.util.stream.Stream
 import java.util.Comparator
 
-
 /**
  * Navigate to Preview Report, approve it, and download the PDF report
  * This function navigates to the preview page, approves without text comparison,

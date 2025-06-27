@@ -34,7 +34,7 @@ WebDriver driver =DriverFactory.getWebDriver()
 List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
 	findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
 
-ArrayList<String> Cellnames= new ArrayList<>(Arrays.asList('Ovalocytes','Elliptocytes','Teardrop Cells','Fragmented Cells','Target Cells','Echinocytes','Acanthocytes*','Sickle Cells*','Stomatocytes*','Poikilocytosis'))
+ArrayList<String> Cellnames= new ArrayList<>(Arrays.asList('Ovalocytes','Elliptocytes','Teardrop Cells','Fragmented Cells','Target Cells','Echinocytes','Acanthocytes*','Sickle Cells*','Poikilocytosis'))
 
 for (int i=0; i<cellRows.size();i++)
 	{

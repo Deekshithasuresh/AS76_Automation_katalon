@@ -25,11 +25,9 @@ WebUI.setText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/input_user
 
 WebUI.setEncryptedText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 
-
-
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/button_Sign In'))
 
-WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/div_13-May-2025, 1127 AM (IST)'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/span_WBC'))
 

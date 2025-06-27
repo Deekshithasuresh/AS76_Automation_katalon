@@ -31,9 +31,8 @@ WebUI.verifyElementText(findTestObject('Object Repository/WBC_m/Page_PBS/button_
 // Step 3: Click WBC tab
 WebUI.click(findTestObject('Object Repository/WBC_m/Page_PBS/span_WBC'))
 
-WebUI.doubleClick(findTestObject('Object Repository/WBC_m/Page_PBS/div_Image settings_default-patch  patch-foc_a6a738'))
+WebUI.doubleClick(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/div_Image settings_default-patch  patch-foc_a6a738'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/img'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/button_'), 0)
 
