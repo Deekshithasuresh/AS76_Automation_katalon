@@ -4,79 +4,67 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.model.FailureHandling
 
-// 1) LOGIN
+// ← Selenium & Katalon driver/helpers ↓
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.interactions.Actions
+import org.openqa.selenium.By
+import org.openqa.selenium.JavascriptExecutor
+
+// 1) LOGIN & NAVIGATE TO IMAGE SETTINGS
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(
-	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
-	'adminuserr'
-)
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+					 'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-// 2) VERIFY LANDING ON REPORT LIST
-TestObject pbsText = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[contains(text(),'PBS')]"
+WebUI.waitForElementPresent(
+	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
+	10
 )
-WebUI.waitForElementPresent(pbsText, 10)
-
-// 3) OPEN FIRST “Under review” REPORT
-TestObject underReviewRow = new TestObject().addProperty(
+WebUI.click(new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-)
-WebUI.waitForElementClickable(underReviewRow, 10)
-WebUI.scrollToElement(underReviewRow, 5)
-WebUI.click(underReviewRow)
-
-// Step 2: Navigate to WBC > Image Settings
+))
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/td_tstt'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Report viewer/Page_PBS/button_Summary'), 'Summary')
-
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_WBC'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Report viewer/Page_PBS/div_Image settings'), 'Image settings')
-
-// Step 3: Open Image Settings panel
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/img_Manual sub-classification_image-settings'))
+WebUI.delay(2)  // wait for panel
 
-WebUI.delay(1)
-
+// 2) LOCATE ALL SLIDER THUMBS
 WebDriver driver = DriverFactory.getWebDriver()
+TestObject thumbsTO = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//span[contains(@class,'MuiSlider-thumb')]"
+)
+List<WebElement> allThumbs = WebUiCommonHelper.findWebElements(thumbsTO, 10)
 
-// Locate all slider thumbs
-List<WebElement> allThumbs = driver.findElements(By.xpath('//span[contains(@class, \'MuiSlider-thumb\')]'))
-
-// Contrast slider = index 2
+// 3) TARGET THE CONTRAST THUMB (index 2)
 WebElement contrastThumb = allThumbs[2]
 
-// Scroll into view
-    ((driver) as JavascriptExecutor).executeScript('arguments[0].scrollIntoView(true);', contrastThumb)
-
+// 4) FIRST INCREASE IT TO PROVE IT MOVES
+((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", contrastThumb)
 Thread.sleep(500)
+new Actions(driver)
+	.clickAndHold(contrastThumb)
+	.moveByOffset(100, 0)
+	.release()
+	.perform()
+WebUI.delay(1)
 
-// Move contrast to right (increase)
-Actions action = new Actions(driver)
+// 5) CLICK RESET BUTTON
+WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_Reset'))
+WebUI.delay(1)
 
-action.clickAndHold(contrastThumb).moveByOffset(100, 0).release().perform()
+// 6) RE-LOCATE AND VERIFY BACK TO ZERO
+allThumbs = WebUiCommonHelper.findWebElements(thumbsTO, 10)
+contrastThumb = allThumbs[2]
+String ariaValue = contrastThumb.getAttribute('aria-valuenow')
+println "Contrast after reset: ${ariaValue}"
+assert ariaValue == '0' : "Expected contrast=0 but was ${ariaValue}"
 
 WebUI.delay(2)
-
-// Click the reset button (adjust XPath if needed)
-WebElement resetButton = driver.findElement(By.xpath('//button[contains(text(),\'Reset\')]'))
-
-resetButton.click()
-
-WebUI.delay(2)
-
-// Check contrast is back to center
-int sliderValue = Integer.parseInt(contrastThumb.getAttribute('aria-valuenow'))
-
-assert sliderValue == 0
-

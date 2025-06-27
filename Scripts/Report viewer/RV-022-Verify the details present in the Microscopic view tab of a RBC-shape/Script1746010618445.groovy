@@ -1,21 +1,23 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.model.FailureHandling
 
-// 1) LOGIN
+import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+// *** ADD THESE IMPORTS ***
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+// ********************************
+
+ // 1) LOGIN
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(
-	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
-	'adminuserr'
-)
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
 // 2) VERIFY LANDING ON REPORT LIST
@@ -66,8 +68,8 @@ new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//img[@alt='line-tool']",
 	"//img[@alt='circle-tool']",
 	"//img[@alt='zoom-tool']",
-	"//button[@class='ol-zoom-in'  and @title='Zoom in']",
-	"//button[@class='ol-zoom-out' and @title='Zoom out']",
+	"//button[contains(@class,'ol-zoom-in') and @title='Zoom in']",
+	"//button[contains(@class,'ol-zoom-out') and @title='Zoom out']",
 	"//button[@title='Overview']",
 	"//div[.//img[@alt='home']]"
 ].each { xpath ->
@@ -105,13 +107,13 @@ expected.eachWithIndex { name, idx ->
 	if (actualLabels.contains(name)) {
 		WebUI.comment "✔ Found '$name'"
 		// if previous expected also found, ensure order
-		if (idx > 0 && actualLabels.contains(expected[idx-1])) {
-			int prevIndex = actualLabels.indexOf(expected[idx-1])
+		if (idx > 0 && actualLabels.contains(expected[idx - 1])) {
+			int prevIndex = actualLabels.indexOf(expected[idx - 1])
 			int thisIndex = actualLabels.indexOf(name)
 			WebUI.verifyTrue(
 				thisIndex > prevIndex,
 				FailureHandling.CONTINUE_ON_FAILURE,
-				"❌ '$name' (idx ${thisIndex}) should come after '${expected[idx-1]}' (idx ${prevIndex})"
+				"❌ '$name' (idx ${thisIndex}) should come after '${expected[idx - 1]}' (idx ${prevIndex})"
 			)
 		}
 	} else {
@@ -120,4 +122,5 @@ expected.eachWithIndex { name, idx ->
 }
 
 WebUI.comment "✅ Finished RBC-Shape microscopic view checks."
+
 
