@@ -1,21 +1,19 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import org.openqa.selenium.WebElement
 
 // 1) LOGIN
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(
-	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
-	'adminuserr'
-)
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
 // 2) VERIFY LANDING ON REPORT LIST
@@ -55,8 +53,8 @@ new TestObject().addProperty('xpath', ConditionType.EQUALS,
   "//img[@alt='line-tool']",
   "//img[@alt='circle-tool']",
   "//img[@alt='zoom-tool']",
-  "//button[@class='ol-zoom-in'  and @title='Zoom in']",
-  "//button[@class='ol-zoom-out' and @title='Zoom out']",
+  "//button[contains(@class,'ol-zoom-in') and @title='Zoom in']",
+  "//button[contains(@class,'ol-zoom-out') and @title='Zoom out']",
   "//button[@title='Overview']",
   "//div[.//img[@alt='home']]"
 ].each { xpath ->
@@ -101,5 +99,3 @@ if (actualLabels.containsAll(expected)) {
 }
 
 WebUI.comment "✅ Done checking RBC-Size microscopic view."
-
-

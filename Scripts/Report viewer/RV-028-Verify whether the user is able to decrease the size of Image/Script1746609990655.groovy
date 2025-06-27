@@ -4,6 +4,13 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.model.FailureHandling
 
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.interactions.Actions
+import org.openqa.selenium.By
+
 // 1) LOGIN
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
@@ -45,16 +52,28 @@ WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/img_Manual 
 WebUI.delay(2)  // Wait for panel to load
 
 // Step 4: Move the slider to the left (towards 'Small')
+// 4a. Get the Selenium WebDriver
 WebDriver driver = DriverFactory.getWebDriver()
-WebElement sliderThumb = driver.findElement(By.xpath("//span[contains(@class, 'MuiSlider-thumb')]"))
 
-// Scroll into view (optional)
-((org.openqa.selenium.JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", sliderThumb)
+// 4b. Create a TestObject for the thumb
+TestObject sliderThumbTO = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//span[contains(@class, 'MuiSlider-thumb')]"
+)
+
+// 4c. Convert it to a WebElement (wait up to 10s)
+WebElement sliderThumb = WebUiCommonHelper.findWebElement(sliderThumbTO, 10)
+
+// 4d. Scroll into view (optional)
+((org.openqa.selenium.JavascriptExecutor) driver)
+	.executeScript("arguments[0].scrollIntoView(true);", sliderThumb)
 Thread.sleep(500)
 
-// Move the thumb to the left (adjust -100 if more/less is needed)
+// 4e. Drag it left by 100 pixels (adjust as needed)
 Actions action = new Actions(driver)
-action.clickAndHold(sliderThumb).moveByOffset(-100, 0).release().perform()
+action.clickAndHold(sliderThumb)
+	  .moveByOffset(-100, 0)
+	  .release()
+	  .perform()
 
 WebUI.delay(2)
-

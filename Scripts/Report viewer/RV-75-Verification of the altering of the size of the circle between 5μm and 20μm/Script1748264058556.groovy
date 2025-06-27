@@ -2,28 +2,24 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.model.FailureHandling
+import org.openqa.selenium.Keys
 
 // 1) LOGIN
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(
-	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
-	'adminuserr'
-)
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+					 'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
 // 2) VERIFY LANDING ON REPORT LIST
-TestObject pbsText = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[contains(text(),'PBS')]"
+WebUI.waitForElementPresent(
+	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
+	10
 )
-WebUI.waitForElementPresent(pbsText, 10)
 
 // 3) OPEN FIRST “Under review” REPORT
 TestObject underReviewRow = new TestObject().addProperty(
@@ -33,8 +29,9 @@ TestObject underReviewRow = new TestObject().addProperty(
 WebUI.waitForElementClickable(underReviewRow, 10)
 WebUI.scrollToElement(underReviewRow, 5)
 WebUI.click(underReviewRow)
+
 // ────────────────────────────────────────────────────────────────────
-// 2) SWITCH TO WBC → MICROSCOPIC VIEW & WAIT 120s
+// 4) SWITCH TO WBC → MICROSCOPIC VIEW & WAIT 120s
 // ────────────────────────────────────────────────────────────────────
 TestObject wbcTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//button[contains(@class,'cell-tab')]//span[normalize-space()='WBC']")
@@ -49,7 +46,7 @@ WebUI.click(microViewBtn)
 WebUI.delay(120)  // wait for the OpenLayers viewer to render
 
 // ────────────────────────────────────────────────────────────────────
-// 3) HOVER & CLICK CIRCLE TOOL → WAIT 30s
+// 5) HOVER & CLICK CIRCLE TOOL → WAIT 30s
 // ────────────────────────────────────────────────────────────────────
 TestObject circleButton = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//button[.//img[@alt='circle-tool']]")
@@ -59,21 +56,20 @@ WebUI.click(circleButton)
 WebUI.delay(30)
 
 // screenshot the initial 7 μm circle
-String circle7Screenshot = "${RunConfiguration.getReportFolder()}/wbc_circle_7um.png"
+String reportDir = RunConfiguration.getReportFolder()
+String circle7Screenshot = "${reportDir}/wbc_circle_7um.png"
 WebUI.takeScreenshot(circle7Screenshot)
 WebUI.comment("✔ Captured 7 μm circle screenshot: ${circle7Screenshot}")
 
 // ────────────────────────────────────────────────────────────────────
-// 4) AFTER DRAWING THE FIRST CIRCLE, ITERATE THROUGH SIZES 5→20
+// 6) AFTER DRAWING THE FIRST CIRCLE, ITERATE THROUGH SIZES 5→20
 // ────────────────────────────────────────────────────────────────────
 TestObject measInput = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//input[@id='outlined-start-adornment']")
 TestObject overlayText = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//div[contains(@class,'-inner') and contains(text(),'µm')]")
 
-// your list of diameters to test:
-List<String> diameters = ['5','6','10','15','20']
-
+List<String> diameters = ['5', '6', '10', '15', '20']
 for (String dia : diameters) {
 	// 1) focus & clear the old value
 	WebUI.waitForElementVisible(measInput, 10)
@@ -87,18 +83,18 @@ for (String dia : diameters) {
 	// 3) verify the input field
 	String actual = WebUI.getAttribute(measInput, 'value').trim()
 	WebUI.verifyMatch(actual, dia, false, FailureHandling.STOP_ON_FAILURE)
-	WebUI.comment("✔ Input field set to ${dia} µm")
+	WebUI.comment("✔ Input field set to ${dia} μm")
 
 	// 4) verify the overlay in the canvas
 	WebUI.waitForElementVisible(overlayText, 5)
 	String ov = WebUI.getText(overlayText).trim()
-	WebUI.verifyMatch(ov, "${dia} µm", false, FailureHandling.STOP_ON_FAILURE)
-	WebUI.comment("✔ Canvas overlay reads ${dia} µm")
+	WebUI.verifyMatch(ov, "${dia} μm", false, FailureHandling.STOP_ON_FAILURE)
+	WebUI.comment("✔ Canvas overlay reads ${dia} μm")
 
-	// 5) screenshot each state if you like
-	String shot = "${RunConfiguration.getReportFolder()}/circle_${dia}um.png"
+	// 5) screenshot each state
+	String shot = "${reportDir}/circle_${dia}um.png"
 	WebUI.takeScreenshot(shot)
-	WebUI.comment("🔍 Captured circle at ${dia} µm: ${shot}")
+	WebUI.comment("🔍 Captured circle at ${dia} μm: ${shot}")
 }
 
 WebUI.comment("✅ All circle‐tool diameters verified.")

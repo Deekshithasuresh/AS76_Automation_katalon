@@ -4,26 +4,30 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.model.FailureHandling
 
+// Selenium / Katalon
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+
+// ← Added for Robot-based drags ↓
+import java.awt.Robot
+import java.awt.event.InputEvent
+
 // 1) LOGIN
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(
-	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
-	'adminuserr'
-)
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+					 'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
 // 2) VERIFY LANDING ON REPORT LIST
-TestObject pbsText = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[contains(text(),'PBS')]"
+WebUI.waitForElementPresent(
+	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
+	10
 )
-WebUI.waitForElementPresent(pbsText, 10)
 
 // 3) OPEN FIRST “Under review” REPORT
 TestObject underReviewRow = new TestObject().addProperty(
@@ -34,23 +38,16 @@ WebUI.waitForElementClickable(underReviewRow, 10)
 WebUI.scrollToElement(underReviewRow, 5)
 WebUI.click(underReviewRow)
 
-// ────────────────────────────────────────────────────────────────────
-// 5) SWITCH TO WBC → MICROSCOPIC VIEW & WAIT 120s
-// ────────────────────────────────────────────────────────────────────
+// 4) SWITCH TO WBC → MICROSCOPIC VIEW & WAIT
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'cell-tab')]//span[normalize-space()='WBC']"
-))
+	"//button[contains(@class,'cell-tab')]//span[normalize-space()='WBC']"))
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//img[@alt='Microscopic view' and @aria-label='Microscopic view']"
-))
+	"//img[@alt='Microscopic view' and @aria-label='Microscopic view']"))
 WebUI.delay(120)
 
-// ────────────────────────────────────────────────────────────────────
-// 6) ZOOM IN TWICE WITH 120s BETWEEN
-// ────────────────────────────────────────────────────────────────────
+// 5) ZOOM IN TWICE
 TestObject zoomIn = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'ol-zoom-in') and @title='Zoom in']"
-)
+	"//button[contains(@class,'ol-zoom-in') and @title='Zoom in']")
 WebUI.waitForElementClickable(zoomIn, 30)
 (1..2).each { i ->
 	WebUI.click(zoomIn)
@@ -58,21 +55,16 @@ WebUI.waitForElementClickable(zoomIn, 30)
 	WebUI.comment("✔ Zoom-in #${i} complete")
 }
 
-// ────────────────────────────────────────────────────────────────────
-// 7) HOVER & CLICK LINE TOOL → WAIT 10s
-// ────────────────────────────────────────────────────────────────────
+// 6) HOVER & CLICK LINE TOOL
 TestObject lineTool = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//img[@alt='line-tool']"
-)
+	"//img[@alt='line-tool']")
 WebUI.waitForElementVisible(lineTool, 30)
 WebUI.mouseOver(lineTool)
 WebUI.delay(1)
 WebUI.click(lineTool)
 WebUI.delay(10)
 
-// ────────────────────────────────────────────────────────────────────
-// 8) DRAG THE GREEN LINE WITH ROBOT
-// ────────────────────────────────────────────────────────────────────
+// 7) DRAG THE GREEN LINE WITH ROBOT
 int startX = 889
 int startY = 544
 int delta  = 100
@@ -99,21 +91,16 @@ moves.eachWithIndex { move, idx ->
 	WebUI.comment("✔ Line-tool drag #${idx+1}: (${move.dx}, ${move.dy})")
 }
 
-// ────────────────────────────────────────────────────────────────────
-// 9) HOVER & CLICK CIRCLE TOOL → WAIT 10s
-// ────────────────────────────────────────────────────────────────────
+// 8) HOVER & CLICK CIRCLE TOOL
 TestObject circleTool = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//img[@alt='circle-tool']"
-)
+	"//img[@alt='circle-tool']")
 WebUI.waitForElementVisible(circleTool, 30)
 WebUI.mouseOver(circleTool)
 WebUI.delay(1)
 WebUI.click(circleTool)
 WebUI.delay(10)
 
-// ────────────────────────────────────────────────────────────────────
-// 10) DRAG THE CIRCLE WITH ROBOT
-// ────────────────────────────────────────────────────────────────────
+// 9) DRAG THE CIRCLE WITH ROBOT
 moves.eachWithIndex { move, idx ->
 	robot.mouseMove(startX, startY)
 	Thread.sleep(200)

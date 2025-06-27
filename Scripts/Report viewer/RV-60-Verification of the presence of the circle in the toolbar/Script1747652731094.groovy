@@ -8,22 +8,16 @@ import com.kms.katalon.core.model.FailureHandling
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(
-	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
-	'adminuserr'
-)
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+					 'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
 // 2) VERIFY LANDING ON REPORT LIST
-TestObject pbsText = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[contains(text(),'PBS')]"
+WebUI.waitForElementPresent(
+	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
+	10
 )
-WebUI.waitForElementPresent(pbsText, 10)
 
 // 3) OPEN FIRST “Under review” REPORT
 TestObject underReviewRow = new TestObject().addProperty(
@@ -34,23 +28,21 @@ WebUI.waitForElementClickable(underReviewRow, 10)
 WebUI.scrollToElement(underReviewRow, 5)
 WebUI.click(underReviewRow)
 
-// ---------- STEP 10: Verify the microscopic‐view icon is present ----------
+// 4) WAIT FOR MICROSCOPE ICON AND CLICK IT
 TestObject microViewIcon = new TestObject().addProperty(
-	'xpath',
-	ConditionType.EQUALS,
-	"//img[@alt='Microscopic view' and @aria-label='Microscopic view']"
+	'xpath', ConditionType.EQUALS,
+	"//button[contains(@class,'microscope-button') or @aria-label='Microscopic view']"
 )
-WebUI.waitForElementPresent(microViewIcon, 10)
-WebUI.comment('Microscopic view icon is present')
-
-// ---------- STEP 11: Click on the microscopic‐view icon ----------
+WebUI.waitForElementClickable(microViewIcon, 10)
+WebUI.verifyElementVisible(microViewIcon, FailureHandling.STOP_ON_FAILURE)
+WebUI.comment("✔ Microscopic view icon is present")
 WebUI.click(microViewIcon)
 
-// ---------- STEP 12: Verify the circle‐tool icon is present ----------
+// 5) VERIFY THE CIRCLE TOOL ICON IS PRESENT
 TestObject circleToolBtn = new TestObject().addProperty(
-	'xpath',
-	ConditionType.EQUALS,
-	"//button[img[@alt='circle-tool']]"
+	'xpath', ConditionType.EQUALS,
+	"//button[@aria-label='circle-tool' or contains(@class,'circle-tool-button')]"
 )
-WebUI.waitForElementPresent(circleToolBtn, 10)
-WebUI.comment('Circle tool icon is present')
+WebUI.waitForElementVisible(circleToolBtn, 10)
+WebUI.verifyElementClickable(circleToolBtn, FailureHandling.STOP_ON_FAILURE)
+WebUI.comment("✔ Circle tool icon is present")

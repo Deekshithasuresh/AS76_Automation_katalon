@@ -1,8 +1,16 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.model.FailureHandling
+
+// ────────────────────────────────────────────────────────────────────
+// ADD THESE IMPORTS:
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+// ────────────────────────────────────────────────────────────────────
 
 // 1) LOGIN
 WebUI.openBrowser('')
@@ -91,6 +99,7 @@ TestObject colourRowsTO = new TestObject('colourRowsTO').addProperty(
 	"//div[contains(@class,'rbc-microscopic-left-pane')]//table//tbody/tr"
 )
 
+// now this will compile
 List<WebElement> colourRows = WebUiCommonHelper.findWebElements(colourRowsTO, 10)
 List<String> actualColourLabels = colourRows.collect { row ->
 	row.findElement(By.xpath(".//td[2]")).getText().trim()
