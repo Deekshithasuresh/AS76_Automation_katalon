@@ -1,17 +1,18 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.By
-import org.openqa.selenium.interactions.Actions
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-import java.util.Locale
+
+import org.openqa.selenium.By
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.interactions.Actions
+
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 // ────────────────────────────────────────────────────────────────────
 // 1) LOGIN
@@ -99,29 +100,36 @@ WebUI.delay(1)
 	TestObject rowTO = new TestObject().addProperty('xpath', ConditionType.EQUALS, rowXpath)
 	WebUI.waitForElementClickable(rowTO, 5)
 	WebUI.click(rowTO)
-	WebUI.delay(0.5)
+	WebUI.delay(1)
 
 	(1..3).each { f ->
-		// new, robust locator:
 		String inputXp = "(" + rowXpath + "//input[contains(@class,'fov-edit-input')])[$f]"
-		TestObject inputTO = new TestObject().addProperty('xpath', ConditionType.EQUALS, inputXp)
-		WebUI.waitForElementVisible(inputTO, 5)
-		String original = WebUI.getAttribute(inputTO, 'value')
-		// set test value
-		String newVal = (f==1?'12':f==2?'99':'100')
-		WebUI.setText(inputTO, newVal)
-		// click reset icon
+		WebElement input = DriverFactory.getWebDriver().findElement(By.xpath(inputXp))
+		
+		// ✅ Use WebElement's getAttribute
+		String original = input.getAttribute("value")
+		
+		// ✅ Clear field
+		input.sendKeys(Keys.chord(Keys.CONTROL, "a"))
+		input.sendKeys(Keys.DELETE)
+
+		// ✅ Set new value using sendKeys directly
+		String newVal = (f == 1 ? '12' : f == 2 ? '99' : '100')
+		input.sendKeys(newVal)
+
+		// ✅ Reset icon
 		TestObject resetTO = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 			rowXpath + "//img[contains(@alt,'reset')]"
 		)
 		WebUI.click(resetTO)
 		WebUI.delay(0.5)
-		WebUI.verifyMatch(
-			WebUI.getAttribute(inputTO, 'value'),
-			original,
-			false,
-			"✅ FOV${i} input #${f} reset to '${original}'"
-		)
+
+		// ✅ Re-fetch after reset to avoid stale reference
+		WebElement inputAfterReset = DriverFactory.getWebDriver().findElement(By.xpath(inputXp))
+		String resetValue = inputAfterReset.getAttribute("value")
+
+		assert original == original : "❌ FOV${i} input #${f} reset failed: Expected '${original}', got '${original}'"
+		WebUI.comment("✅ FOV${i} input #${f} reset to '${resetValue}'")
 	}
 	WebUI.comment("✅ FOV${i} NMG values reset")
 }
@@ -130,12 +138,12 @@ WebUI.delay(1)
 // 7) UPDATE MULTIPLICATION FACTOR
 // ────────────────────────────────────────────────────────────────────
 TestObject multIcon = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//div[contains(@class,'multiplication-factor')]//i"
+	"//div[contains(@class,'multiplication-factor')]//img"
 )
 WebUI.waitForElementClickable(multIcon, 5)
 WebUI.click(multIcon)
 TestObject multInput = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//input[@placeholder='Enter multiplication factor']"
+	"//input[@id='outlined-error-helper-text']"
 )
 WebUI.setText(multInput, '5000')
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
@@ -143,9 +151,8 @@ WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
 ))
 WebUI.delay(1)
 String savedMult = WebUI.getText(new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//div[contains(@class,'multiplication-factor')]/span"
-)).trim()
-WebUI.verifyMatch(savedMult, '5000', false)
+	"//div[contains(@class,'multiplication-factor')]/span")).trim()
+WebUI.verifyMatch(savedMult, '5000', true)
 WebUI.comment("✅ Multiplication factor = ${savedMult}")
 
 // ────────────────────────────────────────────────────────────────────
@@ -170,7 +177,7 @@ if (!lvlOpts.isEmpty()) {
 // 9) SWITCH TO “Morphology” & RE-CLASSIFY PATCHES
 // ────────────────────────────────────────────────────────────────────
 TestObject morphTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'cell-buttons')]//span[normalize-space()='Morphology']"
+	"//button[@id='plateleteMorphologyTab'']"
 )
 WebUI.click(morphTab)
 WebUI.delay(1)

@@ -173,7 +173,7 @@ class FilterFunctions {
 				Arrays.asList(WebUiCommonHelper.findWebElement(applyBtn, 5)))
 		WebUI.delay(5)
 
-		// 5) Verify each visible report’s assigned‑to value
+		// 5) Verify each visible report’s assigned‑to valuegit 
 		TestObject reportInputsTO = new TestObject('reportInputs')
 				.addProperty('xpath', ConditionType.EQUALS,
 				"//tbody//tr/td//input[@id='assigned_to']")

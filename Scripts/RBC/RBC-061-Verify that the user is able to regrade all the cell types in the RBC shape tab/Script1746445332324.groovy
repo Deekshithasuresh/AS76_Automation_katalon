@@ -19,17 +19,14 @@ import org.openqa.selenium.Keys as Keys
 import loginPackage.Login as Login
 import zoom.ZoomInOut as ZoomInOut
 
-Login lg = new Login()
 
 ZoomInOut zoom = new ZoomInOut()
 
-lg.login()
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.delay(2)
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-lg.selectReportByStatus('To be reviewed')
-
-lg.assignOrReassignOnTabs('chida')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_RBC'),20)
 
