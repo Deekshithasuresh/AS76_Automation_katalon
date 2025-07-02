@@ -11,10 +11,13 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Poikilocytosis' or . = 'Poikilocytosis')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
@@ -29,7 +32,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>5d21cf19-84c3-4c39-84d5-c3c31e9f4c5e</webElementGuid>
+      <webElementGuid>7bc66a1c-fbc8-4082-aaae-396d25a4c1c6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +40,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Poikilocytosis</value>
-      <webElementGuid>b45fbc35-7db6-4ca9-b401-6c38fb7175e0</webElementGuid>
+      <webElementGuid>79f96191-c96d-4799-8b23-44258c9e575d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +48,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;review-container&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container grid css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2.8 css-lufqp2&quot;]/div[@class=&quot;grid-container&quot;]/div[1]/div[@class=&quot;rbc-cell-body&quot;]/div[@class=&quot;cell-row&quot;]/div[1]</value>
-      <webElementGuid>58b1b89f-807a-4da6-aa78-a54048d1302c</webElementGuid>
+      <webElementGuid>408fc59b-166e-424e-a619-b0441571bed2</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +56,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div/div/div[3]/div[10]/div</value>
-      <webElementGuid>d116bef9-8281-4168-99f9-7cfb1d83ef8c</webElementGuid>
+      <webElementGuid>eb9f6269-f52b-4db0-9faf-a0e89ce774d6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +64,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Stomatocytes*'])[1]/following::div[5]</value>
-      <webElementGuid>189a10a7-79eb-4144-b6cb-51a4f5250a2a</webElementGuid>
+      <webElementGuid>90106885-06c0-4fa5-9623-e8108d99d2d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +72,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sickle Cells*'])[1]/following::div[11]</value>
-      <webElementGuid>207b3706-e785-41ac-962d-fe3f0591fa83</webElementGuid>
+      <webElementGuid>211b2599-471f-490a-be2b-aad1dce6f6d2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +80,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Significant'])[1]/preceding::div[5]</value>
-      <webElementGuid>c04ad825-6180-4a89-9bcb-b5c5cddc7b02</webElementGuid>
+      <webElementGuid>68051497-f5a6-4819-8489-9e901d80f251</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +88,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Non Significant'])[1]/preceding::div[7]</value>
-      <webElementGuid>e220eced-3e67-4100-8485-248f29275328</webElementGuid>
+      <webElementGuid>ab4d6790-ba42-4423-a148-7d001b39bfd2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +96,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Poikilocytosis']/parent::*</value>
-      <webElementGuid>980bb6a3-7035-44bd-8d6b-ccec891a5a72</webElementGuid>
+      <webElementGuid>9b04c36a-00fa-440b-a56b-1fac5dea9475</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +104,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[10]/div</value>
-      <webElementGuid>622461f6-991b-400e-b750-2a3685ae6c7d</webElementGuid>
+      <webElementGuid>0122a704-5527-4809-ac6b-6c8f9eb7f638</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +112,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Poikilocytosis' or . = 'Poikilocytosis')]</value>
-      <webElementGuid>aa1df3ff-486c-421c-aa7f-cac15c1d0a16</webElementGuid>
+      <webElementGuid>e1037e07-372d-4b27-99a1-5e2346151644</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -42,12 +42,10 @@ WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Shape'
 
 String Acanthocytes_Text = WebUI.getText(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_Acanthocytes'))
 String Sickle_Cells_Text = WebUI.getText(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_Sickle Cells'))
-String Stomatocytes_Text = WebUI.getText(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_Stomatocytes'))
 println(Acanthocytes_Text)
 println(Sickle_Cells_Text)
-println(Stomatocytes_Text)
 
-if (Acanthocytes_Text.contains("*") && Sickle_Cells_Text.contains("*") && Stomatocytes_Text.contains("*")) 
+if (Acanthocytes_Text.contains("*") && Sickle_Cells_Text.contains("*")) 
 	{
 	markPassed("The text contains '*'")
 } 

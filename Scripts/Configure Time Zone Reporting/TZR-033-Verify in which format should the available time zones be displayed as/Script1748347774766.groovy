@@ -44,7 +44,7 @@ WebUI.click(findTestObject('Object Repository/Configure Time Zone Reporting/Page
 WebUI.click(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/input_Select a time zone_assigned_to'))
 
 // Load Excel file
-String filePath = '../All time zone.xlsx' // Adjust if needed
+String filePath = 'Time_zone_data/All time zone.xlsx' // Adjust if needed
 
 FileInputStream fis = new FileInputStream(filePath)
 

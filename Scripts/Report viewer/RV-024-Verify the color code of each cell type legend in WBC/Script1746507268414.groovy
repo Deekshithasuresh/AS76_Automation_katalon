@@ -1,8 +1,13 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+// ────────────────────────────────────────────────────────────────────
 
 // 1) LOGIN
 WebUI.openBrowser('')
@@ -34,9 +39,9 @@ WebUI.waitForElementClickable(underReviewRow, 10)
 WebUI.scrollToElement(underReviewRow, 5)
 WebUI.click(underReviewRow)
 
-// ──────────────────────────────────────────────────────────
+// ────────────────────────────────────────────────────────────────────
 // STEP 2 – Click “WBC” tab → Microscopic view icon
-// ──────────────────────────────────────────────────────────
+// ────────────────────────────────────────────────────────────────────
 new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//button[contains(@class,'cell-tab') and .//span[normalize-space()='WBC']]"
 ).with {
@@ -51,12 +56,12 @@ new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	WebUI.click(it)
 }
 
-// give the microscopic‐canvas plenty of time to load
+// give the microscopic-canvas plenty of time to load
 WebUI.delay(120)
 
-// ──────────────────────────────────────────────────────────
+// ────────────────────────────────────────────────────────────────────
 // STEP 3 – Define our expected WBC→color map
-// ──────────────────────────────────────────────────────────
+// ────────────────────────────────────────────────────────────────────
 Map<String,String> expectedColorByName = [
 	'Neutrophils'           : 'rgb(255, 0, 18)',
 	'Lymphocytes'           : 'rgb(0, 255, 43)',
@@ -81,27 +86,27 @@ Map<String,String> expectedColorByName = [
 	'Rejected'              : 'rgb(0, 0, 0)'
 ]
 
-// ──────────────────────────────────────────────────────────
-// STEP 4 – Locate all WBC‐microscopic left‐pane rows
-// ──────────────────────────────────────────────────────────
-// This XPath looks under the WBC microscopic‐left pane for each <tr>:
-TestObject rowsTO = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+// ────────────────────────────────────────────────────────────────────
+// STEP 4 – Locate all WBC-microscopic left-pane rows
+// ────────────────────────────────────────────────────────────────────
+TestObject rowsTO = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
 	"//div[contains(@class,'wbc-microscopic-left-pane')]//table//tbody/tr"
 )
 
 List<WebElement> rows = WebUiCommonHelper.findWebElements(rowsTO, 10)
 WebUI.comment("🔎 Found ${rows.size()} WBC rows on the left")
 
-// ──────────────────────────────────────────────────────────
+// ────────────────────────────────────────────────────────────────────
 // STEP 5 – For each row, if the name is in our map, verify its bubble’s color
-// ──────────────────────────────────────────────────────────
+// ────────────────────────────────────────────────────────────────────
 rows.each { WebElement row ->
 	// cell name sits in the second <td>
 	WebElement nameTd = row.findElement(By.xpath(".//td[2]"))
 	String cellName = nameTd.getText().trim()
 
 	if (expectedColorByName.containsKey(cellName)) {
-		// find the little color‐swatch DIV in the first <td>
+		// find the little color-swatch DIV in the first <td>
 		WebElement colorDiv = row.findElement(By.xpath(".//td[1]//div"))
 		String actualCssColor = colorDiv.getCssValue("background-color").trim()
 
@@ -117,5 +122,4 @@ rows.each { WebElement row ->
 	}
 }
 
-WebUI.comment("✅ Done verifying WBC cell‐color codes.")
-
+WebUI.comment("✅ Done verifying WBC cell-color codes.")

@@ -12,12 +12,14 @@ import javax.imageio.ImageIO
 import org.openqa.selenium.By
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.StaleElementReferenceException
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.testng.asserts.SoftAssert
 
+import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
@@ -25,6 +27,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+import CustomKeywords
 import imageUtils.blurChecker
 
 
@@ -81,14 +84,14 @@ public class ZoomInOut {
 				if (zoomId.contains("zoom_in")) {
 					WebUI.comment("🏠 Clicking Home Zoom before starting iterations for: $cellname")
 					WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/Home_zoom_CTA'))
-					WebUI.delay(1)
+					WebUI.delay(5)
 				}
 
 				// Proceed to patch zoom check
 				WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/img_Platelets_split-view_1_2 (1)'), 30)
 				WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/img_Platelets_split-view_1_2 (1)'))
 				WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/canvas'), 30)
-				WebUI.delay(2)
+				WebUI.delay(5)
 
 				//=== Function to get base64 image from canvas ===
 				def getCanvasImageBase64 = {
@@ -114,7 +117,7 @@ public class ZoomInOut {
 
 					// === Step 2:
 					WebUI.click(button)
-					WebUI.delay(3) // Let canvas settle
+					WebUI.delay(5) // Let canvas settle
 
 					// === Step 3: Capture canvas after zoom ===
 					WebUI.comment("Capturing canvas after zoom in...")
@@ -508,7 +511,7 @@ public class ZoomInOut {
 					WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/img_Platelets_split-view_1_2 (1)'), 30)
 					WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/img_Platelets_split-view_1_2 (1)'))
 					WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/canvas'), 30)
-					WebUI.delay(2)
+					WebUI.delay(5)
 
 					def getCanvasImageBase64 = {
 						JavascriptExecutor js = (JavascriptExecutor) driver
@@ -538,7 +541,7 @@ public class ZoomInOut {
 						TestObject homeBtn = findTestObject('Object Repository/RBC_Objects/Page_PBS/Home_zoom_CTA')
 						WebUI.comment("🔄 Resetting zoom via home button...")
 						WebUI.click(homeBtn)
-						WebUI.delay(2)
+						WebUI.delay(5)
 					}
 
 					List<String> expectedScales = zoomType.equalsIgnoreCase("in") ? zoomInScales : zoomOutScales
@@ -551,7 +554,7 @@ public class ZoomInOut {
 						String beforeScale = WebUI.getText(scaleBar)
 
 						WebUI.click(button)
-						WebUI.delay(3)
+						WebUI.delay(5)
 
 						String afterImage = getCanvasImageBase64()
 						String afterScale = WebUI.getText(scaleBar)
@@ -727,6 +730,7 @@ public class ZoomInOut {
 			String cellname = cellname_ele.getText()
 			println(cellname)
 
+
 			def getCanvasImageBase64 = {
 				JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getWebDriver()
 				String base64 = js.executeScript("""
@@ -768,20 +772,20 @@ public class ZoomInOut {
 			else{
 				for (int i = 1; i < total_no_of_patches; i++) {
 					// ✅ Re-locate element during each iteration
-					WebElement patch = driver.findElements(By.xpath('//div[@class="Card patches-container"]')).get(i)
+					WebElement patch = driver.findElements(By.xpath('(//div[@class="Card patches-container"]/div)')).get(i)
 
 					// Example interaction
 					if(TestCase.equals("checking consistancy on patches between patch view and split_View")) {
-						act.doubleClick(patch).perform()
-						WebUI.delay(3)
+						act.doubleClick(patch).build().perform()
+						WebUI.delay(8)
 						WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/patch_view_button'))
 					}
 					else {
 
-						WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/split_view_button'))
+						WebUI.click(findTestObject('RBC_Objects/Page_PBS/split-view_button'))
 						String beforeChangingPatch = getCanvasImageBase64()
-						act.doubleClick(patch).perform()
-						WebUI.delay(3)
+						act.doubleClick(patch).build().perform()
+						WebUI.delay(8)
 						String afterChangingPatch = getCanvasImageBase64()
 
 						// Log differences
@@ -828,13 +832,17 @@ public class ZoomInOut {
 			if(cellname.equals('Acanthocytes*') || cellname.equals('Stomatocytes*') || cellname.equals('Howell-Jolly Bodies*') || cellname.equals('Pappenheimer Bodies*') || cellname.equals('Basophilic Stippling*')) {
 				for(int i=0; i<grades.size();i++) {
 					grades.get(i).click()
-
+					
+					try {
 					TestObject toastMsg = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_Cells_regraded_toast_msg_ele')
 					WebUI.waitForElementVisible(toastMsg, 10)
+				
 
 					TestObject regradeMsgObj = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_from_to_msg')
 					WebUI.waitForElementVisible(regradeMsgObj, 10)
 					String regrade_msg = WebUI.getText(regradeMsgObj).trim()
+					
+					
 
 					TestObject significant_non_sign_Msg_ele = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_significant_non-sig_status')
 					WebUI.waitForElementVisible(significant_non_sign_Msg_ele, 10)
@@ -860,17 +868,10 @@ public class ZoomInOut {
 							System.out.println("Dot color: " + dotColor);
 							assert dotColor=="rgba(198, 27, 28, 1)"//this red-color-code is as per the requirement
 						}
-						try {
-							TestObject toastCloseIcon = findTestObject('Object Repository/RBC_Objects/Page_PBS/toast_msg_close_icon')
-							if (WebUI.waitForElementVisible(toastCloseIcon, 5, FailureHandling.OPTIONAL)) {
-								WebUI.click(toastCloseIcon)
-								println('✅ Toast message closed')
-							} else {
-								println('ℹ️ Toast message close icon not found or already disappeared')
-							}
-						} catch (Exception e) {
-							println('⚠️ Exception while closing toast message: ' + e.getMessage())
-						}
+					
+						
+						CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
+						
 
 						println('closed a toast msg')
 					}
@@ -892,19 +893,15 @@ public class ZoomInOut {
 							System.out.println("Dot color: " + dotColor);
 							assert dotColor=="rgba(198, 27, 28, 1)"
 						}
-						try {
-							TestObject toastCloseIcon = findTestObject('Object Repository/RBC_Objects/Page_PBS/toast_msg_close_icon')
-							if (WebUI.waitForElementVisible(toastCloseIcon, 5, FailureHandling.OPTIONAL)) {
-								WebUI.click(toastCloseIcon)
-								println('✅ Toast message closed')
-							} else {
-								println('ℹ️ Toast message close icon not found or already disappeared')
-							}
-						} catch (Exception e) {
-							println('⚠️ Exception while closing toast message: ' + e.getMessage())
-						}
+				
+						
+						CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
+						
 
 						println('closed a toast msg')
+					}
+					} catch (Exception e) {
+						println('⚠️ toast message is not visible: ' + e.getMessage())
 					}
 					//Assertion for significant and non-significant
 				}
@@ -913,8 +910,11 @@ public class ZoomInOut {
 				for(int i=(grades.size()-2); i>=0;i--) {
 
 					grades.get(i).click()
+					
+				try {
 					TestObject toastMsg = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_Cells_regraded_toast_msg_ele')
 					WebUI.waitForElementVisible(toastMsg, 10)
+				
 
 					TestObject regradeMsgObj = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_from_to_msg')
 					WebUI.waitForElementVisible(regradeMsgObj, 10)
@@ -944,17 +944,9 @@ public class ZoomInOut {
 							System.out.println("Dot color: " + dotColor);
 							assert dotColor=="rgba(198, 27, 28, 1)"
 						}
-						try {
-							TestObject toastCloseIcon = findTestObject('Object Repository/RBC_Objects/Page_PBS/toast_msg_close_icon')
-							if (WebUI.waitForElementVisible(toastCloseIcon, 5, FailureHandling.OPTIONAL)) {
-								WebUI.click(toastCloseIcon)
-								println('✅ Toast message closed')
-							} else {
-								println('ℹ️ Toast message close icon not found or already disappeared')
-							}
-						} catch (Exception e) {
-							println('⚠️ Exception while closing toast message: ' + e.getMessage())
-						}
+					
+						CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
+						
 
 						println('closed a toast msg')
 					}
@@ -976,20 +968,16 @@ public class ZoomInOut {
 							System.out.println("Dot color: " + dotColor);
 							assert dotColor=="rgba(198, 27, 28, 1)"
 						}
-						try {
-							TestObject toastCloseIcon = findTestObject('Object Repository/RBC_Objects/Page_PBS/toast_msg_close_icon')
-							if (WebUI.waitForElementVisible(toastCloseIcon, 5, FailureHandling.OPTIONAL)) {
-								WebUI.click(toastCloseIcon)
-								println('✅ Toast message closed')
-							} else {
-								println('ℹ️ Toast message close icon not found or already disappeared')
-							}
-						} catch (Exception e) {
-							println('⚠️ Exception while closing toast message: ' + e.getMessage())
-						}
+						
+						CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
+
+						
 
 						println('closed a toast msg')
 					}
+				} catch (Exception e) {
+					println('⚠️ toast message is not visible: ' + e.getMessage())
+				}
 				}
 			}
 
@@ -1001,8 +989,10 @@ public class ZoomInOut {
 				for(int i=1; i<grades.size();i++) {
 					grades.get(i).click()
 					WebUI.delay(1)
+				try {
 					TestObject toastMsg = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_Cells_regraded_toast_msg_ele')
 					WebUI.waitForElementVisible(toastMsg, 10)
+					
 
 					TestObject regradeMsgObj = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_from_to_msg')
 					WebUI.waitForElementVisible(regradeMsgObj, 10)
@@ -1035,25 +1025,22 @@ public class ZoomInOut {
 
 
 					WebUI.delay(1)
-					try {
-						TestObject toastCloseIcon = findTestObject('Object Repository/RBC_Objects/Page_PBS/toast_msg_close_icon')
-						if (WebUI.waitForElementVisible(toastCloseIcon, 5, FailureHandling.OPTIONAL)) {
-							WebUI.click(toastCloseIcon)
-							println('✅ Toast message closed')
-						} else {
-							println('ℹ️ Toast message close icon not found or already disappeared')
-						}
-					} catch (Exception e) {
-						println('⚠️ Exception while closing toast message: ' + e.getMessage())
-					}
+					CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
+
+					
+				} catch (Exception e) {
+					println('⚠️ toast message is not visible: ' + e.getMessage())
+				}
 					println('closed a toast msg')
 				}
 				//reserve loop to regrade from 3 to 0
 				for(int i=(grades.size()-2); i>=0;i--) {
 					grades.get(i).click()
 					WebUI.delay(1)
+			try {
 					TestObject toastMsg = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_Cells_regraded_toast_msg_ele')
 					WebUI.waitForElementVisible(toastMsg, 10)
+				
 
 					TestObject regradeMsgObj = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_from_to_msg')
 					WebUI.waitForElementVisible(regradeMsgObj, 10)
@@ -1085,26 +1072,66 @@ public class ZoomInOut {
 						System.out.println("Dot color: " + dotColor)
 						assert dotColor == "rgba(198, 27, 28, 1)" // Red
 					}
-
-
-
-					try {
-						TestObject toastCloseIcon = findTestObject('Object Repository/RBC_Objects/Page_PBS/toast_msg_close_icon')
-						if (WebUI.waitForElementVisible(toastCloseIcon, 5, FailureHandling.OPTIONAL)) {
-							WebUI.click(toastCloseIcon)
-							println('✅ Toast message closed')
-						} else {
-							println('ℹ️ Toast message close icon not found or already disappeared')
-						}
-					} catch (Exception e) {
-						println('⚠️ Exception while closing toast message: ' + e.getMessage())
-					}
-
+					
+					CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
+										
+			} catch (Exception e) {
+				println('⚠️ toast message is not visible: ' + e.getMessage())
+			}
 					println('closed a toast msg')
 				}
 			}
 		}
 	}
+	@Keyword
+	def closeToastIfVisible() {
+		TestObject toastCloseTO = findTestObject('Object Repository/RBC_Objects/Page_PBS/toast_msg_close_icon')
+		WebDriver driver = DriverFactory.getWebDriver()
+	
+		try {
+			if (WebUI.waitForElementPresent(toastCloseTO, 5, FailureHandling.OPTIONAL)) {
+				if (WebUI.verifyElementVisible(toastCloseTO, FailureHandling.OPTIONAL)) {
+					WebElement toastCloseIcon = null
+					int retries = 0
+					boolean clicked = false
+	
+					while (retries < 2 && !clicked) {
+						try {
+							toastCloseIcon = WebUiCommonHelper.findWebElement(toastCloseTO, 3)
+							toastCloseIcon.click()
+							println('✅ Toast closed via standard click')
+							clicked = true
+						} catch (StaleElementReferenceException se) {
+							println("🔁 Retry #${retries + 1}: StaleElementReferenceException: ${se.message}")
+							retries++
+							WebUI.delay(0.5)
+						} catch (Exception e) {
+							println("⚠️ Error clicking toast icon normally: ${e.message}")
+							break
+						}
+					}
+	
+					if (!clicked && toastCloseIcon != null) {
+						try {
+							((JavascriptExecutor) driver).executeScript("arguments[0].click();", toastCloseIcon)
+							println('✅ Toast closed via JavaScript click')
+						} catch (Exception jsEx) {
+							println("❌ JavaScript click failed: ${jsEx.message}")
+						}
+					}
+				} else {
+					println('ℹ️ Toast is present but not visible')
+				}
+			} else {
+				println('ℹ️ Toast close icon not found')
+			}
+		} catch (Exception e) {
+			println('⚠️ Safe exit from closeToastIfVisible(): ' + e.getMessage())
+		}
+	}
+	
+
+
 
 	public void verifyPercentageCalculation() {
 		WebDriver driver =DriverFactory.getWebDriver()
