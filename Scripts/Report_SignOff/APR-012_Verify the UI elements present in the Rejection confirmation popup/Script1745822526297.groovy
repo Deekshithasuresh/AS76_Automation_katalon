@@ -30,7 +30,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_Are you 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_No changes can be made once report is rejected'), 
     'No changes can be made once report is rejected!')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_PBS/button_Reject report_1'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_PBS/button_Reject report_popup'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_PBS/button_Cancel'), 0)
 

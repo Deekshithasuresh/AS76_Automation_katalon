@@ -17,27 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//Login and assign
-
-CustomKeywords.'generic.custumFunctions.login'()
-
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
-
-// Approve flow
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
-
-WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
-
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
-// Desedle ting all the images
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Modify'))
-
-WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_38769d'))
-
-WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_6d9f49'))
-
-// Cance the flow
-//WebUI.click(findTestObject('Object Repository/Page_PBS/button_Cancel'))
-
