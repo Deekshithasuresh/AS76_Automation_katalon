@@ -40,13 +40,14 @@ WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report_1'))
 
 WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report_1'))
 
+WebUI.delay(5)
+
 
 //WebUI.click(findTestObject('Object Repository/Page_PBS/summary_Approve report_button'))
 //WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
 //WebUI.click(findTestObject('Object Repository/Page_PBS/review_Approve report_button'))
 //WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report_1'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/approve_add_supporting_page'))
 WebUI.click(findTestObject('Object Repository/Page_PBS/kebab_dots_approve'))
 
 WebUI.delay(3)
