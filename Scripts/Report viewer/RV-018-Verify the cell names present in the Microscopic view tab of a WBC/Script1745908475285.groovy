@@ -4,35 +4,11 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.model.FailureHandling
 
-// 1) LOGIN
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(
-	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
-	'adminuserr'
-)
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+CustomKeywords.'generic.custumFunctions.login'()
 
-// 2) VERIFY LANDING ON REPORT LIST
-TestObject pbsText = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[contains(text(),'PBS')]"
-)
-WebUI.waitForElementPresent(pbsText, 10)
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-// 3) OPEN FIRST “Under review” REPORT
-TestObject underReviewRow = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-)
-WebUI.waitForElementClickable(underReviewRow, 10)
-WebUI.scrollToElement(underReviewRow, 5)
-WebUI.click(underReviewRow)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
 // ─── STEP 4: Click the WBC tab ──────────────────────────────
 TestObject wbcTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
