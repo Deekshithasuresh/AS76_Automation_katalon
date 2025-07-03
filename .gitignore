@@ -24,3 +24,5 @@ build
 .DS_Store
 >>>>>>> 67be292e8545f2d6dbc37403c0e8af0adc5f9511
 .DS_Store
+bin/
+bin/
