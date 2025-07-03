@@ -16,13 +16,14 @@ String slideId = WebUI.getText(slideIdObject).trim()
 WebUI.comment("Captured Slide ID: " + slideId)
 
 // Approve the report
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report_1'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report_1'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/review_Approve report_button'))
+
 
 // Go to Reviewed tab
-WebUI.click(findTestObject('Object Repository/Page_PBS/img')) // menu or logo
+WebUI.click(findTestObject('Object Repository/Page_PBS/back_arrow_button')) // hitting back arrow button
 WebUI.click(findTestObject('Object Repository/Page_PBS/div_Ready for review'))
 WebUI.click(findTestObject('Object Repository/Page_PBS/div_Reviewed'))
 

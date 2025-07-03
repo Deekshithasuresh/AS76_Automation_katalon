@@ -11,7 +11,7 @@ DriverFactory
 WebUI.openBrowser('')
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
@@ -58,7 +58,7 @@ for (WebElement gradeRow : allGradeRows) {
 
 if (allSignificant) {
 	WebUI.comment("✅ All RBC cells are now marked significant. Approving report.")
-	WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
+	WebUI.click(findTestObject('Object Repository/Page_PBS/summary_Approve report_button'))
 } else {
 	WebUI.comment("❌ Some RBC cells are still non-significant. Report NOT approved.")
 }

@@ -107,6 +107,10 @@ pbs_set.checkThatValuesGotUpdated(RBC_dia_values_after_entering,RBC_dia_values_a
 
 
 pbs_set.enterValueIntoPlateLetLevelField(normal_input, '985')
+WebUI.waitForElementNotPresent(Undo_pop_up_cancel_CTA, 10)
+WebUI.waitForElementClickable(normal, 10)
+
+
 pbs_set.checkFunctionalityOfCTAS(Undo_CTA,Undo_confirm_CTA,'Cancel_confirm')
 WebUI.delay(2)
 

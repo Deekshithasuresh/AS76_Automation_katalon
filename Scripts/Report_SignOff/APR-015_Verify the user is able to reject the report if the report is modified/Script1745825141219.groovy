@@ -34,6 +34,6 @@ if (NeutrophilsBefore > 0) {
 
 WebUI.click(findTestObject('Object Repository/Page_PBS/button_Reject report'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Reject report_1'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/button_Reject report_popup'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_Report Rejected'), 'Report Rejected')

@@ -37,7 +37,7 @@ WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Confirm'))
 
 WebUI.click(findTestObject('Object Repository/Report-Signoff/span_Add supporting images'))
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/span_Modify'))
+WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Modify_lymphocyte'))
 
 WebUI.click(findTestObject('Object Repository/Report-Signoff/img_Neutrophils_MuiImageListItem-img qa_pat_2b6ddc'))
 
@@ -48,7 +48,7 @@ WebUI.click(findTestObject('Object Repository/Report-Signoff/img_Neutrophils_Mui
 WebUI.verifyElementPresent(findTestObject('Object Repository/Report-Signoff/img_Neutrophils_MuiImageListItem-img qa_pat_2b6ddc'), 
     0)
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel'))
+WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel_modify_neutrophil'))
 
 WebUI.click(findTestObject('Object Repository/Report-Signoff/span_Modify_1'))
 
@@ -61,7 +61,7 @@ WebUI.click(findTestObject('Object Repository/Report-Signoff/img_Lymphocytes_Mui
 WebUI.verifyElementPresent(findTestObject('Object Repository/Report-Signoff/img_Lymphocytes_MuiImageListItem-img qa_pat_a69c43'), 
     0)
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel'))
+WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel_modify_neutrophil'))
 
 WebUI.closeBrowser()
 

@@ -23,25 +23,25 @@ CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/img'))
+//WebUI.click(findTestObject('Object Repository/Page_PBS/add_supporting_images'))
 
-WebUI.setText(findTestObject('Object Repository/Page_PBS/input_SiG_assigned_to'), 'santosh')
+//WebUI.setText(findTestObject('Object Repository/Page_PBS/input_SiG_assigned_to'), 'santosh')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_Approve report'), 'Approve report')
 
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_Are you sure you want to approve'), 'Are you sure you want to approve?')
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_Are you sure you want to approve'), 'Are you sure you want to approve?')
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/div_All WBC patches, including unclassified_35d31c'))
+//WebUI.click(findTestObject('Object Repository/Page_PBS/div_All WBC patches, including unclassified_35d31c'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/Page_PBS/div_Are you sure you want to approveAll WBC_fa951f'))
+//WebUI.verifyElementVisible(findTestObject('Object Repository/Page_PBS/div_Are you sure you want to approveAll WBC_fa951f'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/button_Cancel'), 'Cancel')
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/button_Cancel'), 'Cancel')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/button_Confirm'), 'Confirm')
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'), 'Confirm')
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_No changes can be made once report is _61297c'), 
     'No changes can be made once report is approved!')

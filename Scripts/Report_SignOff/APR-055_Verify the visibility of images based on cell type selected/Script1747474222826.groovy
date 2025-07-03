@@ -12,7 +12,7 @@ CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 // Approve flow
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
 
 // Open 'Add supporting images'
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))

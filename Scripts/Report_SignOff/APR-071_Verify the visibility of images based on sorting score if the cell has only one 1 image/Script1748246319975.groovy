@@ -60,7 +60,7 @@ println("Monocyte tab patch ranks: ${wbcTopRanks}")
 
 // === Step 2: Open Modify popup ===
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Modify'))
 

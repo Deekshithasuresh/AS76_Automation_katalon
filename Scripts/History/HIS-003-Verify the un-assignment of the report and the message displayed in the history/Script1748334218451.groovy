@@ -7,88 +7,17 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.By
 import com.kms.katalon.core.model.FailureHandling
 
-// 1) LOGIN + NAVIGATE TO REPORT LIST
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject(
-    'Report viewer/Page_PBS/input_username_loginId'
-), 'adminuserr')
-WebUI.setEncryptedText(findTestObject(
-    'Report viewer/Page_PBS/input_password_loginPassword'
-), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
-WebUI.waitForElementPresent(new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//span[contains(text(),'PBS')]"
-), 10)
+CustomKeywords.'generic.custumFunctions.login'()
 
-// 2) COUNT “Under review” ROWS
-WebDriver driver = DriverFactory.getWebDriver()
-int total = driver.findElements(By.xpath(
-    "//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']]"
-)).size()
-assert total > 0 : "❌ No 'Under review' rows found"
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
-// 3) CLEAR FIRST NON-EMPTY “Assigned to”
-boolean didClear = false
-for (int i = 1; i <= total && !didClear; i++) {
-    String baseXp  = "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[${i}]"
-    String inpXp   = "${baseXp}//input[@id='assigned_to']"
-    TestObject inputTO = new TestObject().addProperty(
-        'xpath', ConditionType.EQUALS, inpXp
-    )
-    WebUI.waitForElementVisible(inputTO, 5)
-    String val = WebUI.getAttribute(inputTO, 'value').trim()
-    if (val) {
-        // try both possible clear-buttons:
-        List<String> clearXps = [
-          // by aria-label
-          "${baseXp}//button[@aria-label='Clear assignment']",
-          // by title
-          "${baseXp}//button[@title='Clear']"
-        ]
-        for (String clearXp : clearXps) {
-            TestObject clearTO = new TestObject().addProperty(
-              'xpath', ConditionType.EQUALS, clearXp
-            )
-            if (WebUI.verifyElementPresent(clearTO, 2, FailureHandling.OPTIONAL)) {
-                WebUI.waitForElementClickable(clearTO, 5)
-                WebUI.click(clearTO)
-                WebUI.comment("✔ Cleared ‘Assigned to’ on row #${i} (was '${val}')")
-                didClear = true
-                break
-            }
-        }
-        if (!didClear) {
-            WebUI.comment("⚠ Found non-empty field on row #${i} but no clear-button; skipping…")
-        }
-    } else {
-        WebUI.comment("⚠ Row #${i} already empty, skipping…")
-    }
-}
-assert didClear : "❌ No non-empty 'Assigned to' field could be cleared"
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
-// 4) CONFIRM “Unassign” DIALOG
-TestObject dialogTO = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//div[contains(@class,'modal-title') and contains(.,'unassign this slide?')]/ancestor::div[@role='dialog']"
-)
-WebUI.waitForElementVisible(dialogTO, 5)
-TestObject unassignBtn = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//div[@role='dialog']//button[normalize-space()='Unassign']"
-)
-WebUI.click(unassignBtn)
+WebUI.click(findTestObject('Object Repository/WBC_m/Page_PBS/Page_PBS/button_X_unassign'))
 
-// 5) VERIFY FIELD IS BLANK
-TestObject afterClear = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']]//input[@id='assigned_to']"
-)
-WebUI.waitForElementVisible(afterClear, 5)
-String clearedVal = WebUI.getAttribute(afterClear, 'value').trim()
-assert clearedVal == '' : "❌ Field not cleared; still has '${clearedVal}'"
+WebUI.click(findTestObject('Object Repository/WBC_m/Page_PBS/Page_PBS/button_Unassign'))
+
+
 
 
 // 6) OPEN KEBAB MENU & CHOOSE “History”

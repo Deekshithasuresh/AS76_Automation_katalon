@@ -11,6 +11,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import java.time.Duration
 
 // === LAUNCH & LOGIN ===
 WebUI.openBrowser('')
@@ -18,7 +19,7 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 // === ASSIGN REPORT ===
 WebUI.comment("Selecting report with 'To be reviewed' status.")
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 WebUI.comment("Assigning report to 'santosh'.")
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
@@ -86,7 +87,7 @@ WebUI.comment("RBC regrading check complete.")
 // === APPROVE REPORT & ADD SUPPORTING IMAGES ===
 WebUI.comment("Approving the report.")
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
 WebUI.comment("Navigating to 'Add supporting images'.")
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
 

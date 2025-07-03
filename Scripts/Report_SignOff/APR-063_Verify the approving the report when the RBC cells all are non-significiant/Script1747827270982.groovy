@@ -12,7 +12,7 @@ WebUI.openBrowser('')
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
@@ -61,7 +61,7 @@ for (WebElement gradeRow : allGradeRows) {
 
 if (allNonSignificant) {
 	WebUI.comment("✅ All RBC cells have been set to non-significant. Approving report.")
-	WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
+	WebUI.click(findTestObject('Object Repository/Page_PBS/summary_Approve report_button'))
 } else {
 	WebUI.comment("❌ Some RBC cells are still significant")
 }

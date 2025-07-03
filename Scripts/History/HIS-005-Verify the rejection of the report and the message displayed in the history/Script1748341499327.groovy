@@ -79,7 +79,7 @@ WebUI.waitForElementVisible(popupTitle, 5)
 // **Updated locator:** look for the “Reject” button inside modal-actions
 TestObject confirmReject = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//div[contains(@class,'modal-actions')]//button[normalize-space(text())='Reject']"
+	"//div[@class='modal-actions']//button[normalize-space(text())='Reject report']"
 )
 WebUI.waitForElementClickable(confirmReject, 5)
 WebUI.click(confirmReject)

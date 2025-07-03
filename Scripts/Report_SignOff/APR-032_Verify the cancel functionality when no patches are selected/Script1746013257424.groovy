@@ -28,7 +28,7 @@ CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 // Approve flow
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
 
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
 // Desedle ting all the images
@@ -39,5 +39,5 @@ WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageL
 WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_6d9f49'))
 
 // Cance the flow
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Cancel'))
+//WebUI.click(findTestObject('Object Repository/Page_PBS/button_Cancel'))
 

@@ -6,12 +6,12 @@
    <elementGuidId>0772ea8c-322e-46d9-971d-c2096f0cd87a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button.cell-buttons.cell-tab</value>
+         <key>XPATH</key>
+         <value>//button[.//span[text()='No changes can be made once report is approved!']]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/div/div/div/button</value>
+         <key>CSS</key>
+         <value>button.cell-buttons.cell-tab</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>b462b274-dcaa-40cc-86e5-caab98b91079</webElementGuid>
+      <webElementGuid>ba70de45-7df3-4f01-abed-56ab8b86a051</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>cell-buttons cell-tab</value>
-      <webElementGuid>105a2255-355a-445b-8001-a1308b2e2d94</webElementGuid>
+      <webElementGuid>e60e8874-dbe1-4104-b074-f3cf025e98c3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Summary</value>
-      <webElementGuid>a8487fd8-0104-4dc4-8ed4-def5cc7b00d6</webElementGuid>
+      <webElementGuid>10e9e506-8712-42ea-9d54-3941b86f2b77</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-nav&quot;]/div[@class=&quot;review-nav__selection&quot;]/div[@class=&quot;review-nav__selection__cell&quot;]/button[@class=&quot;cell-buttons cell-tab&quot;]</value>
-      <webElementGuid>aac956c9-8c8e-41f3-b8d5-1fa54d8ee376</webElementGuid>
+      <webElementGuid>226a7653-526e-4e04-afb4-4e54a01eda2c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div/div/div/button</value>
-      <webElementGuid>0e4ff56b-df5b-42d4-8f8e-49ae333214fd</webElementGuid>
+      <webElementGuid>029fb469-3942-461b-90b8-1f3eeafa006a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reject report'])[1]/following::button[3]</value>
-      <webElementGuid>e1cfe0d7-d2fe-43b3-bcd7-ecc2419d308c</webElementGuid>
+      <webElementGuid>431867b3-e3f1-48c3-b23b-853ee12e69e6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='WBC'])[1]/preceding::button[1]</value>
-      <webElementGuid>ecdfae79-cc5d-4d50-a5a9-7751d442370b</webElementGuid>
+      <webElementGuid>dede7f79-b4d1-426c-a4f3-b6f758ae1d55</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='RBC'])[1]/preceding::button[2]</value>
-      <webElementGuid>6b781a44-9a87-43df-bdb8-2a3d784cb8cf</webElementGuid>
+      <webElementGuid>3527da28-9c15-47b6-bd0e-0b11fd5065a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Summary']/parent::*</value>
-      <webElementGuid>d7bcfc75-b9ae-47e5-8fad-099c3f3bcab3</webElementGuid>
+      <webElementGuid>3174a998-5779-466c-80f5-b86a3c2a6521</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/button</value>
-      <webElementGuid>ac6163c3-1ad6-43ca-b2de-725f066830da</webElementGuid>
+      <webElementGuid>fed7346b-dc53-4dd8-989e-52cbbd2e5076</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'Summary' or . = 'Summary')]</value>
-      <webElementGuid>1783b292-76cc-4d93-ae37-9150566f4e3c</webElementGuid>
+      <webElementGuid>401abd8c-0008-44e2-966b-e6b7df9d8692</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

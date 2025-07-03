@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Reviewed (1)</name>
+   <tag></tag>
+   <elementGuidId>b23513ec-7a34-4f23-a36e-f3ba1a31cae6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='report-type-popover']/div[3]/div/div[3]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>div >> internal:has-text=/^Reviewed$/</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>79501c75-62ef-4c2f-af3c-915443ebe44a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>reportTypeComponent_report-type-name__GZCsS</value>
+      <webElementGuid>550281ed-3c17-45b0-88e0-70d40f3dcb38</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Reviewed</value>
+      <webElementGuid>c39fd603-e417-4a5d-bd8a-f5dc35d35147</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;report-type-popover&quot;)/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper css-1dmzujt&quot;]/div[1]/div[@class=&quot;reportTypeComponent_report-type-list-item__HcxAy&quot;]/div[@class=&quot;reportTypeComponent_report-type-name__GZCsS&quot;]</value>
+      <webElementGuid>f57eaff9-f295-40c1-8a96-f5f12aee8147</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='report-type-popover']/div[3]/div/div[3]/div</value>
+      <webElementGuid>686be4af-92cf-4e48-b2d7-ca94b201bf7e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Preparing'])[1]/following::div[2]</value>
+      <webElementGuid>6d6ef989-6916-4251-9562-bc22543ad921</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ready for review'])[2]/following::div[4]</value>
+      <webElementGuid>1d882887-78d4-4fd2-ba1d-d9fd64607107</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div[3]/div</value>
+      <webElementGuid>80637164-aaf8-4301-a9ec-4cfaa68cc308</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Reviewed' or . = 'Reviewed')]</value>
+      <webElementGuid>e3a138bf-723e-4ac2-9624-5e8da8f2be5f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

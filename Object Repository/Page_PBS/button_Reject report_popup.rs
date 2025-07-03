@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Reject report_1</name>
+   <name>button_Reject report_popup</name>
    <tag></tag>
    <elementGuidId>54c877ab-5ba6-4e5d-9389-7b19ccddf0b8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[7]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.backtoReportBtn.css-1lfr6uj</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>/html/body/div[2]/div[3]/div[3]/button[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>ce39878c-69a2-4601-a375-bd52a405491f</webElementGuid>
+      <webElementGuid>128a890f-1a88-4866-9268-63406a16b377</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary backtoReportBtn css-1lfr6uj</value>
-      <webElementGuid>6ef5e656-7fce-4c6a-9174-ebae90ec0cf8</webElementGuid>
+      <webElementGuid>0d0321b6-5dbd-4a23-9a1e-cdabc30d6c6d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>4a49fb6d-a0fb-4c60-bdeb-a0884155461f</webElementGuid>
+      <webElementGuid>a182ebaf-c164-4213-892b-f2f04ae0b28a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>80d6e677-feec-4b70-a06a-f77689d0fd69</webElementGuid>
+      <webElementGuid>901b97d8-81eb-4a1f-b1fc-528157d0a213</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Reject report</value>
-      <webElementGuid>56da6830-447d-48cc-9b99-54054dd10584</webElementGuid>
+      <webElementGuid>371d14df-118a-4730-a0b3-efa88a5054ac</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[@class=&quot;dx-device-desktop dx-device-generic&quot;]/div[@class=&quot;MuiModal-root css-8ndowl&quot;]/div[@class=&quot;css-dbndpz&quot;]/div[@class=&quot;modal-actions&quot;]/button[@class=&quot;MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary backtoReportBtn css-1lfr6uj&quot;]</value>
-      <webElementGuid>0389ea4a-ecec-45b6-b242-cc81c20cd2dd</webElementGuid>
+      <webElementGuid>f97eb050-c290-4834-a73e-4f6bf3bb406b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[7]</value>
-      <webElementGuid>9cdf9bd2-2aac-4c52-bb19-99f422d13aa0</webElementGuid>
+      <webElementGuid>8124ee8d-8e3c-48d3-8342-0b0f05f816db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[6]/following::button[1]</value>
-      <webElementGuid>2b22e3bc-667d-48ac-8b91-e9f1e2048095</webElementGuid>
+      <webElementGuid>f9f28cd4-b6d6-4fda-b741-11cd8cc8ce40</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No changes can be made once report is rejected!'])[1]/following::button[2]</value>
-      <webElementGuid>f938f679-4dae-4fee-960a-05d3fefa3f23</webElementGuid>
+      <webElementGuid>2ea9549e-afc5-4d9b-8890-9a19c2af1a54</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/button[2]</value>
-      <webElementGuid>4bfe121c-9ddf-438a-9146-3e178f73eeaa</webElementGuid>
+      <webElementGuid>15f56ed1-6c74-495c-8e99-255ad078ed10</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Reject report' or . = 'Reject report')]</value>
-      <webElementGuid>96a973bd-0b18-497a-aefa-6dfe49a4de0a</webElementGuid>
+      <webElementGuid>bf0537c2-a1f7-4bd4-8580-e63f0a572d38</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

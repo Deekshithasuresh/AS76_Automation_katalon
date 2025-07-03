@@ -19,7 +19,7 @@ CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Reject report'))
 
-WebUI.verifyElementClickable(findTestObject('Object Repository/Report-Signoff/button_Cancel'))
+WebUI.verifyElementClickable(findTestObject('Object Repository/Report-Signoff/button_Cancel_modify_neutrophil'))
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel'))
+WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel_modify_neutrophil'))
 
