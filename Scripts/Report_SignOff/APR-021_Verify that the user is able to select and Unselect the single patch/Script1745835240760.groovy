@@ -17,51 +17,40 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-WebUI.setText(findTestObject('Object Repository/Report-Signoff/input_username_loginId'), 'manju')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Report-Signoff/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Sign In'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/input_Clear filters_PrivateSwitchBase-input_068da8'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/td_22-Apr-2025, 0404 PM (EAT)'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Modify'))
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/span_Approve report'))
+// Clicking on 3rd patch
+WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_2b6ddc'))
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Confirm'))
+// Clicking on 4th patch
+WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_4f0e64'))
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/span_Add supporting images'))
+// Clicking on 5th patch
+WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_081a47'))
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Modify_lymphocyte'))
+// Unselecting the selected patches
+WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_102102'))
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/img_Neutrophils_MuiImageListItem-img qa_pat_2b6ddc'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_911254'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Report-Signoff/div_3'), '3')
+WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_d37283'))
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/img_Neutrophils_MuiImageListItem-img qa_pat_2b6ddc'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_ca9b9c'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Report-Signoff/img_Neutrophils_MuiImageListItem-img qa_pat_2b6ddc'), 
-    0)
+WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_081a47_1'))
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel_modify_neutrophil'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/img_Neutrophils_MuiImageListItem-img qa_pat_3493d6'))
 
-WebUI.click(findTestObject('Object Repository/Report-Signoff/span_Modify_1'))
-
-WebUI.click(findTestObject('Object Repository/Report-Signoff/div_Lymphocytes_MuiImageListItemBar-titleWr_4b456b'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/Report-Signoff/div_3'), '3')
-
-WebUI.click(findTestObject('Object Repository/Report-Signoff/img_Lymphocytes_MuiImageListItem-img qa_pat_a69c43'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Report-Signoff/img_Lymphocytes_MuiImageListItem-img qa_pat_a69c43'), 
-    0)
-
-WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel_modify_neutrophil'))
-
-WebUI.closeBrowser()
-
+WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_1'), '1')
