@@ -32,5 +32,5 @@ WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_No change
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_PBS/button_Reject report_popup'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_PBS/button_Cancel'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_PBS/reject_cancel_button'), 0)
 

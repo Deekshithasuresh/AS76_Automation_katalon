@@ -26,7 +26,7 @@ WebUI.openBrowser('')
 	
 			WebUI.waitForElementPresent(findTestObject('PBS_Settings_Objects/Page_Admin Console/Sign_in_header'), 20)
 	
-			WebUI.setText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/input_Username_loginId'), "sanoperator")
+			WebUI.setText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/input_Username_loginId'), "sanreviewer")
 	
 			WebUI.setText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/input_Password_loginPassword'),
 					"Sigtuple@123")

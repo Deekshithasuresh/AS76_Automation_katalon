@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting image
 
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report_1'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Cancel'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/approve_cancel_button'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_Select supporting images'), 'Select supporting images')
 
