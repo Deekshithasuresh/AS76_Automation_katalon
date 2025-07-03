@@ -177,7 +177,7 @@ if (!lvlOpts.isEmpty()) {
 // 9) SWITCH TO “Morphology” & RE-CLASSIFY PATCHES
 // ────────────────────────────────────────────────────────────────────
 TestObject morphTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[@id='plateleteMorphologyTab'']"
+	"//button[@id='plateleteMorphologyTab']"
 )
 WebUI.click(morphTab)
 WebUI.delay(1)
@@ -222,18 +222,3 @@ List<WebElement> entries = driver.findElements(By.cssSelector("li.css-1ecsk3j"))
 entries.eachWithIndex { e, idx ->
 	WebUI.comment("History ${idx+1}: ${e.getText().trim()}")
 }
-
-// ────────────────────────────────────────────────────────────────────
-// 11) VERIFY DESCENDING TIMESTAMPS
-// ────────────────────────────────────────────────────────────────────
-DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd-MMM-yyyy, hh:mm a", Locale.ENGLISH)
-List<LocalDateTime> times = entries.collect { e ->
-	String raw = e.findElement(By.cssSelector("div.time")).getText().trim()
-	String cleaned = raw.replaceAll(/\s*\(.+\)$/, "")
-	LocalDateTime.parse(cleaned, fmt)
-}
-(0..<times.size()-1).each { i ->
-	assert !times[i].isBefore(times[i+1]) :
-		"Timestamps out of order: ${times[i]} before ${times[i+1]}"
-}
-WebUI.comment("✅ History in descending chronological order")

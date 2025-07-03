@@ -53,5 +53,4 @@ WebUI.click(findTestObject('Object Repository/Page_PBS/kebab_dots_approve'))
 WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Download PDF report (1)'))
-//WebUI.click(findTestObject('Object Repository/Page_PBS/span_Download PDF report'))
 

@@ -70,7 +70,7 @@ WebUI.waitForElementClickable(plcTab, 10);    WebUI.click(plcTab)
 WebUI.waitForElementClickable(microBtn, 10);  WebUI.click(microBtn)
 
 // STEP 5: Wait 150s for full load, then capture default (1000 μm)
-WebUI.delay(150)
+WebUI.delay(5)
 String scale0 = fetchScale()
 WebUI.verifyMatch(scale0, '1000 μm', false, FailureHandling.STOP_ON_FAILURE)
 println "Platelet Count Scale @1000μm: ${scale0}"
@@ -82,7 +82,7 @@ TestObject zoomInBtn = new TestObject().addProperty('xpath', ConditionType.EQUAL
 
 // STEP 6: Zoom once → wait 120s, verify 500 μm
 WebUI.click(zoomInBtn)
-WebUI.delay(120)
+WebUI.delay(5)
 String scale1 = fetchScale()
 WebUI.verifyMatch(scale1, '500 μm', false, FailureHandling.STOP_ON_FAILURE)
 println "Platelet Count Scale @500μm: ${scale1}"
@@ -90,7 +90,7 @@ println "Platelet Count BASE64 @500μm: ${snapAndBase64('plc_zoom1.png')}"
 
 // STEP 7: Zoom again → wait 120s, verify 200 μm
 WebUI.click(zoomInBtn)
-WebUI.delay(120)
+WebUI.delay(5)
 String scale2 = fetchScale()
 WebUI.verifyMatch(scale2, '200 μm', false, FailureHandling.STOP_ON_FAILURE)
 println "Platelet Count Scale @200μm: ${scale2}"

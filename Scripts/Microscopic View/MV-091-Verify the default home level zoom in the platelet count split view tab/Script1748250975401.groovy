@@ -1,5 +1,7 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -19,30 +21,10 @@ String fetchScale() {
 	return WebUI.executeJavaScript(js, null) as String
 }
 
-// 1) LOGIN
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-// 2) VERIFY LANDING ON REPORT LIST
-new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//span[contains(text(),'PBS')]"
-).with {
-	WebUI.waitForElementPresent(it, 10, FailureHandling.STOP_ON_FAILURE)
-}
-
-// 3) OPEN FIRST “Under review” REPORT
-new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-).with {
-	WebUI.waitForElementClickable(it, 10, FailureHandling.STOP_ON_FAILURE)
-	WebUI.scrollToElement(it, 5, FailureHandling.OPTIONAL)
-	WebUI.click(it, FailureHandling.STOP_ON_FAILURE)
-}
 
 // 4) SWITCH TO PLATELETS TAB
 TestObject plateletsTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
@@ -64,8 +46,7 @@ TestObject splitBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS
 )
 WebUI.waitForElementClickable(splitBtn, 10, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(splitBtn)
-WebUI.delay(120)    // enough time for the tiled map to load
-
+WebUI.delay(5)   
 // 7) VERIFY DEFAULT SCALE “50 μm” & SCREENSHOT
 String actual = fetchScale()
 WebUI.verifyMatch(actual, '50 μm', false, FailureHandling.STOP_ON_FAILURE)

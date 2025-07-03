@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>%Users%santosh.hiremath%git%AS76_Automation_katalon%AS76.prj</name>
+=======
+	<name>%Users%uthara%Downloads%AS76_Automation_katalon-main%AS76_automation.prj</name>
+>>>>>>> 729f860bad4ee45e705ff5289838d1e7b39f8307
 	<comment></comment>
 	<projects>
 	</projects>
@@ -17,7 +21,11 @@
 	</natures>
 	<filteredResources>
 		<filter>
+<<<<<<< HEAD
 			<id>1751453189363</id>
+=======
+			<id>1751523513838</id>
+>>>>>>> 729f860bad4ee45e705ff5289838d1e7b39f8307
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -26,7 +34,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1751453189371</id>
+=======
+			<id>1751523513847</id>
+>>>>>>> 729f860bad4ee45e705ff5289838d1e7b39f8307
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -35,7 +47,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1751455697960</id>
+=======
+			<id>1751518736778</id>
+>>>>>>> 729f860bad4ee45e705ff5289838d1e7b39f8307
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -44,7 +60,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1751455698036</id>
+=======
+			<id>1751518736791</id>
+>>>>>>> 729f860bad4ee45e705ff5289838d1e7b39f8307
 			<name></name>
 			<type>6</type>
 			<matcher>
