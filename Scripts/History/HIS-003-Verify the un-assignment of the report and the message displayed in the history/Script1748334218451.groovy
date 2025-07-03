@@ -90,6 +90,7 @@ WebUI.waitForElementVisible(afterClear, 5)
 String clearedVal = WebUI.getAttribute(afterClear, 'value').trim()
 assert clearedVal == '' : "❌ Field not cleared; still has '${clearedVal}'"
 
+
 // 6) OPEN KEBAB MENU & CHOOSE “History”
 TestObject kebabTO = new TestObject().addProperty(
     'xpath', ConditionType.EQUALS,

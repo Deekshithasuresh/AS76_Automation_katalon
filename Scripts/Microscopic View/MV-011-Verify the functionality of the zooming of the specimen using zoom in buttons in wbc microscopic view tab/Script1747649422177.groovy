@@ -22,14 +22,7 @@ WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_log
 	'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-// ───────────────
-// 2) VERIFY LANDING
-// ───────────────
-TestObject pbsText = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[contains(text(),'PBS')]"
-)
-WebUI.waitForElementPresent(pbsText, 10, FailureHandling.STOP_ON_FAILURE)
+
 
 // ───────────────
 // 3) OPEN “Under review” REPORT

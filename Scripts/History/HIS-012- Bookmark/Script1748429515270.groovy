@@ -38,9 +38,9 @@ if (!WebUI.getAttribute(bkIcon, 'src').contains('bookmark-filled')) {
 	).with {
 		WebUI.waitForElementVisible(it, 5)
 	}
-	WebUI.comment("✅ Bookmark saved")
+	WebUI.comment("Bookmark saved")
 } else {
-	WebUI.comment("🏷️ Already bookmarked")
+	WebUI.comment("Already bookmarked")
 }
 
 // 3) OPEN that report by clicking the slide-cell (col-3)
@@ -85,7 +85,7 @@ TestObject saveBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 )
 WebUI.click(saveBtn)
 WebUI.waitForElementNotVisible(textarea, 5)
-WebUI.comment("✏️ Comment added")
+WebUI.comment("Comment added")
 
 // 5b) UPDATE
 WebUI.click(commentIcon)
@@ -94,7 +94,7 @@ WebUI.clearText(textarea)
 WebUI.setText(textarea, "This is my UPDATED comment")
 WebUI.click(saveBtn)
 WebUI.waitForElementNotVisible(textarea, 5)
-WebUI.comment("🔄 Comment updated")
+WebUI.comment("Comment updated")
 
 // 5c) DELETE
 WebUI.click(commentIcon)
@@ -104,7 +104,7 @@ TestObject deleteBtn = new TestObject().addProperty('xpath', ConditionType.EQUAL
 )
 WebUI.click(deleteBtn)
 WebUI.waitForElementNotVisible(textarea, 5)
-WebUI.comment("🗑️ Comment deleted")
+WebUI.comment("Comment deleted")
 
 // 6) OPEN HISTORY
 TestObject kebab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
@@ -120,7 +120,7 @@ WebUI.waitForPageLoad(5)
 
 // 7) DUMP & SCREENSHOT HISTORY ENTRIES
 List<WebElement> entries = driver.findElements(By.cssSelector("li.css-1ecsk3j"))
-assert entries.size() > 0 : "❌ No history entries!"
+assert entries.size() > 0 : "No history entries!"
 entries.eachWithIndex { WebElement e, int i ->
 	println("History ${i+1}: ${e.getText().trim()}")
 }
