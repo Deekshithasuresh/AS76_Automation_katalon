@@ -7,35 +7,11 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import java.io.File
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-// 1) LOGIN
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(
-	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
-	'adminuserr'
-)
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-// 2) VERIFY LANDING ON REPORT LIST
-TestObject pbsText = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[contains(text(),'PBS')]"
-)
-WebUI.waitForElementPresent(pbsText, 10)
-
-// 3) OPEN FIRST “Under review” REPORT
-TestObject underReviewRow = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-)
-WebUI.waitForElementClickable(underReviewRow, 10)
-WebUI.scrollToElement(underReviewRow, 5)
-WebUI.click(underReviewRow)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
 // ---------- STEP 3: Platelets tab → Morphology sub‐tab ----------
 def pltTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
@@ -44,8 +20,9 @@ WebUI.waitForElementClickable(pltTab,10); WebUI.click(pltTab)
 
 // Morphology button
 def morphTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[.//span[normalize-space()='Morphology']]")
-WebUI.waitForElementClickable(morphTab,5); WebUI.click(morphTab)
+	"//Button[normalize-space()='Morphology']")
+WebUI.waitForElementClickable(morphTab,5);
+ WebUI.click(morphTab)
 
 // ---------- STEP 4: Activate Split view ----------
 def splitBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS,

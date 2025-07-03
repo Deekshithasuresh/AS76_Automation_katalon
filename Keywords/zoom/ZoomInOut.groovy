@@ -832,74 +832,74 @@ public class ZoomInOut {
 			if(cellname.equals('Acanthocytes*') || cellname.equals('Stomatocytes*') || cellname.equals('Howell-Jolly Bodies*') || cellname.equals('Pappenheimer Bodies*') || cellname.equals('Basophilic Stippling*')) {
 				for(int i=0; i<grades.size();i++) {
 					grades.get(i).click()
-					
+
 					try {
-					TestObject toastMsg = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_Cells_regraded_toast_msg_ele')
-					WebUI.waitForElementVisible(toastMsg, 10)
-				
+						TestObject toastMsg = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_Cells_regraded_toast_msg_ele')
+						WebUI.waitForElementVisible(toastMsg, 10)
 
-					TestObject regradeMsgObj = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_from_to_msg')
-					WebUI.waitForElementVisible(regradeMsgObj, 10)
-					String regrade_msg = WebUI.getText(regradeMsgObj).trim()
-					
-					
 
-					TestObject significant_non_sign_Msg_ele = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_significant_non-sig_status')
-					WebUI.waitForElementVisible(significant_non_sign_Msg_ele, 10)
-					String signifiacnt_status_msg = WebUI.getText(significant_non_sign_Msg_ele).trim()
+						TestObject regradeMsgObj = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_from_to_msg')
+						WebUI.waitForElementVisible(regradeMsgObj, 10)
+						String regrade_msg = WebUI.getText(regradeMsgObj).trim()
 
-					println("Regrade message: " + regrade_msg)
-					println("Signifcant status message: " + signifiacnt_status_msg)
-					if(i==0) {
-						assert regrade_msg == (cellname_removed + ' regraded from - to ' + i)
-						if(i==0 || i==1) {
-							assert signifiacnt_status_msg == (cellname_removed + ' is now non significant')
-							//Getting the color of an non-significant dot
-							WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
-							String dotColor = dot.getCssValue("background-color");
-							System.out.println("Dot color: " + dotColor);
-							assert dotColor=="rgba(50, 152, 93, 1)"//this green-color-code is as per the requirement
+
+
+						TestObject significant_non_sign_Msg_ele = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_significant_non-sig_status')
+						WebUI.waitForElementVisible(significant_non_sign_Msg_ele, 10)
+						String signifiacnt_status_msg = WebUI.getText(significant_non_sign_Msg_ele).trim()
+
+						println("Regrade message: " + regrade_msg)
+						println("Signifcant status message: " + signifiacnt_status_msg)
+						if(i==0) {
+							assert regrade_msg == (cellname_removed + ' regraded from - to ' + i)
+							if(i==0 || i==1) {
+								assert signifiacnt_status_msg == (cellname_removed + ' is now non significant')
+								//Getting the color of an non-significant dot
+								WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
+								String dotColor = dot.getCssValue("background-color");
+								System.out.println("Dot color: " + dotColor);
+								assert dotColor=="rgba(50, 152, 93, 1)"//this green-color-code is as per the requirement
+							}
+							else {
+								assert signifiacnt_status_msg == (cellname_removed + ' is now significant')
+								//Getting the color of an significant dot
+								WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
+								String dotColor = dot.getCssValue("background-color");
+								System.out.println("Dot color: " + dotColor);
+								assert dotColor=="rgba(198, 27, 28, 1)"//this red-color-code is as per the requirement
+							}
+
+
+							CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
+
+
+							println('closed a toast msg')
 						}
 						else {
-							assert signifiacnt_status_msg == (cellname_removed + ' is now significant')
-							//Getting the color of an significant dot
-							WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
-							String dotColor = dot.getCssValue("background-color");
-							System.out.println("Dot color: " + dotColor);
-							assert dotColor=="rgba(198, 27, 28, 1)"//this red-color-code is as per the requirement
-						}
-					
-						
-						CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
-						
+							assert regrade_msg == (cellname_removed + ' regraded from ' + (i - 1) + ' to ' + i)
+							if(i==0 || i==1) {
+								assert signifiacnt_status_msg == (cellname_removed + ' is now non significant')
+								//Getting the color of an non-significant dot
+								WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
+								String dotColor = dot.getCssValue("background-color");
+								System.out.println("Dot color: " + dotColor);
+								assert dotColor=="rgba(50, 152, 93, 1)"
+							}
+							else {
+								assert signifiacnt_status_msg == (cellname_removed + ' is now significant')
+								//Getting the color of an significant dot
+								WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
+								String dotColor = dot.getCssValue("background-color");
+								System.out.println("Dot color: " + dotColor);
+								assert dotColor=="rgba(198, 27, 28, 1)"
+							}
 
-						println('closed a toast msg')
-					}
-					else {
-						assert regrade_msg == (cellname_removed + ' regraded from ' + (i - 1) + ' to ' + i)
-						if(i==0 || i==1) {
-							assert signifiacnt_status_msg == (cellname_removed + ' is now non significant')
-							//Getting the color of an non-significant dot
-							WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
-							String dotColor = dot.getCssValue("background-color");
-							System.out.println("Dot color: " + dotColor);
-							assert dotColor=="rgba(50, 152, 93, 1)"
-						}
-						else {
-							assert signifiacnt_status_msg == (cellname_removed + ' is now significant')
-							//Getting the color of an significant dot
-							WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
-							String dotColor = dot.getCssValue("background-color");
-							System.out.println("Dot color: " + dotColor);
-							assert dotColor=="rgba(198, 27, 28, 1)"
-						}
-				
-						
-						CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
-						
 
-						println('closed a toast msg')
-					}
+							CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
+
+
+							println('closed a toast msg')
+						}
 					} catch (Exception e) {
 						println('⚠️ toast message is not visible: ' + e.getMessage())
 					}
@@ -910,74 +910,74 @@ public class ZoomInOut {
 				for(int i=(grades.size()-2); i>=0;i--) {
 
 					grades.get(i).click()
-					
-				try {
-					TestObject toastMsg = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_Cells_regraded_toast_msg_ele')
-					WebUI.waitForElementVisible(toastMsg, 10)
-				
 
-					TestObject regradeMsgObj = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_from_to_msg')
-					WebUI.waitForElementVisible(regradeMsgObj, 10)
-					String regrade_msg = WebUI.getText(regradeMsgObj).trim()
+					try {
+						TestObject toastMsg = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_Cells_regraded_toast_msg_ele')
+						WebUI.waitForElementVisible(toastMsg, 10)
 
-					TestObject significant_non_sign_Msg_ele = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_significant_non-sig_status')
-					WebUI.waitForElementVisible(significant_non_sign_Msg_ele, 10)
-					String signifiacnt_status_msg = WebUI.getText(significant_non_sign_Msg_ele).trim()
 
-					println("Regrade message: " + regrade_msg)
-					println("Signifcant status message: " + signifiacnt_status_msg)
-					if(i==0) {
-						assert regrade_msg == (cellname_removed + ' regraded from '+(i+1) +' to '+i)
-						if(i==0 || i==1) {
-							assert signifiacnt_status_msg == (cellname_removed + ' is now non significant')
-							//Getting the color of an non-significant dot
-							WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
-							String dotColor = dot.getCssValue("background-color");
-							System.out.println("Dot color: " + dotColor);
-							assert dotColor=="rgba(50, 152, 93, 1)"
+						TestObject regradeMsgObj = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_from_to_msg')
+						WebUI.waitForElementVisible(regradeMsgObj, 10)
+						String regrade_msg = WebUI.getText(regradeMsgObj).trim()
+
+						TestObject significant_non_sign_Msg_ele = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_significant_non-sig_status')
+						WebUI.waitForElementVisible(significant_non_sign_Msg_ele, 10)
+						String signifiacnt_status_msg = WebUI.getText(significant_non_sign_Msg_ele).trim()
+
+						println("Regrade message: " + regrade_msg)
+						println("Signifcant status message: " + signifiacnt_status_msg)
+						if(i==0) {
+							assert regrade_msg == (cellname_removed + ' regraded from '+(i+1) +' to '+i)
+							if(i==0 || i==1) {
+								assert signifiacnt_status_msg == (cellname_removed + ' is now non significant')
+								//Getting the color of an non-significant dot
+								WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
+								String dotColor = dot.getCssValue("background-color");
+								System.out.println("Dot color: " + dotColor);
+								assert dotColor=="rgba(50, 152, 93, 1)"
+							}
+							else {
+								assert signifiacnt_status_msg == (cellname_removed + ' is now significant')
+								//Getting the color of an significant dot
+								WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
+								String dotColor = dot.getCssValue("background-color");
+								System.out.println("Dot color: " + dotColor);
+								assert dotColor=="rgba(198, 27, 28, 1)"
+							}
+
+							CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
+
+
+							println('closed a toast msg')
 						}
 						else {
-							assert signifiacnt_status_msg == (cellname_removed + ' is now significant')
-							//Getting the color of an significant dot
-							WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
-							String dotColor = dot.getCssValue("background-color");
-							System.out.println("Dot color: " + dotColor);
-							assert dotColor=="rgba(198, 27, 28, 1)"
-						}
-					
-						CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
-						
+							assert regrade_msg == (cellname_removed + ' regraded from ' + (i+1) + ' to ' + i)
+							if(i==0 || i==1) {
+								assert signifiacnt_status_msg == (cellname_removed + ' is now non significant')
+								//Getting the color of an non-significant dot
+								WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
+								String dotColor = dot.getCssValue("background-color");
+								System.out.println("Dot color: " + dotColor);
+								assert dotColor=="rgba(50, 152, 93, 1)"
+							}
+							else {
+								assert signifiacnt_status_msg == (cellname_removed + ' is now significant')
+								//Getting the color of an significant dot
+								WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
+								String dotColor = dot.getCssValue("background-color");
+								System.out.println("Dot color: " + dotColor);
+								assert dotColor=="rgba(198, 27, 28, 1)"
+							}
 
-						println('closed a toast msg')
+							CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
+
+
+
+							println('closed a toast msg')
+						}
+					} catch (Exception e) {
+						println('⚠️ toast message is not visible: ' + e.getMessage())
 					}
-					else {
-						assert regrade_msg == (cellname_removed + ' regraded from ' + (i+1) + ' to ' + i)
-						if(i==0 || i==1) {
-							assert signifiacnt_status_msg == (cellname_removed + ' is now non significant')
-							//Getting the color of an non-significant dot
-							WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
-							String dotColor = dot.getCssValue("background-color");
-							System.out.println("Dot color: " + dotColor);
-							assert dotColor=="rgba(50, 152, 93, 1)"
-						}
-						else {
-							assert signifiacnt_status_msg == (cellname_removed + ' is now significant')
-							//Getting the color of an significant dot
-							WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"));
-							String dotColor = dot.getCssValue("background-color");
-							System.out.println("Dot color: " + dotColor);
-							assert dotColor=="rgba(198, 27, 28, 1)"
-						}
-						
-						CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
-
-						
-
-						println('closed a toast msg')
-					}
-				} catch (Exception e) {
-					println('⚠️ toast message is not visible: ' + e.getMessage())
-				}
 				}
 			}
 
@@ -989,95 +989,92 @@ public class ZoomInOut {
 				for(int i=1; i<grades.size();i++) {
 					grades.get(i).click()
 					WebUI.delay(1)
-				try {
-					TestObject toastMsg = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_Cells_regraded_toast_msg_ele')
-					WebUI.waitForElementVisible(toastMsg, 10)
-					
+					try {
+						TestObject toastMsg = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_Cells_regraded_toast_msg_ele')
+						WebUI.waitForElementVisible(toastMsg, 10)
 
-					TestObject regradeMsgObj = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_from_to_msg')
-					WebUI.waitForElementVisible(regradeMsgObj, 10)
-					String regrade_msg = WebUI.getText(regradeMsgObj).trim()
 
-					TestObject significant_non_sign_Msg_ele = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_significant_non-sig_status')
-					WebUI.waitForElementVisible(significant_non_sign_Msg_ele, 10)
-					String signifiacnt_status_msg = WebUI.getText(significant_non_sign_Msg_ele).trim()
+						TestObject regradeMsgObj = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_from_to_msg')
+						WebUI.waitForElementVisible(regradeMsgObj, 10)
+						String regrade_msg = WebUI.getText(regradeMsgObj).trim()
 
-					println("Regrade message: " + regrade_msg)
-					println("Signifcant status message: " + signifiacnt_status_msg)
-					assert regrade_msg == (cellname_removed + ' regraded from ' + (i - 1) + ' to ' + i)
-					boolean isSpecialCell = cellname.equalsIgnoreCase("Fragmented Cells") || cellname.equalsIgnoreCase("Sickle Cells*")
+						TestObject significant_non_sign_Msg_ele = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_significant_non-sig_status')
+						WebUI.waitForElementVisible(significant_non_sign_Msg_ele, 10)
+						String signifiacnt_status_msg = WebUI.getText(significant_non_sign_Msg_ele).trim()
 
-					if ((isSpecialCell && i == 0) || (!isSpecialCell && (i == 0 || i == 1))) {
-						// Non-significant
-						assert signifiacnt_status_msg == (cellname_removed + ' is now non significant')
-						WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"))
-						String dotColor = dot.getCssValue("background-color")
-						System.out.println("Dot color: " + dotColor)
-						assert dotColor == "rgba(50, 152, 93, 1)" // Green
-					} else {
-						// Significant
-						assert signifiacnt_status_msg == (cellname_removed + ' is now significant')
-						WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"))
-						String dotColor = dot.getCssValue("background-color")
-						System.out.println("Dot color: " + dotColor)
-						assert dotColor == "rgba(198, 27, 28, 1)" // Red
+						println("Regrade message: " + regrade_msg)
+						println("Signifcant status message: " + signifiacnt_status_msg)
+						assert regrade_msg == (cellname_removed + ' regraded from ' + (i - 1) + ' to ' + i)
+						boolean isSpecialCell = cellname.equalsIgnoreCase("Fragmented Cells") || cellname.equalsIgnoreCase("Sickle Cells*")
+
+						if ((isSpecialCell && i == 0) || (!isSpecialCell && (i == 0 || i == 1))) {
+							// Non-significant
+							assert signifiacnt_status_msg == (cellname_removed + ' is now non significant')
+							WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"))
+							String dotColor = dot.getCssValue("background-color")
+							System.out.println("Dot color: " + dotColor)
+							assert dotColor == "rgba(50, 152, 93, 1)" // Green
+						} else {
+							// Significant
+							assert signifiacnt_status_msg == (cellname_removed + ' is now significant')
+							WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"))
+							String dotColor = dot.getCssValue("background-color")
+							System.out.println("Dot color: " + dotColor)
+							assert dotColor == "rgba(198, 27, 28, 1)" // Red
+						}
+
+
+						WebUI.delay(1)
+						CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
+					} catch (Exception e) {
+						println('⚠️ toast message is not visible: ' + e.getMessage())
 					}
-
-
-					WebUI.delay(1)
-					CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
-
-					
-				} catch (Exception e) {
-					println('⚠️ toast message is not visible: ' + e.getMessage())
-				}
 					println('closed a toast msg')
 				}
 				//reserve loop to regrade from 3 to 0
 				for(int i=(grades.size()-2); i>=0;i--) {
 					grades.get(i).click()
 					WebUI.delay(1)
-			try {
-					TestObject toastMsg = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_Cells_regraded_toast_msg_ele')
-					WebUI.waitForElementVisible(toastMsg, 10)
-				
+					try {
+						TestObject toastMsg = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_Cells_regraded_toast_msg_ele')
+						WebUI.waitForElementVisible(toastMsg, 10)
 
-					TestObject regradeMsgObj = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_from_to_msg')
-					WebUI.waitForElementVisible(regradeMsgObj, 10)
-					String regrade_msg = WebUI.getText(regradeMsgObj)
 
-					TestObject significant_non_sign_Msg_ele = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_significant_non-sig_status')
-					WebUI.waitForElementVisible(significant_non_sign_Msg_ele, 10)
-					String signifiacnt_status_msg = WebUI.getText(significant_non_sign_Msg_ele)
+						TestObject regradeMsgObj = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_from_to_msg')
+						WebUI.waitForElementVisible(regradeMsgObj, 10)
+						String regrade_msg = WebUI.getText(regradeMsgObj)
 
-					println("Regrade message: " + regrade_msg)
-					println("Signifcant status message: " + signifiacnt_status_msg)
+						TestObject significant_non_sign_Msg_ele = findTestObject('Object Repository/RBC_Objects/Page_PBS/RBC_regraded_significant_non-sig_status')
+						WebUI.waitForElementVisible(significant_non_sign_Msg_ele, 10)
+						String signifiacnt_status_msg = WebUI.getText(significant_non_sign_Msg_ele)
 
-					assert regrade_msg == (cellname_removed + ' regraded from ' + (i+1) + ' to ' + i)
-					// Check for special cell types
-					boolean isSpecialCell = cellname.equalsIgnoreCase("Fragmented Cells") || cellname.equalsIgnoreCase("Sickle Cells*")
+						println("Regrade message: " + regrade_msg)
+						println("Signifcant status message: " + signifiacnt_status_msg)
 
-					if ((isSpecialCell && i == 0) || (!isSpecialCell && (i == 0 || i == 1))) {
-						// Non-significant
-						assert signifiacnt_status_msg == (cellname_removed + ' is now non significant')
-						WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"))
-						String dotColor = dot.getCssValue("background-color")
-						System.out.println("Dot color: " + dotColor)
-						assert dotColor == "rgba(50, 152, 93, 1)" // Green
-					} else {
-						// Significant
-						assert signifiacnt_status_msg == (cellname_removed + ' is now significant')
-						WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"))
-						String dotColor = dot.getCssValue("background-color")
-						System.out.println("Dot color: " + dotColor)
-						assert dotColor == "rgba(198, 27, 28, 1)" // Red
+						assert regrade_msg == (cellname_removed + ' regraded from ' + (i+1) + ' to ' + i)
+						// Check for special cell types
+						boolean isSpecialCell = cellname.equalsIgnoreCase("Fragmented Cells") || cellname.equalsIgnoreCase("Sickle Cells*")
+
+						if ((isSpecialCell && i == 0) || (!isSpecialCell && (i == 0 || i == 1))) {
+							// Non-significant
+							assert signifiacnt_status_msg == (cellname_removed + ' is now non significant')
+							WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"))
+							String dotColor = dot.getCssValue("background-color")
+							System.out.println("Dot color: " + dotColor)
+							assert dotColor == "rgba(50, 152, 93, 1)" // Green
+						} else {
+							// Significant
+							assert signifiacnt_status_msg == (cellname_removed + ' is now significant')
+							WebElement dot = row.findElement(By.xpath(".//div[contains(@class, 'default')]"))
+							String dotColor = dot.getCssValue("background-color")
+							System.out.println("Dot color: " + dotColor)
+							assert dotColor == "rgba(198, 27, 28, 1)" // Red
+						}
+
+						CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
+					} catch (Exception e) {
+						println('⚠️ toast message is not visible: ' + e.getMessage())
 					}
-					
-					CustomKeywords.'zoom.ZoomInOut.closeToastIfVisible'()
-										
-			} catch (Exception e) {
-				println('⚠️ toast message is not visible: ' + e.getMessage())
-			}
 					println('closed a toast msg')
 				}
 			}
@@ -1087,14 +1084,14 @@ public class ZoomInOut {
 	def closeToastIfVisible() {
 		TestObject toastCloseTO = findTestObject('Object Repository/RBC_Objects/Page_PBS/toast_msg_close_icon')
 		WebDriver driver = DriverFactory.getWebDriver()
-	
+
 		try {
 			if (WebUI.waitForElementPresent(toastCloseTO, 5, FailureHandling.OPTIONAL)) {
 				if (WebUI.verifyElementVisible(toastCloseTO, FailureHandling.OPTIONAL)) {
 					WebElement toastCloseIcon = null
 					int retries = 0
 					boolean clicked = false
-	
+
 					while (retries < 2 && !clicked) {
 						try {
 							toastCloseIcon = WebUiCommonHelper.findWebElement(toastCloseTO, 3)
@@ -1110,7 +1107,7 @@ public class ZoomInOut {
 							break
 						}
 					}
-	
+
 					if (!clicked && toastCloseIcon != null) {
 						try {
 							((JavascriptExecutor) driver).executeScript("arguments[0].click();", toastCloseIcon)
@@ -1129,7 +1126,7 @@ public class ZoomInOut {
 			println('⚠️ Safe exit from closeToastIfVisible(): ' + e.getMessage())
 		}
 	}
-	
+
 
 
 

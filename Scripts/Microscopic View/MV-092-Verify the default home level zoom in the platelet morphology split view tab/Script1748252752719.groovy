@@ -20,35 +20,10 @@ String fetchScale() {
 	return WebUI.executeJavaScript(js, null) as String
 }
 
-// 1) LOGIN
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(
-	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
-	'adminuserr'
-)
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-// 2) VERIFY LANDING ON REPORT LIST
-TestObject pbsText = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[contains(text(),'PBS')]"
-)
-WebUI.waitForElementPresent(pbsText, 10)
-
-// 3) OPEN FIRST “Under review” REPORT
-TestObject underReviewRow = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-)
-WebUI.waitForElementClickable(underReviewRow, 10)
-WebUI.scrollToElement(underReviewRow, 5)
-WebUI.click(underReviewRow)
 
 // STEP 3: Click on the Platelets tab
 TestObject pltTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
@@ -67,7 +42,7 @@ TestObject splitBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS
 	"//img[@alt='Split view' and @aria-label='Split view']")
 WebUI.waitForElementClickable(splitBtn, 10)
 WebUI.click(splitBtn)
-WebUI.delay(120)
+WebUI.delay(5)
 
 // STEP 6: Verify default scale “10 μm” and take screenshot
 String scale = fetchScale()
