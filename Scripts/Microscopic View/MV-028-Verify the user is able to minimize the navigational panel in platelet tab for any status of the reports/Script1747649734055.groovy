@@ -5,34 +5,12 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-// 1) LOGIN
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login', FailureHandling.STOP_ON_FAILURE)
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr', FailureHandling.STOP_ON_FAILURE)
-WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA==', FailureHandling.STOP_ON_FAILURE)
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'), FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'generic.custumFunctions.login'()
 
-// 2) VERIFY LANDING ON REPORT LIST
-TestObject pbsText = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[contains(text(),'PBS')]"
-)
-WebUI.waitForElementPresent(pbsText, 10, FailureHandling.STOP_ON_FAILURE)
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-// 3) OPEN FIRST ROW (any status)
-TestObject firstRow = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"(//tr)[1]"
-)
-if (WebUI.waitForElementClickable(firstRow, 5, FailureHandling.OPTIONAL)) {
-	WebUI.scrollToElement(firstRow, 3, FailureHandling.OPTIONAL)
-	WebUI.click(firstRow, FailureHandling.OPTIONAL)
-	WebUI.comment("✔ Opened first report row")
-} else {
-	WebUI.comment("⚠ Could not click first row—continuing anyway")
-}
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
+
 
 // 4) CLICK the Platelets tab
 TestObject plateletsTab = new TestObject().addProperty(
@@ -46,16 +24,6 @@ if (WebUI.waitForElementClickable(plateletsTab, 5, FailureHandling.OPTIONAL)) {
 	WebUI.comment("⚠ Platelets tab not found.")
 }
 
-// 5) VERIFY Count sub-tab is active by default (optional)
-TestObject countSubtab = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'sub-tab')]//span[normalize-space()='Count' and @aria-selected='true']"
-)
-if (WebUI.verifyElementVisible(countSubtab, FailureHandling.CONTINUE_ON_FAILURE)) {
-	WebUI.comment("✔ ‘Count’ sub-tab is active by default.")
-} else {
-	WebUI.comment("⚠ ‘Count’ sub-tab was not marked active; proceeding anyway.")
-}
 
 // 6) ACTIVATE Microscopic view
 TestObject microViewBtn = new TestObject().addProperty(

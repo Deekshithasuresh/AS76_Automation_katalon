@@ -31,35 +31,11 @@ String snapAndBase64(String filename) {
 	return Files.readAllBytes(Paths.get(path)).encodeBase64().toString()
 }
 
-// 1) LOGIN
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(
-	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
-	'adminuserr'
-)
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-// 2) VERIFY LANDING ON REPORT LIST
-TestObject pbsText = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[contains(text(),'PBS')]"
-)
-WebUI.waitForElementPresent(pbsText, 10)
-
-// 3) OPEN FIRST “Under review” REPORT
-TestObject underReviewRow = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-)
-WebUI.waitForElementClickable(underReviewRow, 10)
-WebUI.scrollToElement(underReviewRow, 5)
-WebUI.click(underReviewRow)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
 // STEP 4: Switch to WBC → Microscopic view
 TestObject wbcTab   = new TestObject().addProperty('xpath', ConditionType.EQUALS,
@@ -70,7 +46,7 @@ WebUI.waitForElementClickable(wbcTab, 10);  WebUI.click(wbcTab)
 WebUI.waitForElementClickable(microBtn, 10); WebUI.click(microBtn)
 
 // STEP 5: Wait 150s for full load, then capture default
-WebUI.delay(150)
+WebUI.delay(5)
 String scale0 = fetchScale()
 WebUI.verifyMatch(scale0, '1000 μm', false, FailureHandling.STOP_ON_FAILURE)
 println "Scale @1000μm: ${scale0}"
@@ -82,7 +58,7 @@ TestObject zoomInBtn = new TestObject().addProperty('xpath', ConditionType.EQUAL
 
 // STEP 6: Zoom once → wait 120s, verify 500 μm
 WebUI.click(zoomInBtn)
-WebUI.delay(120)
+WebUI.delay(5)
 String scale1 = fetchScale()
 WebUI.verifyMatch(scale1, '500 μm', false, FailureHandling.STOP_ON_FAILURE)
 println "Scale @500μm: ${scale1}"
@@ -90,7 +66,7 @@ println "BASE64 @500μm: ${snapAndBase64('wbc_zoom1.png')}"
 
 // STEP 7: Zoom again → wait 120s, verify 200 μm
 WebUI.click(zoomInBtn)
-WebUI.delay(120)
+WebUI.delay(5)
 String scale2 = fetchScale()
 WebUI.verifyMatch(scale2, '200 μm', false, FailureHandling.STOP_ON_FAILURE)
 println "Scale @200μm: ${scale2}"

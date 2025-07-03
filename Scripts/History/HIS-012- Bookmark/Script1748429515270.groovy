@@ -1,110 +1,22 @@
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
-import org.openqa.selenium.By
 
-// 1) LOGIN
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
-// wait for list
-new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]").with {
-	WebUI.waitForElementPresent(it, 10)
-}
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-// 2) BOOKMARK first “To be reviewed”
-String rowXp = "(//tr[.//span[normalize-space(text())='To be reviewed']])[1]"
-TestObject toBeReviewed = new TestObject().addProperty('xpath', ConditionType.EQUALS, rowXp)
-assert WebUI.waitForElementClickable(toBeReviewed, 5) : "No 'To be reviewed' row found"
 
-// icon lives in column-1 now:
-TestObject bkIcon = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	rowXp + "//td[1]//img[contains(@src,'bookmark')]"
-)
-WebUI.waitForElementVisible(bkIcon, 5)
-if (!WebUI.getAttribute(bkIcon, 'src').contains('bookmark-filled')) {
-	WebUI.click(bkIcon)
-	new TestObject().addProperty('xpath', ConditionType.EQUALS,
-		"//div[normalize-space(text())='Bookmark saved']"
-	).with {
-		WebUI.waitForElementVisible(it, 5)
-	}
-	WebUI.comment("Bookmark saved")
-} else {
-	WebUI.comment("Already bookmarked")
-}
+CustomKeywords.'generic.custumFunctions.login'()
 
-// 3) OPEN that report by clicking the slide-cell (col-3)
-TestObject slideCell = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	rowXp + "//td[3]"
-)
-WebUI.click(slideCell)
-WebUI.waitForPageLoad(10)
 
-// grab driver
-WebDriver driver = DriverFactory.getWebDriver()
+CustomKeywords.'generic.custumFunctions.unassignOrCancel'('Under review', true)
 
-// 4) OPEN SLIDE-INFO drawer (where the comment UI lives)
-TestObject slideInfoIcon = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//img[@src='/icons/slide-info.svg' and @alt='info.svg']"
-)
-WebUI.waitForElementClickable(slideInfoIcon, 10)
-WebUI.click(slideInfoIcon)
-new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//div[contains(@class,'MuiDrawer-paperAnchorLeft')]"
-).with {
-	WebUI.waitForElementVisible(it, 10)
-}
+CustomKeywords.'generic.bookmark.manageCommentOnBookmarkedReport'("To be reviewed","hiii manju","How are you?")
 
-// 5) COMMENT LIFECYCLE inside slide-info
-// 5a) ADD
-TestObject commentIcon = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//img[@alt='comment-icon']"
-)
-WebUI.waitForElementClickable(commentIcon, 5)
-WebUI.click(commentIcon)
-
-TestObject textarea = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//div[contains(@class,'comment-container')]//textarea"
-)
-WebUI.waitForElementVisible(textarea, 5)
-WebUI.clearText(textarea)
-WebUI.setText(textarea, "This is my FIRST comment")
-
-TestObject saveBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//div[contains(@class,'comment-buttons')]//img[contains(@src,'save-icon')]"
-)
-WebUI.click(saveBtn)
-WebUI.waitForElementNotVisible(textarea, 5)
-WebUI.comment("Comment added")
-
-// 5b) UPDATE
-WebUI.click(commentIcon)
-WebUI.waitForElementVisible(textarea, 5)
-WebUI.clearText(textarea)
-WebUI.setText(textarea, "This is my UPDATED comment")
-WebUI.click(saveBtn)
-WebUI.waitForElementNotVisible(textarea, 5)
-WebUI.comment("Comment updated")
-
-// 5c) DELETE
-WebUI.click(commentIcon)
-WebUI.waitForElementVisible(textarea, 5)
-TestObject deleteBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//div[contains(@class,'comment-buttons')]//img[contains(@src,'delete-icon')]"
-)
-WebUI.click(deleteBtn)
-WebUI.waitForElementNotVisible(textarea, 5)
-WebUI.comment("Comment deleted")
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
 // 6) OPEN HISTORY
 TestObject kebab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
@@ -118,10 +30,34 @@ WebUI.waitForElementClickable(historyOpt, 5)
 WebUI.click(historyOpt)
 WebUI.waitForPageLoad(5)
 
+WebDriver driver = DriverFactory.getWebDriver()
 // 7) DUMP & SCREENSHOT HISTORY ENTRIES
-List<WebElement> entries = driver.findElements(By.cssSelector("li.css-1ecsk3j"))
-assert entries.size() > 0 : "No history entries!"
-entries.eachWithIndex { WebElement e, int i ->
-	println("History ${i+1}: ${e.getText().trim()}")
-}
-WebUI.takeScreenshot("HistoryPage.png")
+
+// 1️⃣ Get all history rows (li elements)
+TestObject allHistoryItems = new TestObject('history_items')
+allHistoryItems.addProperty('xpath', ConditionType.EQUALS, "//ul//li[@class='css-1ecsk3j']")
+
+List<WebElement> historyRows = WebUiCommonHelper.findWebElements(allHistoryItems, 10)
+assert historyRows.size() > 0 : "❌ No history rows found"
+
+// 2️⃣ Get the first row
+WebElement firstRow = historyRows.get(0)
+
+// 3️⃣ Check header is "Bookmark Report"
+WebElement firstHeader = firstRow.findElement(By.xpath(".//h4[@class='event-title']"))
+String firstHeaderText = firstHeader.getText().trim()
+println("📌 First entry title: " + firstHeaderText)
+assert firstHeaderText == "Bookmark Report" : "❌ First entry is not 'Bookmark Report'"
+
+// 4️⃣ Extract user and validate it's 'manju'
+WebElement descElement = firstRow.findElement(By.xpath(".//div[@class='event-description']"))
+String descriptionText = descElement.getText().trim()
+println("👤 Description: " + descriptionText)
+assert descriptionText.toLowerCase().contains("manju") : "❌ First entry was not bookmarked by 'manju'"
+
+// 5️⃣ Extract timestamp (optional)
+WebElement timeElement = firstRow.findElement(By.xpath(".//div[@class='time']"))
+String timeText = timeElement.getText().trim()
+println("🕒 Time of bookmark: " + timeText)
+List<WebElement> entries = driver.findElements(By.xpath("(//div[@class='event-header']//h4)[1]"))
+assert entries.size() > 0 : "❌ No history entries!"

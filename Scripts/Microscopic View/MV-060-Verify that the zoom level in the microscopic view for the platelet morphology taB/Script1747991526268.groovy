@@ -78,7 +78,7 @@ TestObject microView = new TestObject().addProperty('xpath', ConditionType.EQUAL
     "//img[@alt='Microscopic view' and @aria-label='Microscopic view']")
 WebUI.waitForElementClickable(microView, 10)
 WebUI.click(microView)
-WebUI.delay(150)
+WebUI.delay(5)
 
 // Verify default 1000 μm
 String s0 = fetchScale()
@@ -92,7 +92,7 @@ TestObject zoomInBtn = new TestObject().addProperty('xpath', ConditionType.EQUAL
 
 // STEP 7: Zoom once → wait 120s, verify 500 μm
 WebUI.click(zoomInBtn)
-WebUI.delay(120)
+WebUI.delay(5)
 String s1 = fetchScale()
 WebUI.verifyMatch(s1, '500 μm', false, FailureHandling.STOP_ON_FAILURE)
 println "Morphology Scale @500μm: ${s1}"
@@ -100,7 +100,7 @@ println "Morphology BASE64 @500μm: ${snapAndBase64('morph_zoom1.png')}"
 
 // STEP 8: Zoom again → wait 120s, verify 200 μm
 WebUI.click(zoomInBtn)
-WebUI.delay(120)
+WebUI.delay(5)
 String s2 = fetchScale()
 WebUI.verifyMatch(s2, '200 μm', false, FailureHandling.STOP_ON_FAILURE)
 println "Morphology Scale @200μm: ${s2}"
