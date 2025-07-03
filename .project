@@ -17,7 +17,11 @@
 	</natures>
 	<filteredResources>
 		<filter>
+<<<<<<< HEAD
+			<id>1750940745406</id>
+=======
 			<id>1750941870793</id>
+>>>>>>> 831e9d14dba9519033ef1518f31d3abf3def2e3c
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -26,7 +30,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
+			<id>1750940745409</id>
+=======
 			<id>1750941870796</id>
+>>>>>>> 831e9d14dba9519033ef1518f31d3abf3def2e3c
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -35,7 +43,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
+			<id>1751440257318</id>
+=======
 			<id>1751265929648</id>
+>>>>>>> 831e9d14dba9519033ef1518f31d3abf3def2e3c
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -44,6 +56,9 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
+			<id>1751440257343</id>
+=======
 			<id>1751265929663</id>
 			<name></name>
 			<type>6</type>
@@ -135,6 +150,7 @@
 		</filter>
 		<filter>
 			<id>1751435114958</id>
+>>>>>>> 831e9d14dba9519033ef1518f31d3abf3def2e3c
 			<name></name>
 			<type>6</type>
 			<matcher>

@@ -11,6 +11,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 CustomKeywords.'generic.custumFunctions.login'()
 
+
 CustomKeywords.'generic.custumFunctions.unassignOrCancel'('Under review', true)
 
 CustomKeywords.'generic.bookmark.manageCommentOnBookmarkedReport'("To be reviewed","hiii manju","How are you?")
@@ -60,7 +61,3 @@ String timeText = timeElement.getText().trim()
 println("🕒 Time of bookmark: " + timeText)
 List<WebElement> entries = driver.findElements(By.xpath("(//div[@class='event-header']//h4)[1]"))
 assert entries.size() > 0 : "❌ No history entries!"
-entries.eachWithIndex { WebElement e, int i ->
-	println("History ${i+1}: ${e.getText().trim()}")
-}
-WebUI.takeScreenshot("HistoryPage.png")

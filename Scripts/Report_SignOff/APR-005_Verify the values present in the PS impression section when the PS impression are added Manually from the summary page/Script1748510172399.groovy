@@ -8,6 +8,10 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+
+
+
+
 // Step 1: Login and assign reviewer
 CustomKeywords.'generic.custumFunctions.login'()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
@@ -48,6 +52,7 @@ TestObject approveButton = findTestObject('Object Repository/WBC_m/Page_PBS/span
 WebElement apElement = WebUiCommonHelper.findWebElement(approveButton, 10)
 JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getWebDriver()
 js.executeScript("arguments[0].click();", apElement)
+//WebUI.click(findTestObject('Object Repository/Page_PBS/summary_Approve report_button'))
 
 WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))

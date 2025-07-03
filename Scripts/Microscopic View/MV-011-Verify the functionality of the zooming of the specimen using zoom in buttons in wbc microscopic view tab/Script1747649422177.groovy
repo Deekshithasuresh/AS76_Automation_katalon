@@ -41,11 +41,7 @@ WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), '
 WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-// ─────────────────────────────────────────────
-// 2) VERIFY LANDING
-// ─────────────────────────────────────────────
-TestObject pbsText = new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]")
-WebUI.waitForElementPresent(pbsText, 10)
+
 
 // ─────────────────────────────────────────────
 // 3) OPEN FIRST “Under review” REPORT

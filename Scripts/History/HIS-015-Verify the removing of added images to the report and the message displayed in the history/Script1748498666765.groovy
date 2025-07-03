@@ -1,117 +1,142 @@
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 
-// 1) LOGIN
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-    'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
-WebUI.waitForElementPresent(
-    new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-    10
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+// —————————————————————————————————————————————
+// 1) LOGIN & NAVIGATE
+// —————————————————————————————————————————————
+CustomKeywords.'generic.custumFunctions.login'()
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
+
+// —————————————————————————————————————————————
+// 2) APPROVE REPORT → CONFIRM
+// —————————————————————————————————————————————
+TestObject btnApprove = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//button[.//span[normalize-space()='Approve report']]"
 )
-
-WebDriver driver = DriverFactory.getWebDriver()
-
-// 2) OPEN FIRST “Under review” REPORT
-TestObject underReviewRow = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+TestObject popupTitleApprove = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//span[contains(text(),'Are you sure you want to approve')]"
 )
-WebUI.waitForElementClickable(underReviewRow, 10)
-WebUI.scrollToElement(underReviewRow, 5)
-WebUI.click(underReviewRow)
-
-// 3) ASSIGN TO “admin” IF NEEDED (omitted here for brevity – assume it’s the same as before)
-
-// 4) CLICK “Approve report” → CONFIRM first time
-TestObject btnApprove  = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-    "//button[.//span[normalize-space()='Approve report']]")
-TestObject popupTitle1 = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-    "//span[contains(text(),'Are you sure you want to approve')]")
-// **NEW**: generic confirm locator inside the modal footer
-TestObject btnConfirm1 = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-    "//div[contains(@class,'modal-actions')]//button[normalize-space()='Confirm']")
+TestObject btnConfirmApprove = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//div[contains(@class,'modal-actions')]//button[normalize-space()='Confirm']"
+)
 
 WebUI.waitForElementClickable(btnApprove, 10)
 WebUI.click(btnApprove)
-WebUI.waitForElementVisible(popupTitle1, 5)
-WebUI.waitForElementClickable(btnConfirm1, 5)
-WebUI.click(btnConfirm1)
+WebUI.waitForElementVisible(popupTitleApprove, 5)
+WebUI.click(btnConfirmApprove)
 
-// 5) ADD SUPPORTING IMAGES
-TestObject btnAddImgs = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-    "//button[.//span[text()='Add supporting images']]")
+// —————————————————————————————————————————————
+// 3) ADD SUPPORTING IMAGES
+// —————————————————————————————————————————————
+TestObject btnAddImgs = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//button[.//span[normalize-space()='Add supporting images']]"
+)
 WebUI.waitForElementClickable(btnAddImgs, 10)
 WebUI.click(btnAddImgs)
 
-// 6) REMOVE FIRST CHECKED PATCH
+// —————————————————————————————————————————————
+// 4) REMOVE FIRST CHECKED PATCH
+// —————————————————————————————————————————————
+WebDriver driver = DriverFactory.getWebDriver()
 List<WebElement> checkedBoxes = driver.findElements(
-    By.cssSelector("div.cell-selection-item input[type='checkbox']:checked")
+	By.cssSelector("div.cell-selection-item input[type='checkbox']:checked")
 )
 assert checkedBoxes.size() > 0 : "❗ No checked patches found to remove"
-WebElement firstBox = checkedBoxes.get(0)
-String cellType = firstBox.getAttribute("name")
+WebElement firstBox = checkedBoxes[0]
+String cellTypeRaw = firstBox.getAttribute("name")               // e.g. "neutrophils"
+String cellType = cellTypeRaw.capitalize()                       // "Neutrophils"
 WebUI.comment("⏪ Removing patches of cell type: ${cellType}")
 firstBox.findElement(By.xpath("..")).click()
 WebUI.delay(1)
 
-// 7) CLICK “Approve report” → CONFIRM second time
-// reuse btnApprove and popupTitle1
-// for the second confirm dialog the title is the same, so we can reuse popupTitle1
-// but the confirm button can appear a bit later, so wrap in retry:
-for (int i = 0; i < 3; i++) {
-    if (WebUI.waitForElementClickable(btnApprove, 5, FailureHandling.OPTIONAL)) {
-        WebUI.click(btnApprove)
-        break
-    }
-}
-WebUI.waitForElementVisible(popupTitle1, 5)
-// **NEW**: the second confirm button text is “Confirm” as well
-for (int i = 0; i < 3; i++) {
-    if (WebUI.waitForElementClickable(btnConfirm1, 3, FailureHandling.OPTIONAL)) {
-        WebUI.click(btnConfirm1)
-        break
-    }
-}
-WebUI.delay(2)
-
-// 8) OPEN HISTORY & VERIFY
-TestObject btnKebab     = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-    "//button[.//img[contains(@src,'kebab_menu.svg')]]")
-TestObject menuHistory = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-    "//li[.//span[normalize-space()='History']]")
-WebUI.click(btnKebab)
-WebUI.click(menuHistory)
-WebUI.waitForElementVisible(
-    new TestObject().addProperty('css', ConditionType.EQUALS, "li.css-1ecsk3j"),
-    10
+// —————————————————————————————————————————————
+// 5) HEADER “Back to report” → OPEN CONFIRMATION POPUP
+// —————————————————————————————————————————————
+TestObject lblHeaderBack = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//div[contains(@class,'action-label') and normalize-space()='Back to report']"
 )
+WebUI.waitForElementVisible(lblHeaderBack, 10)
 
-List<WebElement> entries = driver.findElements(By.cssSelector("li.css-1ecsk3j"))
-assert entries.size() >= 2 : "Expected ≥2 history entries, found ${entries.size()}"
+TestObject btnHeaderBack = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//div[contains(@class,'action-label') and normalize-space()='Back to report']/preceding-sibling::button"
+)
+WebUI.waitForElementClickable(btnHeaderBack, 10)
+WebUI.click(btnHeaderBack)
 
-String removalEntry  = entries[0].getText().trim()
-String approvalEntry = entries[1].getText().trim()
+// —————————————————————————————————————————————
+// 6) POPUP “Back to report” → CONFIRM LOSS OF CHANGES
+// —————————————————————————————————————————————
+TestObject btnPopupBack = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//div[contains(@class,'modal-actions')]//button[normalize-space()='Back to report']"
+)
+WebUI.waitForElementVisible(btnPopupBack, 10)
+WebUI.click(btnPopupBack)
+WebUI.delay(1)
 
-println "➤ History #1: ${removalEntry}"
-println "➤ History #2: ${approvalEntry}"
+// —————————————————————————————————————————————
+// 7) OPEN KEBAB & CLICK “History”
+// —————————————————————————————————————————————
+TestObject btnKebab = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//button[.//img[contains(@src,'kebab_menu.svg')]]"
+)
+TestObject menuHistory = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//li[.//span[normalize-space()='History']]"
+)
+WebUI.waitForElementClickable(btnKebab, 10)
+WebUI.click(btnKebab)
+WebUI.waitForElementClickable(menuHistory, 5)
+WebUI.click(menuHistory)
 
-assert removalEntry.contains("removed the patches of ${cellType}") :
-       "Removal entry didn’t mention ‘removed the patches of ${cellType}’"
-assert approvalEntry.toLowerCase().contains("approved the report") :
-       "Approval entry didn’t mention approval"
+// —————————————————————————————————————————————
+// 8) VERIFY HISTORY ENTRIES (find first matching only)
+//    • “Report Sign off”
+//    • “manju removed the patches of {cellType} for the final report”
+// —————————————————————————————————————————————
+// wait for items to appear
+WebUI.waitForElementVisible(
+	new TestObject().addProperty('css', ConditionType.EQUALS, "ul.events-container > li.css-1ecsk3j"),
+	10
+)
+List<WebElement> historyItems = driver.findElements(
+	By.cssSelector("ul.events-container > li.css-1ecsk3j")
+)
+assert historyItems.size() > 0 : "No history items found"
 
-WebUI.takeScreenshot("History_RemovalAndApproval.png")
-WebUI.comment("✅ HIS-015: Removal & history verified!")
+// find first li containing “Report Sign off”
+WebElement signOffItem = historyItems.find { li ->
+	li.getText().contains("Report Sign off")
+}
+assert signOffItem != null : "‘Report Sign off’ entry not found"
+
+// find first li containing the exact removal text
+String expectedRemoval = "manju removed the patches of ${cellType} for the final report"
+WebElement removalItem = historyItems.find { li ->
+	li.getText().toLowerCase().contains(expectedRemoval.toLowerCase())
+}
+assert removalItem != null : "Removal entry ‘${expectedRemoval}’ not found"
+
+WebUI.comment("✅ Found history entries:")
+WebUI.comment("   • Report Sign off")
+WebUI.comment("   • ${expectedRemoval}")
+
+// —————————————————————————————————————————————
+// 9) SCREENSHOT & COMPLETE
+// —————————————————————————————————————————————
+WebUI.takeScreenshot("History_Verification.png")
+WebUI.comment("🎉 HIS-015: All checks passed!")

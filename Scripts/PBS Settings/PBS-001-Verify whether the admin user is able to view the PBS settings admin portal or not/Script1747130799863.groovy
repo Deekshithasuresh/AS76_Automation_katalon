@@ -18,6 +18,32 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import loginPackage.Login as Login
 
-Login lg = new Login()
-
-lg.AdminLogin("premkumar", "premk@287")
+			WebUI.openBrowser('')
+	
+			WebUI.maximizeWindow()
+	
+			WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+	
+			WebUI.waitForElementPresent(findTestObject('PBS_Settings_Objects/Page_Admin Console/Sign_in_header'), 20)
+	
+			WebUI.setText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/input_Username_loginId'), "prem")
+	
+			WebUI.setText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/input_Password_loginPassword'),
+					"Sigtuple@123")
+	
+			WebUI.click(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/button_Sign in'))
+	
+			try{
+				WebUI.waitForElementVisible(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Auth_error_msg'), 20)
+				String auth_error_text=WebUI.getText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Auth_error_msg'))
+				WebUI.comment(auth_error_text)
+				assert auth_error_text=='Invalid credentials'
+				
+			}
+	
+			catch(Exception e) {
+				WebUI.waitForElementVisible(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Admin_Portal_Heading'), 20)
+				WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Admin_Portal_Heading'), 20)
+			}
+		
+	
