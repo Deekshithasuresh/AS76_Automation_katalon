@@ -28,18 +28,9 @@ import org.openqa.selenium.JavascriptExecutor
 import com.kms.katalon.core.webui.driver.DriverFactory
 
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-
-WebUI.doubleClick(findTestObject('Object Repository/Summary/input_username_loginId'))
-
-WebUI.setText(findTestObject('Object Repository/Summary/input_username_loginId'), 'deekshithaS')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Summary/input_password_loginPassword'), 'ghLSEQG5l8dyyQdYVN+LYg==')
-
-WebUI.sendKeys(findTestObject('Object Repository/Summary/input_password_loginPassword'), Keys.chord(Keys.ENTER))
-findTestObject('Object Repository/Summary/td_SIG013')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
 // Step 3: Click WBC tab
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_WBC'))

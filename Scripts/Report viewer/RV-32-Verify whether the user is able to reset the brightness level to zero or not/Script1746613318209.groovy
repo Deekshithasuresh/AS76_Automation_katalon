@@ -13,24 +13,9 @@ import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.By
 import org.openqa.selenium.JavascriptExecutor
 
-// 1) LOGIN & NAVIGATE TO IMAGE SETTINGS
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-					 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.waitForElementPresent(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-	10
-)
-WebUI.click(new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and text()='Under review']])[1]"
-))
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/td_tstt'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_WBC'))
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/img_Manual sub-classification_image-settings'))
 WebUI.delay(2)  // wait for panel

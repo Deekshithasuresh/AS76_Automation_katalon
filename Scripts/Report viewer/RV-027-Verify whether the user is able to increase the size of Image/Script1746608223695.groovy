@@ -13,12 +13,9 @@ import org.openqa.selenium.By
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 // Step 2: Navigate to WBC > Image Settings
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/td_tstt'))
 WebUI.verifyElementText(findTestObject('Object Repository/Report viewer/Page_PBS/button_Summary'), 'Summary')
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_WBC'))
 WebUI.verifyElementText(findTestObject('Object Repository/Report viewer/Page_PBS/div_Image settings'), 'Image settings')

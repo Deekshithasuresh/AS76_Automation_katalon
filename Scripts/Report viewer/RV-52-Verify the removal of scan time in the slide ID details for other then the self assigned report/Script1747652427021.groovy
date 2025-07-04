@@ -4,31 +4,15 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.model.FailureHandling
 
-// ---------- STEP 1: Log in ----------
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-					 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+CustomKeywords.'generic.custumFunctions.login'()
 
-// ---------- STEP 2: Open an Under-review report NOT assigned to admin ----------
-TestObject targetRow = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"(//tr["
-  +     ".//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']"
-  +   " and not(contains(normalize-space(.), 'admin'))"
-  + "])[1]"
-)
-WebUI.waitForElementClickable(targetRow, 10)
-WebUI.scrollToElement(targetRow, 5)
-WebUI.click(targetRow)
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("prem")
 
-// ---------- STEP 3: Open the slide-info drawer ----------
+// 3) OPEN SLIDE-INFO DRAWER
 TestObject slideInfoIcon = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//img[@src='/icons/slide-info.svg' and @alt='info.svg']"
+	"//img[@alt='info.svg']"
 )
 WebUI.waitForElementClickable(slideInfoIcon, 5)
 WebUI.click(slideInfoIcon)
@@ -48,7 +32,7 @@ def verifyContains = { String txt ->
 	WebUI.verifyElementPresent(to, 5, FailureHandling.CONTINUE_ON_FAILURE)
 }
 
-verifyContains('Slide ID')
+verifyContains('Slide Id')
 verifyContains('Slide image')
 verifyContains('Scanned by')
 verifyContains('Scanned on')

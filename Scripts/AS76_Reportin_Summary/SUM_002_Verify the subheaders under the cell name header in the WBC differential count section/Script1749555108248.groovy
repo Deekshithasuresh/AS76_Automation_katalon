@@ -2,9 +2,9 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import org.openqa.selenium.Keys
 
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-import Libs.CustomKeywords as Keys
 
 /**
  * Test Case: PBS Report Assignment

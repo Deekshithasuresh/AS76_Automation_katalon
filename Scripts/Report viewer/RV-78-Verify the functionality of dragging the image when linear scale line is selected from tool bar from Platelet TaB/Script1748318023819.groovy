@@ -86,7 +86,7 @@ TestObject lineTool = new TestObject().addProperty('xpath', ConditionType.EQUALS
 WebUI.waitForElementClickable(lineTool, 30)
 WebUI.mouseOver(lineTool)
 WebUI.click(lineTool)
-WebUI.delay(30)
+WebUI.delay(3)
 
 // 7) CAPTURE “BEFORE PAN”
 WebUI.comment("🔍 Capturing canvas before pan…")
@@ -104,9 +104,9 @@ robot.setAutoDelay(10)
 robot.mouseMove(startX, startY)
 Thread.sleep(200)
 robot.mousePress(InputEvent.BUTTON1_DOWN_MASK)
-Thread.sleep(100)
+Thread.sleep(1)
 robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK)
-Thread.sleep(300)
+Thread.sleep(3)
 // drag in increments
 for (int i = 0; i <= steps; i++) {
 	int x = startX + (dragX * i / steps)
@@ -114,7 +114,7 @@ for (int i = 0; i <= steps; i++) {
 	robot.mouseMove(x, y)
 	Thread.sleep(10)
 }
-Thread.sleep(100)
+Thread.sleep(1)
 robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK)
 WebUI.delay(1)
 

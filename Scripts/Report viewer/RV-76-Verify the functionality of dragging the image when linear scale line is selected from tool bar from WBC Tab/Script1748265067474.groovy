@@ -77,7 +77,7 @@ TestObject zoomIn = new TestObject().addProperty(
 WebUI.waitForElementClickable(zoomIn, 30)
 (1..2).each { i ->
 	WebUI.click(zoomIn)
-	WebUI.delay(120)
+	WebUI.delay(5)
 	WebUI.comment("✔ Completed zoom-in #${i}")
 }
 
@@ -89,7 +89,7 @@ TestObject lineTool = new TestObject().addProperty(
 WebUI.waitForElementClickable(lineTool, 30)
 WebUI.mouseOver(lineTool)
 WebUI.click(lineTool)
-WebUI.delay(30)
+WebUI.delay(3)
 
 // ── 7) CAPTURE “BEFORE PAN” ───────────────────────────────────────────
 WebUI.comment("🔍 Capturing canvas before pan…")
@@ -106,20 +106,20 @@ robot.setAutoDelay(10)
 
 // click to focus
 robot.mouseMove(startX, startY)
-Thread.sleep(200)
+Thread.sleep(5)
 robot.mousePress(InputEvent.BUTTON1_DOWN_MASK)
-Thread.sleep(100)
+Thread.sleep(5)
 robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK)
-Thread.sleep(300)
+Thread.sleep(5)
 
 // drag in small increments
 for (int i = 0; i <= steps; i++) {
 	int x = startX + (dragX * i / steps)
 	int y = startY + (dragY * i / steps)
 	robot.mouseMove(x, y)
-	Thread.sleep(10)
+	Thread.sleep(5)
 }
-Thread.sleep(100)
+Thread.sleep(5)
 robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK)
 WebUI.delay(1)
 

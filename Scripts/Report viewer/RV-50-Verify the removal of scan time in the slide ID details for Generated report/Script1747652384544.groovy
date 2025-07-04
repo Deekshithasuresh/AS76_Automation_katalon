@@ -4,28 +4,13 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.model.FailureHandling
 
-// 1) LOGIN (same as before) …
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-					 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+CustomKeywords.'generic.custumFunctions.login'()
 
-// 2) OPEN FIRST “Under review” REPORT
-TestObject underReview = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-)
-WebUI.waitForElementClickable(underReview, 10)
-WebUI.scrollToElement(underReview, 5)
-WebUI.click(underReview)
-
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 // 3) OPEN SLIDE-INFO DRAWER
 TestObject slideInfoIcon = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//img[@alt='info.svg' and contains(@class,'slide-info')]"
+	"//img[@alt='info.svg']"
 )
 WebUI.waitForElementClickable(slideInfoIcon, 5)
 WebUI.click(slideInfoIcon)
@@ -47,7 +32,7 @@ def verifyHeader = { String txt ->
 }
 
 // mandatory headers
-verifyHeader('Slide ID')
+verifyHeader('Slide Id')
 verifyHeader('Slide image')
 verifyHeader('Scanned by')
 verifyHeader('Scanned on')
