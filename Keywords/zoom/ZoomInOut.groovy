@@ -27,13 +27,9 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-<<<<<<< HEAD
-//import imageutils.blurChecker
-=======
 import CustomKeywords
-import imageUtils.blurChecker
 
->>>>>>> 3a3e7c040a347da7c036fcaf63cadff1f76240f0
+
 
 
 public class ZoomInOut {
@@ -46,7 +42,7 @@ public class ZoomInOut {
 		WebUI.delay(10)
 		// Get all cell rows
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
 
 
 		for (WebElement row : cellRows) {
@@ -78,7 +74,7 @@ public class ZoomInOut {
 
 				// Skip certain cell types regardless of patch count
 				if (cellname.equals("Anisocytosis") || cellname.equals("Acanthocytes*") ||
-						cellname.equals("Sickle Cells*") || cellname.equals("Stomatocytes")) {
+				cellname.equals("Sickle Cells*") || cellname.equals("Stomatocytes")) {
 					WebUI.comment("🔕 Skipping manually graded cell: " + cellname)
 					continue
 				}
@@ -300,7 +296,7 @@ public class ZoomInOut {
 		WebUI.delay(10)
 
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 1)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 1)
 
 		for (WebElement row : cellRows) {
 			try {
@@ -327,7 +323,7 @@ public class ZoomInOut {
 				}
 
 				if (cellname.equals("Anisocytosis") || cellname.equals("Acanthocytes*") ||
-						cellname.equals("Sickle Cells*") || cellname.equals("Stomatocytes")) {
+				cellname.equals("Sickle Cells*") || cellname.equals("Stomatocytes")) {
 					WebUI.comment("🔕 Skipping manually graded cell: " + cellname)
 					continue
 				}
@@ -355,7 +351,8 @@ public class ZoomInOut {
 				}
 
 				// Function to save canvas image
-				def saveBase64Image = { String base64, String filePath ->
+				def saveBase64Image = {
+					String base64, String filePath ->
 					String base64Data = base64.split(",")[1]
 					byte[] imageBytes = Base64.decoder.decode(base64Data)
 					InputStream is = new ByteArrayInputStream(imageBytes)
@@ -464,7 +461,7 @@ public class ZoomInOut {
 		WebUI.delay(10)
 
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 1)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 1)
 
 		WebDriver driver = DriverFactory.getWebDriver()
 
@@ -507,9 +504,9 @@ public class ZoomInOut {
 				println("📦 Total number of patches: " + total_no_of_patches)
 
 				if (total_no_of_patches > 0 && !cellname.equals("Anisocytosis") &&
-						!cellname.equals("Acanthocytes*") &&
-						!cellname.equals("Sickle Cells*") &&
-						!cellname.equals("Stomatocytes")) {
+				!cellname.equals("Acanthocytes*") &&
+				!cellname.equals("Sickle Cells*") &&
+				!cellname.equals("Stomatocytes")) {
 
 					// Open patch image
 					WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/img_Platelets_split-view_1_2 (1)'), 30)
@@ -587,7 +584,7 @@ public class ZoomInOut {
 		WebUI.delay(10)
 
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 1)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 1)
 
 		WebDriver driver = DriverFactory.getWebDriver()
 
@@ -620,7 +617,7 @@ public class ZoomInOut {
 
 				// Skip certain cell types regardless of patch count
 				if (cellname.equals("Anisocytosis") || cellname.equals("Acanthocytes*") ||
-						cellname.equals("Sickle Cells*") || cellname.equals("Stomatocytes")) {
+				cellname.equals("Sickle Cells*") || cellname.equals("Stomatocytes")) {
 					WebUI.comment("🔕 Skipping manually graded cell: " + cellname)
 					continue
 				}
@@ -700,7 +697,7 @@ public class ZoomInOut {
 
 	public void iterateThroughTheCellRows() {
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
 		ArrayList<String> al_RBC_cellnames= new ArrayList<>(Arrays.asList("Microcytes", "Macrocytes", "Ovalocytes","Elliptocytes","Teardrop Cells","Fragmented Cells","Target Cells","Echinocytes"));
 		for (WebElement row : cellRows) {
 			// Get the percentage element (last div inside the row)
@@ -723,7 +720,7 @@ public class ZoomInOut {
 		WebUI.delay(10)
 		// Get all cell rows
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
 
 		for (WebElement row : cellRows) {
 			int count=0;
@@ -754,7 +751,7 @@ public class ZoomInOut {
 			float percentage_flaot_value = Float.parseFloat(percentageElement.getText())
 			println(percentage_flaot_value)
 			List<WebElement> patches = WebUiCommonHelper.findWebElements(
-					findTestObject('Object Repository/RBC_Objects/Page_PBS/Patches'),20)
+			findTestObject('Object Repository/RBC_Objects/Page_PBS/Patches'),20)
 			WebDriver driver = DriverFactory.getWebDriver()
 			String no_patches_msg=driver.findElement(By.className("patches-section")).getText()
 
@@ -810,7 +807,7 @@ public class ZoomInOut {
 
 	public void verifyRegrade() {
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
 		for (WebElement row : cellRows) {
 			//Get the percentage element (last div inside the row)
 			row.click()
@@ -1180,7 +1177,7 @@ public class ZoomInOut {
 	public void verifyCorrectnessOfGradeAccordingToPercentageValue() {
 		WebDriver driver =DriverFactory.getWebDriver()
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
 
 		for (WebElement row : cellRows) {
 
@@ -1236,7 +1233,7 @@ public class ZoomInOut {
 	public void valueGettingStrikeOfAfterRegrading() {
 		WebDriver driver =DriverFactory.getWebDriver()
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
 
 		for (WebElement row : cellRows) {
 			//WebElement percentageElement = row.findElement(By.xpath(".//div[3]"))
@@ -1271,7 +1268,7 @@ public class ZoomInOut {
 	public HashMap<String,String> verifyRegradingChangesAutoSaved() {
 		WebDriver driver =DriverFactory.getWebDriver()
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
 		Map<String,String> hm = new HashMap<>();
 		for (WebElement row : cellRows) {
 			//WebElement percentageElement = row.findElement(By.xpath(".//div[3]"))
@@ -1298,7 +1295,7 @@ public class ZoomInOut {
 		boolean flag_not_clickable_status=true
 		WebDriver driver =DriverFactory.getWebDriver()
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
 		for (WebElement row : cellRows) {
 			//WebElement percentageElement = row.findElement(By.xpath(".//div[3]"))
 			WebElement cellname_ele = row.findElement(By.xpath(".//div[1]"))
@@ -1372,7 +1369,7 @@ public class ZoomInOut {
 
 
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
 		for(WebElement cellrow:cellRows) {
 			WebElement cellname_ele = cellrow.findElement(By.xpath(".//div[1]"))
 			String cellname = cellname_ele.getText()
@@ -1388,7 +1385,7 @@ public class ZoomInOut {
 			}
 
 			List<WebElement> patch_eles = WebUiCommonHelper.findWebElements(
-					findTestObject('Object Repository/RBC_Objects/Page_PBS/Patches'),30)
+			findTestObject('Object Repository/RBC_Objects/Page_PBS/Patches'),30)
 			for (int i = 0; i < patch_eles.size(); i++) {
 				WebElement patch = patch_eles.get(i).findElement(By.xpath(".//div//img[contains(@class, 'qa_patch_rank')]"));
 				Dimension size = patch.getSize();
@@ -1404,7 +1401,7 @@ public class ZoomInOut {
 
 	public void checkRankOfThePatch() {
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
 
 		for(WebElement cellrow:cellRows) {
 			WebElement cellname_ele = cellrow.findElement(By.xpath(".//div[1]"))
@@ -1422,7 +1419,7 @@ public class ZoomInOut {
 			//			WebUI.comment("🖼️ Unique image URLs: " + result.images)
 			//		}
 			List<WebElement> patch_eles = WebUiCommonHelper.findWebElements(
-					findTestObject('Object Repository/RBC_Objects/Page_PBS/Patches'),30)
+			findTestObject('Object Repository/RBC_Objects/Page_PBS/Patches'),30)
 			for (int i=0; i<patch_eles.size();i++) {
 				String patch_rank = patch_eles.get(i).findElement(By.xpath(".//div//img")).getAttribute('class');
 				int Actual_patch_Rank=Integer.parseInt(patch_rank.replaceAll("[^0-9]",''))
@@ -1437,7 +1434,7 @@ public class ZoomInOut {
 	public void verifyPatchesAreDisplayedAlligned() {
 		WebDriver driver = DriverFactory.getWebDriver()
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
 		LinkedHashMap<String, Integer> hm =new  LinkedHashMap<>()
 		for(WebElement cellrow:cellRows) {
 			hm.clear()
@@ -1454,7 +1451,7 @@ public class ZoomInOut {
 
 			WebUI.delay(2)
 			List<WebElement> patch_row = WebUiCommonHelper.findWebElements(
-					findTestObject('Object Repository/RBC_Objects/Page_PBS/patch_row'),30)
+			findTestObject('Object Repository/RBC_Objects/Page_PBS/patch_row'),30)
 
 			println("Number of rows are "+patch_row.size())
 			if(patch_row.size()<=2) {
@@ -1471,7 +1468,9 @@ public class ZoomInOut {
 			def values=hm.values()
 			def firstValue = values[0]
 			// Assert all values are equal to the first one
-			assert values.every { it == firstValue }
+			assert values.every {
+				it == firstValue
+			}
 		}
 	}
 
@@ -1479,7 +1478,7 @@ public class ZoomInOut {
 		SoftAssert softAssert = new SoftAssert()
 
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 10)
+		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 10)
 		LinkedHashMap<String, Integer> hm = new LinkedHashMap<>()
 
 		for (WebElement cellrow : cellRows) {
@@ -1490,8 +1489,8 @@ public class ZoomInOut {
 			String cellname = cellname_ele.getText()
 
 			if (cellname.equals("Acanthocytes*") || cellname.equals("Sickle Cells*") ||
-					cellname.equals("Stomatocytes*") || cellname.equals("Pappenheimer Bodies*") ||
-					cellname.equals("Howell-Jolly Bodies*") || cellname.equals("Basophilic Stippling*")) {
+			cellname.equals("Stomatocytes*") || cellname.equals("Pappenheimer Bodies*") ||
+			cellname.equals("Howell-Jolly Bodies*") || cellname.equals("Basophilic Stippling*")) {
 
 				WebElement significant_legend_ele = cellrow.findElement(By.xpath(".//div[1]//div"))
 				String significant_color = significant_legend_ele.getCssValue("background")
@@ -1533,7 +1532,7 @@ public class ZoomInOut {
 
 	public void verifyRegradeeee() {
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-				findTestObject("Object Repository/RBC_Objects/Page_PBS/Cell_rows"),1);
+		findTestObject("Object Repository/RBC_Objects/Page_PBS/Cell_rows"),1);
 		for (WebElement row : cellRows) {
 			row.click();
 			String cellname = row.findElement(By.xpath(".//div")).getText();
