@@ -42,7 +42,7 @@ WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 1
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
 
-WebUI.doubleClick(findTestObject('Object Repository/Commontools/Page_PBS/div_Image settings_default-patch  patch-foc_a6a738'))
+WebUI.doubleClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebDriver driver = DriverFactory.getWebDriver()
 

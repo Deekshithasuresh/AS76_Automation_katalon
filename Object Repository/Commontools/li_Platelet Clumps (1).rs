@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>li_Neutrophils</name>
+   <name>li_Platelet Clumps (1)</name>
    <tag></tag>
-   <elementGuidId>0b4ef213-5199-4462-991a-1f90dec3a5d0</elementGuidId>
+   <elementGuidId>080cb45a-85d3-4ba2-ab69-9dec3cf06b2a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.Mui-selected.MuiMenuItem-root.MuiMenuItem-gutters.Mui-selected.css-le7snb</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//li[(text() = 'Neutrophils' or . = 'Neutrophils')]</value>
+         <value>//ul[@id='mui-34']/li[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=option[name=&quot;Neutrophils&quot;i]</value>
+         <value>internal:role=option[name=&quot;Platelet Clumps&quot;i]</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -29,23 +29,23 @@
       <name>tag</name>
       <type>Main</type>
       <value>li</value>
-      <webElementGuid>1be161b1-fddb-407b-abf3-b27f04e295ad</webElementGuid>
+      <webElementGuid>51e42064-420d-4b88-a049-6df7b6570e52</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters Mui-selected MuiMenuItem-root MuiMenuItem-gutters Mui-selected css-le7snb</value>
-      <webElementGuid>ab613878-2226-4a9d-989b-dcf43647a49c</webElementGuid>
+      <value>MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-le7snb</value>
+      <webElementGuid>b9208e63-07c4-4b17-846e-a223c7083fbf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tabindex</name>
       <type>Main</type>
-      <value>0</value>
-      <webElementGuid>e1dfa764-ad0e-4773-9be9-c996eaeeb0b1</webElementGuid>
+      <value>-1</value>
+      <webElementGuid>89d6ad86-be1b-4d53-b29d-c19648da407f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,86 +53,70 @@
       <name>role</name>
       <type>Main</type>
       <value>option</value>
-      <webElementGuid>2447383d-9469-4235-b4d0-88618460fafb</webElementGuid>
+      <webElementGuid>da29b63b-d25e-4283-9926-2627976e7646</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>aria-selected</name>
       <type>Main</type>
-      <value>true</value>
-      <webElementGuid>84a1886b-a9d0-4b72-a7b6-36312b1c275d</webElementGuid>
+      <value>false</value>
+      <webElementGuid>07550212-ab2e-478e-b0f8-86ec66552df3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>data-value</name>
       <type>Main</type>
-      <value>Neutrophils</value>
-      <webElementGuid>8acc68d1-48fc-45e1-90d6-a4250d86b901</webElementGuid>
+      <value>Platelet Clumps</value>
+      <webElementGuid>0a2eec4f-0647-4340-bd58-112c63e7d6f0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Neutrophils</value>
-      <webElementGuid>15febeb1-e4a0-46a4-a815-f3c69cccea29</webElementGuid>
+      <value>Platelet Clumps</value>
+      <webElementGuid>c9820a07-67bb-486d-a2e4-d67920feaaca</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;mui-31&quot;)/li[@class=&quot;MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters Mui-selected MuiMenuItem-root MuiMenuItem-gutters Mui-selected css-le7snb&quot;]</value>
-      <webElementGuid>e9ffdae9-7c5b-4f19-b946-a9a3070c3bc2</webElementGuid>
+      <value>id(&quot;mui-34&quot;)/li[@class=&quot;MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-le7snb&quot;]</value>
+      <webElementGuid>e55674a0-db0b-49ba-9965-494d81410ced</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//ul[@id='mui-31']/li</value>
-      <webElementGuid>3b824ff2-4e43-4986-97c2-ec42c4bf0a10</webElementGuid>
+      <value>//ul[@id='mui-34']/li[2]</value>
+      <webElementGuid>e42a30f3-4235-427c-a4fd-268791d84af9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::li[1]</value>
-      <webElementGuid>05a08714-4a03-4b3e-8690-166ab2f0b29a</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Band Forms'])[2]/preceding::li[1]</value>
-      <webElementGuid>3a6a1f6a-9930-4eef-9c5b-185e01282240</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hypersegmented'])[1]/preceding::li[2]</value>
-      <webElementGuid>d6fd5dbe-a868-48b2-8b67-02e919974ca9</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Large Platelets'])[3]/following::li[1]</value>
+      <webElementGuid>f732634a-c928-4777-9d27-75485206bf78</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//li</value>
-      <webElementGuid>fec15d0f-81a1-4ab7-9d12-f379f1e9c897</webElementGuid>
+      <value>//li[2]</value>
+      <webElementGuid>4542b069-4ec5-457f-ad47-fd61a1fd9a6c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//li[(text() = 'Neutrophils' or . = 'Neutrophils')]</value>
-      <webElementGuid>51c1f459-a5be-4ab3-9b99-7d5dd1040c8b</webElementGuid>
+      <value>//li[(text() = 'Platelet Clumps' or . = 'Platelet Clumps')]</value>
+      <webElementGuid>96fb0d37-5dea-438c-875c-ab0e826f7798</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

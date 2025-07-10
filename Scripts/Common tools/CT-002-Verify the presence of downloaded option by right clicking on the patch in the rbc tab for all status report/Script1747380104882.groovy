@@ -15,27 +15,26 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
 
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId (14)'), 'Chidu')
+WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId'), 'Chidu')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword (14)'), 'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In (14)'))
-
+WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In'))
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_19-May-2025, 0931 AM (IST) (3)'))
 
+//CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'), 'RBC')
 
 WebUI.click(findTestObject('Commontools/Macrocytes_cell_name'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Object Repository/Commontools/li_Macrocytes'), FailureHandling.CONTINUE_ON_FAILURE)
-
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 10)
+
+WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
 
 WebUI.doubleClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
@@ -47,9 +46,11 @@ WebElement patchfirst = driver.findElement(By.xpath('(//div[@class=\'Card patche
 
 actions.contextClick(patchfirst).perform()
 
-WebUI.click(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
+WebUI.click(findTestObject('Commontools/2ndpatch'))
 
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 10)
+
+WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
 

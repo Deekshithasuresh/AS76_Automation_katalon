@@ -27,15 +27,19 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+<<<<<<< HEAD
+//import imageutils.blurChecker
+=======
 import CustomKeywords
 import imageUtils.blurChecker
 
+>>>>>>> 3a3e7c040a347da7c036fcaf63cadff1f76240f0
 
 
 public class ZoomInOut {
 
 	public void zoominout(int num_itr, TestObject button) {
-		def blurCheck = new blurChecker()
+		//def blurCheck = new blurChecker()
 
 		WebDriver driver =DriverFactory.getWebDriver()
 		//WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/Patches'),20)
