@@ -17,17 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+// Step 1: Login open the report
+CustomKeywords.'generic.custumFunctions.login'()
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
 
-WebUI.setText(findTestObject('Object Repository/Report-Signoff/input_username_loginId'), 'manju')
+WebUI.delay(2)
+// Checking of the element not present
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/Report-Signoff/button_Reject report'), 3)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Report-Signoff/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Sign In'))
-
-WebUI.click(findTestObject('Object Repository/Report-Signoff/div_09-Apr-2025, 0126 PM (EAT)'))
-
-WebUI.verifyElementNotVisible(findTestObject('Object Repository/Report-Signoff/div__appBar_container__right__PwWvg'))
 

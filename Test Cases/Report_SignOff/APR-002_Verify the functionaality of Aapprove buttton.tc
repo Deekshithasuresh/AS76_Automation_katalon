@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-002_Verify the functionaality of Aapprove buttton</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ff15fdab-e2ef-4e23-8df7-e7d5a4617048</testCaseGuid>
+</TestCaseEntity>

@@ -6,58 +6,31 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import org.openqa.selenium.WebElement
-import org.openqa.selenium.By
 
 // 1) LOGIN
-// ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
 WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-// ────────────────────────────────────────────────────────────────────
 // 2) VERIFY LANDING ON REPORT LIST
-// ────────────────────────────────────────────────────────────────────
-WebUI.waitForElementPresent(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-	10
+TestObject pbsText = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//span[contains(text(),'PBS')]"
 )
+WebUI.waitForElementPresent(pbsText, 10)
 
-// ────────────────────────────────────────────────────────────────────
 // 3) OPEN FIRST “Under review” REPORT
-// ────────────────────────────────────────────────────────────────────
-String underReviewXpath = "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-TestObject underReviewRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, underReviewXpath)
-
+TestObject underReviewRow = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+)
 WebUI.waitForElementClickable(underReviewRow, 10)
 WebUI.scrollToElement(underReviewRow, 5)
 WebUI.click(underReviewRow)
-
-// ────────────────────────────────────────────────────────────────────
-// 4) ASSIGN TO “admin”
-// ────────────────────────────────────────────────────────────────────
-TestObject assignedDropdown = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-)
-TestObject adminOption = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//li[@role='option' and normalize-space(text())='admin']"
-)
-TestObject assignedInput = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']"
-)
-
-WebUI.click(assignedDropdown)
-WebUI.waitForElementClickable(adminOption, 5)
-WebUI.click(adminOption)
-WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
 
 // ───── STEP 2: Click RBC tab & Microscopic view ─────
 new TestObject().addProperty('xpath', ConditionType.EQUALS,
@@ -80,8 +53,8 @@ new TestObject().addProperty('xpath', ConditionType.EQUALS,
   "//img[@alt='line-tool']",
   "//img[@alt='circle-tool']",
   "//img[@alt='zoom-tool']",
-  "//button[@class='ol-zoom-in'  and @title='Zoom in']",
-  "//button[@class='ol-zoom-out' and @title='Zoom out']",
+  "//button[contains(@class,'ol-zoom-in') and @title='Zoom in']",
+  "//button[contains(@class,'ol-zoom-out') and @title='Zoom out']",
   "//button[@title='Overview']",
   "//div[.//img[@alt='home']]"
 ].each { xpath ->
@@ -126,5 +99,3 @@ if (actualLabels.containsAll(expected)) {
 }
 
 WebUI.comment "✅ Done checking RBC-Size microscopic view."
-
-

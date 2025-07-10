@@ -32,55 +32,34 @@ String snapAndBase64(String filename) {
 }
 
 // 1) LOGIN
-// ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
+WebUI.setText(
+	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
+	'adminuserr'
+)
 WebUI.setEncryptedText(
-    findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-    'JBaPNhID5RC7zcsLVwaWIA=='
+	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA=='
 )
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-// ────────────────────────────────────────────────────────────────────
 // 2) VERIFY LANDING ON REPORT LIST
-// ────────────────────────────────────────────────────────────────────
-WebUI.waitForElementPresent(
-    new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-    10
+TestObject pbsText = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//span[contains(text(),'PBS')]"
 )
+WebUI.waitForElementPresent(pbsText, 10)
 
-// ────────────────────────────────────────────────────────────────────
 // 3) OPEN FIRST “Under review” REPORT
-// ────────────────────────────────────────────────────────────────────
-String underReviewXpath = "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-TestObject underReviewRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, underReviewXpath)
-
+TestObject underReviewRow = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+)
 WebUI.waitForElementClickable(underReviewRow, 10)
 WebUI.scrollToElement(underReviewRow, 5)
 WebUI.click(underReviewRow)
-
-// ────────────────────────────────────────────────────────────────────
-// 4) ASSIGN TO “admin”
-// ────────────────────────────────────────────────────────────────────
-TestObject assignedDropdown = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-)
-TestObject adminOption = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//li[@role='option' and normalize-space(text())='admin']"
-)
-TestObject assignedInput = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//input[@id='assigned_to']"
-)
-
-WebUI.click(assignedDropdown)
-WebUI.waitForElementClickable(adminOption, 5)
-WebUI.click(adminOption)
-WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
 
 // STEP 4: Click on the Platelets tab
 TestObject plateletsTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
@@ -99,7 +78,7 @@ TestObject microView = new TestObject().addProperty('xpath', ConditionType.EQUAL
     "//img[@alt='Microscopic view' and @aria-label='Microscopic view']")
 WebUI.waitForElementClickable(microView, 10)
 WebUI.click(microView)
-WebUI.delay(150)
+WebUI.delay(5)
 
 // Verify default 1000 μm
 String s0 = fetchScale()
@@ -113,7 +92,7 @@ TestObject zoomInBtn = new TestObject().addProperty('xpath', ConditionType.EQUAL
 
 // STEP 7: Zoom once → wait 120s, verify 500 μm
 WebUI.click(zoomInBtn)
-WebUI.delay(120)
+WebUI.delay(5)
 String s1 = fetchScale()
 WebUI.verifyMatch(s1, '500 μm', false, FailureHandling.STOP_ON_FAILURE)
 println "Morphology Scale @500μm: ${s1}"
@@ -121,7 +100,7 @@ println "Morphology BASE64 @500μm: ${snapAndBase64('morph_zoom1.png')}"
 
 // STEP 8: Zoom again → wait 120s, verify 200 μm
 WebUI.click(zoomInBtn)
-WebUI.delay(120)
+WebUI.delay(5)
 String s2 = fetchScale()
 WebUI.verifyMatch(s2, '200 μm', false, FailureHandling.STOP_ON_FAILURE)
 println "Morphology Scale @200μm: ${s2}"

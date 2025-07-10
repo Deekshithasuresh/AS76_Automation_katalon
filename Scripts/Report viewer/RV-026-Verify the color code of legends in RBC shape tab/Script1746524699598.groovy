@@ -1,67 +1,46 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.model.FailureHandling
+
+// ────────────────────────────────────────────────────────────────────
+// THESE THREE IMPORTS FIX the “unable to resolve class WebElement” ERROR
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
+// ────────────────────────────────────────────────────────────────────
 
 // 1) LOGIN
-// ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
 WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-// ────────────────────────────────────────────────────────────────────
-// 2) VERIFY LANDING ON REPORT LIST
-// ────────────────────────────────────────────────────────────────────
-WebUI.waitForElementPresent(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-	10
+// 2) VERIFY PBS HEADER
+TestObject pbsText = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//span[contains(text(),'PBS')]"
 )
+WebUI.waitForElementPresent(pbsText, 10)
 
-// ────────────────────────────────────────────────────────────────────
 // 3) OPEN FIRST “Under review” REPORT
-// ────────────────────────────────────────────────────────────────────
-String underReviewXpath = "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-TestObject underReviewRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, underReviewXpath)
-
+TestObject underReviewRow = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+)
 WebUI.waitForElementClickable(underReviewRow, 10)
 WebUI.scrollToElement(underReviewRow, 5)
 WebUI.click(underReviewRow)
 
-// ────────────────────────────────────────────────────────────────────
-// 4) ASSIGN TO “admin”
-// ────────────────────────────────────────────────────────────────────
-TestObject assignedDropdown = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-)
-TestObject adminOption = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//li[@role='option' and normalize-space(text())='admin']"
-)
-TestObject assignedInput = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']"
-)
-
-WebUI.click(assignedDropdown)
-WebUI.waitForElementClickable(adminOption, 5)
-WebUI.click(adminOption)
-WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
 // ──────────────────────────────────────────────────────────
-// STEP 2 — Click “RBC” tab, then “Shape” sub‐tab, then “Microscopic view”
+// STEP 2 — Navigate to RBC → Shape → Microscopic view
 // ──────────────────────────────────────────────────────────
-// 2a) Click the RBC tab
+// Click RBC tab
 new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//button[contains(@class,'cell-tab') and .//span[normalize-space()='RBC']]"
 ).with {
@@ -70,7 +49,7 @@ new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	WebUI.comment("✔ Clicked the RBC tab")
 }
 
-// 2b) Click the “Shape” sub‐tab under RBC
+// Click Shape sub-tab
 new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//button[normalize-space()='Shape']"
 ).with {
@@ -79,7 +58,7 @@ new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	WebUI.comment("✔ Clicked the Shape sub-tab")
 }
 
-// 2c) Click the microscopic‐view icon
+// Click Microscopic view icon
 new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//img[@alt='Microscopic view']"
 ).with {
@@ -88,61 +67,56 @@ new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	WebUI.comment("✔ Clicked the Microscopic view icon")
 }
 
-// Let the RBC‐microscopic pane fully initialize (could take up to ~90 seconds)
+// allow pane to load
 WebUI.delay(90)
-WebUI.comment("⏲ 90s delay complete — now verifying shape‐color codes")
+WebUI.comment("⏲ 90s delay complete — now verifying shape-color codes")
 
 // ──────────────────────────────────────────────────────────
-// STEP 3 — Define expected RGB color codes for each RBC‐shape
+// STEP 3 — Define expected RGB color codes for each RBC-shape
 // ──────────────────────────────────────────────────────────
 Map<String,String> expectedShapeColors = [
 	'Ovalocytes'      : 'rgb(88, 236, 153)',
 	'Elliptocytes'    : 'rgb(224, 66, 77)',
-	'Teardrop cells'  : 'rgb(69, 69, 225)',
-	'Fragmented cells': 'rgb(80, 210, 228)',
-	'Target cells'    : 'rgb(236, 80, 173)',   // “Traget cells” typo corrected
+	'Teardrop Cells'  : 'rgb(69, 69, 225)',
+	'Fragmented Cells': 'rgb(80, 210, 228)',
+	'Target Cells'    : 'rgb(236, 80, 173)',
 	'Echinocytes'     : 'rgb(160, 239, 32)'
 ]
 
 // ──────────────────────────────────────────────────────────
-// STEP 4 — Grab all rows in the left‐pane RBC‐microscopic table
+// STEP 4 — Grab all rows in the left-pane RBC-microscopic table
 // ──────────────────────────────────────────────────────────
-// The left pane container has class “rbc-microscopic-left-pane”; within it, the table’s <tbody> has multiple <tr> rows.
-TestObject allRowsTO = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+TestObject allRowsTO = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
 	"//div[contains(@class,'rbc-microscopic-left-pane')]//table//tbody/tr"
 )
 List<WebElement> allRows = WebUiCommonHelper.findWebElements(allRowsTO, 10)
-WebUI.comment("🔎 Found ${allRows.size()} row(s) in the RBC‐microscopic left pane")
+WebUI.comment("🔎 Found ${allRows.size()} row(s) in the RBC-microscopic left pane")
 
 if (allRows.isEmpty()) {
-	WebUI.comment("⚠️ No rows found in RBC‐microscopic left pane – aborting color check")
+	WebUI.comment("⚠️ No rows found – check that the microscopic pane loaded correctly.")
 } else {
 	// ──────────────────────────────────────────────────────────
-	// STEP 5 — For each row, if the name is one of our six shapes, verify color
+	// STEP 5 — Verify each shape’s swatch color
 	// ──────────────────────────────────────────────────────────
 	allRows.each { WebElement row ->
-		// The second <td> holds the shape’s name
 		WebElement nameTd = row.findElement(By.xpath(".//td[2]"))
 		String shapeName = nameTd.getText().trim()
 
 		if (expectedShapeColors.containsKey(shapeName)) {
-			// The first <td> contains a <div> with the background‐color style
 			WebElement colorDiv = row.findElement(By.xpath(".//td[1]//div"))
 			String actualCssColor = colorDiv.getCssValue("background-color").trim()
 			String expectedRgb   = expectedShapeColors[shapeName]
 
 			if (actualCssColor == expectedRgb) {
-				WebUI.comment("✔ [$shapeName] → color is correct ($expectedRgb)")
+				WebUI.comment("✔ [$shapeName] color is correct ($expectedRgb)")
 			} else {
-				WebUI.comment("❌ [$shapeName] → color mismatch: actual='$actualCssColor' expected='$expectedRgb'")
+				WebUI.comment("❌ [$shapeName] mismatch: actual='$actualCssColor' expected='$expectedRgb'")
 			}
 		} else {
-			WebUI.comment("→ Skipping row ‘$shapeName’ (not one of the six target shapes)")
+			WebUI.comment("→ Skipping non-target row '$shapeName'")
 		}
 	}
 }
 
-// ──────────────────────────────────────────────────────────
-// STEP 6 — Clean up
-// ──────────────────────────────────────────────────────────
-WebUI.comment("✅ Done verifying RBC‐shape color codes")
+WebUI.comment("✅ Done verifying RBC-shape color codes")

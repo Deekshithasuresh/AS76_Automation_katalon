@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Detected'])[2]/following::span[1]</value>
+         <value>//span[@class='modal-title' and contains(text(), 'Approve the report without supporting images?')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>02898dc9-df35-4134-908e-5298ec3d5c86</webElementGuid>
+      <webElementGuid>16334078-a229-4282-b711-bea1e2971a9c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>modal-title</value>
-      <webElementGuid>cc748e1f-498a-4777-850d-168910cdeb1f</webElementGuid>
+      <webElementGuid>40fcd35d-923a-44c0-b182-b754b1b77846</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Approve the report without supporting images?</value>
-      <webElementGuid>116c6ee3-2d52-4a51-9925-52587989c1d1</webElementGuid>
+      <webElementGuid>62a1d46c-a759-49f4-bfb9-db363041be2f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[@class=&quot;dx-device-desktop dx-device-generic&quot;]/div[@class=&quot;MuiModal-root css-8ndowl&quot;]/div[@class=&quot;css-dbndpz&quot;]/div[@class=&quot;modal-header-set&quot;]/span[@class=&quot;modal-title&quot;]</value>
-      <webElementGuid>e7c3ea4d-b7bc-4deb-91ca-ded2b7f92ee5</webElementGuid>
+      <webElementGuid>3972839a-5130-4f5d-8f89-910c1b3b5022</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Detected'])[2]/following::span[1]</value>
-      <webElementGuid>850055f6-4bcc-456f-92a0-8585bb6a41b9</webElementGuid>
+      <webElementGuid>0feb171a-fa40-4947-95de-753194418704</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Platelet Clumps'])[1]/following::span[1]</value>
-      <webElementGuid>21525664-026c-4f17-aacb-4220b3346b97</webElementGuid>
+      <webElementGuid>5097f232-de64-4225-8c30-27a11e364e35</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::span[1]</value>
-      <webElementGuid>2873b83e-6453-46aa-8d03-2b8412f9fd57</webElementGuid>
+      <webElementGuid>3a26bf97-11f0-4c30-b409-d40018f8055e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Approve report'])[2]/preceding::span[2]</value>
-      <webElementGuid>eedf5c5a-9320-4a2b-9f44-737c3df3af6b</webElementGuid>
+      <webElementGuid>8b0682ad-8b0a-4193-b802-fa3108261c77</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Approve the report without supporting images?']/parent::*</value>
-      <webElementGuid>f3c28c59-4ac4-4397-b751-8562ad7c8c39</webElementGuid>
+      <webElementGuid>00b01d29-f5c6-4cd4-9047-06a37b3a0b13</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/span</value>
-      <webElementGuid>689ee24c-64a7-49b2-b7bb-5faf6ab9307d</webElementGuid>
+      <webElementGuid>b23a975e-64a8-4e80-b0b5-423066092452</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Approve the report without supporting images?' or . = 'Approve the report without supporting images?')]</value>
-      <webElementGuid>51506288-6ff0-4749-9df1-d7245f443a0f</webElementGuid>
+      <webElementGuid>00505d5f-0bd9-4277-987b-ce4ba2e04a5f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

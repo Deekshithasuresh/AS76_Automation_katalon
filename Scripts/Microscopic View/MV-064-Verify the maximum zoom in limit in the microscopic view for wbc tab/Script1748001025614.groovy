@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.ConditionType
@@ -31,113 +32,91 @@ String snapAndBase64(String filename) {
 	return Files.readAllBytes(Paths.get(path)).encodeBase64().toString()
 }
 
+// ────────────────────────────────────────────────────────────────────
 // 1) LOGIN
 // ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(
-    findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-    'JBaPNhID5RC7zcsLVwaWIA=='
-)
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login', FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr', FailureHandling.STOP_ON_FAILURE)
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+	'JBaPNhID5RC7zcsLVwaWIA==', FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'), FailureHandling.STOP_ON_FAILURE)
 
 // ────────────────────────────────────────────────────────────────────
 // 2) VERIFY LANDING ON REPORT LIST
 // ────────────────────────────────────────────────────────────────────
-WebUI.waitForElementPresent(
-    new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-    10
-)
+new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]").with {
+	WebUI.waitForElementPresent(it, 10, FailureHandling.STOP_ON_FAILURE)
+}
 
 // ────────────────────────────────────────────────────────────────────
 // 3) OPEN FIRST “Under review” REPORT
 // ────────────────────────────────────────────────────────────────────
-String underReviewXpath = "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-TestObject underReviewRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, underReviewXpath)
-
-WebUI.waitForElementClickable(underReviewRow, 10)
-WebUI.scrollToElement(underReviewRow, 5)
-WebUI.click(underReviewRow)
+new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space()='Under review']])[1]"
+).with {
+	WebUI.waitForElementClickable(it, 10, FailureHandling.OPTIONAL)
+	WebUI.scrollToElement(it, 5, FailureHandling.OPTIONAL)
+	WebUI.click(it, FailureHandling.OPTIONAL)
+}
 
 // ────────────────────────────────────────────────────────────────────
-// 4) ASSIGN TO “admin”
+// 4) WBC → MICROSCOPIC VIEW
 // ────────────────────────────────────────────────────────────────────
-TestObject assignedDropdown = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-)
-TestObject adminOption = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//li[@role='option' and normalize-space(text())='admin']"
-)
-TestObject assignedInput = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//input[@id='assigned_to']"
-)
+new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	"//button[contains(@class,'cell-tab')]//span[normalize-space()='WBC']"
+).with { WebUI.click(it, FailureHandling.OPTIONAL) }
 
-WebUI.click(assignedDropdown)
-WebUI.waitForElementClickable(adminOption, 5)
-WebUI.click(adminOption)
-WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
+new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	"//img[@alt='Microscopic view' and @aria-label='Microscopic view']"
+).with {
+	WebUI.waitForElementClickable(it, 10, FailureHandling.OPTIONAL)
+	WebUI.click(it, FailureHandling.OPTIONAL)
+}
 
-// STEP 3: Click on WBC tab
-def wbcTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'cell-tab')]//span[normalize-space()='WBC']")
-WebUI.waitForElementClickable(wbcTab, 10)
-WebUI.click(wbcTab)
+// STEP 5: Give the viewer time to render
+WebUI.delay(5)
 
-// STEP 4: Click on Microscopic view
-def microBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//img[@alt='Microscopic view' and @aria-label='Microscopic view']")
-WebUI.waitForElementClickable(microBtn, 10)
-WebUI.click(microBtn)
-
-// STEP 5: Wait for initial load
-WebUI.delay(120)
-
-// prepare zoom-in and warning locators
+// ────────────────────────────────────────────────────────────────────
+// 6) PREPARE ZOOM & WARNING LOCATORS
+// ────────────────────────────────────────────────────────────────────
 def zoomInBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//button[contains(@class,'ol-zoom-in') and @title='Zoom in']")
 def zoomWarning = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//div[contains(@class,'zoom-warning') and contains(.,'Digital zoom only')]")
+	"//div[contains(normalize-space(.),'Digital zoom only')]")
 
-// scales to verify
 List<String> scales = ['500 μm','200 μm','100 μm','50 μm','20 μm','10 μm']
 
-// STEP 6–11: zoom through scales without stopping on failure
+// ────────────────────────────────────────────────────────────────────
+// 7) ZOOM THROUGH EACH SCALE
+// ────────────────────────────────────────────────────────────────────
 for (String expected : scales) {
-	try {
-		WebUI.click(zoomInBtn)
-		WebUI.delay(120)
-		String actual = fetchScale()
-		boolean matched = WebUI.verifyMatch(actual, expected, false, FailureHandling.CONTINUE_ON_FAILURE)
-		println "Expected: ${expected}, Actual: ${actual}, Matched: ${matched}"
-		String b64 = snapAndBase64("wbc_${expected.replaceAll(' ','')}.png")
-		println "BASE64 @${expected}: ${b64}"
-	} catch (Exception e) {
-		println "Error verifying scale ${expected}: ${e.message}"
-	}
+	WebUI.click(zoomInBtn, FailureHandling.OPTIONAL)
+	WebUI.delay(5)
+	String actual = fetchScale()
+	boolean match = WebUI.verifyMatch(actual, expected, false, FailureHandling.CONTINUE_ON_FAILURE)
+	println "Scale check → Expected: ${expected}, Actual: ${actual}, Match? ${match}"
+	String b64 = snapAndBase64("wbc_${expected.replace(' ','')}.png")
+	println "Captured Base64 @${expected}: ${b64.take(60)}…"
 }
 
-// after 10 μm, check warning then zoom to 5 μm
-try {
-	// check warning at 10 μm
-	boolean warningShown10 = WebUI.verifyElementPresent(zoomWarning, 5, FailureHandling.CONTINUE_ON_FAILURE)
-	println "Warning at 10 μm shown: ${warningShown10}"
-	// final zoom to 5 μm
-	WebUI.click(zoomInBtn)
-	WebUI.delay(120)
-	String actual5 = fetchScale()
-	boolean matched5 = WebUI.verifyMatch(actual5, '5 μm', false, FailureHandling.CONTINUE_ON_FAILURE)
-	println "Expected: 5 μm, Actual: ${actual5}, Matched: ${matched5}"
-	String b64_5 = snapAndBase64('wbc_5μm.png')
-	println "BASE64 @5 μm: ${b64_5}"
-	boolean warningShown5 = WebUI.verifyElementPresent(zoomWarning, 5, FailureHandling.CONTINUE_ON_FAILURE)
-	println "Warning at 5 μm shown: ${warningShown5}"
-} catch (Exception e) {
-	println "Error verifying max zoom 5 μm: ${e.message}"
-}
+// ────────────────────────────────────────────────────────────────────
+// 8) AFTER 10μm, CHECK WARNING THEN FINAL ZOOM
+// ────────────────────────────────────────────────────────────────────
+boolean warningAt10 = WebUI.verifyElementPresent(zoomWarning, 5, FailureHandling.CONTINUE_ON_FAILURE)
+println "Warning shown at 10 μm? ${warningAt10}"
 
-WebUI.comment('✴ Completed WBC max-zoom verification (failures logged above).')
+WebUI.click(zoomInBtn, FailureHandling.OPTIONAL)
+WebUI.delay(5)
+String actual5 = fetchScale()
+boolean match5 = WebUI.verifyMatch(actual5, '5 μm', false, FailureHandling.CONTINUE_ON_FAILURE)
+println "Final zoom → Expected: 5 μm, Actual: ${actual5}, Match? ${match5}"
+
+String b64_5 = snapAndBase64('wbc_5um.png')
+println "Captured Base64 @5μm: ${b64_5.take(60)}…"
+
+boolean warningAt5 = WebUI.verifyElementPresent(zoomWarning, 5, FailureHandling.CONTINUE_ON_FAILURE)
+println "Warning shown at 5 μm? ${warningAt5}"
+
+

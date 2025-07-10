@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div/div[3]/div/button</value>
+         <value>//button[(text() = 'Reject report' or . = 'Reject report')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>9784115f-3c1a-4ccb-b0fc-eab87bcf7fd0</webElementGuid>
+      <webElementGuid>790d5316-a40d-4b07-98cc-a8e44ed94512</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>appBar_normal-button__KjuH2</value>
-      <webElementGuid>2bbdf3f7-322a-4976-a9a8-eed61fd36d39</webElementGuid>
+      <webElementGuid>ccedb846-fedc-4f79-8093-50ae94263e6f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Reject report</value>
-      <webElementGuid>b8c00745-8ee9-4845-944f-2ee81ea59f7a</webElementGuid>
+      <webElementGuid>a96fe5fc-425d-42d4-b6aa-cd7d7a2adfa5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;appBar_container__0NckD&quot;]/div[@class=&quot;appBar_container__right__PwWvg&quot;]/div[@class=&quot;appBar_buttons__WZYGF&quot;]/button[@class=&quot;appBar_normal-button__KjuH2&quot;]</value>
-      <webElementGuid>924cfc9f-0c2e-45cf-8abb-1b3c21fcbf4a</webElementGuid>
+      <webElementGuid>65d5cbba-bce5-40a0-87a2-50a722093783</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/div[3]/div/button</value>
-      <webElementGuid>50daf1f4-9161-4ddb-aa60-8fb21232d492</webElementGuid>
+      <webElementGuid>8e6cce9b-ef3b-4861-8d9d-534b987ed4c1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[1]/following::button[1]</value>
-      <webElementGuid>f3600e0e-9175-4068-8b01-5ddaca4fb471</webElementGuid>
+      <webElementGuid>9947ff82-93c1-49f1-b0f0-e679f66dd9ba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='SIG013'])[1]/following::button[2]</value>
-      <webElementGuid>ac3b2cd9-c8f5-493d-9d72-e4eff263362e</webElementGuid>
+      <webElementGuid>a94cb787-4bdd-489b-aed8-f043eec8a74e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/preceding::button[3]</value>
-      <webElementGuid>3a27b1a8-cc5c-4d46-a59a-921dd78fbf8b</webElementGuid>
+      <webElementGuid>786cc8d6-2e08-4d39-9023-64bfed739ef9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Reject report']/parent::*</value>
-      <webElementGuid>4836716b-96b4-4a78-8b22-1795163179b5</webElementGuid>
+      <webElementGuid>d89db08c-a1bd-4b0a-8cd2-adb2b351a9b1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/button</value>
-      <webElementGuid>2ec5c688-1505-402d-8a78-f8becca41ac9</webElementGuid>
+      <webElementGuid>378dac3e-5c6c-4479-ae66-7c48ec645ad6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[(text() = 'Reject report' or . = 'Reject report')]</value>
-      <webElementGuid>ce3e284b-e632-454d-87ee-984d72a876e2</webElementGuid>
+      <webElementGuid>f4c9a8e7-b52f-4272-8dd2-fd68019a37f1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

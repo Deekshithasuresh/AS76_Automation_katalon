@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[5]</value>
+         <value>//button[@type = 'button' and @title = 'Zoom in' and (text() = '+' or . = '+')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>e69809dc-7079-46ed-bf3c-7383c818287f</webElementGuid>
+      <webElementGuid>daa15c9f-43f7-4f33-a8d0-671c40a22ce7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>ol-zoom-in</value>
-      <webElementGuid>52ca7e1f-d0af-4bc0-b69f-fcb84735a03f</webElementGuid>
+      <webElementGuid>f783989b-f8eb-4b20-a324-1151b56f86d2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>08172206-1397-4f8f-a76a-dd80d8c6e57a</webElementGuid>
+      <webElementGuid>86b71ec8-44e5-458d-b4cb-e6e11fab01bc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Zoom in</value>
-      <webElementGuid>666a3688-3838-4e1b-9944-dff2651714ef</webElementGuid>
+      <webElementGuid>e2f00056-74c3-4108-8d53-6f41820cc299</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>+</value>
-      <webElementGuid>34b001cb-ac58-4ea7-aac7-aef7fd2dc98e</webElementGuid>
+      <webElementGuid>2c5015ec-8420-41dc-a908-3838fc696a6a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pbs-volumeViewport&quot;)/div[@class=&quot;ol-viewport&quot;]/div[@class=&quot;ol-overlaycontainer-stopevent&quot;]/div[@class=&quot;ol-zoom ol-unselectable ol-control&quot;]/button[@class=&quot;ol-zoom-in&quot;]</value>
-      <webElementGuid>f84401e0-ba3b-4031-ae3d-860cdfe744fd</webElementGuid>
+      <webElementGuid>a65bb892-d081-4f61-96d0-4c4d87d91af7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[5]</value>
-      <webElementGuid>0434c57d-58f7-4e1c-a491-98d907f5c018</webElementGuid>
+      <webElementGuid>c2ec0521-85e6-424c-9301-bf1ef2bffe22</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pbs-volumeViewport']/div/div[3]/div[3]/button</value>
-      <webElementGuid>6262a150-114f-43cf-8898-0255fdc41dc3</webElementGuid>
+      <webElementGuid>d782cd16-6642-41e2-9d6d-9373db913ed7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::button[1]</value>
-      <webElementGuid>31b66eb2-99f4-4b11-8d28-c60f62cdf96b</webElementGuid>
+      <webElementGuid>2aabb8c0-65f0-440d-be2c-6e0b57cb4dee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Number of WBCs counted is &lt;200. Differential count might not be accurate'])[1]/following::button[1]</value>
-      <webElementGuid>3871bc79-49e9-4b89-a46e-1d35a5142276</webElementGuid>
+      <webElementGuid>2db834dc-a7d6-463e-ab92-ce70094cf6be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='–'])[1]/preceding::button[1]</value>
-      <webElementGuid>eec3d642-5420-4f5c-9226-3cf2695f53e9</webElementGuid>
+      <webElementGuid>33e91758-5139-4f72-b47b-d9998a6525bf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='›'])[1]/preceding::button[3]</value>
-      <webElementGuid>bfa703c6-3e6a-4836-9665-bc47230a87a3</webElementGuid>
+      <webElementGuid>f7505d9d-0e96-4aba-9665-cf9c6b55222f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='+']/parent::*</value>
-      <webElementGuid>e1702086-4128-4a08-a775-7eda4fa68a07</webElementGuid>
+      <webElementGuid>fbdd618f-6ce7-46d7-8586-5521546cb390</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +133,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div[3]/button</value>
-      <webElementGuid>2cd7d2da-c659-41cd-82e2-e4c281f155b9</webElementGuid>
+      <webElementGuid>a303c1e3-bb4f-42cb-a7ce-3b927628e0cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,6 +141,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and @title = 'Zoom in' and (text() = '+' or . = '+')]</value>
-      <webElementGuid>61b0284c-f9d3-4044-b484-f78d27c4db58</webElementGuid>
+      <webElementGuid>8e29ad65-68a5-4f6c-8ee5-a44f51ced059</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

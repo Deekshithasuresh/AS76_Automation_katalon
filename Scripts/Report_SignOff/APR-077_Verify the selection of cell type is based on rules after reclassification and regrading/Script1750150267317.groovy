@@ -220,7 +220,7 @@ plateletRules.each { cellName, threshold ->
 			String cellname = cellname_ele.getText()
 			//println(cellname)
 			List<WebElement> grades= row.findElements(By.xpath(".//input[@type='radio']"))
-			if(cellname.equals("Acanthocytes*") || cellname.equals("Sickle Cells*") ||cellname.equals("Stomatocytes*") ||cellname.equals("Pappenheimer Bodies*") ||cellname.equals("Howell-Jolly Bodies*") ||cellname.equals("Basophilic Stippling*")) {
+			if(cellname.equals("Acanthocytes*") || cellname.equals("Sickle Cells*")  ||cellname.equals("Pappenheimer Bodies*") ||cellname.equals("Howell-Jolly Bodies*") ||cellname.equals("Basophilic Stippling*")) {
 				grades[1].click()
 				WebUI.delay(2)
 				continue;

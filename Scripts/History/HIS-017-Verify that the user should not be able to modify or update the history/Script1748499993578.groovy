@@ -1,106 +1,110 @@
-import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.testobject.TestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.model.FailureHandling
-import org.openqa.selenium.chrome.ChromeOptions
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebDriver
-import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-/ ────────────────────────────────────────────────────────────────────
+// ────────────────────────────────────────────────────────────────────
 // 1) LOGIN
 // ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+
 WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(
-    findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-    'JBaPNhID5RC7zcsLVwaWIA=='
-)
+WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
+    'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-// ────────────────────────────────────────────────────────────────────
-// 2) VERIFY LANDING ON REPORT LIST
-// ────────────────────────────────────────────────────────────────────
+// wait for the main PBS list to appear
 WebUI.waitForElementPresent(
     new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
     10
 )
 
-// ────────────────────────────────────────────────────────────────────
-// 3) OPEN FIRST “Under review” REPORT
-// ────────────────────────────────────────────────────────────────────
-String underReviewXpath = "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-TestObject underReviewRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, underReviewXpath)
+// grab Selenium driver
+WebDriver driver = DriverFactory.getWebDriver()
 
+// ────────────────────────────────────────────────────────────────────
+// 2) OPEN FIRST “Under review” REPORT
+// ────────────────────────────────────────────────────────────────────
+TestObject underReviewRow = new TestObject().addProperty(
+    'xpath', ConditionType.EQUALS,
+    "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+)
 WebUI.waitForElementClickable(underReviewRow, 10)
 WebUI.scrollToElement(underReviewRow, 5)
 WebUI.click(underReviewRow)
 
 // ────────────────────────────────────────────────────────────────────
-// 4) ASSIGN TO “admin”
+// 3) ENSURE IT’S ASSIGNED TO ADMIN
 // ────────────────────────────────────────────────────────────────────
-TestObject assignedDropdown = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-)
-TestObject adminOption = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//li[@role='option' and normalize-space(text())='admin']"
-)
 TestObject assignedInput = new TestObject().addProperty(
     'xpath', ConditionType.EQUALS,
     "//input[@id='assigned_to']"
 )
+WebUI.waitForElementVisible(assignedInput, 5)
+String assignee = WebUI.getAttribute(assignedInput, 'value').trim()
+if (!assignee.equalsIgnoreCase('admin')) {
+    TestObject dropdown = new TestObject().addProperty(
+        'xpath', ConditionType.EQUALS,
+        "//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
+    )
+    TestObject adminOpt = new TestObject().addProperty(
+        'xpath', ConditionType.EQUALS,
+        "//ul[contains(@class,'MuiAutocomplete-listbox')]//li[normalize-space(text())='admin']"
+    )
+    TestObject reassignBtn = new TestObject().addProperty(
+        'xpath', ConditionType.EQUALS,
+        "//button[normalize-space()='Re-assign']"
+    )
+    WebUI.click(dropdown)
+    WebUI.click(adminOpt)
+    WebUI.click(reassignBtn)
+    WebUI.delay(2)
+}
 
-WebUI.click(assignedDropdown)
-WebUI.waitForElementClickable(adminOption, 5)
-WebUI.click(adminOption)
-WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
-// 1) Click the kebab (three-dots) icon
-TestObject kebabBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[.//img[contains(@src,'kebab_menu.svg')]]"
+// ────────────────────────────────────────────────────────────────────
+// 4) OPEN KEBAB MENU & SELECT “History”
+// ────────────────────────────────────────────────────────────────────
+TestObject kebabBtn = new TestObject().addProperty(
+    'xpath', ConditionType.EQUALS,
+    "//button[.//img[contains(@src,'kebab_menu.svg')]]"
 )
-WebUI.waitForElementVisible(kebabBtn, 10)
+WebUI.waitForElementClickable(kebabBtn, 5)
 WebUI.click(kebabBtn)
 
-// 2) Give it a moment to render the menu
-WebUI.delay(1)
-
-// 3) Click “History” by looking for the role=menuitem
-TestObject historyOption = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//ul[@role='menu']//li[@role='menuitem']//span[normalize-space()='History']"
+// **Fixed locator** for the History item in the popover:
+TestObject historyItem = new TestObject().addProperty(
+    'xpath', ConditionType.EQUALS,
+    "//div[contains(@class,'MuiPopover-paper')]//span[normalize-space(text())='History']/ancestor::li"
 )
-WebUI.waitForElementClickable(historyOption, 10)
-WebUI.click(historyOption)
+WebUI.waitForElementClickable(historyItem, 5)
+WebUI.click(historyItem)
 
+// ────────────────────────────────────────────────────────────────────
+// 5) VERIFY NO EDITABLE FIELDS IN HISTORY PANEL
+// ────────────────────────────────────────────────────────────────────
 
-// 3) WAIT FOR HISTORY ENTRIES TO APPEAR
-TestObject firstEntry = new TestObject().addProperty(
-	'css', ConditionType.EQUALS,
-	"li.css-1ecsk3j"
+// wait for at least one history entry
+WebUI.waitForElementVisible(
+    new TestObject().addProperty('css', ConditionType.EQUALS, "li.css-1ecsk3j"),
+    10
 )
-WebUI.waitForElementVisible(firstEntry, 10)
 
-// 4) ASSERT NO EDITABLE FIELDS IN HISTORY PANEL
-WebDriver driver = DriverFactory.getWebDriver()
-
-// look for any <textarea> inside the history container
-List<WebElement> textareas = driver.findElements(
-	By.cssSelector("div.review-selected-category textarea")
+// assert there are no <textarea> or <input> inside the history container
+List<WebElement> textAreas = driver.findElements(
+    By.cssSelector("div.review-selected-category textarea")
 )
-assert textareas.isEmpty(): "❌ Found unexpected <textarea> in history!"
+assert textAreas.isEmpty() : "❌ Unexpected <textarea> found in the history panel!"
 
-// look for any <input> inside the history container
 List<WebElement> inputs = driver.findElements(
-	By.cssSelector("div.review-selected-category input")
+    By.cssSelector("div.review-selected-category input")
 )
-assert inputs.isEmpty(): "❌ Found unexpected <input> in history!"
+assert inputs.isEmpty() : "❌ Unexpected <input> found in the history panel!"
 
-WebUI.comment("✅ History entries are read-only — no editable fields found.")
-
+WebUI.comment("✅ PASS: History panel is read-only—no editable controls present.")

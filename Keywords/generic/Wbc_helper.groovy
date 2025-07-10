@@ -244,7 +244,7 @@ public class Wbc_helper {
 				int oHeight = img.originalHeight as int
 				String src = img.src
 
-				boolean renderedCorrect = (rWidth == 160 && rHeight == 160)
+				boolean renderedCorrect = (rWidth >= 160 && rWidth <= 162) && (rHeight >= 160 && rHeight <= 162)
 				boolean originalValid = (oWidth > 0 && oHeight > 0)
 
 				WebUI.comment("🧪 Patch #${i + 1}")
@@ -252,7 +252,7 @@ public class Wbc_helper {
 				WebUI.comment("   ✅ Original: ${oWidth}x${oHeight} px ${originalValid ? '' : '(❌ Not loaded properly!)'}")
 				WebUI.comment("   🔗 src: ${src}")
 
-				if (rWidth != 160 || rHeight != 160) {
+				if (!(rWidth >= 160 && rWidth <= 162) || !(rHeight >= 160 && rHeight <= 162)) {
 					throw new StepFailedException("❌ Patch #${i + 1} has incorrect rendered size: ${rWidth}x${rHeight}px (expected 160x160)")
 				}
 

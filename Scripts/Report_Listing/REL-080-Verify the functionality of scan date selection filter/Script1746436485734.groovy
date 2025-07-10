@@ -15,7 +15,7 @@ WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/filter_but
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/img_1'), 0)
 
-Boolean result=CustomKeywords.'generic.FilterFunctions.applyAndVerifyDateFilter'()
+Boolean result=CustomKeywords.'generic.FilterFunctions.applyAndVerifyDateFilter'("20-06-2025","21-06-2025")
 
 assertTrue(result)
 

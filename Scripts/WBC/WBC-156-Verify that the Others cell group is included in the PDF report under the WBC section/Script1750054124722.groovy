@@ -66,17 +66,14 @@ WebUI.verifyElementText(findTestObject('Object Repository/WBC_m/Page_PBS/span_Do
 
 WebUI.click(findTestObject('Object Repository/WBC_m/Page_PBS/span_Download PDF report'))
 
-// Step 1: Get Downloads folder path
 String downloadsPath = System.getProperty('user.home') + '/Downloads'
-
-// Step 2: Find the latest 'pdfReport*.pdf'
 File latestPdf = PdfReader.getLatestPdfReport(downloadsPath)
+println("📄 Latest PDF path: ${latestPdf.absolutePath}")
 
-println("Latest pdfReport file: ${latestPdf.absolutePath}")
-
-// Step 3: Read text from PDF
 String pdfText = PdfReader.readText(latestPdf.absolutePath)
-println("PDF Content:\n$pdfText")
+println("📃 PDF Text Preview:\n" + pdfText.take(5000)) 
+
+
 
 uiWbcData.each { key, value ->
 	String expectedEntry = "${key} ${value}".replaceAll("\\s+", " ").trim()

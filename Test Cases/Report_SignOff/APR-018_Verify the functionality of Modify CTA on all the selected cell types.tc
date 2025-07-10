@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-018_Verify the functionality of Modify CTA on all the selected cell types</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1584c140-bb20-41ca-b037-e0605c9bff65</testCaseGuid>
+</TestCaseEntity>

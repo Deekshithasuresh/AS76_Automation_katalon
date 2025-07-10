@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div/div[3]/div/button[2]/span</value>
+         <value>//button[.//span[text()='Approve report']]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>aa79962c-48fd-460b-9e81-2ef692271932</webElementGuid>
+      <webElementGuid>15cc0533-5fcd-467e-919a-731e30894381</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>css-1igme87</value>
-      <webElementGuid>fe3a84f7-89a4-46d7-bf28-36328f13d163</webElementGuid>
+      <webElementGuid>7ac55f69-1bc8-4280-b921-112a1bb55e6d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>text</name>
       <type>Main</type>
       <value> Approve report</value>
-      <webElementGuid>cd39a2b9-7504-473d-949b-0e9d8d8338a2</webElementGuid>
+      <webElementGuid>9df646bb-1c11-4b05-bb9d-a1cb28aae809</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;appBar_container__0NckD&quot;]/div[@class=&quot;appBar_container__right__PwWvg&quot;]/div[@class=&quot;appBar_buttons__WZYGF&quot;]/button[@class=&quot;MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-7d48v8&quot;]/span[@class=&quot;css-1igme87&quot;]</value>
-      <webElementGuid>dae590fe-90e2-4dbe-9712-62da0c0fdc26</webElementGuid>
+      <webElementGuid>298b93eb-995c-4437-98bf-d8460011cc57</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/div[3]/div/button[2]/span</value>
-      <webElementGuid>808a7cc5-d4d9-4cee-9314-c0bffdad1ab8</webElementGuid>
+      <webElementGuid>f8fb0509-fe84-444c-8df6-223b438937a3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reject report'])[1]/following::span[1]</value>
-      <webElementGuid>a335affc-3d72-43f9-87a7-24c97cbe488c</webElementGuid>
+      <webElementGuid>ea87962a-53d6-4fda-8b0a-c4f1356c8f9b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[1]/following::span[1]</value>
-      <webElementGuid>2d59e902-d95f-4262-997e-2045a356ae5b</webElementGuid>
+      <webElementGuid>3ea8ac23-e371-41ed-894b-321a0d90aa92</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/preceding::span[1]</value>
-      <webElementGuid>2df1cd35-932d-4bc4-9593-63efe8651c5e</webElementGuid>
+      <webElementGuid>45fa9001-ef40-4f8a-9389-5c3a357ebba3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='WBC'])[1]/preceding::span[1]</value>
-      <webElementGuid>8a9d8891-b344-4409-8aa3-93b0b465ab2b</webElementGuid>
+      <webElementGuid>89822512-23b4-42b4-bd4d-dbb4b69d20c6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Approve report']/parent::*</value>
-      <webElementGuid>c1c3ac0f-fe1f-4b26-a653-2e5ca6218927</webElementGuid>
+      <webElementGuid>952aac20-e603-4626-a07c-090c0a97868d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[2]/span</value>
-      <webElementGuid>0c928e3a-5c06-4b07-b32a-b53b8c7d8c91</webElementGuid>
+      <webElementGuid>d5f9687e-3541-4da0-b7a8-7dfbd5f9eec4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = ' Approve report' or . = ' Approve report')]</value>
-      <webElementGuid>57e91dd9-8c08-41d7-8074-5126a74f73e5</webElementGuid>
+      <webElementGuid>fd4b4dd2-9ab8-4ebc-93ed-48bc588bb8d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/header/div/div[2]/button/span</value>
-      <webElementGuid>5cdc5915-14fe-4c3d-a3ce-a687b1ff9f22</webElementGuid>
+      <webElementGuid>be0a9baf-f56d-41ec-8f18-9450fdce20b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +133,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='No changes can be made once report is approved!'])[1]/following::span[1]</value>
-      <webElementGuid>a99cb9d7-dd4a-4bde-83b5-fd5865101f65</webElementGuid>
+      <webElementGuid>faea6e2b-e46a-4bc1-9734-7a9733fdefc2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,7 +141,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Back to report'])[1]/following::span[2]</value>
-      <webElementGuid>6f28da67-ffc7-4366-9e78-563af7a088fb</webElementGuid>
+      <webElementGuid>89362134-35b7-4043-97fc-c367db13e3d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -149,7 +149,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Add supporting images'])[1]/preceding::span[1]</value>
-      <webElementGuid>138738ed-448b-4f9b-afd1-719cd4217905</webElementGuid>
+      <webElementGuid>9ffbd3d0-d4e0-4de9-bf4e-ec151261f989</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -157,7 +157,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='PS Impression'])[1]/preceding::span[3]</value>
-      <webElementGuid>e8cd864e-9c4d-4f0d-afaa-74b2b9ef265f</webElementGuid>
+      <webElementGuid>807eb3a2-57cc-4932-93a3-ca8ba43b5e1b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -165,7 +165,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/button/span</value>
-      <webElementGuid>becec0d2-ed08-43b9-9e8f-4db6501d9d04</webElementGuid>
+      <webElementGuid>bfa47709-ee90-436e-a43b-7b71d331ad91</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -173,7 +173,7 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Approve report' or . = 'Approve report')]</value>
-      <webElementGuid>23d2f266-6526-48af-984c-f0a49390bc0f</webElementGuid>
+      <webElementGuid>defdd2ef-7d12-41fb-9dc9-00ca85d8168c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -181,6 +181,6 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::span[4]</value>
-      <webElementGuid>40c03eef-8739-4a91-a8c1-2fae78e29b0a</webElementGuid>
+      <webElementGuid>454b4f9a-f783-4ca6-baf4-bb956afc2d06</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

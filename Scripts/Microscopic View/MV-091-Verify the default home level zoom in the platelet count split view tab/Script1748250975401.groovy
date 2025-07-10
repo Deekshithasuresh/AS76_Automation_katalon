@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.ConditionType
@@ -20,83 +21,41 @@ String fetchScale() {
 	return WebUI.executeJavaScript(js, null) as String
 }
 
-// 1) LOGIN
-// ────────────────────────────────────────────────────────────────────
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+
+
+// 4) SWITCH TO PLATELETS TAB
+TestObject plateletsTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	"//button[contains(@class,'cell-tab')]//span[normalize-space()='Platelets']"
 )
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+WebUI.waitForElementClickable(plateletsTab, 10, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(plateletsTab)
 
-// ────────────────────────────────────────────────────────────────────
-// 2) VERIFY LANDING ON REPORT LIST
-// ────────────────────────────────────────────────────────────────────
-WebUI.waitForElementPresent(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-	10
-)
-
-// ────────────────────────────────────────────────────────────────────
-// 3) OPEN FIRST “Under review” REPORT
-// ────────────────────────────────────────────────────────────────────
-String underReviewXpath = "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-TestObject underReviewRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, underReviewXpath)
-
-WebUI.waitForElementClickable(underReviewRow, 10)
-WebUI.scrollToElement(underReviewRow, 5)
-WebUI.click(underReviewRow)
-
-// ────────────────────────────────────────────────────────────────────
-// 4) ASSIGN TO “admin”
-// ────────────────────────────────────────────────────────────────────
-TestObject assignedDropdown = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-)
-TestObject adminOption = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//li[@role='option' and normalize-space(text())='admin']"
-)
-TestObject assignedInput = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']"
-)
-
-WebUI.click(assignedDropdown)
-WebUI.waitForElementClickable(adminOption, 5)
-WebUI.click(adminOption)
-WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
-
-// STEP 3: Click on the Platelets tab
-TestObject pltTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'cell-tab')]//span[normalize-space()='Platelets']")
-WebUI.waitForElementClickable(pltTab, 10)
-WebUI.click(pltTab)
-
-// STEP 4: Verify “Count” sub-tab is selected by default
+// 5) VERIFY “Count” SUB-TAB IS ACTIVE
 TestObject countTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[@id='plateleteMorphologyTab' and contains(@class,'selected') and normalize-space()='Count']"
+	"//button[@id='plateleteCountTab' and @aria-selected='true']"
 )
-WebUI.verifyElementPresent(countTab, 10)
-WebUI.comment("✔ ‘Count’ sub-tab is selected by default")
+WebUI.waitForElementVisible(countTab, 10, FailureHandling.STOP_ON_FAILURE)
+WebUI.comment("✔ ‘Count’ sub-tab is active by default.")
 
-// STEP 5: Switch to Split view & wait 120s
+// 6) ACTIVATE SPLIT VIEW & WAIT
 TestObject splitBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//img[@alt='Split view' and @aria-label='Split view']"
 )
-WebUI.waitForElementClickable(splitBtn, 10)
+WebUI.waitForElementClickable(splitBtn, 10, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(splitBtn)
-WebUI.delay(120)
+WebUI.delay(5)   
+// 7) VERIFY DEFAULT SCALE “50 μm” & SCREENSHOT
+String actual = fetchScale()
+WebUI.verifyMatch(actual, '50 μm', false, FailureHandling.STOP_ON_FAILURE)
+WebUI.comment("✔ Platelets split-view default scale = ${actual}")
 
-// STEP 6: Verify default scale “50 μm” and take screenshot
-String scale = fetchScale()
-WebUI.verifyMatch(scale, '50 μm', false, FailureHandling.STOP_ON_FAILURE)
-WebUI.comment("✔ Platelets split-view default scale = ${scale}")
+String shot = "${RunConfiguration.getReportFolder()}/platelets_split_default_scale.png"
+WebUI.takeScreenshot(shot)
+println "Saved screenshot: ${shot}"
 
-String screenshotPath = "${RunConfiguration.getReportFolder()}/platelets_split_default_scale.png"
-WebUI.takeScreenshot(screenshotPath)
-println "Screenshot saved: ${screenshotPath}"
+// 8) DONE
+WebUI.comment("✅ MV-091 passed: default home-level zoom verified.")
+WebUI.closeBrowser()

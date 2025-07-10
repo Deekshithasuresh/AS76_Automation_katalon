@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-052_Verify the functionality of rejecting the report from the confirmation pop-up</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>36f43731-c9cc-4b10-a3f5-da645ded4bc2</testCaseGuid>
+</TestCaseEntity>

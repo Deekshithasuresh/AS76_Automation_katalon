@@ -4,7 +4,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.model.FailureHandling
+import org.openqa.selenium.Keys
 
+// ────────────────────────────────────────────────────────────────────
 // 1) LOGIN
 // ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
@@ -20,115 +22,91 @@ WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 // ────────────────────────────────────────────────────────────────────
 // 2) VERIFY LANDING ON REPORT LIST
 // ────────────────────────────────────────────────────────────────────
-WebUI.waitForElementPresent(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-	10
-)
+new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	"//span[contains(text(),'PBS')]"
+).with {
+	WebUI.waitForElementPresent(it, 10, FailureHandling.STOP_ON_FAILURE)
+}
 
 // ────────────────────────────────────────────────────────────────────
 // 3) OPEN FIRST “Under review” REPORT
 // ────────────────────────────────────────────────────────────────────
-String underReviewXpath = "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-TestObject underReviewRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, underReviewXpath)
-
-WebUI.waitForElementClickable(underReviewRow, 10)
-WebUI.scrollToElement(underReviewRow, 5)
-WebUI.click(underReviewRow)
+new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+).with {
+	WebUI.waitForElementClickable(it, 10, FailureHandling.STOP_ON_FAILURE)
+	WebUI.scrollToElement(it, 5, FailureHandling.OPTIONAL)
+	WebUI.click(it, FailureHandling.STOP_ON_FAILURE)
+}
 
 // ────────────────────────────────────────────────────────────────────
-// 4) ASSIGN TO “admin”
+// 4) CLICK RBC TAB
 // ────────────────────────────────────────────────────────────────────
-TestObject assignedDropdown = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
+TestObject rbcTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	"//button[contains(@class,'cell-buttons cell-tab')]//span[normalize-space()='RBC']"
 )
-TestObject adminOption = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//li[@role='option' and normalize-space(text())='admin']"
-)
-TestObject assignedInput = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']"
-)
+WebUI.waitForElementClickable(rbcTab, 10, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(rbcTab, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(assignedDropdown)
-WebUI.waitForElementClickable(adminOption, 5)
-WebUI.click(adminOption)
-WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
-
-// wait for the Approve button
-WebUI.delay(2)
-WebUI.waitForElementVisible(approveBtn, 10)
-WebUI.comment("✅ 'Approve report' is now visible.")
-
-// ---------- STEP 6: Click on the RBC tab ----------
-TestObject rbcTab = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'cell-buttons cell-tab')]/span[normalize-space()='RBC']"
-)
-WebUI.waitForElementClickable(rbcTab, 10)
-WebUI.click(rbcTab)
-WebUI.comment('✔ RBC tab clicked')
-// ---------- STEP 10: Click on Slide-info icon ----------
-TestObject slideInfoIcon = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
+// ────────────────────────────────────────────────────────────────────
+// 5) OPEN SLIDE-INFO DRAWER
+// ────────────────────────────────────────────────────────────────────
+TestObject slideInfoIcon = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//img[@src='/icons/slide-info.svg' and @alt='info.svg']"
 )
-WebUI.waitForElementClickable(slideInfoIcon, 10)
-WebUI.click(slideInfoIcon)
+WebUI.waitForElementClickable(slideInfoIcon, 5, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(slideInfoIcon, FailureHandling.STOP_ON_FAILURE)
 
-
-// ---------- STEP 11: Wait for the slide-info drawer to appear ----------
-TestObject drawer = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
+// ────────────────────────────────────────────────────────────────────
+// 6) WAIT FOR DRAWER & VERIFY CONTENTS
+// ────────────────────────────────────────────────────────────────────
+TestObject drawer = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//div[contains(@class,'MuiDrawer-paperAnchorLeft')]"
 )
-WebUI.waitForElementVisible(drawer, 10)
+WebUI.waitForElementVisible(drawer, 10, FailureHandling.STOP_ON_FAILURE)
 
+// Slide Id label
+new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	"//span[contains(@class,'slideInfoComponent_drawer__header-title') and normalize-space(.)='Slide Id:']"
+).with { WebUI.verifyElementPresent(it, 5, FailureHandling.CONTINUE_ON_FAILURE) }
 
-// ---------- STEP 12: Verify required elements in the slide-info popup ----------
+// Status “Under review”
+new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	"//div[contains(@class,'slideInfoComponent_status')]//span[normalize-space(text())='Under review']"
+).with { WebUI.verifyElementPresent(it, 5, FailureHandling.CONTINUE_ON_FAILURE) }
 
-// 12.1 Slide Id:
-TestObject slideIdLabel = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[normalize-space()='Slide Id:' or normalize-space()='Slide Id']"
-)
-WebUI.verifyElementPresent(slideIdLabel, 5)
-
-// 12.2 Under review status + icon
-TestObject underReviewStatus = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//div[contains(@class,'slideInfoComponent_status__under-review')]" +
-	"//span[normalize-space()='Under review']"
-)
-WebUI.verifyElementPresent(underReviewStatus, 5)
-
-// 12.3 Slide image section
-TestObject slideImage = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
+// “Slide image” label
+new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//span[normalize-space()='Slide image']"
-)
-WebUI.verifyElementPresent(slideImage, 5)
+).with { WebUI.verifyElementPresent(it, 5, FailureHandling.CONTINUE_ON_FAILURE) }
 
-// 12.4 Scanned by label
-TestObject scannedBy = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
+// “Scanned by” label
+new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//span[normalize-space()='Scanned by']"
-)
-WebUI.verifyElementPresent(scannedBy, 5)
+).with { WebUI.verifyElementPresent(it, 5, FailureHandling.CONTINUE_ON_FAILURE) }
 
-// 12.5 Scanned on label
-TestObject scannedOn = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
+// “Scanned on” label
+new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//span[normalize-space()='Scanned on']"
-)
-WebUI.verifyElementPresent(scannedOn, 5)
+).with { WebUI.verifyElementPresent(it, 5, FailureHandling.CONTINUE_ON_FAILURE) }
 
-// 12.6 Close button (cancel icon)
-TestObject closeButton = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//button[.//img[@src='/icons/cancel.svg']]"
+// ────────────────────────────────────────────────────────────────────
+// 7) CLOSE THE DRAWER (robustly)
+// ────────────────────────────────────────────────────────────────────
+TestObject closeBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	"//div[contains(@class,'MuiDrawer-paperAnchorLeft')]//button[.//img[contains(@src,'cancel.svg')]]"
 )
-WebUI.verifyElementPresent(closeButton, 5)
+try {
+	WebUI.waitForElementVisible(closeBtn, 5, FailureHandling.OPTIONAL)
+	WebUI.waitForElementClickable(closeBtn, 5, FailureHandling.OPTIONAL)
+	WebUI.click(closeBtn, FailureHandling.OPTIONAL)
+	WebUI.comment("✔ Clicked the drawer’s close button.")
+} catch (Exception e) {
+	WebUI.comment("⚠ Close button not interactable—sending ESC key instead.")
+	WebUI.sendKeys(drawer, Keys.ESCAPE)
+}
 
-WebUI.comment('✔ Slide-info popup elements verified: Slide Id, Under review, Slide image, Scanned by, Scanned on, Close button.')
+// ensure the drawer has disappeared
+WebUI.verifyElementNotPresent(drawer, 5, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.comment("✔ Slide-info drawer closed successfully.")
+

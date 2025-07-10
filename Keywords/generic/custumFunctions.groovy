@@ -104,7 +104,6 @@ public class custumFunctions {
 		}
 	}
 
-
 	@Keyword
 	def assignReviewerToReport(String initialStatus, String reviewerName) {
 		// 1) Locate the initial row by status
@@ -117,46 +116,123 @@ public class custumFunctions {
 				initialRowXpath + "//following-sibling::td[2]//span")
 		WebUI.waitForElementVisible(statusCell0, 5)
 		String before = WebUI.getText(statusCell0).trim()
-		WebUI.comment("Status before assign: '${before}'")
+		WebUI.comment("📌 Status before assign: '${before}'")
+
+
+		// 6) Get Slide ID to re-locate the same row after assignment
+		TestObject slideCell = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+				initialRowXpath + "/td[3]")
+		String slideId = WebUI.getText(slideCell).trim()
 
 		// 3) Open Assigned-To dropdown and select reviewer
 		TestObject dropdown = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 				initialRowXpath + "//following-sibling::td//input[@id='assigned_to']")
 		WebUI.scrollToElement(dropdown, 5)
 		WebUI.click(dropdown)
-		WebUI.delay(1)
+		WebUI.delay(2)
 
-		// 4) Choose reviewer
+		// 4) Choose reviewer from dropdown
 		TestObject reviewerOption = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 				"//ul[@role='listbox']//li[normalize-space() = '${reviewerName}']")
 		WebUI.click(reviewerOption)
 
-		// 5) Handle reassign popup if present
-		TestObject popup = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-				"//h2[contains(text(),'Are you sure you want to re-assign')]")
-		if (WebUI.verifyElementPresent(popup, 3)) {
-			WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
-					"//button[normalize-space()='Re-assign']"))
-			WebUI.waitForElementNotPresent(popup, 10)
+		// 5) Handle reassign popup ONLY if status is "Under Review"
+		if (initialStatus.equals("Under review")) {
+			TestObject popup = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+					"//h2[contains(text(),'Are you sure you want to re-assign')]")
+			if (WebUI.verifyElementPresent(popup, 3, FailureHandling.OPTIONAL)) {
+				TestObject reassignButton = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+						"//button[normalize-space()='Re-assign']")
+				WebUI.click(reassignButton)
+				WebUI.waitForElementNotPresent(popup, 10)
+			} else {
+				WebUI.comment("ℹ️ No reassign popup appeared, continuing...")
+			}
 		}
 
-		// 6) Re-locate the same row by matching its Slide ID
-		TestObject slideCell = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-				initialRowXpath + "/td[3]")
-		String slideId = WebUI.getText(slideCell).trim()
+
+
 
 		String newRowXpath = "//tr[.//td[normalize-space() = '${slideId}']]"
 		TestObject newStatusCell = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 				newRowXpath + "//following-sibling::td[2]//span")
 		WebUI.waitForElementVisible(newStatusCell, 10)
 
-		// 7) Capture the new Status text and verify it changed
+		// 7) Capture the new Status text and validate it correctly
 		String after = WebUI.getText(newStatusCell).trim()
-		WebUI.comment("Status after assign: '${after}'")
-		assert after == before :
-		"Status did NOT change after assign. Before='${before}', After='${after}'"
-		WebUI.comment(":white_check_mark: Status changed from '${before}' to '${after}'.")
+		WebUI.comment("📌 Status after assign: '${after}'")
+
+		try {
+			if (initialStatus.equalsIgnoreCase("To Be Reviewed")) {
+				assert after.equalsIgnoreCase("Under Review") :
+				"❌ Expected status to change from 'To Be Reviewed' ➡ 'Under Review'. But got '${after}'"
+			} else if (initialStatus.equalsIgnoreCase("Under Review")) {
+				assert after.equalsIgnoreCase("Under Review") :
+				"❌ Status should remain 'Under Review', but got '${after}'"
+			} else {
+				WebUI.comment("⚠️ Unexpected initialStatus passed: '${initialStatus}'. No validation applied.")
+			}
+
+			WebUI.comment("✅ Status validated successfully: '${before}' ➡ '${after}'")
+		} catch (AssertionError e) {
+			WebUI.takeScreenshot()
+			WebUI.comment("📸 Screenshot taken due to status validation failure.")
+			throw e
+		}
+
+		return slideId
 	}
+
+	/*@Keyword
+	 def assignReviewerToReport(String initialStatus, String reviewerName) {
+	 // 1) Locate the initial row by status
+	 String initialRowXpath = "(//tr[.//td//span[normalize-space() = '${initialStatus}']])[1]"
+	 TestObject initialRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, initialRowXpath)
+	 WebUI.waitForElementVisible(initialRow, 10)
+	 // 2) Capture the initial Status text
+	 TestObject statusCell0 = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	 initialRowXpath + "//following-sibling::td[2]//span")
+	 WebUI.waitForElementVisible(statusCell0, 5)
+	 String before = WebUI.getText(statusCell0).trim()
+	 WebUI.comment("Status before assign: '${before}'")
+	 // 3) Open Assigned-To dropdown and select reviewer
+	 TestObject dropdown = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	 initialRowXpath + "//following-sibling::td//input[@id='assigned_to']")
+	 WebUI.scrollToElement(dropdown, 5)
+	 WebUI.click(dropdown)
+	 WebUI.delay(1)
+	 // 4) Choose reviewer
+	 TestObject reviewerOption = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	 "//ul[@role='listbox']//li[normalize-space() = '${reviewerName}']")
+	 WebUI.click(reviewerOption)
+	 // 5) Handle reassign popup ONLY if status is "Under Review"
+	 if (initialStatus.equalsIgnoreCase("Under Review")) {
+	 TestObject popup = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	 "//h2[contains(text(),'Are you sure you want to re-assign')]")
+	 if (WebUI.verifyElementPresent(popup, 3, FailureHandling.OPTIONAL)) {
+	 TestObject reassignButton = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	 "//button[normalize-space()='Re-assign']")
+	 WebUI.click(reassignButton)
+	 WebUI.waitForElementNotPresent(popup, 10)
+	 } else {
+	 WebUI.comment("ℹ️ No reassign popup appeared, continuing...")
+	 }
+	 }
+	 // 6) Re-locate the same row by matching its Slide ID
+	 TestObject slideCell = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	 initialRowXpath + "/td[3]")
+	 String slideId = WebUI.getText(slideCell).trim()
+	 String newRowXpath = "//tr[.//td[normalize-space() = '${slideId}']]"
+	 TestObject newStatusCell = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+	 newRowXpath + "//following-sibling::td[2]//span")
+	 WebUI.waitForElementVisible(newStatusCell, 10)
+	 // 7) Capture the new Status text and verify it changed
+	 String after = WebUI.getText(newStatusCell).trim()
+	 WebUI.comment("Status after assign: '${after}'")
+	 assert after == before :
+	 "Status did NOT change after assign. Before='${before}', After='${after}'"
+	 WebUI.comment(":white_check_mark: Status changed from '${before}' to '${after}'.")
+	 }*/
 
 
 

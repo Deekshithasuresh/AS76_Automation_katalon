@@ -13,8 +13,12 @@
          <key>XPATH</key>
          <value>(//button[@type='button'])[8]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and @title = 'Overview' and (text() = '‹' or . = '‹')]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>7ae9be5e-7194-443e-9b33-1ef494891a51</webElementGuid>
+      <webElementGuid>36dfd4fc-ca58-4037-ac37-20f8163f2456</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +41,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>6a8443bb-c422-4ff6-9235-f7d5f007e614</webElementGuid>
+      <webElementGuid>b449d978-095d-4a22-96cc-b2e8496956c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +49,7 @@
       <name>title</name>
       <type>Main</type>
       <value>Overview</value>
-      <webElementGuid>31b32ebd-ffa8-4a43-a110-854062ab5eab</webElementGuid>
+      <webElementGuid>06847c61-a9f6-40e0-9ede-9358fa122c21</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +57,7 @@
       <name>text</name>
       <type>Main</type>
       <value>‹</value>
-      <webElementGuid>28a5053e-2c4b-4f68-9e9d-0391bb1db7e2</webElementGuid>
+      <webElementGuid>000433ab-97e6-479b-bd88-febc27a3bc6e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +65,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;pbs-volumeViewport&quot;)/div[@class=&quot;ol-viewport&quot;]/div[@class=&quot;ol-overlaycontainer-stopevent&quot;]/div[@class=&quot;ol-overviewmap ol-unselectable ol-control&quot;]/button[1]</value>
-      <webElementGuid>44479784-1186-49f3-90e2-f118f8ddd5ff</webElementGuid>
+      <webElementGuid>59bdf0e9-108d-451b-ae1c-c659cb85a802</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +73,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[8]</value>
-      <webElementGuid>b317dc73-c498-4cb5-8a94-5c067b00e14c</webElementGuid>
+      <webElementGuid>e108f718-e74e-43a7-9ffb-1bb384f278fa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +81,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='pbs-volumeViewport']/div/div[3]/div[5]/button</value>
-      <webElementGuid>2a5a8c4d-693f-4d57-8ee4-9106868a1d2b</webElementGuid>
+      <webElementGuid>f7e982cd-53b4-4f59-9529-0f744747e890</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='–'])[1]/following::button[2]</value>
-      <webElementGuid>3ffd34ee-f268-401a-8b46-7a28ae15c6b8</webElementGuid>
+      <webElementGuid>2b3ab454-8719-4eb9-92af-58154b2c16a9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='+'])[1]/following::button[3]</value>
-      <webElementGuid>dde2f092-f80c-4d88-bb31-2151d5199ba1</webElementGuid>
+      <webElementGuid>47947916-361c-4d09-968b-b1f7173d7174</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +105,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[5]/button</value>
-      <webElementGuid>18f56bc3-aa0c-4fa7-ac8d-87a1faec5f0f</webElementGuid>
+      <webElementGuid>5135cf6f-fdf1-4771-91b9-b5347aa24791</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +113,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and @title = 'Overview' and (text() = '‹' or . = '‹')]</value>
-      <webElementGuid>64c27d77-55e4-4c4e-b79a-d0ebeb310263</webElementGuid>
+      <webElementGuid>9922009c-a5ca-44fb-977b-3da71cf14951</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -15,20 +15,10 @@ CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 // Click the "Reject report" button to open popup
+
+
 WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Reject report'))
 
-// Wait for the popup to appear
-WebUI.verifyElementClickable(findTestObject('Object Repository/Report-Signoff/button_Cancel'))
+WebUI.verifyElementClickable(findTestObject('Object Repository/Page_PBS/cancel_button_reject'))
 
-// Wait until cancel button is visible (popup open)
-WebUI.verifyElementVisible(findTestObject('Object Repository/Report-Signoff/button_Cancel'))
-
-// Use Robot to send the ESCAPE key (closes popup)
-Robot robot = new Robot()
-robot.keyPress(KeyEvent.VK_ESCAPE)
-robot.keyRelease(KeyEvent.VK_ESCAPE)
-
-// Optional: wait to observe the effect
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Object Repository/Report-Signoff/button_Cancel'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/cancel_button_reject'))

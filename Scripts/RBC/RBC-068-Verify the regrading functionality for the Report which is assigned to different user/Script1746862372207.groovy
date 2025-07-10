@@ -26,8 +26,7 @@ ZoomInOut zoom = new ZoomInOut()
 lg.login()
 
 WebUI.delay(2)
-
-lg.selectReportByStatus('To be reviewed')
+lg.selectReportByStatus('Under review')
 
 lg.assignOrReassignOnTabs('pawankumar')// pass a reviwer name to different user not a user with which we have logged in
 

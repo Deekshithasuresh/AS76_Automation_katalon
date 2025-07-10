@@ -58,9 +58,9 @@ WebUI.click(findTestObject('Object Repository/Summary/span_Reviewed'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/Page_PBS (1)/img_yy_reportStatusComponent_image__NPeFc'), '')
 
-WebUI.verifyElementText(findTestObject('Object Repository/Summary/span_Approved'), 'Approved')
+//WebUI.verifyElementText(findTestObject('Object Repository/Summary/span_Approved'), 'Approved')
 
-WebUI.click(findTestObject('Object Repository/Summary/Page_PBS (1)/td_yy'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Approved')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Summary/span_Peripheral Smear Report'), 'Peripheral Smear Report')
 

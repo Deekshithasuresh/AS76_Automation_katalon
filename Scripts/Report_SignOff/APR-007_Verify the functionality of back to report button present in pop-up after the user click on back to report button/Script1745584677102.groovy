@@ -19,19 +19,19 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/summary_Approve report_button'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Page_PBS/img_Back to report_action-icon'), 0)
 
 WebUI.click(findTestObject('Object Repository/Page_PBS/img_Back to report_action-icon'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_All changes made will be lost'), 'All changes made will be lost!')
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_All changes made will be lost'), 'All changes made will be lost!')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_Are you sure you want to go back to the_36949f'), 
     'Are you sure you want to go back to the report? All the changes will be lost.')

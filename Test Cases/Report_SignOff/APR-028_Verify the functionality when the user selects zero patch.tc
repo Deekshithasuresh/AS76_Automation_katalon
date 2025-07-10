@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-028_Verify the functionality when the user selects zero patch</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e152c8b0-6b7e-4d73-8690-e4708ea30945</testCaseGuid>
+</TestCaseEntity>

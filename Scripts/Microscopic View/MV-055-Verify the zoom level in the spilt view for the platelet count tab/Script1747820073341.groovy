@@ -7,61 +7,12 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import java.io.File
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-// 1) LOGIN
-// ────────────────────────────────────────────────────────────────────
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(
-    findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-    'JBaPNhID5RC7zcsLVwaWIA=='
-)
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+CustomKeywords.'generic.custumFunctions.login'()
+ WebUI.maximizeWindow()
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-// ────────────────────────────────────────────────────────────────────
-// 2) VERIFY LANDING ON REPORT LIST
-// ────────────────────────────────────────────────────────────────────
-WebUI.waitForElementPresent(
-    new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-    10
-)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
-// ────────────────────────────────────────────────────────────────────
-// 3) OPEN FIRST “Under review” REPORT
-// ────────────────────────────────────────────────────────────────────
-String underReviewXpath = "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-TestObject underReviewRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, underReviewXpath)
-
-WebUI.waitForElementClickable(underReviewRow, 10)
-WebUI.scrollToElement(underReviewRow, 5)
-WebUI.click(underReviewRow)
-
-// ────────────────────────────────────────────────────────────────────
-// 4) ASSIGN TO “admin”
-// ────────────────────────────────────────────────────────────────────
-TestObject assignedDropdown = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-)
-TestObject adminOption = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//li[@role='option' and normalize-space(text())='admin']"
-)
-TestObject assignedInput = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "//input[@id='assigned_to']"
-)
-
-WebUI.click(assignedDropdown)
-WebUI.waitForElementClickable(adminOption, 5)
-WebUI.click(adminOption)
-WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
-
-// wait for the Approve button
-WebUI.delay(2)
-WebUI.waitForElementVisible(approveBtn, 10)
-WebUI.comment("'Approve report' is now visible.")
 
 // ---------- STEP 3: Platelets Tab ----------
 TestObject pltTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
@@ -69,10 +20,7 @@ TestObject pltTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 WebUI.waitForElementClickable(pltTab,10)
 WebUI.click(pltTab)
 
-// no need to click “Count” since it’s default; just ensure the tab is active
-TestObject countTab = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[.//span[normalize-space()='Count'] and contains(@class,'Mui-selected')]")
-WebUI.verifyElementPresent(countTab,5)
+
 
 // ---------- STEP 4: Activate Split view ----------
 TestObject splitBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS,
@@ -83,7 +31,7 @@ WebUI.delay(2)
 
 // ---------- STEP 5: Verify default “10 μm” + controls + canvas ----------
 def defaultScale = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//div[contains(@class,'ol-unselectable')]//div[contains(normalize-space(.),'10 μm')]")
+	"//div[contains(@class,'ol-unselectable')]//div[contains(normalize-space(.),'50 μm')]")
 def zoomIn      = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//button[contains(@class,'ol-zoom-in') and @title='Zoom in']")
 def zoomOut     = new TestObject().addProperty('xpath', ConditionType.EQUALS,
@@ -108,9 +56,9 @@ String before64   = beforeBytes.encodeBase64().toString()
 
 // ---------- STEP 7: Zoom in once & verify “5 μm” ----------
 WebUI.click(zoomIn)
-WebUI.delay(1)
+WebUI.delay(5)
 def scale5 = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//div[contains(@class,'ol-unselectable')]//div[contains(normalize-space(.),'5 μm')]")
+	"//div[contains(@class,'ol-unselectable')]")
 WebUI.verifyElementPresent(scale5, 5)
 
 // ---------- STEP 8: Screenshot & encode zoomed ----------

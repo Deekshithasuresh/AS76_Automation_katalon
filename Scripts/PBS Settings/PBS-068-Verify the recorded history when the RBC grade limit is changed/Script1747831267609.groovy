@@ -90,7 +90,10 @@ String username='prem'  //change the username with which user we have logged in
 
 assert pbs_set.verifyChangesGettingRecordedInHistory("RBC grade",username+" updated grade1 of anisocytosis","5","67")== true
 
-assert pbs_set.verifyChangesGettingRecordedInHistory("RBC grade",username+" updated grade2 of anisocytosis","20","91")== true
+//assert pbs_set.verifyChangesGettingRecordedInHistory("RBC grade",username+" updated grade2 of anisocytosis","20","91")== true
+
+assert pbs_set.verifyChangesGettingRecordedInHistory("RBC grade", username + " updated grade2 of microcyte", "20", "91") == true
+
 
 
 

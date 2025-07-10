@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>WBC-9139-Verify that empty WBC parameters are displayed as - instead of NaN when no cells are detected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>b3afedcb-5afb-4135-be7b-c84f10144735</testCaseGuid>
+</TestCaseEntity>

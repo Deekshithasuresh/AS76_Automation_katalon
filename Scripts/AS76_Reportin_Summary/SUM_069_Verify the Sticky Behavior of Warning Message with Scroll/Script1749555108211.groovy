@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -16,33 +17,28 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 // ✅ Add these imports:
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.JavascriptExecutor
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-
-WebUI.doubleClick(findTestObject('Object Repository/Summary/input_username_loginId'))
-
-WebUI.setText(findTestObject('Object Repository/Summary/input_username_loginId'), 'deekshithaS')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Summary/input_password_loginPassword'), 'ghLSEQG5l8dyyQdYVN+LYg==')
-
-WebUI.sendKeys(findTestObject('Object Repository/Summary/input_password_loginPassword'), Keys.chord(Keys.ENTER))
-findTestObject('Object Repository/Summary/td_SIG013')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
 // Step 3: Click WBC tab
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_WBC'))
 
 WebDriver driver = DriverFactory.getWebDriver()
+JavascriptExecutor js = (DriverFactory.getWebDriver() as JavascriptExecutor)
 
-JavascriptExecutor js = ((driver) as JavascriptExecutor)
+//JavascriptExecutor js = ((driver) as JavascriptExecutor)
 
 // Step 1: Check WBC Total
 WebElement totalRow = driver.findElement(By.xpath('//td[normalize-space()=\'Total\']/following-sibling::td[1]'))

@@ -30,7 +30,7 @@ WebUI.maximizeWindow()
 WebUI.delay(3)
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('deekshithaS')
+//CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('deekshithaS')
 
 
 

@@ -19,19 +19,18 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review ')
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/summary_Approve report_button'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/preview_approve_popup'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/span_Approve the report without supporting images'), 
     'Approve the report without supporting images?')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/div_Are you sure you dont want to add suppo_d50012'), 
     'Are you sure you don’t want to add supporting images to this report? This action is not reversible.')
-

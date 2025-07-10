@@ -20,47 +20,41 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import loginPackage.Login as Login
 import adimin_pbs_Settings.PBS_Settings
+import com.kms.katalon.core.testobject.ConditionType
+
+//Login as Admin
 Login lg = new Login()
 
 PBS_Settings pbs_set = new PBS_Settings()
 
 lg.AdminLogin('prem', 'prem@2807')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/div_PBS settings'), 
-    10)
 
+//Navigate to PBS Settings
+WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/div_PBS settings'), 10)
 WebUI.click(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/div_PBS settings'))
 
+//Access RBC Diameter Limits Section
 WebUI.click(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/button_RBC diameter limits'))
 
+//Verify Footnote
 WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/FootNoteWarningText'), 10)
+WebUI.verifyElementText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/FootNoteWarningText'), 
+    'The default values are set according to Palmer L, Briggs C, McFadden S, Zini G, Burthem J, Rozenberg G, Proytcheva M, Machin SJ. ICSH recommendations for the standardization of nomenclature and grading of peripheral blood cell morphological features. Int J Lab Hematol. 2015 Jun;37(3):287-303.')
 
-WebUI.verifyElementText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/FootNoteWarningText'), 'The default values are set according to Palmer L, Briggs C, McFadden S, Zini G, Burthem J, Rozenberg G, Proytcheva M, Machin SJ. ICSH recommendations for the standardization of nomenclature and grading of peripheral blood cell morphological features. Int J Lab Hematol. 2015 Jun;37(3):287-303.')
-
+// Click Edit settings
 WebUI.click(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/button_Edit settings'))
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/div_Microcytes'), 
-    0)
+// Verify Normal Label and its min/max inputs
+TestObject normalLabel = new TestObject().addProperty("xpath", ConditionType.EQUALS, "//span[normalize-space(text())='Normal']")
+TestObject normalMinInput = new TestObject().addProperty("xpath", ConditionType.EQUALS, "//span[normalize-space(text())='Normal']/following::input[@type='number'][1]")
+TestObject normalMaxInput = new TestObject().addProperty("xpath", ConditionType.EQUALS, "//span[normalize-space(text())='Normal']/following::input[@type='number'][2]")
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/div_Microcytes'), 10)
+WebUI.verifyElementPresent(normalLabel, 10)
+WebUI.verifyElementPresent(normalMinInput, 10)
+WebUI.verifyElementPresent(normalMaxInput, 10)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/input_Microcytes_rbc-input-box'), 
-    10)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/span_Microcytes'), 
-    10)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/span_Normal'), 10)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/input_Normal_input-box'), 
-    10)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/input_Normal_input-box_1'), 
-    10)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/span_Macrocytes'), 
-    10)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/input_Macrocytes_rbc-input-box'), 
-    10)
+// Optional: Verify expected values if needed
+WebUI.verifyElementAttributeValue(normalMinInput, "value", "4", 5)
+WebUI.verifyElementAttributeValue(normalMaxInput, "value", "6", 5)
 

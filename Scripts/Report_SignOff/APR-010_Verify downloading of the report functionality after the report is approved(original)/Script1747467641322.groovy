@@ -18,10 +18,13 @@ WebUI.click(findTestObject('Object Repository/Page_PBS/span_Reviewed'))
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Approved')
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/img_1'))
+//WebUI.click(findTestObject('Object Repository/Page_PBS/approve_add_supporting_page'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/kebab_dots_approve'))
 
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Switch to original report'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/img_1'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/kebab_dots_approve'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Download PDF report'))
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Download PDF report (1)'))

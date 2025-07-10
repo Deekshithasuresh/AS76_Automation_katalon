@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>%Users%uthara%Katalon Studio%AS76%AS76.prj</name>
+=======
+	<name>%Users%manjunathcg%Documents%github%AS76_Automation_katalon%AS76.prj</name>
+>>>>>>> 3a3e7c040a347da7c036fcaf63cadff1f76240f0
 	<comment></comment>
 	<projects>
 	</projects>
@@ -17,7 +21,11 @@
 	</natures>
 	<filteredResources>
 		<filter>
+<<<<<<< HEAD
 			<id>1750414797008</id>
+=======
+			<id>1751527300539</id>
+>>>>>>> 3a3e7c040a347da7c036fcaf63cadff1f76240f0
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -26,7 +34,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1750414797011</id>
+=======
+			<id>1751527300541</id>
+>>>>>>> 3a3e7c040a347da7c036fcaf63cadff1f76240f0
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -35,7 +47,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1750657920992</id>
+=======
+			<id>1751533874538</id>
+>>>>>>> 3a3e7c040a347da7c036fcaf63cadff1f76240f0
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -44,6 +60,7 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1750657920996</id>
 			<name></name>
 			<type>6</type>
@@ -171,6 +188,9 @@
 		</filter>
 		<filter>
 			<id>1751520643935</id>
+=======
+			<id>1751533874555</id>
+>>>>>>> 3a3e7c040a347da7c036fcaf63cadff1f76240f0
 			<name></name>
 			<type>6</type>
 			<matcher>

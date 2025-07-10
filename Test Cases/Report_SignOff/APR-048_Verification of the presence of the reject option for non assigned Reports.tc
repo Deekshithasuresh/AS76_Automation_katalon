@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>APR-048_Verification of the presence of the reject option for non assigned Reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>656ebb30-f54d-4c8f-880f-d5a88ab35ccc</testCaseGuid>
+</TestCaseEntity>

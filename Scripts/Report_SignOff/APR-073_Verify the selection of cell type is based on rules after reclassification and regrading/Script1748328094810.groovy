@@ -11,6 +11,7 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import java.time.Duration
 
 // === LAUNCH & LOGIN ===
 WebUI.openBrowser('')
@@ -18,7 +19,7 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 // === ASSIGN REPORT ===
 WebUI.comment("Selecting report with 'To be reviewed' status.")
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 WebUI.comment("Assigning report to 'santosh'.")
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
@@ -86,7 +87,7 @@ WebUI.comment("RBC regrading check complete.")
 // === APPROVE REPORT & ADD SUPPORTING IMAGES ===
 WebUI.comment("Approving the report.")
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
 WebUI.comment("Navigating to 'Add supporting images'.")
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
 
@@ -97,7 +98,7 @@ WebDriver currentDriver = DriverFactory.getWebDriver()
 WebDriverWait wait = new WebDriverWait(currentDriver, Duration.ofSeconds(45)) // Increased timeout to 45 seconds for page load
 try {
 	// Wait for the main container of the checkboxes to be present in the DOM
-	wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div.cell-selection-list")))
+	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//div[@class='celle-selection-list'])[1]")))
 	WebUI.comment("Cell selection list is present in the DOM.")
 	WebUI.delay(2) // Small additional delay for content to fully settle and render
 } catch (TimeoutException e) {
@@ -120,7 +121,7 @@ def extractPercentage(String text) {
 
 boolean isCheckboxChecked(String cellName) {
 	// XPath for the checkbox span itself, using the robust text matching for the label div
-	String checkboxSpanXpath = "//div[contains(@class,'cell-selection-list')]//div[contains(@class,'checkbox-label')]/preceding-sibling::span[contains(@class,'MuiCheckbox-root') and .//div[contains(text(),'${cellName}')]]"
+	String checkboxSpanXpath = "//div[@class='celle-selection-list']//div[contains(@class,'checkbox-lable') and contains(text(),'${cellName}')]/preceding-sibling::span"
 	TestObject checkboxSpanObj = createTestObject(checkboxSpanXpath)
 
 	WebUI.comment("Attempting to find checkbox span with XPath: ${checkboxSpanXpath}")
@@ -150,7 +151,8 @@ def cellTypes = [
 WebUI.comment("Starting validation of cell type checkbox selections.")
 cellTypes.each { cellName, threshold ->
 	// Updated XPath to directly target the MuiTypography-root div inside checkbox-label
-	String labelXpath = "//div[@class='cell-selection-list']//div[contains(@class,'checkbox-label')]//div[contains(@class,'MuiTypography-root') and contains(text(), '${cellName}')]"
+	String labelXpath = "//div[@class='celle-selection-list']//div[contains(@class,'checkbox-lable') and contains(text(),'${cellName}')]"
+	
 	TestObject labelObj = createTestObject(labelXpath)
 
 	WebUI.comment("Attempting to find label for ${cellName} with XPath: ${labelXpath}")

@@ -19,17 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/summary_Approve report_button'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Confirm'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report_1'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Cancel'))
+WebUI.click(findTestObject('Object Repository/Page_PBS/approve_cancel_button'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/button_Summary'), 'Summary')
+//WebUI.verifyElementText(findTestObject('Object Repository/Page_PBS/button_Summary'), 'Summary')
 

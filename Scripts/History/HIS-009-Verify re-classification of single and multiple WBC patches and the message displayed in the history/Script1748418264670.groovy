@@ -1,150 +1,79 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
+
 import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory
 
-// ────────────────────────────────────────────────────────────────────
-// 1) LOGIN
-// ────────────────────────────────────────────────────────────────────
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import org.openqa.selenium.interactions.Actions
 
-// ────────────────────────────────────────────────────────────────────
-// 2) VERIFY LANDING ON REPORT LIST
-// ────────────────────────────────────────────────────────────────────
-WebUI.waitForElementPresent(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-	10
-)
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
-// ────────────────────────────────────────────────────────────────────
-// 3) OPEN FIRST “Under review” REPORT
-// ────────────────────────────────────────────────────────────────────
-String underReviewXpath = "(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-TestObject underReviewRow = new TestObject().addProperty('xpath', ConditionType.EQUALS, underReviewXpath)
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.waitForElementClickable(underReviewRow, 10)
-WebUI.scrollToElement(underReviewRow, 5)
-WebUI.click(underReviewRow)
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-// ────────────────────────────────────────────────────────────────────
-// 4) ASSIGN TO “admin”
-// ────────────────────────────────────────────────────────────────────
-TestObject assignedDropdown = new TestObject().addProperty(
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
+
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_WBC'), 'WBC')
+
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
+
+CustomKeywords.'generic.Reclassification.classifyFromCellToCell'("Neutrophils", "Eosinophils")
+
+CustomKeywords.'generic.Reclassification.dragAndDropMultipleSelectedPatches'("Neutrophils", "Basophils", 3)
+
+
+// 9) OPEN HISTORY & VERIFY
+WebUI.click(new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']/ancestor::div[contains(@class,'MuiAutocomplete-inputRoot')]//button"
-)
-TestObject adminOption = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//li[@role='option' and normalize-space(text())='admin']"
-)
-TestObject assignedInput = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//input[@id='assigned_to']"
-)
-
-WebUI.click(assignedDropdown)
-WebUI.waitForElementClickable(adminOption, 5)
-WebUI.click(adminOption)
-WebUI.waitForElementAttributeValue(assignedInput, 'value', 'admin', 5)
-
-// ────────────────────────────────────────────────────────────────────
-// 4) CLICK ON WBC TAB
-// ────────────────────────────────────────────────────────────────────
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'cell-buttons') and .//span[normalize-space(text())='WBC']]"
-))
-
-
-// ────────────────────────────────────────────────────────────────────
-// 5) RECLASSIFY SINGLE WBC PATCH → “Monocytes”
-// ────────────────────────────────────────────────────────────────────
-List<WebElement> patches = driver.findElements(
-	By.xpath("//div[contains(@class,'patches-container')]")
-)
-if (patches.size() >= 1) {
-	WebElement firstPatch = patches.get(0)
-	firstPatch.click()
-	WebUI.comment("✔️ Selected first patch")
-
-	actions.contextClick(firstPatch).perform()
-	WebUI.comment("→ Opened context menu")
-
-	// click “Classify”
-	TestObject classifyItem = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-		"//li[contains(@class,'wbc-option')]//span[normalize-space(text())='Classify']"
-	)
-	WebUI.waitForElementClickable(classifyItem, 5)
-	WebUI.click(classifyItem)
-
-	// click “Monocytes”
-	TestObject monoOption = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-		"//li[not(contains(@class,'wbc-option'))]//div[normalize-space(text())='Monocytes']"
-	)
-	WebUI.waitForElementClickable(monoOption, 5)
-	WebUI.click(monoOption)
-
-	WebUI.comment("✅ Reclassified single patch to Monocytes")
-	WebUI.waitForElementPresent(
-		new TestObject().addProperty('xpath', ConditionType.EQUALS,
-			"//div[contains(text(),'patch reclassified') or contains(text(),'patches reclassified')]"
-		), 5
-	)
-}
-
-
-// ────────────────────────────────────────────────────────────────────
-// 6) RECLASSIFY MULTIPLE WBC PATCHES → “Monocytes”
-// ────────────────────────────────────────────────────────────────────
-if (patches.size() > 1) {
-	int multiCount = Math.min(4, patches.size())
-	for (int i = 1; i < multiCount; i++) {
-		patches.get(i).click()
-		WebUI.comment("✔️ Selected patch #${i+1}")
-		WebUI.delay(0.2)
-	}
-
-	WebElement anySelected = patches.get(1)
-	actions.contextClick(anySelected).perform()
-	WebUI.comment("→ Opened context menu for multiple patches")
-
-	// click “Classify”
-	WebUI.waitForElementClickable(classifyItem, 5)
-	WebUI.click(classifyItem)
-	// click “Monocytes”
-	WebUI.waitForElementClickable(monoOption, 5)
-	WebUI.click(monoOption)
-
-	WebUI.comment("✅ Reclassified ${multiCount} patches to Monocytes")
-	WebUI.waitForElementPresent(
-		new TestObject().addProperty('xpath', ConditionType.EQUALS,
-			"//div[contains(text(),'patch reclassified') or contains(text(),'patches reclassified')]"
-		), 5
-	)
-}
-
-
-// ────────────────────────────────────────────────────────────────────
-// 7) OPEN KEBAB MENU & PRINT LATEST 5 HISTORY ENTRIES
-// ────────────────────────────────────────────────────────────────────
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//button[.//img[contains(@src,'kebab_menu.svg')]]"
 ))
-WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//span[normalize-space(text())='History']/ancestor::li"
+WebUI.click(new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"//li[.//span[normalize-space(text())='History']]"
 ))
 WebUI.delay(1)
+WebDriver driver = DriverFactory.getWebDriver()
+List<WebElement> entries = driver.findElements(By.xpath("//h4[text()='Classification']/parent::div/parent::div/parent::li"))
 
-List<WebElement> entries = driver.findElements(By.cssSelector("li.css-1ecsk3j"))
-int toPrint = Math.min(5, entries.size())
-for (int i = 0; i < toPrint; i++) {
-	println("History entry ${i+1}: " + entries.get(i).getText().trim())
+assert entries.size() > 0 : "❌ No history entries found"
+boolean found = false
+
+for (WebElement entry : entries) {
+    String text = entry.getText().trim()
+    WebUI.comment("📜 Entry: ${text}")
+    
+    if (text.contains("manju classified 3 patches") || text.contains("manju classified 1 patch") ) {
+        WebUI.comment("✅ Found matching entry: ${text}")
+        found = true
+    }
 }
+
+assert found : "❌ No entry found with text: 'manju classified 3 patches'"
+
+WebUI.comment("✅ Re-classification and history verified!")
