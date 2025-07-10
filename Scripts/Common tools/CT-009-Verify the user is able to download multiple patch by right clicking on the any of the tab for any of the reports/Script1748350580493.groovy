@@ -16,13 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
 import org.openqa.selenium.*
-import org.openqa.selenium.interactions.Actions
-
-import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.interactions.Actions as Actions
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 WebUI.openBrowser('')
 
@@ -39,20 +35,22 @@ WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_02-May-20
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_WBC (9)'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/span_WBC (9)'), 'WBC')
+
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 10)
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
 
-WebUI.doubleClick(findTestObject('Object Repository/Commontools/Page_PBS/div_Image settings_default-patch  patch-foc_a6a738 (2)'))
+WebUI.doubleClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
+
 WebDriver driver = DriverFactory.getWebDriver()
+
 Actions actions = new Actions(driver)
 
-WebElement patchfirst=driver.findElement(By.xpath("(//div[@class='Card patches-container'])[1]"))
+WebElement patchfirst = driver.findElement(By.xpath('(//div[@class=\'Card patches-container\'])[1]'))
+
 actions.contextClick(patchfirst).perform()
-
-
 
 WebUI.click(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 

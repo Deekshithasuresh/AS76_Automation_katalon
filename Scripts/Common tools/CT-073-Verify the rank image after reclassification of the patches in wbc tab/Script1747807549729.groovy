@@ -40,12 +40,11 @@ WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign I
 //WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
 CustomKeywords.'chida.wbcFunctions.selectReportByStatus'('To be reviewed')
 
-CustomKeywords.'chida.wbcFunctions.assignOrReassignOnTabs'('Chidu', true)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('Chidu')
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_WBC'))
 
 //WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
-
 //WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Additional info'), 10)
 //WebUI.click(findTestObject('Commontools/Page_PBS/li_Additional info'))
 //WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Classification Rank'), 10)
@@ -57,11 +56,18 @@ WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_WBC'))
 CustomKeywords.'chida.wbcFunctions.classifyFromCellToCell'('Neutrophils', 'Promonocytes')
 
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/td_Promonocytes'))
+
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Additional info'), 10)
+
 WebUI.click(findTestObject('Commontools/Page_PBS/li_Additional info'))
+
 WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Classification Rank'), 10)
+
 WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_1. Neutrophils'), 10)
-WebUI.verifyElementText(findTestObject('Commontools/Page_PBS/li_Neutrophils'), 'Neutrophils')
+
+WebUI.verifyElementText(findTestObject('Commontools/Page_PBS/li_Neutrophils'), '1. Neutrophils')
+
 WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_2. Lymphocytes'), 10)
+

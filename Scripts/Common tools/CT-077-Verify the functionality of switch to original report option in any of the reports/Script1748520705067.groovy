@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign I
 
 // 2. Open latest report
 //WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
-CustomKeywords.'chida.wbcFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 CustomKeywords.'chida.wbcFunctions.assignOrReassignOnTabs'('Chidu',true)
 // 3. Store the RBC Morph object
 TestObject RBC_Morph = findTestObject('Object Repository/Commontools/Page_PBS/RBC_Morph')

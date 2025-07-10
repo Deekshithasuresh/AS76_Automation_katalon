@@ -51,7 +51,7 @@ WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Classificatio
 
 WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_1. Neutrophils'), 10)
 
-WebUI.verifyElementText(findTestObject('Commontools/Page_PBS/li_Neutrophils'), 'Neutrophils')
+WebUI.verifyElementText(findTestObject('Commontools/Page_PBS/li_1. Neutrophils'), '1. Neutrophils')
 
 WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_2. Lymphocytes'), 10)
 
