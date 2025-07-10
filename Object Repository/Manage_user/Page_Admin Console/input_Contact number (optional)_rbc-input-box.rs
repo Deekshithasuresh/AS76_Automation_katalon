@@ -6,12 +6,12 @@
    <elementGuidId>8b6ec4b7-0e91-4280-b22d-9aeef8b87da1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//input[@value=''])[2]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div:nth-of-type(3) > div.tooptipStyle.right.create-user > input.rbc-input-box</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[text()='Contact number (optional)']/following-sibling::div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>a7246f07-862a-4e4a-968d-65285672fec1</webElementGuid>
+      <webElementGuid>6adda495-b491-4799-8ff9-3352e928d0c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rbc-input-box </value>
-      <webElementGuid>a9e2f8ed-30c3-49a0-9f03-b2f39fc63af5</webElementGuid>
+      <webElementGuid>62d59a55-0607-4b17-8f8b-c26dd9104d87</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>type</name>
       <type>Main</type>
       <value>string</value>
-      <webElementGuid>32e0cff5-3455-4ac9-b441-5d2119f56092</webElementGuid>
+      <webElementGuid>32e0ae10-39fd-4436-885e-fff47d053b73</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;MuiModal-root css-8ndowl&quot;]/div[@class=&quot;css-hwagmm&quot;]/div[@class=&quot;add-identity-body&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-15j76c0&quot;]/section[1]/div[@class=&quot;identity-userdetails-section&quot;]/div[@class=&quot;section-content&quot;]/div[@class=&quot;section-content-row&quot;]/div[3]/div[@class=&quot;tooptipStyle right create-user&quot;]/input[@class=&quot;rbc-input-box&quot;]</value>
-      <webElementGuid>bb78bf39-a0fb-40fd-a775-14682fe58848</webElementGuid>
+      <webElementGuid>5d5ac024-963d-4434-b40c-9823f6e3dfa1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//input[@value=''])[2]</value>
-      <webElementGuid>1bbf1c3c-0c40-4c43-a9a9-1337968dc7fa</webElementGuid>
+      <webElementGuid>5b650106-9ff1-400f-8bd5-f7c6e34aced1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div/input</value>
-      <webElementGuid>95d43049-fe0c-4021-9e34-2ffc1e8a862b</webElementGuid>
+      <webElementGuid>dd15d9c4-4359-4891-a582-3ca382bea951</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +77,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'string']</value>
-      <webElementGuid>a34e1061-594b-4856-b8cc-934b0b5a3b04</webElementGuid>
+      <webElementGuid>bbaee5ea-1192-4b32-81f6-cf734c037185</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

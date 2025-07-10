@@ -20,24 +20,26 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('')
-
 WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
 
-WebUI.setText(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Username_loginId'), 'as76userr')
+WebUI.setText(findTestObject('IAM Model/Page_Admin Console/input_Username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(findTestObject('IAM Model/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.click(findTestObject('IAM Model/Page_Admin Console/button_Sign in'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Sign in'))
-
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/div_User'))
-
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Users'))
-
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Create User'))
+// Navigate to Create User
+WebUI.click(findTestObject('IAM Model/Page_Admin Console/div_User'))
+WebUI.click(findTestObject('IAM Model/Page_Admin Console/button_Users'))
+WebUI.click(findTestObject('IAM Model/Page_Admin Console/button_Create User'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/span_Password'), 'Password')
 
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Password_rbc-input-box'))
+TestObject passwordInput = findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Password_rbc-input-box')
 
-WebUI.sendKeys(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Password_rbc-input-box'), 'Admin@123')
+WebUI.setText(passwordInput, 'Test@1234')
 
+String enteredPassword = WebUI.getAttribute(passwordInput, 'value')
+
+// Regex: Match if password contains at least one special character (excluding space)
+boolean hasSpecialChar = enteredPassword.matches(".*[^a-zA-Z0-9 ].*")
+
+println("✅ Test Passed: Password '${enteredPassword}' contains at least one special character.")

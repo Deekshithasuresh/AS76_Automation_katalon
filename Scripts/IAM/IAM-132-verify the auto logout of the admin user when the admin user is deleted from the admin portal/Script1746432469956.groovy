@@ -281,7 +281,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Manage_user/Page_Admin 
 
 WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/button_Sign in'))
 
-WebUI.verifyElementPresent(findTestObject('IAM Model/Page_Admin Console/Page_Admin Console/div_Invalid credentials'), 0)
+WebUI.verifyElementPresent(findTestObject('IAM Model/Page_Admin Console/div_Invalid credentials'), 0)
 
 void verifySearchUserByUsernameAndRole(String keyword, String username, String role, String status) {
     WebUI.setText(findTestObject('View list of users/Page_Admin Console/search bar'), keyword)

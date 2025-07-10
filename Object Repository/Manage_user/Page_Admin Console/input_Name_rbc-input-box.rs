@@ -6,22 +6,22 @@
    <elementGuidId>bab123d9-4350-45a4-a802-6f18e9d1a1a0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@value='pawan,Roo']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>input.rbc-input-box</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[text()='Name']/following-sibling::div/input</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
          <value>div >> internal:has-text=/^Name$/ >> internal:role=textbox</value>
       </entry>
    </smartLocatorCollection>
-   <smartLocatorEnabled>true</smartLocatorEnabled>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>85e01f1f-303b-4d3d-870e-1d64d0f7b102</webElementGuid>
+      <webElementGuid>bd8407a1-76e8-49c1-a886-80ba64dd659c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rbc-input-box </value>
-      <webElementGuid>977aad92-b5a5-44a2-9083-396097bc4f27</webElementGuid>
+      <webElementGuid>2442556e-be05-4896-a9f3-de05ecdcea15</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>type</name>
       <type>Main</type>
       <value>string</value>
-      <webElementGuid>17c76df8-5e48-4bd7-8bd9-3d49b378d194</webElementGuid>
+      <webElementGuid>b71f5749-cf74-400d-a01d-b9b89485bb3f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>value</name>
       <type>Main</type>
       <value>pawan,Roo</value>
-      <webElementGuid>77300d69-af90-4573-802a-c3829598db8b</webElementGuid>
+      <webElementGuid>9dddbb42-95db-4356-a044-be62d317ece0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;MuiModal-root css-8ndowl&quot;]/div[@class=&quot;css-hwagmm&quot;]/div[@class=&quot;add-identity-body&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-15j76c0&quot;]/section[1]/div[@class=&quot;identity-userdetails-section&quot;]/div[@class=&quot;section-content&quot;]/div[@class=&quot;section-content-row&quot;]/div[1]/div[@class=&quot;tooptipStyle right create-user&quot;]/input[@class=&quot;rbc-input-box&quot;]</value>
-      <webElementGuid>d60f9801-3d61-4800-88cc-1a4a29889aee</webElementGuid>
+      <webElementGuid>d209e284-3182-4ea0-9cfe-a68f267750b0</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@value='pawan,Roo']</value>
-      <webElementGuid>063f9470-66a4-4b83-9aae-9c6cb988965c</webElementGuid>
+      <webElementGuid>da38b24d-4432-4441-a68e-ee0b71d37d42</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//section/div/div/div/div/div/input</value>
-      <webElementGuid>b11235a4-da15-480f-802a-a10dbe8cb4e2</webElementGuid>
+      <webElementGuid>e941de63-3330-4b81-8d4c-3d37658ecaa3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +85,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'string']</value>
-      <webElementGuid>cefdf2c9-737b-4967-a628-43798a29d567</webElementGuid>
+      <webElementGuid>5ac63c5a-ddb1-4768-96ae-b9e9d193a7c6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

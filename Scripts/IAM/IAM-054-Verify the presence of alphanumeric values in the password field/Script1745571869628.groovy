@@ -14,30 +14,41 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+import internal.GlobalVariable
+
+import org.assertj.core.error.AssertionErrorMessagesAggregator
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-WebUI.openBrowser('')
 
+// Open browser and login
+WebUI.openBrowser('')
 WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
 
-WebUI.setText(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Username_loginId'), 'as76userr')
+WebUI.setText(findTestObject('IAM Model/Page_Admin Console/input_Username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(findTestObject('IAM Model/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.click(findTestObject('IAM Model/Page_Admin Console/button_Sign in'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Sign in'))
-
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/div_User'))
-
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Users'))
-
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Create User'))
+// Navigate to Create User
+WebUI.click(findTestObject('IAM Model/Page_Admin Console/div_User'))
+WebUI.click(findTestObject('IAM Model/Page_Admin Console/button_Users'))
+WebUI.click(findTestObject('IAM Model/Page_Admin Console/button_Create User'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/span_Password'), 'Password')
 
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Password_rbc-input-box'))
+TestObject passwordInput = findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Password_rbc-input-box')
+WebUI.setText(passwordInput, 'Test1234')
+TestObject validationMessage = findTestObject('Object Repository/IAM Model/Page_Admin Console/Page_Admin Console/Page_Admin Console/div_Invalid_Password_Validation')
+boolean isErrorVisible = WebUI.verifyElementPresent(validationMessage, 3, FailureHandling.OPTIONAL)
 
-WebUI.sendKeys(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Password_rbc-input-box'), 'Admin@123')
+assert isErrorVisible : "❌ Validation error not shown for password missing special character"
+
+String errorText = WebUI.getText(validationMessage)
+WebUI.comment("✅ Validation message displayed: $errorText")
+
+// Step 5: Optional — check CSS color of validation message
+String color = WebUI.getCSSValue(passwordInput, "color")
+assert color == 'rgba(224, 66, 77, 1)' : "❌ Color mismatch: Found '${color}', expected 'rgba(224, 66, 77, 1)'"
+WebUI.comment("⚠ Validation message color: $color")
 

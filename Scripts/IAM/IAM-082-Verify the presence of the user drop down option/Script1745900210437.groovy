@@ -28,7 +28,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/View list of users/Page
 
 WebUI.click(findTestObject('Object Repository/View list of users/Page_Admin Console/button_Sign in'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/IAM Model/Page_Admin Console/img'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/IAM Model/Page_Admin Console/Page_Admin Console/Page_Admin Console/user_img'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/div_User'), 'User')
 

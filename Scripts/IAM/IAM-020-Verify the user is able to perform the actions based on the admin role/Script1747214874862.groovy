@@ -189,7 +189,7 @@ int timeout = 20
 // === Define Toast TestObject based on your structure ===
 TestObject toastObject = new TestObject('dynamicToast')
 
-toastObject.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'root\']/div[2]/div/div')
+toastObject.addProperty('xpath', ConditionType.EQUALS, "//div[@class='classified-snackbar']//div[@class='body-text']")
 
 // === Wait for the toast to appear ===
 if (WebUI.waitForElementPresent(toastObject, timeout)) {

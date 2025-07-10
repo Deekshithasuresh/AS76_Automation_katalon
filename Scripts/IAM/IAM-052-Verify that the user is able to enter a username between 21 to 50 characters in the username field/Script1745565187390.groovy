@@ -23,7 +23,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
 
-WebUI.setText(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Username_loginId'), 'as76userr')
+WebUI.setText(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Username_loginId'), 'adminuserr')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 
@@ -41,5 +41,13 @@ WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin C
 
 WebUI.click(findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box'))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box'), 'Alexander Jonathan Maxwell writes poetic lines ')
+String username = "zxcvbnmkljhgfdsapoiuy"
+TestObject usernameInput = findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box')
+WebUI.setText(usernameInput, username)
+
+// Step 2: Get the actual value from the field
+String actualUsername = WebUI.getAttribute(usernameInput, 'value')
+
+// Step 3: Assert length
+assert actualUsername.length() == 21 : "❌ Username length is not 21. Actual: ${actualUsername.length()}"
 

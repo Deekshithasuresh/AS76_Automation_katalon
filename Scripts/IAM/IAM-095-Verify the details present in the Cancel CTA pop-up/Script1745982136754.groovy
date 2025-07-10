@@ -182,13 +182,13 @@ WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/
 
 WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Name_rbc-input-box'), 'adminsigtuple')
 
-WebUI.click(findTestObject('Manage_user/Page_Admin Console/button_Update'))
+//WebUI.click(findTestObject('Manage_user/Page_Admin Console/button_Update'))
 
-WebUI.click(findTestObject('Manage_user/Page_Admin Console/button_Cancel'))
+//WebUI.click(findTestObject('Manage_user/Page_Admin Console/button_Cancel'))
 
 WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/button_Cancel'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Manage_user/Page_Admin Console/img'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/IAM Model/Page_Admin Console/Page_Admin Console/Page_Admin Console/button_Create User_Xicon'), 0)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Manage_user/Page_Admin Console/h2_Confirm to cancel'), 'Confirm to cancel')
 

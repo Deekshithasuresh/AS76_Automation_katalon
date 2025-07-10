@@ -176,7 +176,7 @@ for (String role : roles) {
 		WebUI.click(randomUser)
 
 		// Click cancel/back
-		WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/path'))
+		WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/Page_Admin Console/Page_Admin Console/button_Create User_Xicon'))
 	} else {
 		KeywordUtil.logInfo("Random user is Inactive. Skipping click.")
 	}

@@ -1,52 +1,35 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+
+import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.testobject.ConditionType as ConditionType
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
+// Open browser and login
 WebUI.openBrowser('')
-
 WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
 
-WebUI.setText(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Username_loginId'), 'as76userr')
+WebUI.setText(findTestObject('IAM Model/Page_Admin Console/input_Username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(findTestObject('IAM Model/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.click(findTestObject('IAM Model/Page_Admin Console/button_Sign in'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+// Navigate to Create User
+WebUI.click(findTestObject('IAM Model/Page_Admin Console/div_User'))
+WebUI.click(findTestObject('IAM Model/Page_Admin Console/button_Users'))
+WebUI.click(findTestObject('IAM Model/Page_Admin Console/button_Create User'))
 
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Sign in'))
+// Enter invalid username (less than 3 characters)
+TestObject usernameInput = findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box')
+//WebUI.click(usernameInput)
+WebUI.setText(usernameInput, 'Alexander Jonathan Maxwell writes poetic lines dail') // Only 2 characters
 
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/div_User'))
+// Validate the error message text
+TestObject errorMsg = findTestObject('Object Repository/IAM Model/Page_Admin Console/Page_Admin Console/Page_Admin Console/Max_char_50')
+WebUI.verifyElementText(errorMsg, 'Maximum 50 characters allowed')
 
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Users'))
+// ✅ Get and verify the error text color (usually red in UI)
+String colorValue = WebUI.getCSSValue(usernameInput, 'color')
+WebUI.comment("🔍 Error message color: " + colorValue)
 
-WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Create User'), 'Create User')
+// ✅ Expected color
+assert colorValue == 'rgba(224, 66, 77, 1)' : "❌ Expected red color, but got: $colorValue"
 
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Create User'))
-
-WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/span_Username'), 'Username')
-
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Username_rbc-input-box'))
-
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box'), 'Alexander Jonathan Maxwell writes poetic lines daily.')
-
-WebUI.sendKeys(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Username_rbc-input-box error'), 'Alexander Jonathan Maxwell writes poetic lines daily.')
-
-WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/div_Maximum 50 charaters allowed'), 
-    'Maximum 50 charaters allowed')
-
-WebUI.getCSSValue(findTestObject('IAM Model/Page_Admin Console/div_Maximum 50 charaters allowed'), 'color')
-
+WebUI.comment("✅ Validation message and color are verified successfully.")

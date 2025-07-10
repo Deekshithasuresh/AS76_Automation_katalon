@@ -16,9 +16,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.WebDriver as WebDriver
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import java.util.Random as Random
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
@@ -44,75 +41,13 @@ WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin C
 
 WebUI.click(findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box'))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box'), 'Maximiliano Featherstone-Wellington McAllisterERSR')
+String username = "zxcvbnmlkjhgfdsaqwertyuiopmnbvcxzkljhgfdsapoiuytre"
+TestObject usernameInput = findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box')
+WebUI.setText(usernameInput, username)
 
-//random user creation steps ends here.
-// second method of random creation with creating the the user name by special characters.
-// Click to focus on the username input field
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Username_rbc-input-box'))
+// Step 2: Get the actual value from the field
+String actualUsername = WebUI.getAttribute(usernameInput, 'value')
 
-// Get the WebDriver instance
-WebDriver driver = DriverFactory.getWebDriver()
-
-// Username input field object
-TestObject usernameField = findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Username_rbc-input-box')
-
-// Method to generate a random username consisting of letters only
-// Generate a random username of length 6
-// Flag to check whether the username is accepted
-boolean usernameAccepted = false
-
-String uniqueUsername = ''
-
-// Loop to retry generating a unique username if necessary
-while (!(usernameAccepted)) {
-    uniqueUsername = generateUsername()
-
-    println('Trying username: ' + uniqueUsername)
-
-    // Enter the generated username in the input field
-    WebUI.setText(usernameField, uniqueUsername)
-
-    WebUI.delay(1)
-
-    // Check if the error message for "username already taken" is displayed
-    boolean isError = WebUI.verifyElementPresent(findTestObject('Object Repository/Session management reporting/Page_Admin Console/div_Username already taken'), 
-        1, FailureHandling.OPTIONAL)
-
-    if (isError) {
-        println('Username already taken. Retrying...')
-
-        // Clear the username field (platform-independent way)
-        WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Username_rbc-input-box'))
-
-        // Platform-independent text selection and clearing
-        if (System.getProperty('os.name').toLowerCase().contains('mac')) {
-            WebUI.sendKeys(usernameField, Keys.chord(Keys.COMMAND, 'a'))
-        } else {
-            WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
-        }
-        
-        WebUI.sendKeys(usernameField, Keys.chord(Keys.BACK_SPACE))
-    } else {
-        println('Username accepted: ' + uniqueUsername)
-
-        usernameAccepted = true
-    }
-}
-
-String generateUsername() {
-    String alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
-
-    StringBuilder username = new StringBuilder('User')
-
-    Random rand = new Random()
-
-    for (int i = 0; i < 6; i++) {
-        int index = rand.nextInt(alphabet.length())
-
-        username.append(alphabet.charAt(index))
-    }
-    
-    return username.toString()
-}
+// Step 3: Assert length
+assert actualUsername.length() == 50 : "❌ Username length is not 50. Actual: ${actualUsername.length()}"
 

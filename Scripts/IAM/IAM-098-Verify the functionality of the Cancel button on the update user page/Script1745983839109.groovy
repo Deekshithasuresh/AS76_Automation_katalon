@@ -185,7 +185,7 @@ WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/
 
 WebUI.click(findTestObject('Manage_user/Page_Admin Console/button_Update'))
 
-WebUI.click(findTestObject('Manage_user/Page_Admin Console/button_Cancel'))
+WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/Page_Admin Console/Page_Admin Console/Button_cancel_inpopup'))
 
 WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/button_Cancel'))
 

@@ -25,15 +25,11 @@ import org.openqa.selenium.WebElement as WebElement
 import java.util.List as List
 
 WebUI.openBrowser('')
-
 WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
 
-WebUI.setText(findTestObject('Object Repository/View list of users/Page_Admin Console/input_Username_loginId'), 'adminuserr')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/View list of users/Page_Admin Console/input_Password_loginPassword'), 
-    'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/View list of users/Page_Admin Console/button_Sign in'))
+WebUI.setText(findTestObject('IAM Model/Page_Admin Console/input_Username_loginId'), 'adminuserr')
+WebUI.setEncryptedText(findTestObject('IAM Model/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.click(findTestObject('IAM Model/Page_Admin Console/button_Sign in'))
 
 WebUI.click(findTestObject('Object Repository/View list of users/Page_Admin Console/div_User'))
 

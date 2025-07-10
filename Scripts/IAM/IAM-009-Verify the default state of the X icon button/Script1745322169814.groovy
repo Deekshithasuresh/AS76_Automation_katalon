@@ -36,5 +36,5 @@ WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin C
 WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Create User'))
 
 //WebUI.verifyElementClickable(findTestObject('Object Repository/IAM Model/Page_Admin Console/svg_Create User_MuiSvgIcon-root MuiSvgIcon-_b5da4b'))
-WebUI.verifyElementClickable(findTestObject('Object Repository/IAM Model/Page_Admin Console/path'))
+WebUI.verifyElementClickable(findTestObject('Object Repository/IAM Model/Page_Admin Console/Page_Admin Console/Page_Admin Console/button_Create User_Xicon'))
 

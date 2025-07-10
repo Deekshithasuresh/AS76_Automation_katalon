@@ -45,9 +45,9 @@ WebUI.verifyElementText(findTestObject('Object Repository/Manage_user/Page_Admin
     '')
 
 // Step 2: Enter the keyword in the search field
-String searchKeyword = 'pawan kumar'
+String searchKeyword = 'manju'
 
-String Exp_username = 'UsereYIxgy'
+String Exp_username = 'manju'
 
 String Exp_role = 'administrator'
 

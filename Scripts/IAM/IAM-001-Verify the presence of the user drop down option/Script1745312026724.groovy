@@ -27,11 +27,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/IAM Model/Page_Admin Co
 
 WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Sign in'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/IAM Model/Page_Admin Console/img'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/IAM Model/Page_Admin Console/Page_Admin Console/Page_Admin Console/user_img'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/div_User'), 'User')
-
-//WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/div_User'))
-
-//WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/div_Username already taken'), 'Username already taken.')
 

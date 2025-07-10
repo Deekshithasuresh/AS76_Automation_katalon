@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@value=''])[5]</value>
+         <value>//span[contains(text(),'Username')]/following-sibling::div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -20,7 +20,7 @@
          <value>div >> internal:has-text=/^Username$/ >> internal:role=textbox</value>
       </entry>
    </smartLocatorCollection>
-   <smartLocatorEnabled>true</smartLocatorEnabled>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>a0441ef3-cfc9-4e0d-800b-9b43bf2ad586</webElementGuid>
+      <webElementGuid>2b287032-e0d8-4b07-a35c-e4cda6ee520e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -36,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rbc-input-box </value>
-      <webElementGuid>a367d720-7576-48b1-8a1d-c01daeebd712</webElementGuid>
+      <webElementGuid>825e3336-1e80-4157-9df3-d3ab89559284</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -44,7 +44,7 @@
       <name>type</name>
       <type>Main</type>
       <value>string</value>
-      <webElementGuid>a4b11417-906c-4ea3-a9c6-0a184bc8771e</webElementGuid>
+      <webElementGuid>fb58700e-bd69-4dd6-bde2-ac87c3b8e013</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,7 +52,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;MuiModal-root css-8ndowl&quot;]/div[@class=&quot;css-hwagmm&quot;]/div[@class=&quot;add-identity-body&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-15j76c0&quot;]/section[1]/div[@class=&quot;identity-userdetails-section&quot;]/div[@class=&quot;section-content&quot;]/div[@class=&quot;section-content-row&quot;]/div[1]/div[@class=&quot;tooptipStyle right create-user&quot;]/input[@class=&quot;rbc-input-box&quot;]</value>
-      <webElementGuid>babbad8d-35bb-4568-b7fd-ac038ebe81c2</webElementGuid>
+      <webElementGuid>423e10f4-19be-4dbb-8b04-b57d84e29a66</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -60,7 +60,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//input[@value=''])[5]</value>
-      <webElementGuid>68859d7e-1c00-4da8-b71b-79b3842c56ae</webElementGuid>
+      <webElementGuid>3dff8095-6481-418c-935a-3e1ce171065b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -68,7 +68,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/input</value>
-      <webElementGuid>12356386-230e-4f6d-930d-15cab0d11c1e</webElementGuid>
+      <webElementGuid>428cacb3-47f3-4180-93f0-7e12b6589f90</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -76,6 +76,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'string']</value>
-      <webElementGuid>e635fa8e-0ef6-453a-8f88-edb093f79410</webElementGuid>
+      <webElementGuid>5ae40be7-f8c9-4451-98e1-bfc739ad60ca</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

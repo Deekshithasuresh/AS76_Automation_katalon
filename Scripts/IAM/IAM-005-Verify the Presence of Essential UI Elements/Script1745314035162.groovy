@@ -37,7 +37,7 @@ WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/butto
 
 WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/h2_Create User'), 'Create User')
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/IAM Model/Page_Admin Console/path'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/IAM Model/Page_Admin Console/Page_Admin Console/Page_Admin Console/button_Create User_Xicon'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/h4_User details'), 'User details')
 

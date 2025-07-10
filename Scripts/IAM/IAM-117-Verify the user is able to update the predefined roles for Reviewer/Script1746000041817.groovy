@@ -133,7 +133,7 @@ String expectedPartial = 'has been successfully created'
 // === Define Toast TestObject based on your structure ===
 TestObject toastObject = new TestObject('dynamicToast')
 
-toastObject.addProperty('xpath', ConditionType.EQUALS, '//div[@id=\'root\']/div[2]/div/div')
+toastObject.addProperty('xpath', ConditionType.EQUALS, '//div[@class="body-text"]')
 
 // === Wait for the toast to appear ===
 if (WebUI.waitForElementPresent(toastObject, timeout)) {
@@ -248,32 +248,29 @@ WebUI.verifyElementText(findTestObject('Object Repository/Manage_user/Page_Admin
 WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/button_Update and copy'))
 
 // === Customize your expected dynamic message here ===
-WebUI.delay(2)
-
 String expectedupdatedPartial = 'has been successfully updated'
 
-int timeout = 60
+int timeout = 10
 
 TestObject updatetoastObject = new TestObject('dynamicToast')
 
-updatetoastObject.addProperty('xpath', ConditionType.EQUALS, "//*[@role='alert']")
-
+updatetoastObject.addProperty('xpath', ConditionType.EQUALS, "//div[@class='body-text']")
 WebUI.delay(2)
 
 if (WebUI.waitForElementPresent(toastObject, timeout)) {
-	String toastText = WebUI.getText(toastObject)
+    String toastText = WebUI.getText(toastObject)
 
-	toastText = toastText.replaceAll('\\s+', ' ').trim()
+    toastText = toastText.replaceAll('\\s+', ' ').trim()
 
-	WebUI.comment("✅ Toast message: '$toastText'")
+    WebUI.comment("✅ Toast message: '$toastText'")
 
-	if (toastText.contains(expectedPartial)) {
-		KeywordUtil.markPassed("✅ Toast matched: '$toastText'")
-	} else {
-		KeywordUtil.markFailed("⚠️ Toast appeared but message mismatch. Expected to contain: '$expectedPartial' Actual: '$toastText'")
-	}
+    if (toastText.contains(expectedupdatedPartial)) {
+        KeywordUtil.markPassed("✅ Toast matched: '$toastText'")
+    } else {
+        KeywordUtil.markFailed("⚠️ Toast appeared but message mismatch. Expected to contain: '$expectedupdatedPartial' Actual: '$toastText'")
+    }
 } else {
-	KeywordUtil.markFailed("❌ Toast message did not appear within $timeout seconds.")
+    KeywordUtil.markFailed("❌ Toast message did not appear within $timeout seconds.")
 }
 
 WebUI.delay(2)

@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@value=''])[3]</value>
+         <value>//span[text()='Email']/following-sibling::div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +21,7 @@
          <value>div >> internal:has-text=/^Email$/ >> internal:role=textbox</value>
       </entry>
    </smartLocatorCollection>
-   <smartLocatorEnabled>true</smartLocatorEnabled>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>be047882-af14-44ee-869a-2fe913721cfe</webElementGuid>
+      <webElementGuid>d5252bd9-be13-4024-b578-a9d375e49c65</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rbc-input-box </value>
-      <webElementGuid>de7af367-0ee7-46da-bb06-7a0d5e567ac7</webElementGuid>
+      <webElementGuid>4be2d1b9-57e1-4508-9cd3-fad059927aa7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>type</name>
       <type>Main</type>
       <value>string</value>
-      <webElementGuid>79c1e9d2-bdc1-4b5f-acc3-e58a960fab7f</webElementGuid>
+      <webElementGuid>cb564781-4a88-4648-8a2c-72035b9f8b54</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;MuiModal-root css-8ndowl&quot;]/div[@class=&quot;css-hwagmm&quot;]/div[@class=&quot;add-identity-body&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-15j76c0&quot;]/section[1]/div[@class=&quot;identity-userdetails-section&quot;]/div[@class=&quot;section-content&quot;]/div[@class=&quot;section-content-row&quot;]/div[2]/div[@class=&quot;tooptipStyle right create-user&quot;]/input[@class=&quot;rbc-input-box&quot;]</value>
-      <webElementGuid>ec2540b7-232d-4f55-9be5-425befea3317</webElementGuid>
+      <webElementGuid>46f9ee18-b235-492e-a513-7f43e4992bae</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//input[@value=''])[3]</value>
-      <webElementGuid>77a3b79c-7aaf-4319-bcaa-2cbdaaa26c88</webElementGuid>
+      <webElementGuid>f179dd2f-44a7-47d0-b1f2-614bd198c946</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/input</value>
-      <webElementGuid>df3fa24b-57d6-49d9-a4a2-ebee3516f7ac</webElementGuid>
+      <webElementGuid>5ad8a832-5a11-4bd3-8665-6e019784d744</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +77,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'string']</value>
-      <webElementGuid>211458bb-768e-4a6f-bea3-4703a6f6528c</webElementGuid>
+      <webElementGuid>880e27a4-1c1e-434d-ae30-2427b273003a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

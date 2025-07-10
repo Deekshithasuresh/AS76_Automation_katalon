@@ -1,21 +1,8 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+
+import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+
 
 WebUI.openBrowser('')
 
@@ -33,10 +20,17 @@ WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/butto
 
 WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Create User'))
 
-WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Email_rbc-input-box'))
+// Focus and input a valid 8-character email (e.g., ab@x.com)
+String email = "ccccccccccccccccccvvbbbbbbbbbbbbbbjjjjjjaaaaahhhhhhhabc@x.com"  // 8 characters
+TestObject emailInput = findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Email_rbc-input-box')
+WebUI.setText(emailInput, email)
 
-WebUI.sendKeys(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Email_rbc-input-box'), 'johnsmith_user_authentication_katalon_project_qa_team_20250424@example.com')
+// Get the entered text from the field
+String actualEmail = WebUI.getAttribute(emailInput, 'value')
 
-String email_id_char_count = WebUI.getAttribute(findTestObject('IAM Model/Page_Admin Console/input_Email_rbc-input-box'), 
-    'value')
+// ✅ Verify it's exactly 8 characters
+assert actualEmail.length() == 61 : "❌ Email is not 61 characters"
 
+// ✅ Verify no validation error message is present (adjust the object below)
+TestObject errorMsg = findTestObject('Object Repository/IAM Model/Page_Admin Console/div_Minimum 3 characters required')
+WebUI.verifyElementNotPresent(errorMsg, 2)

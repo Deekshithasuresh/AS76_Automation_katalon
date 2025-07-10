@@ -164,7 +164,7 @@ if (WebUI.waitForElementPresent(toastObject, timeout)) {
     KeywordUtil.markFailed("❌ Toast message did not appear within $timeout seconds.")
 }
 
-
+WebUI.delay(5)
 // Second user creation
 WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Create User'))
 
@@ -273,6 +273,8 @@ if (WebUI.waitForElementPresent(toastObjectFirst, timeoutForNewUser)) {
 }
 
 //third time user creation
+WebUI.delay(5)
+
 
 WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Create User'))
 

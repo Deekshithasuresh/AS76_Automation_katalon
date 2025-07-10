@@ -6,12 +6,16 @@
    <elementGuidId>5eaf3166-65ce-41d4-86b3-4b628ed7045c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[3]/div[3]/div/div/img</value>
+         <key>BASIC</key>
+         <value>//*[@src = './assets/icons/warning.svg']</value>
       </entry>
       <entry>
          <key>CSS</key>
          <value>div.popup-icon > img</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[3]/div[3]/div/div/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +25,7 @@
          <value>internal:role=img</value>
       </entry>
    </smartLocatorCollection>
-   <smartLocatorEnabled>true</smartLocatorEnabled>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>1399f11e-4166-4504-a463-0f7a47bbb24b</webElementGuid>
+      <webElementGuid>c5645711-2836-4ccc-b99d-448294269612</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +41,7 @@
       <name>src</name>
       <type>Main</type>
       <value>./assets/icons/warning.svg</value>
-      <webElementGuid>82d14166-387c-4e05-a81b-52cd574fb770</webElementGuid>
+      <webElementGuid>e6ab08bd-061c-4edd-bc7c-2f391256501d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +49,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;MuiModal-root css-8ndowl&quot;]/div[@class=&quot;css-bldfyg&quot;]/div[@class=&quot;popup-header&quot;]/div[@class=&quot;popup-icon&quot;]/img[1]</value>
-      <webElementGuid>5d660232-5fb3-4dd2-a59c-82c8819dbe25</webElementGuid>
+      <webElementGuid>d6f484a4-0edc-4380-bc6b-65322338508b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +57,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div[3]/div/div/img</value>
-      <webElementGuid>2c0d48a5-97a0-4509-aa29-e9f32673cf96</webElementGuid>
+      <webElementGuid>455f434d-cdf4-4be2-88e8-7b1c7b2d96d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,6 +65,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = './assets/icons/warning.svg']</value>
-      <webElementGuid>a48d0b75-fc6b-4a8b-898d-cf38130cc477</webElementGuid>
+      <webElementGuid>76eca96c-6494-4c20-a8d4-27ae6736089b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

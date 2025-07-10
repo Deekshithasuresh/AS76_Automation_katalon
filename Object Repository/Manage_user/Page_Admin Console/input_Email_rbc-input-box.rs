@@ -6,12 +6,12 @@
    <elementGuidId>33293e64-8556-4014-bff6-ec59274af17f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@value='testadmin@123.com']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div:nth-of-type(2) > div.tooptipStyle.right.create-user > input.rbc-input-box</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[text()='Email']/following-sibling::div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>3034532a-8ff5-4fca-b248-48ceab8ae870</webElementGuid>
+      <webElementGuid>4fee8db3-b38c-413b-8da5-4839ebc079fd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>rbc-input-box </value>
-      <webElementGuid>9fc2d259-10ac-45e6-aa84-b5c140835b26</webElementGuid>
+      <webElementGuid>883a1a77-e286-4f59-9dc5-916223a838c6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>type</name>
       <type>Main</type>
       <value>string</value>
-      <webElementGuid>15badb11-a7ad-48f1-9ca3-037bb40ee019</webElementGuid>
+      <webElementGuid>dffa1d2e-4309-4124-81ab-40184661a63e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>value</name>
       <type>Main</type>
       <value>testadmin@123.com</value>
-      <webElementGuid>80c945e2-2d68-495f-a4d6-64c1a401529c</webElementGuid>
+      <webElementGuid>ea4e7e6f-611c-46d7-a091-f9bba19d8549</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;MuiModal-root css-8ndowl&quot;]/div[@class=&quot;css-hwagmm&quot;]/div[@class=&quot;add-identity-body&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container css-1d3bbye&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 css-15j76c0&quot;]/section[1]/div[@class=&quot;identity-userdetails-section&quot;]/div[@class=&quot;section-content&quot;]/div[@class=&quot;section-content-row&quot;]/div[2]/div[@class=&quot;tooptipStyle right create-user&quot;]/input[@class=&quot;rbc-input-box&quot;]</value>
-      <webElementGuid>f46bed6c-a56a-4c0f-90dc-e487fca640e1</webElementGuid>
+      <webElementGuid>469c6056-665d-4918-a426-d0bc522d0a50</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@value='testadmin@123.com']</value>
-      <webElementGuid>3c122a5c-40e7-425a-a156-7a7436bcdbf1</webElementGuid>
+      <webElementGuid>6c07ccbf-bb5a-4edb-8478-2e6353c38fdd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/input</value>
-      <webElementGuid>ed7b3ab6-5dea-4e7c-85e2-04f0dae94da6</webElementGuid>
+      <webElementGuid>1f0492bf-a385-436f-a2a2-04e2f8fcab0e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +85,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'string']</value>
-      <webElementGuid>a319779c-2258-4f24-bd18-e0382326885d</webElementGuid>
+      <webElementGuid>04c48f96-1589-470c-a66b-6305c3681abf</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

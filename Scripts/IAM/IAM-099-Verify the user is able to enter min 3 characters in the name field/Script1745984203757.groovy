@@ -45,9 +45,9 @@ WebUI.verifyElementText(findTestObject('Object Repository/Manage_user/Page_Admin
     '')
 
 // Step 2: Enter the keyword in the search field
-String searchKeyword = 'pawan kumar'
+String searchKeyword = 'manju'
 
-String Exp_username = 'UsereYIxgy'
+String Exp_username = 'manju'
 
 String Exp_role = 'administrator'
 
@@ -55,8 +55,8 @@ String Exp_Status = 'Active'
 
 verifySearchUserByUsernameAndRole(searchKeyword, Exp_username, Exp_role, Exp_Status //search by roll acesss
     )
-verifySearchUserByUsernameAndRole(searchKeyword, Exp_username, Exp_role, Exp_Status //search by roll acesss
-    )
+//verifySearchUserByUsernameAndRole(searchKeyword, Exp_username, Exp_role, Exp_Status //search by roll acesss
+//    )
 
 WebUI.verifyElementNotChecked(findTestObject('Object Repository/Manage_user/Page_Admin Console/update-button-disabled'), 
     0)

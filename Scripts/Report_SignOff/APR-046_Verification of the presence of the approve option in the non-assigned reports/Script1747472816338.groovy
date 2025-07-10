@@ -9,6 +9,8 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
+WebUI.delay(5)
+
 //WebUI.verifyElementText(findTestObject('Object Repository/Report-Signoff/span_Approve report'), 'Approve report')
 
 WebUI.verifyElementNotPresent(findTestObject('Object Repository/Report-Signoff/summary_Approve report_button'), 0)

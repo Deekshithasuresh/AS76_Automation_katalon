@@ -183,7 +183,7 @@ WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/
 
 WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Name_rbc-input-box'), 'adminsigtuple')
 
-WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/path'))
+WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/Page_Admin Console/Page_Admin Console/button_Create User_Xicon'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Manage_user/Page_Admin Console/button_Users'), 'Users')
 

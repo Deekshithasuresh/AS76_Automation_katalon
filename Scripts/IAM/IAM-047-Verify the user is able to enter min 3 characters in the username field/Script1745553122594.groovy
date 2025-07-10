@@ -41,5 +41,13 @@ WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin C
 
 WebUI.click(findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box'))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box'), 'Paw')
+String username = "Paw"
+TestObject usernameInput = findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box')
+WebUI.setText(usernameInput, username)
+
+// Step 2: Get the actual value from the field
+String actualUsername = WebUI.getAttribute(usernameInput, 'value')
+
+// Step 3: Assert length
+assert actualUsername.length() == 3 : "❌ Username length is not 3. Actual: ${actualUsername.length()}"
 

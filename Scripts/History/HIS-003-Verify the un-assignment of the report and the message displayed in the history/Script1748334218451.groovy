@@ -34,14 +34,16 @@ WebUI.waitForElementClickable(historyTO, 5)
 WebUI.click(historyTO)
 WebUI.delay(2)
 
-// 7) READ & SCREENSHOT FIRST HISTORY ENTRY
-TestObject entryTO = new TestObject().addProperty(
-    'xpath', ConditionType.EQUALS,
-    "(//ul[contains(@class,'appBar_popover_list')]//li)[1]"
+TestObject reportAssign = new TestObject().addProperty(
+	"xpath", ConditionType.EQUALS,
+	"(//h4[normalize-space(text())='Report assignment']/ancestor::li)[1]"
 )
-WebUI.waitForElementVisible(entryTO, 10, FailureHandling.OPTIONAL)
-String entryText = WebUI.getText(entryTO).trim()
-WebUI.comment("✔ Latest history entry:\n${entryText}")
-WebUI.takeScreenshot('HistoryPanel.png')
 
-WebUI.comment("✅ Un-assignment flow and history message verified.")
+WebUI.waitForElementVisible(reportAssign, 10)
+
+String fullText = WebUI.getText(reportAssign)
+WebUI.comment("Full assignment row text:\n$fullText")
+
+assert fullText.contains("Report assignment") : "❌ 'Report assignment' not found"
+assert fullText.contains("admin → manju") : "❌ Assignee flow 'admin → manju' not found"
+assert fullText.contains("manju assigned the report") : "❌ Description missing"

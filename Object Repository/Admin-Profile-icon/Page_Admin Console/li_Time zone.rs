@@ -6,12 +6,12 @@
    <elementGuidId>1198800b-db78-4a69-a166-dd15835d7234</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='simple-popover']/div[3]/ul/li</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.MuiMenuItem-root.MuiMenuItem-gutters.css-le7snb</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[(text() = 'Time zone' or . = 'Time zone')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>li</value>
-      <webElementGuid>ae6a457f-88f4-42e3-bd6e-edfbd39b8abf</webElementGuid>
+      <webElementGuid>8f8fde03-73f7-4cbb-a231-aab381a9146d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-le7snb</value>
-      <webElementGuid>525251bf-47b3-4c91-a24a-a713c061d319</webElementGuid>
+      <webElementGuid>ce45127f-c993-414f-9480-9fe0e383cf52</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>892114e7-d668-4863-93d3-ce5c368485e9</webElementGuid>
+      <webElementGuid>62a4c8ce-38f3-491f-a2cf-1ab5587b6f44</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>role</name>
       <type>Main</type>
       <value>menuitem</value>
-      <webElementGuid>da4db232-bb37-4539-a605-badd9bf25051</webElementGuid>
+      <webElementGuid>23267a7f-4458-4d5e-8892-1215e76e50f4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Time zone</value>
-      <webElementGuid>b1e8669e-3924-432c-9541-899c7aa9d574</webElementGuid>
+      <webElementGuid>2e0cdedc-da72-4c41-83ed-6fb606e23725</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;simple-popover&quot;)/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper css-1dmzujt&quot;]/ul[@class=&quot;MuiList-root MuiList-padding sc-bdfCDU ctDxXp css-1ontqvh&quot;]/li[@class=&quot;MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-le7snb&quot;]</value>
-      <webElementGuid>1f670eb5-5dc1-416d-8f65-c47b9d6bc887</webElementGuid>
+      <webElementGuid>80b5a510-99fc-4a36-8bc1-cce87409dbd3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='simple-popover']/div[3]/ul/li</value>
-      <webElementGuid>d6c3e76b-2f6d-4fd3-8f11-3c4281c2e835</webElementGuid>
+      <webElementGuid>b71484c5-b396-4d8e-8bf5-c25880b52351</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Download CSV'])[1]/following::li[1]</value>
-      <webElementGuid>b14f55d7-6936-4bbe-bc71-71ef862d813a</webElementGuid>
+      <webElementGuid>961d136b-7371-4438-bf91-7f6dd24c1fe2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Download PNG'])[1]/following::li[1]</value>
-      <webElementGuid>7c5e1d08-ef32-4364-a1f6-59f911a03ab9</webElementGuid>
+      <webElementGuid>e151f630-2c65-4270-95a7-d2e4fa719f1d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Change password'])[1]/preceding::li[1]</value>
-      <webElementGuid>4978c5d6-c1b4-4b1f-8dd8-a2e724468eb2</webElementGuid>
+      <webElementGuid>3beafd5d-caf8-47b6-82b8-455cf2367280</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Logout'])[1]/preceding::li[2]</value>
-      <webElementGuid>4309dd08-2c4b-41b5-bbc4-eeeba614247f</webElementGuid>
+      <webElementGuid>04d85462-dccc-413d-9d6b-d490de67a5e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Time zone']/parent::*</value>
-      <webElementGuid>4867918a-ec8b-4c57-bbd9-e57d921f28db</webElementGuid>
+      <webElementGuid>45f37824-2be5-4042-8e8d-04f752bb20d3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li</value>
-      <webElementGuid>6ea829c7-f60c-4cf0-870d-182458a2b02f</webElementGuid>
+      <webElementGuid>cd2c7b7e-a46e-4b54-920b-b4f52dfe601a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,6 +133,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//li[(text() = 'Time zone' or . = 'Time zone')]</value>
-      <webElementGuid>d4b7b8b6-c075-4ee8-98a0-3fed69fd13d1</webElementGuid>
+      <webElementGuid>12675814-ab45-47f4-953b-6426c370a925</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
