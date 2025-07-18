@@ -1,19 +1,54 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
+import org.openqa.selenium.By
+import org.openqa.selenium.Dimension
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+
+CustomKeywords.'generic.custumFunctions.login'()
+
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_WBC'), 'WBC')
+
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
+
+
+
+WebDriver driver = DriverFactory.getWebDriver()
+driver.manage().window().setSize(new Dimension(1366, 768))
+WebUI.comment("✅ Browser resolution set to 1366x768")
+
+// Locate all patch elements (adjust XPath if needed)
+List<WebElement> allPatches = driver.findElements(By.xpath("//div[contains(@class, 'patches-viewer-section')]//div[@class='Card patches-container']"))
+
+if (allPatches.isEmpty()) {
+	WebUI.comment("❌ No patch elements found")
+} else {
+	Map<Integer, List<WebElement>> rows = [:]
+
+	// Group by Y-position to determine rows
+	allPatches.each { patch ->
+		int y = patch.getLocation().getY()
+		int key = rows.keySet().find { Math.abs(it - y) <= 10 } ?: y
+		rows[key] = rows.getOrDefault(key, []) + patch
+	}
+
+	// Print row-wise patch counts
+	rows.eachWithIndex { entry, idx ->
+		WebUI.comment("Row ${idx + 1}: ${entry.value.size()} patches")
+	}
+
+	int firstRowCount = rows.values()[0].size()
+	if (firstRowCount == 6) {
+		WebUI.comment("✅ Exactly 6 patches found in first row.")
+	} else {
+		WebUI.comment("❌ Expected 6 patches, but found ${firstRowCount} in first row.")
+	}
+}
