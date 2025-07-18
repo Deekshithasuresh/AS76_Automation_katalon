@@ -22,17 +22,12 @@ import org.openqa.selenium.Keys
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-// 1. Login
-WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId (21)'), 'Chidu')
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword (21)'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In (21)'))
+CustomKeywords.'generic.custumFunctions.login'()
 
-// 2. Open latest report
-//WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-CustomKeywords.'chida.wbcFunctions.assignOrReassignOnTabs'('Chidu',true)
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
+
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
+
 // 3. Store the RBC Morph object
 TestObject RBC_Morph = findTestObject('Object Repository/Commontools/Page_PBS/RBC_Morph')
 

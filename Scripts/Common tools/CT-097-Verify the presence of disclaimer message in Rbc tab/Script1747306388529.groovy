@@ -17,17 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId'), 'Chidu')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In'))
-
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/td_15-May-2025, 1234 PM (IST)'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_RBC'))
 
@@ -39,7 +31,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Commontools/Page_PB
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_Disclaimer'))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/span_Disclaimer'), 'Disclaimer:  ')
+WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/span_Disclaimer'), 'Disclaimer :  ')
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_This report is meant for review and su_e443b3'))
 

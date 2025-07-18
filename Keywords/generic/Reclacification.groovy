@@ -51,7 +51,7 @@ class Reclacification {
 				WebElement toCellElement = driver.findElement(By.xpath("//ul[contains(@class,'MuiMenu-list')]//li//div[text()='" + toCellName + "']"))
 				toCellElement.click()
 				WebUI.comment("Selected target cell type: ${toCellName}")
-				WebUI.delay(1) // Delay after selection, allowing classification process to begin
+				//WebUI.delay(1) // Delay after selection, allowing classification process to begin
 
 				// Wait for classification confirmation snackbar
 				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25)) // Increased timeout to 25 seconds

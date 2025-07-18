@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='wbc_33398_18694.jpg-patch-image-reivew']/div/div</value>
+         <value>//img[@id=&quot;split-view&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>c1042cc6-e9dd-4c0f-9b94-5c89f7cdae70</webElementGuid>
+      <webElementGuid>a445f9f6-36dd-479d-9fd4-c972e5790c88</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value> default-patch  patch-focus-mode show-subcell-lable  enabled patch-menu-container</value>
-      <webElementGuid>2e7c7f77-07f9-4c24-8f65-9b0b8d9f7957</webElementGuid>
+      <webElementGuid>ab818288-2c17-4f7d-b972-8b1aa9007095</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;wbc_33398_18694.jpg-patch-image-reivew&quot;)/div[@class=&quot;patch-img-container patch-focus-mode&quot;]/div[@class=&quot;default-patch  patch-focus-mode show-subcell-lable  enabled patch-menu-container&quot;]</value>
-      <webElementGuid>c4ce2ce8-cdc2-4c18-9816-583a64d21a79</webElementGuid>
+      <webElementGuid>f938401c-43f4-4c12-ad6d-686d76822fc9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='wbc_33398_18694.jpg-patch-image-reivew']/div/div</value>
-      <webElementGuid>b0ab1da8-5ab2-4fbb-9f6e-8104d8fffc03</webElementGuid>
+      <webElementGuid>6e0755e3-704b-4851-ab66-c74cf1643025</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Image settings'])[1]/following::div[9]</value>
-      <webElementGuid>7b19c4a0-91b7-4a84-b181-04f84e99ff55</webElementGuid>
+      <webElementGuid>44796dca-18b9-4218-abf9-17a25d8f2b66</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Number of WBCs counted is &lt;200. Differential count might not be accurate'])[1]/following::div[15]</value>
-      <webElementGuid>15f02bc7-bdca-4792-9e9c-ed83a49a2b16</webElementGuid>
+      <webElementGuid>cd527877-c5d4-41e1-88ad-2e925d3089b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,6 +77,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div[2]/div/div/div/div/div/div/div/div</value>
-      <webElementGuid>ad184596-0a02-47f7-9219-7406f859eef2</webElementGuid>
+      <webElementGuid>5f026992-2650-4adb-9c5b-8c45e135492e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

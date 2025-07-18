@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//button[@type='button'])[3]</value>
+         <value>//button[@type = 'button' and (text() = 'CBC report' or . = 'CBC report')]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>ab8b01ab-9652-404d-8994-e253bc7d3358</webElementGuid>
+      <webElementGuid>469fa020-4c6a-4140-a933-018cff7bb312</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiButtonBase-root MuiBottomNavigationAction-root Mui-selected css-ltvi70</value>
-      <webElementGuid>19dd0555-7b16-4e13-b20a-fe280a1250e6</webElementGuid>
+      <webElementGuid>065728e5-5d63-4e10-9d64-b26defa843a2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>07d32540-b7d7-418f-9b65-87f24e9478bd</webElementGuid>
+      <webElementGuid>e298f831-e845-45f8-b4d7-ea8164660ccd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>2dfd5a81-4956-4af6-a2f9-a4062d0d3f5d</webElementGuid>
+      <webElementGuid>bd78409a-0e19-4e55-8200-0ecd2ecde05c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>text</name>
       <type>Main</type>
       <value>CBC report</value>
-      <webElementGuid>ff8c534b-cf2f-42f8-be00-d8cab54cff5d</webElementGuid>
+      <webElementGuid>4b3bc7c9-bfad-44ec-9b62-2f1c5c2b9282</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-nav&quot;]/div[@class=&quot;width-div&quot;]/div[@class=&quot;MuiDrawer-root MuiDrawer-docked jss1 css-1tu59u4&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorRight MuiDrawer-paperAnchorDockedRight css-1ciwpa8&quot;]/div[@class=&quot;side-pane&quot;]/div[@class=&quot;side-pane__header&quot;]/div[@class=&quot;MuiBottomNavigation-root css-de1c49&quot;]/button[@class=&quot;MuiButtonBase-root MuiBottomNavigationAction-root Mui-selected css-ltvi70&quot;]</value>
-      <webElementGuid>f0e08fd8-5382-47b8-887e-4f2e376d37a2</webElementGuid>
+      <webElementGuid>2801f82b-be88-4498-94ad-21b940235f6e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[3]</value>
-      <webElementGuid>d71d614e-c405-45d9-8516-f08a837ab461</webElementGuid>
+      <webElementGuid>5515c77b-6628-424e-a4a3-058a72d0d6e8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div/div[2]/div/div/div/div/div/button</value>
-      <webElementGuid>10f842db-97c7-4b19-a0d5-5b62bd3b845b</webElementGuid>
+      <webElementGuid>43ac2a0c-02b7-4676-8952-00d91377f6d5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='References'])[1]/following::button[1]</value>
-      <webElementGuid>f788ca59-3dba-451d-8cdb-55892244fe35</webElementGuid>
+      <webElementGuid>96775215-4696-4e51-8e7e-a688cfd33687</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CBC report'])[1]/following::button[1]</value>
-      <webElementGuid>1d1d43d7-592a-44fd-882e-0cbbfba61122</webElementGuid>
+      <webElementGuid>f640d8e6-3707-46ca-b32f-84cd29cf5d30</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CBC report could not be retrieved'])[1]/preceding::button[2]</value>
-      <webElementGuid>5707d961-a973-46ff-9314-ac489e6c8db3</webElementGuid>
+      <webElementGuid>41b18ba7-f46d-4767-b6b8-5befadb25b30</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/div/div/button</value>
-      <webElementGuid>15ad7469-d8a3-4115-8cac-b25c083f541a</webElementGuid>
+      <webElementGuid>9ec16529-5d2b-4139-8c57-8627ff1f4d77</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'CBC report' or . = 'CBC report')]</value>
-      <webElementGuid>0c4c6300-91e0-4e51-8fe8-b3e9a278a0a0</webElementGuid>
+      <webElementGuid>27092087-c8b5-451e-836c-7da9953006fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,6 +133,6 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Platelets'])[1]/following::button[1]</value>
-      <webElementGuid>02ad065c-41b0-49c0-9918-93a47fcf269e</webElementGuid>
+      <webElementGuid>c5ab91d0-970d-492d-a5cc-607b23ead27e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

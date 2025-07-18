@@ -13,16 +13,11 @@ import java.io.*
 import java.util.zip.ZipEntry
 import java.util.zip.ZipOutputStream
 
-// Open browser and login
-WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
 
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId'), 'Chidu')
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In'))
+CustomKeywords.'generic.custumFunctions.login'()
 
-// Click on a report date-time div
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
+
 
 // Click RBC tab
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'))

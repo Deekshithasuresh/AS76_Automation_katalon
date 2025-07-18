@@ -17,17 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId (12)'), 'Chidu')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword (12)'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In (12)'))
-
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_06-May-2025, 0117 PM (IST)'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_Platelets (2)'))
 
@@ -43,7 +35,6 @@ WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/d
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_References (8)'))
 
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_References (8)'))
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Commontools/Page_PBS/div_Large Platelets (1)'), 0)
 

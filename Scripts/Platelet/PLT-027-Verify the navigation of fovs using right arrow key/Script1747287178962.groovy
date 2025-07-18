@@ -24,8 +24,20 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.interactions.Actions
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.JavascriptExecutor
+import java.awt.Robot
+import java.awt.event.InputEvent
+import java.awt.image.BufferedImage
+import java.io.ByteArrayInputStream
+import java.io.File
+import javax.imageio.ImageIO
+import java.util.Base64
 
 CustomKeywords.'generic.custumFunctions.login'()
+
+WebUI.maximizeWindow()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
@@ -47,16 +59,7 @@ WebElement left_naviagtion_icon=driver.findElement(By.xpath("(//img)[15]"))
 WebElement right_naviagtion_icon=driver.findElement(By.xpath("(//img)[16]"))
 List<WebElement> FOV_rows=driver.findElements(By.className("fov-tuple"))
 
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.JavascriptExecutor
-import java.awt.Robot
-import java.awt.event.InputEvent
-import java.awt.image.BufferedImage
-import java.io.ByteArrayInputStream
-import java.io.File
-import javax.imageio.ImageIO
-import java.util.Base64
+
 // === Function to get base64 image from canvas ===
 def getCanvasImageBase64 = {
 	JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getWebDriver()
@@ -73,8 +76,9 @@ for(int i=1; i<=FOV_rows.size()-1;i++)
 	String Fov_a = getCanvasImageBase64()
 	//WebUI.comment(Fov_a)
 	right_naviagtion_icon.click()
-	WebUI.delay(3)
+	WebUI.delay(10)
 	String selected_fov_bg_color=FOV_rows.get(i).getCssValue("background-color")
+	WebUI.delay(10)
 	String Fov_b = getCanvasImageBase64()
 	//WebUI.comment(Fov_b)
 	println(selected_fov_bg_color)

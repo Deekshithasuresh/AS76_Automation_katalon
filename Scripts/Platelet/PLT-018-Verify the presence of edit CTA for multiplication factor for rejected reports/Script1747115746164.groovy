@@ -20,11 +20,12 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-//Verify the absence of edit CTA for multiplication factor for rejected report.
-WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/img'))
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Ready for review'))
 
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Reviewed'))
 
-WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/div_Reviewed'))
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Reviewed_1'), 'Reviewed')
+
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Rejected')
 
@@ -32,7 +33,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span
 
 WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'))
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Platelet/Page_PBS/i edit icon for multiplication factor'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/Platelet/Page_PBS/i edit icon for multiplication factor'), 5)
 
 
 

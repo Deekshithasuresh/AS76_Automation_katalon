@@ -27,17 +27,9 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId (14)'), 'Chidu')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword (14)'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In (14)'))
-
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_19-May-2025, 0931 AM (IST) (3)'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'))
 

@@ -27,33 +27,17 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId'), 'Chidu')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In'))
-
-//WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
-CustomKeywords.'chida.wbcFunctions.selectReportByStatus'('To be reviewed')
-
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('Chidu')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_WBC'))
 
-//WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
-//WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Additional info'), 10)
-//WebUI.click(findTestObject('Commontools/Page_PBS/li_Additional info'))
-//WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Classification Rank'), 10)
-//WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_1. Neutrophils'), 10)
-//WebUI.verifyElementText(findTestObject('Commontools/Page_PBS/li_Neutrophils'), 'Neutrophils')
-//WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_2. Lymphocytes'), 10)
-//WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/td_Band Forms'))
-//WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/td_Band Forms'))
-CustomKeywords.'chida.wbcFunctions.classifyFromCellToCell'('Neutrophils', 'Promonocytes')
+
+CustomKeywords.'generic.Reclassification.classifyFromCellToCell'("Neutrophils", "Promonocytes")
 
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/td_Promonocytes'))
 

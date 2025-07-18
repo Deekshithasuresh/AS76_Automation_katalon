@@ -17,17 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("To be reviewed")
 
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId (21)'), 'Chidu')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword (21)'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In (21)'))
-
-CustomKeywords.'chida.wbcFunctions.selectReportByStatus'('To be reviewed')
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button__MuiButtonBase-root MuiIconButton-ro_10bdc2'))
 

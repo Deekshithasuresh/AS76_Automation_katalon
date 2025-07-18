@@ -14,6 +14,7 @@ import imageUtils.blurChecker
 
 
 
+
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
@@ -25,6 +26,8 @@ WebUI.setText(findTestObject('Object Repository/Platelets/Page_PBS/input_passwor
 
 WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Sign In'))
 
+WebUI.maximizeWindow()
+
 //WebUI.delay(10)
 // Select a sample
 WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/td_SIG0146'))
@@ -34,7 +37,7 @@ WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Platelet
 
 WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Morphology'))
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 
 // Step 1: Get cell rows
@@ -71,12 +74,12 @@ if (clumpCount == 0 || clumpRow == null) {
 	return
 }else {
 	clumpRow.click()
-	WebUI.delay(2) // wait for patches to load
+	WebUI.delay(10) // wait for patches to load
 	
 	WebUI.click(findTestObject('Platelets/Page_PBS/split_view_img'))
 	
 	WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_zoom-out'))
-	WebUI.delay(5)
+	WebUI.delay(10)
 	
 	blurChecker checker = new blurChecker()
 	// Option 1: Default canvas selector

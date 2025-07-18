@@ -27,6 +27,7 @@ import org.openqa.selenium.interactions.Actions
 
 
 CustomKeywords.'generic.custumFunctions.login'()
+WebUI.maximizeWindow()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
@@ -42,6 +43,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Platelet/Page_PBS/i
 
 //changing the NMG values for all the Fovs from Fov1 to Fov10 and after reseting the values checking the last value in NMG Cel
 
+enterNMGValues('reset')
 
 
 
@@ -100,7 +102,6 @@ for (int i = 0; i < 10; i++) {
 
 }
 
-enterNMGValues('reset')
 
 
 

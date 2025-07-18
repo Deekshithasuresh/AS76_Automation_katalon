@@ -19,6 +19,96 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/Report viewer/Page_PBS/button_Summary_idRelative.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Platelet/Page_PBS/button_Confirm-confirm pop up",
+      "brokenLocator": "internal:role\u003dbutton[name\u003d\"Confirm\"i]",
+      "brokenLocatorMethod": "SMART_LOCATOR",
+      "proposedLocator": "(//button[@type\u003d\u0027button\u0027])[7]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Platelet/Page_PBS/button_Confirm-confirm pop up_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_PBS/div_Are you sure you want to approveAll WBC_fa951f",
+      "brokenLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027No patches available\u0027])[1]/following::div[7]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[2]/div[3]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_PBS/div_Are you sure you want to approveAll WBC_fa951f_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/IAM Model/Page_Admin Console/Page_Admin Console/Page_Admin Console/button_Create User_Xicon",
+      "brokenLocator": "(//button[@type\u003d\u0027button\u0027])[24]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//button[@type \u003d \u0027button\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/IAM Model/Page_Admin Console/Page_Admin Console/Page_Admin Console/button_Create User_Xicon_customAttributes.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/View list of users/Page_Admin Console/button_Clear filters",
+      "brokenLocator": "internal:role\u003dbutton[name\u003d\"Clear filters\"i]",
+      "brokenLocatorMethod": "SMART_LOCATOR",
+      "proposedLocator": "(//button[@type\u003d\u0027button\u0027])[22]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/View list of users/Page_Admin Console/button_Clear filters_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Manage_user/Page_Admin Console/input_Platelet level limits_MuiInputBase-in_8eb492",
+      "brokenLocator": "//*[@id\u003d\"root\"]/div/div/div[2]/div/div[1]/div[1]/div",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//input[@value\u003d\u0027\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Manage_user/Page_Admin Console/input_Platelet level limits_MuiInputBase-in_8eb492_attributes.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Report_Listing/Page_PBS/button_Reject report_mainpage",
+      "brokenLocator": "//button[(text() \u003d \u0027Reject report\u0027 or . \u003d \u0027Reject report\u0027)]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027​\u0027])[1]/following::button[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Report_Listing/Page_PBS/button_Reject report_mainpage_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/WBC_m/Page_PBS/back_button",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div/div/div/img",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//img",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/WBC_m/Page_PBS/back_button_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Report_Listing/Page_PBS/span_Hide applied filters",
+      "brokenLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027manju\u0027])[1]/following::span[1]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Remove\u0027])[3]/following::span[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Report_Listing/Page_PBS/span_Hide applied filters_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Configure Time Zone Reporting/Page_Admin Console/img",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/header/header/div/div[3]/button/img",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "internal:role\u003dbutton \u003e\u003e nth\u003d0",
+      "proposedLocatorMethod": "SMART_LOCATOR",
+      "recoveryMethod": "SMART_LOCATOR",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Configure Time Zone Reporting/Page_Admin Console/img_SMART_LOCATOR.png"
     }
   ]
 }

@@ -23,9 +23,10 @@ lg.login()
 
 WebUI.delay(2)
 
-lg.selectReportByStatus('To be reviewed')
 
-lg.assignOrReassignOnTabs('prem')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('prem')
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Summary'), 10)
 

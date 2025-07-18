@@ -18,7 +18,7 @@
          <value>//*[@src = '/icons/warning-info.svg' and @alt = 'warning']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
@@ -33,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>ad0c672d-fb9e-40df-af1d-f501e8e863b8</webElementGuid>
+      <webElementGuid>af5b892a-af72-46e7-b420-7433192c6e79</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -41,7 +41,7 @@
       <name>src</name>
       <type>Main</type>
       <value>/icons/warning-info.svg</value>
-      <webElementGuid>dfcc9466-2cf0-41d7-a275-22ddccca0164</webElementGuid>
+      <webElementGuid>b60ce228-b8a3-4f2d-ad54-1ec3a670f437</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -49,7 +49,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>warning</value>
-      <webElementGuid>94ad7b8a-5ce6-4bee-b143-41822aee97a6</webElementGuid>
+      <webElementGuid>6388c7ec-560a-407e-81b1-48a11c8d7475</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -57,7 +57,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;split-view-contaier&quot;]/div[@class=&quot;split-view-count-section&quot;]/div[@class=&quot;alert-info-container warning&quot;]/div[1]/img[1]</value>
-      <webElementGuid>47ad9ae9-c5da-43d6-9951-23e58f6f9a1d</webElementGuid>
+      <webElementGuid>e486cbd9-4f95-4e88-859f-a814f32b6afc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -65,7 +65,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div[2]/div/div/div[2]/div/img</value>
-      <webElementGuid>c7e0301a-1138-48c0-b9c2-f80827f3d092</webElementGuid>
+      <webElementGuid>7172d21a-ef20-4838-bcb8-613622b6279c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -73,7 +73,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='warning']</value>
-      <webElementGuid>f7045247-a37a-44b7-b00a-515b04dc99c4</webElementGuid>
+      <webElementGuid>652e3b70-dae5-4f2c-9bad-0d9110082990</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -81,7 +81,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div[2]/div/img</value>
-      <webElementGuid>3391a962-3c12-4734-8598-361cb8b6be64</webElementGuid>
+      <webElementGuid>80ec8e05-fdc4-4c1b-b813-0f3985735b06</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,6 +89,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '/icons/warning-info.svg' and @alt = 'warning']</value>
-      <webElementGuid>015cc1aa-4d56-468d-9b75-7bcd0169c0c8</webElementGuid>
+      <webElementGuid>01ae9695-fc67-4f7f-a8d1-ff6eff2335ca</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

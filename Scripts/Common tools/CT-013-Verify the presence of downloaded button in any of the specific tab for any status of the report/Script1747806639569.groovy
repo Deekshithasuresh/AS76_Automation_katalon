@@ -25,63 +25,34 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.interactions.Actions
 
+CustomKeywords.'generic.custumFunctions.login'()
 
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
-
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId'), 'Chidu')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In'))
-
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_WBC'))
+
+WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
+
+WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 10)
+
+WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
+
+WebUI.doubleClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebDriver driver = DriverFactory.getWebDriver()
 
 Actions actions = new Actions(driver)
 
+WebElement patchfirst = driver.findElement(By.xpath('(//div[@class=\'Card patches-container\'])[1]'))
 
-List<WebElement> patches = driver.findElements(By.xpath("//div[contains(@class,'patches-section ')]//div[contains(@class,'Card patches-container')]"))
-if (patches.size() < 3) {
-	WebUI.comment(":warning: Only found ${patches.size()} patches. Cannot select ${3}.")
-	return
-}
-for (int i = 0; i < 3; i++) {
-	patches[i].click()
-	WebUI.comment("Selected patch ${i + 1}")
-	WebUI.delay(0.2)
-}
-actions.moveToElement(patches[0]).contextClick().build().perform()
+actions.contextClick(patchfirst).perform()
+
+WebUI.click(findTestObject('Commontools/2ndpatch'))
+
+WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
+
 WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 10)
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
-WebUI.doubleClick(findTestObject('Object Repository/Commontools/Page_PBS/div_Image settings_default-patch  patch-foc_a6a738'))
-
-if (patches.size() < 3) {
-	WebUI.comment(":warning: Only found ${patches.size()} patches. Cannot select ${3}.")
-	return
-}
-for (int i = 0; i < 3; i++) {
-	patches[i].click()
-	WebUI.comment("Selected patch ${i + 1}")
-	WebUI.delay(5)
-}
-
-
-actions.moveToElement(patches[1]).contextClick().build().perform()
-WebUI.verifyElementPresent(findTestObject('Commontools/Page_PBS/li_Download'), 10)
-
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
-
-
-
-
-
-
-
 

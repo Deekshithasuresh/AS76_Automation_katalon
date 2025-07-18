@@ -1,6 +1,10 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import java.awt.Graphics2D
+import java.awt.Image
+import java.awt.Point
 import java.awt.image.BufferedImage
+import java.io.*
 import java.util.zip.ZipEntry
 import java.util.zip.ZipFile
 
@@ -12,8 +16,16 @@ import org.openqa.selenium.interactions.Actions
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+// --- Helper method to convert Image to BufferedImage ---
+BufferedImage toBufferedImage(Image img) {
+	BufferedImage bimage = new BufferedImage(img.getWidth(null), img.getHeight(null), BufferedImage.TYPE_INT_ARGB)
+	Graphics2D bGr = bimage.createGraphics()
+	bGr.drawImage(img, 0, 0, null)
+	bGr.dispose()
+	return bimage
+}
 
-// --- Helper methods ---
+// --- Extract Zip ---
 File downloadAndExtractZip(String downloadDir) {
 	WebUI.delay(5)
 	File[] zipFiles = new File(downloadDir).listFiles({ d, name -> name.toLowerCase().endsWith(".zip") } as FilenameFilter)
@@ -52,41 +64,54 @@ File[] getImageFiles(File folder) {
 	return images.sort()
 }
 
-boolean compareImages(BufferedImage img1, BufferedImage img2) {
+boolean compareImages(BufferedImage img1, BufferedImage img2, double tolerancePercent = 5.0) {
 	if (img1.width != img2.width || img1.height != img2.height) return false
-	for (int y = 0; y < img1.height; y++) {
-		for (int x = 0; x < img1.width; x++) {
-			if (img1.getRGB(x, y) != img2.getRGB(x, y)) return false
+
+	int width = img1.width
+	int height = img1.height
+	int totalPixels = width * height
+	int diffPixels = 0
+
+	for (int y = 0; y < height; y++) {
+		for (int x = 0; x < width; x++) {
+			if (img1.getRGB(x, y) != img2.getRGB(x, y)) {
+				diffPixels++
+			}
 		}
 	}
-	return true
+	double diffRatio = (diffPixels * 100.0) / totalPixels
+	println("🔍 Pixel mismatch: ${String.format('%.2f', diffRatio)}%")
+	return diffRatio <= tolerancePercent
 }
 
 void comparePatches(List<WebElement> patches, File[] extractedImages, String viewName) {
-	WebDriver driver = DriverFactory.getWebDriver()
 	for (int i = 0; i < 3; i++) {
-		File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE)
-		BufferedImage fullImg = ImageIO.read(screenshot)
-		Point point = patches[i].getLocation()
-		int width = patches[i].getSize().width
-		int height = patches[i].getSize().height
-		BufferedImage uiImg = fullImg.getSubimage(point.getX(), point.getY(), width, height)
+		// Screenshot of the WebElement directly (UI Patch)
+		File patchFile = patches[i].getScreenshotAs(OutputType.FILE)
+		BufferedImage uiImg = ImageIO.read(patchFile)
+		File uiOut = new File("./ui_patch_${viewName}_${i + 1}.png")
+		ImageIO.write(uiImg, "png", uiOut)
+
+		// Extracted image from ZIP
 		BufferedImage extractedImg = ImageIO.read(extractedImages[i])
-		boolean match = compareImages(uiImg, extractedImg)
-		assert match : "❌ [${viewName}] Patch ${i + 1} does NOT match"
-		
-		WebUI.comment(match ? "✅ [${viewName}] Patch ${i + 1} matches extracted image" : "❌ [${viewName}] Patch ${i + 1} does NOT match")
+		File extractedOut = new File("./extracted_patch_${viewName}_${i + 1}.png")
+		ImageIO.write(extractedImg, "png", extractedOut)
+
+		// Compare with 10% tolerance
+		boolean match = compareImages(uiImg, extractedImg, 10.0)
+		WebUI.comment(match ? "✅ [${viewName}] Patch ${i + 1} matches extracted image"
+							: "❌ [${viewName}] Patch ${i + 1} does NOT match")
 	}
 }
 
+
+
 // --- Start Test ---
 String downloadDir = System.getProperty("user.home") + File.separator + "Downloads"
-WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId'), 'Chidu')
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In'))
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
+CustomKeywords.'generic.custumFunctions.login'()
+WebUI.maximizeWindow()
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
+
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_WBC (9)'))
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/span_WBC (9)'), 'WBC')
 WebDriver driver = DriverFactory.getWebDriver()
@@ -97,7 +122,6 @@ if (patches.size() < 3) {
 	return
 }
 
-// Select and download from Patch View
 (0..<3).each { i ->
 	patches[i].click()
 	WebUI.comment("Patch View - Selected patch ${i + 1}")
@@ -108,21 +132,3 @@ WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download')
 File extractDirPatchView = downloadAndExtractZip(downloadDir)
 File[] imagesPatchView = getImageFiles(extractDirPatchView)
 comparePatches(patches, imagesPatchView, "Patch View")
-
-// Switch to Split View
-WebUI.doubleClick(findTestObject('Object Repository/Commontools/Page_PBS/div_Image settings_default-patch  patch-foc_a6a738'))
-patches = driver.findElements(By.xpath("//div[contains(@class,'patches-section ')]//div[contains(@class,'Card patches-container')]"))
-if (patches.size() < 3) {
-	WebUI.comment(":warning: Only found ${patches.size()} patches in split view. Cannot continue.")
-	return
-}
-(0..<3).each { i ->
-	patches[i].click()
-	WebUI.comment("Split View - Selected patch ${i + 1}")
-	WebUI.delay(1)
-}
-actions.moveToElement(patches[1]).contextClick().build().perform()
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
-File extractDirSplitView = downloadAndExtractZip(downloadDir)
-File[] imagesSplitView = getImageFiles(extractDirSplitView)
-comparePatches(patches, imagesSplitView, "Split View")

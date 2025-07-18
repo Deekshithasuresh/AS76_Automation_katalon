@@ -1,3 +1,5 @@
+
+
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import java.time.Duration
@@ -9,23 +11,18 @@ import org.openqa.selenium.support.ui.WebDriverWait
 
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
-import loginPackage.Login
 import pdfutils.PdfReader
 import platelet_Package.Platelet_P as Platelet_P
 
-Login lg = new Login()
 
 Platelet_P plt = new Platelet_P()
 
-lg.login( //logged in with 'jyothi' username
-    )
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.delay(2)
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
-lg.selectReportByStatus('To be reviewed')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
-lg.assignOrReassignOnTabs('premkumar')
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Summary'), 10)
 
@@ -76,17 +73,35 @@ driver.findElement(By.xpath("//ul[@class='appBar_popover__list__bNpZi']/li/span[
 
 WebUI.delay(5)
 
+
 // Step 1: Get Downloads folder path
 String downloadsPath = System.getProperty('user.home') + '/Downloads'
+
 // Step 2: Find the latest 'pdfReport*.pdf'
-File latestPdf = PdfReader.getLatestPdfReport(downloadsPath)
-println("Latest pdfReport file: ${latestPdf.absolutePath}")
+File latestPdf = pdfutils.PdfReader.getLatestPdfReport(downloadsPath)
+if (latestPdf == null || !latestPdf.exists()) {
+	WebUI.comment("❌ No PDF report found in Downloads.")
+	assert false : "No PDF file found."
+}
+WebUI.comment("✅ Latest PDF found: ${latestPdf.absolutePath}")
+
 // Step 3: Read text from PDF
-String pdfText = PdfReader.readText(latestPdf.absolutePath)
-println("PDF Content:\n$pdfText")
-// === Step 4: Validate 'Others*' is present ===
-assert pdfText.contains('(x 10^9/L)') : "❌ '(x 10^9/L)' not found in PDF report!"
-assert pdfText.contains('Detected') || pdfText.contains('Not detected') : "❌ 'Detected' 'Not detected' text is not found in PDF report!"
+String pdfText = pdfutils.PdfReader.readText(latestPdf.absolutePath)
+println("📄 PDF Content:\n$pdfText")
+
+// Step 4: Validate text content
+if (!pdfText.contains('(x 10^9/L)')) {
+	WebUI.comment("❌ '(x 10^9/L)' not found in PDF report!")
+	assert false
+}
+if (!pdfText.contains('Detected') && !pdfText.contains('Not detected')) {
+	WebUI.comment("❌ Neither 'Detected' nor 'Not detected' found!")
+	assert false
+}
+WebUI.comment("✅ Required text found in PDF.")
+
+
+
 //assert pdfText.contains('Not detected') : "❌ 'Not detected' text is not found in PDF report!"
 // === Step 5: Validate percentage is shown next to 'Others*' ===
 //def othersLine = pdfText.split('\n').find { it.contains("Others*") }

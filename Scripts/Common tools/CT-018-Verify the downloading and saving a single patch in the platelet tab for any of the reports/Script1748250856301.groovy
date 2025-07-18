@@ -29,17 +29,10 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import java.nio.file.*
 import java.io.File as File
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId (20)'), 'Chidu')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword (20)'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In (20)'))
-
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_02-May-2025, 0938 AM (IST) (4)'))
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_Platelets (3)'))
 
@@ -48,6 +41,8 @@ WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/s
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/button_Morphology (3)'), 'Morphology')
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Morphology (3)'))
+
+WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/li_Download'))
 

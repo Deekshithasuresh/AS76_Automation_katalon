@@ -26,6 +26,7 @@ WebUI.setText(findTestObject('Object Repository/Platelets/Page_PBS/input_usernam
 WebUI.setText(findTestObject('Object Repository/Platelets/Page_PBS/input_password_loginPassword'), 'jyothi@1995')
 
 WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Sign In'))
+WebUI.maximizeWindow()
 
 //WebUI.delay(10)
 // Select a sample
@@ -73,11 +74,11 @@ if (clumpCount == 0 || clumpRow == null) {
 	return
 }else {
 	clumpRow.click()
-	WebUI.delay(2) // wait for patches to load
+	WebUI.delay(5) // wait for patches to load
 	
 	WebUI.click(findTestObject('Platelets/Page_PBS/split_view_img'))
 	
-	WebUI.delay(2)
+	WebUI.delay(5)
 	
 	def getCanvasImageBase64 = {
 		JavascriptExecutor js = ((DriverFactory.getWebDriver()) as JavascriptExecutor)
@@ -133,7 +134,7 @@ if (clumpCount == 0 || clumpRow == null) {
 
 	robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK)
 
-	WebUI.delay(1)
+	WebUI.delay(5)
 
 	WebUI.comment('Capturing canvas after pan...')
 

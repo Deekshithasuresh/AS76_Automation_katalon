@@ -1,4 +1,4 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+      import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -46,17 +46,9 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-
-WebUI.setText(findTestObject('Object Repository/Commontools/input_username_loginId (13)'), 'Chidu')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/input_password_loginPassword (13)'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/Commontools/button_Sign In (11)'))
-
-WebUI.click(findTestObject('Object Repository/Commontools/div_18-Jun-2025, 0222 PM (IST) (4)'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
 WebUI.click(findTestObject('Object Repository/Commontools/span_WBC (5)'))
 

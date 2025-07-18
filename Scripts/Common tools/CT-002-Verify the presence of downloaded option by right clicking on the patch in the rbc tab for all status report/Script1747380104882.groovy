@@ -13,18 +13,12 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
 
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId'), 'Chidu')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In'))
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_19-May-2025, 0931 AM (IST) (3)'))
-
-//CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'))
 
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'), 'RBC')

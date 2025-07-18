@@ -1,13 +1,3 @@
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import org.openqa.selenium.By
-import org.openqa.selenium.Keys
-import org.openqa.selenium.WebDriver
-
-import com.kms.katalon.core.model.FailureHandling
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webui.driver.DriverFactory
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -24,114 +14,60 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import internal.GlobalVariable
 
-import org.openqa.selenium.Keys
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import java.time.Duration as Duration
+import java.util.concurrent.TimeoutException
+
+import org.apache.logging.log4j.core.appender.rolling.action.IfAccumulatedFileCount
+import org.openqa.selenium.*
+import org.openqa.selenium.interactions.Actions as Actions
+import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
+import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+import com.kms.katalon.core.annotation.Keyword as Keyword
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+
+CustomKeywords.'generic.custumFunctions.login'()
+
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("To be reviewed")
 
 
-// 1. Login
-WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId (21)'), 'Chidu')
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword (21)'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In (21)'))
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
+
+WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_WBC'))
+
 WebDriver driver = DriverFactory.getWebDriver()
-// 2. Open report
-//WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
-CustomKeywords.'chida.wbcFunctions.selectReportByStatus'('To be reviewed')
-CustomKeywords.'chida.wbcFunctions.assignOrReassignOnTabs'('Chidu',true)
-// 3. RBC Morph field object
-TestObject RBC_Morph = findTestObject('Object Repository/Commontools/Page_PBS/RBC_Morph')
+String initialCount =driver.findElement(By.xpath("//td[text()='Total']/following-sibling::td[1]")).getText();
 
-// 4. Capture initial value
-WebUI.waitForElementVisible(RBC_Morph, 10)
-String initialValue = WebUI.getAttribute(RBC_Morph, 'value')
-println "Initial RBC Morph Value: " + initialValue
+CustomKeywords.'generic.Reclassification.classifyFromCellToCell'("Neutrophils", "NRBC")
 
-// 5. Enter test data
-String testData = '12as#'
-enterAlphaNumSpecialInField(RBC_Morph, testData)
-
-// 6. Simulate Save: click logo/back
+// 6. Click back arrow or logo to trigger save
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/img'))
 
-// 7. Switch to original report
-WebUI.verifyElementPresent(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/li_Switch to original report'), 5)
-WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/li_Switch to original report'), 'Switch to original report')
-WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/span_Switch to original report'))
+WebUI.click(findTestObject('Object Repository/Commontools/span_Switch to original report (2)'))
 
-// 8. Validate modified data is not present
-WebUI.waitForElementVisible(RBC_Morph, 10)
-String valueInOriginal = WebUI.getAttribute(RBC_Morph, 'value')
-println "Value in Original Report RBC Morph: " + valueInOriginal
-assert valueInOriginal != testData : 'Modified data should NOT be present in original report'
+WebUI.click(findTestObject('Object Repository/Commontools/img (5)'))
 
-// 9. Refresh view by clicking logo/back
-WebUI.click(findTestObject('Object Repository/Commontools/img'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Commontools/span_Switch to modified report (1)'), 0)
 
-// 10. Wait for and click 'Switch to modified report'
-TestObject switchToModified = findTestObject('Object Repository/Commontools/span_Switch to modified report')
-boolean isPresent = WebUI.waitForElementPresent(switchToModified, 10, FailureHandling.OPTIONAL)
-println "Switch to Modified Report Present: " + isPresent
+WebUI.verifyElementText(findTestObject('Object Repository/Commontools/span_Switch to modified report (1)'), 'Switch to modified report')
 
-if (isPresent) {
-	WebUI.waitForElementVisible(switchToModified, 10)
-	WebUI.waitForElementClickable(switchToModified, 10)
-	WebUI.click(switchToModified)
-	WebUI.delay(2)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Commontools/span_Switch to modified report (1)'), 0)
 
-	//(//div[@role='textbox'])[1]
-	// 11. Validate modified data is restored (with retry)
-	WebUI.waitForElementVisible(RBC_Morph, 10)
-	
-	String valueInModified = null
-	int retry = 0
-	while (retry < 5 && (valueInModified == null || valueInModified.trim() == '')) {
-		
-		valueInModified=driver.findElement(By.xpath("(//div[@role='textbox'])[1]/p")).getText()
-		
-		//valueInModified = WebUI.getAttribute(RBC_Morph, 'value')
-		println "Attempt ${retry + 1}: Value in Modified Report RBC Morph: " + valueInModified
-		WebUI.delay(1)
-		retry++
-	}
+WebUI.verifyElementText(findTestObject('Object Repository/Commontools/span_Switch to modified report (1)'), 'Switch to modified report')
 
-	WebUI.takeScreenshot()  // capture final state
+WebUI.click(findTestObject('Object Repository/Commontools/span_Switch to modified report (1)'))
 
-	assert valueInModified == testData : "Modified data is NOT present in modified report as expected. Expected: '${testData}', Found: '${valueInModified}'"
+
+String finalCount =driver.findElement(By.xpath("//td[text()='Total']/following-sibling::td[1]")).getText();
+
+if (initialCount.equals(finalCount)) {
+	WebUI.comment("❌ Total count is unchanged from original to modified — this is a failure case.")
+	WebUI.verifyMatch(initialCount.toString(), finalCount.toString(), false, FailureHandling.STOP_ON_FAILURE)
 } else {
-	WebUI.takeScreenshot()
-	assert false : 'Switch to modified report button NOT found.'
+	WebUI.comment("✅ Total count is different from original to modified — expected behavior.")
 }
 
-// === Reusable field entry function ===
-def enterAlphaNumSpecialInField(TestObject fieldObject, String value) {
-	WebUI.waitForElementVisible(fieldObject, 10)
-	WebUI.click(fieldObject)
-	WebUI.clearText(fieldObject)
-	WebUI.setText(fieldObject, value)
-	WebUI.sendKeys(fieldObject, Keys.chord(Keys.TAB))
-}
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 

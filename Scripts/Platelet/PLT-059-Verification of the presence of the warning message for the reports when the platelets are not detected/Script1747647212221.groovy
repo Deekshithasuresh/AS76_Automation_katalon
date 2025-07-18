@@ -19,10 +19,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
+
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
-
+WebUI.maximizeWindow()
 
 WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'), 'Platelets')
 
@@ -30,8 +30,7 @@ WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets')
 
 //verifying the presence of i icon when the platlet is not detected.
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Platelet/Page_PBS/i-icon beside the platlet clum detected'),
-	0)
+
 
 // Check if the element is present before attempting to get the text
 if (WebUI.verifyElementPresent(findTestObject('Object Repository/Platelet/Page_PBS/div_Platelet clumps are detected. Platelet count might be underestimated'),

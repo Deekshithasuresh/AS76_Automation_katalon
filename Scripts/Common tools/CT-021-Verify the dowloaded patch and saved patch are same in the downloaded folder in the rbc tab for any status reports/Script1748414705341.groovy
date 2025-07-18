@@ -101,12 +101,10 @@ void comparePatches(List<WebElement> patches, File[] extractedImages, String vie
 
 // --- Start Test ---
 String downloadDir = System.getProperty("user.home") + File.separator + "Downloads"
-WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId'), 'Chidu')
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In'))
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
+CustomKeywords.'generic.custumFunctions.login'()
+
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
+
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'))
 WebUI.click(findTestObject('Commontools/Macrocytes_cell_name'), FailureHandling.STOP_ON_FAILURE)
 

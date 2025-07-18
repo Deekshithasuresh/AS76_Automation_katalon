@@ -22,6 +22,8 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.interactions.Actions
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import org.openqa.selenium.JavascriptExecutor
 
 CustomKeywords.'generic.custumFunctions.login'()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
@@ -38,8 +40,7 @@ WebElement left_navigation_icon = driver.findElement(By.xpath('(//img)[15]'))
 WebElement right_navigation_icon = driver.findElement(By.xpath('(//img)[16]'))
 List<WebElement> FOV_rows = driver.findElements(By.className('fov-tuple'))
 
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import org.openqa.selenium.JavascriptExecutor
+
 
 // Function to get base64 image from canvas
 def getCanvasImageBase64 = {

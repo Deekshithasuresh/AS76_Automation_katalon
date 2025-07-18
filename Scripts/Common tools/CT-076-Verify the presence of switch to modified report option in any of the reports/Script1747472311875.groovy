@@ -27,24 +27,16 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-WebUI.openBrowser('')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
 
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId'), 'Chidu')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In'))
-
-//WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('Chidu')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_WBC'))
 
-CustomKeywords.'chida.wbcFunctions.classifyFromCellToCell'('Neutrophils', 'Promonocytes')
+CustomKeywords.'generic.Reclassification.classifyFromCellToCell'("Neutrophils", "Promonocytes")
 
 // 6. Click back arrow or logo to trigger save
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/img'))

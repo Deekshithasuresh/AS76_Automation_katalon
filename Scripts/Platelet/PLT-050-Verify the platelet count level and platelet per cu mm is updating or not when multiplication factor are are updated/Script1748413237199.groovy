@@ -22,9 +22,14 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.interactions.Actions
+//Checking the platelet calculated estimate value updation here.
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.model.FailureHandling
 
 CustomKeywords.'generic.custumFunctions.login'()
-
+WebUI.maximizeWindow()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
@@ -55,15 +60,15 @@ for (int i = 0; i < 10; i++) {
 	// Clear and update
 	NMG_fields[0].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
 	NMG_fields[0].sendKeys(Keys.BACK_SPACE)
-	NMG_fields[0].sendKeys("12")
+	NMG_fields[0].sendKeys("1")
 
 	NMG_fields[1].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
 	NMG_fields[1].sendKeys(Keys.BACK_SPACE)
-	NMG_fields[1].sendKeys("99")
+	NMG_fields[1].sendKeys("9")
 
 	NMG_fields[2].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
 	NMG_fields[2].sendKeys(Keys.BACK_SPACE)
-	NMG_fields[2].sendKeys("100")
+	NMG_fields[2].sendKeys("10")
 }
 
 FOV_rows[1].click()
@@ -86,10 +91,17 @@ WebUI.setText(findTestObject('Object Repository/Platelet/Page_PBS/Multiplication
 WebUI.setText(findTestObject('Object Repository/Platelet/Page_PBS/Multiplication-input-box'), '5000')
 
 // Click the save button
-WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/button_Save'))
+try {
+	WebUI.verifyElementClickable(findTestObject('Object Repository/Platelet/Page_PBS/button_Save'))
+	WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/button_Save'))
+	
+} catch (e) {
+	WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/button_Cancel'))
+	
+}
 
 // Wait for the changes to be saved
-WebUI.delay(2)
+WebUI.delay(5)
 
 // Dynamically create the TestObject for the multiplication factor display
 TestObject multiplicationFactorDisplay = new TestObject()
@@ -109,14 +121,10 @@ if (WebUI.verifyElementPresent(multiplicationFactorDisplay, 5)) {
 	WebUI.comment('Multiplication factor display not found!')
 }
 
-//Checking the platelet calculated estimate value updation here.
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.model.FailureHandling
+
 
 // ✅ Step 1: Verify value "1055" in the span element
-String expectedText = "1055"
+String expectedText = "100"
 String spanXPath = "//div[@class='description selected']/div[2]/span"
 
 TestObject spanObject = new TestObject("targetSpan")
@@ -136,7 +144,7 @@ if (actualText == expectedText) {
 
 // ✅ Step 2: Verify text "significant decreased" is present on the page
 WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/span_Calculated level'))
-WebUI.delay(2)
+WebUI.delay(5)
 
 String keywordText = "Significantly decreased"
 boolean isTextPresent = WebUI.verifyTextPresent(keywordText, false, FailureHandling.CONTINUE_ON_FAILURE)

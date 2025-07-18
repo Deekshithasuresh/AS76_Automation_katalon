@@ -1,27 +1,19 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.WebDriver
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
-import org.openqa.selenium.WebElement
+
 import org.openqa.selenium.By
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+
+import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
-import org.openqa.selenium.interactions.Actions
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+//percentage column of all the values in the platelet.
+
 
 CustomKeywords.'generic.custumFunctions.login'()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
@@ -99,12 +91,7 @@ FOV_rows[1].click()
 //	NMG_fields[2].sendKeys("44")
 //}
 
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
-import org.openqa.selenium.WebElement
-import internal.GlobalVariable as GlobalVariable
+
 
 // Define expected values for each row's TD[2]
 List<String> expectedValues = ["12", "99", "100", "211.0"]  // Update this as needed
@@ -175,13 +162,6 @@ println("Text in 5th row, 2nd column: " + actualFifthRowCell)
 WebUI.verifyEqual(actualFifthRowCell, expectedFifthRowCell, FailureHandling.STOP_ON_FAILURE)
 
 
-//percentage column of all the values in the platelet.
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.webui.common.WebUiCommonHelper
-import org.openqa.selenium.WebElement
-
 // ✅ Expected values (1 decimal precision)
 List<String> expectedTD3Values = ["5.7", "46.9", "47.4", "100"]
 
@@ -218,11 +198,7 @@ for (int i = 0; i < td3Cells.size(); i++) {
 }
 
 
-//Checking the platelet calculated estimate value updation here.
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.model.FailureHandling
+
 
 // ✅ Step 1: Verify value "3165" in the span element
 String expectedText = "1055"

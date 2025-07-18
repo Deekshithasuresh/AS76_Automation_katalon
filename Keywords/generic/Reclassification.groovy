@@ -766,7 +766,7 @@ public class Reclassification {
 
 				// Wait for classification confirmation
 				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10))
-				WebElement snackbar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.classified-snackbar")))
+				WebElement snackbar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='classified-snackbar']")))
 
 				String headerText = snackbar.findElement(By.cssSelector(".header-row .header")).getText().trim()
 				String bodyText = snackbar.findElement(By.cssSelector(".body")).getText().trim()
@@ -925,9 +925,9 @@ public class Reclassification {
 				WebUI.comment("⚠️ Count for ${fromCellName} is ${fromInitial} (<1). Skipping drag and drop.")
 				return
 			}
-			
 
-				WebElement row = driver.findElement(By.xpath("//table/tbody/tr[td[1][text()='" + fromCellName + "']]"))
+
+			WebElement row = driver.findElement(By.xpath("//table/tbody/tr[td[1][text()='" + fromCellName + "']]"))
 
 			row.click()
 			// Locate source patch (assuming single visible patch for drag)

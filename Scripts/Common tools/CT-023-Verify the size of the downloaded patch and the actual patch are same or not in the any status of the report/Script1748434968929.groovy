@@ -25,15 +25,10 @@ import javax.imageio.ImageIO
 import java.awt.image.BufferedImage
 import java.io.File
 
-// --- Step 1: Login ---
-WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId (14)'), 'Chidu')
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword (14)'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In (14)'))
+CustomKeywords.'generic.custumFunctions.login'()
 
-// --- Step 2: Navigate to RBC section ---
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_19-May-2025, 0931 AM (IST) (3)'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
+
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC (4)'))
 

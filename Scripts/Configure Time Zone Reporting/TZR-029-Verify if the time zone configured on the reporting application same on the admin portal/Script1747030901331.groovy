@@ -82,6 +82,8 @@ WebUI.setText(findTestObject('Object Repository/Configure Time Zone Reporting/Pa
 
 WebUI.click(findTestObject('Object Repository/Configure Time Zone Reporting/Page_Admin Console/button_Sign in'))
 
+WebUI.delay(10)
+
 WebUI.refresh()
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Configure Time Zone Reporting/Page_Admin Console/h2_Admin Portal'), 

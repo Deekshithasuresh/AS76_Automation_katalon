@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//ul[@id='mui-34']/li[2]</value>
+         <value>//li[(text() = 'Platelet Clumps' or . = 'Platelet Clumps')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>li</value>
-      <webElementGuid>51e42064-420d-4b88-a049-6df7b6570e52</webElementGuid>
+      <webElementGuid>9cf7531a-06fc-4a69-8df6-1bca37b2fd3c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-le7snb</value>
-      <webElementGuid>b9208e63-07c4-4b17-846e-a223c7083fbf</webElementGuid>
+      <webElementGuid>85b53056-7769-4b5b-93a6-714eaee91ff4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +44,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>-1</value>
-      <webElementGuid>89d6ad86-be1b-4d53-b29d-c19648da407f</webElementGuid>
+      <webElementGuid>3bee323b-0fb4-44d0-b763-6e468d085c00</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +52,7 @@
       <name>role</name>
       <type>Main</type>
       <value>option</value>
-      <webElementGuid>da29b63b-d25e-4283-9926-2627976e7646</webElementGuid>
+      <webElementGuid>09edd77b-9f4a-4229-9c88-9b5f14f3f723</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +60,7 @@
       <name>aria-selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>07550212-ab2e-478e-b0f8-86ec66552df3</webElementGuid>
+      <webElementGuid>2894550b-8a39-4467-823d-fd345559299a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +68,7 @@
       <name>data-value</name>
       <type>Main</type>
       <value>Platelet Clumps</value>
-      <webElementGuid>0a2eec4f-0647-4340-bd58-112c63e7d6f0</webElementGuid>
+      <webElementGuid>5f545687-17ec-4941-a000-7f781c5b7e78</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -77,7 +76,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Platelet Clumps</value>
-      <webElementGuid>c9820a07-67bb-486d-a2e4-d67920feaaca</webElementGuid>
+      <webElementGuid>0f84afab-12ca-4072-9e00-7dc6624db4f0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +84,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;mui-34&quot;)/li[@class=&quot;MuiButtonBase-root MuiMenuItem-root MuiMenuItem-gutters MuiMenuItem-root MuiMenuItem-gutters css-le7snb&quot;]</value>
-      <webElementGuid>e55674a0-db0b-49ba-9965-494d81410ced</webElementGuid>
+      <webElementGuid>70e95c3d-9461-4ce4-898a-bfb159eb2cda</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -93,7 +92,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//ul[@id='mui-34']/li[2]</value>
-      <webElementGuid>e42a30f3-4235-427c-a4fd-268791d84af9</webElementGuid>
+      <webElementGuid>20506db5-0aa4-4c3f-9d4c-d20f31c09e70</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +100,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Large Platelets'])[3]/following::li[1]</value>
-      <webElementGuid>f732634a-c928-4777-9d27-75485206bf78</webElementGuid>
+      <webElementGuid>c86318e7-dae1-4b21-b653-e3f73d475387</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +108,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[2]</value>
-      <webElementGuid>4542b069-4ec5-457f-ad47-fd61a1fd9a6c</webElementGuid>
+      <webElementGuid>36e54b62-6038-46cf-8194-5e10f57a94a2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +116,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//li[(text() = 'Platelet Clumps' or . = 'Platelet Clumps')]</value>
-      <webElementGuid>96fb0d37-5dea-438c-875c-ab0e826f7798</webElementGuid>
+      <webElementGuid>87cbeeb6-d150-4b6c-b723-7de6f24f6e54</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

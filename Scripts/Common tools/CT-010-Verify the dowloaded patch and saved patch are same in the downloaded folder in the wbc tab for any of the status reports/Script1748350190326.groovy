@@ -126,14 +126,10 @@ import java.awt.image.BufferedImage
 import java.io.ByteArrayOutputStream
 import java.util.Base64
 
-// ========== LOGIN ==========
-WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId (20)'), 'Chidu')
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword (20)'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In (20)'))
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_16-May-2025, 1145 AM (IST)'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
+
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_WBC'))
 
 // ========== DEFINE AND VERIFY FIRST PATCH IMG ==========

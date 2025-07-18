@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div[2]/div[2]/img</value>
+         <value>//img[@src = '/icons/edit-icon.svg' and @alt = 'edit-icon']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>80735694-d522-4401-b8c8-5f6b116f05c3</webElementGuid>
+      <webElementGuid>79c7e968-f822-4163-a5c1-a3132421b4f4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>src</name>
       <type>Main</type>
       <value>/icons/edit-icon.svg</value>
-      <webElementGuid>b675b2c6-59c9-494a-b8dc-080ee1eb0727</webElementGuid>
+      <webElementGuid>427edc89-31d7-4047-8ceb-302de4b0bf26</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>edit-icon</value>
-      <webElementGuid>bdbd5127-46c1-4d6d-b144-b6310af79605</webElementGuid>
+      <webElementGuid>deabe796-7ecc-4528-b5a3-2d0d58453d06</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-selected-category&quot;]/div[@class=&quot;split-view-contaier&quot;]/div[@class=&quot;split-view-count-section&quot;]/div[1]/div[@class=&quot;multiplication-container&quot;]/div[@class=&quot;multiplication-factor&quot;]/img[1]</value>
-      <webElementGuid>ee89986f-2242-4e76-941c-21e7a039bdcb</webElementGuid>
+      <webElementGuid>5c9308f3-0e63-4adc-97d7-5241e7900c5d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div[2]/div/div/div/div[2]/div[2]/img</value>
-      <webElementGuid>4c0b2af3-2c36-4973-884a-8fd9db0377d6</webElementGuid>
+      <webElementGuid>58a5d514-1336-47ae-a2e0-76b4e89fdbd6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>//img[@alt='edit-icon']</value>
-      <webElementGuid>f691c2db-f2e7-4412-ac3e-1753b9dde0b4</webElementGuid>
+      <webElementGuid>0f0c18db-e923-4d51-8be2-1263e82ea435</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[2]/div/div/div/div[2]/div[2]/img</value>
-      <webElementGuid>be6db015-a572-4bfc-9121-f7480800fb8d</webElementGuid>
+      <webElementGuid>fd855367-4e8b-4350-87fa-0066c5022951</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +85,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@src = '/icons/edit-icon.svg' and @alt = 'edit-icon']</value>
-      <webElementGuid>1797ef9a-a40c-47c3-b8dd-f65250551b40</webElementGuid>
+      <webElementGuid>5911f5b0-0242-4c5c-a3b5-22c78c35c92e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

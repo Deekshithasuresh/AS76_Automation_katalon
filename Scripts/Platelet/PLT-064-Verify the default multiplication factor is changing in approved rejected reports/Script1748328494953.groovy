@@ -21,7 +21,7 @@ CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
 WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'), 'Platelets')
 
@@ -109,11 +109,16 @@ if (WebUI.verifyElementPresent(multiplicationFactorDisplay, 5)) {
 
 WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/img (2)'))
 
+
+
+
+
+
 //Rejected report to check the default value in the platelet tab.
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
 WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'), 'Platelets')
 

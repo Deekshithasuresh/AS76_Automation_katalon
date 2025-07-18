@@ -20,9 +20,6 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-////select 1st row report
-////CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-//WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/td_3edtfygu'))
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'), 'Platelets')
@@ -30,4 +27,4 @@ WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span
 WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'))
 
 //Verfiy the presence of edit button for the unassigned report.
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/Platelet/Page_PBS/img'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/Platelet/Page_PBS/i edit icon for multiplication factor'), 5)

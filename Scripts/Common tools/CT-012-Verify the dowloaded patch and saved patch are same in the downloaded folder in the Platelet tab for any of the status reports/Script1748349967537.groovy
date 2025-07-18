@@ -9,15 +9,10 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-// ========== LOGIN ==========
-WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Object Repository/Commontools/Page_PBS/input_username_loginId (20)'), 'Chidu')
-WebUI.setEncryptedText(findTestObject('Object Repository/Commontools/Page_PBS/input_password_loginPassword (20)'), 'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_Sign In (20)'))
+CustomKeywords.'generic.custumFunctions.login'()
 
-// ========== NAVIGATE TO PATCH ==========
-WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/div_02-May-2025, 0938 AM (IST) (4)'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
+
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_Platelets (3)'))
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/span_Platelets (3)'), 'Platelets')
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/button_Morphology (3)'), 'Morphology')

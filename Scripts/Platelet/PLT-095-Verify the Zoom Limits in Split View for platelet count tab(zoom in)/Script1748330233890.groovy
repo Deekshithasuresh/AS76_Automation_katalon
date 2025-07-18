@@ -84,14 +84,16 @@ def zoomWarning = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//div[contains(@class,'zoom-warning') and contains(.,'Digital zoom only')]")
 
 // scales to verify
-List<String> scales = ['500 μm','200 μm','100 μm','50 μm','20 μm','10 μm','5 μm']
+List<String> scales = ['500 μm','500 μm','200 μm','100 μm','50 μm','20 μm','10 μm','5 μm']
 
 // STEP 6–11: zoom through scales without stopping on failure
 for (String expected : scales) {
 	try {
 		WebUI.click(zoomInBtn)
-		WebUI.delay(2)
+		WebUI.delay(5)
 		String actual = fetchScale()
+		WebUI.delay(5)
+		
 		boolean matched = WebUI.verifyMatch(actual, expected, false, FailureHandling.CONTINUE_ON_FAILURE)
 		println "Expected: ${expected}, Actual: ${actual}, Matched: ${matched}"
 		String b64 = snapAndBase64("plt_${expected.replaceAll(' ','')}.png")
