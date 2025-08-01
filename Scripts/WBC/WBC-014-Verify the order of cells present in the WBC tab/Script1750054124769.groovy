@@ -141,7 +141,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/td_Smudge Cells'), 0)
 
-WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/td_Degenerate Cells'), 'Degenerate Cells')
+WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/td_Degenerate Cells'), 'Degenerate Cells*')
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/td_Degenerate Cells'), 0)
 

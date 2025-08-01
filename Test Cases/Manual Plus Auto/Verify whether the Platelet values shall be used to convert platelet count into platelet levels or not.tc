@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify whether the Platelet values shall be used to convert platelet count into platelet levels or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e04c1a2c-16c6-46d9-86e4-c68d1cd58fb2</testCaseGuid>
+</TestCaseEntity>

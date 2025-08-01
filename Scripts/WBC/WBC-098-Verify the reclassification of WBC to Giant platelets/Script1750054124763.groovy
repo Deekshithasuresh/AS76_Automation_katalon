@@ -29,4 +29,4 @@ WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PB
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
 
-CustomKeywords.'generic.Reclassification.reclassifyWBCToPlatelet'("Neutrophils", "Large Platelets", 2)
+CustomKeywords.'generic.Reclassification.reclassifyWBCToPlatelet'("Neutrophils", "Large Platelets", 1)

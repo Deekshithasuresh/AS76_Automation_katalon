@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the how many patches are present in a row for RBC cells for the resolutions</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ae6bbecf-8484-41ae-9eaf-156ef54a598a</testCaseGuid>
+</TestCaseEntity>

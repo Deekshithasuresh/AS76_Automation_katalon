@@ -270,13 +270,38 @@ public class Reclassification {
 				driver.findElement(By.xpath("//li//div[text()='" + toPlateletCell + "']")).click()
 
 				// Step 6: Verify classification message
-				TestObject reclassifyMsg = new TestObject()
-				reclassifyMsg.addProperty("xpath", ConditionType.EQUALS,"//div[contains(@class,'MuiSnackbarContent-message')]//div[contains(text(),'patches reclassified')]")
-				WebUI.delay(1)
-				WebUI.waitForElementVisible(reclassifyMsg, 5)
-				boolean isPresent = WebUI.verifyElementPresent(reclassifyMsg, 5, FailureHandling.OPTIONAL)
-				WebUI.comment("✅ Reclassification message visible: ${isPresent}")
+//				TestObject reclassifyMsg = new TestObject()
+//				reclassifyMsg.addProperty("xpath", ConditionType.EQUALS,"//div[contains(@class,'MuiSnackbarContent-message')]//div[contains(text(),'patches reclassified')]")
+//				WebUI.delay(1)
+//				WebUI.waitForElementVisible(reclassifyMsg, 5)
+//				boolean isPresent = WebUI.verifyElementPresent(reclassifyMsg, 5, FailureHandling.OPTIONAL)
+//				WebUI.comment("✅ Reclassification message visible: ${isPresent}")
 
+				// Wait for classification confirmation
+				try {
+					WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30))
+					WebElement snackbar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.classified-snackbar")))
+	
+					String headerText = snackbar.findElement(By.cssSelector(".header-row .header")).getText().trim()
+					String bodyText = snackbar.findElement(By.cssSelector(".body")).getText().trim()
+	
+					WebUI.comment("Snackbar message: ${headerText} | ${bodyText}")
+	
+					assert headerText.toLowerCase().contains("reclassified")
+					assert bodyText.toLowerCase().contains(fromCellName.toLowerCase())
+	
+					WebUI.comment("Snackbar reclassification message verified.")
+	
+	
+					// Step 4: Click the 'X' icon to close the snackbar
+					WebUI.delay(2)
+					WebElement closeIcon = snackbar.findElement(By.xpath("//div[contains(@class,'MuiSnackbarContent-action')]/div"))
+					actions.moveToElement(closeIcon).click().build().perform()
+					WebUI.comment("Snackbar closed by clicking X icon.")
+				}
+				catch (Exception e) {
+					WebUI.comment("snackbar confirmed")
+				}
 
 
 

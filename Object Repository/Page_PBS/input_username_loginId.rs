@@ -29,7 +29,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>f5da3a13-4fa4-4b8e-82a8-d64e17523ba3</webElementGuid>
+      <webElementGuid>bf4508d7-f853-49aa-8b49-a0e238b7ce73</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +37,7 @@
       <name>aria-invalid</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>3e73dff6-22ca-4128-90ae-9cafc6919185</webElementGuid>
+      <webElementGuid>6494d277-4dcf-471a-a53b-b4fb4ae33b5e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +45,7 @@
       <name>id</name>
       <type>Main</type>
       <value>input-login-id</value>
-      <webElementGuid>e10ed5bc-2e5d-49d6-8228-fe35b6f054ce</webElementGuid>
+      <webElementGuid>9da8402f-4d8e-4181-88b9-03de5ff778a0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>name</name>
       <type>Main</type>
       <value>loginId</value>
-      <webElementGuid>76046f2c-8338-4c4d-ba14-bc4a8cb43897</webElementGuid>
+      <webElementGuid>088001a6-b723-4103-a379-3a8dda69821b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +61,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Enter username</value>
-      <webElementGuid>32d11a57-d1e2-4eec-875b-32a403f9cad2</webElementGuid>
+      <webElementGuid>674b7965-747e-47cc-b33a-3c52e55f8f15</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -69,7 +69,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>496a1e42-d6c2-420d-81ea-64f98b6cef4c</webElementGuid>
+      <webElementGuid>84e62267-69c0-440f-bec9-581df325321b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1o6z5ng</value>
-      <webElementGuid>0053e238-562b-499c-b4f6-281386c9b784</webElementGuid>
+      <webElementGuid>e8227ef5-cfdf-4668-be43-c62635a645fa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;input-login-id&quot;)</value>
-      <webElementGuid>31694425-5d3e-4868-a536-c1038a7a2436</webElementGuid>
+      <webElementGuid>8992a0c3-1e0e-42eb-b4f8-60cd6545e262</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='input-login-id']</value>
-      <webElementGuid>46087e16-2708-4696-ae86-7b9ab82d4147</webElementGuid>
+      <webElementGuid>6fd5edd3-9a55-4484-b9d5-6b88f5d00baf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/div/form/div/div/div/input</value>
-      <webElementGuid>cfdaa485-313d-41e8-bc5e-538097e20f5b</webElementGuid>
+      <webElementGuid>e0722250-39b5-490f-8c5e-0463ddce24af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/input</value>
-      <webElementGuid>bf893eec-3956-4ddf-9d31-84c186c76e85</webElementGuid>
+      <webElementGuid>ed09f86b-ddff-4b2e-9990-85d3a819f8d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +117,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@id = 'input-login-id' and @name = 'loginId' and @placeholder = 'Enter username' and @type = 'text']</value>
-      <webElementGuid>f441125d-af75-4ccb-bd1a-c908dd1a3bf9</webElementGuid>
+      <webElementGuid>a247ecf5-4045-4ecd-82f5-de485a365c04</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

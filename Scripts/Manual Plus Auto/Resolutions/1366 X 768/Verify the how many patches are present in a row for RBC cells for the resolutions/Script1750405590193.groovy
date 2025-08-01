@@ -5,6 +5,7 @@ import org.openqa.selenium.Dimension
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
@@ -40,6 +41,8 @@ List<WebElement> allPatches = driver.findElements(By.xpath("//div[contains(@clas
 
 if (allPatches.isEmpty()) {
 	WebUI.comment("❌ No patch elements found")
+	KeywordUtil.markFailed('❌ No patch elements found')
+	
 } else {
 	Map<Integer, List<WebElement>> rows = [:]
 
@@ -60,5 +63,7 @@ if (allPatches.isEmpty()) {
 		WebUI.comment("✅ Exactly 11 patches found in first row.")
 	} else {
 		WebUI.comment("❌ Expected 11 patches, but found ${firstRowCount} in first row.")
+		KeywordUtil.markFailed('❌ Expected 11 patches, but found ${firstRowCount} in first row.')
+		
 	}
 }

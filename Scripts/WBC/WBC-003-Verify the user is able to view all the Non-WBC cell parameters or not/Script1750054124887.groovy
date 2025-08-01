@@ -17,19 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
-
-WebUI.setText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/input_username_loginId'), 'C')
-
-WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/input_username_loginId'))
-
-WebUI.setText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/input_username_loginId'), 'Chidu')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/button_Sign In'))
+CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
@@ -39,7 +27,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/
 
 WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/td_Smudge Cells'), 'Smudge Cells')
 
-WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/td_Degenerate Cells'), 'Degenerate Cells')
+WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/td_Degenerate Cells'), 'Degenerate Cells*')
 
 WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/td_Stain Artefacts'), 'Stain Artefacts')
 

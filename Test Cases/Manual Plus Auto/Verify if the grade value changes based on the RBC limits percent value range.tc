@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify if the grade value changes based on the RBC limits percent value range</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>20f2091b-e8a7-4cc1-bd5b-942002b8f944</testCaseGuid>
+</TestCaseEntity>

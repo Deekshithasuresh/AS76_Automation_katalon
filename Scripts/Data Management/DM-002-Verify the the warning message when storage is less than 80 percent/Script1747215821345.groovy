@@ -1,5 +1,3 @@
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
 import org.openqa.selenium.WebElement
 
 import com.kms.katalon.core.model.FailureHandling
@@ -8,42 +6,110 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-// Step 1: Login
-CustomKeywords.'generic.dataManagement.loginAdmin'()
+// -------------------- Configuration --------------------
+float totalSize = 769  // Total storage in GB (as configured on device)
+int targetPercent = 72 // Target usage percentage (you can change this)
+int fileSizePerFileMB = 1024 // 1 GB per dummy file
 
-// Step 2: Define dynamic test objects
+// Get Data from Excel
+String filePath = 'Time_zone_data/Manual_data.xlsx'
+String hostIP = CustomKeywords.'excel.ExcelUtils.getValueForKey'(filePath, 'Host IP')
+String username =CustomKeywords.'excel.ExcelUtils.getValueForKey'(filePath, 'User name')
+String password = CustomKeywords.'excel.ExcelUtils.getValueForKey'(filePath, 'Password')
+String targetDirectory = CustomKeywords.'excel.ExcelUtils.getValueForKey'(filePath, 'Target storege area')
+
+String expectedGreen = 'rgb(35, 206, 107)'
+String expectedOrange = 'rgb(255, 142, 9)'
+String expectedRed = 'rgb(224, 66, 77)'
+
+// -------------------- TestObjects --------------------
 TestObject percentageText = new TestObject('percentageText')
 percentageText.addProperty('xpath', ConditionType.EQUALS, "//span[@class='percentage']")
 
 TestObject progressBar = new TestObject('progressBar')
 progressBar.addProperty('xpath', ConditionType.EQUALS, "//span[contains(@class, 'MuiLinearProgress-barColorPrimary')]")
 
-// Step 3: Get percentage value
-String percentageStr = WebUI.getText(percentageText)
-percentageStr = percentageStr.replaceAll("[^0-9]", "")
-int percent = percentageStr.toInteger()
-println("Detected usage: ${percent}%")
+TestObject warningMessage = new TestObject('warningMessage')
+warningMessage.addProperty('xpath', ConditionType.EQUALS, "//div[@class='warning-text']")
 
-// Step 4: Get progress bar color
-WebElement barElement = WebUiCommonHelper.findWebElement(progressBar, 5)
-String bgColor = barElement.getCssValue('background-color')
-println("Progress bar color: ${bgColor}")
+// -------------------- Login --------------------
+CustomKeywords.'generic.dataManagement.loginAdmin'()
 
-// Step 5: Define expected values
-String expectedGreen = 'rgb(35, 206, 107)'
-List<String> alertColors = ['rgb(255, 87, 34)', 'rgb(244, 67, 54)', 'rgb(255, 152, 0)']
+// -------------------- Read current usage from UI --------------------
+WebUI.waitForElementVisible(percentageText, 10)
+String percentageStr = WebUI.getText(percentageText, FailureHandling.OPTIONAL)
 
-// Normalize color (remove alpha if present)
-if (bgColor.startsWith('rgba')) {
-    bgColor = bgColor.replace('rgba', 'rgb').replaceAll(',\\s*1\\)', ')')
+if (percentageStr == null || percentageStr.trim().isEmpty()) {
+	WebUI.comment("❌ Could not get current usage percent.")
+	assert false : "percentageText is missing or empty"
 }
 
-// Step 6: Perform assertions
-if (percent < 80) {
-    assert bgColor == expectedGreen : "Expected green progress bar for <80% but found: ${bgColor}"
-   // WebUI.verifyElementNotPresent(findTestObject('warningMessageObject'), 2)
-} else {
-    boolean isAlertColor = alertColors.any { bgColor == it }
-    assert isAlertColor : "Expected red/orange progress bar for ≥80% but found: ${bgColor}"
-    WebUI.verifyElementVisible(findTestObject('warningMessageObject'))
+percentageStr = percentageStr.replaceAll("[^0-9]", "")
+int currentPercent = percentageStr.toInteger()
+println("📊 Current usage from UI: ${currentPercent}%")
+
+// -------------------- Calculate current usage in GB --------------------
+float currentUsed = (currentPercent / 100.0) * totalSize
+float uploadRequired = ((targetPercent / 100.0) * totalSize) - currentUsed
+uploadRequired = uploadRequired > 0 ? uploadRequired : 0
+
+int numberOfFiles = Math.ceil(uploadRequired).toInteger()
+println("📦 Upload required to reach ${targetPercent}%: ${uploadRequired} GB (~${numberOfFiles} files)")
+
+// -------------------- Upload dummy files --------------------
+if (numberOfFiles > 0) {
+	CustomKeywords.'manual.dataManagement.uploadDummyFileToDevice'(
+		hostIP, username, password, numberOfFiles, fileSizePerFileMB, targetDirectory
+	)
+	WebUI.refresh()
+	WebUI.delay(15)
+}
+
+// -------------------- Re-check usage after upload --------------------
+WebUI.waitForElementVisible(percentageText, 10)
+String updatedPercentageStr = WebUI.getText(percentageText, FailureHandling.OPTIONAL)
+
+if (updatedPercentageStr == null || updatedPercentageStr.trim().isEmpty()) {
+	WebUI.comment("❌ Could not read updated usage percentage.")
+	assert false : "percentageText is still missing or empty"
+}
+
+updatedPercentageStr = updatedPercentageStr.replaceAll("[^0-9]", "")
+int updatedPercent = updatedPercentageStr.toInteger()
+println("🧠 Updated usage: ${updatedPercent}%")
+
+// -------------------- Read progress bar color --------------------
+WebElement barElement = WebUiCommonHelper.findWebElement(progressBar, 5)
+String bgColor = barElement.getCssValue('background-color')
+if (bgColor.startsWith('rgba')) {
+	bgColor = bgColor.replace('rgba', 'rgb').replaceAll(',\\s*1\\)', ')')
+}
+println("🎨 Progress bar color: ${bgColor}")
+
+// -------------------- Assertions --------------------
+try {
+	if (updatedPercent < 80) {
+		assert bgColor == expectedGreen : "❌ Expected green (<80%), found: ${bgColor}"
+		WebUI.verifyElementNotPresent(warningMessage, 2)
+	} else if (updatedPercent >= 80 && updatedPercent < 90) {
+		assert bgColor == expectedOrange : "❌ Expected orange (80–89%), found: ${bgColor}"
+		WebUI.verifyElementVisible(warningMessage)
+		WebUI.verifyTextPresent(
+			"Available space on the report store is low. Scanning will be disabled when it reaches a critical level. Please take action to free up storage.",
+			false
+		)
+	} else {
+		assert bgColor == expectedRed : "❌ Expected red (≥90%), found: ${bgColor}"
+		WebUI.verifyElementVisible(warningMessage)
+		WebUI.verifyTextPresent(
+			"Available space on the report store is critically low. Scanning has been disabled. Please take action to free up storage space to resume scanning.",
+			false
+		)
+	}
+} finally {
+	// -------------------- Clean up dummy files --------------------
+	println "🧹 Cleaning up dummy files..."
+	CustomKeywords.'manual.dataManagement.deleteDummyFilesFromDevice'(hostIP, username, password, targetDirectory)
+	WebUI.refresh()
+	WebUI.delay(10)
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify PDF Timestamps Reflect Devices Time Zone When the report is Printed</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c1d32d9c-1152-483d-a911-b90c8bf6be01</testCaseGuid>
+</TestCaseEntity>

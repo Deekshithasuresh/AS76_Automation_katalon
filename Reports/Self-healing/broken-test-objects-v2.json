@@ -109,6 +109,115 @@
       "proposedLocatorMethod": "SMART_LOCATOR",
       "recoveryMethod": "SMART_LOCATOR",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/Configure Time Zone Reporting/Page_Admin Console/img_SMART_LOCATOR.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Report_Listing/Login_page/button_Sign In",
+      "brokenLocator": "(//button[@type\u003d\u0027button\u0027])[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div/button",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Report_Listing/Login_page/button_Sign In_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Configure Time Zone Reporting/Page_PBS/li_Time zone",
+      "brokenLocator": "//div[@id\u003d\u0027simple-popover\u0027]/div[3]/ul/li",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//li",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Configure Time Zone Reporting/Page_PBS/li_Time zone_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_Sigtuple Mandara/input_User Name_mat-input-0",
+      "brokenLocator": "//input[@id\u003d\u0027mat-input-0\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_Sigtuple Mandara/input_User Name_mat-input-0_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Commontools/Page_PBS/Page_PBS/li_Degenerate Cells",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Smudge Cells\u0027])[2]/following::li[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Commontools/Page_PBS/Page_PBS/li_Degenerate Cells_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Platelet/Page_PBS/div_Default for all your future reports",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div[2]/div[2]/div/div/div/div[2]/div[3]/div/div[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Multiplication factor\u0027])[1]/following::div[5]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Platelet/Page_PBS/div_Default for all your future reports_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Platelet/Page_PBS/button_Cancel",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div[2]/div[2]/div/div/div/div[2]/div[3]/div/div[3]/button",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Multiplication factor\u0027])[1]/following::button[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Platelet/Page_PBS/button_Cancel_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Platelet/Page_PBS/button_Save",
+      "brokenLocator": "internal:role\u003dbutton[name\u003d\"Save\"i]",
+      "brokenLocatorMethod": "SMART_LOCATOR",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Report\u0027])[1]/preceding::button[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Platelet/Page_PBS/button_Save_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Platelet/Page_PBS/div_Platelet clumps are detected. Platelet count might be underestimated",
+      "brokenLocator": "div \u003e\u003e internal:has-text\u003d/^Platelet clumps are detected\\. Platelet count might be underestimated\\.$/ \u003e\u003e nth\u003d0",
+      "brokenLocatorMethod": "SMART_LOCATOR",
+      "proposedLocator": "//div[@id\u003d\u0027root\u0027]/div/div[2]/div[2]/div/div/div[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Platelet/Page_PBS/div_Platelet clumps are detected. Platelet count might be underestimated_XPATH.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Platelet/Page_PBS/button_Approve report-main report page",
+      "brokenLocator": "//button[@type \u003d \u0027button\u0027 and (text() \u003d \u0027 Approve report\u0027 or . \u003d \u0027 Approve report\u0027)]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(//button[@type\u003d\u0027button\u0027])[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Platelet/Page_PBS/button_Approve report-main report page_attributes.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Report_Listing/Page_PBS/th_Slide Id",
+      "brokenLocator": "//div[@id\u003d\u0027reportListingTable\u0027]/div/div/div/thead/tr/th[3]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*/text()[normalize-space(.)\u003d\u0027Slide Id\u0027]/parent::*",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Report_Listing/Page_PBS/th_Slide Id_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Platelet/Page_PBS/Multiplication-input-box",
+      "brokenLocator": "//input[@id\u003d\u0027outlined-error-helper-text\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[3]/div/div/input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Platelet/Page_PBS/Multiplication-input-box_position.png"
     }
   ]
 }

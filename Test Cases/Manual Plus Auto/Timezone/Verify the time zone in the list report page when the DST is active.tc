@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the time zone in the list report page when the DST is active</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>38dffd7c-4698-4a8e-8813-390c61031ead</testCaseGuid>
+</TestCaseEntity>

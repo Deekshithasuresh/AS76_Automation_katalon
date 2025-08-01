@@ -35,15 +35,15 @@ WebUI.doubleClick(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/div_Im
 
 //WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/img'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/button_'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/button_'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/button__1'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/button__1'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/span_'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/span_'), 5)
 
 WebUI.click(findTestObject('Object Repository/WBC_m/Page_PBS/button__1_2'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/canvas__ol-layer'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/canvas__ol-layer'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/canvas'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/canvas'), 5)
 

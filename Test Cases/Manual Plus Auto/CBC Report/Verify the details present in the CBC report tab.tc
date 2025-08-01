@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the details present in the CBC report tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a492d215-a92b-44ce-ac0e-13873e05d5c8</testCaseGuid>
+</TestCaseEntity>

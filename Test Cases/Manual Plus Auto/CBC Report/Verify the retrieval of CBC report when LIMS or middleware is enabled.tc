@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the retrieval of CBC report when LIMS or middleware is enabled</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>19b989da-7286-462a-a862-58aae3d35b3b</testCaseGuid>
+</TestCaseEntity>

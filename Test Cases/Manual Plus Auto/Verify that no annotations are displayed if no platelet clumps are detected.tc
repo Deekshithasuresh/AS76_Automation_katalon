@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify that no annotations are displayed if no platelet clumps are detected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cc5e9deb-17fe-49c5-b60b-811385147863</testCaseGuid>
+</TestCaseEntity>
