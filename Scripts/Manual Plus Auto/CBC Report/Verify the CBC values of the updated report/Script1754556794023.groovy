@@ -26,8 +26,16 @@ WebElement rowElement = WebUiCommonHelper.findWebElement(matchingRow, 10)
 rowElement.click()
 
 // Navigate to CBC Report
-WebUI.click(findTestObject('Object Repository/View CBC Report Information/Page_PBS/button_WBC'))
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_WBC'), 'WBC')
+
+WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
+
+CustomKeywords.'generic.Reclassification.dragAndDropMultipleSelectedPatches'("Neutrophils", "Lymphocytes", 2)
+
 WebUI.verifyElementText(findTestObject('Object Repository/View CBC Report Information/Page_PBS/span_CBC report_1'), 'CBC report')
+
 WebUI.click(findTestObject('Object Repository/View CBC Report Information/Page_PBS/span_CBC report_1'))
 
 // ========== Read Excel ==========

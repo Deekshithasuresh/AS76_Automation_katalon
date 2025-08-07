@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify the how many patches are present in a row for WBC cells for the resolutions</name>
+   <name>Verify the CBC values of the generated report</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>120dc255-82c9-4e18-99d8-ef12339b5fc7</testCaseGuid>
+   <testCaseGuid>e7c0d02b-59e7-44a6-8b88-541dc098d1cd</testCaseGuid>
 </TestCaseEntity>

@@ -1,10 +1,15 @@
-import org.openqa.selenium.WebElement
+import javax.sound.sampled.*
+import javax.swing.JOptionPane
+
+import org.openqa.selenium.*
 
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 
 // -------------------- Configuration --------------------
 float totalSize = 769  // Total storage in GB (as configured on device)
@@ -98,6 +103,43 @@ try {
 			"Available space on the report store is low. Scanning will be disabled when it reaches a critical level. Please take action to free up storage.",
 			false
 		)
+		
+		File soundFile = new File('Include/resources/warning_msg_device.wav')  // Place alert.wav in Include/resources
+		AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile)
+		Clip clip = AudioSystem.getClip()
+		clip.open(audioIn)
+		clip.start()
+		
+		// Step 1: Prompt user with Yes/No confirmation
+		int response = JOptionPane.showConfirmDialog(
+			null,
+			"Please Verify that warning message is displayed in the device ",
+			"User Confirmation",
+			JOptionPane.YES_NO_OPTION
+		)
+		
+		// Step 2: Handle response
+		if (response == JOptionPane.YES_OPTION) {
+			// Step 2: Ask user if scanning is possible
+			int scanResponse = JOptionPane.showConfirmDialog(
+				null,
+				"Are you able to scan?",
+				"User Confirmation",
+				JOptionPane.YES_NO_OPTION
+			)
+		
+			if (scanResponse == JOptionPane.YES_OPTION) {
+				KeywordUtil.markPassed("✅ Test case passed based on user confirmations.")				
+			} else {
+				KeywordUtil.markFailed("❌ Test failed: Warning shown, but scanning not possible.")
+				
+			}
+			
+		} else {
+			KeywordUtil.markFailed("❌ Test case failed because user selected No.")
+		}
+		
+		
 	} else {
 		assert bgColor == expectedRed : "❌ Expected red (≥90%), found: ${bgColor}"
 		WebUI.verifyElementVisible(warningMessage)

@@ -1,12 +1,18 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import javax.sound.sampled.*
+import javax.swing.JOptionPane
+
 import org.openqa.selenium.*
 import org.openqa.selenium.interactions.Actions
 
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 import generic.custumFunctionsvj
 
+	
 custumFunctionsvj cus = new custumFunctionsvj();
 
 
@@ -34,6 +40,48 @@ WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Morpholo
 WebUI.delay(2)
 
 classifyFromCellToCellMultiple("Large Platelets","Platelet Clumps",1)
+
+WebUI.refresh()
+
+WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Platelets'))
+
+WebUI.delay(2)
+
+
+
+
+File soundFile = new File('Include/resources/Platelet_clums_not_displeyed_after_reclassify.wav')  // Place alert.wav in Include/resources
+AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile)
+Clip clip = AudioSystem.getClip()
+clip.open(audioIn)
+clip.start()
+
+
+
+// Step 1: Prompt user with Yes/No confirmation
+int response = JOptionPane.showConfirmDialog(
+	null,
+	"Verify Clump Not Being Displayed When the Clumps Are Reclassified",
+	"User Confirmation",
+	JOptionPane.YES_NO_OPTION
+)
+
+// Step 2: Handle response
+if (response == JOptionPane.YES_OPTION) {
+	KeywordUtil.markPassed("✅ Test case passed based on user confirmation.")
+} else {
+	KeywordUtil.markFailed("❌ Test case failed because user selected No.")
+}
+
+
+
+
+
+
+
+
+
+
 
 private int getCellCount(WebDriver driver, String cellName) {
 	try {
@@ -114,8 +162,6 @@ def classifyFromCellToCellMultiple(String fromCellName, String toCellName, int t
 		throw e
 	}
 }
-
-
 
 
 

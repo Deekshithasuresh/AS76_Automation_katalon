@@ -80,7 +80,7 @@ public class bookmark {
 	}
 
 	private TestObject findPopupHeader() {
-		String xp = "//h2[contains(normalize-space(),'remove bookmark')]"
+		String xp = "//span[contains(normalize-space(),'remove bookmark')]"
 		return new TestObject('popupHeader').addProperty('xpath', ConditionType.EQUALS, xp)
 	}
 

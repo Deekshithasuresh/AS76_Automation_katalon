@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>DM0-17-Verify the confirmation pop-up If the configured period is increased and clicks on save button</name>
+   <name>DM-17-Verify the confirmation pop-up If the configured period is increased and clicks on save button</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>1366*768</description>
-   <name>Verify the how many patches are present in a row for platelet cells for the resolutions</name>
+   <description>1440 X 900</description>
+   <name>RS-004-Verify the how many patches are present in a row for platelet cells for the resolutions</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>

@@ -218,6 +218,16 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/Platelet/Page_PBS/Multiplication-input-box_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Report_Listing/Page_PBS/button_Sign In",
+      "brokenLocator": "(//button[@type\u003d\u0027button\u0027])[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div/button",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Report_Listing/Page_PBS/button_Sign In_position.png"
     }
   ]
 }

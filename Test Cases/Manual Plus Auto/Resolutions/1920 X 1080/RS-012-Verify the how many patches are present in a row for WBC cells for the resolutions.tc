@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
-   <name>Verify the how many patches are present in a row for WBC cells for the resolutions</name>
+   <description>1920 X 1080</description>
+   <name>RS-012-Verify the how many patches are present in a row for WBC cells for the resolutions</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
