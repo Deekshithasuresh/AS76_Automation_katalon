@@ -25,18 +25,7 @@ WebUI.waitForElementClickable(matchingRow, 10)
 WebElement rowElement = WebUiCommonHelper.findWebElement(matchingRow, 10)
 rowElement.click()
 
-// Approve the report
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
 
-WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
-
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
-
-WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report_1'))
-
-WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report_1'))
-
-WebUI.delay(5)
 
 // Navigate to CBC Report
 WebUI.click(findTestObject('Object Repository/View CBC Report Information/Page_PBS/button_WBC'))

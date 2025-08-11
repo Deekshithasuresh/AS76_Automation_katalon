@@ -228,6 +228,76 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/Report_Listing/Page_PBS/button_Sign In_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/IAM Model/Page_Admin Console/h2_Create User",
+      "brokenLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Active\u0027])[166]/following::h2[1]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027administrator\u0027])[62]/following::h2[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/IAM Model/Page_Admin Console/h2_Create User_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Configure Time Zone Reporting/Page_PBS/img_PBS_icon-img",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div/div/div[2]/div/button/img",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//button/img",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Configure Time Zone Reporting/Page_PBS/img_PBS_icon-img_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Configure Time Zone Reporting/Page_PBS/input_Select a time zone_assigned_to",
+      "brokenLocator": "//input[@id\u003d\u0027assigned_to\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//input",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Configure Time Zone Reporting/Page_PBS/input_Select a time zone_assigned_to_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_PBS/span_Modify",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div/div[2]/div[2]/li/div/div/div/div/button/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Neutrophils\u0027])[1]/following::span[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_PBS/span_Modify_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_PBS/div_2",
+      "brokenLocator": "//div[@id\u003d\u0027random-uid\u0027]/div[3]/div/div[2]/ul/li[2]/div/div[2]/div",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*/text()[normalize-space(.)\u003d\u00272\u0027]/parent::*",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_PBS/div_2_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_PBS/span_Add to report",
+      "brokenLocator": "//div[@id\u003d\u0027random-uid\u0027]/div[3]/div/div[3]/button[2]/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Cancel\u0027])[2]/following::span[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_PBS/span_Add to report_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_PBS/div_1",
+      "brokenLocator": "//div[@id\u003d\u0027random-uid\u0027]/div[3]/div/div[2]/ul/li/div/div[2]/div",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*/text()[normalize-space(.)\u003d\u00271\u0027]/parent::*",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_PBS/div_1_neighbor.png"
     }
   ]
 }
