@@ -298,6 +298,26 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_PBS/div_1_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/WBC/Page_PBS/Page_PBS/div_WBC",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div[2]/div[2]/div/div/div/div/div/table/thead/div",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027%\u0027])[1]/following::div[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/WBC/Page_PBS/Page_PBS/div_WBC_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Report_Listing/Page_PBS/search_input_text",
+      "brokenLocator": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/input[1]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//input[@value\u003d\u0027\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Report_Listing/Page_PBS/search_input_text_attributes.png"
     }
   ]
 }

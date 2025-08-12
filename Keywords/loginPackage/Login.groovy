@@ -34,7 +34,7 @@ public class Login {
 
 		WebUI.verifyElementText(findTestObject('Object Repository/RBC_Objects/Page_PBS/h4_Sign In'), 'Sign In')
 
-		WebUI.setText(findTestObject('Object Repository/RBC_Objects/Page_PBS/input_username_loginId'), 'chidu')
+		WebUI.setText(findTestObject('Object Repository/RBC_Objects/Page_PBS/input_username_loginId'), 'Chida')
 
 		WebUI.setText(findTestObject('Object Repository/RBC_Objects/Page_PBS/input_password_loginPassword'), 'Sigtuple@123')
 
