@@ -1,8 +1,9 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import com.kms.katalon.core.testobject.TestObject
-import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 // ────────────────────────────────────────────────────────────────────
@@ -55,6 +56,13 @@ TestObject emptyMsg = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//*[normalize-space(text())='No events to show']"
 )
-WebUI.waitForElementVisible(emptyMsg, 5)
+
+if (WebUI.waitForElementVisible(emptyMsg, 5, FailureHandling.STOP_ON_FAILURE)) {
+	WebUI.comment("Empty message is visible")
+} else {
+	KeywordUtil.markFailed( "No events to show massage not visible")
+	WebUI.comment("Empty message is NOT visible, continue execution")
+}
+
 WebUI.comment("Verified that the history panel shows: 'No events to show'.")
 

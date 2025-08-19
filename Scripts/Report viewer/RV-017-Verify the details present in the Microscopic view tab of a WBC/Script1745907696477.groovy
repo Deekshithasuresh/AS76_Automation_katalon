@@ -42,7 +42,7 @@ WebUI.waitForElementClickable(wbcTab, 10)
 WebUI.click(wbcTab)
 
 // ---------- STEP 5: Verify that the WBC header is present ----------
-WebUI.verifyElementPresent(new TestObject().addProperty('xpath', ConditionType.EQUALS, '//div[@class=\'table-cell-name\' and normalize-space()=\'WBC\']'), 
+WebUI.verifyElementPresent(new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[@class='table-cell-name' and normalize-space()='WBC']"), 
     10)
 
 // ---------- STEP 6: Click on the microscopic‐view icon ----------
@@ -52,7 +52,7 @@ WebUI.waitForElementClickable(microViewIcon, 10)
 
 WebUI.click(microViewIcon)
 
-WebUI.delay(120 // give the tools time to render
+WebUI.delay(10 // give the tools time to render
     )
 
 // ---------- STEP 7: Verify the line‐tool icon ----------

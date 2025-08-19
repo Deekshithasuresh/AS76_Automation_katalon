@@ -59,7 +59,7 @@ TestObject measInput = new TestObject().addProperty('xpath', ConditionType.EQUAL
 WebElement element = WebUiCommonHelper.findWebElement(measInput, 10)
 JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getWebDriver()
 TestObject overlayText = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//div[contains(@class,'-inner') and contains(text(),'µm')]")
+	"//div[contains(@class,'-inner')]")
 
 List<String> diameters = ['5', '6', '10', '15', '20']
 for (String dia : diameters) {

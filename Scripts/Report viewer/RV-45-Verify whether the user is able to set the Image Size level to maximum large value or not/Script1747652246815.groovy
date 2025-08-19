@@ -12,7 +12,6 @@ import org.openqa.selenium.By
 import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.Dimension
 
-// 1) LOGIN & OPEN IMAGE SETTINGS
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
@@ -21,27 +20,32 @@ WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_log
 					 'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
 
-// wait, open first “Under review” report, click WBC, open settings… (omitted for brevity)
-// …
-// after you’ve done:
-//   WebUI.click(wbcTab)
-//   WebUI.click(imgSettingsIcon)
-//   WebUI.verifyElementPresent(popup, 10)
-
-WebUI.delay(1)  // ensure the panel is fully rendered
+WebUI.waitForElementPresent(
+	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
+	10
+)
+WebUI.click(new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
+))
+WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_WBC'))
+//WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/img_Manual sub-classification_image-settings'))
+WebUI.delay(2)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
 // 2) LOCATE THE IMAGE ELEMENT AND MEASURE WIDTH BEFORE
 TestObject imgTO = new TestObject().addProperty(
-	'css', ConditionType.EQUALS,
-	'div.microscopic-right-pane img'
+	'xpath', ConditionType.EQUALS,
+	'//div[contains(@id,"wbc")]'
 )
 WebElement imageBefore = WebUiCommonHelper.findWebElement(imgTO, 10)
 int widthBefore = imageBefore.getSize().getWidth()
 WebUI.comment("Width before resize: ${widthBefore}px")
 
 // 3) LOCATE THE IMAGE SIZE SLIDER THUMB
+WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/img_Manual sub-classification_image-settings'))
+
 TestObject thumbTO = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//div[normalize-space()='Image Size']/following-sibling::div//span[contains(@class,'MuiSlider-thumb')]"
@@ -51,7 +55,7 @@ WebElement sizeThumb = WebUiCommonHelper.findWebElement(thumbTO, 10)
 // 4) DRAG IT ALL THE WAY RIGHT
 new Actions(driver)
 	.clickAndHold(sizeThumb)
-	.moveByOffset(100, 0)  // adjust if your slider track is longer
+	.moveByOffset(120, 0)  // adjust if your slider track is longer
 	.release()
 	.perform()
 WebUI.delay(1)

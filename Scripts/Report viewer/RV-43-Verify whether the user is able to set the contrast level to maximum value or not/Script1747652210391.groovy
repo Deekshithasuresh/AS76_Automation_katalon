@@ -30,7 +30,6 @@ WebUI.click(new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
 ))
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/td_18123-H-MGG'))
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_WBC'))
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/img_Manual sub-classification_image-settings'))
 WebUI.delay(2)  // wait for slider panel
@@ -47,7 +46,7 @@ if (allThumbs.size() < 2) {
 }
 
 // 3) TARGET THE SECOND THUMB (index 1 = Contrast)
-WebElement contrastThumb = allThumbs[1]
+WebElement contrastThumb = allThumbs[2]
 
 // 4) SCROLL INTO VIEW & DRAG RIGHT
 ((JavascriptExecutor) driver)
@@ -56,14 +55,14 @@ Thread.sleep(500)
 
 new Actions(driver)
 	.clickAndHold(contrastThumb)
-	.moveByOffset(100, 0)   // adjust offset if needed
+	.moveByOffset(120, 0)   // adjust offset if needed
 	.release()
 	.perform()
 WebUI.delay(1)
 
 // 5) VERIFY THE INPUT VALUE IS 100
 WebElement contrastInput = driver.findElement(
-	By.xpath("//span[contains(text(),'Contrast')]/following::input[1]")
+	By.xpath("//div[contains(text(),'Contrast')]/following::input[1]")
 )
 String contrastValue = contrastInput.getAttribute("value")
 

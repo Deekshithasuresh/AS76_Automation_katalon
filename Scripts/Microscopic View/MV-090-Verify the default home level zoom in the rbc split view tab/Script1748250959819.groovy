@@ -61,7 +61,7 @@ TestObject splitBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS
 	"//img[@alt='Split view' and @aria-label='Split view']")
 WebUI.waitForElementClickable(splitBtn, 10)
 WebUI.click(splitBtn)
-WebUI.delay(120)
+WebUI.delay(10)
 
 // STEP 5: Verify default scale “10 μm” and take screenshot
 String scale = fetchScale()

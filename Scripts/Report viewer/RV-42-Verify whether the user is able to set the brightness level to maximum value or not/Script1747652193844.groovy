@@ -29,7 +29,7 @@ WebUI.click(new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
 ))
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/td_18123-H-MGG'))
+//WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/td_18123-H-MGG'))
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_WBC'))
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/img_Manual sub-classification_image-settings'))
 WebUI.delay(2)  // wait for panel
@@ -45,7 +45,7 @@ List<WebElement> thumbs = WebUiCommonHelper.findWebElements(thumbsTO, 10)
 if (thumbs.isEmpty()) {
 	assert false : "Brightness slider thumb not found."
 }
-WebElement brightnessThumb = thumbs[0]
+WebElement brightnessThumb = thumbs[1]
 
 // 3) SCROLL IT INTO VIEW
 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", brightnessThumb)
@@ -54,7 +54,7 @@ Thread.sleep(500)
 // 4) DRAG TO THE RIGHT (approx full range)
 new Actions(driver)
 	.clickAndHold(brightnessThumb)
-	.moveByOffset(100, 0)  // adjust if needed
+	.moveByOffset(120, 0)  // adjust if needed
 	.release()
 	.perform()
 WebUI.delay(1)
@@ -62,7 +62,7 @@ WebUI.delay(1)
 // 5) LOCATE THE CORRESPONDING INPUT & VERIFY VALUE
 // Assuming the input immediately follows the “Brightness” label
 WebElement brightnessInput = driver.findElement(
-	By.xpath("//span[contains(text(),'Brightness')]/following::input[1]")
+	By.xpath("//div[contains(text(),'Brightness')]/following::input[1]")
 )
 String actualValue = brightnessInput.getAttribute("value")
 

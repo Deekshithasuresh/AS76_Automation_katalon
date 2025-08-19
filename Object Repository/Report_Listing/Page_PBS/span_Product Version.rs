@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Device ID'])[1]/following::span[1]</value>
+         <value>//span[(text() = 'Product Version' or . = 'Product Version')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -28,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>3f1396eb-ae56-4f14-acfd-125c085c648b</webElementGuid>
+      <webElementGuid>0c783743-7108-4550-9773-42fc14348b94</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,7 +36,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Product Version</value>
-      <webElementGuid>0d55c83e-ea0c-4d36-a6c6-b62932d26a23</webElementGuid>
+      <webElementGuid>694b5de3-7c9c-4595-9c10-7b9eb64c97b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -44,7 +44,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[@class=&quot;dx-device-desktop dx-device-generic&quot;]/div[@class=&quot;MuiPopover-root MuiModal-root css-ns9v7&quot;]/div[@class=&quot;MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 MuiPopover-paper css-1dmzujt&quot;]/div[@class=&quot;filterComponent_popover-container__Tge9c&quot;]/div[@class=&quot;filterComponent_body-container--hide__UHOEX filter-container-body-check&quot;]/div[@class=&quot;filterComponent_sidebar-container__2D4u0&quot;]/div[1]/ul[@class=&quot;filterComponent_sidebar-list__fT1DG&quot;]/li[@class=&quot;filterComponent_sidebar-listitem__PFJ1C&quot;]/span[1]</value>
-      <webElementGuid>71a8b04c-dc1f-4e26-a873-2bed8033088a</webElementGuid>
+      <webElementGuid>761d5f84-27cf-47a5-929d-2706acb7d3bc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -52,7 +52,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Device ID'])[1]/following::span[1]</value>
-      <webElementGuid>f22c74b7-c074-4bbe-970c-d903b35726f8</webElementGuid>
+      <webElementGuid>411f887f-00bf-4ffd-94e3-ca8f35d35cc7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -60,7 +60,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Status'])[2]/following::span[2]</value>
-      <webElementGuid>cd766a7f-e615-4251-9462-c05474d5d36b</webElementGuid>
+      <webElementGuid>3bcf46bf-79d7-4352-9814-55bcda1adc4a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -68,7 +68,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Scan date'])[3]/preceding::span[1]</value>
-      <webElementGuid>25c040f8-78a6-42d2-b9ea-8c47aab17542</webElementGuid>
+      <webElementGuid>a536261a-8ea2-45f4-a599-b4e1fd898790</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -76,7 +76,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Select date range'])[1]/preceding::span[1]</value>
-      <webElementGuid>45be1b7d-82ce-4da8-8a39-84fe976eb131</webElementGuid>
+      <webElementGuid>57c1012e-efe6-4864-9495-76df5371554f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -84,7 +84,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Product Version']/parent::*</value>
-      <webElementGuid>1decc902-0bef-4933-9ca2-5e880de41f18</webElementGuid>
+      <webElementGuid>d29317a3-377b-4479-88e9-257089a2e969</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,7 +92,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//li[5]/span</value>
-      <webElementGuid>6c555104-148c-4fa7-b872-e25b0dacb2b5</webElementGuid>
+      <webElementGuid>1d88ef27-c733-4cc6-a705-5ec2f5736f93</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -100,6 +100,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Product Version' or . = 'Product Version')]</value>
-      <webElementGuid>6264ad4a-3b1b-4aa5-bec0-dd701ad263ad</webElementGuid>
+      <webElementGuid>2fad3b75-f674-4723-baa2-b4de84bf6ae7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

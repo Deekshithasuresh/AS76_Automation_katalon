@@ -38,7 +38,7 @@ WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/input
 WebUI.sendKeys(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Name_rbc-input-box'), 'Alexander Jonathan Maxwell writes poetic lines daily.')
 
 WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/div_Maximum 50 charaters allowed'), 
-    'Maximum 50 charaters allowed')
+    'Maximum 50 characters allowed')
 
 WebUI.getCSSValue(findTestObject('IAM Model/Page_Admin Console/div_Maximum 50 charaters allowed'), 'color')
 

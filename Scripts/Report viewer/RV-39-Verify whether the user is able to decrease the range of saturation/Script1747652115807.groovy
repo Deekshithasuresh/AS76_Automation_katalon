@@ -32,7 +32,7 @@ WebUI.click(new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
 ))
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/td_18123-H-MGG'))
+//WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/td_18123-H-MGG'))
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_WBC'))
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/img_Manual sub-classification_image-settings'))
 WebUI.delay(2)  // wait for slider panel
@@ -59,11 +59,17 @@ WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_Reset'))
 WebUI.delay(1)
 
-// 4) VERIFY HUE RETURNS TO ZERO
-allThumbs = WebUiCommonHelper.findWebElements(thumbsTO, 10)
-hueThumb = allThumbs[3]
-String ariaValue = hueThumb.getAttribute('aria-valuenow')
-println "Hue after reset: ${ariaValue}"
-assert ariaValue == '0' : "Expected Hue=0 but was ${ariaValue}"
 
-WebUI.delay(1)
+// 6) RE-LOCATE SLIDER ELEMENT WITH aria-valuenow (not the thumb!)
+TestObject contrastSliderTO = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//input[@type='range'])[4]"   // 3rd slider = Hue
+)
+WebElement contrastSlider = WebUiCommonHelper.findWebElement(contrastSliderTO, 10)
+
+// 7) VERIFY VALUE BACK TO ZERO
+String ariaValue = contrastSlider.getAttribute('aria-valuenow')
+println "Contrast after reset: ${ariaValue}"
+assert ariaValue == '0' : "Expected contrast=0 but was ${ariaValue}"
+
+WebUI.delay(2)

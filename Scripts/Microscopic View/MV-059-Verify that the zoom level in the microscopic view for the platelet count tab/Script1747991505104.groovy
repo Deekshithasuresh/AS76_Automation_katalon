@@ -31,42 +31,17 @@ String snapAndBase64(String filename) {
 	return Files.readAllBytes(Paths.get(path)).encodeBase64().toString()
 }
 
-// 1) LOGIN
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(
-	findTestObject('Report viewer/Page_PBS/input_username_loginId'),
-	'adminuserr'
-)
-WebUI.setEncryptedText(
-	findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA=='
-)
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
+CustomKeywords.'generic.custumFunctions.login'()
 
-// 2) VERIFY LANDING ON REPORT LIST
-TestObject pbsText = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"//span[contains(text(),'PBS')]"
-)
-WebUI.waitForElementPresent(pbsText, 10)
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-// 3) OPEN FIRST “Under review” REPORT
-TestObject underReviewRow = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
-)
-WebUI.waitForElementClickable(underReviewRow, 10)
-WebUI.scrollToElement(underReviewRow, 5)
-WebUI.click(underReviewRow)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
-// STEP 4: Switch to Platelet Count → Microscopic view
-TestObject plcTab   = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-	"//button[contains(@class,'cell-tab')]//span[normalize-space()='Platelet Count']")
+WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'), 'Platelets')
+
+WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'))
 TestObject microBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//img[@alt='Microscopic view' and @aria-label='Microscopic view']")
-WebUI.waitForElementClickable(plcTab, 10);    WebUI.click(plcTab)
 WebUI.waitForElementClickable(microBtn, 10);  WebUI.click(microBtn)
 
 // STEP 5: Wait 150s for full load, then capture default (1000 μm)

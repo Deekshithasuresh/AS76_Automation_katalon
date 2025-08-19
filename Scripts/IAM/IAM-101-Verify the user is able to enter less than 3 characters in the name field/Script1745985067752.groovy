@@ -47,14 +47,13 @@ WebUI.verifyElementText(findTestObject('Object Repository/Manage_user/Page_Admin
 // Step 2: Enter the keyword in the search field
 String searchKeyword = 'pawan kumar'
 
-String Exp_username = 'UsereYIxgy'
 
 String Exp_role = 'administrator'
 
 String Exp_Status = 'Active'
 
 
-verifySearchUserByUsernameAndRole(searchKeyword, Exp_username, Exp_role, Exp_Status //search by roll acesss
+verifySearchUserByUsernameAndRole(searchKeyword, Exp_role, Exp_Status //search by roll acesss
     )
 
 WebUI.verifyElementNotChecked(findTestObject('Object Repository/Manage_user/Page_Admin Console/update-button-disabled'), 
@@ -73,6 +72,40 @@ WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin C
     'Minimum 3 characters required')
 
 WebUI.getCSSValue(findTestObject('IAM Model/Page_Admin Console/div_Minimum 3 characters required'), 'color')
+
+
+
+
+void verifySearchUserByUsernameAndRole(String keyword, String role, String status) {
+	WebUI.setText(findTestObject('View list of users/Page_Admin Console/search bar'), keyword)
+
+	WebDriver driver = DriverFactory.getWebDriver()
+	List<WebElement> rows = driver.findElements(By.xpath('//table//tbody//tr'))
+
+	boolean isKeywordPresent = false
+
+	for (WebElement row : rows) {
+		List<WebElement> col = row.findElements(By.tagName('td'))
+
+		String Act_name = col[0].getText()
+		// String Act_username = col[1].getText()
+		String Act_role = col[2].getText()
+		String Act_status = col[3].getText()
+
+		if (Act_name.contains(keyword) && Act_role.equals(role) && Act_status.equals(status)) {
+			isKeywordPresent = true
+			println('name, role, and status have been found and verified')
+			row.click()
+			break
+		}
+	}
+	
+	assert isKeywordPresent == true : 'Not all rows contain the keyword'
+
+	int rowCount = rows.size()
+	println('Total number of rows in the table: ' + rowCount)
+}
+
 
 void verifySearchUserByUsernameAndRole(String keyword, String username, String role, String status) {
     WebUI.setText(findTestObject('View list of users/Page_Admin Console/search bar'), keyword)

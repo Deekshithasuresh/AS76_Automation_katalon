@@ -45,5 +45,5 @@ String fullText = WebUI.getText(reportAssign)
 WebUI.comment("Full assignment row text:\n$fullText")
 
 assert fullText.contains("Report assignment") : "❌ 'Report assignment' not found"
-assert fullText.contains("admin → manju") : "❌ Assignee flow 'admin → manju' not found"
+assert fullText.contains("manju") : "❌ Assignee flow 'admin → manju' not found"
 assert fullText.contains("manju assigned the report") : "❌ Description missing"

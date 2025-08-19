@@ -318,6 +318,26 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/Report_Listing/Page_PBS/search_input_text_attributes.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Report_Listing/Page_PBS/span_My reports",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div/div[2]/div/span[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//span[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Report_Listing/Page_PBS/span_My reports_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/WBC/Page_PBS/Page_PBS/div_WBC",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div[2]/div[2]/div/div/div/div/div/table/thead/div",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*[(text() \u003d \u0027WBC\u0027 or . \u003d \u0027WBC\u0027)]",
+      "proposedLocatorMethod": "BASIC",
+      "recoveryMethod": "BASIC",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/WBC/Page_PBS/Page_PBS/div_WBC_BASIC.png"
     }
   ]
 }

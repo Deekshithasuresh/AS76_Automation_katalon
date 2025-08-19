@@ -108,8 +108,8 @@ WebUI.waitForElementVisible(findTestObject('Object Repository/PBS_Settings_Objec
 
 String username='prem'
 
-assert pbs_set.verifyChangesGettingRecordedInHistory("Platelet level",username+" updated the level of Significantly decreased","100","200")== true
+assert pbs_set.verifyChangesGettingRecordedInHistory("Platelet level",username+" updated the level of significantly decreased","100","200")== true
 
-assert pbs_set.verifyChangesGettingRecordedInHistory("Platelet level",username+" updated the level of Decreased","500","600")== true
+assert pbs_set.verifyChangesGettingRecordedInHistory("Platelet level",username+" updated the level of decreased","500","600")== true
 
-assert pbs_set.verifyChangesGettingRecordedInHistory("Platelet level",username+" updated the level of Normal","800","900")== true
+assert pbs_set.verifyChangesGettingRecordedInHistory("Platelet level",username+" updated the level of normal","800","900")== true

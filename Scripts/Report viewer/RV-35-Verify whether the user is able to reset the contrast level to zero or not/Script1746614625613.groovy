@@ -20,8 +20,10 @@ WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_WBC'
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/img_Manual sub-classification_image-settings'))
 WebUI.delay(2)  // wait for panel
 
-// 2) LOCATE ALL SLIDER THUMBS
+// 1) GET DRIVER
 WebDriver driver = DriverFactory.getWebDriver()
+
+// 2) LOCATE ALL SLIDER THUMBS
 TestObject thumbsTO = new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"//span[contains(@class,'MuiSlider-thumb')]"
@@ -31,12 +33,12 @@ List<WebElement> allThumbs = WebUiCommonHelper.findWebElements(thumbsTO, 10)
 // 3) TARGET THE CONTRAST THUMB (index 2)
 WebElement contrastThumb = allThumbs[2]
 
-// 4) FIRST INCREASE IT TO PROVE IT MOVES
+// 4) MOVE IT TO PROVE IT CHANGES
 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", contrastThumb)
 Thread.sleep(500)
 new Actions(driver)
 	.clickAndHold(contrastThumb)
-	.moveByOffset(100, 0)
+	.moveByOffset(100, 0)   // drag right
 	.release()
 	.perform()
 WebUI.delay(1)
@@ -45,10 +47,15 @@ WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_Reset'))
 WebUI.delay(1)
 
-// 6) RE-LOCATE AND VERIFY BACK TO ZERO
-allThumbs = WebUiCommonHelper.findWebElements(thumbsTO, 10)
-contrastThumb = allThumbs[2]
-String ariaValue = contrastThumb.getAttribute('aria-valuenow')
+// 6) RE-LOCATE SLIDER ELEMENT WITH aria-valuenow (not the thumb!)
+TestObject contrastSliderTO = new TestObject().addProperty(
+	'xpath', ConditionType.EQUALS,
+	"(//input[@type='range'])[3]"   // 3rd slider = Contrast
+)
+WebElement contrastSlider = WebUiCommonHelper.findWebElement(contrastSliderTO, 10)
+
+// 7) VERIFY VALUE BACK TO ZERO
+String ariaValue = contrastSlider.getAttribute('aria-valuenow')
 println "Contrast after reset: ${ariaValue}"
 assert ariaValue == '0' : "Expected contrast=0 but was ${ariaValue}"
 

@@ -246,11 +246,11 @@ if (WebUI.waitForElementPresent(updatetoastObject, timeout)) {
 } else {
 	KeywordUtil.markFailed("❌ Toast message did not appear within $timeout seconds.")
 }
-try {
-    WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/Page_Admin Console/Page_Admin Console/button_Create User_Xicon'))
-} catch (Exception e) {
-    WebUI.comment("❌ 'X' icon not found or not clickable. Skipping this step.")
-}
+//try {
+//    WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/Page_Admin Console/Page_Admin Console/button_Create User_Xicon'))
+//} catch (Exception e) {
+//    WebUI.comment("❌ 'X' icon not found or not clickable. Skipping this step.")
+//}
 
 
 WebUI.delay(10)

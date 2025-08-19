@@ -29,7 +29,6 @@ WebUI.click(new TestObject().addProperty(
 	'xpath', ConditionType.EQUALS,
 	"(//tr[.//span[contains(@class,'reportStatusComponent_text') and normalize-space(text())='Under review']])[1]"
 ))
-WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/td_18123-H-MGG'))
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/button_WBC'))
 WebUI.click(findTestObject('Object Repository/Report viewer/Page_PBS/img_Manual sub-classification_image-settings'))
 WebUI.delay(2)  // wait for the sliders to render
@@ -48,21 +47,21 @@ if (allThumbs.size() < 4) {
 // 3) TARGET THE HUE THUMB (index 3)
 WebElement hueThumb = allThumbs[3]
 
-// 4) SCROLL INTO VIEW & DRAG IT TO MAXIMUM
+// 4) SCROLL INTO VIEW & DRAG IT TO MAXIMUMs
 ((JavascriptExecutor) driver)
 	.executeScript("arguments[0].scrollIntoView(true);", hueThumb)
 Thread.sleep(500)
 
 new Actions(driver)
 	.clickAndHold(hueThumb)
-	.moveByOffset(100, 0)   // drag right by ~100px
+	.moveByOffset(120, 0)   // drag right by ~100px
 	.release()
 	.perform()
 WebUI.delay(1)
 
 // 5) VERIFY THE HUE INPUT VALUE IS 100
 WebElement hueInput = driver.findElement(
-	By.xpath("//span[contains(text(),'Hue')]/following::input[1]")
+	By.xpath("//div[contains(text(),'Hue')]/following::input[1]")
 )
 String hueValue = hueInput.getAttribute("value")
 if (hueValue == '100') {

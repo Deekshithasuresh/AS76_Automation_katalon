@@ -46,7 +46,7 @@ TestObject microBtn = new TestObject().addProperty('xpath', ConditionType.EQUALS
 	"//img[@alt='Microscopic view' and @aria-label='Microscopic view']")
 WebUI.waitForElementClickable(microBtn, 10)
 WebUI.click(microBtn)
-WebUI.delay(120)
+WebUI.delay(5)
 
 // ────────────────────────────────────────────────────────────────────
 // STEP 5: Verify presence of the line-tool icon

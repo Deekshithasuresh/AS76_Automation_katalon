@@ -247,10 +247,10 @@ if (WebUI.waitForElementPresent(toastObject, timeout)) {
 
     WebUI.comment("✅ Toast message: '$toastText'")
 
-    if (toastText.contains(expectedPartial)) {
+    if (toastText.contains(expectedupdatedPartial)) {
         KeywordUtil.markPassed("✅ Toast matched: '$toastText'")
     } else {
-        KeywordUtil.markFailed("⚠️ Toast appeared but message mismatch.Expected to contain: '$expectedPartial'Actual: '$toastText'")
+        KeywordUtil.markFailed("⚠️ Toast appeared but message mismatch.Expected to contain: '$expectedupdatedPartial'Actual: '$toastText'")
     }
 } else {
     KeywordUtil.markFailed("❌ Toast message did not appear within $timeout seconds.")

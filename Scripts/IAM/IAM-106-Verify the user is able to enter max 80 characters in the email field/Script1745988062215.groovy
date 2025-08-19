@@ -63,12 +63,12 @@ WebUI.click(findTestObject('Manage_user/Page_Admin Console/input_Email_rbc-input
 
 WebUI.sendKeys(findTestObject('Manage_user/Page_Admin Console/input_Email_rbc-input-box'), Keys.chord(Keys.COMMAND, 'a'))
 
-WebUI.sendKeys(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Email_rbc-input-box'), 'verylongusernameforautomationtestingpurposeandkatalonscenario1234565@example.com')
+WebUI.sendKeys(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Email_rbc-input-box'), 'averylongusernameforautomationtestingpurposeandkatalonscenario1234565@example.com')
 
 WebUI.getAttribute(findTestObject('IAM Model/Page_Admin Console/input_Email_rbc-input-box'), 'value', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/div_Maximum 50 charaters allowed'), 
-    'Maximum 80 charaters allowed')
+    'Maximum 80 characters allowed')
 
 WebUI.getCSSValue(findTestObject('IAM Model/Page_Admin Console/div_Maximum 50 charaters allowed'), 'color')
 

@@ -11,7 +11,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 CustomKeywords.'generic.custumFunctions.login'()
 
               
-CustomKeywords.'generic.FilterFunctions.verifyCombineFilters'("Under review", "prem")
+CustomKeywords.'generic.FilterFunctions.verifyCombineFilters'("Under review", "manju")
 
 
 def getIconObj = { int index ->

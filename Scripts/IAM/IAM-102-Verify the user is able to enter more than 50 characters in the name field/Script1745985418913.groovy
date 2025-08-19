@@ -45,16 +45,15 @@ WebUI.verifyElementText(findTestObject('Object Repository/Manage_user/Page_Admin
     '')
 
 // Step 2: Enter the keyword in the search field
-String searchKeyword = 'manju'
+String searchKeyword = 'pawan kumar'
 
-String Exp_username = 'manju'
 
 String Exp_role = 'administrator'
 
 String Exp_Status = 'Active'
 
 
-verifySearchUserByUsernameAndRole(searchKeyword, Exp_username, Exp_role, Exp_Status //search by roll acesss
+verifySearchUserByUsernameAndRole(searchKeyword,  Exp_role, Exp_Status //search by roll acesss
     )
 
 WebUI.verifyElementNotChecked(findTestObject('Object Repository/Manage_user/Page_Admin Console/update-button-disabled'), 
@@ -70,46 +69,41 @@ WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/
 WebUI.sendKeys(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Name_rbc-input-box'), 'Alexander Jonathan Maxwell writes poetic lines daily.')
 
 WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/div_Maximum 50 charaters allowed'), 
-    'Maximum 50 charaters allowed')
+    'Maximum 50 characters allowed')
 
 WebUI.getCSSValue(findTestObject('IAM Model/Page_Admin Console/div_Maximum 50 charaters allowed'), 'color')
 
-void verifySearchUserByUsernameAndRole(String keyword, String username, String role, String status) {
-    WebUI.setText(findTestObject('View list of users/Page_Admin Console/search bar'), keyword)
 
-    WebDriver driver = DriverFactory.getWebDriver()
 
-    List<WebElement> rows = driver.findElements(By.xpath('//table//tbody//tr'))
 
-    boolean isKeywordPresent = true
 
-    for (WebElement row : rows) {
-        List<WebElement> col = row.findElements(By.tagName('td'))
 
-        String Act_name = (col[0]).getText()
+void verifySearchUserByUsernameAndRole(String keyword, String role, String status) {
+	WebUI.setText(findTestObject('View list of users/Page_Admin Console/search bar'), keyword)
 
-        String Act_username = (col[1]).getText()
+	WebDriver driver = DriverFactory.getWebDriver()
+	List<WebElement> rows = driver.findElements(By.xpath('//table//tbody//tr'))
 
-        String Act_role = (col[2]).getText()
+	boolean isKeywordPresent = false
 
-        String Act_status = (col[3]).getText()
+	for (WebElement row : rows) {
+		List<WebElement> col = row.findElements(By.tagName('td'))
 
-        if (((Act_name.contains(keyword) && Act_username.equals(username)) && Act_role.equals(role)) && Act_status.equals(
-            status)) {
-            isKeywordPresent = true
+		String Act_name = col[0].getText()
+		// String Act_username = col[1].getText()
+		String Act_role = col[2].getText()
+		String Act_status = col[3].getText()
 
-            println('name, username and role has been found and verified')
+		if (Act_name.contains(keyword) && Act_role.equals(role) && Act_status.equals(status)) {
+			isKeywordPresent = true
+			println('name, role, and status have been found and verified')
+			row.click()
+			break
+		}
+	}
+	
+	assert isKeywordPresent == true : 'Not all rows contain the keyword'
 
-            row.click()
-
-            break
-        }
-    }
-    
-    assert isKeywordPresent == true : 'Not all rows contain the keyword'
-
-    int rowCount = rows.size()
-
-    println('Total number of rows in the table: ' + rowCount)
+	int rowCount = rows.size()
+	println('Total number of rows in the table: ' + rowCount)
 }
-

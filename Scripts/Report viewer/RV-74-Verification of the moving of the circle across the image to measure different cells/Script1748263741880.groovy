@@ -43,7 +43,7 @@ WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//button[contains(@class,'cell-tab')]//span[normalize-space()='WBC']"))
 WebUI.click(new TestObject().addProperty('xpath', ConditionType.EQUALS,
 	"//img[@alt='Microscopic view' and @aria-label='Microscopic view']"))
-WebUI.delay(120)
+WebUI.delay(10)
 
 // 5) ZOOM IN TWICE
 TestObject zoomIn = new TestObject().addProperty('xpath', ConditionType.EQUALS,
@@ -51,7 +51,7 @@ TestObject zoomIn = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 WebUI.waitForElementClickable(zoomIn, 30)
 (1..2).each { i ->
 	WebUI.click(zoomIn)
-	WebUI.delay(120)
+	WebUI.delay(0)
 	WebUI.comment("✔ Zoom-in #${i} complete")
 }
 

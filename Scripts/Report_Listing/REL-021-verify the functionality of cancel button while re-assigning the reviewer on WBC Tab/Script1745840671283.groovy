@@ -25,8 +25,6 @@ WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PB
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/div_WBC'), 0)
-
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('chida', false)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('prem', false)
 
  

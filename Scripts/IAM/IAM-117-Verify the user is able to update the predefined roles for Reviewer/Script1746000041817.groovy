@@ -255,7 +255,6 @@ int timeout = 10
 TestObject updatetoastObject = new TestObject('dynamicToast')
 
 updatetoastObject.addProperty('xpath', ConditionType.EQUALS, "//div[@class='body-text']")
-WebUI.delay(2)
 
 if (WebUI.waitForElementPresent(toastObject, timeout)) {
     String toastText = WebUI.getText(toastObject)

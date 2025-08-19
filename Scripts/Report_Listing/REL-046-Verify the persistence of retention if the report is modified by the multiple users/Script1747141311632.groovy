@@ -63,9 +63,12 @@ WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/img_PBS_ic
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/li_Logout'))
 
-WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_PBS/input_username_loginId'), 'Chidu')
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_PBS/input_username_loginId'), 'santosh')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
+WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_PBS/input_password_loginPassword'), 'Sigtuple@123')
+
+
+//WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Sign In'))
 
@@ -92,7 +95,7 @@ if (filteredResults.size() > 0) {
 
 def wbcText = 'ABC123@#%^&*def456'
 
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('chida', true)
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh', true)
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/Report_Listing/Page_PBS/div_Templates_ql-editor ql-blank dx-htmleditor-content dx-state-focused'), 
     10)

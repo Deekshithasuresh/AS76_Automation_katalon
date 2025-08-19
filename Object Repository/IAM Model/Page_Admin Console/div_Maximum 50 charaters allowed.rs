@@ -6,12 +6,11 @@
    <elementGuidId>82e0dfd1-1888-4f9b-ab74-acee4970990c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[contains(@class ,'error-message')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[(text() = 'Maximum 50 charaters allowed' or . = 'Maximum 50 charaters allowed')]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +28,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>75091de2-d4b3-484c-82df-f5c193597f01</webElementGuid>
+      <webElementGuid>d3080fcd-d237-4101-ae23-3f2d6cdd925f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +36,7 @@
       <name>class</name>
       <type>Main</type>
       <value>error-message</value>
-      <webElementGuid>8cfbe05a-db57-461f-b0b6-890b24b5c744</webElementGuid>
+      <webElementGuid>a945c4cd-2aaf-4e4e-96fb-2dfe03f77c2a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,7 +44,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Maximum 50 charaters allowed</value>
-      <webElementGuid>037ccd18-7d0f-4657-be95-94ba74cc53dd</webElementGuid>
+      <webElementGuid>26355ceb-75dc-4807-8f1e-9b07d82eebdf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +52,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/div[@class=&quot;error-message&quot;]</value>
-      <webElementGuid>1118c0ce-fb7a-4fdd-bd8e-7b9fe0c15214</webElementGuid>
+      <webElementGuid>fdf363d2-387b-4e99-a3ba-f723ecc6b136</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -61,6 +60,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Maximum 50 charaters allowed' or . = 'Maximum 50 charaters allowed')]</value>
-      <webElementGuid>4cbcfa2a-aa46-4745-83a6-b1320995769e</webElementGuid>
+      <webElementGuid>da7e3091-0151-469f-85d5-51aaa522e9a4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

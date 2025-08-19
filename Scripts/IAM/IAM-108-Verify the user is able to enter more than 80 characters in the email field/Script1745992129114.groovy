@@ -69,7 +69,7 @@ WebUI.sendKeys(findTestObject('Object Repository/IAM Model/Page_Admin Console/in
 WebUI.getAttribute(findTestObject('IAM Model/Page_Admin Console/input_Email_rbc-input-box'), 'value', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/div_Maximum 50 charaters allowed'), 
-    'Maximum 80 charaters allowed')
+    'Maximum 80 characters allowed')
 
 WebUI.getCSSValue(findTestObject('IAM Model/Page_Admin Console/div_Maximum 50 charaters allowed'), 'color')
 

@@ -261,17 +261,17 @@ if (WebUI.waitForElementPresent(toastObject, timeout)) {
 
     WebUI.comment("✅ Toast message: '$toastText'")
 
-    if (toastText.contains(expectedPartial)) {
+    if (toastText.contains(expectedupdatePartial)) {
         KeywordUtil.markPassed("✅ Toast matched: '$toastText'")
     } else {
-        KeywordUtil.markFailed("⚠️ Toast appeared but message mismatch.Expected to contain: '$expectedPartial'Actual: '$toastText'")
+        KeywordUtil.markFailed("⚠️ Toast appeared but message mismatch.Expected to contain: '$expectedupdatePartial'Actual: '$toastText'")
     }
 } else {
     KeywordUtil.markFailed("❌ Toast message did not appear within $timeout seconds.")
 }
 
 
-WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/path'))
+//WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/path'))
 
 WebUI.delay(2)
 

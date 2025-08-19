@@ -58,6 +58,8 @@ WebUI.setText(findTestObject('Object Repository/Manage_user/Page_Admin Console/i
 WebUI.setEncryptedText(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/button_Sign in'))
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/div_User'))
 WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/button_Users'))
 

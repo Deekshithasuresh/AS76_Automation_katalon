@@ -22,25 +22,10 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
-WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/WBC/Page_PBS/h4_Sign In'), 0)
-
-WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/body_You need to enable JavaScript to run t_507cb1'))
-
-WebUI.setText(findTestObject('Object Repository/WBC/Page_PBS/input_username_loginId'), 'Chidu')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/WBC/Page_PBS/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
-
-WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/img'))
-
-WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/img_1'))
-
-WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/button_Sign In'))
-
-WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/td_SIG0015'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/WBC/Page_PBS/button_WBC'), 0)
 
