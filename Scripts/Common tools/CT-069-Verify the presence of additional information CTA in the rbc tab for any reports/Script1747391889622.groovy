@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under review")
 
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/span_RBC'))
