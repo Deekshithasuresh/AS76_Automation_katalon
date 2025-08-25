@@ -26,7 +26,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.JavascriptExecutor
 
 CustomKeywords.'generic.custumFunctions.login'()
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'), 'Platelets')

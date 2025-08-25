@@ -19,13 +19,11 @@ ZoomInOut zoom = new ZoomInOut()
 
 Platelet_P plt = new Platelet_P()
 
-lg.login()
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.delay(2)
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
-lg.selectReportByStatus('Under review')
-
-lg.assignOrReassignOnTabs('prem')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Summary'), 10)
 

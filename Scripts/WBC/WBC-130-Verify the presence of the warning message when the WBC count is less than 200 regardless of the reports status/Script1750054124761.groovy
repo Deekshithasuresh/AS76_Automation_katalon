@@ -43,7 +43,7 @@ CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
 
 // Step 2: Assign or Reassign
-CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
+//CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_WBC'), 'WBC')
 
 // Step 3: Click WBC tab

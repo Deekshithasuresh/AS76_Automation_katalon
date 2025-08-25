@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
 
@@ -29,4 +29,4 @@ WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PB
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
 
-CustomKeywords.'generic.Reclassification.reclassifyWBCToPlatelet'("Neutrophils", "Platelet Clumps", 2)
+CustomKeywords.'generic.Reclassification.reclassifyWBCToPlatelet'("Neutrophils", "Platelet Clumps", 1)

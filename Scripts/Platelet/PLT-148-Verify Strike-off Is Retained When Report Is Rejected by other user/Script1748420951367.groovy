@@ -19,13 +19,13 @@ Login lg = new Login()
 
 Platelet_P plt = new Platelet_P()
 
-lg.login()
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.delay(2)
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
-lg.selectReportByStatus('To be reviewed')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
 
-lg.assignOrReassignOnTabs('premkumar')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Summary'), 10)
 
@@ -45,7 +45,7 @@ plt.verifyModifingPlateletDetetctedNotDetecetdStatus()
 
 String Slide_id_opened=WebUI.getText(findTestObject('Object Repository/Platelet_Objects/Page_PBS/Slide_Id_Text_In_report'))
 
-lg.assignOrReassignOnTabs('pawan')
+lg.assignOrReassignOnTabs('pawanM')
 
 WebUI.click(findTestObject('Object Repository/Platelet_Objects/Page_PBS/Back_CTA'))
 

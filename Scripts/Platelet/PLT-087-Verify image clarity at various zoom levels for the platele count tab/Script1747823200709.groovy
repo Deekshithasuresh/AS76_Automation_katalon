@@ -33,6 +33,7 @@ WebUI.setText(findTestObject('Object Repository/Platelets/Page_PBS/input_passwor
 WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Sign In'))
 
 WebUI.delay(5)
+WebUI.maximizeWindow()
 // Select a sample
 WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/td_SIG0146'))
 
@@ -45,7 +46,7 @@ WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_zoom-in'
 
 //WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_zoom-in'))
 
-WebUI.delay(10)
+WebUI.delay(15)
 
 blurChecker checker = new blurChecker()
 // Option 1: Default canvas selector

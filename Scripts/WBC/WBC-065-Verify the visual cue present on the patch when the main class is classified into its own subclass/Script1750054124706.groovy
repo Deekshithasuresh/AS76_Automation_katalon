@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver
 
 // === Step 1: Login and Navigate ===
 CustomKeywords.'generic.custumFunctions.login'()
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_WBC'), 'WBC')

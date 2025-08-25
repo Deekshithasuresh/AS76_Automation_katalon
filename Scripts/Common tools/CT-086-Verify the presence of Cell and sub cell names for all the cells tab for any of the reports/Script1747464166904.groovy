@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under Review')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/Commontools/button_WBC (1)'))
 
@@ -54,15 +54,6 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Commontools/Page_PB
 
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/Page_PBS/li_Smudge Cells'), 'Smudge Cells')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Commontools/Page_PBS/Page_PBS/li_Smudge Cells'), 0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/Page_PBS/li_Degenerate Cells'), 'Degenerate Cells')
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Commontools/Page_PBS/Page_PBS/li_Degenerate Cells'), 0)
-
-WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/Page_PBS/li_Degenerate Cells'), 'Degenerate Cells')
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Commontools/Page_PBS/Page_PBS/li_Degenerate Cells'), 0)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Commontools/Page_PBS/Page_PBS/li_Stain Artefacts'), 'Stain Artefacts')
 

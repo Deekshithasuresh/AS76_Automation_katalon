@@ -1174,61 +1174,171 @@ public class ZoomInOut {
 		}
 	}
 
+//	public void verifyCorrectnessOfGradeAccordingToPercentageValue() {
+//		WebDriver driver =DriverFactory.getWebDriver()
+//		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
+//		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+//
+//		for (WebElement row : cellRows) {
+//
+//			WebElement percentageElement = row.findElement(By.xpath(".//div[3]"))
+//			WebElement cellname_ele = row.findElement(By.xpath(".//div[1]"))
+//			String cellname = cellname_ele.getText()
+//			println(cellname)
+//			float percentage_flaot_value = Float.parseFloat(percentageElement.getText())
+//			println(percentage_flaot_value)
+//
+//			List<WebElement> grades= row.findElements(By.xpath(".//input[@type='radio']"))
+//			for(int i=0; i<=grades.size();i++) {
+//				if(grades.get(i).isSelected()) {
+//					int selected_grade=Integer.parseInt(grades.get(i).getAttribute("value"))
+//
+//					System.out.println("Selected option value: " + selected_grade);
+//					if(selected_grade==0) {
+//						assert percentage_flaot_value==0
+//						break;
+//					}
+//					else if(selected_grade==1) {
+//						assert percentage_flaot_value > 0 && percentage_flaot_value <= 3
+//						break;
+//					}
+//					else if(selected_grade==2) {
+//						if(cellname.equals("Teardrop Cells")) {
+//							assert percentage_flaot_value > 3 && percentage_flaot_value <= 6
+//							break;
+//						}
+//						else {
+//							assert percentage_flaot_value > 3 && percentage_flaot_value <= 5
+//							break;
+//						}
+//					}
+//					else if(selected_grade==3) {
+//						if(cellname.equals("Teardrop Cells")) {
+//							assert percentage_flaot_value >6
+//							break;
+//						}
+//						else {
+//							assert percentage_flaot_value >5
+//							break;
+//						}
+//					}
+//					else {
+//						println("Grade value is not as per the percentage criteria")
+//					}
+//				}
+//			}
+//		}
+//	}
+	
+	
+	
 	public void verifyCorrectnessOfGradeAccordingToPercentageValue() {
-		WebDriver driver =DriverFactory.getWebDriver()
+		WebDriver driver = DriverFactory.getWebDriver()
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
-
+			findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 10
+		)
+	
+		// Grading thresholds (from your corrected config)
+		Map<String, List<List<Float>>> gradingRules = [
+			// Shape
+			"Ovalocytes":        [[0,0],[0,6],[6,20],[20,Float.MAX_VALUE]],
+			"Elliptocytes":      [[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
+			"Teardrop Cells":    [[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
+			"Fragmented Cells":  [[0,0],[0,1],[1,2],[2,Float.MAX_VALUE]],
+			"Target Cells":      [[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
+			"Echinocytes":       [[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
+			"Acanthocytes":      [[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
+			"Sickle Cells":      [[0,0],[0,1],[1,2],[2,Float.MAX_VALUE]],
+			"Stomatocytes":      [[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
+			"Spherocytes":       [[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
+			"Poikilocytosis":    [[0,0],[0,10],[10,20],[20,Float.MAX_VALUE]],
+	
+			// Size
+			"Microcytes":        [[0,0],[0,10],[10,20],[20,Float.MAX_VALUE]],
+			"Macrocytes":        [[0,0],[0,10],[10,20],[20,Float.MAX_VALUE]],
+			"Anisocytosis":      [[0,0],[0,10],[10,20],[20,Float.MAX_VALUE]],
+	
+			// Color
+			"Hypochromic Cells": [[0,0],[0,10],[10,20],[20,Float.MAX_VALUE]],
+			"Polychromatic Cells":[[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
+	
+			// Inclusion bodies
+			"Howell-Jolly":      [[0,0],[0,2],[2,3],[3,Float.MAX_VALUE]],
+			"Pappenheimer":      [[0,0],[0,2],[2,3],[3,Float.MAX_VALUE]],
+			"Basophilic Stippling":[[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]]
+		]
+	
+		float EPSILON = 0.5f  // tolerance to handle rounding (e.g. 0.0001 shown as 0.0)
+	
 		for (WebElement row : cellRows) {
-
 			WebElement percentageElement = row.findElement(By.xpath(".//div[3]"))
 			WebElement cellname_ele = row.findElement(By.xpath(".//div[1]"))
-			String cellname = cellname_ele.getText()
-			println(cellname)
-			float percentage_flaot_value = Float.parseFloat(percentageElement.getText())
-			println(percentage_flaot_value)
-
-			List<WebElement> grades= row.findElements(By.xpath(".//input[@type='radio']"))
-			for(int i=0; i<=grades.size();i++) {
-				if(grades.get(i).isSelected()) {
-					int selected_grade=Integer.parseInt(grades.get(i).getAttribute("value"))
-
-					System.out.println("Selected option value: " + selected_grade);
-					if(selected_grade==0) {
-						assert percentage_flaot_value==0
-						break;
+	
+			String cellname = cellname_ele.getText().trim()
+			String percentageText = percentageElement.getText().trim()
+			float percentage = 0.0f  // default if empty or invalid
+			
+			if (percentageText.isEmpty()) {
+				println("⚠ $cellname → percentage blank, treating as 0.0")
+			} else {
+				try {
+					percentage = Float.parseFloat(percentageText)
+				} catch (NumberFormatException e) {
+					println("⚠ $cellname → Invalid percentage '$percentageText', treating as 0.0")
+					percentage = 0.0f
+				}
+			}
+			
+			//float percentage = Float.parseFloat(percentageElement.getText())
+			
+			println("$cellname → % = $percentage")
+	
+			List<WebElement> grades = row.findElements(By.xpath(".//input[@type='radio']"))
+			for (int i = 0; i < grades.size(); i++) {
+				if (grades.get(i).isSelected()) {
+					int selectedGrade = Integer.parseInt(grades.get(i).getAttribute("value"))
+					println("Selected Grade: $selectedGrade")
+	
+					List<List<Float>> ranges = gradingRules[cellname]
+					if (ranges == null) {
+						println("⚠ No grading rule defined for $cellname, skipping check")
+						continue
 					}
-					else if(selected_grade==1) {
-						assert percentage_flaot_value > 0 && percentage_flaot_value <= 3
-						break;
-					}
-					else if(selected_grade==2) {
-						if(cellname.equals("Teardrop Cells")) {
-							assert percentage_flaot_value > 3 && percentage_flaot_value <= 6
-							break;
-						}
-						else {
-							assert percentage_flaot_value > 3 && percentage_flaot_value <= 5
-							break;
-						}
-					}
-					else if(selected_grade==3) {
-						if(cellname.equals("Teardrop Cells")) {
-							assert percentage_flaot_value >6
-							break;
-						}
-						else {
-							assert percentage_flaot_value >5
-							break;
-						}
-					}
-					else {
-						println("Grade value is not as per the percentage criteria")
-					}
+	
+					List<Float> range = ranges[selectedGrade]
+	
+					// Allow tolerance for floating-point rounding
+					boolean inRange = (percentage > (range[0] - EPSILON)) && (percentage <= (range[1] + EPSILON))
+	
+					assert inRange :
+						"❌ $cellname → Expected % in range $range for Grade $selectedGrade, but got $percentage"
+	
+					println("✅ $cellname → % = $percentage falls in $range for Grade $selectedGrade")
+					break
 				}
 			}
 		}
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	public void valueGettingStrikeOfAfterRegrading() {
 		WebDriver driver =DriverFactory.getWebDriver()
@@ -1274,7 +1384,7 @@ public class ZoomInOut {
 			//WebElement percentageElement = row.findElement(By.xpath(".//div[3]"))
 			WebElement cellname_ele = row.findElement(By.xpath(".//div[1]"))
 			String cellname = cellname_ele.getText()
-			//println(cellname)
+			println(cellname)
 			List<WebElement> grades= row.findElements(By.xpath(".//input[@type='radio']"))
 			for (WebElement grade : grades) {
 				if (grade.isSelected()) {

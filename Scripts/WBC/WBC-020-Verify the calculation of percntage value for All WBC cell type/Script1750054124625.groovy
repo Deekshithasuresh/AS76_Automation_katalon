@@ -25,7 +25,7 @@ import org.openqa.selenium.WebElement as WebElement
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/WBC/Page_PBS/button_WBC'), 0)
 

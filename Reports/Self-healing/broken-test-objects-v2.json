@@ -338,6 +338,96 @@
       "proposedLocatorMethod": "BASIC",
       "recoveryMethod": "BASIC",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/WBC/Page_PBS/Page_PBS/div_WBC_BASIC.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/RBC_Objects/Page_PBS/button_Color",
+      "brokenLocator": "//button[text()\u003d\u0027Color\u0027 or text()\u003d\u0027Colour\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Cell name\u0027])[1]/preceding::button[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/RBC_Objects/Page_PBS/button_Color_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/RBC_Objects/Page_PBS/RBC_Cells_regraded_toast_msg_ele",
+      "brokenLocator": "//*[@role\u003d\u0027alert\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Image settings\u0027])[1]/following::div[130]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/RBC_Objects/Page_PBS/RBC_Cells_regraded_toast_msg_ele_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/RBC_Objects/Page_PBS/RBC_regraded_from_to_msg",
+      "brokenLocator": "//div[contains(text(), \u0027regraded from\u0027)]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Image settings\u0027])[1]/following::div[135]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/RBC_Objects/Page_PBS/RBC_regraded_from_to_msg_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/RBC_Objects/Page_PBS/RBC_regraded_significant_non-sig_status",
+      "brokenLocator": "//div[contains(text(), \u0027is now\u0027)]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Image settings\u0027])[1]/following::div[136]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/RBC_Objects/Page_PBS/RBC_regraded_significant_non-sig_status_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Commontools/Page_PBS/li_Neutrophils",
+      "brokenLocator": "//li[(text() \u003d \u0027Neutrophils\u0027 or . \u003d \u0027Neutrophils\u0027)]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*[(text() \u003d \u0027Neutrophils\u0027 or . \u003d \u0027Neutrophils\u0027)]",
+      "proposedLocatorMethod": "BASIC",
+      "recoveryMethod": "BASIC",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Commontools/Page_PBS/li_Neutrophils_BASIC.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Manage_user/Page_Admin Console/button_Cancel",
+      "brokenLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Update and copy\u0027])[1]/preceding::button[1]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//button[@type \u003d \u0027button\u0027 and (text() \u003d \u0027Cancel\u0027 or . \u003d \u0027Cancel\u0027)]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Manage_user/Page_Admin Console/button_Cancel_customAttributes.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/PBS_Settings_Objects/Page_Admin Console/button_Sign in",
+      "brokenLocator": "//button[@type\u003d\u0027button\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//button",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/PBS_Settings_Objects/Page_Admin Console/button_Sign in_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/PBS_Settings_Objects/Page_Admin Console/div_PBS settings",
+      "brokenLocator": "(//div[@id\u003d\u0027panel1d-header\u0027])[3]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[3]/div",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/RBC_Objects/Page_PBS/div_Poikilocytosis (1)",
+      "brokenLocator": "//*[(text() \u003d \u0027Poikilocytosis\u0027 or . \u003d \u0027Poikilocytosis\u0027)]",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Significant\u0027])[1]/preceding::div[5]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/RBC_Objects/Page_PBS/div_Poikilocytosis (1)_neighbor.png"
     }
   ]
 }

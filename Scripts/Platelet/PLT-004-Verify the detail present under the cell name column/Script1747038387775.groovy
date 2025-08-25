@@ -19,9 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-//select 1st row report
-//CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
-WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/td_3edtfygu'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
+
 
 WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'), 'Platelets')
 

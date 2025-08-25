@@ -13,7 +13,7 @@ Login lg = new Login()
 
 ZoomInOut zoom = new ZoomInOut()
 
-lg.login()
+CustomKeywords.'generic.custumFunctions.login'()
 
 WebUI.delay(2)
 
@@ -33,7 +33,8 @@ for(WebElement status:status_options)
 	}
 }
 
-lg.selectReportByStatus('Approved')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Approved')
+
 
 WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_RBC'))
 

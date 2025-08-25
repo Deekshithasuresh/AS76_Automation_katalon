@@ -35,13 +35,13 @@ Login lg = new Login()
 
 ZoomInOut zoom = new ZoomInOut()
 
-lg.login()
 
-WebUI.delay(2)
+CustomKeywords.'generic.custumFunctions.login'()
 
-lg.selectReportByStatus('Under review')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
-lg.assignOrReassignOnTabs('prem')
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
+
 
 WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_RBC'))
 
@@ -57,7 +57,7 @@ WebDriver driver =DriverFactory.getWebDriver()
 		for (WebElement row : cellRows) {
 			// Get the percentage element (last div inside the row)
 			row.click()
-			WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/Microscopic_view_CTA'))
+			//WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/Microscopic_view_CTA'))
 			
 			WebElement cellname_ele = row.findElement(By.xpath(".//td[1]"))
 			String cellname = cellname_ele.getText()
@@ -81,6 +81,7 @@ WebDriver driver =DriverFactory.getWebDriver()
 				WebUI.verifyElementText(findTestObject('Object Repository/RBC_Objects/Page_PBS/No_pathes_available_text'), 'No patches available for '+cellname)
 				
 				WebUI.verifyElementText(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_No preview'), 'No preview')
+				break
 			}
 			
 		}

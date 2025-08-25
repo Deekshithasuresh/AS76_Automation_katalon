@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>.patches-section</value>
+         <value>//div[@class='patches-section no-patches']/div</value>
       </entry>
       <entry>
          <key>BASIC</key>

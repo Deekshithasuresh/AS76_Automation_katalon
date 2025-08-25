@@ -24,11 +24,9 @@ Login lg = new Login()
 
 ZoomInOut zoom = new ZoomInOut()
 
-lg.login()
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.delay(2)
-
-lg.selectReportByStatus('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 
 //lg.assignOrReassignOnTabs('prem')

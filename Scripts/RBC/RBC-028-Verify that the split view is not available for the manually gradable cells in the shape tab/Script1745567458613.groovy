@@ -19,10 +19,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import loginPackage.Login
 
-Login lg= new Login()
-lg.login()
-WebUI.delay(2)
-lg.selectReportByStatus('Under review')
+
+CustomKeywords.'generic.custumFunctions.login'()
+
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_RBC'), 10)
 

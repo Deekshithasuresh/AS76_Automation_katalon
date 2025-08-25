@@ -21,11 +21,12 @@ import loginPackage.Login
 import zoom.ZoomInOut
 Login lg = new Login()
 ZoomInOut zoom = new ZoomInOut()
-lg.login()
 
-WebUI.delay(2)
+CustomKeywords.'generic.custumFunctions.login'()
 
-lg.selectReportByStatus('To be reviewed')
+WebUI.maximizeWindow()
+
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_RBC'),10)
 

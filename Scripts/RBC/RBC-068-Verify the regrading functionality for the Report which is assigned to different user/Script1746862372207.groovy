@@ -23,12 +23,14 @@ Login lg = new Login()
 
 ZoomInOut zoom = new ZoomInOut()
 
-lg.login()
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.delay(2)
-lg.selectReportByStatus('Under review')
+WebUI.maximizeWindow()
 
-lg.assignOrReassignOnTabs('pawankumar')// pass a reviwer name to different user not a user with which we have logged in
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
+
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('santosh', true)
+
 
 WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_RBC'))
 

@@ -18,11 +18,9 @@ Login lg = new Login()
 
 Platelet_P plt = new Platelet_P()
 
-lg.login()
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.delay(2)
-
-lg.selectReportByStatus('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Summary'), 10)

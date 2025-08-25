@@ -23,13 +23,14 @@ Login lg = new Login()
 
 Platelet_P plt = new Platelet_P()
 
-lg.login()
 
-WebUI.delay(2)
+CustomKeywords.'generic.custumFunctions.login'()
 
-lg.selectReportByStatus('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
-lg.assignOrReassignOnTabs('premkumar')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
+
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Summary'), 30)
 

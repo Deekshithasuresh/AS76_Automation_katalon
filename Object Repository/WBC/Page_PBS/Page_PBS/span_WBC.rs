@@ -4,7 +4,12 @@
    <name>span_WBC</name>
    <tag></tag>
    <elementGuidId>0e1e7ce8-c00a-41a7-b286-b739365c759c</elementGuidId>
+   <imagePath></imagePath>
    <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'WBC' or . = 'WBC')]</value>
+      </entry>
       <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/div/div[2]/div/div/div/button[2]/span</value>
@@ -12,6 +17,10 @@
       <entry>
          <key>CSS</key>
          <value>button.cell-buttons.cell-tab > span</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -29,7 +38,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>5fe35b46-06ce-4b36-89fa-798d487b0eab</webElementGuid>
+      <webElementGuid>ae925419-f95a-4c6e-8992-031714c7a5f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>WBC</value>
-      <webElementGuid>8cd5d8ec-d2cb-42ed-ad67-73872e3a7926</webElementGuid>
+      <webElementGuid>6e07733a-283d-4c8d-afb5-f038c8a22472</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;App&quot;]/div[@class=&quot;review-body&quot;]/div[@class=&quot;review-nav&quot;]/div[@class=&quot;review-nav__selection&quot;]/div[@class=&quot;review-nav__selection__cell&quot;]/button[@class=&quot;cell-buttons cell-tab&quot;]/span[1]</value>
-      <webElementGuid>922a63ff-437d-4f84-bc86-0a355091194c</webElementGuid>
+      <webElementGuid>8f385998-ca82-46da-82f3-9b3792cd60e3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div[2]/div/div/div/button[2]/span</value>
-      <webElementGuid>57b6f91c-fb57-4c21-a6cc-74a32afd6634</webElementGuid>
+      <webElementGuid>0b00b5d9-d3e9-4459-ae5f-a10c59295322</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Summary'])[1]/following::span[1]</value>
-      <webElementGuid>e06a0e58-566d-4a71-b5f3-713550aa5f72</webElementGuid>
+      <webElementGuid>f071ed30-59c3-41cf-842c-8171bd83f177</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[1]/following::span[1]</value>
-      <webElementGuid>40184415-4aa8-4704-9b0c-2c03db599d7f</webElementGuid>
+      <webElementGuid>dcc5d99e-6554-4a0f-8de6-6e9dd627572a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='RBC'])[1]/preceding::span[1]</value>
-      <webElementGuid>b304c0a6-1dfb-475b-b7e6-882f38aa1018</webElementGuid>
+      <webElementGuid>15701f10-51ce-4814-a738-4d118899066f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Platelets'])[1]/preceding::span[2]</value>
-      <webElementGuid>b0b71811-a1ed-46b2-b421-ddefacb6ccad</webElementGuid>
+      <webElementGuid>93b6ea6a-070a-4927-a493-d557cccd6c69</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='WBC']/parent::*</value>
-      <webElementGuid>612a6c56-e317-46fe-8614-c8adaf47f26d</webElementGuid>
+      <webElementGuid>452184ad-ce1c-42b5-bd55-7aa02b03b8e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +110,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[2]/span</value>
-      <webElementGuid>c6cbff1e-cd67-48f0-8fe0-217706b0e897</webElementGuid>
+      <webElementGuid>961d332f-837a-4e60-96ca-92d0a274064a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +118,7 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'WBC' or . = 'WBC')]</value>
-      <webElementGuid>39921851-fa35-4df8-b3ab-a13409ebfac9</webElementGuid>
+      <webElementGuid>446b08ef-3f6a-4be4-9d0a-74ee8b23dcf5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +126,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div/div/button[2]/span</value>
-      <webElementGuid>a6e7aa42-8f18-4b1a-9571-afca685f9dcd</webElementGuid>
+      <webElementGuid>492be7f1-305f-48dd-b1d0-e14b12ae81c3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

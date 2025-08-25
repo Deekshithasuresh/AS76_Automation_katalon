@@ -4,7 +4,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
 
@@ -14,4 +14,4 @@ WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PB
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
 
-CustomKeywords.'generic.Reclassification.classifyMultiplePatchesToCell'("Neutrophils", "Others", 5)
+CustomKeywords.'generic.Reclassification.classifyMultiplePatchesToCell'("Neutrophils", "Others", 2)

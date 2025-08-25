@@ -272,7 +272,7 @@ public class Wbc_helper {
 		WebDriver driver = DriverFactory.getWebDriver()
 		Map<String, String> wbcData = [:]
 
-		List<WebElement> rows = driver.findElements(By.xpath("//table[contains(@class, 'theame-table')]//tbody//tr"))
+		List<WebElement> rows = driver.findElements(By.xpath("//table[contains(@class, 'theame-table')]//tbody//tr[not(contains(@class,'report-highlights'))]"))
 
 		for (WebElement row : rows) {
 			List<WebElement> cells = row.findElements(By.tagName("td"))
@@ -287,40 +287,43 @@ public class Wbc_helper {
 		return wbcData
 	}
 
-
+	
 	@Keyword
 	Map<String, String> getRbcGradesFromUI() {
 		WebDriver driver = DriverFactory.getWebDriver()
 		Map<String, String> rbcData = [:]
-
-		// All rows in RBC section (each cell type row)
-		List<WebElement> cellRows = driver.findElements(By.xpath("//div[contains(@class, 'cell-row')]"))
-
-		for (WebElement row : cellRows) {
+	
+		// All RBC rows
+		List<WebElement> rows = driver.findElements(By.xpath("//div[contains(@class, 'cell-row')]"))
+	
+		for (WebElement row : rows) {
 			try {
-				// Get the cell name (e.g., "Microcytes")
-				String cellName = row.findElement(By.xpath(".//div[contains(@class,'significant')]")).getText().trim()
-
-				// Loop through grade radio buttons (divs with numbers 0,1,2,3) and find the selected one
-				List<WebElement> gradeOptions = row.findElements(By.xpath(".//span[contains(@class,'MuiButtonBase-root')"))
-
-				int selectedGrade = -1
+				// Cell type name (e.g., Microcytes, Macrocytes, etc.)
+				String cellType = row.findElement(By.xpath(".//div[contains(@class,'significant-info')]")).getText().trim()
+	
+				// Get the selected grade (0,1,2,3)
+				List<WebElement> gradeOptions = row.findElements(By.xpath(".//div[contains(@class,'grade-div')]//span[contains(@class,'MuiButtonBase-root')]"))
+	
+				String selectedGrade = ""
 				for (int i = 0; i < gradeOptions.size(); i++) {
 					if (gradeOptions[i].getAttribute("class").contains("Mui-checked")) {
-						selectedGrade = i
+						selectedGrade = i.toString()
 						break
 					}
 				}
-
-				if (cellName && selectedGrade != -1) {
-					rbcData[cellName] = selectedGrade.toString()
+	
+				if (cellType && selectedGrade) {
+					rbcData[cellType] = selectedGrade
 				}
 			} catch (Exception e) {
 				WebUI.comment("⚠️ Skipping row due to: ${e.message}")
 			}
 		}
-
+	
 		return rbcData
 	}
+	
+	
+	
 }
 

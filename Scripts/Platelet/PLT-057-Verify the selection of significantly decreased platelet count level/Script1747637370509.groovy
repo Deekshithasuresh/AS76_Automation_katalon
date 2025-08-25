@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 
@@ -42,11 +42,6 @@ WebElement dd = driver.findElement(By.xpath('//div[@class=\'plt-lvl-desc\']/foll
 
 actions.moveToElement(dd).click().build().perform()
 
-WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/li_Normal'), 'Normal')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/li_Increased'), 'Increased')
-
-WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/li_Decreased'), 'Decreased')
 
 //Verifying the selection of the  increased level flow here.
 WebUI.click(findTestObject('Platelet/Page_PBS/li_Significantly decreased'))

@@ -27,6 +27,7 @@ import org.openqa.selenium.interactions.Actions
 
 
 CustomKeywords.'generic.custumFunctions.login'()
+
 WebUI.maximizeWindow()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
@@ -63,7 +64,7 @@ for (int i = 0; i < 10; i++) {
 
     (NMG_fields[0]).sendKeys(Keys.chord(Keys.BACK_SPACE))
 
-    (NMG_fields[0]).sendKeys('12') //passing value to N field
+    (NMG_fields[0]).sendKeys('16') //passing value to N field
 	
 	String initialMvalue=(NMG_fields[1]).getAttribute("value")
 
@@ -71,14 +72,14 @@ for (int i = 0; i < 10; i++) {
 
     (NMG_fields[1]).sendKeys(Keys.chord(Keys.BACK_SPACE))
 
-    (NMG_fields[1]).sendKeys('99') //passing value to M field
+    (NMG_fields[1]).sendKeys('98') //passing value to M field
         
 	String initialGvalue=(NMG_fields[2]).getAttribute("value")
     (NMG_fields[2]).sendKeys(Keys.chord(Keys.COMMAND, 'a'))
 
     (NMG_fields[2]).sendKeys(Keys.chord(Keys.BACK_SPACE))
 
-    (NMG_fields[2]).sendKeys('100') //passing value to G field
+    (NMG_fields[2]).sendKeys('101') //passing value to G field
 	
 	if(testcase.equals("reset"))
 	{

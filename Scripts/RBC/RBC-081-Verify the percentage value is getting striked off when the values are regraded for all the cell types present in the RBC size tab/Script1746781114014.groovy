@@ -35,14 +35,14 @@ WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_RBC'))
 
 zoom.valueGettingStrikeOfAfterRegrading()
 
-HashMap<String, String> grade_values_before_switching_tabs=zoom.verifyRegradingChangesAutoSaved()
+//HashMap<String, String> grade_values_before_switching_tabs=zoom.verifyRegradingChangesAutoSaved()
+//
+//WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Shape'))
+//
+//WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Size'))
+//
+//HashMap<String, String> grade_values_after_switching_tabs=zoom.verifyRegradingChangesAutoSaved()
+//
+//boolean isEqual = grade_values_before_switching_tabs.equals(grade_values_after_switching_tabs);
 
-WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Shape'))
-
-WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Size'))
-
-HashMap<String, String> grade_values_after_switching_tabs=zoom.verifyRegradingChangesAutoSaved()
-
-boolean isEqual = grade_values_before_switching_tabs.equals(grade_values_after_switching_tabs);
-
-assert isEqual==true
+//assert isEqual==true

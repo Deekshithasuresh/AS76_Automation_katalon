@@ -25,6 +25,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 CustomKeywords.'generic.custumFunctions.login'()
 WebUI.maximizeWindow()
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
+
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
 
 // Step 2: Assign or Reassign

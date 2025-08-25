@@ -24,7 +24,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.interactions.Actions
 
 CustomKeywords.'generic.custumFunctions.login'()
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'), 'Platelets')

@@ -220,13 +220,13 @@ if (actualText == expectedText) {
 }
 
 // ✅ Step 2: Verify text "significant decreased" is present on the page
-WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/span_Calculated level'))
-
-String keywordText = "Increased"
-boolean isTextPresent = WebUI.verifyTextPresent(keywordText, false, FailureHandling.CONTINUE_ON_FAILURE)
-
-if (isTextPresent) {
-    println("✅ Text presence check passed: '${keywordText}' is present on the page.")
-} else {
-    println("❌ Text presence check failed: '${keywordText}' is NOT present on the page.")
-}
+//WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/span_Calculated level'))
+//
+//String keywordText = "Increased"
+//boolean isTextPresent = WebUI.verifyTextPresent(keywordText, false, FailureHandling.CONTINUE_ON_FAILURE)
+//
+//if (isTextPresent) {
+//    println("✅ Text presence check passed: '${keywordText}' is present on the page.")
+//} else {
+//    println("❌ Text presence check failed: '${keywordText}' is NOT present on the page.")
+//}

@@ -20,9 +20,8 @@ Login lg = new Login()
 
 Platelet_P plt = new Platelet_P()
 
-lg.login()//logged in with 'jyothi' username
 
-WebUI.delay(2)
+CustomKeywords.'generic.custumFunctions.login'()
 
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 

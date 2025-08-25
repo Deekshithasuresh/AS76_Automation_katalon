@@ -19,13 +19,11 @@ Login lg = new Login()
 
 Platelet_P plt = new Platelet_P()
 
-lg.login()//logged in with 'jyothi' username
+CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.delay(2)
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-lg.selectReportByStatus('Under Review')
-
-lg.assignOrReassignOnTabs('premkumar')// pass username other than logged in user
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Summary'), 30)
 

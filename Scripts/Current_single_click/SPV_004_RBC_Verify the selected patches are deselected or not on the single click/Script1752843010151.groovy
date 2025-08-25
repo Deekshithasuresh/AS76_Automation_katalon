@@ -248,7 +248,7 @@ println('=======================================================================
 
 println('Selecting RBC color tab')
 WebUI.waitForElementPresent(findTestObject('Object Repository/single_click/button_Color'),20)
-WebUI.verifyElementText(findTestObject('Object Repository/single_click/button_Color'),'Colour')
+WebUI.verifyElementText(findTestObject('Object Repository/single_click/button_Color'),'Color')
 WebUI.click(findTestObject('Object Repository/single_click/button_Color'))
 
 // Start with patch view

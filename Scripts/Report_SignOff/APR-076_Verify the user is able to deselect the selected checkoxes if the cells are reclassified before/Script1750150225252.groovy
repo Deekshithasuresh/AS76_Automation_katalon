@@ -18,6 +18,8 @@ import com.kms.katalon.core.model.FailureHandling
 
 CustomKeywords.'generic.custumFunctions.login'()
 
+WebUI.maximizeWindow()
+
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')

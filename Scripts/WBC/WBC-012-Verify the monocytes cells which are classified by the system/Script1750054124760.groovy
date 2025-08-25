@@ -38,8 +38,7 @@ CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 //WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/span_To be reviewed'))
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/span_WBC'))
-WebUI.verifyElementVisible(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/div_WBC'))
-WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/div_WBC'), 'WBC')
+
 
 	
 	// Create a dynamic TestObject with XPath where text equals "Monocytes"

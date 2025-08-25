@@ -25,7 +25,7 @@ ZoomInOut zoom = new ZoomInOut()
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviwed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 

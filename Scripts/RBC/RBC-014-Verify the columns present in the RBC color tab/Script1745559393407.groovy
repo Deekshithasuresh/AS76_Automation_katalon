@@ -20,10 +20,9 @@ import loginPackage.Login
 
 Login lg = new Login()
 
-lg.login()
-WebUI.delay(2)
+CustomKeywords.'generic.custumFunctions.login'()
 
-lg.selectReportByStatus('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Summary'), 10)
 
@@ -34,6 +33,8 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PB
 WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_RBC'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Color'), 10)
+
+WebUI.verifyElementText(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Color'), 'Color')
 
 WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Color'))
 

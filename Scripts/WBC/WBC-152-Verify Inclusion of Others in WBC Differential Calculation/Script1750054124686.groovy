@@ -19,7 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+WebUI.maximizeWindow()
+
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
 

@@ -23,13 +23,14 @@ Login lg = new Login()
 
 ZoomInOut zoom = new ZoomInOut()
 
-lg.login()
 
-WebUI.delay(2)
+CustomKeywords.'generic.custumFunctions.login'()
 
-lg.selectReportByStatus('Under review')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
-lg.assignOrReassignOnTabs('chida')
+WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
+
+CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_RBC'),10)
 

@@ -32,7 +32,7 @@ import com.kms.katalon.core.exception.StepFailedException
 // Step 1: Login and go to WBC tab
 CustomKeywords.'generic.custumFunctions.login'()
 WebUI.maximizeWindow()
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_WBC'), 'WBC')
