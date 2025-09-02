@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TZ-03-Verify Timestamps in PDF file Display same Time Zone Based on Device Configuration for Test Date Time</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>88f83d41-82e8-46a2-860c-38e25c4e928b</testCaseGuid>
+</TestCaseEntity>

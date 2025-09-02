@@ -12,15 +12,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import loginPackage.Login
 import zoom.ZoomInOut as ZoomInOut
 
-Login lg = new Login()
+CustomKeywords.'generic.custumFunctions.login'()
 
-ZoomInOut zoom = new ZoomInOut()
-
-lg.login()
-
-WebUI.delay(2)
-
-lg.selectReportByStatus('Under review')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Summary'), 10)
 

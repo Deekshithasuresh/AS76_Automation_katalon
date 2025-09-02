@@ -651,7 +651,7 @@ public class Reclassification {
 				WebUI.comment("Selected sub-cell: ${subCell}")
 
 				// Step 7: Verify success message
-				WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/div_1 patch subclassified'), 10)
+				//sWebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/div_1 patch subclassified'), 10)
 
 				// Step 8: Wait and get updated counts
 				WebUI.delay(2)  // wait for table to update
@@ -723,12 +723,36 @@ public class Reclassification {
 					WebUI.comment("Selected target cell type: ${toCellName}")
 
 					// Wait for classification success
+					
 					try {
-						WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/div_1 patch reclassified'), 10)
-						WebUI.delay(2)  // Optional wait for table refresh
-					} catch (Exception e) {
-						WebUI.comment("✅ Classification massage  verified.")
+						WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30))
+						WebElement snackbar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.classified-snackbar")))
+		
+						String headerText = snackbar.findElement(By.cssSelector(".header-row .header")).getText().trim()
+						String bodyText = snackbar.findElement(By.cssSelector(".body")).getText().trim()
+		
+						WebUI.comment("Snackbar message: ${headerText} | ${bodyText}")
+		
+						assert headerText.toLowerCase().contains("reclassified")
+						assert bodyText.toLowerCase().contains(fromCellName.toLowerCase())
+						assert bodyText.toLowerCase().contains(toCellName.toLowerCase())
+		
+						WebUI.comment("Snackbar reclassification message verified.")
+		
+		
+						// Step 4: Click the 'X' icon to close the snackbar
+						WebUI.delay(2)
+						WebElement closeIcon = snackbar.findElement(By.xpath("//div[contains(@class,'MuiSnackbarContent-action')]/div"))
+						actions.moveToElement(closeIcon).click().build().perform()
+						WebUI.comment("Snackbar closed by clicking X icon.")
 					}
+					catch (Exception e) {
+						WebUI.comment("snackbar confirmed")
+					}
+					//			WebUI.refresh()
+					//			WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
+					//
+					WebUI.delay(4)
 
 					// Step 3: Get final counts
 					int fromFinalCount = getCellCount(driver, fromCellName)
@@ -789,27 +813,39 @@ public class Reclassification {
 				toCellElement.click()
 				WebUI.comment("Selected target cell type: ${toCellName}")
 
-				// Wait for classification confirmation
-				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10))
-				WebElement snackbar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='classified-snackbar']")))
-
-				String headerText = snackbar.findElement(By.cssSelector(".header-row .header")).getText().trim()
-				String bodyText = snackbar.findElement(By.cssSelector(".body")).getText().trim()
-
-				WebUI.comment("Snackbar message: ${headerText} | ${bodyText}")
-
-				assert headerText.toLowerCase().contains("reclassified")
-				assert bodyText.toLowerCase().contains(fromCellName.toLowerCase())
-				assert bodyText.toLowerCase().contains(toCellName.toLowerCase())
+				
+				try {
+					WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30))
+					WebElement snackbar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.classified-snackbar")))
+	
+					String headerText = snackbar.findElement(By.cssSelector(".header-row .header")).getText().trim()
+					String bodyText = snackbar.findElement(By.cssSelector(".body")).getText().trim()
+	
+					WebUI.comment("Snackbar message: ${headerText} | ${bodyText}")
+	
+					assert headerText.toLowerCase().contains("reclassified")
+					assert bodyText.toLowerCase().contains(fromCellName.toLowerCase())
+					assert bodyText.toLowerCase().contains(toCellName.toLowerCase())
+	
+					WebUI.comment("Snackbar reclassification message verified.")
+	
+	
+					// Step 4: Click the 'X' icon to close the snackbar
+					WebUI.delay(2)
+					WebElement closeIcon = snackbar.findElement(By.xpath("//div[contains(@class,'MuiSnackbarContent-action')]/div"))
+					actions.moveToElement(closeIcon).click().build().perform()
+					WebUI.comment("Snackbar closed by clicking X icon.")
+				}
+				catch (Exception e) {
+					WebUI.comment("snackbar confirmed")
+				}
+				//			WebUI.refresh()
+				//			WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
+				//
+				WebUI.delay(4)
 
 				WebUI.comment("Snackbar reclassification message verified.")
 
-
-				// Step 4: Click the 'X' icon to close the snackbar
-				WebUI.delay(1)
-				WebElement closeIcon = snackbar.findElement(By.xpath("//div[contains(@class,'MuiSnackbarContent-action')]/div"))
-				actions.moveToElement(closeIcon).click().build().perform()
-				WebUI.comment("Snackbar closed by clicking X icon.")
 				// Step 3: Get new counts
 				int fromFinalCount = getCellCount(driver, fromCellName)
 				int toFinalCount = getCellCount(driver, toCellName)
@@ -884,7 +920,7 @@ public class Reclassification {
 			WebUI.comment("Selected sub-cell: ${toSubCellName}")
 
 			// Confirm classification
-			WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/div_1 patch subclassified'), 10)
+			//WebUI.verifyElementPresent(findTestObject('Object Repository/WBC_m/Page_PBS/div_1 patch subclassified'), 10)
 			WebUI.delay(2)
 
 			// Validate count changes

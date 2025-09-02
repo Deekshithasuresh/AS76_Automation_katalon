@@ -29,14 +29,14 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under Review")
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under review")
 
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 WebUI.click(findTestObject('Object Repository/Commontools/Page_PBS/button_WBC'))
 
-CustomKeywords.'generic.Reclassification.classifyFromCellToCell'("Neutrophils", "Promonocytes")
+CustomKeywords.'generic.Reclassification.classifyFromCellToCell'("Neutrophils", "Basophils")
 
 // 6. Click back arrow or logo to trigger save
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/img'))

@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'generic.custumFunctions.login'()
 
+WebUI.maximizeWindow()
+
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
@@ -30,3 +32,17 @@ WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PB
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
 
 CustomKeywords.'generic.Reclassification.reclassifyAllWBCtoPlateletInBatches'("Large Platelets",10)
+
+
+// Approve the report
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report'))
+
+WebUI.click(findTestObject('Object Repository/Page_PBS/buttonclick_Confirm_approve'))
+
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Add supporting images'))
+
+WebUI.click(findTestObject('Object Repository/Page_PBS/span_Approve report_1'))
+
+WebUI.click(findTestObject('Object Repository/Page_PBS/button_Approve report_1'))
+
+WebUI.delay(5)

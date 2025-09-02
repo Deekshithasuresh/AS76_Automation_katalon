@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify that the Bookmark reports are not affected by the Configure retention policy when the user Delete at scheduled time</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>504ff801-a75e-47f8-91fa-68aaed33243a</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PI-008-Verify whether the Platelet values shall be used to convert platelet count into platelet levels or not</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>61cf5c3f-dc38-496d-be67-bc0364820a8b</testCaseGuid>
+</TestCaseEntity>

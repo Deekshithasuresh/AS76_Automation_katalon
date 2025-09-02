@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify whether the processing reports are getting deleted for the configured retention policy</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>e1dd598b-5bbd-4489-b44c-f3d613805ffe</testCaseGuid>
-</TestCaseEntity>

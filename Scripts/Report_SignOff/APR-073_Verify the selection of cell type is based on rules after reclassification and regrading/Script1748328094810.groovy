@@ -1,6 +1,7 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.joda.time.Duration
+import java.time.Duration
+
 import org.openqa.selenium.*
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
@@ -11,7 +12,6 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import java.time.Duration
 
 // === LAUNCH & LOGIN ===
 WebUI.openBrowser('')
@@ -20,7 +20,7 @@ CustomKeywords.'generic.custumFunctions.login'()
 // === ASSIGN REPORT ===
 WebUI.comment("Selecting report with 'To be reviewed' status.")
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
-WebUI.comment("Assigning report to 'santosh'.")
+WebUI.comment("Assigning report to 'manju'.")
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 // === RECLASSIFY WBC (Neutrophils) ===
@@ -30,7 +30,7 @@ WebUI.delay(2) // Give time for WBC data to load
 WebUI.comment("Clicking on Neutrophils cell type.")
 WebUI.click(findTestObject('Object Repository/Page_PBS/td_Neutrophils'))
 
-int neutrophilsBefore = CustomKeywords.'generic.Reclacification.getCellCount'(DriverFactory.getWebDriver(), 'Neutrophils')
+int neutrophilsBefore = CustomKeywords.'generic.Reclassification.getCellCountInCurrentTab'(DriverFactory.getWebDriver(), 'Unclassified')
 WebUI.comment("Initial Neutrophils Count: $neutrophilsBefore")
 
 if (neutrophilsBefore > 0) {
@@ -38,9 +38,10 @@ if (neutrophilsBefore > 0) {
 	WebUI.delay(1) // Scroll down to ensure classification elements are in view
 	try {
 		WebUI.comment("Attempting to reclassify Neutrophils to Unclassified using custom keyword.")
-		CustomKeywords.'generic.Reclacification.classifyFromCellToCell'('Neutrophils', 'Unclassified')
-		WebUI.comment("Classification successful (confirmed by keyword).")
+		CustomKeywords.'generic.Reclassification.classifyFromCellToCell'('Unclassified', 'Neutrophils')
+				WebUI.comment("Classification successful (confirmed by keyword).")
 		WebUI.delay(1) // Small delay after keyword returns for stability
+		neutrophilsBefore = CustomKeywords.'generic.Reclassification.getCellCountInCurrentTab'(DriverFactory.getWebDriver(), 'Unclassified')
 	} catch (TimeoutException e) {
 		WebUI.comment("❌ Classification failed (TimeoutException from keyword): ${e.message}")
 		KeywordUtil.markFailedAndStop("Test failed: ${e.message}")

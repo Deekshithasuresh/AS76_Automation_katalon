@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>verify the presence of same slide id when user has entered while scanning</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>2f7e506f-93de-449e-9b74-ce88e0613896</testCaseGuid>
-</TestCaseEntity>

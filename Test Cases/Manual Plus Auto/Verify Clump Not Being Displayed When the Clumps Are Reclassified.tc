@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify Clump Not Being Displayed When the Clumps Are Reclassified</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>9affd03b-c3ad-4032-9653-02ee4ec07f47</testCaseGuid>
-</TestCaseEntity>

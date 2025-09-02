@@ -30,7 +30,9 @@ import com.kms.katalon.core.testobject.ConditionType
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/span_To be reviewed'))
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+
+
 WebUI.click(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/span_WBC'))
 WebUI.verifyElementVisible(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/div_WBC'))
 WebUI.verifyElementText(findTestObject('Object Repository/WBC/Page_PBS/Page_PBS/div_WBC'), 'WBC')

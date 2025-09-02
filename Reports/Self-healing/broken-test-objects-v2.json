@@ -428,6 +428,126 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/RBC_Objects/Page_PBS/div_Poikilocytosis (1)_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/RBC_Objects/Page_PBS/canvas",
+      "brokenLocator": "(//canvas)[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[@id\u003d\u0027pbs-volumeViewport\u0027]/div/div/div/canvas",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/RBC_Objects/Page_PBS/canvas_idRelative.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Report_Listing/Page_Admin Console/li_Logout (1)",
+      "brokenLocator": "//div[@id\u003d\u0027simple-popover\u0027]/div[3]/ul/li[3]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "internal:role\u003dmenuitem[name\u003d\"Logout\"i]",
+      "proposedLocatorMethod": "SMART_LOCATOR",
+      "recoveryMethod": "SMART_LOCATOR",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Report_Listing/Page_Admin Console/li_Logout (1)_SMART_LOCATOR.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Report_Listing/Page_Admin Console/path",
+      "brokenLocator": "",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "internal:role\u003dbutton \u003e\u003e nth\u003d1",
+      "proposedLocatorMethod": "SMART_LOCATOR",
+      "recoveryMethod": "SMART_LOCATOR",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Report_Listing/Page_Admin Console/path_SMART_LOCATOR.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Configure Time Zone Reporting/Page_PBS/div_Time zone changed successfully",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div[3]/div/div/div/div[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Edit time zone settings\u0027])[2]/preceding::div[5]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Configure Time Zone Reporting/Page_PBS/div_Time zone changed successfully_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Configure Time Zone Reporting/Page_PBS/span_(UTC0200) AfricaKigali",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div[2]/div/div[2]/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[2]/span",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": ""
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Configure Time Zone Reporting/Page_PBS/img_1",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div/div/button/img",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//img",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Configure Time Zone Reporting/Page_PBS/img_1_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_PBS/span_Approve report",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div/div[3]/div/button[2]/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027​\u0027])[1]/following::span[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_PBS/span_Approve report_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_PBS/span_Add supporting images",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div/div/div/button/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div/div/div/button/span",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_PBS/span_Add supporting images_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_PBS/div_5",
+      "brokenLocator": "//div[@id\u003d\u0027random-uid\u0027]/div[3]/div/div[2]/ul/li[5]/div/div[2]/div",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*/text()[normalize-space(.)\u003d\u00275\u0027]/parent::*",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_PBS/div_5_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_PBS/div_3",
+      "brokenLocator": "//div[@id\u003d\u0027random-uid\u0027]/div[3]/div/div[2]/ul/li[3]/div/div[2]/div",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*/text()[normalize-space(.)\u003d\u00273\u0027]/parent::*",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_PBS/div_3_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_PBS/button_Cancel",
+      "brokenLocator": "//div[@class\u003d\u0027actions-section\u0027]//button[contains(text(),\u0027Cancel\u0027)]\n",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[3]/button",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_PBS/button_Cancel_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_PBS/div_Report Approved",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div[4]/div/div/div/div/div",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[4]/div/div/div/div/div",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_PBS/div_Report Approved_position.png"
     }
   ]
 }

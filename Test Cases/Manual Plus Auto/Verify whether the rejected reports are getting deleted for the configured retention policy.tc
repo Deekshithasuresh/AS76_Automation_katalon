@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify whether the rejected reports are getting deleted for the configured retention policy</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>c9ef6c64-ad3a-4496-b322-5ad9ae81e4cf</testCaseGuid>
-</TestCaseEntity>

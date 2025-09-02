@@ -25,6 +25,8 @@ ZoomInOut zoom = new ZoomInOut()
 
 CustomKeywords.'generic.custumFunctions.login'()
 
+WebUI.maximizeWindow()
+
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 
@@ -42,7 +44,6 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PB
 
 WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/img_Platelets_split-view_1 (2)'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PBS/canvas (1)'), 0)
 
 WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_Elliptocytes (1)'))
 
@@ -76,6 +77,6 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PB
 WebUI.verifyElementText(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_Please review individual cell types for_bd04fe_1 (1)'), 
     'Please review individual cell types for viewing patches')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_No preview (2)'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_No preview (2)'), 10)
 
 WebUI.verifyElementText(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_No preview (2)'), 'No preview')

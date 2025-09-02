@@ -16,11 +16,14 @@ WebUI.click(findTestObject('Object Repository/Page_PBS/span_WBC'))
 
 def driver = DriverFactory.getWebDriver()
 
-int unclassifiedCount = CustomKeywords.'generic.Reclacification.getCellCount'(driver, 'Unclassified')
+//int unclassifiedCount = CustomKeywords.'generic.Reclacification.getCellCount'(driver, 'Unclassified')
+
+int unclassifiedCount=CustomKeywords.'generic.Reclassification.getCellCountInCurrentTab'(driver, 'Unclassified')
 
 WebUI.comment("Starting reclassification. Initial Unclassified count: $unclassifiedCount")
 
-int remainingUnclassified = CustomKeywords.'generic.Reclacification.getCellCount'(driver, 'Unclassified')
+int remainingUnclassified = CustomKeywords.'generic.Reclassification.getCellCountInCurrentTab'(driver, 'Unclassified')
+
 WebUI.comment("Starting reclassification. Initial Unclassified count: ${remainingUnclassified}")
 
 while (remainingUnclassified > 0) {
@@ -32,18 +35,20 @@ while (remainingUnclassified > 0) {
         WebUI.delay(1)
 
         // Attempt to classify
-        CustomKeywords.'generic.Reclacification.classifyFromCellToCell'('Unclassified', 'Neutrophils')
-
+		CustomKeywords.'generic.Reclassification.classifyFromCellToCell'('Unclassified', 'Neutrophils')
+		
         // Wait for count to reduce (you can reuse your existing method or simple delay)
         WebUI.delay(2)
 
         // Recheck count
-        remainingUnclassified = CustomKeywords.'generic.Reclacification.getCellCount'(driver, 'Unclassified')
+		
+        remainingUnclassified = CustomKeywords.'generic.Reclassification.getCellCountInCurrentTab'(driver, 'Unclassified')
 
-        if (remainingUnclassified == beforeCount) {
-            WebUI.comment("⚠️ Count did not decrease after reclassification attempt. Breaking loop.")
-            break
-        }
+
+//        if (remainingUnclassified == beforeCount) {
+//            WebUI.comment("⚠️ Count did not decrease after reclassification attempt. Breaking loop.")
+//            break
+//        }
 
     } catch (Exception e) {
         WebUI.comment("❌ Exception during reclassification: ${e.message}")

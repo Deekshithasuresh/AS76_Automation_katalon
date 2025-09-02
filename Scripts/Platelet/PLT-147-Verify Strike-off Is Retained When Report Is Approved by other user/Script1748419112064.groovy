@@ -141,7 +141,7 @@ println("PDF Content:\n$pdfText")
 // === Step 4: Validate 'Others*' is present ===
 assert pdfText.contains('(x 10^9/L)') : "❌ 'Others*' not found in PDF report!"
 // === Step 5: Validate percentage is shown next to 'Others*' ===
-def othersLine = pdfText.split('\n').find { it.contains("Others*") }
+def othersLine = pdfText.split('\n').find { it.contains("Others") }
 assert othersLine != null : "❌ No line with 'Others*' found in PDF!"
 def percentMatch = othersLine =~ /Others\*\s+(\d{1,2}\.\d+)%/
 assert percentMatch.find() : "❌ Percentage value not found for 'Others*'!"

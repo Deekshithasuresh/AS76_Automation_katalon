@@ -17,24 +17,24 @@ public class helper {
 	@Keyword
 	public void verifyCorrectnessOfGradeAccordingToPercentageValue() {
 		WebDriver driver = DriverFactory.getWebDriver()
-	
+
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-			findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 10
-		)
-	
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 10
+				)
+
 		for (WebElement row : cellRows) {
 			WebElement percentageElement = row.findElement(By.xpath(".//div[3]"))
 			WebElement cellname_ele = row.findElement(By.xpath(".//div[1]"))
 			String cellname = cellname_ele.getText().trim()
-	
+
 			String percentageText = percentageElement.getText().trim()
-	
+
 			// Skip if empty or invalid
 			if (percentageText == null || percentageText.isEmpty()) {
 				WebUI.comment("⚠️ Skipping '$cellname' - Percentage is empty.")
 				continue
 			}
-	
+
 			float percentageValue = 0.0
 			try {
 				percentageValue = Float.parseFloat(percentageText)
@@ -42,15 +42,15 @@ public class helper {
 				WebUI.comment("❌ Skipping '$cellname' - Invalid format: '${percentageText}'")
 				continue
 			}
-	
+
 			List<WebElement> grades = row.findElements(By.xpath(".//input[@type='radio']"))
-	
+
 			for (int i = 0; i < grades.size(); i++) {
 				if (grades.get(i).isSelected()) {
 					int selectedGrade = Integer.parseInt(grades.get(i).getAttribute("value"))
 					WebUI.comment("🧬 Cell: ${cellname} | %: ${percentageValue}")
 					WebUI.comment("🎯 Selected Grade: ${selectedGrade}")
-	
+
 					switch (selectedGrade) {
 						case 0:
 							assert percentageValue == 0.0 : "❌ ${cellname}: Expected 0% for Grade 0, found ${percentageValue}"
@@ -72,8 +72,6 @@ public class helper {
 			}
 		}
 	}
-	
-	
 }
 
 

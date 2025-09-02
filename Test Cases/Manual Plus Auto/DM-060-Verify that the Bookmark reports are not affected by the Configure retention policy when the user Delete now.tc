@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DM-060-Verify that the Bookmark reports are not affected by the Configure retention policy when the user Delete now</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a4289376-517e-404f-96ce-9bbb267d8dbd</testCaseGuid>
+</TestCaseEntity>

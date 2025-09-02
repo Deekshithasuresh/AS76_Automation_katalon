@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify that the distinct color for platelet clump annotations matches the legend in the modified report</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>155b30e3-c14e-4dd5-819b-6ff5aacc8be7</testCaseGuid>
-</TestCaseEntity>

@@ -17,7 +17,7 @@ WebUI.click(findTestObject('Object Repository/Page_PBS/span_WBC'))
 def driver = DriverFactory.getWebDriver()
 
 // Get initial Unclassified count
-int unclassifiedBefore = CustomKeywords.'generic.Reclacification.getCellCount'(driver, 'Unclassified')
+int unclassifiedBefore = CustomKeywords.'generic.Reclassification.getCellCountInCurrentTab'(driver, 'Unclassified')
 WebUI.comment("Initial Unclassified Count: $unclassifiedBefore")
 
 if (unclassifiedBefore > 0) {
@@ -25,15 +25,16 @@ if (unclassifiedBefore > 0) {
     WebUI.executeJavaScript('window.scrollTo(0, document.body.scrollHeight)', null)
     WebUI.delay(1)
     try {
-        CustomKeywords.'generic.Reclacification.classifyFromCellToCell'('Unclassified', 'Neutrophils')
-        WebUI.delay(2)  // Let UI update
+		CustomKeywords.'generic.Reclassification.classifyFromCellToCell'('Unclassified', 'Neutrophils')
+		
+		        WebUI.delay(2)  // Let UI update
     } catch (Exception e) {
         WebUI.comment("❌ Classification failed: ${e.message}")
     }
 }
 
 // Get new Unclassified count
-int unclassifiedAfter = CustomKeywords.'generic.Reclacification.getCellCount'(driver, 'Unclassified')
+int unclassifiedAfter = CustomKeywords.'generic.Reclassification.getCellCountInCurrentTab'(driver, 'Unclassified')
 WebUI.comment("Remaining Unclassified Count: $unclassifiedAfter")
 
 // Click Approve to open the popup

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PI-05-Verify the user is able to perform the actions based on the Operator role</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fc73c766-0621-4048-abec-cd0b7840c7f0</testCaseGuid>
+</TestCaseEntity>

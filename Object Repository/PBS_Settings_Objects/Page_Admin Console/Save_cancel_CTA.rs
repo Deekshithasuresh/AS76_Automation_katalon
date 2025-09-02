@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[contains(text(),'Cancel')]</value>
+         <value>//div[@class=&quot;actions&quot;]//button[contains(text(),'Cancel')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

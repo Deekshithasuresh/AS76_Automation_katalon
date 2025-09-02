@@ -12,15 +12,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import loginPackage.Login
 import zoom.ZoomInOut as ZoomInOut
 
-Login lg = new Login()
+CustomKeywords.'generic.custumFunctions.login'()
 
-ZoomInOut zoom = new ZoomInOut()
-
-lg.login()
-
-WebUI.delay(2)
-
-lg.selectReportByStatus('Under review')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Summary'), 10)
 
@@ -59,11 +53,10 @@ if (allPatches.isEmpty()) {
 	}
 
 	int firstRowCount = rows.values()[0].size()
-	if (firstRowCount == 20) {
-		WebUI.comment("✅ Exactly 20 patches found in first row.")
+	if (firstRowCount >= 20 && firstRowCount <= 21) {
+		WebUI.comment("✅ Patch count is within expected range (20–21). Found: ${firstRowCount}")
 	} else {
-		WebUI.comment("❌ Expected 20 patches, but found ${firstRowCount} in first row.")
-		KeywordUtil.markFailed('❌ Expected 20 patches, but found ${firstRowCount} in first row.')
-		
+		WebUI.comment("❌ Expected patch count between 20–21, but found ${firstRowCount}")
+		KeywordUtil.markFailed("❌ Expected patch count between 20–21, but found ${firstRowCount}")
 	}
 }

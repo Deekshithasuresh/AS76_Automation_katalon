@@ -300,7 +300,7 @@ public class PBS_Settings {
 			WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/RBC_GRADE_LIMITS_HEADING'), 10, FailureHandling.OPTIONAL)
 		}
 		if(testcase.equals('Cancel_cancel')) {
-			assert Warning_Title.contains('Are you sure you want to cancel ')
+			assert Warning_Title.contains('Are you sure you want to cancel?')
 			assert Description_text.equals('All unsaved changes will be lost. Do you wish to continue?')
 			WebUI.waitForElementVisible(SecondaryCTA, 20)
 			WebUI.verifyElementPresent(SecondaryCTA, 10, FailureHandling.OPTIONAL)
@@ -309,7 +309,7 @@ public class PBS_Settings {
 			WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/RBC_GRADE_LIMITS_HEADING'), 10, FailureHandling.OPTIONAL)
 		}
 		if(testcase.equals('Cancel_confirm')) {
-			assert Warning_Title.contains('Are you sure you want to cancel ')
+			assert Warning_Title.contains('Are you sure you want to cancel?')
 			assert Description_text.equals('All unsaved changes will be lost. Do you wish to continue?')
 			WebUI.waitForElementVisible(SecondaryCTA, 20)
 			WebUI.verifyElementPresent(SecondaryCTA, 10, FailureHandling.OPTIONAL)

@@ -18,6 +18,8 @@ WebUI.setText(findTestObject('Object Repository/Platelets/Page_PBS/input_passwor
 
 WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Sign In'))
 
+WebUI.maximizeWindow()
+
 // Select a sample
 WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/td_SIG0146'))
 
@@ -76,6 +78,7 @@ for (WebElement patch : all_patches) {
 	if (patch.isDisplayed() && patch.isEnabled()) {
 		patch.click()
 		println("Patch is selected")
+		break
 	} else {
 		println("Patch is not clickable")
 	}
