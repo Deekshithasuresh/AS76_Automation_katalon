@@ -27,7 +27,7 @@ Login lg = new Login()
 
 PBS_Settings pbs_set = new PBS_Settings()
 
-lg.AdminLogin('prem', 'prem@2807')
+lg.AdminLogin('manju', 'Sigtuple@123')
 
 
 //Navigate to PBS Settings

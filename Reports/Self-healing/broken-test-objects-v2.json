@@ -548,6 +548,26 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/Page_PBS/div_Report Approved_position.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Report_Listing/Page_PBS/span_Under review",
+      "brokenLocator": "(//span[(text() \u003d \u0027Under review\u0027 or . \u003d \u0027Under review\u0027)]/parent::div)[1]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027To be reviewed\u0027])[1]/following::span[2]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Report_Listing/Page_PBS/span_Under review_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/View CBC Report Information/Page_PBS/button_CBC report_MuiButtonBase-root MuiIco_ee341f",
+      "brokenLocator": "(//button[@type\u003d\u0027button\u0027])[4]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[2]/div/div/div/div/button",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/View CBC Report Information/Page_PBS/button_CBC report_MuiButtonBase-root MuiIco_ee341f_position.png"
     }
   ]
 }

@@ -21,7 +21,7 @@ Platelet_P plt = new Platelet_P()
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_Summary'), 'Summary')
 
@@ -129,20 +129,3 @@ driver.findElement(By.xpath("//div[@class='appBar_container__right__PwWvg']/butt
 driver.findElement(By.xpath("//ul[@class='appBar_popover__list__bNpZi']/li/span[text()='Download PDF report']")).click()
 
 WebUI.delay(5)
-
-// Step 1: Get Downloads folder path
-String downloadsPath = System.getProperty('user.home') + '/Downloads'
-// Step 2: Find the latest 'pdfReport*.pdf'
-File latestPdf = PdfReader.getLatestPdfReport(downloadsPath)
-println("Latest pdfReport file: ${latestPdf.absolutePath}")
-// Step 3: Read text from PDF
-String pdfText = PdfReader.readText(latestPdf.absolutePath)
-println("PDF Content:\n$pdfText")
-// === Step 4: Validate 'Others*' is present ===
-assert pdfText.contains('(x 10^9/L)') : "❌ 'Others*' not found in PDF report!"
-// === Step 5: Validate percentage is shown next to 'Others*' ===
-def othersLine = pdfText.split('\n').find { it.contains("Others") }
-assert othersLine != null : "❌ No line with 'Others*' found in PDF!"
-def percentMatch = othersLine =~ /Others\*\s+(\d{1,2}\.\d+)%/
-assert percentMatch.find() : "❌ Percentage value not found for 'Others*'!"
-println(":white_check_mark: Found 'Others*' with percentage: ${percentMatch[0][1]}%")

@@ -21,9 +21,9 @@ import adimin_pbs_Settings.PBS_Settings
 
 Login lg = new Login()
 
-PBS_Settings pbs_set =new PBS_Settings()
+PBS_Settings pbs_set = new PBS_Settings()
 
-lg.AdminLogin('prem', 'prem@2807')
+lg.AdminLogin('manju', 'Sigtuple@123')
 
 WebUI.verifyElementPresent(findTestObject('PBS_Settings_Objects/Page_Admin Console/div_PBS settings'), 10)
 

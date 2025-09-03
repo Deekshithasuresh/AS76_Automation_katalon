@@ -20,7 +20,9 @@ import loginPackage.Login as Login
 
 Login lg = new Login()
 
-lg.AdminLogin('prem', 'prem@2807')
+PBS_Settings pbs_set = new PBS_Settings()
+
+lg.AdminLogin('manju', 'Sigtuple@123')
 
 WebUI.verifyElementPresent(findTestObject('PBS_Settings_Objects/Page_Admin Console/div_PBS settings'), 10)
 

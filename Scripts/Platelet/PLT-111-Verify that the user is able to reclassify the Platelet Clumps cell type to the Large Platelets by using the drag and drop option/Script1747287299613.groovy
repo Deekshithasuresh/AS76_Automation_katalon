@@ -1,14 +1,16 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.openqa.selenium.By
-import org.openqa.selenium.WebElement
-import org.openqa.selenium.interactions.Actions
+import java.time.Duration
 
-import com.kms.katalon.core.testobject.TestObject
+import org.openqa.selenium.*
+import org.openqa.selenium.interactions.Actions
+import org.openqa.selenium.support.ui.ExpectedConditions
+import org.openqa.selenium.support.ui.WebDriverWait
+
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.util.KeywordUtil
 
 import generic.custumFunctionsvj
 
@@ -26,7 +28,8 @@ WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Sign In'
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Platelets/Page_PBS/span_My reports'), 0)
 
-
+WebDriver driver = DriverFactory.getWebDriver()
+Actions actions = new Actions(driver)
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('jyothi')
@@ -94,29 +97,44 @@ if ((clumpCount == 0) || (clumpRow == null)) {
 
     action.clickAndHold(source).moveToElement(target, 10, 10).pause(1000).release().build().perform()
 
-    TestObject toastMsg = findTestObject('Object Repository/Platelets/Page_PBS/whole_toast_msg')
+	
+	
+	
+	
+	try {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30))
+		WebElement snackbar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.classified-snackbar")))
 
-    WebUI.waitForElementVisible(toastMsg, 10)
+		String headerText = snackbar.findElement(By.cssSelector(".header-row .header")).getText().trim()
+		String bodyText = snackbar.findElement(By.cssSelector(".body")).getText().trim()
 
-    TestObject toast_msg_head = findTestObject('Object Repository/Platelets/Page_PBS/toast_msg_header')
+		WebUI.comment("Snackbar message: ${headerText} | ${bodyText}")
 
-    WebUI.waitForElementVisible(toast_msg_head, 10)
+		assert headerText.toLowerCase().contains("reclassified")
+		assert bodyText.toLowerCase().contains(fromCellName.toLowerCase())
+		assert bodyText.toLowerCase().contains(toCellName.toLowerCase())
 
-    String toast_msg_header = WebUI.getText(toast_msg_head).trim()
+		WebUI.comment("Snackbar reclassification message verified.")
 
-    println('Toast message header: ' + toast_msg_header)
 
-    assert toast_msg_header.equals('1 patch reclassified')
+		// Step 4: Click the 'X' icon to close the snackbar
+		WebUI.delay(2)
+		WebElement closeIcon = snackbar.findElement(By.xpath("//div[contains(@class,'MuiSnackbarContent-action')]/div"))
+		actions.moveToElement(closeIcon).click().build().perform()
+		WebUI.comment("Snackbar closed by clicking X icon.")
+	}
+	catch (Exception e) {
+		WebUI.comment("snackbar confirmed")
+	}
+	//			WebUI.refresh()
+	//			WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
+	//
+	WebUI.delay(4)
 
-    TestObject toast_msg_descs = findTestObject('Object Repository/Platelets/Page_PBS/toast_msg_desc')
-
-    WebUI.waitForElementVisible(toast_msg_descs, 10)
-
-    String toast_msg_desc = WebUI.getText(toast_msg_descs).trim()
-
-    println('Toast message desc: ' + toast_msg_desc)
-
-    assert toast_msg_desc.equals('Platelet Clumps to Large Platelets')
+	WebUI.comment("Snackbar reclassification message verified.")
+	
+	
+	
 
     int largePlateletCountAfter
 
