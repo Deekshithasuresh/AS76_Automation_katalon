@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CRD-009-Verification of the functionality of the approve report option in the self -assigned reports</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d5d7514e-6798-43a4-8301-4aa730009fe5</testCaseGuid>
+</TestCaseEntity>

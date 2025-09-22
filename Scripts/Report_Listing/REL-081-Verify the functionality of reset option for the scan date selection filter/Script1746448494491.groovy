@@ -14,9 +14,7 @@ WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/filter_but
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/img_1'), 0)
 
-Boolean result = CustomKeywords.'generic.FilterFunctions.applyAndVerifyDateFilter'("29-08-2025","29-08-2025")
 
-assertTrue(result)
 
 List<TestObject> beforeRows = WebUI.findWebElements(
 	new TestObject().addProperty("xpath", ConditionType.EQUALS, "//tbody/tr"),
@@ -25,6 +23,10 @@ List<TestObject> beforeRows = WebUI.findWebElements(
 int beforeCount = beforeRows.size()
 
 WebUI.comment("📊 Reports before filter: ${beforeCount}")
+
+Boolean result = CustomKeywords.'generic.FilterFunctions.applyAndVerifyDateFilter'("29-08-2025","29-08-2025")
+
+assertTrue(result)
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/filter_button'))
 

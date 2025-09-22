@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CRD-001-Verify navigation to Terms of Service screen via CTA</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>139ff96f-78d4-47d3-8fb6-8051723d2fb5</testCaseGuid>
+</TestCaseEntity>

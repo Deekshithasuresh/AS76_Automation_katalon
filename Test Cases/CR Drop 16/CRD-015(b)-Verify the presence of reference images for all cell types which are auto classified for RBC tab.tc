@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CRD-015(b)-Verify the presence of reference images for all cell types which are auto classified for RBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f4cd5d09-e244-4507-ba71-672e5fdf4099</testCaseGuid>
+</TestCaseEntity>

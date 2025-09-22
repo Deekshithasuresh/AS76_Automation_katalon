@@ -43,10 +43,8 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PB
 
 String Actual_note_msg = WebUI.getText(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_Total number of RBCs counted for shape _5197e5'))
 
-if (Actual_note_msg.contains("Total number of RBCs counted for shape based classification is ") )
-	{
-	markPassed("The text contains the expected text")
-}
-else {
-	markFailed("The text doesn't contains the expected text and The actual text is: "+Actual_note_msg)
-}
+WebUI.verifyMatch(
+	Actual_note_msg.trim(),
+	"Total number of RBCs counted for shape based classification is \\d+",
+	true   // enable regex
+)

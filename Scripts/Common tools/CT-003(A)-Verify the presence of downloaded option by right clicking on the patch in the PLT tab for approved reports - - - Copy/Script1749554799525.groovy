@@ -51,7 +51,7 @@ WebElement patchfirst = driver.findElement(By.xpath('(//div[@class=\'Card patche
 
 actions.contextClick(patchfirst).perform()
 
-WebUI.click(findTestObject('Commontools/2ndpatch'))
+WebUI.click(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 
 WebUI.rightClick(findTestObject('WBC/Page_PBS/Page_PBS/1stPatch'))
 

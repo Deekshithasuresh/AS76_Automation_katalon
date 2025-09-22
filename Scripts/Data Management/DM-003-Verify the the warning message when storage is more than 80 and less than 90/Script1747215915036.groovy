@@ -13,7 +13,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 // -------------------- Configuration --------------------
 float totalSize = 769  // Total storage in GB (as configured on device)
-int targetPercent = 81 // Target usage percentage (you can change this)
+int targetPercent = 82 // Target usage percentage (you can change this)
 int fileSizePerFileMB = 1024 // 1 GB per dummy file
 
 // Get Data from Excel

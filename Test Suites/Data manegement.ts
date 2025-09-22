@@ -12,6 +12,34 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>a5d3e9b8-14b6-4b15-a18b-c584f5b3b1b8</testSuiteGuid>
    <testCaseLink>
+      <guid>2cc92689-e54a-45ac-9174-d10ebf7c116f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Data Management/DM-001-Verify the UI when the hot storage in the active</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8c317655-0e22-488e-b8c0-1b6f07505f5e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Data Management/DM-002-Verify the the warning message when storage is less than 80 percent</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ec4afaa3-75ee-4a3e-b4df-9318bb360ded</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Data Management/DM-003-Verify the the warning message when storage is more than 80 and less than 90</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8062c564-7db0-4036-bfee-ebe896e32b1c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Data Management/DM-004-Verify the the warning message when storage is more than 90</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
       <guid>4c7e48cc-8e2a-4b2a-9bcb-fe905067ffd6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -44,13 +72,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Data Management/DM-016-Verify the user is able to configure the retention policy period of more than 5000 days or not</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2cc92689-e54a-45ac-9174-d10ebf7c116f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Data Management/DM-001-Verify the UI when the hot storage in the active</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -99,14 +120,14 @@
       <guid>a4f69802-a237-4fb9-a3d4-a3c3a1e1d172</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Data Management/DM-17-Verify the confirmation pop-up If the configured period is increased and clicks on save button</testCaseId>
+      <testCaseId>Test Cases/Data Management/DM-017-Verify the confirmation pop-up If the configured period is increased and clicks on save button</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>6b9200ca-db0a-402f-9c20-e16c0bd11ff1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Data Management/DM-21-Verify the functionality If the user cancels the retention policy</testCaseId>
+      <testCaseId>Test Cases/Data Management/DM-021-Verify the functionality If the user cancels the retention policy</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -117,24 +138,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>8c317655-0e22-488e-b8c0-1b6f07505f5e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Data Management/DM-002-Verify the the warning message when storage is less than 80 percent</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>0bc6d461-1419-452c-80d5-082e2450bc53</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Data Management/DM-057-Verify whether the history page is recording all the events if the user updates the Retention duration</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>8062c564-7db0-4036-bfee-ebe896e32b1c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Data Management/DM-004-Verify the the warning message when storage is more than 90</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -156,13 +163,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Manual Plus Auto/DM-061-Verify whether the processing reports are getting deleted for the configured retention policy</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>ec4afaa3-75ee-4a3e-b4df-9318bb360ded</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Data Management/DM-003-Verify the the warning message when storage is more than 80 and less than 90</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

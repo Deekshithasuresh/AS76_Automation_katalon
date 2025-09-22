@@ -203,12 +203,32 @@ public class Reclassification {
 			driver.findElement(By.xpath("//span[text()='Classify']")).click()
 			driver.findElement(By.xpath("//li//div[text()='" + toWbcCell + "']")).click()
 
-			// Step 5: Confirm classification message
-			TestObject reclassifyMsg = new TestObject()
-			reclassifyMsg.addProperty("xpath", ConditionType.EQUALS,"//div[contains(@class,'MuiSnackbarContent-message')]//div[contains(text(),'patches reclassified')]")
-			WebUI.waitForElementVisible(reclassifyMsg, 5)
-			boolean isPresent = WebUI.verifyElementPresent(reclassifyMsg, 5, FailureHandling.OPTIONAL)
-			WebUI.comment("✅ Reclassification message visible: ${isPresent}")
+			// Wait for classification confirmation
+			try {
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30))
+				WebElement snackbar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.classified-snackbar")))
+
+				String headerText = snackbar.findElement(By.cssSelector(".header-row .header")).getText().trim()
+				String bodyText = snackbar.findElement(By.cssSelector(".body")).getText().trim()
+
+				WebUI.comment("Snackbar message: ${headerText} | ${bodyText}")
+
+				assert headerText.toLowerCase().contains("reclassified")
+				assert bodyText.toLowerCase().contains(fromPlateletCell.toLowerCase())
+
+				WebUI.comment("Snackbar reclassification message verified.")
+
+
+				// Step 4: Click the 'X' icon to close the snackbar
+				WebUI.delay(2)
+				WebElement closeIcon = snackbar.findElement(By.xpath("//div[contains(@class,'MuiSnackbarContent-action')]/div"))
+				actions.moveToElement(closeIcon).click().build().perform()
+				WebUI.comment("Snackbar closed by clicking X icon.")
+			}
+			catch (Exception e) {
+				WebUI.comment("snackbar confirmed")
+			}
+
 
 			// Step 6: Get final counts
 			int fromFinalCount = getCellCountInCurrentTab(driver, fromPlateletCell)
@@ -777,43 +797,40 @@ public class Reclassification {
 	}
 
 
-
-
 	@Keyword
 	def classifyFromCellToCell(String fromCellName, String toCellName) {
 		WebDriver driver = DriverFactory.getWebDriver()
 		Actions actions = new Actions(driver)
-
+	
 		try {
 			// Step 1: Get initial counts
 			int fromInitialCount = getCellCount(driver, fromCellName)
 			int toInitialCount = getCellCount(driver, toCellName)
-
+	
 			WebUI.comment("Initial count - From: ${fromCellName} = ${fromInitialCount}, To: ${toCellName} = ${toInitialCount}")
-
-			// Step 2: Proceed only if fromCell count > 1
-			if (fromInitialCount > 1) {
+	
+			// ✅ Proceed only if there is at least 1 patch
+			if (fromInitialCount > 0) {
 				// Click on fromCell row
 				WebElement cellRow = driver.findElement(By.xpath("//table/tbody/tr/td[1][text()='" + fromCellName + "']"))
 				cellRow.click()
 				WebUI.comment("Clicked on cell row: ${fromCellName}")
-
+	
 				// Right-click on the image
 				WebElement imageElement = driver.findElement(By.xpath("//div[@class='patches-section ']//img"))
 				actions.moveToElement(imageElement).contextClick().perform()
 				WebUI.comment("Right-clicked on image.")
-
+	
 				// Click on "Classify" menu
 				WebElement classifyButton = driver.findElement(By.xpath("//span[contains(text(),'Classify')]"))
 				classifyButton.click()
 				WebUI.comment("Clicked on 'Classify' option.")
-
+	
 				// Select the toCellName from the dropdown
 				WebElement toCellElement = driver.findElement(By.xpath("//ul[contains(@class,'MuiMenu-list')]//li//div[contains(text(),'" + toCellName + "')]"))
 				toCellElement.click()
 				WebUI.comment("Selected target cell type: ${toCellName}")
-
-				
+	
 				try {
 					WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30))
 					WebElement snackbar = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.classified-snackbar")))
@@ -829,45 +846,38 @@ public class Reclassification {
 	
 					WebUI.comment("Snackbar reclassification message verified.")
 	
-	
-					// Step 4: Click the 'X' icon to close the snackbar
+					// Close the snackbar
 					WebUI.delay(2)
 					WebElement closeIcon = snackbar.findElement(By.xpath("//div[contains(@class,'MuiSnackbarContent-action')]/div"))
 					actions.moveToElement(closeIcon).click().build().perform()
 					WebUI.comment("Snackbar closed by clicking X icon.")
 				}
 				catch (Exception e) {
-					WebUI.comment("snackbar confirmed")
+					WebUI.comment("Snackbar confirmed but not validated in detail.")
 				}
-				//			WebUI.refresh()
-				//			WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
-				//
+	
 				WebUI.delay(4)
-
-				WebUI.comment("Snackbar reclassification message verified.")
-
+	
 				// Step 3: Get new counts
 				int fromFinalCount = getCellCount(driver, fromCellName)
 				int toFinalCount = getCellCount(driver, toCellName)
-
+	
 				WebUI.comment("Final count - From: ${fromFinalCount}, To: ${toFinalCount}")
-
+	
 				// Step 4: Validate that counts changed correctly
 				assert fromFinalCount == fromInitialCount - 1 : "Expected ${fromCellName} count to decrease by 1"
 				assert toFinalCount == toInitialCount + 1 : "Expected ${toCellName} count to increase by 1"
-
+	
 				WebUI.comment("Count validation passed.")
 			} else {
-				WebUI.comment("Count for ${fromCellName} is ${fromInitialCount} (<1). Skipping classification.")
+				WebUI.comment("No ${fromCellName} patches available for classification. Skipping.")
 			}
 		} catch (Exception e) {
 			WebUI.comment("Error during classification from '${fromCellName}' to '${toCellName}': " + e.message)
 			throw e
 		}
 	}
-
-
-
+	
 
 
 

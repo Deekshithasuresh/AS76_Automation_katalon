@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CRD-005-Verify navigation to Privacy Policy screen via CTA</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e64c9bbd-51cd-4ddf-ace0-a634770ad609</testCaseGuid>
+</TestCaseEntity>

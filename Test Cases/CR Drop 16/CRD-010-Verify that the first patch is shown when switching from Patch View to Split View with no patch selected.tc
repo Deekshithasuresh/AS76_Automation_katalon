@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CRD-010-Verify that the first patch is shown when switching from Patch View to Split View with no patch selected</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d814d720-d21e-498c-b103-e460ccbcd909</testCaseGuid>
+</TestCaseEntity>

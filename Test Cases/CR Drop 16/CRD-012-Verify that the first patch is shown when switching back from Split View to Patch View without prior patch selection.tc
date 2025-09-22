@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CRD-012-Verify that the first patch is shown when switching back from Split View to Patch View without prior patch selection</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>51f8e5ff-040f-4082-b07a-fe3aa11b06e7</testCaseGuid>
+</TestCaseEntity>

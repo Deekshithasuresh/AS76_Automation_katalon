@@ -20,7 +20,6 @@ import loginPackage.Login as Login
 
 Login lg = new Login()
 
-PBS_Settings pbs_set = new PBS_Settings()
 
 lg.AdminLogin('manju', 'Sigtuple@123')
 

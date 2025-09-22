@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CRD-017-Verify that the manually classified cell types are not present in the reference image drop down for WBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>888bf6a8-4624-4387-9349-811211b98b0d</testCaseGuid>
+</TestCaseEntity>

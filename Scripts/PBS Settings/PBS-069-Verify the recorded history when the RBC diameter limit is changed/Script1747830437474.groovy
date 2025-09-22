@@ -85,7 +85,7 @@ WebUI.click(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Co
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/div_History'), 10)
 
-String username='prem'  //change the username with which user we have logged in
+String username='manju'  //change the username with which user we have logged in
 
 assert pbs_set.verifyChangesGettingRecordedInHistory("RBC diameter",username+" updated RBC diamter of microcyte","7.0","4.0")== true
 

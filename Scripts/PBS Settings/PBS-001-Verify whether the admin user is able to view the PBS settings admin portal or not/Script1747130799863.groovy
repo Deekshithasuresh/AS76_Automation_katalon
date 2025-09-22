@@ -33,17 +33,9 @@ import loginPackage.Login as Login
 	
 			WebUI.click(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/button_Sign in'))
 	
-			try{
-				WebUI.waitForElementVisible(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Auth_error_msg'), 20)
-				String auth_error_text=WebUI.getText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Auth_error_msg'))
-				WebUI.comment(auth_error_text)
-				assert auth_error_text=='Invalid credentials'
-				
-			}
-	
-			catch(Exception e) {
+			
 				WebUI.waitForElementVisible(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Admin_Portal_Heading'), 20)
 				WebUI.verifyElementPresent(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Admin_Portal_Heading'), 20)
-			}
+			
 		
 	

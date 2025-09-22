@@ -6,31 +6,10 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-// ────────────────────────────────────────────────────────────────────
-// 1) LOGIN
-// ────────────────────────────────────────────────────────────────────
-WebUI.openBrowser('')
-WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
-WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
-WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
-	'JBaPNhID5RC7zcsLVwaWIA==')
-WebUI.click(findTestObject('Report viewer/Page_PBS/button_Sign In'))
-WebUI.waitForElementPresent(
-	new TestObject().addProperty('xpath', ConditionType.EQUALS, "//span[contains(text(),'PBS')]"),
-	10
-)
+CustomKeywords.'generic.custumFunctions.login'()
 
-// ────────────────────────────────────────────────────────────────────
-// 2) OPEN FIRST “To be reviewed” REPORT
-// ────────────────────────────────────────────────────────────────────
-TestObject toBeReviewedRow = new TestObject().addProperty(
-	'xpath', ConditionType.EQUALS,
-	"(//tr[.//span[normalize-space(text())='To be reviewed']])[1]"
-)
-WebUI.waitForElementVisible(toBeReviewedRow, 10)
-WebUI.scrollToElement(toBeReviewedRow, 5)
-WebUI.click(toBeReviewedRow)
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+
 
 // ────────────────────────────────────────────────────────────────────
 // 3) OPEN KEBAB MENU & SELECT “History”

@@ -4,6 +4,7 @@ import org.openqa.selenium.Keys
 import org.openqa.selenium.WebElement
 
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.common.WebUiCommonHelper
@@ -53,8 +54,16 @@ public class myReoort {
 
 		if (currentValue == newRetentionDays) {
 			WebUI.comment("⚠️ Retention value already set to ${newRetentionDays}. Save button should remain disabled.")
+			// Click the modal close (X) button if present
+			TestObject closeBtn = new TestObject("closeButton")
+			closeBtn.addProperty("xpath", ConditionType.EQUALS, "//div[@class='close-icon']")
+			if (WebUI.verifyElementPresent(closeBtn, 2, FailureHandling.CONTINUE_ON_FAILURE)) {
+				WebUI.click(closeBtn)
+				WebUI.comment("❎ Modal closed with 'X'.")
+			}
 			return
 		}
+		
 
 		// Clear and set new retention value
 		WebUI.sendKeys(inputRetention, Keys.chord(Keys.COMMAND, 'a'))  // CMD + A

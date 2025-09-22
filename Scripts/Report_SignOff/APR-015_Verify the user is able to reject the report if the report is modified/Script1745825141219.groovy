@@ -9,7 +9,10 @@ DriverFactory
 WebUI.openBrowser('')
 
 CustomKeywords.'generic.custumFunctions.login'()
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under review")
+
+
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')
 
 WebUI.click(findTestObject('Object Repository/Page_PBS/span_WBC'))

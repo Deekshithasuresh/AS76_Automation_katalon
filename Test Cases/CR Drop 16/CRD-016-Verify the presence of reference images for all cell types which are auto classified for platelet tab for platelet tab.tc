@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CRD-016-Verify the presence of reference images for all cell types which are auto classified for platelet tab for platelet tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>7279180f-c26d-45ef-89d2-aed45f15f021</testCaseGuid>
+</TestCaseEntity>

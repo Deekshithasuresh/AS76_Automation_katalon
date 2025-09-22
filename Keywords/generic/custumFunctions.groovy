@@ -113,7 +113,7 @@ public class custumFunctions {
 
 		// 2) Capture the initial Status text
 		TestObject statusCell0 = new TestObject().addProperty('xpath', ConditionType.EQUALS,
-				initialRowXpath + "//following-sibling::td[2]//span")
+				initialRowXpath + "//following-sibling::td[2]//span[contains(@class,'reportStatusComponent')]")
 		WebUI.waitForElementVisible(statusCell0, 5)
 		String before = WebUI.getText(statusCell0).trim()
 		WebUI.comment("📌 Status before assign: '${before}'")
@@ -124,7 +124,7 @@ public class custumFunctions {
 				initialRowXpath + "/td[3]")
 		String slideId = WebUI.getText(slideCell).trim()
 
-		// 3) Open Assigned-To dropdown and select reviewer
+		// 3) Open Assigned-To dropdown and select reviewers
 		TestObject dropdown = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 				initialRowXpath + "//following-sibling::td//input[@id='assigned_to']")
 		WebUI.scrollToElement(dropdown, 5)

@@ -103,7 +103,7 @@ for(WebElement row:WBC_cellname_row)
 		List<WebElement> cells=row.findElements(By.tagName("td"))
 		String cellname=(cells[0]).getText()
 		println(cellname)
-		if (cellname.equals('Rejected'))
+		if (cellname.equals('Unclassified'))
 		{
 		String cell_count=(cells[1]).getText()
 		cell_count1=Integer.parseInt(cell_count)

@@ -27,6 +27,12 @@ CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 
 WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PBS/button_WBC'), 'WBC')
 
-WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
+//WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
+WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'))
 
-CustomKeywords.'generic.Reclassification.reclassifyPlateletToWBC'("Platelet Clumps", "Degenerate Cells", 2)
+WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/button_Morphology'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/button_Morphology'), 'Morphology')
+
+
+CustomKeywords.'generic.Reclassification.reclassifyPlateletToWBC'("Platelet Clumps", "Degenerate Cells", 1)

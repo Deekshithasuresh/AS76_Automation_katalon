@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CRD-022-Verify that the Reference Image dropdown is not displayed in the Inclusion tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ee8dd8ed-f3ce-4039-b0cf-27fbbf4fc8c8</testCaseGuid>
+</TestCaseEntity>

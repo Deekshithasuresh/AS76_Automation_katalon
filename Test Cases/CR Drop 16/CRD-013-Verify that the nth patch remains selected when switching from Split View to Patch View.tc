@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CRD-013-Verify that the nth patch remains selected when switching from Split View to Patch View</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>9f0f227c-b547-41e2-bca1-76b8b431082c</testCaseGuid>
+</TestCaseEntity>

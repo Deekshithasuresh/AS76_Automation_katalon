@@ -14,11 +14,11 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 // === LAUNCH & LOGIN ===
-WebUI.openBrowser('')
 CustomKeywords.'generic.custumFunctions.login'()
 
 // === ASSIGN REPORT ===
 WebUI.comment("Selecting report with 'To be reviewed' status.")
+
 CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 WebUI.comment("Assigning report to 'manju'.")
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju')

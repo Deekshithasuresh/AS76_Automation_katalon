@@ -87,6 +87,7 @@ pbs_set.enterValueIntoPlateLetLevelField(normal_input, '899')
 WebUI.verifyElementNotPresent(findTestObject('PBS_Settings_Objects/Page_Admin Console/Error_toast_msg'), 20)
 
 pbs_set.checkFunctionalityOfCTAS(saveCTA,save_cancel_CTA,'save_cancel')
+
 pbs_set.checkFunctionalityOfCTAS(saveCTA,save_confirm_CTA,'save_confirm')
 WebUI.delay(2)
 

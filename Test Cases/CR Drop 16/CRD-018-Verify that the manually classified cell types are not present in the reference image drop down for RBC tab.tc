@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CRD-018-Verify that the manually classified cell types are not present in the reference image drop down for RBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>66564aee-651c-4ac3-bcc6-5f604eabc7ec</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CRD-025-Verify that the user can view time zones in the dropdown while configuring the timezone</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3a9144d2-706e-48e6-9d07-bbeedd32e6ec</testCaseGuid>
+</TestCaseEntity>

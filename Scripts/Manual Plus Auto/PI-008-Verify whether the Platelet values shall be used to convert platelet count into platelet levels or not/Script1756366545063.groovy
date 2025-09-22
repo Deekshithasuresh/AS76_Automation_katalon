@@ -19,7 +19,7 @@ PBS_Settings pbs_set = new PBS_Settings()
 ZoomInOut zoom = new ZoomInOut()
 
 // Admin login and update RBC/Shape/Color limits
-lg.AdminLogin('prem', 'prem@2807')
+lg.AdminLogin('manju', 'Sigtuple@123')
 WebUI.verifyElementPresent(findTestObject('PBS_Settings_Objects/Page_Admin Console/div_PBS settings'), 10)
 WebUI.click(findTestObject('PBS_Settings_Objects/Page_Admin Console/div_PBS settings'))
 

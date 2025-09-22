@@ -13,12 +13,6 @@ CustomKeywords.'generic.custumFunctions.selectReportByStatus'('Under review')
 
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
-WebUI.click(findTestObject('Object Repository/WBC_m/Page_PBS/Page_PBS/button_X_unassign'))
-
-WebUI.click(findTestObject('Object Repository/WBC_m/Page_PBS/Page_PBS/button_Unassign'))
-
-
-
 
 // 6) OPEN KEBAB MENU & CHOOSE “History”
 TestObject kebabTO = new TestObject().addProperty(

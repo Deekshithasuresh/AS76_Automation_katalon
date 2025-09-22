@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CRD-014-Verify the presence of reference images for all cell types which are auto classified for WBC tab</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3469e7aa-466a-4d29-9f7e-4d693bf40b37</testCaseGuid>
+</TestCaseEntity>

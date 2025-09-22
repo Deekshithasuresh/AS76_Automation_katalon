@@ -30,8 +30,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Report_Listing/Page_PB
 
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
 
-CustomKeywords.'generic.Reclassification.dragAndDropFromCellToCell'("Neutrophils", "Immature Basophils")
-
+CustomKeywords.'generic.Reclassification.classifyFromCellToCell'('Lymphocytes', 'Immature Basophils')
 
 TestObject approveButton = findTestObject('Object Repository/WBC_m/Page_PBS/span_Approve report')
 WebElement apElement = WebUiCommonHelper.findWebElement(approveButton, 10)

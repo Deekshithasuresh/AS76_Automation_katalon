@@ -14,7 +14,7 @@ WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/filter_but
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Report_Listing/Page_PBS/img_1'), 5)
 
-Boolean result = CustomKeywords.'generic.FilterFunctions.assignedToFilter'(['prem'])
+Boolean result = CustomKeywords.'generic.FilterFunctions.assignedToFilter'(['santosh'])
 
 assertTrue(result)
 

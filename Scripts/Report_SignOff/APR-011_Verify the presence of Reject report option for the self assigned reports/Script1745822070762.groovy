@@ -19,7 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 // Step 1: Login and assign reviewer
 CustomKeywords.'generic.custumFunctions.login'()
-CustomKeywords.'generic.custumFunctions.selectReportByStatus'('To be reviewed')
+
+CustomKeywords.'generic.custumFunctions.selectReportByStatus'("Under review")
+
 CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'("manju")
 
 WebUI.verifyElementText(findTestObject('Object Repository/Report-Signoff/button_Reject report'), 'Reject report')

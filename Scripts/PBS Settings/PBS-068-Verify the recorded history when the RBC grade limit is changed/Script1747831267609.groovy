@@ -86,7 +86,7 @@ WebUI.click(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Co
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/div_History'), 10)
 
-String username='prem'  //change the username with which user we have logged in
+String username='manju'  //change the username with which user we have logged in
 
 assert pbs_set.verifyChangesGettingRecordedInHistory("RBC grade",username+" updated grade1 of anisocytosis","5","67")== true
 

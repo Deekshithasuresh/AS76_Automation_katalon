@@ -106,7 +106,7 @@ WebUI.click(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Co
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/div_History'), 10)
 
-String username='prem'
+String username='manju'
 
 assert pbs_set.verifyChangesGettingRecordedInHistory("Platelet level",username+" updated the level of significantly decreased","100","200")== true
 
