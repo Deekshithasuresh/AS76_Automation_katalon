@@ -300,19 +300,19 @@ public class Wbc_helper {
 				// Cell type (fallback to plain text if 'significant' not present)
 				String cellType = ""
 				try {
-					cellType = row.findElement(By.xpath(".//div[contains(@class,'significant') or contains(@class,'cell-name')]")).getText().trim()
+					cellType = row.findElement(By.xpath(".//div[contains(@class,'significant') or contains(@class,'cell-name')]/parent::div")).getText().trim()
 				} catch (Exception ignored) {
 					cellType = row.getText().split("\n")[0].trim()  // fallback
 				}
 	
 				// Grade radio buttons
 				List<WebElement> gradeOptions = row.findElements(
-					By.xpath(".//div[contains(@class,'grade-div')]//span[contains(@class,'MuiButtonBase-root')]")
+					By.xpath(".//div[contains(@class,'grade-div')]//span[contains(@class,'MuiButtonBase-root')]//span")
 				)
 	
 				String selectedGrade = ""
 				for (int i = 0; i < gradeOptions.size(); i++) {
-					if (gradeOptions[i].getAttribute("class").contains("Mui-checked")) {
+					if (gradeOptions[i].getAttribute("class").contains("icon-tick-mark-filled")) {
 						// Map index → grade label
 						switch (i) {
 							case 0: selectedGrade = "0"; break

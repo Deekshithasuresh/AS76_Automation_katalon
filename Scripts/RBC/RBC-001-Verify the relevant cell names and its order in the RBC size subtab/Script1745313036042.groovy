@@ -12,7 +12,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import loginPackage.Login as Login
 import zoom.ZoomInOut as ZoomInOut
 
-Login lg = new Login()
 
 ZoomInOut zoom = new ZoomInOut()
 

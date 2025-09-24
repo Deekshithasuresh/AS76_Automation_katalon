@@ -59,7 +59,7 @@ WebDriver driver = DriverFactory.getWebDriver()
 		//WebUI.refresh()
 		WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_WBC'))
 		
-		CustomKeywords.'generic.Reclassification.classifyFromCellToCellMultiple'("Lymphocytes", "NRBC", reclassify)
+		CustomKeywords.'generic.Reclassification.classifyFromCellToCellMultiple'("Neutrophils", "NRBC", reclassify)
 		
 	}
 	

@@ -24,7 +24,7 @@ int beforeCount = beforeRows.size()
 
 WebUI.comment("📊 Reports before filter: ${beforeCount}")
 
-Boolean result = CustomKeywords.'generic.FilterFunctions.applyAndVerifyDateFilter'("29-08-2025","29-08-2025")
+Boolean result = CustomKeywords.'generic.FilterFunctions.applyAndVerifyDateFilter'("23-09-2025","23-09-2025")
 
 assertTrue(result)
 

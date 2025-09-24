@@ -724,7 +724,11 @@ public class Reclassification {
 					// Click on fromCell row
 					WebElement cellRow = driver.findElement(By.xpath("//table/tbody/tr/td[1][text()='" + fromCellName + "']"))
 
-					cellRow.click()
+					//cellRow.click()		
+					
+					JavascriptExecutor js = (JavascriptExecutor) DriverFactory.getWebDriver()
+					js.executeScript("arguments[0].click();", cellRow)
+					
 					WebUI.comment("Clicked on cell row: ${fromCellName}")
 
 					// Right-click on the image

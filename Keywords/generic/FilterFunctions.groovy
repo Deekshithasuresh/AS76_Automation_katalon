@@ -121,6 +121,11 @@ class FilterFunctions {
 	}
 
 	private LocalDate parseDate(String input) {
+		if (input == null || input.trim().isEmpty()) return null
+		
+		// Remove commas, time portions, and extra spaces
+		String cleaned = input.replaceAll("[,]", "").replaceAll("\\d{1,2}:\\d{2}.*", "").trim()
+	
 		List<String> formats = [
 			'd-M-yyyy',
 			'dd-MM-yyyy',
@@ -128,15 +133,17 @@ class FilterFunctions {
 			'dd-M-yyyy',
 			'dd-MMM-yyyy'
 		]
+	
 		for (String fmt : formats) {
 			try {
-				return LocalDate.parse(input, DateTimeFormatter.ofPattern(fmt))
-			} catch (DateTimeParseException e) {
-				// Try next format
+				return LocalDate.parse(cleaned, DateTimeFormatter.ofPattern(fmt, Locale.ENGLISH))
+			} catch (DateTimeParseException ignored) {
+				// Try next
 			}
 		}
 		return null
 	}
+	
 
 	@Keyword
 	def boolean assignedToFilter(List<String> reviewers) {

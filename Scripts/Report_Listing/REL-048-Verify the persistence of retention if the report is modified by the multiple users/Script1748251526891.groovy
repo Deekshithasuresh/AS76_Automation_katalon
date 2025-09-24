@@ -319,7 +319,7 @@ WebUI.delay(5)
 	WebUI.click(findTestObject('Object Repository/Report_Listing/Login_page/button_Sign In'))
 	WebUI.waitForPageLoad(10)
 	
-	String rowXpath="//tr/td[text()='${slideID}']/following-sibling::td/div[text()='${scanDateBeforeApproval}']/parent::td/parent::tr"
+	String rowXpath="(//tr/td[text()='${slideID}']/following-sibling::td/div[text()='${scanDateBeforeApproval}']/parent::td/parent::tr)[1]"
 	
 	TestObject sameOldREportRow = new TestObject()
 	sameOldREportRow.addProperty("xpath", ConditionType.EQUALS, rowXpath)

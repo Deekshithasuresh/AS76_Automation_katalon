@@ -728,6 +728,16 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/IAM Model/Page_Admin Console/h2_Create User_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Configure Time Zone Reporting/Page_Admin Console/span_(UTC0100) AfricaKinshasa",
+      "brokenLocator": "//div[@id\u003d\u0027root\u0027]/div/div/div[2]/span",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[2]/span",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Configure Time Zone Reporting/Page_Admin Console/span_(UTC0100) AfricaKinshasa_position.png"
     }
   ]
 }

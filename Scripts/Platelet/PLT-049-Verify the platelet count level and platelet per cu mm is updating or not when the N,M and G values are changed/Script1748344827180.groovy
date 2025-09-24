@@ -22,6 +22,30 @@ CustomKeywords.'generic.custumFunctions.assignOrReassignOnTabs'('manju', true)
 WebUI.verifyElementText(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'), 'Platelets')
 WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/span_Platelets'))
 
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Platelet/Page_PBS/i edit icon for multiplication factor'), 0)
+
+WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/i edit icon for multiplication factor'))
+
+
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Platelet/Page_PBS/Multiplication-input-box'), 0)
+
+//set the input box to empty by this line.
+WebUI.setText(findTestObject('Object Repository/Platelet/Page_PBS/Multiplication-input-box'), '')
+
+// Clear the input box by setting the text to an empty string
+WebUI.setText(findTestObject('Object Repository/Platelet/Page_PBS/Multiplication-input-box'), '')
+
+// Set the value to 5000 after clearing
+WebUI.setText(findTestObject('Object Repository/Platelet/Page_PBS/Multiplication-input-box'), '5000')
+
+// Click the save button
+WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/button_Save'))
+
+// Wait for the changes to be saved
+WebUI.delay(2)
+
 WebUI.verifyElementPresent(findTestObject('Object Repository/Platelet/Page_PBS/img_FOV 10_non-clickable'), 0)
 WebUI.verifyElementPresent(findTestObject('Object Repository/Platelet/Page_PBS/img_FOV1 10_clickable'), 0)
 
@@ -220,13 +244,13 @@ if (actualText == expectedText) {
 }
 
 // ✅ Step 2: Verify text "significant decreased" is present on the page
-//WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/span_Calculated level'))
-//
-//String keywordText = "Increased"
-//boolean isTextPresent = WebUI.verifyTextPresent(keywordText, false, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//if (isTextPresent) {
-//    println("✅ Text presence check passed: '${keywordText}' is present on the page.")
-//} else {
-//    println("❌ Text presence check failed: '${keywordText}' is NOT present on the page.")
-//}
+WebUI.click(findTestObject('Object Repository/Platelet/Page_PBS/span_Calculated level'))
+
+String keywordText = "Increased"
+boolean isTextPresent = WebUI.verifyTextPresent(keywordText, false, FailureHandling.CONTINUE_ON_FAILURE)
+
+if (isTextPresent) {
+    println("✅ Text presence check passed: '${keywordText}' is present on the page.")
+} else {
+    println("❌ Text presence check failed: '${keywordText}' is NOT present on the page.")
+}
