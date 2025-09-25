@@ -78,10 +78,10 @@ actions.dragAndDrop(sourceElement, targetElement).build().perform()
 
 //WebUI.verifyElementText(findTestObject('Object Repository/retain_patchs/neutrophil_count'),94)
 String	NeutrophilCountText = WebUI.getText(findTestObject('Object Repository/retain_patchs/neutrophil_count'))
-println("Neutrophil Count:" + NeutrophilCountText)
+println("Neutrophil Count is:" + NeutrophilCountText)
 
 String monocyteCountText = WebUI.getText(findTestObject('Object Repository/retain_patchs/monocyte_count'))
-println("Monocyte Count: " + monocyteCountText)
+println("Monocyte Count is : " + monocyteCountText)
 
 
 
