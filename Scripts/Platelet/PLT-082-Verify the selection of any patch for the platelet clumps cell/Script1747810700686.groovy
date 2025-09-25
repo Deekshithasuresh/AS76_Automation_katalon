@@ -31,8 +31,7 @@ WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Morpholo
 WebUI.delay(2)
 
 // Get cell rows
-List<WebElement> cell_rows = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Platelets/Page_PBS/morphology _row'),
-	10)
+List<WebElement> cell_rows = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Platelets/Page_PBS/morphology _row'),10)
 
 // Helper to check if a row is clickable
 int clumpCount = 0
@@ -82,19 +81,23 @@ if (clumpCount == 0 || clumpRow == null) {
 	WebUI.delay(1) // Case 2: Only clumps — already selected by default
 	
 	
-	for (int i = 0; i < all_patches.size(); i++) {
-		// Relocate element inside the loop
-		all_patches = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Platelets/Page_PBS/patch_container'), 30)
+	// Get all patches once
+	all_patches = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Platelets/Page_PBS/patch_container'), 30)
 	
-		WebElement patch = all_patches.get(i);
+	// Run loop up to 5 times or available patches (whichever is smaller)
+	int limit = Math.min(5, all_patches.size())
+	
+	for (int i = 0; i < limit; i++) {
+		WebElement patch = all_patches.get(i)
 		
 		if (patch.isDisplayed() && patch.isEnabled()) {
-			patch.click(); 
-			println("Patch is selected")
-		}else {
-			println("Patch is not clickable")
+			patch.click()
+			WebUI.delay(1)
+			println("Patch " + (i+1) + " is selected")
+		} else {
+			println("Patch " + (i+1) + " is not clickable")
 		}
-		
 	}
+	
 	
 }

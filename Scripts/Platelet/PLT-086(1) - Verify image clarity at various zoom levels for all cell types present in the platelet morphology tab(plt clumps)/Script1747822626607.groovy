@@ -79,7 +79,7 @@ if (clumpCount == 0 || clumpRow == null) {
 	WebUI.click(findTestObject('Platelets/Page_PBS/split_view_img'))
 	
 	WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_zoom-out'))
-	WebUI.delay(10)
+	WebUI.delay(15)
 	
 	blurChecker checker = new blurChecker()
 	// Option 1: Default canvas selector

@@ -76,6 +76,7 @@ if (largePlateletCount == 0 || largePlateletRow == null) {
 }else {
 for (WebElement patch : all_patches) {
 	if (patch.isDisplayed() && patch.isEnabled()) {
+		WebUI.delay(1)
 		patch.click()
 		println("Patch is selected")
 		break

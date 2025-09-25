@@ -279,7 +279,7 @@ public class Platelet_P {
 			}
 		}
 	}
-	
+
 	public void selectRadioOption(String labelText) {
 		WebDriver driver = DriverFactory.getWebDriver()
 		WebElement radio = driver.findElement(By.xpath("//span[text()='" + labelText + "']/preceding::input[1]"));
@@ -287,65 +287,62 @@ public class Platelet_P {
 			radio.click();
 		}
 	}
-	
+
 	public boolean isOptionDisabled(String labelText) {
 		WebDriver driver = DriverFactory.getWebDriver()
 		WebElement radio = driver.findElement(By.xpath("//span[text()='" + labelText + "']/preceding::input[1]"));
 		return !radio.isEnabled();
 	}
-public boolean isCalculatedLevelTextVisible() {
-    boolean isVisible = false;
-    try {
-        WebDriver driver = DriverFactory.getWebDriver();
-        By levelTextLocator = By.xpath("(//div[contains(@class,'plt-lvl-desc')]/following-sibling::div//span)[2]");
+	public boolean isCalculatedLevelTextVisible() {
+		boolean isVisible = false;
+		try {
+			WebDriver driver = DriverFactory.getWebDriver();
+			By levelTextLocator = By.xpath("(//div[contains(@class,'plt-lvl-desc')]/following-sibling::div//span)[2]");
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        WebElement levelTextElement = wait.until(ExpectedConditions.presenceOfElementLocated(levelTextLocator));
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			WebElement levelTextElement = wait.until(ExpectedConditions.presenceOfElementLocated(levelTextLocator));
 
-        isVisible = levelTextElement.isDisplayed();
-        System.out.println("Calculated level text visibility: " + isVisible);
-        return isVisible;
-
-    } catch (TimeoutException | NoSuchElementException e) {
-        System.out.println("Calculated level text not found or not visible. Exception: " + e.getMessage());
-        return false;  // Safely return false if element isn't found or visible
-    }
-}
-public boolean isManualLevelDropDownVisible() {
-	boolean isVisible
-	try {
-		WebDriver driver = DriverFactory.getWebDriver()
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement levelTextElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@role='combobox' and contains(@class,'MuiSelect-select')]")));
-
-		isVisible = levelTextElement.isDisplayed();
-		System.out.println("Manual level drop down visibility: " + isVisible);
-		
-	} catch (TimeoutException | NoSuchElementException e) {
-		System.out.println("Calculated level text not found.");
-		 isVisible=false
-		 return isVisible
+			isVisible = levelTextElement.isDisplayed();
+			System.out.println("Calculated level text visibility: " + isVisible);
+			return isVisible;
+		} catch (TimeoutException | NoSuchElementException e) {
+			System.out.println("Calculated level text not found or not visible. Exception: " + e.getMessage());
+			return false;  // Safely return false if element isn't found or visible
+		}
 	}
-}
+	public boolean isManualLevelDropDownVisible() {
+		boolean isVisible
+		try {
+			WebDriver driver = DriverFactory.getWebDriver()
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebElement levelTextElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@role='combobox' and contains(@class,'MuiSelect-select')]")));
+
+			isVisible = levelTextElement.isDisplayed();
+			System.out.println("Manual level drop down visibility: " + isVisible);
+		} catch (TimeoutException | NoSuchElementException e) {
+			System.out.println("Calculated level text not found.");
+			isVisible=false
+			return isVisible
+		}
+	}
 
 
-public ArrayList<String> checkTheCurrentDetectedNotDetectedStatus() {
-	WebDriver driver = DriverFactory.getWebDriver()
-	Actions act = new Actions(driver)
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5))
+	public ArrayList<String> checkTheCurrentDetectedNotDetectedStatus() {
+		WebDriver driver = DriverFactory.getWebDriver()
+		Actions act = new Actions(driver)
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5))
 
-	List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-			findTestObject('Object Repository/Platelet_Objects/Page_PBS/Morphology_Cell_rows'), 10)
-ArrayList<String> status= new ArrayList<>()
-	for (WebElement cellRow : cellRows) {
-		String cellName = cellRow.findElement(By.xpath(".//div[1]")).getText()
-		WebElement count_ele = cellRow.findElement(By.xpath(".//div[2]"))
-		WebElement dropDown = cellRow.findElement(By.xpath(".//div[3]"))
-		String currentStatus = dropDown.getText().trim()
-		status.add(currentStatus)
+		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
+				findTestObject('Object Repository/Platelet_Objects/Page_PBS/Morphology_Cell_rows'), 10)
+		ArrayList<String> status= new ArrayList<>()
+		for (WebElement cellRow : cellRows) {
+			String cellName = cellRow.findElement(By.xpath(".//div[1]")).getText()
+			WebElement count_ele = cellRow.findElement(By.xpath(".//div[2]"))
+			WebElement dropDown = cellRow.findElement(By.xpath(".//div[3]"))
+			String currentStatus = dropDown.getText().trim()
+			status.add(currentStatus)
 		}
 		println(status)
 		return status
 	}
-
 }
