@@ -22,7 +22,7 @@ WebUI.openBrowser('')
 	
 			WebUI.maximizeWindow()
 	
-			WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+			WebUI.navigateToUrl('https://admin.as76.local/login')
 	
 			WebUI.waitForElementPresent(findTestObject('PBS_Settings_Objects/Page_Admin Console/Sign_in_header'), 20)
 	

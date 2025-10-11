@@ -14,6 +14,11 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WindowType
+import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
 import internal.GlobalVariable
 
 
@@ -37,7 +42,7 @@ String password = "Sigtuple@123"
 // Step 1: Open Admin Console and Login
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+WebUI.navigateToUrl('https://admin.as76.local/login')
 WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Username_loginId'), 'manju')
 WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Sign in'))
@@ -67,7 +72,22 @@ GlobalVariable.generatedPassword = password
 GlobalVariable.generatedEmail = randomEmail
 
 // Step 4: Open PBS portal in new tab and login
-WebUI.executeJavaScript("window.open('https://as76-pbs.sigtuple.com/login','_blank');", null)
+
+
+// Wait before switching context
+//WebUI.delay(15)
+
+// Get WebDriver instance
+WebDriver driver = DriverFactory.getWebDriver()
+
+// Open new tab (no JavaScript timeout issue)
+driver.switchTo().newWindow(WindowType.TAB)
+WebUI.delay(15)
+
+// Navigate directly
+driver.get("https://pbsreview.as76.local/login")
+
+// Switch control to new tab
 WebUI.switchToWindowIndex(1)
 
 WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_username_loginId'), randomUsername)

@@ -12,7 +12,7 @@ import java.time.Duration
 
 // Open browser and login
 WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+WebUI.navigateToUrl('https://admin.as76.local/login')
 WebUI.setText(findTestObject('Object Repository/View list of users/Page_Admin Console/input_Username_loginId'), 'adminuserr')
 WebUI.setEncryptedText(findTestObject('Object Repository/View list of users/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Object Repository/View list of users/Page_Admin Console/button_Sign in'))

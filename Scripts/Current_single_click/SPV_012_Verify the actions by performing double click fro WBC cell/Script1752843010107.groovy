@@ -27,7 +27,7 @@ import org.openqa.selenium.interactions.Actions as Actions
 
 // Login to the application
 WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 WebUI.setText(findTestObject('Object Repository/retain_patchs/input_username_loginId'), 'deekshithaS')
 WebUI.setEncryptedText(findTestObject('Object Repository/retain_patchs/input_password_loginPassword'), 'ghLSEQG5l8dyyQdYVN+LYg==')
 WebUI.sendKeys(findTestObject('Object Repository/retain_patchs/input_password_loginPassword'), Keys.chord(Keys.ENTER))

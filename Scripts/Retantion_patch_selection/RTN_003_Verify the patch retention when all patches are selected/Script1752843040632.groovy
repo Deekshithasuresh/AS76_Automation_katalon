@@ -155,7 +155,7 @@ try {
 	
 	// SECTION 2: LOGIN
 	WebUI.comment("[STEP 2] Navigating to login page")
-	WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+	WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 	WebUI.comment("[INFO] Page title: " + WebUI.getWindowTitle())
 	
 	WebUI.comment("[STEP 3] Logging in with test credentials")

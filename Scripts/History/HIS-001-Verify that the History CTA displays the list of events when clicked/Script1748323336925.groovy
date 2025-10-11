@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement
 // ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 
 // enter credentials
 WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')

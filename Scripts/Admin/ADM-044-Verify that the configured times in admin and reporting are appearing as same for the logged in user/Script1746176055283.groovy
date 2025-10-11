@@ -23,7 +23,7 @@ import org.openqa.selenium.By as By
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+WebUI.navigateToUrl('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Session management reporting/Page_Admin Console/input_Username_loginId'), 
     'jyothi')
@@ -81,7 +81,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Session management rep
 
 //WebUI.verifyElementPresent(findTestObject('Object Repository/Session management reporting/Page_Admin Console/span_(UTC0000) AfricaBamako'), 
 // 0)
-WebUI.newTab('https://as76-pbs.sigtuple.com/login')
+WebUI.newTab('https://pbsreview.as76.local/login')
 
 WebUI.delay(3)
 
@@ -106,7 +106,7 @@ WebUI.click(findTestObject('Object Repository/Session management reporting/Page_
 
 WebUI.click(findTestObject('Object Repository/Session management reporting/Page_PBS/li_Logout'))
 
-WebUI.newTab('https://as76-admin.sigtuple.com/login')
+WebUI.newTab('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Session management reporting/Page_Admin Console/input_Username_loginId'), 
     'jyothi')
@@ -145,7 +145,7 @@ WebUI.click(findTestObject('Object Repository/Session management reporting/Page_
 WebUI.verifyElementText(findTestObject('Object Repository/Session management reporting/Page_Admin Console/h4_Sign in'), 
     'Sign in')
 
-WebUI.newTab('https://as76-pbs.sigtuple.com/login')
+WebUI.newTab('https://pbsreview.as76.local/login')
 
 WebUI.delay(3)
 

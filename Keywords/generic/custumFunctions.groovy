@@ -24,7 +24,7 @@ public class custumFunctions {
 	@Keyword
 	def login() {
 		WebUI.openBrowser('')
-		WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+		WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 		WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_username_loginId'), 'manju')
 		WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Login_page/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 		WebUI.click(findTestObject('Object Repository/Report_Listing/Login_page/button_Sign In'))
@@ -118,47 +118,71 @@ public class custumFunctions {
 		String before = WebUI.getText(statusCell0).trim()
 		WebUI.comment("📌 Status before assign: '${before}'")
 
-
-		// 6) Get Slide ID to re-locate the same row after assignment
+		// 3) Get Slide ID for locating same row later
 		TestObject slideCell = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 				initialRowXpath + "/td[3]")
 		String slideId = WebUI.getText(slideCell).trim()
+		WebUI.comment("📌 Slide ID: ${slideId}")
 
-		// 3) Open Assigned-To dropdown and select reviewers
+		// 4) Get current reviewer from table
+		TestObject currentReviewerCell = new TestObject().addProperty("xpath", ConditionType.EQUALS,
+				"${initialRowXpath}//following-sibling::td//input[contains(@id,'assigned_to')]")
+		//String currentReviewer = WebUI.getText(currentReviewerCell).trim()
+		String currentReviewer =WebUI.getAttribute(currentReviewerCell,"value").trim()
+		WebUI.comment("📌 Current reviewer: ${currentReviewer}")
+		WebUI.comment("📌 Target reviewer: ${reviewerName}")
+
+		// 5) Skip reassign if same reviewer
+		if (currentReviewer.equalsIgnoreCase(reviewerName)) {
+			WebUI.comment("⚠️ Current and new reviewer are the same ('${reviewerName}'). Skipping reassign.")
+			return slideId
+		}
+
+		// 6) Open Assigned-To dropdown and select reviewer
 		TestObject dropdown = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 				initialRowXpath + "//following-sibling::td//input[@id='assigned_to']")
 		WebUI.scrollToElement(dropdown, 5)
 		WebUI.click(dropdown)
-		WebUI.delay(2)
+		WebUI.delay(1)
 
-		// 4) Choose reviewer from dropdown
 		TestObject reviewerOption = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 				"//ul[@role='listbox']//li[normalize-space() = '${reviewerName}']")
 		WebUI.click(reviewerOption)
 
-		// 5) Handle reassign popup ONLY if status is "Under Review"
-		if (initialStatus.equals("Under review")) {
-			TestObject popup = new TestObject().addProperty('xpath', ConditionType.EQUALS,
+		// 7) Handle reassign popup ONLY if status is "Under Review"
+		if (initialStatus.equalsIgnoreCase("Under review")) {
+			TestObject popupHeader = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 					"//h2[contains(text(),'Are you sure you want to re-assign')]")
-			if (WebUI.verifyElementPresent(popup, 3, FailureHandling.OPTIONAL)) {
+
+			if (WebUI.verifyElementPresent(popupHeader, 3, FailureHandling.OPTIONAL)) {
+
+				// ✅ Get reviewers dynamically from popup
+				String oldReviewer = WebUI.getText(new TestObject().addProperty('xpath', ConditionType.EQUALS,
+						"//p[@id='alert-dialog-slide-description']/span[2]"))
+
+				String popupText = WebUI.getText(new TestObject().addProperty('id', ConditionType.EQUALS,
+						"alert-dialog-slide-description"))
+				WebUI.comment("📌 Popup message: ${popupText}")
+
+				String expectedText = "Slide Id " + slideId + " will be re-assigned from " + oldReviewer + " to " + reviewerName
+
+				WebUI.verifyMatch(popupText.trim(), expectedText.trim(), false)
+
 				TestObject reassignButton = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 						"//button[normalize-space()='Re-assign']")
 				WebUI.click(reassignButton)
-				WebUI.waitForElementNotPresent(popup, 10)
+				WebUI.waitForElementNotPresent(popupHeader, 10)
 			} else {
 				WebUI.comment("ℹ️ No reassign popup appeared, continuing...")
 			}
 		}
 
-
-
-
+		// 8) Verify status change after assignment
 		String newRowXpath = "//tr[.//td[normalize-space() = '${slideId}']]"
 		TestObject newStatusCell = new TestObject().addProperty('xpath', ConditionType.EQUALS,
 				newRowXpath + "//following-sibling::td[2]//span")
 		WebUI.waitForElementVisible(newStatusCell, 10)
 
-		// 7) Capture the new Status text and validate it correctly
 		String after = WebUI.getText(newStatusCell).trim()
 		WebUI.comment("📌 Status after assign: '${after}'")
 
@@ -172,7 +196,6 @@ public class custumFunctions {
 			} else {
 				WebUI.comment("⚠️ Unexpected initialStatus passed: '${initialStatus}'. No validation applied.")
 			}
-
 			WebUI.comment("✅ Status validated successfully: '${before}' ➡ '${after}'")
 		} catch (AssertionError e) {
 			WebUI.takeScreenshot()
@@ -182,6 +205,7 @@ public class custumFunctions {
 
 		return slideId
 	}
+
 
 	/*@Keyword
 	 def assignReviewerToReport(String initialStatus, String reviewerName) {
@@ -289,6 +313,9 @@ public class custumFunctions {
 		WebUI.comment('Cancel button functionality verified successfully.')
 	}
 
+
+
+
 	@Keyword
 	def assignOrReassignOnTabs(String reviewerName, boolean confirmReassign = true) {
 		// 1) Wait for the “Assigned To” field
@@ -296,9 +323,15 @@ public class custumFunctions {
 		assignedField.addProperty('xpath', ConditionType.EQUALS, "//input[@id='assigned_to']")
 		WebUI.waitForElementVisible(assignedField, 10)
 
+		TestObject slideid = new TestObject('dynamicslideid')
+		slideid.addProperty('xpath', ConditionType.EQUALS, "//div[contains(@class,'slide-id')]/span")
+
+		String SlideIdName=WebUI.getText(slideid).trim()
+
+
 		// 2) Read current value
 		String current = WebUI.getAttribute(assignedField, 'value').trim()
-		WebUI.comment("Current reviewer: '${current}'")
+		WebUI.comment("📌 Current reviewer: '${current}'")
 
 		// 3) Open dropdown
 		WebUI.scrollToElement(assignedField, 5)
@@ -310,13 +343,12 @@ public class custumFunctions {
 		allOpts.addProperty('xpath', ConditionType.EQUALS, "//ul[@role='listbox']//li")
 		List<WebElement> els = WebUiCommonHelper.findWebElements(allOpts, 5)
 		List<String> names = els.collect { it.getText().trim() }
-		WebUI.comment("Available reviewers: ${names}")
-
+		WebUI.comment("📌 Available reviewers: ${names}")
 
 		// 5) Proceed only if current != reviewerName
-		if (current != reviewerName) {
+		if (!current.equalsIgnoreCase(reviewerName)) {
 			if (!names.contains(reviewerName)) {
-				WebUI.comment("Reviewer '${reviewerName}' not found in dropdown! Skipping assignment.")
+				WebUI.comment("❌ Reviewer '${reviewerName}' not found in dropdown! Skipping assignment.")
 				return
 			}
 
@@ -328,29 +360,52 @@ public class custumFunctions {
 
 			// 6) Handle re-assign popup
 			try {
-				def popup = findTestObject('Object Repository/Report_Listing/Page_PBS/h2_Are you sure you want to re-assign this slide')
-				def reassignBtn = findTestObject('Object Repository/Report_Listing/Page_PBS/button_Re-assign')
-				def cancelBtn   = findTestObject('Object Repository/Report_Listing/Page_PBS/button_Cancel')
+				TestObject popupHeader = new TestObject('popupHeader')
+				popupHeader.addProperty('xpath', ConditionType.EQUALS,
+						"//h2[contains(text(),'Are you sure you want to re-assign this slide')]")
 
-				if (WebUI.verifyElementPresent(popup, 3, FailureHandling.OPTIONAL)) {
-					WebUI.comment("Re-assign popup appeared.")
+				TestObject popupBody = new TestObject('popupBody')
+				popupBody.addProperty('id', ConditionType.EQUALS, "alert-dialog-slide-description")
+
+				TestObject reassignBtn = new TestObject('reassignBtn')
+				reassignBtn.addProperty('xpath', ConditionType.EQUALS,
+						"//button[normalize-space()='Re-assign']")
+
+				TestObject cancelBtn = new TestObject('cancelBtn')
+				cancelBtn.addProperty('xpath', ConditionType.EQUALS,
+						"//button[normalize-space()='Cancel']")
+
+				if (WebUI.verifyElementPresent(popupHeader, 3, FailureHandling.OPTIONAL)) {
+					WebUI.comment("📌 Re-assign popup appeared.")
+
+					// ✅ Capture popup text
+					String popupText = WebUI.getText(popupBody).trim()
+					WebUI.comment("📌 Popup message: '${popupText}'")
+
+					// ✅ Build expected text dynamically
+					String expectedText = "Slide Id " + SlideIdName +
+							" will be re-assigned from " + current + " to " + reviewerName
+
+					// ✅ Verify match
+					//WebUI.verifyMatch(popupText, expectedText, false)
+
 					if (confirmReassign) {
-						WebUI.comment("Clicking Re-assign...")
+						WebUI.comment("👉 Clicking Re-assign...")
 						WebUI.click(reassignBtn)
-						WebUI.waitForElementNotPresent(popup, 10)
+						WebUI.waitForElementNotPresent(popupHeader, 10)
 					} else {
-						WebUI.comment("Clicking Cancel...")
+						WebUI.comment("👉 Clicking Cancel...")
 						WebUI.click(cancelBtn)
-						WebUI.waitForElementNotPresent(popup, 10)
+						WebUI.waitForElementNotPresent(popupHeader, 10)
 					}
 				} else {
-					WebUI.comment("No Re-assign popup appeared.")
+					WebUI.comment("ℹ️ No Re-assign popup appeared.")
 				}
 			} catch (Exception e) {
-				WebUI.comment("Popup handling error: ${e.message}")
+				WebUI.comment("⚠️ Popup handling error: ${e.message}")
 			}
 		} else {
-			WebUI.comment("Already assigned to '${reviewerName}', no action. Skipping reassignment.")
+			WebUI.comment("⚠️ Already assigned to '${reviewerName}', skipping reassignment.")
 			return
 		}
 
@@ -358,13 +413,16 @@ public class custumFunctions {
 		String after = WebUI.getAttribute(assignedField, 'value').trim()
 
 		if (confirmReassign) {
-			assert after == reviewerName : "Expected assignment to '${reviewerName}', but found '${after}'"
-			WebUI.comment("Assignment confirmed: '${after}'")
+			assert after.equalsIgnoreCase(reviewerName) :
+			"❌ Expected assignment to '${reviewerName}', but found '${after}'"
+			WebUI.comment("✅ Assignment confirmed: '${after}'")
 		} else {
-			assert after == current : "Expected assignment to stay '${current}' after Cancel, but found '${after}'"
-			WebUI.comment("Assignment unchanged after Cancel as expected: '${after}'")
+			assert after.equalsIgnoreCase(current) :
+			"❌ Expected assignment to stay '${current}' after Cancel, but found '${after}'"
+			WebUI.comment("✅ Assignment unchanged after Cancel as expected: '${after}'")
 		}
 	}
+
 
 
 	@Keyword

@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Session management reporting/Page_PBS/input_username_loginId'), 'jyothi')
 
@@ -55,7 +55,7 @@ WebUI.verifyElementPresent(findTestObject('Session management reporting/Page_PBS
     30)
 
 WebUI.verifyElementAttributeValue(findTestObject('Session management reporting/Page_PBS/Round_Criteria_Notmet_for_Is alphanumeric'), 
-    'src', 'https://as76-pbs.sigtuple.com/assets/icons/selection-error.svg', 5)
+    'src', 'https://pbsreview.as76.local/assets/icons/selection-error.svg', 5)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Session management reporting/Page_PBS/div_Contains at-least 8 characters'), 
     30)
@@ -64,7 +64,7 @@ WebUI.verifyElementPresent(findTestObject('Session management reporting/Page_PBS
     30)
 
 WebUI.verifyElementAttributeValue(findTestObject('Session management reporting/Page_PBS/Round_Criteria_Notmet_for_Contains at-least 8 characters'), 
-    'src', 'https://as76-pbs.sigtuple.com/assets/icons/selection-error.svg', 5)
+    'src', 'https://pbsreview.as76.local/assets/icons/selection-error.svg', 5)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Session management reporting/Page_PBS/div_Has at-least 1 special character'), 
     30)
@@ -73,5 +73,5 @@ WebUI.verifyElementPresent(findTestObject('Session management reporting/Page_PBS
     30)
 
 WebUI.verifyElementAttributeValue(findTestObject('Session management reporting/Page_PBS/Round_Criteria_Notmet_for_Has at-least 1 special character'), 
-    'src', 'https://as76-pbs.sigtuple.com/assets/icons/selection-error.svg', 5)
+    'src', 'https://pbsreview.as76.local/assets/icons/selection-error.svg', 5)
 

@@ -13,7 +13,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 // ========== STEP 1: Login to PBS Portal ==========
 WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 WebUI.setText(findTestObject('Object Repository/Platelets/Page_PBS/input_username_loginId'), 'jyothi')
 WebUI.setText(findTestObject('Object Repository/Platelets/Page_PBS/input_password_loginPassword'), 'jyothi@1995')
 WebUI.click(findTestObject('Object Repository/Platelets/Page_PBS/button_Sign In'))
@@ -69,7 +69,7 @@ println "🔖 Total reports bookmarked: ${bookmarkCount}"
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/img_PBS_icon-img'))
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/li_Logout'))
 
-WebUI.executeJavaScript("window.open('https://as76-admin.sigtuple.com/login','_blank');", null)
+WebUI.executeJavaScript("window.open('https://admin.as76.local/login','_blank');", null)
 WebUI.switchToWindowIndex(1)
 WebUI.setText(findTestObject('Object Repository/Platelets/Page_PBS/input_username_loginId'), 'jyothi')
 WebUI.setText(findTestObject('Object Repository/Platelets/Page_PBS/input_password_loginPassword'), 'jyothi@1995')

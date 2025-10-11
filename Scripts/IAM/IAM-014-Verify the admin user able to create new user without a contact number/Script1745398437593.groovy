@@ -26,7 +26,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+WebUI.navigateToUrl('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Username_loginId'), 'adminuserr')
 
@@ -165,7 +165,11 @@ WebUI.click(findTestObject('Manage_user/Page_Admin Console/img'))
 
 WebUI.click(findTestObject('Manage_user/Page_Admin Console/li_Logout'))
 
-WebUI.newTab('https://as76-admin.sigtuple.com/login')
+WebUI.delay(3)
+
+WebUI.newTab('https://admin.as76.local/login')
+WebUI.refresh()
+
 
 WebUI.setText(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Username_loginId'), 'operatoruser')
 

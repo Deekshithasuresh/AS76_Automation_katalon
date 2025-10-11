@@ -14,7 +14,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+WebUI.navigateToUrl('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Username_loginId'), 'adminuserr')
 WebUI.setEncryptedText(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')

@@ -13,7 +13,7 @@ import java.util.Arrays
 
 // 0) Login to Reporting
 CustomKeywords.'generic.custumFunctions.login'()
-WebUI.waitForPageLoad(10)
+WebUI.waitForPageLoad(30)
 
 // 1) Click first “Unassigned” report row
 String rowXpath = '(//tr//td//input[@placeholder="Select reviewer" and @value=""]/ancestor::td)[1]/parent::tr'
@@ -35,7 +35,7 @@ WebUI.comment("Reporting reviewers: ${reportingReviewers}")
 //WebUI.click(dropdown)
 
 // 4) Open Admin page in a new tab
-String adminUrl = 'https://as76-admin.sigtuple.com/login'
+String adminUrl = 'https://admin.as76.local/login'
 WebUI.executeJavaScript('window.open(arguments[0], "_blank")', Arrays.asList(adminUrl))
 
 // 5) Grab all window handles, switch to Admin tab

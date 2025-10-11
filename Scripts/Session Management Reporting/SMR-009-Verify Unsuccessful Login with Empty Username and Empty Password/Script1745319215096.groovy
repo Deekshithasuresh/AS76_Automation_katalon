@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 
 WebUI.click(findTestObject('Session management reporting/Page_PBS/button_Sign In_for_PBS login'))
 

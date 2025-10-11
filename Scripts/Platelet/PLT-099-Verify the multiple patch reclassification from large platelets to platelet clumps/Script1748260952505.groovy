@@ -19,7 +19,7 @@ custumFunctionsvj cus = new custumFunctionsvj()
 
 // Open browser and navigate to login page
 WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 WebDriver driver = DriverFactory.getWebDriver()
 
 // Login step

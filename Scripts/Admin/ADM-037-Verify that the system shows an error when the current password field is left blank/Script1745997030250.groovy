@@ -23,7 +23,7 @@ import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+WebUI.navigateToUrl('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Session management reporting/Page_Admin Console/input_Username_loginId'), 
     'jyothi')

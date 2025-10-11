@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/input_username_loginId'), 'jyothi')
 
@@ -72,7 +72,7 @@ WebUI.click(findTestObject('Object Repository/Configure Time Zone Reporting/Page
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/h4_Sign In'), 0)
 
-WebUI.newTab('https://as76-admin.sigtuple.com/login')
+WebUI.newTab('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Configure Time Zone Reporting/Page_Admin Console/input_Username_loginId'), 
     'jyothi')
@@ -110,7 +110,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Configure Time Zone
     30)
 
 //
-WebUI.newTab('https://as76-pbs.sigtuple.com/login')
+WebUI.newTab('https://pbsreview.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/input_username_loginId'), 'jyothi')
 
@@ -145,7 +145,7 @@ WebUI.click(findTestObject('Object Repository/Configure Time Zone Reporting/Page
 WebUI.click(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/li_Logout'))
 
 //
-WebUI.newTab('https://as76-admin.sigtuple.com/login')
+WebUI.newTab('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Configure Time Zone Reporting/Page_Admin Console/input_Username_loginId'), 
     'jyothi')

@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/pbs/reportlist')
+WebUI.navigateToUrl('https://pbsreview.as76.local/pbs/reportlist')
 
 WebUI.setText(findTestObject('Object Repository/Page_PBS/input_username_loginId'), 'testoperator')
 

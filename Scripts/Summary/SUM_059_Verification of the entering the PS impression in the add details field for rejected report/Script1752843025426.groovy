@@ -31,7 +31,7 @@ import java.time.Duration
 
 // Open the browser and navigate to the login page
 WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 WebUI.maximizeWindow()
 
 // Login process

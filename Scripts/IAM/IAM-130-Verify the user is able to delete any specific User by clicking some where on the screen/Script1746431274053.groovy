@@ -38,7 +38,7 @@ import org.openqa.selenium.interactions.Actions
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+WebUI.navigateToUrl('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Username_loginId'), 'adminuserr')
 

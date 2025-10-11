@@ -25,7 +25,7 @@ String password = 'Sigtuple@123'
 // Step 1: Open Admin Console and Login
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+WebUI.navigateToUrl('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Username_loginId'), 'manju')
 
@@ -73,7 +73,7 @@ GlobalVariable.generatedPassword = password
 GlobalVariable.generatedEmail = randomEmail
 
 // Step 4: Open PBS portal in new tab and login
-WebUI.executeJavaScript('window.open(\'https://as76-pbs.sigtuple.com/login\',\'_blank\');', null)
+WebUI.executeJavaScript('window.open(\'https://pbsreview.as76.local/login\',\'_blank\');', null)
 
 WebUI.switchToWindowIndex(1)
 

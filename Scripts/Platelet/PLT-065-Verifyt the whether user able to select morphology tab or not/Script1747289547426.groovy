@@ -24,7 +24,7 @@ import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Platelets/Page_PBS/input_username_loginId'), 'jyothi')
 
