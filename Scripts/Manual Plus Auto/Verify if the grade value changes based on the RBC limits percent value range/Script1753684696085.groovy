@@ -95,7 +95,7 @@ WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/li_Logout (1)'))
 
 // Step 2: Login to PBS Portal as Reviewer
-WebUI.executeJavaScript("window.open('https://as76-pbs.sigtuple.com/login','_blank');", null)
+WebUI.executeJavaScript("window.open('https://pbsreview.as76.local/login','_blank');", null)
 WebUI.switchToWindowIndex(1)
 WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_username_loginId'), "manju")
 WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_password_loginPassword'), "Sigtuple@123")

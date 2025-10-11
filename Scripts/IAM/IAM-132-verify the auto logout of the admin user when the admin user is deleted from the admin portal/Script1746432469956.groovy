@@ -64,7 +64,7 @@ import org.openqa.selenium.interactions.Actions
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+WebUI.navigateToUrl('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Username_loginId'), 'adminuserr')
 
@@ -272,7 +272,7 @@ WebUI.click(findTestObject('Manage_user/Page_Admin Console/img'))
 
 WebUI.click(findTestObject('Manage_user/Page_Admin Console/li_Logout'))
 
-WebUI.newTab('https://as76-admin.sigtuple.com/login')
+WebUI.newTab('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Username_loginId'), 'UsernkkVvD')
 

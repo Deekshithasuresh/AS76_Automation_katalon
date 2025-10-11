@@ -35,7 +35,7 @@ import com.kms.katalon.core.testobject.TestObjectProperty as TestObjectProperty
 // Open browser and login to PBS system
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 WebUI.setText(findTestObject('Object Repository/Summary/Page_PBS (1)/input_username_loginId'), 'deekshithaS')
 WebUI.setEncryptedText(findTestObject('Object Repository/Summary/Page_PBS (1)/input_password_loginPassword'), 'ghLSEQG5l8dyyQdYVN+LYg==')
 WebUI.sendKeys(findTestObject('Object Repository/Summary/Page_PBS (1)/input_password_loginPassword'), Keys.chord(Keys.ENTER))
@@ -272,7 +272,7 @@ try {
 				
 				// Go back to the report list to check the next report
 				// Note: You may need to adjust this depending on your application's navigation
-				WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/') // Or whatever URL returns to the report list
+				WebUI.navigateToUrl('https://pbsreview.as76.local/') // Or whatever URL returns to the report list
 				WebUI.waitForPageLoad(30)
 				WebUI.delay(2)
 				

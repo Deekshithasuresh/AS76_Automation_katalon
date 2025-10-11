@@ -22,7 +22,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 // Open browser and login
 WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+WebUI.navigateToUrl('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('IAM Model/Page_Admin Console/input_Username_loginId'), 'adminuserr')
 WebUI.setEncryptedText(findTestObject('IAM Model/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')

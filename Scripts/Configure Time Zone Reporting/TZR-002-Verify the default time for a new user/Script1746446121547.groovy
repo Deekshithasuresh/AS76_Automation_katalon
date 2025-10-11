@@ -24,7 +24,7 @@ import org.openqa.selenium.By as By
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+WebUI.navigateToUrl('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Configure Time Zone Reporting/Page_Admin Console/input_Username_loginId'), 
     'jyothi')
@@ -116,7 +116,7 @@ WebUI.click(findTestObject('Object Repository/Configure Time Zone Reporting/Page
 WebUI.verifyElementText(findTestObject('Object Repository/Configure Time Zone Reporting/Page_Admin Console/h4_Sign in'), 
     'Sign in')
 
-WebUI.newTab('https://as76-pbs.sigtuple.com/login')
+WebUI.newTab('https://pbsreview.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/input_username_loginId'), uniqueUsername)
 

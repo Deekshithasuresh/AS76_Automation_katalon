@@ -38,7 +38,7 @@ String reportId = ""                   // Variable to store current report ID fo
 // Open browser and perform login to the PBS system
 WebUI.openBrowser('')                  // Launch a new browser instance
 WebUI.maximizeWindow()                 // Maximize browser window for better visibility
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')  // Navigate to the login page
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')  // Navigate to the login page
 WebUI.setText(findTestObject('Object Repository/Summary/Page_PBS (1)/input_username_loginId'), 'deekshithaS')  // Enter username
 WebUI.setEncryptedText(findTestObject('Object Repository/Summary/Page_PBS (1)/input_password_loginPassword'), 'ghLSEQG5l8dyyQdYVN+LYg==')  // Enter encrypted password
 WebUI.sendKeys(findTestObject('Object Repository/Summary/Page_PBS (1)/input_password_loginPassword'), Keys.chord(Keys.ENTER))  // Press Enter to submit login

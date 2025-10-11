@@ -37,7 +37,7 @@ String snapAndBase64(String filename) {
 // ────────────────────────────────────────────────────────────────────
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login', FailureHandling.STOP_ON_FAILURE)
+WebUI.navigateToUrl('https://pbsreview.as76.local/login', FailureHandling.STOP_ON_FAILURE)
 WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr', FailureHandling.STOP_ON_FAILURE)
 WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
 	'JBaPNhID5RC7zcsLVwaWIA==', FailureHandling.STOP_ON_FAILURE)

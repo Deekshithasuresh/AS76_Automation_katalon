@@ -34,7 +34,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 // Open the browser and navigate to the login page
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('Object Repository/Summary/Page_PBS (1)/input_username_loginId'), 'deekshithaS')

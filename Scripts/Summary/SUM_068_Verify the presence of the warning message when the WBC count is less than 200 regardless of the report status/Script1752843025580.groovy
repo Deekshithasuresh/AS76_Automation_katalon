@@ -25,7 +25,7 @@ import com.kms.katalon.core.testobject.ConditionType
 
 // Login to the system
 WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 WebUI.doubleClick(findTestObject('Object Repository/Summary/input_username_loginId'))
 WebUI.setText(findTestObject('Object Repository/Summary/input_username_loginId'), 'deekshithaS')
 WebUI.setEncryptedText(findTestObject('Object Repository/Summary/input_password_loginPassword'), 'ghLSEQG5l8dyyQdYVN+LYg==')
@@ -340,7 +340,7 @@ while ((!wbcLessThan200WithWarningFound || !wbcMoreThan200WithoutWarningFound) &
 			if (!backButtonFound) {
 				// No back button found, try browser back
 				println("No back button found, trying browser back button")
-				WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/')
+				WebUI.navigateToUrl('https://pbsreview.as76.local/')
 			}
 			
 			// Wait to ensure we're back at the reports list
@@ -349,7 +349,7 @@ while ((!wbcLessThan200WithWarningFound || !wbcMoreThan200WithoutWarningFound) &
 		} catch (Exception e) {
 			println("Error navigating back: " + e.getMessage())
 			// Last resort - just go back to the URL
-			WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/')
+			WebUI.navigateToUrl('https://pbsreview.as76.local/')
 			WebUI.delay(5)
 		}
 	}

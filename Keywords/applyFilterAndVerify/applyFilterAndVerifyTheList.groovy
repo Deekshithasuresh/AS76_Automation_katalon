@@ -191,7 +191,7 @@ public class ApplyFilterAndVerifyTheList {
 		try {
 			// Open browser and navigate to the login page
 			WebUI.openBrowser('')
-			WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+			WebUI.navigateToUrl('https://admin.as76.local/login')
 
 			// Login to the admin console
 			WebUI.setText(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Username_loginId'), 'adminuserr')

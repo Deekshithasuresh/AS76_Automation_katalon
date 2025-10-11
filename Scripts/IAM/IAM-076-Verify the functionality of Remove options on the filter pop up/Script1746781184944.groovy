@@ -26,7 +26,7 @@ import applyFilterAndVerify.ApplyFilterAndVerifyTheList as ApplyFilterAndVerifyT
 //
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+WebUI.navigateToUrl('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/View list of users/Page_Admin Console/input_Username_loginId'), 'adminuserr')
 

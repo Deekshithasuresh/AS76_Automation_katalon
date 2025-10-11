@@ -23,7 +23,7 @@ try {
     println("Browser opened successfully")
     
     // Navigate to URL with timeout
-    WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+    WebUI.navigateToUrl('https://admin.as76.local/login')
     WebUI.waitForPageLoad(30)
     println("Navigated to Admin Console login page")
     

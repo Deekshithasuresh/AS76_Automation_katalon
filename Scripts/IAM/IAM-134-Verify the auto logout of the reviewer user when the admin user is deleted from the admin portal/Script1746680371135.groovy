@@ -52,7 +52,7 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+WebUI.navigateToUrl('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Username_loginId'), 'adminuserr')
 WebUI.setEncryptedText(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
@@ -259,7 +259,7 @@ WebUI.click(findTestObject('Manage_user/Page_Admin Console/img'))
 
 WebUI.click(findTestObject('Manage_user/Page_Admin Console/li_Logout'))
 
-WebUI.newTab('https://as76-admin.sigtuple.com/login')
+WebUI.newTab('https://admin.as76.local/login')
 
 WebUI.setText(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Username_loginId'), 'UsergatnOd')
 

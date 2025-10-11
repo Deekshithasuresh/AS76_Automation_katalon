@@ -42,7 +42,7 @@ String secoundUsername = randomName
 // Step 1: Open Admin Console and Login
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+WebUI.navigateToUrl('https://admin.as76.local/login')
 WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Username_loginId'), 'manju')
 WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/button_Sign in'))
@@ -72,7 +72,7 @@ GlobalVariable.generatedPassword = password
 GlobalVariable.generatedEmail = randomEmail
 
 // Step 4: Open PBS portal in new tab and login
-WebUI.executeJavaScript("window.open('https://as76-pbs.sigtuple.com/login','_blank');", null)
+WebUI.executeJavaScript("window.open('https://pbsreview.as76.local/login','_blank');", null)
 WebUI.switchToWindowIndex(1)
 
 WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_username_loginId'), randomUsername)
@@ -296,7 +296,7 @@ WebUI.delay(5)
 	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/profile_img'))
 	WebUI.click(findTestObject('Object Repository/Report_Listing/Page_Admin Console/li_Logout (1)'))
 	
-	//WebUI.executeJavaScript("window.open('https://as76-pbs.sigtuple.com/login','_blank');", null)
+	//WebUI.executeJavaScript("window.open('https://pbsreview.as76.local/login','_blank');", null)
 	WebUI.switchToWindowIndex(1)
 	
 	WebUI.setText(findTestObject('Object Repository/Report_Listing/Login_page/input_username_loginId'), secondName)

@@ -26,7 +26,7 @@ public class Login {
 
 		WebUI.openBrowser('')
 
-		WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+		WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Session management reporting/Page_PBS/input_username_loginId'), 10)
 
@@ -41,7 +41,7 @@ public class Login {
 	public void adminLogin() {
 		WebUI.openBrowser('')
 
-		WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+		WebUI.navigateToUrl('https://admin.as76.local/login')
 
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Session management reporting/Page_Admin Console/input_Username_loginId'),10)
 

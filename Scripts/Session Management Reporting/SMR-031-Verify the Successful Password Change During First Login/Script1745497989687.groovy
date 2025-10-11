@@ -112,7 +112,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Session management 
 WebUI.verifyElementText(findTestObject('Object Repository/Session management reporting/Page_Admin Console/h4_Sign in'), 
     'Sign in')
 
-WebUI.newTab('https://as76-pbs.sigtuple.com/login')
+WebUI.newTab('https://pbsreview.as76.local/login')
 
 WebUI.click(findTestObject('Object Repository/Session management reporting/Page_PBS/input_username_loginId'))
 

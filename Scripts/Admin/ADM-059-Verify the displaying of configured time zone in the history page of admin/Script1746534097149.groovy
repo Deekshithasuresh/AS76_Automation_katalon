@@ -75,7 +75,7 @@ def verifyTimeZone(String timeZoneOptionTestObject, String selectedZoneTO, Strin
 // MAIN TEST CASE
 // ======================================================
 WebUI.openBrowser('')
-WebUI.navigateToUrl('https://as76-admin.sigtuple.com/home')
+WebUI.navigateToUrl('https://admin.as76.local/login/home')
 
 // Login
 WebUI.setText(findTestObject('Object Repository/Session management reporting/Page_Admin Console/input_Username_loginId'), 'jyothi')

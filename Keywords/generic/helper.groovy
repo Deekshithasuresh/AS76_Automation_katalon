@@ -21,7 +21,7 @@ public class helper {
 	@Keyword
 	def login() {
 		WebUI.openBrowser('')
-		WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+		WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 		WebUI.setText(findTestObject('Object Repository/Login_page/input_username_loginId'), 'deekshithaS')
 		WebUI.setEncryptedText(findTestObject('Object Repository/Login_page/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 		WebUI.click(findTestObject('Object Repository/Login_page/button_Sign In'))

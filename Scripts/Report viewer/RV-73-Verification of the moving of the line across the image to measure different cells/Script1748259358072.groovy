@@ -17,7 +17,7 @@ import java.awt.event.InputEvent
 // 1) LOGIN
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 WebUI.setText(findTestObject('Report viewer/Page_PBS/input_username_loginId'), 'adminuserr')
 WebUI.setEncryptedText(findTestObject('Report viewer/Page_PBS/input_password_loginPassword'),
 					 'JBaPNhID5RC7zcsLVwaWIA==')

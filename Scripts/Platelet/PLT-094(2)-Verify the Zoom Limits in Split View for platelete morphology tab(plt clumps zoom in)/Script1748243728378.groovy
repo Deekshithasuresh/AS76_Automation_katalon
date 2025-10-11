@@ -40,7 +40,7 @@ String snapAndBase64(String filename) {
 // STEP 1: Login
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 
 WebUI.maximizeWindow()
 

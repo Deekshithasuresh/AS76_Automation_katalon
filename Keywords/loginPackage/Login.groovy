@@ -25,7 +25,7 @@ public class Login {
 
 		WebUI.maximizeWindow()
 
-		WebUI.navigateToUrl('https://as76-pbs.sigtuple.com/login')
+		WebUI.navigateToUrl('https://pbsreview.as76.local/login')
 
 		WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_SELECT_main-sigtuple-as76-logo'),
 				10)
@@ -68,7 +68,7 @@ public class Login {
 
 		WebUI.maximizeWindow()
 
-		WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+		WebUI.navigateToUrl('https://admin.as76.local/login')
 
 		WebUI.waitForElementPresent(findTestObject('PBS_Settings_Objects/Page_Admin Console/Sign_in_header'), 20)
 

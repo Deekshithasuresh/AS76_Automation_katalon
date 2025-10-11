@@ -12,7 +12,7 @@ public class dataManagement {
 	def loginAdmin() {
 		WebUI.openBrowser('')
 
-		WebUI.navigateToUrl('https://as76-admin.sigtuple.com/login')
+		WebUI.navigateToUrl('https://admin.as76.local/login')
 
 		WebUI.setText(findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Username_loginId'), 'manju')
 
