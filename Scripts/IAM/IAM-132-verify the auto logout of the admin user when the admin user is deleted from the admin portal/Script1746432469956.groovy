@@ -116,7 +116,7 @@ while (!usernameAccepted) {
 		println('Username already taken. Retrying...')
 		WebUI.click(usernameField)
 		if (System.getProperty('os.name').toLowerCase().contains('mac')) {
-			WebUI.sendKeys(usernameField, Keys.chord(Keys.COMMAND, 'a'))
+			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
 		} else {
 			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
 		}
@@ -225,7 +225,7 @@ WebUI.click(findTestObject('Manage_user/Page_Admin Console/button_Yes'))
 //}
 WebUI.click(findTestObject('View list of users/Page_Admin Console/search bar'))
 
-WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.BACK_SPACE //assert statusVerified == true
         ))

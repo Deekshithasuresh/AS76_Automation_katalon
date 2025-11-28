@@ -71,15 +71,15 @@ for (int i = 0; i < 10; i++) {
 	assert NMG_fields[2].getAttribute("value").trim() != ""
 
 	// Clear and update
-	NMG_fields[0].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+	NMG_fields[0].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 	NMG_fields[0].sendKeys(Keys.BACK_SPACE)
 	NMG_fields[0].sendKeys("12")
 
-	NMG_fields[1].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+	NMG_fields[1].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 	NMG_fields[1].sendKeys(Keys.BACK_SPACE)
 	NMG_fields[1].sendKeys("99")
 
-	NMG_fields[2].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+	NMG_fields[2].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 	NMG_fields[2].sendKeys(Keys.BACK_SPACE)
 	NMG_fields[2].sendKeys("100")
 }
@@ -102,15 +102,15 @@ FOV_rows[1].click()
 //	assert NMG_fields[2].getAttribute("value").trim() != ""
 //
 //	// Clear and update
-//	NMG_fields[0].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+//	NMG_fields[0].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 //	NMG_fields[0].sendKeys(Keys.BACK_SPACE)
 //	NMG_fields[0].sendKeys("66")
 //
-//	NMG_fields[1].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+//	NMG_fields[1].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 //	NMG_fields[1].sendKeys(Keys.BACK_SPACE)
 //	NMG_fields[1].sendKeys("100")
 //
-//	NMG_fields[2].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+//	NMG_fields[2].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 //	NMG_fields[2].sendKeys(Keys.BACK_SPACE)
 //	NMG_fields[2].sendKeys("44")
 //}

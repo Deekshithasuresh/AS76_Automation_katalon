@@ -61,7 +61,7 @@ WebUI.verifyElementNotChecked(findTestObject('Object Repository/Manage_user/Page
 
 WebUI.click(findTestObject('Manage_user/Page_Admin Console/input_Email_rbc-input-box'))
 
-WebUI.sendKeys(findTestObject('Manage_user/Page_Admin Console/input_Email_rbc-input-box'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('Manage_user/Page_Admin Console/input_Email_rbc-input-box'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Email_rbc-input-box'), 'automationtester_user_profile_01@example.com')
 

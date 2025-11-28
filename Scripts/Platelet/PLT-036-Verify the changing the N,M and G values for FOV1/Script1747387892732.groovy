@@ -41,15 +41,15 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Platelet/Page_PBS/i
 //{
 //	FOV_rows.get(i).click()
 //	List<WebElement> NMG_fields=FOV_rows.get(i).findElements(By.xpath("//input[@class='fov-edit-input']"))
-//	NMG_fields[0].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+//	NMG_fields[0].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 //	NMG_fields[0].sendKeys(Keys.chord(Keys.BACK_SPACE))
 //	NMG_fields[0].sendKeys("12") //passing value to N field
 //	
-//	NMG_fields[1].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+//	NMG_fields[1].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 //	NMG_fields[1].sendKeys(Keys.chord(Keys.BACK_SPACE))
 //	NMG_fields[1].sendKeys("99") //passing value to M field
 //	
-//	NMG_fields[2].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+//	NMG_fields[2].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 //	NMG_fields[2].sendKeys(Keys.chord(Keys.BACK_SPACE))
 //	NMG_fields[2].sendKeys("100") //passing value to G field
 //}
@@ -61,15 +61,15 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Platelet/Page_PBS/i
 //	{
 //		FOV_rows.get(i).click()
 //		List<WebElement> NMG_fields=FOV_rows.get(i).findElements(By.xpath("//input[@class='fov-edit-input']"))
-//		NMG_fields[0].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+//		NMG_fields[0].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 //		NMG_fields[0].sendKeys(Keys.chord(Keys.BACK_SPACE))
 //		NMG_fields[0].sendKeys("66") //passing value to N field
 //		
-//		NMG_fields[1].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+//		NMG_fields[1].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 //		NMG_fields[1].sendKeys(Keys.chord(Keys.BACK_SPACE))
 //		NMG_fields[1].sendKeys("100") //passing value to M field
 //		
-//		NMG_fields[2].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+//		NMG_fields[2].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 //		NMG_fields[2].sendKeys(Keys.chord(Keys.BACK_SPACE))
 //		NMG_fields[2].sendKeys("44") //passing value to G field
 //	}
@@ -95,15 +95,15 @@ for (int i = 0; i < 10; i++) {
 	assert NMG_fields[2].getAttribute("value").trim() != ""
 
 	// Clear and update
-	NMG_fields[0].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+	NMG_fields[0].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 	NMG_fields[0].sendKeys(Keys.BACK_SPACE)
 	NMG_fields[0].sendKeys("12")
 
-	NMG_fields[1].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+	NMG_fields[1].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 	NMG_fields[1].sendKeys(Keys.BACK_SPACE)
 	NMG_fields[1].sendKeys("99")
 
-	NMG_fields[2].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+	NMG_fields[2].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 	NMG_fields[2].sendKeys(Keys.BACK_SPACE)
 	NMG_fields[2].sendKeys("100")
 }
@@ -126,15 +126,15 @@ FOV_rows[1].click()
 //	assert NMG_fields[2].getAttribute("value").trim() != ""
 //
 //	// Clear and update
-//	NMG_fields[0].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+//	NMG_fields[0].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 //	NMG_fields[0].sendKeys(Keys.BACK_SPACE)
 //	NMG_fields[0].sendKeys("66")
 //
-//	NMG_fields[1].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+//	NMG_fields[1].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 //	NMG_fields[1].sendKeys(Keys.BACK_SPACE)
 //	NMG_fields[1].sendKeys("100")
 //
-//	NMG_fields[2].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+//	NMG_fields[2].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 //	NMG_fields[2].sendKeys(Keys.BACK_SPACE)
 //	NMG_fields[2].sendKeys("44")
 //}

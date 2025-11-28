@@ -104,7 +104,7 @@
 //
 //		// Platform-independent text selection and clearing
 //		if (System.getProperty('os.name').toLowerCase().contains('mac')) {
-//			WebUI.sendKeys(usernameField, Keys.chord(Keys.COMMAND, 'a'));
+//			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'));
 //		} else {
 //			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'));
 //		}
@@ -243,7 +243,7 @@
 //
 //WebUI.click(findTestObject('View list of users/Page_Admin Console/search bar'))
 //
-//WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.COMMAND, 'a'))
+//WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.CONTROL, 'a'))
 //
 //WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.BACK_SPACE //assert statusVerified == true
 //        ))
@@ -290,7 +290,7 @@
 //
 //WebUI.click(findTestObject('View list of users/Page_Admin Console/search bar'))
 //
-//WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.COMMAND, 'a'))
+//WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.CONTROL, 'a'))
 //
 //WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.BACK_SPACE //assert statusVerified == true
 //        ))
@@ -437,7 +437,7 @@ while (!usernameAccepted) {
 		println('Username already taken. Retrying...')
 		WebUI.click(usernameField)
 		if (System.getProperty('os.name').toLowerCase().contains('mac')) {
-			WebUI.sendKeys(usernameField, Keys.chord(Keys.COMMAND, 'a'))
+			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
 		} else {
 			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
 		}
@@ -550,7 +550,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('View list of users/Page_Admin Console/search bar'))
 
-WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.BACK_SPACE //assert statusVerified == true
 		))
@@ -596,7 +596,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('View list of users/Page_Admin Console/search bar'))
 
-WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.BACK_SPACE //assert statusVerified == true
 		))

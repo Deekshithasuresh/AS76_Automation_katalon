@@ -84,7 +84,7 @@ while (!(usernameAccepted)) {
         //        WebUI.clearText(usernameField)
         WebUI.click(usernameField)
 
-        WebUI.sendKeys(usernameField, Keys.chord(Keys.COMMAND, 'a'))
+        WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
 
         WebUI.sendKeys(usernameField, Keys.chord(Keys.BACK_SPACE))
     } else {
@@ -153,7 +153,7 @@ WebUI.click(findTestObject('Object Repository/Configure Time Zone Reporting/Page
 
 WebUI.verifyElementText(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/h2_Time zone'), 'Time zone')
 
-WebUI.refresh()
+//WebUI.refresh()
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/span_(UTC0000) EtcGMT'), 
     30)

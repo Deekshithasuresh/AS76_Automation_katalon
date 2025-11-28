@@ -41,15 +41,15 @@ for(int i=0; i<10;i++)
 {
 	FOV_rows.get(i).click()
 	List<WebElement> NMG_fields=FOV_rows.get(i).findElements(By.xpath("//input[@class='fov-edit-input']"))
-	//NMG_fields[0].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+	//NMG_fields[0].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 	//NMG_fields[0].sendKeys(Keys.chord(Keys.BACK_SPACE))
 	NMG_fields[0].sendKeys('Aabczxsetydgh') //passing value to N field
 	
-	//NMG_fields[1].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+	//NMG_fields[1].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 	//NMG_fields[1].sendKeys(Keys.chord(Keys.BACK_SPACE))
 	NMG_fields[1].sendKeys('mvtyQpawan') //passing value to M field
 	
-	//NMG_fields[2].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+	//NMG_fields[2].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 	//NMG_fields[2].sendKeys(Keys.chord(Keys.BACK_SPACE))
 	NMG_fields[2].sendKeys('AqsqaonepLus') //passing value to G field
 }

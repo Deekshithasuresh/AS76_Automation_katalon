@@ -43,7 +43,7 @@ TestObject input_select_tz = findTestObject('Object Repository/Session managemen
 
 WebUI.click(input_select_tz)
 
-WebUI.sendKeys(input_select_tz, Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(input_select_tz, Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(input_select_tz, Keys.chord(Keys.BACK_SPACE))
 

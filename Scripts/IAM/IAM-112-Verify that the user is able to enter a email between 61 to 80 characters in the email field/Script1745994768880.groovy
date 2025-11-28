@@ -62,7 +62,7 @@ WebUI.verifyElementNotChecked(findTestObject('Object Repository/Manage_user/Page
 
 WebUI.click(findTestObject('Manage_user/Page_Admin Console/input_Email_rbc-input-box'))
 
-WebUI.sendKeys(findTestObject('Manage_user/Page_Admin Console/input_Email_rbc-input-box'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('Manage_user/Page_Admin Console/input_Email_rbc-input-box'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Email_rbc-input-box'), 'johnsmith_user_authentication_katalon_project_qa_team_20250424@example.com')
 

@@ -70,7 +70,7 @@ verifySearchUserByUsernameAndRole(searchKeyword, Exp_username, Exp_role, Exp_Sta
 // Step 7: Count the number of rows in the table
 WebUI.click(findTestObject('View list of users/Page_Admin Console/search bar'))
 
-WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.BACK_SPACE //row.click()
         ))

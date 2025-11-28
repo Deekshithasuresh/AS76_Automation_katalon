@@ -37,7 +37,7 @@ int currentValue = Integer.parseInt(currentValueStr)
 
 
 // 1. Clear and enter a valid whole number
-WebUI.sendKeys(daysInput, Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(daysInput, Keys.chord(Keys.CONTROL, 'a'))
 WebUI.sendKeys(daysInput, Keys.chord(Keys.DELETE))
 
 //WebUI.clearText(daysInput)
@@ -50,7 +50,7 @@ assert daysValue == '50' : "Expected '50', got '${daysValue}'"
 TestObject timeInput = findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Time_deletion-time-input')
 
 // Clear the input
-WebUI.sendKeys(timeInput, Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(timeInput, Keys.chord(Keys.CONTROL, 'a'))
 WebUI.sendKeys(timeInput, Keys.chord(Keys.DELETE))
 
 // Set desired time (e.g., 10:30 AM)

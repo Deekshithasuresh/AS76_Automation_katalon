@@ -78,7 +78,7 @@ while (!usernameAccepted) {
 		println('Username already taken. Retrying...')
 		WebUI.click(usernameField)
 		if (System.getProperty('os.name').toLowerCase().contains('mac')) {
-			WebUI.sendKeys(usernameField, Keys.chord(Keys.COMMAND, 'a'))
+			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
 		} else {
 			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
 		}

@@ -43,7 +43,7 @@ WebUI.click(findTestObject('Object Repository/Configure Time Zone Reporting/Page
 WebUI.click(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/input_Select a time zone_assigned_to'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/input_Select a time zone_assigned_to'), Keys.chord(
-	Keys.COMMAND, 'a'))
+	Keys.CONTROL, 'a'))
 WebUI.sendKeys(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/input_Select a time zone_assigned_to'), Keys.chord(
 	Keys.BACK_SPACE))
 

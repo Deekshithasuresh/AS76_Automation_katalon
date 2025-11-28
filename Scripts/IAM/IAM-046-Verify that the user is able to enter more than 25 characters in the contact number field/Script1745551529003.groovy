@@ -51,7 +51,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin C
 WebUI.click(findTestObject('IAM Model/Page_Admin Console/input_Contact number (optional)_rbc-input-box error'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/input_Contact number (optional)_rbc-input-box error'), Keys.chord(
-        Keys.COMMAND, 'a'))
+        Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/input_Contact number (optional)_rbc-input-box error'), Keys.chord(
         Keys.BACK_SPACE))

@@ -109,7 +109,7 @@ void verifySearchUserByUsernameAndRole(String keyword, String username, String r
 
     WebUI.click(findTestObject('View list of users/Page_Admin Console/search bar'))
 
-    WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.COMMAND, 'a'))
+    WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.CONTROL, 'a'))
 
     WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.BACK_SPACE))
 }

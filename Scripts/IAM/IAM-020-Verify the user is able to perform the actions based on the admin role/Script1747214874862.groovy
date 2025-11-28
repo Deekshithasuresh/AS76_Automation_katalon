@@ -90,7 +90,7 @@ WebUI.sendKeys(findTestObject('Object Repository/change-password/Page_Admin Cons
 //
 //        // Platform-independent text selection and clearing
 //        if (System.getProperty('os.name').toLowerCase().contains('mac')) {
-//            WebUI.sendKeys(usernameField, Keys.chord(Keys.COMMAND, 'a'))
+//            WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
 //        } else {
 //            WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
 //        }
@@ -143,7 +143,7 @@ while (!(usernameAccepted)) {
 
 		// Platform-independent text selection and clearing
 		if (System.getProperty('os.name').toLowerCase().contains('mac')) {
-			WebUI.sendKeys(usernameField, Keys.chord(Keys.COMMAND, 'a'))
+			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
 		} else {
 			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
 		}

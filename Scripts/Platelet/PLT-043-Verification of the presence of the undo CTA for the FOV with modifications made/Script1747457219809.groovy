@@ -60,7 +60,7 @@ for (int i = 0; i < 10; i++) {
   List<WebElement>  NMG_fields = FOV_rows.get(i).findElements(By.xpath('//input[@class=\'fov-edit-input\']'))
 
 	String initialNvalue=(NMG_fields[0]).getAttribute("value")
-    (NMG_fields[0]).sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+    (NMG_fields[0]).sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 
     (NMG_fields[0]).sendKeys(Keys.chord(Keys.BACK_SPACE))
 
@@ -68,14 +68,14 @@ for (int i = 0; i < 10; i++) {
 	
 	String initialMvalue=(NMG_fields[1]).getAttribute("value")
 
-    (NMG_fields[1]).sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+    (NMG_fields[1]).sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 
     (NMG_fields[1]).sendKeys(Keys.chord(Keys.BACK_SPACE))
 
     (NMG_fields[1]).sendKeys('98') //passing value to M field
         
 	String initialGvalue=(NMG_fields[2]).getAttribute("value")
-    (NMG_fields[2]).sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+    (NMG_fields[2]).sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 
     (NMG_fields[2]).sendKeys(Keys.chord(Keys.BACK_SPACE))
 

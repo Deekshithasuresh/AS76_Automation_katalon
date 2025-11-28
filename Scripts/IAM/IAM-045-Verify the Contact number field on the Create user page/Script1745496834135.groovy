@@ -44,7 +44,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         1))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -53,7 +53,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         2))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -64,7 +64,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         3))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -73,7 +73,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         4))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -82,7 +82,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         5))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -91,7 +91,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         6))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -100,7 +100,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         7))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -109,7 +109,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         8))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -118,7 +118,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         9))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -127,7 +127,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         10))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -136,7 +136,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         11))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -145,7 +145,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         12))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -154,7 +154,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         13))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -163,7 +163,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         14))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -172,7 +172,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         15))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -181,7 +181,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         16))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -190,7 +190,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         17))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -199,7 +199,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         18))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 
@@ -208,7 +208,7 @@ WebUI.click(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'))
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), findTestData('Contact_1').getValue(1, 
         19))
 
-WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/Contact_number_field'), Keys.chord(Keys.BACK_SPACE))
 

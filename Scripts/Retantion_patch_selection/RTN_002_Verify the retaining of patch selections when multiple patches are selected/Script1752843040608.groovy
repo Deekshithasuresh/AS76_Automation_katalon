@@ -208,7 +208,7 @@ try {
 	// Limit to available patches but don't exceed our target
 	int maxToSelect = Math.min(patchesToSelect, wbcPatches.size())
 	
-	// Use CTRL+click (or Command+click on Mac) to select multiple patches
+	// Use CTRL+click (or CONTROL+click on Mac) to select multiple patches
 	Actions actions = new Actions(driver)
 	
 	// Select patches with retry logic for each
@@ -226,15 +226,15 @@ try {
 				WebUI.comment("[CLICK] Normal click for first patch")
 				wbcPatches.get(index).click()
 			} else {
-				// For subsequent patches, hold CTRL (or Command on Mac) while clicking
+				// For subsequent patches, hold CTRL (or CONTROL on Mac) while clicking
 				// Determine if we're on Mac or Windows
 				String osName = System.getProperty('os.name').toLowerCase()
 				WebUI.comment("[INFO] Detected OS: ${osName}")
 				
 				if (osName.contains('mac')) {
 					// For Mac OS
-					WebUI.comment("[CLICK] Mac OS detected, using COMMAND+click")
-					actions.keyDown(Keys.COMMAND).click(wbcPatches.get(index)).keyUp(Keys.COMMAND).build().perform()
+					WebUI.comment("[CLICK] Mac OS detected, using CONTROL+click")
+					actions.keyDown(Keys.CONTROL).click(wbcPatches.get(index)).keyUp(Keys.CONTROL).build().perform()
 				} else {
 					// For Windows/Linux
 					WebUI.comment("[CLICK] Windows/Linux detected, using CONTROL+click")

@@ -77,7 +77,7 @@ while (!(usernameAccepted)) {
         //        WebUI.clearText(usernameField) 
         WebUI.click(usernameField)
 
-        WebUI.sendKeys(usernameField, Keys.chord(Keys.COMMAND, 'a'))
+        WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
 
         WebUI.sendKeys(usernameField, Keys.chord(Keys.BACK_SPACE))
     } else {
@@ -204,7 +204,7 @@ WebUI.verifyElementPresent(findTestObject('Session management reporting/Page_PBS
 WebUI.click(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'), 
-    Keys.chord(Keys.COMMAND, 'a'))
+    Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'), 
     Keys.chord(Keys.BACK_SPACE))
@@ -212,7 +212,7 @@ WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Pa
 WebUI.click(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'), 
-    Keys.chord(Keys.COMMAND, 'a'))
+    Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'), 
     Keys.chord(Keys.BACK_SPACE))
@@ -245,7 +245,7 @@ WebUI.verifyElementPresent(findTestObject('Session management reporting/Page_PBS
 WebUI.click(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'), 
-    Keys.chord(Keys.COMMAND, 'a'))
+    Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'), 
     Keys.chord(Keys.BACK_SPACE))
@@ -253,7 +253,7 @@ WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Pa
 WebUI.click(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'), 
-    Keys.chord(Keys.COMMAND, 'a'))
+    Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'), 
     Keys.chord(Keys.BACK_SPACE))
@@ -279,7 +279,7 @@ WebUI.verifyElementPresent(findTestObject('Session management reporting/Page_PBS
 WebUI.click(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'), 
-    Keys.chord(Keys.COMMAND, 'a'))
+    Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'), 
     Keys.chord(Keys.BACK_SPACE))
@@ -287,7 +287,7 @@ WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Pa
 WebUI.click(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'), 
-    Keys.chord(Keys.COMMAND, 'a'))
+    Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'), 
     Keys.chord(Keys.BACK_SPACE))
@@ -313,7 +313,7 @@ WebUI.verifyElementPresent(findTestObject('Session management reporting/Page_PBS
 WebUI.click(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'), 
-    Keys.chord(Keys.COMMAND, 'a'))
+    Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'), 
     Keys.chord(Keys.BACK_SPACE))
@@ -321,7 +321,7 @@ WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Pa
 WebUI.click(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'), 
-    Keys.chord(Keys.COMMAND, 'a'))
+    Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'), 
     Keys.chord(Keys.BACK_SPACE))
@@ -346,7 +346,7 @@ WebUI.verifyElementPresent(findTestObject('Session management reporting/Page_PBS
 WebUI.click(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'), 
-    Keys.chord(Keys.COMMAND, 'a'))
+    Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'), 
     Keys.chord(Keys.BACK_SPACE))
@@ -354,7 +354,7 @@ WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Pa
 WebUI.click(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'), 
-    Keys.chord(Keys.COMMAND, 'a'))
+    Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'), 
     Keys.chord(Keys.BACK_SPACE))
@@ -371,7 +371,7 @@ WebUI.verifyElementText(findTestObject('Object Repository/Session management rep
 WebUI.click(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'), 
-    Keys.chord(Keys.COMMAND, 'a'))
+    Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_New password_new-password'), 
     Keys.chord(Keys.BACK_SPACE))
@@ -379,7 +379,7 @@ WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Pa
 WebUI.click(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'), 
-    Keys.chord(Keys.COMMAND, 'a'))
+    Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Session management reporting/Page_PBS/input_Confirm password_confirm-password'), 
     Keys.chord(Keys.BACK_SPACE))

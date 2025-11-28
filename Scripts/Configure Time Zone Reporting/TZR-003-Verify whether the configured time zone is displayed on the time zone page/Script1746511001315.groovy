@@ -42,7 +42,7 @@ WebUI.click(findTestObject('Object Repository/Configure Time Zone Reporting/Page
 WebUI.verifyElementText(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/div_Time zone changed successfully'), 
     'Time zone changed successfully')
 
-WebUI.click(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/img'))
+//WebUI.click(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/img'))
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Configure Time Zone Reporting/Page_PBS/span_(UTC0000) AfricaLome'), 
     30)

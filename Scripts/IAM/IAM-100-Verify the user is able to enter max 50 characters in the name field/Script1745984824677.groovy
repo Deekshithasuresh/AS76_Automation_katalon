@@ -63,7 +63,7 @@ WebUI.verifyElementNotChecked(findTestObject('Object Repository/Manage_user/Page
 
 WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Name_rbc-input-box'))
 
-WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Name_rbc-input-box'), Keys.chord(Keys.COMMAND, 
+WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Name_rbc-input-box'), Keys.chord(Keys.CONTROL, 
         'a'))
 
 WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Name_rbc-input-box'), Keys.chord(Keys.BACK_SPACE))

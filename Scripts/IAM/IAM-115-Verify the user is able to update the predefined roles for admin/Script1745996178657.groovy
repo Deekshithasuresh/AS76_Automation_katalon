@@ -62,7 +62,7 @@ while (!usernameAccepted) {
 		println('Username already taken. Retrying...')
 		WebUI.click(usernameField)
 		if (System.getProperty('os.name').toLowerCase().contains('mac')) {
-			WebUI.sendKeys(usernameField, Keys.chord(Keys.COMMAND, 'a'))
+			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
 		} else {
 			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'))
 		}
@@ -149,7 +149,7 @@ WebUI.verifyElementNotChecked(findTestObject('Object Repository/Manage_user/Page
 
 //WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Name_rbc-input-box'))
 //
-//WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Name_rbc-input-box'), Keys.chord(Keys.COMMAND, 
+//WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Name_rbc-input-box'), Keys.chord(Keys.CONTROL, 
 //        'a'))
 //
 //WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Name_rbc-input-box'), Keys.chord(Keys.BACK_SPACE))
@@ -159,7 +159,7 @@ WebUI.verifyElementNotChecked(findTestObject('Object Repository/Manage_user/Page
 //WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Email_rbc-input-box'))
 //
 //WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Email_rbc-input-box'), Keys.chord(
-//        Keys.COMMAND, 'a'))
+//        Keys.CONTROL, 'a'))
 //
 //WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Email_rbc-input-box'), Keys.chord(
 //        Keys.BACK_SPACE))
@@ -169,7 +169,7 @@ WebUI.verifyElementNotChecked(findTestObject('Object Repository/Manage_user/Page
 //WebUI.click(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Contact number (optional)_rbc-input-box'))
 //
 //WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Contact number (optional)_rbc-input-box'), 
-//    Keys.chord(Keys.COMMAND, 'a'))
+//    Keys.chord(Keys.CONTROL, 'a'))
 //
 //WebUI.sendKeys(findTestObject('Object Repository/Manage_user/Page_Admin Console/input_Contact number (optional)_rbc-input-box'), 
 //    Keys.chord(Keys.BACK_SPACE))
@@ -179,7 +179,7 @@ WebUI.verifyElementNotChecked(findTestObject('Object Repository/Manage_user/Page
 //
 //WebUI.click(findTestObject('View list of users/Page_Admin Console/input_Password_rbc-input-box'))
 //
-//WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/input_Password_rbc-input-box'), Keys.chord(Keys.COMMAND, 
+//WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/input_Password_rbc-input-box'), Keys.chord(Keys.CONTROL, 
 //        'a'))
 //
 //WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/input_Password_rbc-input-box'), 'Sigtuple@1234')
@@ -236,7 +236,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('View list of users/Page_Admin Console/search bar'))
 
-WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.CONTROL, 'a'))
 
 WebUI.sendKeys(findTestObject('View list of users/Page_Admin Console/search bar'), Keys.chord(Keys.BACK_SPACE))
 

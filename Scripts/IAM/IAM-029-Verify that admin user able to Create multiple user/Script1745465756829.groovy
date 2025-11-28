@@ -96,7 +96,7 @@ while (!usernameAccepted) {
 
 		// Platform-independent text selection and clearing
 		if (System.getProperty('os.name').toLowerCase().contains('mac')) {
-			WebUI.sendKeys(usernameField, Keys.chord(Keys.COMMAND, 'a'));
+			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'));
 		} else {
 			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'));
 		}
@@ -212,7 +212,7 @@ boolean isError = WebUI.verifyElementPresent(findTestObject('Object Repository/I
 
 		// Platform-independent text selection and clearing
 		if (System.getProperty('os.name').toLowerCase().contains('mac')) {
-			WebUI.sendKeys(usernameField, Keys.chord(Keys.COMMAND, 'a'));
+			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'));
 		} else {
 			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'));
 		}
@@ -338,7 +338,7 @@ while (!uniqueUsername_operator_Accepted) {
 
 		// Platform-independent text selection and clearing
 		if (System.getProperty('os.name').toLowerCase().contains('mac')) {
-			WebUI.sendKeys(usernameField, Keys.chord(Keys.COMMAND, 'a'));
+			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'));
 		} else {
 			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'));
 		}

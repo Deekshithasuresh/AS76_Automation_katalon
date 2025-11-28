@@ -66,7 +66,7 @@ public class myReoort {
 		
 
 		// Clear and set new retention value
-		WebUI.sendKeys(inputRetention, Keys.chord(Keys.COMMAND, 'a'))  // CMD + A
+		WebUI.sendKeys(inputRetention, Keys.chord(Keys.CONTROL, 'a'))  // CMD + A
 		WebUI.sendKeys(inputRetention, Keys.chord(Keys.BACK_SPACE))    // Deletes selected content
 		
 		WebUI.setText(inputRetention, newRetentionDays.toString())
@@ -141,7 +141,7 @@ public class myReoort {
 		}
 
 		// Set new value
-		WebUI.sendKeys(inputRetention, Keys.chord(Keys.COMMAND, 'a'))
+		WebUI.sendKeys(inputRetention, Keys.chord(Keys.CONTROL, 'a'))
 		WebUI.sendKeys(inputRetention, Keys.chord(Keys.DELETE))
 
 
@@ -230,7 +230,7 @@ public class myReoort {
 		}
 
 		// Set new retention value
-		WebUI.sendKeys(inputRetention, Keys.chord(Keys.COMMAND, 'a'))  // macOS select all
+		WebUI.sendKeys(inputRetention, Keys.chord(Keys.CONTROL, 'a'))  // macOS select all
 		WebUI.sendKeys(inputRetention, Keys.chord(Keys.DELETE))
 		WebUI.setText(inputRetention, newRetentionDays.toString())
 
@@ -258,7 +258,7 @@ public class myReoort {
 
 		WebUI.waitForElementVisible(timeInput, 10)
 		WebUI.click(timeInput)
-		WebUI.sendKeys(timeInput, Keys.chord(Keys.COMMAND, 'a'))
+		WebUI.sendKeys(timeInput, Keys.chord(Keys.CONTROL, 'a'))
 		WebUI.sendKeys(timeInput, Keys.chord(Keys.DELETE))
 		WebUI.setText(timeInput, finalTime)
 

@@ -104,7 +104,7 @@ while (!usernameAccepted) {
 
 		// Platform-independent text selection and clearing
 		if (System.getProperty('os.name').toLowerCase().contains('mac')) {
-			WebUI.sendKeys(usernameField, Keys.chord(Keys.COMMAND, 'a'));
+			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'));
 		} else {
 			WebUI.sendKeys(usernameField, Keys.chord(Keys.CONTROL, 'a'));
 		}

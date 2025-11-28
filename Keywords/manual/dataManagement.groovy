@@ -22,12 +22,12 @@ public class dataManagement {
         // Step 1: Create dummy files with timestamped names
         for (int i = 1; i <= fileCount; i++) {
             String fileName = "dummy_${timestamp}_${i}.zip"
-            String command = "dd if=/dev/zero of='${targetDir}/${fileName}' bs=1M count=${fileSizeMB}"
+            String CONTROL = "dd if=/dev/zero of='${targetDir}/${fileName}' bs=1M count=${fileSizeMB}"
 
             println "📦 Creating: ${fileName}, Size: ${fileSizeMB}MB"
 
             ChannelExec channel = (ChannelExec) session.openChannel("exec")
-            channel.setCommand(command)
+            channel.setCONTROL(CONTROL)
             channel.setErrStream(System.err)
             InputStream input = channel.getInputStream()
             channel.connect()
@@ -72,7 +72,7 @@ public class dataManagement {
 		println "🧹 Deleting dummy files from ${targetDir}"
 	
 		ChannelExec channel = (ChannelExec) session.openChannel("exec")
-		channel.setCommand(deleteCmd)
+		channel.setCONTROL(deleteCmd)
 		channel.setErrStream(System.err)
 		channel.connect()
 	

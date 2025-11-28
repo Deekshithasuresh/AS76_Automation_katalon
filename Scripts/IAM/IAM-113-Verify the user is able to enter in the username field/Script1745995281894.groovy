@@ -59,7 +59,7 @@ verifySearchUserByUsernameAndRole(searchKeyword, Exp_role, Exp_Status //search b
 WebUI.verifyElementNotClickable(findTestObject('Object Repository/Manage_user/Page_Admin Console/update-button-disabled'), 
     FailureHandling.STOP_ON_FAILURE)
 
-//WebUI.verifyElementNotClickable(findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box') //WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box'), Keys.chord(Keys.COMMAND, 'a'))
+//WebUI.verifyElementNotClickable(findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box') //WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box'), Keys.chord(Keys.CONTROL, 'a'))
  //   ) //WebUI.sendKeys(findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box'), 'johnsmith_user_authentication_katalon_project_qa_team_20250424@example.com')
 //String email_id_char_count = WebUI.getAttribute(findTestObject('IAM Model/Page_Admin Console/input_Username_rbc-input-box'), 'value')
 

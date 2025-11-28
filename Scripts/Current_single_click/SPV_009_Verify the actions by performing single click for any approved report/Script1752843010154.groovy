@@ -138,7 +138,7 @@ if (wbcPatches.size() > 0) {
 	// Limit to available patches but don't exceed our target
 	int maxToSelect = Math.min(patchesToSelect, wbcPatches.size())
 	
-	// Use CTRL+click (or Command+click on Mac) to select multiple patches
+	// Use CTRL+click (or CONTROL+click on Mac) to select multiple patches
 	Actions actions = new Actions(driver)
 	
 	for (int i = 0; i < maxToSelect; i++) {
@@ -153,12 +153,12 @@ if (wbcPatches.size() > 0) {
 			if (i == 0) {
 				wbcPatches.get(i).click()
 			} else {
-				// For subsequent patches, hold CTRL (or Command on Mac) while clicking
+				// For subsequent patches, hold CTRL (or CONTROL on Mac) while clicking
 				// Determine if we're on Mac or Windows
 				String osName = System.getProperty('os.name').toLowerCase()
 				if (osName.contains('mac')) {
 					// For Mac OS
-					actions.keyDown(Keys.COMMAND).click(wbcPatches.get(i)).keyUp(Keys.COMMAND).build().perform()
+					actions.keyDown(Keys.CONTROL).click(wbcPatches.get(i)).keyUp(Keys.CONTROL).build().perform()
 				} else {
 					// For Windows/Linux
 					actions.keyDown(Keys.CONTROL).click(wbcPatches.get(i)).keyUp(Keys.CONTROL).build().perform()
@@ -240,7 +240,7 @@ if (rbcsizePatches.size() > 0) {
 	// Limit to available patches but don't exceed our target
 	int maxToSelect = Math.min(rbcsizePatchesToSelect, rbcsizePatches.size())
 
-	// Use CTRL+click (or Command+click on Mac) to select multiple patches
+	// Use CTRL+click (or CONTROL+click on Mac) to select multiple patches
 	Actions actions = new Actions(driver)
 
 	for (int i = 0; i < maxToSelect; i++) {
@@ -255,12 +255,12 @@ if (rbcsizePatches.size() > 0) {
 			if (i == 0) {
 				rbcsizePatches.get(i).click()
 			} else {
-				// For subsequent patches, hold CTRL (or Command on Mac) while clicking
+				// For subsequent patches, hold CTRL (or CONTROL on Mac) while clicking
 				// Determine if we're on Mac or Windows
 				String osName = System.getProperty('os.name').toLowerCase()
 				if (osName.contains('mac')) {
 					// For Mac OS
-					actions.keyDown(Keys.COMMAND).click(rbcsizePatches.get(i)).keyUp(Keys.COMMAND).build().perform()
+					actions.keyDown(Keys.CONTROL).click(rbcsizePatches.get(i)).keyUp(Keys.CONTROL).build().perform()
 				} else {
 					// For Windows/Linux
 					actions.keyDown(Keys.CONTROL).click(rbcsizePatches.get(i)).keyUp(Keys.CONTROL).build().perform()
@@ -342,7 +342,7 @@ if (rbcshapePatches.size() > 0) {
 	// Limit to available patches but don't exceed our target
 	int maxToSelect = Math.min(rbcshapePatchesToSelect, rbcshapePatches.size())
 
-	// Use CTRL+click (or Command+click on Mac) to select multiple patches
+	// Use CTRL+click (or CONTROL+click on Mac) to select multiple patches
 	Actions actions = new Actions(driver)
 
 	for (int i = 0; i < maxToSelect; i++) {
@@ -357,12 +357,12 @@ if (rbcshapePatches.size() > 0) {
 			if (i == 0) {
 				rbcshapePatches.get(i).click()
 			} else {
-				// For subsequent patches, hold CTRL (or Command on Mac) while clicking
+				// For subsequent patches, hold CTRL (or CONTROL on Mac) while clicking
 				// Determine if we're on Mac or Windows
 				String osName = System.getProperty('os.name').toLowerCase()
 				if (osName.contains('mac')) {
 					// For Mac OS
-					actions.keyDown(Keys.COMMAND).click(rbcshapePatches.get(i)).keyUp(Keys.COMMAND).build().perform()
+					actions.keyDown(Keys.CONTROL).click(rbcshapePatches.get(i)).keyUp(Keys.CONTROL).build().perform()
 				} else {
 					// For Windows/Linux
 					actions.keyDown(Keys.CONTROL).click(rbcshapePatches.get(i)).keyUp(Keys.CONTROL).build().perform()
@@ -444,7 +444,7 @@ if (rbccolorPatches.size() > 0) {
 	// Limit to available patches but don't exceed our target
 	int maxToSelect = Math.min(rbccolorPatchesToSelect, rbccolorPatches.size())
 
-	// Use CTRL+click (or Command+click on Mac) to select multiple patches
+	// Use CTRL+click (or CONTROL+click on Mac) to select multiple patches
 	Actions actions = new Actions(driver)
 
 	for (int i = 0; i < maxToSelect; i++) {
@@ -459,12 +459,12 @@ if (rbccolorPatches.size() > 0) {
 			if (i == 0) {
 				rbccolorPatches.get(i).click()
 			} else {
-				// For subsequent patches, hold CTRL (or Command on Mac) while clicking
+				// For subsequent patches, hold CTRL (or CONTROL on Mac) while clicking
 				// Determine if we're on Mac or Windows
 				String osName = System.getProperty('os.name').toLowerCase()
 				if (osName.contains('mac')) {
 					// For Mac OS
-					actions.keyDown(Keys.COMMAND).click(rbccolorPatches.get(i)).keyUp(Keys.COMMAND).build().perform()
+					actions.keyDown(Keys.CONTROL).click(rbccolorPatches.get(i)).keyUp(Keys.CONTROL).build().perform()
 				} else {
 					// For Windows/Linux
 					actions.keyDown(Keys.CONTROL).click(rbccolorPatches.get(i)).keyUp(Keys.CONTROL).build().perform()
@@ -546,7 +546,7 @@ if (rbcinclusionsPatches.size() > 0) {
 	// Limit to available patches but don't exceed our target
 	int maxToSelect = Math.min(rbcinclusionsPatchesToSelect, rbcinclusionsPatches.size())
 
-	// Use CTRL+click (or Command+click on Mac) to select multiple patches
+	// Use CTRL+click (or CONTROL+click on Mac) to select multiple patches
 	Actions actions = new Actions(driver)
 
 	for (int i = 0; i < maxToSelect; i++) {
@@ -561,12 +561,12 @@ if (rbcinclusionsPatches.size() > 0) {
 			if (i == 0) {
 				rbcinclusionsPatches.get(i).click()
 			} else {
-				// For subsequent patches, hold CTRL (or Command on Mac) while clicking
+				// For subsequent patches, hold CTRL (or CONTROL on Mac) while clicking
 				// Determine if we're on Mac or Windows
 				String osName = System.getProperty('os.name').toLowerCase()
 				if (osName.contains('mac')) {
 					// For Mac OS
-					actions.keyDown(Keys.COMMAND).click(rbcinclusionsPatches.get(i)).keyUp(Keys.COMMAND).build().perform()
+					actions.keyDown(Keys.CONTROL).click(rbcinclusionsPatches.get(i)).keyUp(Keys.CONTROL).build().perform()
 				} else {
 					// For Windows/Linux
 					actions.keyDown(Keys.CONTROL).click(rbcinclusionsPatches.get(i)).keyUp(Keys.CONTROL).build().perform()
@@ -644,7 +644,7 @@ if (plateletsmorphologyPatches.size() > 0) {
 	// Limit to available patches but don't exceed our target
 	int maxToSelect = Math.min(plateletsmorphologyPatchesToSelect, plateletsmorphologyPatches.size())
 
-	// Use CTRL+click (or Command+click on Mac) to select multiple patches
+	// Use CTRL+click (or CONTROL+click on Mac) to select multiple patches
 	Actions actions = new Actions(driver)
 
 	for (int i = 0; i < maxToSelect; i++) {
@@ -659,12 +659,12 @@ if (plateletsmorphologyPatches.size() > 0) {
 			if (i == 0) {
 				plateletsmorphologyPatches.get(i).click()
 			} else {
-				// For subsequent patches, hold CTRL (or Command on Mac) while clicking
+				// For subsequent patches, hold CTRL (or CONTROL on Mac) while clicking
 				// Determine if we're on Mac or Windows
 				String osName = System.getProperty('os.name').toLowerCase()
 				if (osName.contains('mac')) {
 					// For Mac OS
-					actions.keyDown(Keys.COMMAND).click(plateletsmorphologyPatches.get(i)).keyUp(Keys.COMMAND).build().perform()
+					actions.keyDown(Keys.CONTROL).click(plateletsmorphologyPatches.get(i)).keyUp(Keys.CONTROL).build().perform()
 				} else {
 					// For Windows/Linux
 					actions.keyDown(Keys.CONTROL).click(plateletsmorphologyPatches.get(i)).keyUp(Keys.CONTROL).build().perform()

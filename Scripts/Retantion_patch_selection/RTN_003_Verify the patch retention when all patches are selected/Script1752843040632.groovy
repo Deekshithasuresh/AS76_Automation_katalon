@@ -210,7 +210,7 @@ try {
 	// Determine OS for correct key combination
 	String osName = System.getProperty('os.name').toLowerCase()
 	boolean isMac = osName.contains('mac')
-	WebUI.comment("[INFO] Detected OS: ${osName}, Using ${isMac ? 'COMMAND' : 'CONTROL'} key for multi-select")
+	WebUI.comment("[INFO] Detected OS: ${osName}, Using ${isMac ? 'CONTROL' : 'CONTROL'} key for multi-select")
 	
 	// Main scrolling and selection loop
 	while (scrollAttempts < maxScrollAttempts) {
@@ -283,8 +283,8 @@ try {
 						} else {
 							// Multi-select with appropriate key
 							if (isMac) {
-								WebUI.comment("[CLICK] Using COMMAND+click for Mac")
-								actions.keyDown(Keys.COMMAND).click(patch).keyUp(Keys.COMMAND).build().perform()
+								WebUI.comment("[CLICK] Using CONTROL+click for Mac")
+								actions.keyDown(Keys.CONTROL).click(patch).keyUp(Keys.CONTROL).build().perform()
 							} else {
 								WebUI.comment("[CLICK] Using CONTROL+click for Windows/Linux")
 								actions.keyDown(Keys.CONTROL).click(patch).keyUp(Keys.CONTROL).build().perform()

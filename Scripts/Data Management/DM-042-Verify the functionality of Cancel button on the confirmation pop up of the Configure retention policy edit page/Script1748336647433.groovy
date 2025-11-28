@@ -35,7 +35,7 @@ String currentValueStr = WebUI.getAttribute(inputRetention, "value")
 int currentValue = Integer.parseInt(currentValueStr)
 
 // 2. Clear and try to set a decimal number
-WebUI.sendKeys(daysInput, Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(daysInput, Keys.chord(Keys.CONTROL, 'a'))
 WebUI.sendKeys(daysInput, Keys.chord(Keys.DELETE))
 
 WebUI.delay(10)
@@ -46,7 +46,7 @@ assert daysValue.matches('\\d+') : "Only whole numbers should be accepted, but g
 
 
 // 1. Clear and enter a valid whole number
-WebUI.sendKeys(daysInput, Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(daysInput, Keys.chord(Keys.CONTROL, 'a'))
 WebUI.sendKeys(daysInput, Keys.chord(Keys.DELETE))
 
 //WebUI.clearText(daysInput)
@@ -59,7 +59,7 @@ assert daysValue == '50' : "Expected '50', got '${daysValue}'"
 TestObject timeInput = findTestObject('Object Repository/Report_Listing/Page_Admin Console/input_Time_deletion-time-input')
 
 // Clear the input
-WebUI.sendKeys(timeInput, Keys.chord(Keys.COMMAND, 'a'))
+WebUI.sendKeys(timeInput, Keys.chord(Keys.CONTROL, 'a'))
 WebUI.sendKeys(timeInput, Keys.chord(Keys.DELETE))
 
 // Set desired time (e.g., 10:30 AM)

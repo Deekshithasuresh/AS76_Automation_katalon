@@ -175,7 +175,7 @@ void setAndSaveTimeZone(String timeZone) {
 
     WebUI.click(timezoneDropdown)
 
-    WebUI.sendKeys(timezoneDropdown, Keys.chord(Keys.COMMAND, 'a'))
+    WebUI.sendKeys(timezoneDropdown, Keys.chord(Keys.CONTROL, 'a'))
 
     WebUI.sendKeys(timezoneDropdown, Keys.chord(Keys.BACK_SPACE))
 

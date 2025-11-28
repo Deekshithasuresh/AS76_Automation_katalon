@@ -136,7 +136,7 @@ public class PBS_Settings {
 				for (String value : values) {
 					if(value ==~ /\d+\.\d+/) //if value is decimal
 					{
-						UpperLimitEle.sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+						UpperLimitEle.sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 						UpperLimitEle.sendKeys(Keys.chord(Keys.BACK_SPACE))
 						UpperLimitEle.sendKeys(value)
 						//					int scaled = (value.toBigDecimal() * 10).intValue()// will convert the value=0.5 to 05
@@ -147,7 +147,7 @@ public class PBS_Settings {
 					}
 
 					else {
-						UpperLimitEle.sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+						UpperLimitEle.sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 						UpperLimitEle.sendKeys(Keys.chord(Keys.BACK_SPACE))
 						UpperLimitEle.sendKeys(value)
 					}
@@ -204,14 +204,14 @@ public class PBS_Settings {
 
 			WebUI.delay(2)
 			List <WebElement> UpperLimitEle =row.findElements(By.xpath(".//input[@class='rbc-input-box ']"))
-			UpperLimitEle[0].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+			UpperLimitEle[0].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 			UpperLimitEle[0].sendKeys(Keys.chord(Keys.BACK_SPACE))
 			WebUI.waitForElementVisible(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Error_toast_msg'), 20)
 			String error_msg=WebUI.getText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Error_toast_msg'))
 			assert error_msg.equals('Values should be between 0-100')
 			UpperLimitEle[0].sendKeys(Grade1Value)
 
-			UpperLimitEle[1].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+			UpperLimitEle[1].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 			UpperLimitEle[1].sendKeys(Keys.chord(Keys.BACK_SPACE))
 			WebUI.waitForElementVisible(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Error_toast_msg'), 20)
 			String error_msg1=WebUI.getText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Error_toast_msg'))
@@ -223,7 +223,7 @@ public class PBS_Settings {
 				String error_msg_text1=WebUI.getText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Error_toast_msg'))
 				assert error_msg_text1.equals('Upper limit of grade 2 cannot be lower than upper limit of grade 1')
 
-				UpperLimitEle[0].sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+				UpperLimitEle[0].sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 				UpperLimitEle[0].sendKeys(Keys.chord(Keys.BACK_SPACE))
 				WebUI.waitForElementVisible(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Error_toast_msg'), 20)
 				String error_msg2=WebUI.getText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Error_toast_msg'))
@@ -335,14 +335,14 @@ public class PBS_Settings {
 		int macro_int_value=Integer.parseInt(MacrocyteValue)
 
 		assert microcyte_input_field.isDisplayed()
-		microcyte_input_field.sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+		microcyte_input_field.sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 		microcyte_input_field.sendKeys(Keys.chord(Keys.BACK_SPACE))
 		WebUI.waitForElementVisible(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Error_toast_msg'), 20)
 		String error_msg=WebUI.getText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Error_toast_msg'))
 		assert error_msg.equals('Values should be between 0-15')
 
 		WebUI.delay(2)
-		macrocyte_input_field.sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+		macrocyte_input_field.sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 		macrocyte_input_field.sendKeys(Keys.chord(Keys.BACK_SPACE))
 		WebUI.waitForElementVisible(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Error_toast_msg'), 20)
 		String error_msg1=WebUI.getText(findTestObject('Object Repository/PBS_Settings_Objects/Page_Admin Console/Error_toast_msg'))
@@ -397,7 +397,7 @@ public class PBS_Settings {
 		//		int macro_int_value=Integer.parseInt(MacrocyteValue)
 
 		assert field.isDisplayed()==true
-		field.sendKeys(Keys.chord(Keys.COMMAND, 'a'))
+		field.sendKeys(Keys.chord(Keys.CONTROL, 'a'))
 		field.sendKeys(Keys.chord(Keys.BACK_SPACE))
 		field.sendKeys(Value)
 	}

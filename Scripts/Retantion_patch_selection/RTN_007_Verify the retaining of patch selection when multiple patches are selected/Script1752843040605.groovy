@@ -134,8 +134,8 @@ for (int i = 0; i <3; i++) {
 			WebUI.comment("✓ Selected first patch (normal click)")
 		} else {
 			if (isMac) {
-				actions.keyDown(Keys.COMMAND).click(patchToSelect).keyUp(Keys.COMMAND).perform()
-				WebUI.comment("✓ Selected patch " + (i + 1) + " (Command+click)")
+				actions.keyDown(Keys.CONTROL).click(patchToSelect).keyUp(Keys.CONTROL).perform()
+				WebUI.comment("✓ Selected patch " + (i + 1) + " (CONTROL+click)")
 			} else {
 				actions.keyDown(Keys.CONTROL).click(patchToSelect).keyUp(Keys.CONTROL).perform()
 				WebUI.comment("✓ Selected patch " + (i + 1) + " (Ctrl+click)")
