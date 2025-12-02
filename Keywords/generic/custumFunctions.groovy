@@ -29,6 +29,7 @@ public class custumFunctions {
 		WebUI.setEncryptedText(findTestObject('Object Repository/Report_Listing/Login_page/input_password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
 		WebUI.click(findTestObject('Object Repository/Report_Listing/Login_page/button_Sign In'))
 		WebUI.waitForPageLoad(10)
+		WebUI.maximizeWindow()
 	}
 
 	@Keyword

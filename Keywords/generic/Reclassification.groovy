@@ -1106,7 +1106,7 @@ public class Reclassification {
 			for (int i = 0; i < numberOfPatches; i++) {
 				patchElements[i].click()
 				WebUI.comment("Selected patch ${i + 1}")
-				WebUI.delay(0.2)
+				WebUI.delay(0.5)
 			}
 
 			// Drag the last selected patch

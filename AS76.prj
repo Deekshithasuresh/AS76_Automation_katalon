@@ -6,12 +6,12 @@
    <UUID>562895b6-c97e-4f6b-8b70-5fd00e55ad03</UUID>
    <createdEdition>ENTERPRISE</createdEdition>
    <createdVersion>10.1.1</createdVersion>
-   <freeLicense>true</freeLicense>
+   <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
    <modifiedEdition>ENTERPRISE</modifiedEdition>
-   <modifiedVersion>10.3.2</modifiedVersion>
+   <modifiedVersion>10.4.2</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
-   <projectFileLocation>C:\Users\sigtuple\git\AS76_Automation_katalon\AS76.prj</projectFileLocation>
+   <projectFileLocation>C:\Users\Manjunatha CG\git\AS76_Automation_katalon\AS76.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>
