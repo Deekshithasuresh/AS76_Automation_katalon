@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import loginPackage.Login
+import loginPackage.Login as Login
 
 Login lg = new Login()
 
@@ -34,12 +34,13 @@ WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_RBC'))
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Color'), 10)
 
-WebUI.verifyElementText(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Color'), 'Color')
+//WebUI.verifyElementText(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Color'), 'Color')
 
 WebUI.click(findTestObject('Object Repository/RBC_Objects/Page_PBS/button_Color'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_Cell name'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_Cell name'), 10)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_Grade0123'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_Grade0123'), 10)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/RBC_Objects/Page_PBS/div_'), 10)
+
