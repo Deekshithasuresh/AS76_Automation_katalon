@@ -6,30 +6,34 @@
    <elementGuidId>f91dfd33-8cd9-4d22-b43e-4e09ab86ccc9</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//button[text()='Create and copy']/preceding-sibling::button</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.css-83z19l</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[25]</value>
+         <key>BASIC</key>
+         <value>//button[@type = 'button' and (text() = 'Cancel' or . = 'Cancel')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>internal:role=button[name=&quot;Cancel&quot;i]</value>
+         <value>(//button[@type='button'])[25]</value>
       </entry>
    </smartLocatorCollection>
-   <smartLocatorEnabled>true</smartLocatorEnabled>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>0f817541-e9f4-4adf-b9e0-f1da4df870f3</webElementGuid>
+      <webElementGuid>81da2db1-238d-4dfa-93c9-ea428a2f114c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +41,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-83z19l</value>
-      <webElementGuid>ecedfd9d-78b5-49e9-a96e-37863ca39413</webElementGuid>
+      <webElementGuid>bc4aad2e-5753-4ee2-ad6f-4ad179ff7ad2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +49,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>53301c7a-1283-4836-898e-4b1475cc253b</webElementGuid>
+      <webElementGuid>162f2212-04a1-4856-ba6c-349d765b106f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +57,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>5912d24d-1949-499f-847c-e1ebf9962a77</webElementGuid>
+      <webElementGuid>98054689-a622-4103-9d40-9e6cd632c7ad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +65,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Cancel</value>
-      <webElementGuid>ed043571-a78a-4843-931c-8a784cbe6a39</webElementGuid>
+      <webElementGuid>2539d72e-c3da-4b87-906e-fac578a1727b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +73,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>/html[1]/body[1]/div[@class=&quot;MuiModal-root css-8ndowl&quot;]/div[@class=&quot;css-hwagmm&quot;]/div[@class=&quot;css-i6dpt&quot;]/button[@class=&quot;MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-83z19l&quot;]</value>
-      <webElementGuid>0b5d412a-aac3-40e7-8d94-1532506f6d7c</webElementGuid>
+      <webElementGuid>41035a97-bab0-4ba7-b971-e57c44cf5277</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +81,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[25]</value>
-      <webElementGuid>ae3dd880-2b31-4710-83a0-4d1906e9cfec</webElementGuid>
+      <webElementGuid>bd24a5e8-d923-418e-a33e-c368fd99b9c5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Admin'])[1]/following::button[1]</value>
-      <webElementGuid>5e9aa839-6618-411c-bc2d-d17fac39ae89</webElementGuid>
+      <webElementGuid>71516ebd-2402-4a3d-af87-dd5635fc6f12</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reviewer'])[1]/following::button[1]</value>
-      <webElementGuid>3afb7962-3a04-4b3a-b219-d6701fbd6ca4</webElementGuid>
+      <webElementGuid>451d1197-9b9f-4b4f-aa2a-3c077b1f7dfc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Create new user'])[1]/preceding::button[1]</value>
-      <webElementGuid>12020af8-7260-4f8c-900b-dbc5eb6e3f40</webElementGuid>
+      <webElementGuid>dabae83d-66de-4e6a-b73a-e4985615d587</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Cancel']/parent::*</value>
-      <webElementGuid>6a2cee7a-0b07-4588-a7f1-f45c186d7d79</webElementGuid>
+      <webElementGuid>525c03a6-df61-42e8-b83d-b2e5672107ac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +121,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/div[3]/button</value>
-      <webElementGuid>9589dbe3-b7ce-449c-bc40-a9f8943d3b0f</webElementGuid>
+      <webElementGuid>fbbb18fd-6e34-41fd-b9e2-b831349436d6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,6 +129,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Cancel' or . = 'Cancel')]</value>
-      <webElementGuid>860d6bec-3f70-4481-a003-28ea7b8265f7</webElementGuid>
+      <webElementGuid>568c93dc-2752-43cf-af67-8d96717e9e8e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

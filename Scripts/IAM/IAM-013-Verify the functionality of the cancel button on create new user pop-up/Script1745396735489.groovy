@@ -26,6 +26,8 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://admin.as76.local/login')
 
+WebUI.maximizeWindow()
+
 WebUI.setText(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Username_loginId'), 'adminuserr')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/IAM Model/Page_Admin Console/input_Password_loginPassword'), 'JBaPNhID5RC7zcsLVwaWIA==')
@@ -113,9 +115,9 @@ WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/input
 
 WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Create new user'))
 
-WebUI.click(findTestObject('IAM Model/Page_Admin Console/button_Cancel'))
+WebUI.click(findTestObject('Object Repository/IAM Model/Page_Admin Console/button_Cancel'))
 
-WebUI.verifyElementText(findTestObject('IAM Model/Page_Admin Console/h2_Create User'), 'Create User')
+WebUI.verifyElementText(findTestObject('Object Repository/IAM Model/Page_Admin Console/h2_Create User'), 'Create User')
 
 
 String generateUsername() {

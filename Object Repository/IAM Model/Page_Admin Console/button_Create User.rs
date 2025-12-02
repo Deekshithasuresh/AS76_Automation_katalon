@@ -6,15 +6,19 @@
    <elementGuidId>a3b0964d-89a3-4fee-b951-8a18445e8601</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>(//button[@type='button'])[23]</value>
+      </entry>
+      <entry>
          <key>CSS</key>
          <value>button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeSmall.MuiButton-containedSizeSmall.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeSmall.MuiButton-containedSizeSmall.css-9ho7al</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[23]</value>
+         <key>BASIC</key>
+         <value>//*[@type = 'button' and (text() = 'Create User' or . = 'Create User')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
@@ -29,7 +33,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>77eb5ff2-da75-4521-8a40-49bd125c8108</webElementGuid>
+      <webElementGuid>86d1c7b3-eb4b-44ff-9dcc-4c252dfc1c82</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +41,7 @@
       <name>class</name>
       <type>Main</type>
       <value>MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-9ho7al</value>
-      <webElementGuid>b2f8fd93-2c9b-412e-8d6d-d0c7cce91ab6</webElementGuid>
+      <webElementGuid>7be29c89-108a-4fec-a50e-8ea7d764d980</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +49,7 @@
       <name>tabindex</name>
       <type>Main</type>
       <value>0</value>
-      <webElementGuid>12715917-9d4d-4826-a1fe-74e221f249aa</webElementGuid>
+      <webElementGuid>92940d84-a1d4-4bbc-8d34-f533218df37b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,7 +57,7 @@
       <name>type</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>ddc3635d-ce8c-454b-8b43-2f6d9ee57be3</webElementGuid>
+      <webElementGuid>a94fc003-72e1-40af-ab4b-ca8b8a5f9091</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -61,7 +65,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Create User</value>
-      <webElementGuid>44a9bfd7-a9ff-452b-81ab-394e42a0c626</webElementGuid>
+      <webElementGuid>71178034-597b-434b-9dd0-9313809c4165</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +73,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;css-10fsrl8&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container css-1y82ffr&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-9.5 css-70qs4m&quot;]/div[@class=&quot;test&quot;]/div[@class=&quot;MuiBox-root css-b4nod0&quot;]/div[2]/button[@class=&quot;MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-9ho7al&quot;]</value>
-      <webElementGuid>f4121050-1938-418b-9242-0b068b4da810</webElementGuid>
+      <webElementGuid>4b7e15ba-ac6c-4433-bf47-16306abc9260</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -77,7 +81,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//button[@type='button'])[23]</value>
-      <webElementGuid>f0115160-891b-44d0-b5d9-ae2d6e6a1cc6</webElementGuid>
+      <webElementGuid>b804dfba-4eff-47f2-8107-e2892b8b81ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +89,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/div[2]/div/div/div[2]/button</value>
-      <webElementGuid>9be7ec02-f0a9-4fbb-ab0b-8e7411bc0661</webElementGuid>
+      <webElementGuid>d7d60dd8-9207-4a26-9aef-119fb20f6b37</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +97,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Clear filters'])[1]/following::button[1]</value>
-      <webElementGuid>1446d840-a8a0-4b3b-b9d1-979de9e89bfb</webElementGuid>
+      <webElementGuid>ee8a080d-bcc7-4f2b-af02-d9af4d759ca8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +105,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='​'])[1]/following::button[2]</value>
-      <webElementGuid>b7e442c8-58da-485d-9eeb-26b5d5a218c8</webElementGuid>
+      <webElementGuid>0a4b2add-438a-4b0f-9b08-87a501292a5a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,7 +113,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[1]/preceding::button[1]</value>
-      <webElementGuid>11feebca-2125-4fbe-946c-ecb2fc6204d6</webElementGuid>
+      <webElementGuid>255ecd5e-50f0-41df-abe6-43a90cdba597</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,7 +121,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='User name'])[1]/preceding::button[1]</value>
-      <webElementGuid>6e1f27fd-b5ab-4a7f-83fe-7ced91dbb55a</webElementGuid>
+      <webElementGuid>b416a0ac-809d-40e8-bc3e-f56d5d350efd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -125,7 +129,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Create User']/parent::*</value>
-      <webElementGuid>588f2be6-b137-4e38-833a-82428f6700ca</webElementGuid>
+      <webElementGuid>1910138c-36d5-4fbb-b7fe-6bc647724ed4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -133,7 +137,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/button</value>
-      <webElementGuid>eac10f18-4f23-43bf-9b25-8e3aeb598169</webElementGuid>
+      <webElementGuid>c76d557a-9e7a-4f36-9fb3-413763b7a546</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -141,6 +145,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@type = 'button' and (text() = 'Create User' or . = 'Create User')]</value>
-      <webElementGuid>5c668d23-d461-467d-8422-f0a1214232ab</webElementGuid>
+      <webElementGuid>22270432-7cdd-4180-9f50-aa67394a70cc</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
