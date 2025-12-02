@@ -42,7 +42,7 @@ public class ZoomInOut {
 		WebUI.delay(10)
 		// Get all cell rows
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
 
 
 		for (WebElement row : cellRows) {
@@ -74,7 +74,7 @@ public class ZoomInOut {
 
 				// Skip certain cell types regardless of patch count
 				if (cellname.equals("Anisocytosis") || cellname.equals("Acanthocytes*") ||
-				cellname.equals("Sickle Cells*") || cellname.equals("Stomatocytes")) {
+						cellname.equals("Sickle Cells*") || cellname.equals("Stomatocytes")) {
 					WebUI.comment("🔕 Skipping manually graded cell: " + cellname)
 					continue
 				}
@@ -296,7 +296,7 @@ public class ZoomInOut {
 		WebUI.delay(10)
 
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 1)
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 1)
 
 		for (WebElement row : cellRows) {
 			try {
@@ -323,7 +323,7 @@ public class ZoomInOut {
 				}
 
 				if (cellname.equals("Anisocytosis") || cellname.equals("Acanthocytes*") ||
-				cellname.equals("Sickle Cells*") || cellname.equals("Stomatocytes")) {
+						cellname.equals("Sickle Cells*") || cellname.equals("Stomatocytes")) {
 					WebUI.comment("🔕 Skipping manually graded cell: " + cellname)
 					continue
 				}
@@ -351,8 +351,7 @@ public class ZoomInOut {
 				}
 
 				// Function to save canvas image
-				def saveBase64Image = {
-					String base64, String filePath ->
+				def saveBase64Image = { String base64, String filePath ->
 					String base64Data = base64.split(",")[1]
 					byte[] imageBytes = Base64.decoder.decode(base64Data)
 					InputStream is = new ByteArrayInputStream(imageBytes)
@@ -461,7 +460,7 @@ public class ZoomInOut {
 		WebUI.delay(10)
 
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 1)
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 1)
 
 		WebDriver driver = DriverFactory.getWebDriver()
 
@@ -504,9 +503,9 @@ public class ZoomInOut {
 				println("📦 Total number of patches: " + total_no_of_patches)
 
 				if (total_no_of_patches > 0 && !cellname.equals("Anisocytosis") &&
-				!cellname.equals("Acanthocytes*") &&
-				!cellname.equals("Sickle Cells*") &&
-				!cellname.equals("Stomatocytes")) {
+						!cellname.equals("Acanthocytes*") &&
+						!cellname.equals("Sickle Cells*") &&
+						!cellname.equals("Stomatocytes")) {
 
 					// Open patch image
 					WebUI.waitForElementVisible(findTestObject('Object Repository/RBC_Objects/Page_PBS/img_Platelets_split-view_1_2 (1)'), 30)
@@ -584,7 +583,7 @@ public class ZoomInOut {
 		WebUI.delay(10)
 
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 1)
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 1)
 
 		WebDriver driver = DriverFactory.getWebDriver()
 
@@ -617,7 +616,7 @@ public class ZoomInOut {
 
 				// Skip certain cell types regardless of patch count
 				if (cellname.equals("Anisocytosis") || cellname.equals("Acanthocytes*") ||
-				cellname.equals("Sickle Cells*") || cellname.equals("Stomatocytes")) {
+						cellname.equals("Sickle Cells*") || cellname.equals("Stomatocytes")) {
 					WebUI.comment("🔕 Skipping manually graded cell: " + cellname)
 					continue
 				}
@@ -697,7 +696,7 @@ public class ZoomInOut {
 
 	public void iterateThroughTheCellRows() {
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
 		ArrayList<String> al_RBC_cellnames= new ArrayList<>(Arrays.asList("Microcytes", "Macrocytes", "Ovalocytes","Elliptocytes","Teardrop Cells","Fragmented Cells","Target Cells","Echinocytes"));
 		for (WebElement row : cellRows) {
 			// Get the percentage element (last div inside the row)
@@ -720,7 +719,7 @@ public class ZoomInOut {
 		WebUI.delay(10)
 		// Get all cell rows
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
 
 		for (WebElement row : cellRows) {
 			int count=0;
@@ -751,7 +750,7 @@ public class ZoomInOut {
 			float percentage_flaot_value = Float.parseFloat(percentageElement.getText())
 			println(percentage_flaot_value)
 			List<WebElement> patches = WebUiCommonHelper.findWebElements(
-			findTestObject('Object Repository/RBC_Objects/Page_PBS/Patches'),20)
+					findTestObject('Object Repository/RBC_Objects/Page_PBS/Patches'),20)
 			WebDriver driver = DriverFactory.getWebDriver()
 			String no_patches_msg=driver.findElement(By.className("patches-section")).getText()
 
@@ -807,7 +806,7 @@ public class ZoomInOut {
 
 	public void verifyRegrade() {
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),1)
 		for (WebElement row : cellRows) {
 			//Get the percentage element (last div inside the row)
 			row.click()
@@ -1174,110 +1173,205 @@ public class ZoomInOut {
 		}
 	}
 
-//	public void verifyCorrectnessOfGradeAccordingToPercentageValue() {
-//		WebDriver driver =DriverFactory.getWebDriver()
-//		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-//		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
-//
-//		for (WebElement row : cellRows) {
-//
-//			WebElement percentageElement = row.findElement(By.xpath(".//div[3]"))
-//			WebElement cellname_ele = row.findElement(By.xpath(".//div[1]"))
-//			String cellname = cellname_ele.getText()
-//			println(cellname)
-//			float percentage_flaot_value = Float.parseFloat(percentageElement.getText())
-//			println(percentage_flaot_value)
-//
-//			List<WebElement> grades= row.findElements(By.xpath(".//input[@type='radio']"))
-//			for(int i=0; i<=grades.size();i++) {
-//				if(grades.get(i).isSelected()) {
-//					int selected_grade=Integer.parseInt(grades.get(i).getAttribute("value"))
-//
-//					System.out.println("Selected option value: " + selected_grade);
-//					if(selected_grade==0) {
-//						assert percentage_flaot_value==0
-//						break;
-//					}
-//					else if(selected_grade==1) {
-//						assert percentage_flaot_value > 0 && percentage_flaot_value <= 3
-//						break;
-//					}
-//					else if(selected_grade==2) {
-//						if(cellname.equals("Teardrop Cells")) {
-//							assert percentage_flaot_value > 3 && percentage_flaot_value <= 6
-//							break;
-//						}
-//						else {
-//							assert percentage_flaot_value > 3 && percentage_flaot_value <= 5
-//							break;
-//						}
-//					}
-//					else if(selected_grade==3) {
-//						if(cellname.equals("Teardrop Cells")) {
-//							assert percentage_flaot_value >6
-//							break;
-//						}
-//						else {
-//							assert percentage_flaot_value >5
-//							break;
-//						}
-//					}
-//					else {
-//						println("Grade value is not as per the percentage criteria")
-//					}
-//				}
-//			}
-//		}
-//	}
-	
-	
-	
+	//	public void verifyCorrectnessOfGradeAccordingToPercentageValue() {
+	//		WebDriver driver =DriverFactory.getWebDriver()
+	//		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
+	//		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+	//
+	//		for (WebElement row : cellRows) {
+	//
+	//			WebElement percentageElement = row.findElement(By.xpath(".//div[3]"))
+	//			WebElement cellname_ele = row.findElement(By.xpath(".//div[1]"))
+	//			String cellname = cellname_ele.getText()
+	//			println(cellname)
+	//			float percentage_flaot_value = Float.parseFloat(percentageElement.getText())
+	//			println(percentage_flaot_value)
+	//
+	//			List<WebElement> grades= row.findElements(By.xpath(".//input[@type='radio']"))
+	//			for(int i=0; i<=grades.size();i++) {
+	//				if(grades.get(i).isSelected()) {
+	//					int selected_grade=Integer.parseInt(grades.get(i).getAttribute("value"))
+	//
+	//					System.out.println("Selected option value: " + selected_grade);
+	//					if(selected_grade==0) {
+	//						assert percentage_flaot_value==0
+	//						break;
+	//					}
+	//					else if(selected_grade==1) {
+	//						assert percentage_flaot_value > 0 && percentage_flaot_value <= 3
+	//						break;
+	//					}
+	//					else if(selected_grade==2) {
+	//						if(cellname.equals("Teardrop Cells")) {
+	//							assert percentage_flaot_value > 3 && percentage_flaot_value <= 6
+	//							break;
+	//						}
+	//						else {
+	//							assert percentage_flaot_value > 3 && percentage_flaot_value <= 5
+	//							break;
+	//						}
+	//					}
+	//					else if(selected_grade==3) {
+	//						if(cellname.equals("Teardrop Cells")) {
+	//							assert percentage_flaot_value >6
+	//							break;
+	//						}
+	//						else {
+	//							assert percentage_flaot_value >5
+	//							break;
+	//						}
+	//					}
+	//					else {
+	//						println("Grade value is not as per the percentage criteria")
+	//					}
+	//				}
+	//			}
+	//		}
+	//	}
+
+
+
 	public void verifyCorrectnessOfGradeAccordingToPercentageValue() {
 		WebDriver driver = DriverFactory.getWebDriver()
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-			findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 10
-		)
-	
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 10
+				)
+
 		// Grading thresholds (from your corrected config)
 		Map<String, List<List<Float>>> gradingRules = [
 			// Shape
-			"Ovalocytes":        [[0,0],[0,6],[6,20],[20,Float.MAX_VALUE]],
-			"Elliptocytes":      [[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
-			"Teardrop Cells":    [[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
-			"Fragmented Cells":  [[0,0],[0,1],[1,2],[2,Float.MAX_VALUE]],
-			"Target Cells":      [[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
-			"Echinocytes":       [[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
-			"Acanthocytes":      [[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
-			"Sickle Cells":      [[0,0],[0,1],[1,2],[2,Float.MAX_VALUE]],
-			"Stomatocytes":      [[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
-			"Spherocytes":       [[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
-			"Poikilocytosis":    [[0,0],[0,10],[10,20],[20,Float.MAX_VALUE]],
-	
+			"Ovalocytes":        [
+				[0, 0],
+				[0, 6],
+				[6, 20],
+				[20, Float.MAX_VALUE]
+			],
+			"Elliptocytes":      [
+				[0, 0],
+				[0, 5],
+				[5, 20],
+				[20, Float.MAX_VALUE]
+			],
+			"Teardrop Cells":    [
+				[0, 0],
+				[0, 5],
+				[5, 20],
+				[20, Float.MAX_VALUE]
+			],
+			"Fragmented Cells":  [
+				[0, 0],
+				[0, 1],
+				[1, 2],
+				[2, Float.MAX_VALUE]
+			],
+			"Target Cells":      [
+				[0, 0],
+				[0, 5],
+				[5, 20],
+				[20, Float.MAX_VALUE]
+			],
+			"Echinocytes":       [
+				[0, 0],
+				[0, 5],
+				[5, 20],
+				[20, Float.MAX_VALUE]
+			],
+			"Acanthocytes":      [
+				[0, 0],
+				[0, 5],
+				[5, 20],
+				[20, Float.MAX_VALUE]
+			],
+			"Sickle Cells":      [
+				[0, 0],
+				[0, 1],
+				[1, 2],
+				[2, Float.MAX_VALUE]
+			],
+			"Stomatocytes":      [
+				[0, 0],
+				[0, 5],
+				[5, 20],
+				[20, Float.MAX_VALUE]
+			],
+			"Spherocytes":       [
+				[0, 0],
+				[0, 5],
+				[5, 20],
+				[20, Float.MAX_VALUE]
+			],
+			"Poikilocytosis":    [
+				[0, 0],
+				[0, 10],
+				[10, 20],
+				[20, Float.MAX_VALUE]
+			],
+
 			// Size
-			"Microcytes":        [[0,0],[0,10],[10,20],[20,Float.MAX_VALUE]],
-			"Macrocytes":        [[0,0],[0,10],[10,20],[20,Float.MAX_VALUE]],
-			"Anisocytosis":      [[0,0],[0,10],[10,20],[20,Float.MAX_VALUE]],
-	
+			"Microcytes":        [
+				[0, 0],
+				[0, 10],
+				[10, 20],
+				[20, Float.MAX_VALUE]
+			],
+			"Macrocytes":        [
+				[0, 0],
+				[0, 10],
+				[10, 20],
+				[20, Float.MAX_VALUE]
+			],
+			"Anisocytosis":      [
+				[0, 0],
+				[0, 10],
+				[10, 20],
+				[20, Float.MAX_VALUE]
+			],
+
 			// Color
-			"Hypochromic Cells": [[0,0],[0,10],[10,20],[20,Float.MAX_VALUE]],
-			"Polychromatic Cells":[[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]],
-	
+			"Hypochromic Cells": [
+				[0, 0],
+				[0, 10],
+				[10, 20],
+				[20, Float.MAX_VALUE]
+			],
+			"Polychromatic Cells":[
+				[0, 0],
+				[0, 5],
+				[5, 20],
+				[20, Float.MAX_VALUE]
+			],
+
 			// Inclusion bodies
-			"Howell-Jolly":      [[0,0],[0,2],[2,3],[3,Float.MAX_VALUE]],
-			"Pappenheimer":      [[0,0],[0,2],[2,3],[3,Float.MAX_VALUE]],
-			"Basophilic Stippling":[[0,0],[0,5],[5,20],[20,Float.MAX_VALUE]]
+			"Howell-Jolly":      [
+				[0, 0],
+				[0, 2],
+				[2, 3],
+				[3, Float.MAX_VALUE]
+			],
+			"Pappenheimer":      [
+				[0, 0],
+				[0, 2],
+				[2, 3],
+				[3, Float.MAX_VALUE]
+			],
+			"Basophilic Stippling":[
+				[0, 0],
+				[0, 5],
+				[5, 20],
+				[20, Float.MAX_VALUE]
+			]
 		]
-	
+
 		float EPSILON = 0.5f  // tolerance to handle rounding (e.g. 0.0001 shown as 0.0)
-	
+
 		for (WebElement row : cellRows) {
 			WebElement percentageElement = row.findElement(By.xpath(".//div[3]"))
 			WebElement cellname_ele = row.findElement(By.xpath(".//div[1]"))
-	
+
 			String cellname = cellname_ele.getText().trim()
 			String percentageText = percentageElement.getText().trim()
 			float percentage = 0.0f  // default if empty or invalid
-			
+
 			if (percentageText.isEmpty()) {
 				println("⚠ $cellname → percentage blank, treating as 0.0")
 			} else {
@@ -1288,62 +1382,62 @@ public class ZoomInOut {
 					percentage = 0.0f
 				}
 			}
-			
+
 			//float percentage = Float.parseFloat(percentageElement.getText())
-			
+
 			println("$cellname → % = $percentage")
-	
+
 			List<WebElement> grades = row.findElements(By.xpath(".//input[@type='radio']"))
 			for (int i = 0; i < grades.size(); i++) {
 				if (grades.get(i).isSelected()) {
 					int selectedGrade = Integer.parseInt(grades.get(i).getAttribute("value"))
 					println("Selected Grade: $selectedGrade")
-	
+
 					List<List<Float>> ranges = gradingRules[cellname]
 					if (ranges == null) {
 						println("⚠ No grading rule defined for $cellname, skipping check")
 						continue
 					}
-	
+
 					List<Float> range = ranges[selectedGrade]
-	
+
 					// Allow tolerance for floating-point rounding
 					boolean inRange = (percentage > (range[0] - EPSILON)) && (percentage <= (range[1] + EPSILON))
-	
+
 					assert inRange :
-						"❌ $cellname → Expected % in range $range for Grade $selectedGrade, but got $percentage"
-	
+					"❌ $cellname → Expected % in range $range for Grade $selectedGrade, but got $percentage"
+
 					println("✅ $cellname → % = $percentage falls in $range for Grade $selectedGrade")
 					break
 				}
 			}
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	public void valueGettingStrikeOfAfterRegrading() {
 		WebDriver driver =DriverFactory.getWebDriver()
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
 
 		for (WebElement row : cellRows) {
 			//WebElement percentageElement = row.findElement(By.xpath(".//div[3]"))
@@ -1378,7 +1472,7 @@ public class ZoomInOut {
 	public HashMap<String,String> verifyRegradingChangesAutoSaved() {
 		WebDriver driver =DriverFactory.getWebDriver()
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
 		Map<String,String> hm = new HashMap<>();
 		for (WebElement row : cellRows) {
 			//WebElement percentageElement = row.findElement(By.xpath(".//div[3]"))
@@ -1405,7 +1499,7 @@ public class ZoomInOut {
 		boolean flag_not_clickable_status=true
 		WebDriver driver =DriverFactory.getWebDriver()
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
 		for (WebElement row : cellRows) {
 			//WebElement percentageElement = row.findElement(By.xpath(".//div[3]"))
 			WebElement cellname_ele = row.findElement(By.xpath(".//div[1]"))
@@ -1479,7 +1573,7 @@ public class ZoomInOut {
 
 
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
 		for(WebElement cellrow:cellRows) {
 			WebElement cellname_ele = cellrow.findElement(By.xpath(".//div[1]"))
 			String cellname = cellname_ele.getText()
@@ -1495,7 +1589,7 @@ public class ZoomInOut {
 			}
 
 			List<WebElement> patch_eles = WebUiCommonHelper.findWebElements(
-			findTestObject('Object Repository/RBC_Objects/Page_PBS/Patches'),30)
+					findTestObject('Object Repository/RBC_Objects/Page_PBS/Patches'),30)
 			for (int i = 0; i < patch_eles.size(); i++) {
 				WebElement patch = patch_eles.get(i).findElement(By.xpath(".//div//img[contains(@class, 'qa_patch_rank')]"));
 				Dimension size = patch.getSize();
@@ -1511,7 +1605,7 @@ public class ZoomInOut {
 
 	public void checkRankOfThePatch() {
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
 
 		for(WebElement cellrow:cellRows) {
 			WebElement cellname_ele = cellrow.findElement(By.xpath(".//div[1]"))
@@ -1529,7 +1623,7 @@ public class ZoomInOut {
 			//			WebUI.comment("🖼️ Unique image URLs: " + result.images)
 			//		}
 			List<WebElement> patch_eles = WebUiCommonHelper.findWebElements(
-			findTestObject('Object Repository/RBC_Objects/Page_PBS/Patches'),30)
+					findTestObject('Object Repository/RBC_Objects/Page_PBS/Patches'),30)
 			for (int i=0; i<patch_eles.size();i++) {
 				String patch_rank = patch_eles.get(i).findElement(By.xpath(".//div//img")).getAttribute('class');
 				int Actual_patch_Rank=Integer.parseInt(patch_rank.replaceAll("[^0-9]",''))
@@ -1544,7 +1638,7 @@ public class ZoomInOut {
 	public void verifyPatchesAreDisplayedAlligned() {
 		WebDriver driver = DriverFactory.getWebDriver()
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'),10)
 		LinkedHashMap<String, Integer> hm =new  LinkedHashMap<>()
 		for(WebElement cellrow:cellRows) {
 			hm.clear()
@@ -1561,7 +1655,7 @@ public class ZoomInOut {
 
 			WebUI.delay(2)
 			List<WebElement> patch_row = WebUiCommonHelper.findWebElements(
-			findTestObject('Object Repository/RBC_Objects/Page_PBS/patch_row'),30)
+					findTestObject('Object Repository/RBC_Objects/Page_PBS/patch_row'),30)
 
 			println("Number of rows are "+patch_row.size())
 			if(patch_row.size()<=2) {
@@ -1588,7 +1682,7 @@ public class ZoomInOut {
 		SoftAssert softAssert = new SoftAssert()
 
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 10)
+				findTestObject('Object Repository/RBC_Objects/Page_PBS/Cell_rows'), 10)
 		LinkedHashMap<String, Integer> hm = new LinkedHashMap<>()
 
 		for (WebElement cellrow : cellRows) {
@@ -1599,8 +1693,8 @@ public class ZoomInOut {
 			String cellname = cellname_ele.getText()
 
 			if (cellname.equals("Acanthocytes*") || cellname.equals("Sickle Cells*") ||
-			cellname.equals("Stomatocytes*") || cellname.equals("Pappenheimer Bodies*") ||
-			cellname.equals("Howell-Jolly Bodies*") || cellname.equals("Basophilic Stippling*")) {
+					cellname.equals("Stomatocytes*") || cellname.equals("Pappenheimer Bodies*") ||
+					cellname.equals("Howell-Jolly Bodies*") || cellname.equals("Basophilic Stippling*")) {
 
 				WebElement significant_legend_ele = cellrow.findElement(By.xpath(".//div[1]//div"))
 				String significant_color = significant_legend_ele.getCssValue("background")
@@ -1642,7 +1736,7 @@ public class ZoomInOut {
 
 	public void verifyRegradeeee() {
 		List<WebElement> cellRows = WebUiCommonHelper.findWebElements(
-		findTestObject("Object Repository/RBC_Objects/Page_PBS/Cell_rows"),1);
+				findTestObject("Object Repository/RBC_Objects/Page_PBS/Cell_rows"),1);
 		for (WebElement row : cellRows) {
 			row.click();
 			String cellname = row.findElement(By.xpath(".//div")).getText();
