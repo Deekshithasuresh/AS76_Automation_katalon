@@ -6,11 +6,11 @@
    <elementGuidId>c0fdf40f-80ae-4d41-b1e4-21154a327d9a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[contains(@class,'scanDatePage_container-date')]//span</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html[1]/body[1]/div[2]/div[3]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

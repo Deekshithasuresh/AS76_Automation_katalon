@@ -8,7 +8,6 @@ import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.Keys
 import org.openqa.selenium.WebElement
 
-import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
@@ -418,7 +417,14 @@ if (rowsSecound.size() == 0) {
 	
 	
 	WebUI.setText(searchBox, slideID)
-	WebUI.sendKeys(searchBox, Keys.chord(Keys.ENTER))
+	//WebUI.sendKeys(searchBox, Keys.chord(Keys.ENTER))
+	//.sendKeys(searchBox, Keys.ENTER)
+	WebUI.sendKeys(searchBox, "\n")
+	WebUI.sendKeys(searchBox, "\n")
+	
+	
+	
+	
 	WebUI.delay(5)
 	
 	
