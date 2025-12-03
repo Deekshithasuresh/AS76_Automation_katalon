@@ -8,34 +8,59 @@ import javax.imageio.ImageIO
 
 import org.openqa.selenium.JavascriptExecutor
 
-import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import java.util.Base64 as Base64
+import com.kms.katalon.core.util.KeywordUtil
 
 
 
 
 // ── helpers ────────────────────────────────────────────────────────────
 // grab the #pbs-volumeViewport canvas as a Base64 data‐URL
-def getCanvasImageBase64 = { 
-    JavascriptExecutor js = ((DriverFactory.getWebDriver()) as JavascriptExecutor)
-
-        ((js.executeScript('\n       const c = document.querySelector(\'#pbs-volumeViewport canvas\');\n       return c ? c.toDataURL(\'image/png\') : \'\';\n    ')) as String)
-}
+//def getCanvasImageBase64 = { 
+//    JavascriptExecutor js = ((DriverFactory.getWebDriver()) as JavascriptExecutor)
+//
+//        ((js.executeScript('\n       const c = document.querySelector(\'#pbs-volumeViewport canvas\');\n       return c ? c.toDataURL(\'image/png\') : \'\';\n    ')) as String)
+//}
 
 // write a Base64 → PNG file
-def saveBase64Image = { String b64, String path ->
-    String payload = b64.split(',')[1]
+//def saveBase64Image = { String b64, String path ->
+//    String payload = b64.split(',')[1]
+//
+//    byte[] bytes = Base64.decoder.decode(payload)
+//
+//    BufferedImage img = ImageIO.read(new ByteArrayInputStream(bytes))
+//
+//    ImageIO.write(img, 'png', new File(path))
+//}
 
-    byte[] bytes = Base64.decoder.decode(payload)
 
-    BufferedImage img = ImageIO.read(new ByteArrayInputStream(bytes))
 
-    ImageIO.write(img, 'png', new File(path))
+def getCanvasImageBase64 = {
+	JavascriptExecutor js = ((DriverFactory.getWebDriver()) as JavascriptExecutor)
+
+	String base64 = js.executeScript('\n       const canvas = document.querySelector(\'#pbs-volumeViewport canvas\');\n       return canvas.toDataURL(\'image/png\');\n   ')
+
+	return base64
 }
+
+
+
+def saveBase64Image(String base64, String filePath) {
+	String base64Data = base64.split(',')[1]
+
+	byte[] imageBytes = Base64.decoder.decode(base64Data)
+
+	InputStream is = new ByteArrayInputStream(imageBytes)
+
+	BufferedImage image = ImageIO.read(is)
+
+	ImageIO.write(image, 'png', new File(filePath))
+}
+
 
 // 1) LOGIN
 WebUI.openBrowser('')
@@ -79,7 +104,7 @@ WebUI.waitForElementClickable(zoomIn, 30)
 (1..2).each({ def i ->
         WebUI.click(zoomIn)
 
-        WebUI.delay(120)
+        WebUI.delay(20)
 
         WebUI.comment("✔ Completed zoom-in #$i")
     })
@@ -95,68 +120,139 @@ WebUI.click(lineTool)
 
 WebUI.delay(3)
 
-// 7) CAPTURE “BEFORE PAN”
-WebUI.comment('🔍 Capturing canvas before pan…')
+//// 7) CAPTURE “BEFORE PAN”
+//WebUI.comment('🔍 Capturing canvas before pan…')
+//
+//String beforeB64 = getCanvasImageBase64()
+//
+////saveBase64Image(beforeB64, "$RunConfiguration.getReportFolder()/platelets_before_pan.png")
+//
+//
+//String path = RunConfiguration.getLogFolderPath() + "/platelets_before_pan.png"
+//
+//saveBase64Image(beforeB64, path)
+//
+//
+//// 8) PAN USING ROBOT
+//int startX = 879
+//
+//int startY = 544
+//
+//int dragX = 200
+//
+//int dragY = 100
+//
+//int steps = 50
+//
+//Robot robot = new Robot()
+//
+//robot.setAutoDelay(10)
+//
+//// click to focus
+//robot.mouseMove(startX, startY)
+//
+//Thread.sleep(200)
+//
+//robot.mousePress(InputEvent.BUTTON1_DOWN_MASK)
+//
+//Thread.sleep(1)
+//
+//robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK)
+//
+//Thread.sleep(3)
+//
+//// drag in increments
+//for (int i = 0; i <= steps; i++) {
+//    int x = startX + ((dragX * i) / steps)
+//
+//    int y = startY + ((dragY * i) / steps)
+//
+//    robot.mouseMove(x, y)
+//
+//    Thread.sleep(10)
+//}
+//
+//Thread.sleep(1)
+//
+//robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK)
+//
+//WebUI.delay(1)
+//
+//// 9) CAPTURE “AFTER PAN” & LOG RESULT
+//WebUI.comment('🔍 Capturing canvas after pan…')
+//
+//String afterB64 = getCanvasImageBase64()
+//
+////saveBase64Image(afterB64, "$RunConfiguration.getReportFolder()/platelets_after_pan.png")
+//String after_path = RunConfiguration.getLogFolderPath() + "/platelets_after_pan.png"
+//
+//saveBase64Image(afterB64, after_path)
 
-String beforeB64 = getCanvasImageBase64()
+//if (beforeB64 == afterB64) {
+//    WebUI.comment('❌ Pan did NOT change the view.')
+//} else {
+//    WebUI.comment('✅ Pan succeeded — canvas has changed.')
+//}
 
-saveBase64Image(beforeB64, "$RunConfiguration.getReportFolder()/platelets_before_pan.png")
+WebUI.comment('Capturing canvas before pan...')
 
-// 8) PAN USING ROBOT
-int startX = 879
+String beforePanBase64 = getCanvasImageBase64()
 
-int startY = 544
+saveBase64Image(beforePanBase64, 'before_pan.png')
 
-int dragX = 200
-
-int dragY = 100
-
+int startX = 976
+int startY = 406
+int dragX = 1183
+int dragY = 576
 int steps = 50
 
 Robot robot = new Robot()
 
 robot.setAutoDelay(10)
 
-// click to focus
 robot.mouseMove(startX, startY)
 
 Thread.sleep(200)
 
 robot.mousePress(InputEvent.BUTTON1_DOWN_MASK)
 
-Thread.sleep(1)
+Thread.sleep(100)
 
 robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK)
 
-Thread.sleep(3)
+Thread.sleep(300)
 
-// drag in increments
+robot.mousePress(InputEvent.BUTTON1_DOWN_MASK)
+
+Thread.sleep(200)
+
 for (int i = 0; i <= steps; i++) {
-    int x = startX + ((dragX * i) / steps)
+	int moveX = startX + ((dragX * i) / steps)
 
-    int y = startY + ((dragY * i) / steps)
+	int moveY = startY + ((dragY * i) / steps)
 
-    robot.mouseMove(x, y)
+	robot.mouseMove(moveX, moveY)
 
-    Thread.sleep(10)
+	Thread.sleep(10)
 }
 
-Thread.sleep(1)
+Thread.sleep(100)
 
 robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK)
 
 WebUI.delay(1)
 
-// 9) CAPTURE “AFTER PAN” & LOG RESULT
-WebUI.comment('🔍 Capturing canvas after pan…')
+WebUI.comment('Capturing canvas after pan...')
 
-String afterB64 = getCanvasImageBase64()
+String afterPanBase64 = getCanvasImageBase64()
 
-saveBase64Image(afterB64, "$RunConfiguration.getReportFolder()/platelets_after_pan.png")
+saveBase64Image(afterPanBase64, 'after_pan.png')
 
-if (beforeB64 == afterB64) {
-    WebUI.comment('❌ Pan did NOT change the view.')
+if (beforePanBase64 == afterPanBase64) {
+	KeywordUtil.markFailed('❌ Pan did NOT change the view.')
 } else {
-    WebUI.comment('✅ Pan succeeded — canvas has changed.')
+	KeywordUtil.markPassed('✅  Pan succeeded — canvas has changed.')
 }
+
+
 

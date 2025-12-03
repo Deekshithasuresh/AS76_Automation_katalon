@@ -99,11 +99,22 @@ if ((largePlateletCount == 0) || (largePlateletRow == null)) {
 
     saveBase64Image(beforePanBase64, 'before_pan.png')
 
-	int startX = 976
-	int startY = 406
-	int dragX = 1183
-	int dragY = 576
+//	int startX = 976
+//	int startY = 406
+//	int dragX = 1183
+//	int dragY = 576
+//	int steps = 50
+	
+	int startX = 1212
+	
+	int startY = 405
+	
+	int dragX = 200
+	
+	int dragY = 100
+	
 	int steps = 50
+	
 	
     Robot robot = new Robot()
 
@@ -148,9 +159,9 @@ if ((largePlateletCount == 0) || (largePlateletRow == null)) {
     saveBase64Image(afterPanBase64, 'after_pan.png')
 
     if (beforePanBase64 == afterPanBase64) {
-        WebUI.comment('❌ Canvas did NOT change — pan may have failed.')
+        KeywordUtil.markFailed('❌ Canvas did NOT change — pan may have failed.')
     } else {
-        WebUI.comment('✅ Canvas has changed — pan likely succeeded.')
+        KeywordUtil.markPassed('✅ Canvas has changed — pan likely succeeded.')
     }
 }
 
