@@ -27,7 +27,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 
 
-
 class FilterFunctions {
 
 	@Keyword
@@ -370,10 +369,31 @@ class FilterFunctions {
 		WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/filter_button'))
 
 		/** SCAN DATE FILTER **/
-		//WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_DateRange'))
-
+//		TestObject dr = findTestObject('Object Repository/Report_Listing/Page_PBS/span_DateRange')
+//		WebUI.waitForElementVisible(dr, 20)
+//		WebUI.click(dr)
+		
 		selectScanDateRange(startDate, endDate)
+		
 
+
+		/** STATUS **/
+		WebUI.delay(5)
+//		WebElement el = WebUI.findWebElement(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Status'))
+//		Actions action = new Actions(DriverFactory.getWebDriver())
+//		action.moveToElement(el).click().perform()
+//		
+		TestObject element = findTestObject('Object Repository/Report_Listing/Page_PBS/span_Status')
+		WebUI.executeJavaScript("arguments[0].click();", Arrays.asList(WebUI.findWebElement(element)))
+		
+		//WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Status'))
+		for (String status : statuses) {
+			TestObject statusCheckbox = new TestObject().addProperty("xpath", ConditionType.EQUALS,
+					"//span[contains(text(),'${status}')]/preceding-sibling::span/input[@type='checkbox']")
+			WebUI.click(statusCheckbox)
+		}
+		
+		
 		/** ASSIGNED TO **/
 
 		WebUI.delay(5)
@@ -382,15 +402,6 @@ class FilterFunctions {
 			TestObject userCheckbox = new TestObject().addProperty("xpath", ConditionType.EQUALS,
 					"//span[contains(text(),'${user}')]/preceding-sibling::span/input[@type='checkbox']")
 			WebUI.click(userCheckbox)
-		}
-
-		/** STATUS **/
-		WebUI.delay(5)
-		WebUI.click(findTestObject('Object Repository/Report_Listing/Page_PBS/span_Status'))
-		for (String status : statuses) {
-			TestObject statusCheckbox = new TestObject().addProperty("xpath", ConditionType.EQUALS,
-					"//span[contains(text(),'${status}')]/preceding-sibling::span/input[@type='checkbox']")
-			WebUI.click(statusCheckbox)
 		}
 
 		/** APPLY **/

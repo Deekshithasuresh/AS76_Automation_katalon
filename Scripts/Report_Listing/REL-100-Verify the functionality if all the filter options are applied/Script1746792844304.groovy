@@ -10,7 +10,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 CustomKeywords.'generic.custumFunctions.login'()
 
-CustomKeywords.'generic.FilterFunctions.verifyAllFiltersApplied'("10-10-2025","10-10-2025", ['manju'], ['Under review'])
+CustomKeywords.'generic.FilterFunctions.verifyAllFiltersApplied'("2-12-2025","2-12-2025", ['manju'], ['Under review'])
 
 TestObject clearBtn = new TestObject('clearFilter').addProperty('xpath', ConditionType.EQUALS, "//div[@class='clear-filter-btn']/button")
 	if (WebUI.waitForElementPresent(clearBtn, 5, FailureHandling.OPTIONAL)) {
